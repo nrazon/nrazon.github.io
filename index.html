@@ -15,7 +15,7 @@
 <meta property="og:title" content="Nesim Apps">
 <meta property="og:description" content="Android games and apps by Nesim Razon. Android oyunları ve uygulamaları.">
 <meta property="og:url" content="https://nrazon.github.io/">
-<meta property="og:image" content="https://nrazon.github.io/og.png">
+<meta property="og:image" content="https://nrazon.github.io/og-v2.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -41,6 +41,11 @@
   .tag { display:inline-block; align-self:flex-start; background:var(--accent); color:#fff; font-size:12px; font-weight:800; letter-spacing:.06em; padding:3px 10px; border-radius:999px; margin-bottom:8px; }
   .hero p { margin:0 0 14px; color:var(--dim); }
   .sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+  @media (min-width:700px) {
+    .hero { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); align-items:center; }
+    .hero > img { height:100%; object-fit:cover; }
+    .hero .body { padding:22px 26px; }
+  }
   /* Filtre */
   .filters { display:flex; gap:8px; margin:0 0 16px; flex-wrap:wrap; }
   .filters button { border:0; background:var(--chip); color:var(--text); font:inherit; font-weight:700; font-size:14px; padding:8px 16px; border-radius:999px; cursor:pointer; }
