@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nesim Apps</title>
-<meta name="description" content="Android apps and games by Nesim Razon: Sliplines, Son Depremler, Age Calculator, BMI Calculator, Where Am I?, 2048, Tic-Tac-Toe, TurkSail, MedyaFobi, National Anthem of Turkey, National Anthem of Canada.">
+<meta name="description" content="Android apps and games by Nesim Razon: Cubbles, Sliplines, Son Depremler, Age Calculator, BMI Calculator, Where Am I?, 2048, Tic-Tac-Toe, TurkSail, MedyaFobi, National Anthem of Turkey, National Anthem of Canada.">
 <style>
   :root { --bg:#141829; --card:#1E2440; --text:#F3F4FA; --dim:#A9B0CF; --link:#6EA8FF; }
   * { box-sizing: border-box; }
@@ -26,6 +26,7 @@
   .play { display:inline-flex; align-items:center; gap:8px; background:var(--text); color:var(--bg); font-weight:700; text-decoration:none; padding:9px 16px; border-radius:999px; }
   .play svg { width:18px; height:18px; }
   .small { color:var(--link); font-size:14px; }
+  .soon { display:inline-flex; align-items:center; background:transparent; color:var(--dim); border:1.5px dashed var(--dim); font-weight:700; padding:7px 16px; border-radius:999px; }
   footer { color:var(--dim); font-size:14px; margin-top:32px; }
   a { color:var(--link); }
   /* Dil: <html class="tr"> ya da "en"; diğer dildeki metinler gizlenir. */
@@ -66,6 +67,20 @@
       <button type="button" data-lang="en" onclick="setLang('en')">EN</button>
     </div>
   </header>
+
+  <section class="app">
+    <img src="cubbles/icon.svg" alt="Cubbles">
+    <div>
+      <h2>Cubbles</h2>
+      <p lang="tr">Sevimli yüzlü bloklarla bulmaca: blokları tahtaya sürükle, satır ve sütunları doldurup temizle, kombolar yap. Günlük meydan okuma, görevler ve temalar.</p>
+      <p lang="en">A block puzzle with cute faces: drag blocks onto the board, fill rows and columns to clear them and chain combos. Daily challenge, quests and themes.</p>
+      <div class="links">
+        <span class="soon"><span lang="tr">Çok yakında</span><span lang="en">Coming soon</span></span>
+        <a class="small" href="cubbles/privacy.html#tr" lang="tr">Gizlilik Politikası</a>
+        <a class="small" href="cubbles/privacy.html#en" lang="en">Privacy Policy</a>
+      </div>
+    </div>
+  </section>
 
   <section class="app">
     <img src="sliplines/icon.png" alt="Sliplines">
