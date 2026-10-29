@@ -416,7 +416,7 @@ def page(cfg):
 <style>
 :root {{ --accent:{cfg['accent']}; --hero-a:{cfg['hero'][0]}; --hero-b:{cfg['hero'][1]}; }}
 </style>
-<link rel="stylesheet" href="../landing.css">
+<link rel="stylesheet" href="../landing.css?v=3">
 <script type="application/ld+json">{jsonld}</script>
 </head>
 <body>
@@ -484,7 +484,7 @@ def page(cfg):
     [].forEach.call(document.querySelectorAll("[data-new-until]"), function (el) {{ if (today > el.dataset.newUntil) el.remove(); }});
   }})();
 </script>
-<script src="../eyes.js"></script>
+<script src="../eyes.js?v=3"></script>
 </body>
 </html>
 '''
