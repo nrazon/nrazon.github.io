@@ -58,6 +58,11 @@
   .hero.lite h2 { font-size:26px; margin:0 0 6px; line-height:1.25; }
   .hero.lite .body { padding:0; }
   @media (max-width:560px) { .hero.lite { flex-direction:column; align-items:flex-start; gap:14px; } }
+  /* Öne çıkan alanı: iki hero aynı hücreye üst üste konur; görünmeyen de yer tutar (görünmez), böylece sekme değişince yükseklik ve filtre düğmeleri yerinde kalır. */
+  .spot { display:grid; margin-bottom:20px; }
+  .spot > .hero { grid-area:1 / 1; margin-bottom:0; }
+  .spot > .hero[hidden] { display:grid !important; visibility:hidden; pointer-events:none; }
+  .spot > .hero.lite[hidden] { display:flex !important; }
   /* Filtre */
   .filters { display:flex; gap:8px; margin:0 0 16px; flex-wrap:wrap; }
   .filters button { border:0; background:var(--chip); color:var(--text); font:inherit; font-weight:700; font-size:14px; padding:8px 16px; border-radius:999px; cursor:pointer; }
@@ -135,6 +140,7 @@
     </div>
   </header>
 
+  <div class="spot">
   <section class="hero" data-show="all,games">
     <h2 class="sr">Cardles</h2>
     <img lang="en" src="cardles/feature-en.png" alt="Cardles: solitaire that makes you smile" width="1024" height="500">
@@ -166,6 +172,7 @@
       </div>
     </div>
   </section>
+  </div>
 
   <nav class="filters" aria-label="Filter">
     <button type="button" data-filter="all" onclick="setFilter('all')"><span lang="tr">Tümü</span><span lang="en">All</span></button>
