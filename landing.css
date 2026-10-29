@@ -67,3 +67,11 @@ html[data-lang="es"] [data-l]:not([data-l="es"]), html[data-lang="pt"] [data-l]:
 .eye { transform-box:fill-box; transform-origin:center; animation:blink 6s infinite; animation-delay:var(--d,0s); }
 @keyframes blink { 0%,93%,100% { transform:scaleY(1); } 96% { transform:scaleY(.08); } }
 @media (prefers-reduced-motion: reduce) { .eye { animation:none; } .pcard { transition:none; } html { scroll-behavior:auto; } }
+
+.feat.b { grid-template-columns:30px minmax(0,1fr); align-items:center; padding:14px 18px; }
+.feat.b svg { width:30px; height:30px; grid-row:auto; }
+.feat.b h3 { font-size:15.5px; font-weight:600; line-height:1.45; }
+.lhero h1.long { font-size:clamp(30px,5.4vw,50px); line-height:1.08; }
+.note { color:var(--dim); margin:16px 0 0; max-width:70ch; }
+.iconart { display:flex; align-items:center; justify-content:center; padding:10px 0 26px; }
+.iconart img { width:min(46vw,200px); height:auto; border-radius:23%; box-shadow:0 14px 34px rgba(0,0,0,.35); }
