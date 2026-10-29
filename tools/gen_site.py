@@ -108,7 +108,8 @@ h2.h { font-size:13px; font-weight:800; letter-spacing:.09em; text-transform:upp
 footer { color:var(--dim); font-size:14px; margin-top:44px; }
 /* Dil: data-l="tr|en|es|pt" olan her şey yalnız seçili dilde görünür. */
 html[data-lang="tr"] [data-l]:not([data-l="tr"]), html[data-lang="en"] [data-l]:not([data-l="en"]),
-html[data-lang="es"] [data-l]:not([data-l="es"]), html[data-lang="pt"] [data-l]:not([data-l="pt"]) { display:none; }
+html[data-lang="es"] [data-l]:not([data-l="es"]), html[data-lang="pt"] [data-l]:not([data-l="pt"]),
+html[data-lang="fr"] [data-l]:not([data-l="fr"]) { display:none; }
 /* Kart yüzleri */
 .pcard { transition:transform .25s cubic-bezier(.3,1.6,.5,1); transform-box:fill-box; transform-origin:center; }
 .pcard:hover { transform:translateY(-10px); }
@@ -780,7 +781,7 @@ for _c in APPCFGS:
         continue
     _a = f'<a class="small" href="{_sl}/privacy.html#tr" lang="tr">'
     assert _s.count(_a) >= 1, _sl
-    _s = _s.replace(_a, f'<a class="small" href="{_sl}/" lang="tr"><b>Daha fazla</b></a>\n            <a class="small" href="{_sl}/" lang="en"><b>Learn more</b></a>\n            ' + _a)
+    _s = _s.replace(_a, f'<a class="small" href="{_sl}/" lang="tr"><b>Daha fazla</b></a>\n            <a class="small" href="{_sl}/" lang="en"><b>Learn more</b></a>\n            <a class="small" href="{_sl}/" lang="es"><b>Más información</b></a>\n            <a class="small" href="{_sl}/" lang="pt"><b>Saiba mais</b></a>\n            ' + _a)
 open(_ip, "w", encoding="utf-8", newline="\n").write(_s)
 
 
