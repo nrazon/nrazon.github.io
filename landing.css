@@ -1,0 +1,69 @@
+/* Oyun tanıtım sayfaları. Koyu varsayılan, açık tema sistem tercihine göre. Her sayfa --accent ve --hero-a/--hero-b verir. */
+:root { --bg:#141829; --card:#1E2440; --text:#F3F4FA; --dim:#A9B0CF; --link:#7FB2FF; --chip:#252C4D; --line:#2C345A; --shadow:0 8px 24px rgba(0,0,0,.30); }
+@media (prefers-color-scheme: light) {
+  :root { --bg:#F4F5FB; --card:#FFFFFF; --text:#171A2B; --dim:#5B6280; --link:#2F5BD8; --chip:#E6E9F5; --line:#DCE0F0; --shadow:0 8px 22px rgba(30,40,90,.12); }
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+main { max-width:1040px; margin:0 auto; padding:28px 16px 64px; }
+a { color:var(--link); }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline:3px solid var(--accent); outline-offset:3px; }
+.top { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:22px; }
+.back { text-decoration:none; font-weight:700; color:var(--dim); }
+.back:hover { color:var(--text); }
+.lang { display:flex; gap:2px; background:var(--card); border-radius:999px; padding:4px; box-shadow:var(--shadow); }
+.lang button { border:0; background:none; color:var(--dim); font:inherit; font-weight:700; font-size:13px; padding:5px 11px; border-radius:999px; cursor:pointer; }
+.lang button[aria-pressed="true"] { background:var(--text); color:var(--bg); }
+/* Hero */
+.lhero { display:grid; grid-template-columns:minmax(0,1fr); background:linear-gradient(135deg,var(--hero-a),var(--hero-b)); color:#fff; border-radius:26px; overflow:hidden; box-shadow:var(--shadow); }
+.lhero .copy { padding:30px 26px 8px; display:flex; flex-direction:column; align-items:flex-start; gap:12px; }
+.lhero .art { padding:8px 12px 22px; display:flex; justify-content:center; }
+.lhero .art svg { width:100%; max-width:480px; height:auto; overflow:visible; }
+.tag { display:inline-block; background:#FFD166; color:#3A2A00; font-size:12px; font-weight:800; letter-spacing:.07em; padding:3px 11px; border-radius:999px; }
+h1 { font-size:clamp(44px,9vw,72px); line-height:1; margin:0; letter-spacing:-.02em; font-weight:900; }
+.tagline { font-size:clamp(18px,3.4vw,24px); font-weight:650; margin:0; color:rgba(255,255,255,.92); }
+.intro { margin:0; max-width:46ch; color:rgba(255,255,255,.86); }
+.chips { display:flex; flex-wrap:wrap; gap:6px; margin:2px 0 0; padding:0; list-style:none; }
+.chips li { background:rgba(255,255,255,.16); font-size:13px; font-weight:700; padding:3px 11px; border-radius:999px; }
+.cta { display:flex; flex-wrap:wrap; gap:10px 16px; align-items:center; margin-top:8px; }
+.cta .play img { height:48px; width:auto; display:block; }
+.cta a.small { color:#fff; font-size:14px; opacity:.9; }
+@media (min-width:820px) {
+  .lhero { grid-template-columns:minmax(0,1.05fr) minmax(0,1fr); align-items:center; }
+  .lhero .copy { padding:44px 14px 44px 44px; }
+  .lhero .art { padding:24px 34px 24px 0; }
+}
+/* Bölümler */
+section.block { margin-top:46px; }
+h2.h { font-size:13px; font-weight:800; letter-spacing:.09em; text-transform:uppercase; color:var(--dim); margin:0 0 16px; }
+/* Ekran görüntüleri */
+.strip { display:flex; gap:16px; overflow-x:auto; scroll-snap-type:x proximity; padding:6px 4px 18px; margin:0 -4px; }
+.strip figure { margin:0; flex:none; scroll-snap-align:start; }
+.phone { width:200px; border-radius:26px; border:5px solid #0b0d18; background:#0b0d18; box-shadow:var(--shadow); overflow:hidden; }
+.phone img { display:block; width:100%; height:auto; }
+@media (min-width:700px) { .phone { width:224px; } }
+/* Özellikler */
+.fgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:14px; }
+.feat { background:var(--card); border-radius:18px; padding:18px 20px; box-shadow:var(--shadow); display:grid; grid-template-columns:44px minmax(0,1fr); gap:4px 14px; align-items:start; }
+.feat svg { width:44px; height:44px; grid-row:1 / span 2; }
+.feat h3 { margin:0; font-size:17px; line-height:1.3; }
+.feat p { margin:0; color:var(--dim); font-size:15px; line-height:1.55; }
+/* SSS */
+.faq details { background:var(--card); border-radius:14px; padding:2px 18px; margin-bottom:10px; box-shadow:var(--shadow); }
+.faq summary { cursor:pointer; font-weight:700; padding:14px 0; }
+.faq details p { margin:0 0 14px; color:var(--dim); }
+/* Diğer oyunlar */
+.more { display:flex; flex-wrap:wrap; gap:10px; }
+.more a { display:flex; align-items:center; gap:10px; background:var(--card); color:var(--text); text-decoration:none; font-weight:700; padding:8px 16px 8px 8px; border-radius:16px; box-shadow:var(--shadow); }
+.more img { width:40px; height:40px; border-radius:10px; }
+footer { color:var(--dim); font-size:14px; margin-top:44px; }
+/* Dil: data-l="tr|en|es|pt" olan her şey yalnız seçili dilde görünür. */
+html[data-lang="tr"] [data-l]:not([data-l="tr"]), html[data-lang="en"] [data-l]:not([data-l="en"]),
+html[data-lang="es"] [data-l]:not([data-l="es"]), html[data-lang="pt"] [data-l]:not([data-l="pt"]) { display:none; }
+/* Kart yüzleri */
+.pcard { transition:transform .25s cubic-bezier(.3,1.6,.5,1); transform-box:fill-box; transform-origin:center; }
+.pcard:hover { transform:translateY(-10px); }
+.eye { transform-box:fill-box; transform-origin:center; animation:blink 6s infinite; animation-delay:var(--d,0s); }
+@keyframes blink { 0%,93%,100% { transform:scaleY(1); } 96% { transform:scaleY(.08); } }
+@media (prefers-reduced-motion: reduce) { .eye { animation:none; } .pcard { transition:none; } html { scroll-behavior:auto; } }
