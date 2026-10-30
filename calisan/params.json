@@ -26,11 +26,11 @@
         { "valid_from": "2026-07-01", "tutar": 73729.87 }
       ],
       "kaynaklar": {
-        "asgari_ucret": "Asgari Ücret Tespit Komisyonu kararı, Resmî Gazete 26.12.2025 sayı 33119",
-        "gelir_vergisi": "332 Seri No lu Gelir Vergisi Genel Tebliği, RG 31.12.2025 (5. Mükerrer) Sayı 33124 (ücret tarifesi); GİB 2026 tarife PDF (cdn.gib.gov.tr ... gelir-vergisi-tarifesi-2026.pdf) ile doğrulandı 30.10.2026",
-        "sgk_tavan": "SGK Genelgesi 2026/2: aylık alt 33.030, üst 297.270 (2026); üst sınır 7566 sayılı Kanun ile asgari ücretin 9 katı (RG 19.12.2025 sayı 33112); bordro ve verginet ile tutarlı",
+        "asgari_ucret": "Asgari Ücret Tespit Komisyonu Kararı 2025/1, RG 26.12.2025 sayı 33119: günlük 1.101 TL (x30 = 33.030) — RESMÎ METİNLE DOĞRULANDI 30.10.2026",
+        "gelir_vergisi": "332 Seri No lu Gelir Vergisi Genel Tebliği, RG 31.12.2025 (5. Mükerrer) sayı 33124, madde 3(3): ücret tarifesi 190.000/400.000/1.500.000/5.300.000, %15/20/27/35/40 — RESMÎ METİNLE DOĞRULANDI 30.10.2026",
+        "sgk_tavan": "7566 sayılı Kanun m.24, RG 19.12.2025 sayı 33112: 5510 m.82 birinci fıkradaki 7,5 ibaresi 9 olarak değişti (9 x 33.030 = 297.270); alt sınır asgari ücret (SGK Genelgesi 2026/2) — RESMÎ METİNLE DOĞRULANDI 30.10.2026",
         "sgdp": "SGK 2026 prim tablosu: SGDP işçi %7,5 / işveren %24,75 (bordro ile doğrulandı)",
-        "kidem_tavani": "Hazine ve Maliye Bakanlığı genelgesi / memur katsayısı (Temmuz: +%13,52)"
+        "kidem_tavani": "ÇSGB Kıdem Tazminatı Tavan Miktarı sayfası: 01.07.2026-31.12.2026 = 73.729,87 TL (resmî, doğrulandı 30.10.2026); Ocak-Haziran 64.948,77 ikincil kaynaklardan"
       }
     }
   ]
