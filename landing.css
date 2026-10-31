@@ -79,6 +79,7 @@ html[data-lang="fr"] [data-l]:not([data-l="fr"]) { display:none; }
 .qrpop { position:absolute; left:0; bottom:calc(100% + 10px); z-index:30; width:211px; padding:14px 14px 10px; background:#fff; color:#171A2B; border-radius:16px; box-shadow:0 10px 32px rgba(0,0,0,.4); text-align:center; }
 .qrpop img { display:block; width:183px; height:183px; margin:0 auto 6px; }
 .qrpop p { margin:0; font-size:13px; font-weight:700; line-height:1.3; }
+.demo-wrap { background:var(--card); border-radius:22px; padding:22px; box-shadow:var(--shadow); }
 
 .feat.b { grid-template-columns:30px minmax(0,1fr); align-items:center; padding:14px 18px; }
 .feat.b svg { width:30px; height:30px; grid-row:auto; }

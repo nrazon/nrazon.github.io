@@ -18,7 +18,7 @@
 <style>
 :root { --accent:#32847E; --hero-a:#1C4C48; --hero-b:#36908A; }
 </style>
-<link rel="stylesheet" href="../landing.css?v=4">
+<link rel="stylesheet" href="../landing.css?v=5">
 <script src="/analytics.js?v=1" defer></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Tic-Tac-Toe", "operatingSystem": "Android", "applicationCategory": "GameApplication", "description": "Classic Tic-Tac-Toe against the computer. Easy, Medium or Hard: can you beat it?", "url": "https://nrazon.github.io/tictactoe/", "image": "https://nrazon.github.io/tictactoe/icon.svg", "author": {"@type": "Person", "name": "Nesim Razon"}, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "installUrl": "https://play.google.com/store/apps/details?id=com.tictactoe.nesimapps"}</script>
 </head>
@@ -43,6 +43,11 @@
       </div>
     </div>
     <div class="art"><div class="iconart"><img src="icon.svg" alt="" width="200" height="200"></div></div>
+  </section>
+
+  <section class="block" aria-labelledby="h-demo">
+    <h2 class="h" id="h-demo"><span data-l="tr">Tarayıcıda dene</span><span data-l="en">Try it in your browser</span><span data-l="es">Pruébalo en el navegador</span><span data-l="pt">Experimente no navegador</span></h2>
+    <div class="demo-wrap"><div data-ttt data-play="https://play.google.com/store/apps/details?id=com.tictactoe.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"></div></div>
   </section>
 
   <section class="block" aria-labelledby="h-shots">
@@ -112,6 +117,7 @@
   })();
 </script>
 <script src="../eyes.js?v=3"></script>
+<script src="../ttt.js?v=1" defer></script>
 <script>
   // QR açılırken: dışarı tıklayınca ya da Esc ile kapanır (aynı anda yalnız biri açık).
   document.addEventListener("click", function (e) { document.querySelectorAll("details.qr[open]").forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute("open"); }); });

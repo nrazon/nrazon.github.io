@@ -132,6 +132,7 @@ html[data-lang="fr"] [data-l]:not([data-l="fr"]) { display:none; }
 .qrpop { position:absolute; left:0; bottom:calc(100% + 10px); z-index:30; width:211px; padding:14px 14px 10px; background:#fff; color:#171A2B; border-radius:16px; box-shadow:0 10px 32px rgba(0,0,0,.4); text-align:center; }
 .qrpop img { display:block; width:183px; height:183px; margin:0 auto 6px; }
 .qrpop p { margin:0; font-size:13px; font-weight:700; line-height:1.3; }
+.demo-wrap { background:var(--card); border-radius:22px; padding:22px; box-shadow:var(--shadow); }
 '''
 
 # ------------------------------------------------------------------ SVG parçaları
@@ -248,6 +249,7 @@ SEC = {
     "more": {"fr": "Autres applis", "tr": "Diğer uygulamalarım", "en": "More from me", "es": "Más apps", "pt": "Mais apps"},
     "privacy": {"fr": "Politique de confidentialité", "tr": "Gizlilik Politikası", "en": "Privacy Policy", "es": "Política de privacidad", "pt": "Política de privacidade"},
     "webprivacy": {"fr": "Confidentialité du site", "tr": "Site gizliliği", "en": "Website privacy", "es": "Privacidad del sitio", "pt": "Privacidade do site"},
+    "try": {"fr": "Essayer dans le navigateur", "tr": "Tarayıcıda dene", "en": "Try it in your browser", "es": "Pruébalo en el navegador", "pt": "Experimente no navegador"},
     "qr": {"fr": "Installer via QR", "tr": "QR ile yükle", "en": "Install via QR", "es": "Instalar con QR", "pt": "Instalar com QR"},
     "qrscan": {"fr": "Scannez avec votre téléphone", "tr": "Telefonunla tara", "en": "Scan with your phone", "es": "Escanea con tu móvil", "pt": "Escaneie com o celular"},
     "contact": {"fr": "Contact", "tr": "İletişim", "en": "Contact", "es": "Contacto", "pt": "Contato"},
@@ -422,6 +424,9 @@ def page(cfg):
     qr_html = "" if cfg["slug"] in HIDDEN else (
         f'<details class="qr" data-qr="{cfg["slug"]}"><summary>' + GLYPH + multi(SEC["qr"], L) + '</summary><div class="qrpop">'
         f'<img src="../qr/{cfg["slug"]}.svg" alt="QR" width="183" height="183" loading="lazy">' + multi(SEC["qrscan"], L, "p") + '</div></details>')
+    demo_block = (f'  <section class="block" aria-labelledby="h-demo">\n    <h2 class="h" id="h-demo">{multi(SEC["try"], L)}</h2>\n'
+                  f'    <div class="demo-wrap"><div data-ttt data-play="{play}"></div></div>\n  </section>\n\n') if cfg["slug"] == "tictactoe" else ""
+    ttt_script = '\n<script src="../ttt.js?v=1" defer></script>' if cfg["slug"] == "tictactoe" else ""
     noindex = '\n<meta name="robots" content="noindex">' if cfg["slug"] in HIDDEN else ""
     return f'''<!doctype html>
 <html lang="en" data-lang="en">
@@ -443,7 +448,7 @@ def page(cfg):
 <style>
 :root {{ --accent:{cfg['accent']}; --hero-a:{cfg['hero'][0]}; --hero-b:{cfg['hero'][1]}; }}
 </style>
-<link rel="stylesheet" href="../landing.css?v=4">
+<link rel="stylesheet" href="../landing.css?v=5">
 <script src="/analytics.js?v=1" defer></script>
 <script type="application/ld+json">{jsonld}</script>
 </head>
@@ -470,7 +475,7 @@ def page(cfg):
     <div class="art">{cfg['art']()}</div>
   </section>
 
-  <section class="block" aria-labelledby="h-shots">
+{demo_block}  <section class="block" aria-labelledby="h-shots">
     <h2 class="h" id="h-shots">{multi(SEC['shots'], L)}</h2>
     <div class="strip">
 {shots}    </div>
@@ -513,7 +518,7 @@ def page(cfg):
     [].forEach.call(document.querySelectorAll("[data-new-until]"), function (el) {{ if (today > el.dataset.newUntil) el.remove(); }});
   }})();
 </script>
-<script src="../eyes.js?v=3"></script>
+<script src="../eyes.js?v=3"></script>{ttt_script}
 <script>
   // QR açılırken: dışarı tıklayınca ya da Esc ile kapanır (aynı anda yalnız biri açık).
   document.addEventListener("click", function (e) {{ document.querySelectorAll("details.qr[open]").forEach(function (d) {{ if (!d.contains(e.target)) d.removeAttribute("open"); }}); }});

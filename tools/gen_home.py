@@ -61,6 +61,8 @@ T = {
     "email": {"tr": "E-posta gönder", "en": "Send an email", "es": "Enviar un correo", "pt": "Enviar e-mail"},
     "contact": {"tr": "İletişim", "en": "Contact", "es": "Contacto", "pt": "Contato"},
     "webprivacy": {"tr": "Site gizliliği", "en": "Website privacy", "es": "Privacidad del sitio", "pt": "Privacidade do site"},
+    "demo": {"tr": "Tarayıcıda dene", "en": "Try it here", "es": "Pruébalo aquí", "pt": "Experimente aqui"},
+    "demotitle": {"tr": "Tic-Tac-Toe: tarayıcıda dene", "en": "Tic-Tac-Toe: try it in your browser", "es": "Tic-Tac-Toe: pruébalo en el navegador", "pt": "Tic-Tac-Toe: experimente no navegador"},
     "qr": {"tr": "QR ile yükle", "en": "Install via QR", "es": "Instalar con QR", "pt": "Instalar com QR"},
     "qrshort": {"tr": "QR", "en": "QR", "es": "QR", "pt": "QR"},
     "qrscan": {"tr": "Telefonunla tara", "en": "Scan with your phone", "es": "Escanea con tu móvil", "pt": "Escaneie com o celular"},
@@ -125,6 +127,13 @@ def qr_html(slug, short=False):
             f'<img src="qr/{slug}.svg" alt="QR" width="183" height="183" loading="lazy">{L(T["qrscan"], "p")}</div></details>')
 
 
+def demo_btn(slug):
+    """Tarayıcı demosu olan oyunlarda (şimdilik Tic-Tac-Toe) kartta 'Tarayıcıda dene' düğmesi; panel #ttt-demo."""
+    if slug != "tictactoe":
+        return ""
+    return f'<button type="button" class="gp demo" data-ttt-toggle aria-expanded="false" aria-controls="ttt-demo">▶ {L(T["demo"])}</button>'
+
+
 def show_card(a):
     s = a["slug"]
     pk = a["pkg"]
@@ -152,7 +161,7 @@ def tool_card(a):
         <div class="tbody">
           <h3><a class="stretch" href="{s}/">{L(a["names"])}</a>{chip}</h3>
           {L(a["desc"], "p")}
-          <div class="gprow"><a class="gp" href="{play_url(pk)}"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a>{qr_html(s, short=True)}</div>
+          <div class="gprow"><a class="gp" href="{play_url(pk)}"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a>{qr_html(s, short=True)}{demo_btn(s)}</div>
         </div>
       </article>'''
 
@@ -249,6 +258,8 @@ CSS = r'''
   .tool p { margin:0 0 8px; color:var(--dim); font-size:14px; line-height:1.45; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
   .chip { display:inline-block; vertical-align:middle; background:var(--chip); color:var(--dim); font-size:10.5px; font-weight:800; letter-spacing:.06em; padding:2px 8px; border-radius:999px; margin-left:4px; position:relative; top:-1px; }
   .chip.pop { background:var(--accent); color:#fff; }
+  .demo-panel { margin-top:12px; background:var(--card); border-radius:18px; padding:22px; box-shadow:var(--shadow); }
+  .demo-panel h3 { margin:0 0 14px; font-size:18px; }
   .gprow { display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
   .tool:has(.qr[open]) { z-index:40; }
   .gp { position:relative; z-index:2; display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:700; color:var(--link); text-decoration:none; padding:5px 11px; border:1.5px solid var(--line); border-radius:999px; }
@@ -311,6 +322,17 @@ JS = r'''
   // QR açılırken: dışarı tıklayınca ya da Esc ile kapanır (aynı anda yalnız biri açık).
   document.addEventListener("click", function (e) { document.querySelectorAll("details.qr[open]").forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute("open"); }); });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") document.querySelectorAll("details.qr[open]").forEach(function (d) { d.removeAttribute("open"); }); });
+  // Tarayıcı demosu: kartta düğme; ilk açılışta ttt.js yüklenir (gerekmedikçe indirilmez).
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest && e.target.closest("[data-ttt-toggle]");
+    if (!b) return;
+    var panel = document.getElementById(b.getAttribute("aria-controls"));
+    var open = panel.hidden;
+    panel.hidden = !open;
+    b.setAttribute("aria-expanded", open);
+    if (open && !window.TTT && !document.getElementById("ttt-js")) { var s = document.createElement("script"); s.id = "ttt-js"; s.src = "ttt.js?v=1"; document.head.appendChild(s); }
+    if (open) panel.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  });
   // "Yeni" rozetleri tarihi geçince kendiliğinden kalkar (data-new-until: yyyy-mm-dd).
   function expireBadges() {
     var today = new Date().toISOString().slice(0, 10);
@@ -407,6 +429,10 @@ def build(preview):
     </div>
     <div class="tools two">
 {chr(10).join(tool_card(a) for a in games)}
+    </div>
+    <div class="demo-panel" id="ttt-demo" hidden>
+      <h3>{L(T["demotitle"])}</h3>
+      <div data-ttt data-play="{play_url(by["tictactoe"]["pkg"])}"></div>
     </div>
   </section>
 

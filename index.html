@@ -99,6 +99,8 @@
   .tool p { margin:0 0 8px; color:var(--dim); font-size:14px; line-height:1.45; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
   .chip { display:inline-block; vertical-align:middle; background:var(--chip); color:var(--dim); font-size:10.5px; font-weight:800; letter-spacing:.06em; padding:2px 8px; border-radius:999px; margin-left:4px; position:relative; top:-1px; }
   .chip.pop { background:var(--accent); color:#fff; }
+  .demo-panel { margin-top:12px; background:var(--card); border-radius:18px; padding:22px; box-shadow:var(--shadow); }
+  .demo-panel h3 { margin:0 0 14px; font-size:18px; }
   .gprow { display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
   .tool:has(.qr[open]) { z-index:40; }
   .gp { position:relative; z-index:2; display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:700; color:var(--link); text-decoration:none; padding:5px 11px; border:1.5px solid var(--line); border-radius:999px; }
@@ -161,6 +163,17 @@
   // QR açılırken: dışarı tıklayınca ya da Esc ile kapanır (aynı anda yalnız biri açık).
   document.addEventListener("click", function (e) { document.querySelectorAll("details.qr[open]").forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute("open"); }); });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") document.querySelectorAll("details.qr[open]").forEach(function (d) { d.removeAttribute("open"); }); });
+  // Tarayıcı demosu: kartta düğme; ilk açılışta ttt.js yüklenir (gerekmedikçe indirilmez).
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest && e.target.closest("[data-ttt-toggle]");
+    if (!b) return;
+    var panel = document.getElementById(b.getAttribute("aria-controls"));
+    var open = panel.hidden;
+    panel.hidden = !open;
+    b.setAttribute("aria-expanded", open);
+    if (open && !window.TTT && !document.getElementById("ttt-js")) { var s = document.createElement("script"); s.id = "ttt-js"; s.src = "ttt.js?v=1"; document.head.appendChild(s); }
+    if (open) panel.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  });
   // "Yeni" rozetleri tarihi geçince kendiliğinden kalkar (data-new-until: yyyy-mm-dd).
   function expireBadges() {
     var today = new Date().toISOString().slice(0, 10);
@@ -266,9 +279,13 @@
         <div class="tbody">
           <h3><a class="stretch" href="tictactoe/"><span lang="tr">Tic-Tac-Toe</span><span lang="en">Tic-Tac-Toe</span><span lang="es">Tic-Tac-Toe</span><span lang="pt">Tic-Tac-Toe</span></a></h3>
           <p lang="tr">Bilgisayara karşı klasik XOX: Kolay, Orta ya da Zor. Zor seviyede bilgisayar hiç kaybetmez.</p><p lang="en">Classic Tic-Tac-Toe against the computer: Easy, Medium or Hard. On Hard it never loses.</p><p lang="es">El clásico tres en raya contra el ordenador: Fácil, Medio o Difícil. En Difícil nunca pierde.</p><p lang="pt">O clássico jogo da velha contra o computador: Fácil, Médio ou Difícil. No Difícil ele nunca perde.</p>
-          <div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.tictactoe.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a><details class="qr" data-qr="tictactoe"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z"/></svg><span lang="tr">QR</span><span lang="en">QR</span><span lang="es">QR</span><span lang="pt">QR</span></summary><div class="qrpop"><img src="qr/tictactoe.svg" alt="QR" width="183" height="183" loading="lazy"><p lang="tr">Telefonunla tara</p><p lang="en">Scan with your phone</p><p lang="es">Escanea con tu móvil</p><p lang="pt">Escaneie com o celular</p></div></details></div>
+          <div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.tictactoe.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a><details class="qr" data-qr="tictactoe"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z"/></svg><span lang="tr">QR</span><span lang="en">QR</span><span lang="es">QR</span><span lang="pt">QR</span></summary><div class="qrpop"><img src="qr/tictactoe.svg" alt="QR" width="183" height="183" loading="lazy"><p lang="tr">Telefonunla tara</p><p lang="en">Scan with your phone</p><p lang="es">Escanea con tu móvil</p><p lang="pt">Escaneie com o celular</p></div></details><button type="button" class="gp demo" data-ttt-toggle aria-expanded="false" aria-controls="ttt-demo">▶ <span lang="tr">Tarayıcıda dene</span><span lang="en">Try it here</span><span lang="es">Pruébalo aquí</span><span lang="pt">Experimente aqui</span></button></div>
         </div>
       </article>
+    </div>
+    <div class="demo-panel" id="ttt-demo" hidden>
+      <h3><span lang="tr">Tic-Tac-Toe: tarayıcıda dene</span><span lang="en">Tic-Tac-Toe: try it in your browser</span><span lang="es">Tic-Tac-Toe: pruébalo en el navegador</span><span lang="pt">Tic-Tac-Toe: experimente no navegador</span></h3>
+      <div data-ttt data-play="https://play.google.com/store/apps/details?id=com.tictactoe.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"></div>
     </div>
   </section>
 
