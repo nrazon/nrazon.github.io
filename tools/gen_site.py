@@ -8,6 +8,11 @@ import json
 
 G = r"C:\@Development\PersonalAndroidApps\github-pages"
 BASE = "https://nrazon.github.io"
+# Yayına henüz çıkmamış uygulamaların detay sayfaları: URL'den açılır ama ana sayfa kartı, "Diğer uygulamalarım" listeleri ve sitemap'e GİRMEZ,
+# sayfada noindex var. Uygulama Play'de yayınlanınca slug buradan silinir (ve home_data.json'da status=live yapılır).
+HIDDEN = {"calisan", "uzaygunlugu"}
+# Ana sayfada kartında data-pkg olmayan (henüz "yakında" kartı olan) uygulamaların paket adları.
+PKG_FALLBACK = {"calisan": "com.calisanasistani.nesimapps", "uzaygunlugu": "com.uzaygunlugu.nesimapps"}
 REF = "&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"
 
 # ------------------------------------------------------------------ ortak: göz takip betiği
@@ -235,6 +240,7 @@ SEC = {
     "contact": {"fr": "Contact", "tr": "İletişim", "en": "Contact", "es": "Contacto", "pt": "Contato"},
     "back": {"fr": "← Nesim Apps", "tr": "← Nesim Apps", "en": "← Nesim Apps", "es": "← Nesim Apps", "pt": "← Nesim Apps"},
     "new": {"fr": "NOUVEAU JEU", "tr": "YENİ OYUN", "en": "NEW GAME", "es": "JUEGO NUEVO", "pt": "JOGO NOVO"},
+    "newapp": {"fr": "NOUVEAU", "tr": "YENİ", "en": "NEW", "es": "NUEVO", "pt": "NOVO"},
 }
 
 CARDLES = dict(
@@ -388,7 +394,7 @@ def page(cfg):
 {faqs}  </section>
 ''' if faqs else ""
     note_block = f'<p class="note">{multi(cfg["note"], L, "span")}</p>' if cfg.get("note") else ""
-    tag_html = f'<span class="tag" data-new-until="{cfg["new_until"]}">{multi(SEC["new"], L)}</span>' if cfg.get("new_until") else ""
+    tag_html = f'<span class="tag" data-new-until="{cfg["new_until"]}">{multi(SEC["new"] if cfg["slug"] in GAME_SLUGS else SEC["newapp"], L)}</span>' if cfg.get("new_until") else ""
     chips = "".join(f"<li>{c}</li>" for c in cfg["chips"])
     jsonld = json.dumps({
         "@context": "https://schema.org", "@type": "SoftwareApplication", "name": cfg["name"], "operatingSystem": "Android",
@@ -397,6 +403,7 @@ def page(cfg):
         "installUrl": f"https://play.google.com/store/apps/details?id={cfg['pkg']}",
     }, ensure_ascii=False)
     title_main = t(cfg["title"], "en")
+    noindex = '\n<meta name="robots" content="noindex">' if cfg["slug"] in HIDDEN else ""
     return f'''<!doctype html>
 <html lang="en" data-lang="en">
 <head>
@@ -404,7 +411,7 @@ def page(cfg):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title_main)}</title>
 <meta name="description" content="{esc(cfg['desc'])}">
-<link rel="canonical" href="{url}">
+<link rel="canonical" href="{url}">{noindex}
 <link rel="icon" href="../logo.svg" type="image/svg+xml">
 <meta name="theme-color" content="{cfg['hero'][0]}">
 <meta property="og:type" content="website">
@@ -536,6 +543,8 @@ LANDING_CSS += CSS_EXTRA
 
 # slug, klasör, ad(tr), ad(en), simge, tint, ekran görüntüsü kaynakları {dil: klasör}, yeni-rozet
 APPDEFS = [
+    ("calisan", "CalisanAsistani", "Çalışan Asistanı", "Çalışan Asistanı", "icon.svg", "#2F6F5E", {"tr": "tr"}, "2026-12-15"),
+    ("uzaygunlugu", "UzayGunlugu", "Uzay Günlüğü", "Uzay Günlüğü", "icon.png", "#3A5BC7", {"tr": "tr"}, "2026-12-15"),
     ("sliplines", "OkKacisi", "Sliplines", "Sliplines", "icon.png", "#F08A4B", {"en": "en-US", "tr": "tr-TR", "es": "es-ES", "pt": "pt-BR"}, "2026-11-30"),
     ("game2048", "Game2048", "2048", "2048", "icon.svg", "#EDC22E", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, None),
     ("tictactoe", "TicTacToe", "Tic-Tac-Toe", "Tic-Tac-Toe", "icon.svg", "#4CC9C0", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, None),
@@ -585,9 +594,9 @@ def parse_listing(folder):
         lang = m.group(1)
 
         def block(title):
-            mm = re.search(r"### " + title + r"[^\n]*\n\s*```[^\n]*\n(.*?)\n```", sec, re.S)
+            mm = re.search(r"### (?:" + title + r")[^\n]*\n\s*```[^\n]*\n(.*?)\n```", sec, re.S)
             return mm.group(1).strip() if mm else ""
-        out[lang] = dict(name=block("Uygulama adı"), short=block("Kısa açıklama"), full=block("Tam açıklama"))
+        out[lang] = dict(name=block("Uygulama adı|Başlık"), short=block("Kısa açıklama"), full=block("Tam açıklama"))
     return out
 
 
@@ -627,7 +636,7 @@ def index_pkgs():
     for m in re.finditer(r'data-slug="([a-z0-9]+)" data-pkg="([A-Za-z0-9_.]+)"', s):
         out.setdefault(m.group(1), m.group(2))
     # Eski düzen (yedek): ikon + Play bağlantısındaki id=
-    for m in re.finditer(r'<img (?:class="icon" )?src="([^/"]+)/icon[^>]*>.*?id=([A-Za-z0-9_.]+)', s, re.S):
+    for m in re.finditer(r'<img (?:class="icon" )?src="([^/"]+)/icon[^>]*>.*?details\?id=([A-Za-z0-9_.]+)', s, re.S):
         out.setdefault(m.group(1), m.group(2))
     return out
 
@@ -644,7 +653,7 @@ def build_apps():
         lst = parse_listing(folder)
         langs = list(shotsrc.keys())
         langs = [l for l in (["tr", "en", "es", "pt", "fr"]) if l in langs]
-        cfg = dict(slug=slug, name=nen, names={"tr": ntr, "en": nen, "es": nen, "pt": nen, "fr": nen}, pkg=pk[slug], icon=f"{slug}/{icon}", tint=tint,
+        cfg = dict(slug=slug, name=nen, names={"tr": ntr, "en": nen, "es": nen, "pt": nen, "fr": nen}, pkg=(PKG_FALLBACK.get(slug) or pk[slug]), icon=f"{slug}/{icon}", tint=tint,
                    hero=(darken(tint, .38), darken(tint, .72)), accent=darken(tint, .66), langs=langs, new_until=new,
                    title={}, tagline={}, intro={}, chips=[], bullets=[], note=None,
                    art=(lambda s=slug, i=icon: f'<div class="iconart"><img src="{i}" alt="" width="200" height="200"></div>'))
@@ -675,7 +684,8 @@ for _c in (CARDLES, CUBBLES):
     _c["priv"] = re.findall(r'id="([a-z]{2})"', open(os.path.join(G, _c["slug"], "privacy.html"), encoding="utf-8").read())
 NAME_EN = {c["slug"]: c["name"] for c in ALL}
 ICON = {c["slug"]: c["icon"] for c in ALL}
-ORDER = GAME_SLUGS + [c["slug"] for c in ALL if c["slug"] not in GAME_SLUGS]
+VISIBLE = [c for c in ALL if c["slug"] not in HIDDEN]
+ORDER = GAME_SLUGS + [c["slug"] for c in VISIBLE if c["slug"] not in GAME_SLUGS]
 OTHERS = [(f"../{sl}/", NAME_EN[sl], ICON[sl]) for sl in ORDER]
 
 import base64
@@ -773,7 +783,7 @@ for cfg in ALL:
     open(os.path.join(G, cfg["slug"], "index.html"), "w", encoding="utf-8", newline="\n").write(page(cfg))
 
 # robots + sitemap
-pages = ["", "site-privacy.html"] + [f"{c['slug']}/{x}" for c in ALL for x in ("", "privacy.html")]
+pages = ["", "site-privacy.html"] + [f"{c['slug']}/{x}" for c in VISIBLE for x in ("", "privacy.html")]
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(f"  <url><loc>{BASE}/{p}</loc></url>\n" for p in pages) + "</urlset>\n"
 open(os.path.join(G, "sitemap.xml"), "w", encoding="utf-8", newline="\n").write(sm)
 open(os.path.join(G, "robots.txt"), "w", encoding="utf-8", newline="\n").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")
@@ -783,7 +793,7 @@ _ip = os.path.join(G, "index.html")
 _s = open(_ip, encoding="utf-8").read()
 for _c in APPCFGS:
     _sl = _c["slug"]
-    if f'href="{_sl}/"' in _s:
+    if _sl in HIDDEN or f'href="{_sl}/"' in _s:
         continue
     _a = f'<a class="small" href="{_sl}/privacy.html#tr" lang="tr">'
     assert _s.count(_a) >= 1, _sl
