@@ -623,6 +623,10 @@ def tick_icon(color):
 def index_pkgs():
     s = open(os.path.join(G, "index.html"), encoding="utf-8").read()
     out = {}
+    # Yeni ana sayfa (tools/gen_home.py): her kartta data-slug + data-pkg
+    for m in re.finditer(r'data-slug="([a-z0-9]+)" data-pkg="([A-Za-z0-9_.]+)"', s):
+        out.setdefault(m.group(1), m.group(2))
+    # Eski düzen (yedek): ikon + Play bağlantısındaki id=
     for m in re.finditer(r'<img (?:class="icon" )?src="([^/"]+)/icon[^>]*>.*?id=([A-Za-z0-9_.]+)', s, re.S):
         out.setdefault(m.group(1), m.group(2))
     return out

@@ -69,8 +69,10 @@
     if (!el) return;
     if (el.tagName === "A") {
       var href = el.href || "";
-      if (href.indexOf("play.google.com/store/apps") >= 0) {
+      if (href.indexOf("play.google.com/store/apps/details") >= 0) {
         gtag("event", "play_click", { app: app(href), page_path: location.pathname, transport_type: "beacon" });
+      } else if (href.indexOf("play.google.com/store/apps/dev") >= 0) {
+        gtag("event", "play_dev_click", { page_path: location.pathname, transport_type: "beacon" });
       } else if (el.hostname === h && /\/$|index\.html$|^[^.]*$/.test(el.pathname) && el.pathname !== location.pathname) {
         var parts = el.pathname.split("/").filter(Boolean);
         if (parts.length === 1 && parts[0] !== "site-privacy.html") {

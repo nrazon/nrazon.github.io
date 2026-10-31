@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nesim Apps</title>
-<meta name="description" content="Android games and apps by Nesim Razon: Cardles, Cubbles, Sliplines, 2048, Tic-Tac-Toe, Son Depremler, Age Calculator, BMI Calculator, Where Am I?, National Anthems and more.">
+<meta name="description" content="Android games and apps by Nesim Razon: Cardles, Cubbles, Sliplines, 2048, Tic-Tac-Toe, Son Depremler, Age Calculator, BMI Calculator, Where Am I?, National Anthems and more. Android oyunları ve uygulamaları.">
 <link rel="canonical" href="https://nrazon.github.io/">
 <link rel="icon" href="logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -20,90 +20,114 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <style>
-  :root { --bg:#141829; --card:#1E2440; --text:#F3F4FA; --dim:#A9B0CF; --link:#6EA8FF; --chip:#252C4D; --shadow:0 6px 20px rgba(0,0,0,.28); --accent:#8E6CF0; }
+  :root { --bg:#141829; --card:#1E2440; --text:#F3F4FA; --dim:#A9B0CF; --link:#6EA8FF; --chip:#252C4D; --shadow:0 6px 20px rgba(0,0,0,.28); --accent:#8E6CF0; --line:rgba(255,255,255,.09); }
   @media (prefers-color-scheme: light) {
-    :root { --bg:#F4F5FB; --card:#FFFFFF; --text:#171A2B; --dim:#5B6280; --link:#2F5BD8; --chip:#E6E9F5; --shadow:0 6px 18px rgba(30,40,90,.12); --accent:#6A45D8; }
+    :root { --bg:#F4F5FB; --card:#FFFFFF; --text:#171A2B; --dim:#5B6280; --link:#2F5BD8; --chip:#E6E9F5; --shadow:0 6px 18px rgba(30,40,90,.12); --accent:#6A45D8; --line:rgba(23,26,43,.1); }
   }
   * { box-sizing: border-box; }
+  html { scroll-behavior:smooth; scroll-padding-top:16px; }
   body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
-  main { max-width:1040px; margin:0 auto; padding:40px 16px 64px; }
-  header { display:flex; justify-content:space-between; align-items:flex-start; gap:16px; }
-  header > div:first-child { min-width:0; }
-  h1 { font-size:32px; margin:0; }
-  .lead { color:var(--dim); margin:4px 0 24px; }
+  main { max-width:1040px; margin:0 auto; padding:24px 16px 56px; }
+  a { color:var(--link); }
+  a:focus-visible, button:focus-visible { outline:3px solid var(--accent); outline-offset:2px; }
+  .sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+  /* Üst çubuk */
+  .top { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:12px 16px; }
+  .brand { display:flex; gap:12px; align-items:center; min-width:0; text-decoration:none; color:var(--text); }
+  .logo { width:40px; height:40px; border-radius:10px; flex:none; }
+  .brand b { font-size:22px; font-weight:900; letter-spacing:-.01em; }
+  .topr { display:flex; flex-wrap:wrap; align-items:center; gap:4px 6px; }
+  .topr nav { display:flex; gap:2px; }
+  .topr nav a { color:var(--dim); text-decoration:none; font-weight:600; font-size:15px; padding:8px 12px; border-radius:999px; }
+  .topr nav a:hover { color:var(--text); background:var(--chip); }
   .lang { display:flex; background:var(--card); border-radius:999px; padding:4px; flex:none; box-shadow:var(--shadow); }
   .lang button { border:0; background:none; color:var(--dim); font:inherit; font-weight:700; font-size:14px; padding:6px 14px; border-radius:999px; cursor:pointer; }
   .lang button[aria-pressed="true"] { background:var(--text); color:var(--bg); }
-  /* Öne çıkan */
-  .hero { background:var(--card); border-radius:22px; overflow:hidden; box-shadow:var(--shadow); margin-bottom:20px; }
-  .hero > img { display:block; width:100%; height:auto; }
-  .hero .body { padding:18px 22px 22px; }
-  .tag { display:inline-block; align-self:flex-start; background:var(--accent); color:#fff; font-size:12px; font-weight:800; letter-spacing:.06em; padding:3px 10px; border-radius:999px; margin-bottom:8px; }
+  /* Giriş */
+  .intro { padding:36px 4px 26px; }
+  .eyebrow { display:inline-block; background:var(--chip); color:var(--dim); font-weight:800; font-size:12px; letter-spacing:.09em; text-transform:uppercase; padding:6px 12px; border-radius:999px; margin:0 0 14px; }
+  h1 { font-size:clamp(32px,5.6vw,56px); line-height:1.06; letter-spacing:-.02em; margin:0; font-weight:900; }
+  .lead { color:var(--dim); margin:14px 0 0; font-size:18px; max-width:620px; }
+  .sec { margin:44px 0 6px; font-size:clamp(24px,3.4vw,32px); letter-spacing:-.01em; line-height:1.2; }
+  .sec + .sub { color:var(--dim); margin:0 0 18px; }
+  /* Öne çıkan (Cardles) */
+  .hero { background:var(--card); border-radius:24px; overflow:hidden; box-shadow:var(--shadow); margin:0 0 16px; }
+  .hero .body { padding:20px 22px 24px; display:flex; flex-direction:column; }
   .hero p { margin:0 0 14px; color:var(--dim); }
-  .sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
-  @media (min-width:700px) {
-    .hero { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); align-items:center; }
-    .hero.lite { display:flex; }
-    .hero > img { height:100%; object-fit:cover; }
-    .hero .body { padding:22px 26px; }
-  }
-  .brand { display:flex; gap:14px; align-items:flex-start; min-width:0; }
-  .logo { width:44px; height:44px; border-radius:11px; flex:none; margin-top:2px; }
-  .sec { font-size:13px; font-weight:800; letter-spacing:.09em; text-transform:uppercase; color:var(--dim); margin:28px 0 12px; }
-  .chips { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 14px; padding:0; list-style:none; }
-  .chips li { background:var(--chip); color:var(--text); font-size:13px; font-weight:700; padding:3px 11px; border-radius:999px; }
-  .badge { display:inline-block; vertical-align:middle; background:var(--accent); color:#fff; font-size:11px; font-weight:800; letter-spacing:.06em; padding:2px 8px; border-radius:999px; margin-left:6px; position:relative; top:-1px; }
-  .hero.lite { display:flex; gap:22px; align-items:center; padding:24px; background:linear-gradient(135deg,var(--card),var(--chip)); }
-  .hero.lite .art img { width:112px; height:112px; border-radius:26px; box-shadow:0 6px 18px rgba(0,0,0,.28); display:block; }
-  .hero.lite h2 { font-size:26px; margin:0 0 6px; line-height:1.25; }
-  .hero.lite .body { padding:0; }
-  @media (max-width:560px) { .hero.lite { flex-direction:column; align-items:flex-start; gap:14px; } }
-  /* Öne çıkan alanı: iki hero aynı hücreye üst üste konur; görünmeyen de yer tutar (görünmez), böylece sekme değişince yükseklik ve filtre düğmeleri yerinde kalır. */
-  .spot { display:grid; margin-bottom:20px; }
-  .spot > .hero { grid-area:1 / 1; margin-bottom:0; }
-  .spot > .hero[hidden] { display:grid !important; visibility:hidden; pointer-events:none; }
-  .spot > .hero.lite[hidden] { display:flex !important; }
-  .app { background:linear-gradient(165deg,color-mix(in srgb,var(--tint,var(--card)) 17%,var(--card)) 0%,var(--card) 62%); }
-  .hero-art { position:relative; background:linear-gradient(135deg,#0F6B52,#16A07F); color:#fff; padding:22px 18px 22px 26px; display:flex; flex-direction:column; justify-content:center; gap:6px; overflow:hidden; min-height:258px; }
+  @media (min-width:700px) { .hero { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); align-items:center; } .hero .body { padding:24px 28px; } }
+  .hero-art { position:relative; background:linear-gradient(135deg,#0F6B52,#16A07F); color:#fff; padding:22px 18px 22px 26px; display:flex; flex-direction:column; justify-content:center; gap:6px; overflow:hidden; min-height:270px; }
   .hero-art .ha-text { display:flex; flex-direction:column; position:relative; z-index:1; }
   .hero-art .ha-title { font-size:clamp(34px,4.6vw,46px); font-weight:900; line-height:1; letter-spacing:-.02em; }
   .hero-art .ha-tag { font-weight:650; font-size:clamp(15px,2.6vw,19px); opacity:.95; margin-top:4px; }
   .hero-art svg { width:100%; max-width:420px; height:auto; overflow:visible; align-self:flex-end; margin-top:-6px; }
   @media (min-width:700px) { .hero-art svg { position:absolute; right:-6px; bottom:-6px; width:56%; max-width:none; margin:0; } .hero-art .ha-text { max-width:40%; } }
+  .tag, .badge { display:inline-block; background:var(--accent); color:#fff; font-size:11px; font-weight:800; letter-spacing:.06em; padding:3px 10px; border-radius:999px; }
+  .tag { align-self:flex-start; margin-bottom:8px; } .badge { margin-left:6px; position:relative; top:-2px; padding:2px 8px; }
+  .chips { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 14px; padding:0; list-style:none; }
+  .chips li { background:var(--chip); font-size:13px; font-weight:700; padding:3px 11px; border-radius:999px; }
   .pcard { transition:transform .25s cubic-bezier(.3,1.6,.5,1); transform-box:fill-box; transform-origin:center; }
   .pcard:hover { transform:translateY(-10px); }
   .eye { transform-box:fill-box; transform-origin:center; animation:blink 6s infinite; animation-delay:var(--d,0s); }
   @keyframes blink { 0%,93%,100% { transform:scaleY(1); } 96% { transform:scaleY(.08); } }
-  @media (prefers-reduced-motion: reduce) { .eye { animation:none; } .pcard { transition:none; } }
-  /* Filtre */
-  .filters { display:flex; gap:8px; margin:0 0 16px; flex-wrap:wrap; }
-  .filters button { border:0; background:var(--chip); color:var(--text); font:inherit; font-weight:700; font-size:14px; padding:8px 16px; border-radius:999px; cursor:pointer; }
-  .filters button[aria-pressed="true"] { background:var(--accent); color:#fff; }
-  /* Izgara */
-  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,440px),1fr)); gap:16px; }
-  .app { display:flex; gap:16px; align-items:flex-start; background:var(--card); border-radius:20px; padding:18px; box-shadow:var(--shadow); transition:transform .15s ease, box-shadow .15s ease; }
-  .app:hover { transform:translateY(-2px); }
-  .icon { width:72px; height:72px; border-radius:17px; flex:none; box-shadow:0 3px 10px rgba(0,0,0,.25); }
-  .body { min-width:0; display:flex; flex-direction:column; flex:1; align-self:stretch; }
-  .app h2 { font-size:20px; margin:0 0 4px; line-height:1.3; }
-  .app p { color:var(--dim); margin:0 0 12px; font-size:15px; line-height:1.5; display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden; }
-  .links { display:flex; flex-wrap:wrap; gap:8px 14px; align-items:center; margin-top:auto; }
+  /* Oyun vitrini: Sliplines + Cubbles, gerçek ekran görüntüleriyle */
+  .showgrid { display:grid; gap:16px; grid-template-columns:minmax(0,1fr); margin:0 0 16px; }
+  @media (min-width:760px) { .showgrid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+  .show { position:relative; overflow:hidden; border-radius:24px; color:#fff; padding:22px 22px 0; background:linear-gradient(150deg,var(--a),var(--b)); box-shadow:var(--shadow); display:flex; flex-direction:column; gap:10px; min-height:420px; }
+  .show .icon { width:56px; height:56px; border-radius:14px; box-shadow:0 4px 12px rgba(0,0,0,.35); }
+  .show h3 { margin:0; font-size:28px; line-height:1.15; font-weight:900; letter-spacing:-.01em; }
+  .show h3 a { color:#fff; text-decoration:none; }
+  .show .stag { margin:0; font-weight:700; opacity:.95; }
+  .show .sdesc { margin:0; color:rgba(255,255,255,.82); font-size:15px; line-height:1.5; max-width:430px; }
+  .show .links { margin-top:6px; position:relative; z-index:2; }
+  .show .small { color:#fff; opacity:.9; }
+  .show .badge { background:#fff; color:#222; }
+  .shots { display:flex; justify-content:center; gap:12px; margin:14px 0 -34px; }
+  .shot { width:min(42%,150px); height:auto; border-radius:18px; border:3px solid rgba(255,255,255,.2); box-shadow:0 12px 28px rgba(0,0,0,.4); background:#000; }
+  .shot:nth-child(odd) { transform:rotate(-3deg) translateY(6px); } .shot:nth-child(even) { transform:rotate(3deg); }
+  @media (min-width:520px) { .show .txt { padding-right:4%; } }
+  /* Kompakt kartlar (araçlar ve klasik oyunlar) */
+  .tools { display:grid; gap:12px; grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr)); }
+  @media (min-width:760px) { .tools.two { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+  .tool { position:relative; display:flex; gap:14px; align-items:flex-start; background:linear-gradient(165deg,color-mix(in srgb,var(--tint,var(--card)) 14%,var(--card)) 0%,var(--card) 62%); border-radius:18px; padding:14px 16px; box-shadow:var(--shadow); transition:transform .15s ease; }
+  .tool:hover { transform:translateY(-2px); }
+  .tool .icon { width:56px; height:56px; border-radius:14px; flex:none; box-shadow:0 3px 10px rgba(0,0,0,.25); }
+  .tbody { min-width:0; flex:1; }
+  .tool h3 { margin:0 0 2px; font-size:17px; line-height:1.3; }
+  .stretch { color:var(--text); text-decoration:none; }
+  .stretch::after { content:""; position:absolute; inset:0; border-radius:18px; }
+  .show .stretch::after { border-radius:24px; z-index:1; }
+  .tool p { margin:0 0 8px; color:var(--dim); font-size:14px; line-height:1.45; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+  .chip { display:inline-block; vertical-align:middle; background:var(--chip); color:var(--dim); font-size:10.5px; font-weight:800; letter-spacing:.06em; padding:2px 8px; border-radius:999px; margin-left:4px; position:relative; top:-1px; }
+  .chip.pop { background:var(--accent); color:#fff; }
+  .gp { position:relative; z-index:2; display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:700; color:var(--link); text-decoration:none; padding:5px 11px; border:1.5px solid var(--line); border-radius:999px; }
+  .gp:hover { background:var(--chip); }
+  .tool.soon { border:1.5px dashed var(--line); box-shadow:none; background:transparent; }
+  .tool.soon:hover { transform:none; }
+  .tool.soon .small { margin-right:10px; position:relative; z-index:2; }
+  .links { display:flex; flex-wrap:wrap; gap:8px 14px; align-items:center; }
   .play img { height:44px; width:auto; display:block; }
   .small { color:var(--link); font-size:14px; }
-  .soon { display:inline-flex; align-items:center; background:transparent; color:var(--dim); border:1.5px dashed var(--dim); font-weight:700; padding:7px 16px; border-radius:999px; }
-  footer { color:var(--dim); font-size:14px; margin-top:32px; }
-  a { color:var(--link); }
-  a:focus-visible, button:focus-visible { outline:3px solid var(--accent); outline-offset:2px; }
+  /* Hakkımda */
+  .about { margin-top:48px; display:flex; flex-wrap:wrap; gap:22px 28px; align-items:center; background:var(--card); border-radius:24px; padding:26px; box-shadow:var(--shadow); }
+  .about img { width:96px; height:96px; border-radius:50%; flex:none; object-fit:cover; box-shadow:0 4px 14px rgba(0,0,0,.3); }
+  .about .abody { flex:1 1 320px; min-width:0; }
+  .about h2 { margin:0 0 8px; font-size:26px; line-height:1.2; }
+  .about p { margin:0 0 16px; color:var(--dim); }
+  .contacts { display:flex; flex-wrap:wrap; gap:8px; }
+  .contacts a { display:inline-block; text-decoration:none; font-weight:700; font-size:14px; padding:9px 16px; border-radius:999px; background:var(--chip); color:var(--text); }
+  .contacts a.main { background:var(--accent); color:#fff; }
+  .contacts a:hover { filter:brightness(1.1); }
+  /* Alt bilgi */
+  footer { color:var(--dim); font-size:14px; margin-top:36px; }
+  footer .row { display:flex; flex-wrap:wrap; gap:6px 14px; align-items:center; }
+  footer details { margin-top:12px; }
+  footer summary { cursor:pointer; font-weight:600; }
+  footer ul { list-style:none; padding:0; margin:10px 0 0; display:grid; gap:4px 18px; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); }
   /* Dil: <html class="tr"> ya da "en"; diğer dildeki metinler gizlenir. */
   html.tr [lang]:not([lang="tr"]):not(html), html.en [lang]:not([lang="en"]):not(html), html.es [lang]:not([lang="es"]):not(html), html.pt [lang]:not([lang="pt"]):not(html) { display:none; }
   [hidden] { display:none !important; }
-  @media (prefers-reduced-motion: reduce) { .app { transition:none; } .app:hover { transform:none; } }
-  @media (max-width:560px) {
-    main { padding-top:24px; }
-    h1 { font-size:26px; }
-    .app { padding:14px; gap:12px; }
-    .icon { width:60px; height:60px; border-radius:14px; }
-  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } .eye { animation:none; } .pcard, .tool { transition:none; } .tool:hover { transform:none; } }
+  @media (max-width:560px) { .intro { padding-top:24px; } .about { padding:20px; } .topr nav a { padding:8px 9px; font-size:14px; } }
 </style>
 <script src="/analytics.js?v=1" defer></script>
 <script>
@@ -121,15 +145,6 @@
     try { localStorage.setItem("lang", lang); } catch (e) {}
     document.querySelectorAll(".lang button").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.lang === lang); });
   }
-  // Filtre: #games / #apps (bağlantıyla paylaşılabilir), varsayılan hepsi.
-  function setFilter(f) {
-    if (f !== "games" && f !== "apps") f = "all";
-    document.querySelectorAll("[data-cat]").forEach(function (el) { el.hidden = f !== "all" && el.dataset.cat !== f; });
-    document.querySelectorAll("[data-show]").forEach(function (el) { el.hidden = el.dataset.show.split(",").indexOf(f) < 0; });
-    document.querySelectorAll("[data-dup]").forEach(function (el) { el.hidden = el.dataset.dup === f; });
-    document.querySelectorAll(".filters button").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.filter === f); });
-    if (history.replaceState) history.replaceState(null, "", f === "all" ? location.pathname + location.search : "#" + f);
-  }
   // "Yeni" rozetleri tarihi geçince kendiliğinden kalkar (data-new-until: yyyy-mm-dd).
   function expireBadges() {
     var today = new Date().toISOString().slice(0, 10);
@@ -139,24 +154,27 @@
 </head>
 <body>
 <main>
-  <header>
-    <div class="brand">
-      <img class="logo" src="logo.svg" alt="" width="44" height="44">
-      <div>
-      <h1>Nesim Apps</h1>
-      <p class="lead"><span lang="tr">Nesim Razon'un Android uygulamaları ve oyunları</span><span lang="en">Android apps and games by Nesim Razon</span><span lang="es">Aplicaciones y juegos de Android de Nesim Razon</span><span lang="pt">Aplicativos e jogos Android de Nesim Razon</span></p>
+  <div class="top">
+    <a class="brand" href="#top"><img class="logo" src="logo.svg" alt="" width="40" height="40"><b>Nesim Apps</b></a>
+    <div class="topr">
+      <nav aria-label="Menu"><a href="#games"><span lang="tr">Oyunlar</span><span lang="en">Games</span><span lang="es">Juegos</span><span lang="pt">Jogos</span></a><a href="#apps"><span lang="tr">Uygulamalar</span><span lang="en">Apps</span><span lang="es">Apps</span><span lang="pt">Apps</span></a><a href="#about"><span lang="tr">Hakkımda</span><span lang="en">About</span><span lang="es">Acerca de</span><span lang="pt">Sobre</span></a></nav>
+      <div class="lang" role="group" aria-label="Language / Dil">
+        <button type="button" data-lang="tr" onclick="setLang('tr')">TR</button>
+        <button type="button" data-lang="en" onclick="setLang('en')">EN</button>
+        <button type="button" data-lang="es" onclick="setLang('es')">ES</button>
+        <button type="button" data-lang="pt" onclick="setLang('pt')">PT</button>
       </div>
     </div>
-    <div class="lang" role="group" aria-label="Language / Dil">
-      <button type="button" data-lang="tr" onclick="setLang('tr')">TR</button>
-      <button type="button" data-lang="en" onclick="setLang('en')">EN</button>
-      <button type="button" data-lang="es" onclick="setLang('es')">ES</button>
-      <button type="button" data-lang="pt" onclick="setLang('pt')">PT</button>
-    </div>
-  </header>
+  </div>
 
-  <div class="spot">
-  <section class="hero" data-show="all,games">
+  <div class="intro" id="top">
+    <p class="eyebrow"><span lang="tr">Bağımsız Android geliştiricisi</span><span lang="en">Independent Android developer</span><span lang="es">Desarrollador Android independiente</span><span lang="pt">Desenvolvedor Android independente</span></p>
+    <h1><span lang="tr">Güldüren oyunlar,<br>işe yarayan uygulamalar.</span><span lang="en">Games that make you smile,<br>apps that get things done.</span><span lang="es">Juegos que hacen sonreír,<br>apps que sirven de verdad.</span><span lang="pt">Jogos que fazem sorrir,<br>apps que resolvem.</span></h1>
+    <p class="lead"><span lang="tr">Nesim Razon'un Android oyunları ve uygulamaları</span><span lang="en">Android games and apps by Nesim Razon</span><span lang="es">Juegos y aplicaciones de Android de Nesim Razon</span><span lang="pt">Jogos e aplicativos Android de Nesim Razon</span></p>
+  </div>
+
+  <section id="games">
+  <section class="hero" data-slug="cardles" data-pkg="com.cardles.nesimapps">
     <h2 class="sr">Cardles</h2>
     <div class="hero-art">
       <div class="ha-text">
@@ -191,281 +209,176 @@
     </div>
     <div class="body">
       <span class="tag" data-new-until="2026-12-15"><span lang="tr">YENİ OYUN</span><span lang="en">NEW GAME</span><span lang="es">JUEGO NUEVO</span><span lang="pt">JOGO NOVO</span></span>
-      <p lang="tr">Dört klasik solitaire tek uygulamada: sevimli yüzlü kartlarla Klondike, Spider, FreeCell ve TriPeaks. Günlük meydan okuma, seriler, ipuçları ve temalar.</p>
-      <p lang="en">Four classic solitaire games in one app, played with cards that have cute faces: Klondike, Spider, FreeCell and TriPeaks. A daily challenge, streaks, hints and themes.</p><p lang="es">Cuatro solitarios clásicos en una sola app, con cartas de caritas adorables: Klondike, Spider, FreeCell y TriPeaks. Reto diario, rachas, pistas y temas.</p><p lang="pt">Quatro paciências clássicas em um só app, com cartas de carinhas fofas: Klondike, Spider, FreeCell e TriPeaks. Desafio diário, sequências, dicas e temas.</p>
+      <p lang="tr">Dört klasik solitaire tek uygulamada: sevimli yüzlü kartlarla Klondike, Spider, FreeCell ve TriPeaks. Günlük meydan okuma, seriler, ipuçları ve temalar.</p><p lang="en">Four classic solitaire games in one app, played with cards that have cute faces: Klondike, Spider, FreeCell and TriPeaks. A daily challenge, streaks, hints and themes.</p><p lang="es">Cuatro solitarios clásicos en una sola app, con cartas de caritas adorables: Klondike, Spider, FreeCell y TriPeaks. Reto diario, rachas, pistas y temas.</p><p lang="pt">Quatro paciências clássicas em um só app, com cartas de carinhas fofas: Klondike, Spider, FreeCell e TriPeaks. Desafio diário, sequências, dicas e temas.</p>
       <ul class="chips"><li>Klondike</li><li>Spider</li><li>FreeCell</li><li>TriPeaks</li></ul>
-      <div class="links">
-        <a class="play" href="https://play.google.com/store/apps/details?id=com.cardles.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img lang="tr" src="badges/google-play-tr.svg" alt="Google Play'den indir"><img lang="en" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="es" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="pt" src="badges/google-play-en.svg" alt="Get it on Google Play"></a>
-        <a class="small" href="cardles/" lang="tr"><b>Daha fazla</b></a>
-        <a class="small" href="cardles/" lang="en"><b>Learn more</b></a><a class="small" href="cardles/" lang="es"><b>Más información</b></a><a class="small" href="cardles/" lang="pt"><b>Saiba mais</b></a>
-        <a class="small" href="cardles/privacy.html#tr" lang="tr">Gizlilik Politikası</a>
-        <a class="small" href="cardles/privacy.html#en" lang="en">Privacy Policy</a><a class="small" href="cardles/privacy.html#es" lang="es">Política de privacidad</a><a class="small" href="cardles/privacy.html#pt" lang="pt">Política de privacidade</a>
+      <div class="links"><a class="play" href="https://play.google.com/store/apps/details?id=com.cardles.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img lang="tr" src="badges/google-play-tr.svg" alt="Google Play&#x27;den indir"><img lang="en" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="es" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="pt" src="badges/google-play-en.svg" alt="Get it on Google Play"></a><a class="small" href="cardles/"><b lang="tr">Daha fazla</b><b lang="en">Learn more</b><b lang="es">Más información</b><b lang="pt">Saiba mais</b></a></div>
+    </div>
+  </section>
+    <div class="showgrid">
+    <article class="show" style="--a:#64391F;--b:#BB6B3A" data-slug="sliplines" data-pkg="com.sliplines.nesimapps">
+      <img class="icon" src="sliplines/icon.png" alt="" width="64" height="64" loading="lazy">
+      <div class="txt">
+        <h3><a class="stretch" href="sliplines/">Sliplines</a> <span class="badge" data-new-until="2026-11-30"><span lang="tr">YENİ</span><span lang="en">NEW</span><span lang="es">NUEVO</span><span lang="pt">NOVO</span></span></h3>
+        <p class="stag"><span lang="tr">Okları doğru sırayla kaydır</span><span lang="en">Slide the arrows out in order</span><span lang="es">Saca las flechas en orden</span><span lang="pt">Deslize as setas na ordem certa</span></p>
+        <p lang="tr" class="sdesc">Okları doğru sırayla kaydırıp tahtayı boşalttığın bir bulmaca oyunu. Yüzlerce seviye, dünya sıralamalı Günün Bulmacası ve toplanacak rozetler.</p><p lang="en" class="sdesc">An arrow puzzle game: slide the arrows out in the right order and clear the board. Hundreds of levels, a Daily Puzzle with a global leaderboard, and badges to collect.</p><p lang="es" class="sdesc">Un puzle de flechas: saca las flechas en el orden correcto y despeja el tablero. Cientos de niveles, un Reto diario con clasificación mundial e insignias para coleccionar.</p><p lang="pt" class="sdesc">Um quebra-cabeça de setas: tire as setas na ordem certa e limpe o tabuleiro. Centenas de níveis, um Desafio diário com classificação mundial e emblemas para colecionar.</p>
+        <div class="links"><a class="play" href="https://play.google.com/store/apps/details?id=com.sliplines.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img lang="tr" src="badges/google-play-tr.svg" alt="Google Play&#x27;den indir"><img lang="en" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="es" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="pt" src="badges/google-play-en.svg" alt="Get it on Google Play"></a><a class="small" href="sliplines/"><b lang="tr">Daha fazla</b><b lang="en">Learn more</b><b lang="es">Más información</b><b lang="pt">Saiba mais</b></a></div>
       </div>
+      <div class="shots" aria-hidden="true"><img class="shot" lang="tr" src="sliplines/shots/tr/01.jpg" alt="" loading="lazy" width="150" height="267"><img class="shot" lang="en" src="sliplines/shots/en/01.jpg" alt="" loading="lazy" width="150" height="267"><img class="shot" lang="es" src="sliplines/shots/es/01.jpg" alt="" loading="lazy" width="150" height="267"><img class="shot" lang="pt" src="sliplines/shots/pt/01.jpg" alt="" loading="lazy" width="150" height="267"><img class="shot" lang="tr" src="sliplines/shots/tr/02.jpg" alt="" loading="lazy" width="150" height="267"><img class="shot" lang="en" src="sliplines/shots/en/02.jpg" alt="" loading="lazy" width="150" height="267"><img class="shot" lang="es" src="sliplines/shots/es/02.jpg" alt="" loading="lazy" width="150" height="267"><img class="shot" lang="pt" src="sliplines/shots/pt/02.jpg" alt="" loading="lazy" width="150" height="267"></div>
+    </article>
+    <article class="show" style="--a:#342654;--b:#60479C" data-slug="cubbles" data-pkg="com.cubbles.nesimapps">
+      <img class="icon" src="cubbles/icon.svg" alt="" width="64" height="64" loading="lazy">
+      <div class="txt">
+        <h3><a class="stretch" href="cubbles/">Cubbles</a> <span class="badge" data-new-until="2026-11-30"><span lang="tr">YENİ</span><span lang="en">NEW</span><span lang="es">NUEVO</span><span lang="pt">NOVO</span></span></h3>
+        <p class="stag"><span lang="tr">Sevimli yüzlü blok bulmaca</span><span lang="en">A block puzzle with cute faces</span><span lang="es">Puzle de bloques con caritas</span><span lang="pt">Quebra-cabeça de blocos com carinhas</span></p>
+        <p lang="tr" class="sdesc">Sevimli yüzlü bloklarla bulmaca: blokları tahtaya sürükle, satır ve sütunları doldurup temizle, kombolar yap. Günlük meydan okuma, görevler ve temalar.</p><p lang="en" class="sdesc">A block puzzle with cute faces: drag blocks onto the board, fill rows and columns to clear them and chain combos. Daily challenge, quests and themes.</p><p lang="es" class="sdesc">Un puzle de bloques con caritas adorables: arrastra bloques al tablero, completa filas y columnas para limpiarlas y encadena combos. Reto diario, misiones y temas.</p><p lang="pt" class="sdesc">Um quebra-cabeça de blocos com carinhas fofas: arraste blocos para o tabuleiro, complete linhas e colunas para limpá-las e encadeie combos. Desafio diário, missões e temas.</p>
+        <div class="links"><a class="play" href="https://play.google.com/store/apps/details?id=com.cubbles.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img lang="tr" src="badges/google-play-tr.svg" alt="Google Play&#x27;den indir"><img lang="en" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="es" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="pt" src="badges/google-play-en.svg" alt="Get it on Google Play"></a><a class="small" href="cubbles/"><b lang="tr">Daha fazla</b><b lang="en">Learn more</b><b lang="es">Más información</b><b lang="pt">Saiba mais</b></a></div>
+      </div>
+      <div class="shots" aria-hidden="true"><img class="shot" lang="tr" src="cubbles/shots/tr/01.png" alt="" loading="lazy" width="150" height="267"><img class="shot" lang="en" src="cubbles/shots/en/01.png" alt="" loading="lazy" width="150" height="267"><img class="shot" lang="es" src="cubbles/shots/en/01.png" alt="" loading="lazy" width="150" height="267"><img class="shot" lang="pt" src="cubbles/shots/en/01.png" alt="" loading="lazy" width="150" height="267"><img class="shot" lang="tr" src="cubbles/shots/tr/02.png" alt="" loading="lazy" width="150" height="267"><img class="shot" lang="en" src="cubbles/shots/en/02.png" alt="" loading="lazy" width="150" height="267"><img class="shot" lang="es" src="cubbles/shots/en/02.png" alt="" loading="lazy" width="150" height="267"><img class="shot" lang="pt" src="cubbles/shots/en/02.png" alt="" loading="lazy" width="150" height="267"></div>
+    </article>
+    </div>
+    <div class="tools two">
+      <article class="tool" style="--tint:#EDC22E" data-slug="game2048" data-pkg="com.game2048.nesimapps">
+        <img class="icon" src="game2048/icon.svg" alt="" width="64" height="64" loading="lazy">
+        <div class="tbody">
+          <h3><a class="stretch" href="game2048/"><span lang="tr">2048</span><span lang="en">2048</span><span lang="es">2048</span><span lang="pt">2048</span></a></h3>
+          <p lang="tr">Klasik sayı bulmacası: kaydır, aynı sayıları birleştir, 2048 taşına ulaş.</p><p lang="en">The classic number puzzle: swipe, merge matching numbers and reach the 2048 tile.</p><p lang="es">El clásico puzle de números: desliza, combina números iguales y llega a la ficha 2048.</p><p lang="pt">O clássico quebra-cabeça de números: deslize, combine números iguais e chegue à peça 2048.</p>
+          <a class="gp" href="https://play.google.com/store/apps/details?id=com.game2048.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a>
+        </div>
+      </article>
+      <article class="tool" style="--tint:#4CC9C0" data-slug="tictactoe" data-pkg="com.tictactoe.nesimapps">
+        <img class="icon" src="tictactoe/icon.svg" alt="" width="64" height="64" loading="lazy">
+        <div class="tbody">
+          <h3><a class="stretch" href="tictactoe/"><span lang="tr">Tic-Tac-Toe</span><span lang="en">Tic-Tac-Toe</span><span lang="es">Tic-Tac-Toe</span><span lang="pt">Tic-Tac-Toe</span></a></h3>
+          <p lang="tr">Bilgisayara karşı klasik XOX: Kolay, Orta ya da Zor. Zor seviyede bilgisayar hiç kaybetmez.</p><p lang="en">Classic Tic-Tac-Toe against the computer: Easy, Medium or Hard. On Hard it never loses.</p><p lang="es">El clásico tres en raya contra el ordenador: Fácil, Medio o Difícil. En Difícil nunca pierde.</p><p lang="pt">O clássico jogo da velha contra o computador: Fácil, Médio ou Difícil. No Difícil ele nunca perde.</p>
+          <a class="gp" href="https://play.google.com/store/apps/details?id=com.tictactoe.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a>
+        </div>
+      </article>
     </div>
   </section>
 
-  <section class="hero lite" data-show="apps">
-    <div class="art"><img src="sansoyunlari/icon.svg" alt="" width="112" height="112"></div>
-    <div class="body">
-      <span class="tag"><span lang="tr">POPÜLER</span><span lang="en">POPULAR</span><span lang="es">POPULAR</span><span lang="pt">POPULAR</span></span>
-      <h2>Şans Oyunları</h2>
-      <p lang="tr">Sayısal Loto, Süper Loto, Şans Topu, On Numara ve Milli Piyango sonuçları; kupon üret, kuponun tuttu mu gör.</p>
-      <p lang="en">Results of the Turkish lotteries (Sayısal Loto, Süper Loto, Şans Topu, On Numara, Milli Piyango), random tickets and ticket checking.</p><p lang="es">Resultados de las loterías turcas (Sayısal Loto, Süper Loto, Şans Topu, On Numara, Milli Piyango), boletos aleatorios y comprobación de boletos.</p><p lang="pt">Resultados das loterias turcas (Sayısal Loto, Süper Loto, Şans Topu, On Numara, Milli Piyango), bilhetes aleatórios e conferência de bilhetes.</p>
-      <div class="links">
-        <a class="play" href="https://play.google.com/store/apps/details?id=com.nesim.sansoyunlari&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img lang="tr" src="badges/google-play-tr.svg" alt="Google Play'den indir"><img lang="en" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="es" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="pt" src="badges/google-play-en.svg" alt="Get it on Google Play"></a>
-        <a class="small" href="sansoyunlari/" lang="tr"><b>Daha fazla</b></a>
-            <a class="small" href="sansoyunlari/" lang="en"><b>Learn more</b></a><a class="small" href="sansoyunlari/" lang="es"><b>Más información</b></a><a class="small" href="sansoyunlari/" lang="pt"><b>Saiba mais</b></a>
-            <a class="small" href="sansoyunlari/privacy.html#tr" lang="tr">Gizlilik Politikası</a>
-        <a class="small" href="sansoyunlari/privacy.html#en" lang="en">Privacy Policy</a><a class="small" href="sansoyunlari/privacy.html#en" lang="es">Política de privacidad</a><a class="small" href="sansoyunlari/privacy.html#en" lang="pt">Política de privacidade</a>
-      </div>
-    </div>
-  </section>
-  </div>
-
-  <nav class="filters" aria-label="Filter">
-    <button type="button" data-filter="all" onclick="setFilter('all')"><span lang="tr">Tümü</span><span lang="en">All</span><span lang="es">Todo</span><span lang="pt">Tudo</span></button>
-    <button type="button" data-filter="games" onclick="setFilter('games')"><span lang="tr">Oyunlar</span><span lang="en">Games</span><span lang="es">Juegos</span><span lang="pt">Jogos</span></button>
-    <button type="button" data-filter="apps" onclick="setFilter('apps')"><span lang="tr">Uygulamalar</span><span lang="en">Apps</span><span lang="es">Apps</span><span lang="pt">Apps</span></button>
-  </nav>
-
-  <div data-cat="games">
-    <h2 class="sec"><span lang="tr">Oyunlar</span><span lang="en">Games</span><span lang="es">Juegos</span><span lang="pt">Jogos</span></h2>
-    <div class="grid">
-      <section class="app" style="--tint:#7C5CC9">
-        <img class="icon" src="cubbles/icon.svg" alt="Cubbles" width="72" height="72" loading="lazy">
-        <div class="body">
-          <h2>Cubbles <span class="badge" data-new-until="2026-11-30"><span lang="tr">YENİ</span><span lang="en">NEW</span><span lang="es">NUEVO</span><span lang="pt">NOVO</span></span></h2>
-          <p lang="tr">Sevimli yüzlü bloklarla bulmaca: blokları tahtaya sürükle, satır ve sütunları doldurup temizle, kombolar yap. Günlük meydan okuma, görevler ve temalar.</p>
-          <p lang="en">A block puzzle with cute faces: drag blocks onto the board, fill rows and columns to clear them and chain combos. Daily challenge, quests and themes.</p><p lang="es">Un puzle de bloques con caritas adorables: arrastra bloques al tablero, completa filas y columnas para limpiarlas y encadena combos. Reto diario, misiones y temas.</p><p lang="pt">Um quebra-cabeça de blocos com carinhas fofas: arraste blocos para o tabuleiro, complete linhas e colunas para limpá-las e encadeie combos. Desafio diário, missões e temas.</p>
-          <div class="links">
-            <a class="play" href="https://play.google.com/store/apps/details?id=com.cubbles.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img lang="tr" src="badges/google-play-tr.svg" alt="Google Play'den indir"><img lang="en" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="es" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="pt" src="badges/google-play-en.svg" alt="Get it on Google Play"></a>
-            <a class="small" href="cubbles/" lang="tr"><b>Daha fazla</b></a>
-            <a class="small" href="cubbles/" lang="en"><b>Learn more</b></a><a class="small" href="cubbles/" lang="es"><b>Más información</b></a><a class="small" href="cubbles/" lang="pt"><b>Saiba mais</b></a>
-            <a class="small" href="cubbles/privacy.html#tr" lang="tr">Gizlilik Politikası</a>
-            <a class="small" href="cubbles/privacy.html#en" lang="en">Privacy Policy</a><a class="small" href="cubbles/privacy.html#es" lang="es">Política de privacidad</a><a class="small" href="cubbles/privacy.html#pt" lang="pt">Política de privacidade</a>
-          </div>
-        </div>
-      </section>
-      <section class="app" style="--tint:#F08A4B">
-        <img class="icon" src="sliplines/icon.png" alt="Sliplines" width="72" height="72" loading="lazy">
-        <div class="body">
-          <h2>Sliplines <span class="badge" data-new-until="2026-11-30"><span lang="tr">YENİ</span><span lang="en">NEW</span><span lang="es">NUEVO</span><span lang="pt">NOVO</span></span></h2>
-          <p lang="tr">Okları doğru sırayla kaydırıp tahtayı boşalttığın bir bulmaca oyunu. Yüzlerce seviye, dünya sıralamalı Günün Bulmacası ve toplanacak rozetler.</p>
-          <p lang="en">An arrow puzzle game: slide the arrows out in the right order and clear the board. Hundreds of levels, a Daily Puzzle with a global leaderboard, and badges to collect.</p><p lang="es">Un puzle de flechas: saca las flechas en el orden correcto y despeja el tablero. Cientos de niveles, un Reto diario con clasificación mundial e insignias para coleccionar.</p><p lang="pt">Um quebra-cabeça de setas: tire as setas na ordem certa e limpe o tabuleiro. Centenas de níveis, um Desafio diário com classificação mundial e emblemas para colecionar.</p>
-          <div class="links">
-            <a class="play" href="https://play.google.com/store/apps/details?id=com.sliplines.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img lang="tr" src="badges/google-play-tr.svg" alt="Google Play'den indir"><img lang="en" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="es" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="pt" src="badges/google-play-en.svg" alt="Get it on Google Play"></a>
-            <a class="small" href="sliplines/" lang="tr"><b>Daha fazla</b></a>
-            <a class="small" href="sliplines/" lang="en"><b>Learn more</b></a><a class="small" href="sliplines/" lang="es"><b>Más información</b></a><a class="small" href="sliplines/" lang="pt"><b>Saiba mais</b></a>
-            <a class="small" href="sliplines/privacy.html#tr" lang="tr">Gizlilik Politikası</a>
-            <a class="small" href="sliplines/privacy.html#en" lang="en">Privacy Policy</a><a class="small" href="sliplines/privacy.html#es" lang="es">Política de privacidad</a><a class="small" href="sliplines/privacy.html#pt" lang="pt">Política de privacidade</a>
-          </div>
-        </div>
-      </section>
-      <section class="app" style="--tint:#EDC22E">
-        <img class="icon" src="game2048/icon.svg" alt="2048" width="72" height="72" loading="lazy">
-        <div class="body">
-          <h2>2048</h2>
-          <p lang="tr">Klasik sayı bulmacası: kaydır, aynı sayıları birleştir, 2048 taşına ulaş.</p>
-          <p lang="en">The classic number puzzle: swipe, merge matching numbers and reach the 2048 tile.</p><p lang="es">El clásico puzle de números: desliza, combina números iguales y llega a la ficha 2048.</p><p lang="pt">O clássico quebra-cabeça de números: deslize, combine números iguais e chegue à peça 2048.</p>
-          <div class="links">
-            <a class="play" href="https://play.google.com/store/apps/details?id=com.game2048.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img lang="tr" src="badges/google-play-tr.svg" alt="Google Play'den indir"><img lang="en" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="es" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="pt" src="badges/google-play-en.svg" alt="Get it on Google Play"></a>
-            <a class="small" href="game2048/" lang="tr"><b>Daha fazla</b></a>
-            <a class="small" href="game2048/" lang="en"><b>Learn more</b></a><a class="small" href="game2048/" lang="es"><b>Más información</b></a><a class="small" href="game2048/" lang="pt"><b>Saiba mais</b></a>
-            <a class="small" href="game2048/privacy.html#tr" lang="tr">Gizlilik Politikası</a>
-            <a class="small" href="game2048/privacy.html#en" lang="en">Privacy Policy</a><a class="small" href="game2048/privacy.html#es" lang="es">Política de privacidad</a><a class="small" href="game2048/privacy.html#pt" lang="pt">Política de privacidade</a>
-          </div>
-        </div>
-      </section>
-      <section class="app" style="--tint:#4CC9C0">
-        <img class="icon" src="tictactoe/icon.svg" alt="Tic-Tac-Toe" width="72" height="72" loading="lazy">
-        <div class="body">
-          <h2>Tic-Tac-Toe</h2>
-          <p lang="tr">Bilgisayara karşı klasik XOX: Kolay, Orta ya da Zor. Zor seviyede bilgisayar hiç kaybetmez.</p>
-          <p lang="en">Classic Tic-Tac-Toe against the computer: Easy, Medium or Hard. On Hard it never loses.</p><p lang="es">El clásico tres en raya contra el ordenador: Fácil, Medio o Difícil. En Difícil nunca pierde.</p><p lang="pt">O clássico jogo da velha contra o computador: Fácil, Médio ou Difícil. No Difícil ele nunca perde.</p>
-          <div class="links">
-            <a class="play" href="https://play.google.com/store/apps/details?id=com.tictactoe.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img lang="tr" src="badges/google-play-tr.svg" alt="Google Play'den indir"><img lang="en" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="es" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="pt" src="badges/google-play-en.svg" alt="Get it on Google Play"></a>
-            <a class="small" href="tictactoe/" lang="tr"><b>Daha fazla</b></a>
-            <a class="small" href="tictactoe/" lang="en"><b>Learn more</b></a><a class="small" href="tictactoe/" lang="es"><b>Más información</b></a><a class="small" href="tictactoe/" lang="pt"><b>Saiba mais</b></a>
-            <a class="small" href="tictactoe/privacy.html#tr" lang="tr">Gizlilik Politikası</a>
-            <a class="small" href="tictactoe/privacy.html#en" lang="en">Privacy Policy</a><a class="small" href="tictactoe/privacy.html#es" lang="es">Política de privacidad</a><a class="small" href="tictactoe/privacy.html#pt" lang="pt">Política de privacidade</a>
-          </div>
-        </div>
-      </section>
-    </div>
-  </div>
-  <div data-cat="apps">
+  <section id="apps">
     <h2 class="sec"><span lang="tr">Uygulamalar</span><span lang="en">Apps</span><span lang="es">Apps</span><span lang="pt">Apps</span></h2>
-    <div class="grid">
-      <!-- Yayına çıkınca: "badge" yakında rozeti yerine data-new-until'li YENİ rozeti, links'e Play düğmesi (Şans kartındaki gibi) -->
-      <section class="app" style="--tint:#2F6F5E">
-        <img class="icon" src="calisan/icon.svg" alt="Çalışan Asistanı" width="72" height="72" loading="lazy">
-        <div class="body">
-          <h2>Çalışan Asistanı <span class="badge"><span lang="tr">YAKINDA</span><span lang="en">COMING SOON</span><span lang="es">PRÓXIMAMENTE</span><span lang="pt">EM BREVE</span></span></h2>
-          <p lang="tr">Net maaş, kıdem ve ihbar tazminatı, fazla mesai ve izin planı tek uygulamada. Türkiye'deki çalışanlar için; Google Play'de çok yakında.</p>
-          <p lang="en">Net salary, severance and notice pay, overtime and leave planning in one app, for employees in Turkey (Turkish only). Coming soon to Google Play.</p><p lang="es">Salario neto, indemnización por despido y preaviso, horas extra y planificación de vacaciones en una sola app, para empleados en Turquía (solo en turco). Próximamente en Google Play.</p><p lang="pt">Salário líquido, indenização e aviso prévio, horas extras e planejamento de folgas em um só app, para trabalhadores na Turquia (só em turco). Em breve no Google Play.</p>
-          <div class="links">
-            <a class="small" href="calisan/privacy.html#tr" lang="tr">Gizlilik Politikası</a>
-            <a class="small" href="calisan/privacy.html#en" lang="en">Privacy Policy</a><a class="small" href="calisan/privacy.html#en" lang="es">Política de privacidad</a><a class="small" href="calisan/privacy.html#en" lang="pt">Política de privacidade</a>
-          </div>
+    <p class="sub"><span lang="tr">Gündelik işler için küçük yardımcılar.</span><span lang="en">Small helpers for everyday tasks.</span><span lang="es">Pequeños ayudantes para el día a día.</span><span lang="pt">Pequenos ajudantes para o dia a dia.</span></p>
+    <div class="tools">
+      <article class="tool" style="--tint:#F2B23A" data-slug="sansoyunlari" data-pkg="com.nesim.sansoyunlari">
+        <img class="icon" src="sansoyunlari/icon.svg" alt="" width="64" height="64" loading="lazy">
+        <div class="tbody">
+          <h3><a class="stretch" href="sansoyunlari/"><span lang="tr">Şans Oyunları</span><span lang="en">Şans Oyunları</span><span lang="es">Şans Oyunları</span><span lang="pt">Şans Oyunları</span></a> <span class="chip pop"><span lang="tr">POPÜLER</span><span lang="en">POPULAR</span><span lang="es">POPULAR</span><span lang="pt">POPULAR</span></span></h3>
+          <p lang="tr">Sayısal Loto, Süper Loto, Şans Topu, On Numara ve Milli Piyango sonuçları; kupon üret, kuponun tuttu mu gör.</p><p lang="en">Results of the Turkish lotteries (Sayısal Loto, Süper Loto, Şans Topu, On Numara, Milli Piyango), random tickets and ticket checking.</p><p lang="es">Resultados de las loterías turcas (Sayısal Loto, Süper Loto, Şans Topu, On Numara, Milli Piyango), boletos aleatorios y comprobación de boletos.</p><p lang="pt">Resultados das loterias turcas (Sayısal Loto, Süper Loto, Şans Topu, On Numara, Milli Piyango), bilhetes aleatórios e conferência de bilhetes.</p>
+          <a class="gp" href="https://play.google.com/store/apps/details?id=com.nesim.sansoyunlari&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a>
         </div>
-      </section>
-      <section class="app" style="--tint:#3A5BC7">
-        <img class="icon" src="uzaygunlugu/icon.png" alt="Uzay Günlüğü" width="72" height="72" loading="lazy">
-        <div class="body">
-          <h2>Uzay Günlüğü <span class="badge"><span lang="tr">YAKINDA</span><span lang="en">COMING SOON</span><span lang="es">PRÓXIMAMENTE</span><span lang="pt">EM BREVE</span></span></h2>
-          <p lang="tr">Her gün yeni bir uzay kartı, Türkiye'nin uzaydan görüntüsü, dönen Dünya ve ISS'in anlık konumu. NASA'nın herkese açık verileriyle; Google Play'de çok yakında.</p>
-          <p lang="en">A new space card every day, Turkey from space, the spinning Earth and the live position of the ISS, built on NASA's public data (Turkish only). Coming soon to Google Play.</p><p lang="es">Una nueva tarjeta espacial cada día, Turquía desde el espacio, la Tierra girando y la posición en vivo de la ISS, con datos públicos de la NASA (solo en turco). Próximamente en Google Play.</p><p lang="pt">Um novo cartão espacial por dia, a Turquia vista do espaço, a Terra girando e a posição ao vivo da ISS, com dados públicos da NASA (só em turco). Em breve no Google Play.</p>
-          <div class="links">
-            <a class="small" href="uzaygunlugu/privacy.html#tr" lang="tr">Gizlilik Politikası</a>
-            <a class="small" href="uzaygunlugu/privacy.html#en" lang="en">Privacy Policy</a><a class="small" href="uzaygunlugu/privacy.html#en" lang="es">Política de privacidad</a><a class="small" href="uzaygunlugu/privacy.html#en" lang="pt">Política de privacidade</a>
-          </div>
+      </article>
+      <article class="tool" style="--tint:#E5544B" data-slug="whereami" data-pkg="com.whereami.nesimapps">
+        <img class="icon" src="whereami/icon.svg" alt="" width="64" height="64" loading="lazy">
+        <div class="tbody">
+          <h3><a class="stretch" href="whereami/"><span lang="tr">Neredeyim?</span><span lang="en">Where Am I?</span><span lang="es">¿Dónde estoy?</span><span lang="pt">Onde estou?</span></a></h3>
+          <p lang="tr">Haritada nerede olduğunu, açık adresini ve koordinatlarını gör; kopyala ya da paylaş.</p><p lang="en">See where you are on the map with your address and coordinates; copy or share them.</p><p lang="es">Mira dónde estás en el mapa con tu dirección y coordenadas; cópialas o compártelas.</p><p lang="pt">Veja onde você está no mapa com seu endereço e coordenadas; copie ou compartilhe.</p>
+          <a class="gp" href="https://play.google.com/store/apps/details?id=com.whereami.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a>
         </div>
-      </section>
-      <section class="app" data-dup="apps" style="--tint:#F2B23A">
-        <img class="icon" src="sansoyunlari/icon.svg" alt="Şans Oyunları" width="72" height="72" loading="lazy">
-        <div class="body">
-          <h2>Şans Oyunları</h2>
-          <p lang="tr">Sayısal Loto, Süper Loto, Şans Topu, On Numara ve Milli Piyango sonuçları; kupon üret, kuponun tuttu mu gör.</p>
-          <p lang="en">Results of the Turkish lotteries (Sayısal Loto, Süper Loto, Şans Topu, On Numara, Milli Piyango), random tickets and ticket checking.</p><p lang="es">Resultados de las loterías turcas (Sayısal Loto, Süper Loto, Şans Topu, On Numara, Milli Piyango), boletos aleatorios y comprobación de boletos.</p><p lang="pt">Resultados das loterias turcas (Sayısal Loto, Süper Loto, Şans Topu, On Numara, Milli Piyango), bilhetes aleatórios e conferência de bilhetes.</p>
-          <div class="links">
-            <a class="play" href="https://play.google.com/store/apps/details?id=com.nesim.sansoyunlari&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img lang="tr" src="badges/google-play-tr.svg" alt="Google Play'den indir"><img lang="en" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="es" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="pt" src="badges/google-play-en.svg" alt="Get it on Google Play"></a>
-            <a class="small" href="sansoyunlari/" lang="tr"><b>Daha fazla</b></a>
-            <a class="small" href="sansoyunlari/" lang="en"><b>Learn more</b></a><a class="small" href="sansoyunlari/" lang="es"><b>Más información</b></a><a class="small" href="sansoyunlari/" lang="pt"><b>Saiba mais</b></a>
-            <a class="small" href="sansoyunlari/privacy.html#tr" lang="tr">Gizlilik Politikası</a>
-            <a class="small" href="sansoyunlari/privacy.html#en" lang="en">Privacy Policy</a><a class="small" href="sansoyunlari/privacy.html#en" lang="es">Política de privacidad</a><a class="small" href="sansoyunlari/privacy.html#en" lang="pt">Política de privacidade</a>
-          </div>
+      </article>
+      <article class="tool" style="--tint:#5AB8D8" data-slug="agecalculator" data-pkg="com.agecalculator.nesimapps">
+        <img class="icon" src="agecalculator/icon.svg" alt="" width="64" height="64" loading="lazy">
+        <div class="tbody">
+          <h3><a class="stretch" href="agecalculator/"><span lang="tr">Yaş Hesaplama</span><span lang="en">Age Calculator</span><span lang="es">Calculadora de edad</span><span lang="pt">Calculadora de idade</span></a></h3>
+          <p lang="tr">Tam yaşını ve iki tarih arasındaki süreyi hesapla; doğum günleri ve yıldönümlerinden bir liste tut.</p><p lang="en">Calculate exact age and the time between dates, and keep a list of birthdays and anniversaries.</p><p lang="es">Calcula tu edad exacta y el tiempo entre fechas, y guarda una lista de cumpleaños y aniversarios.</p><p lang="pt">Calcule sua idade exata e o tempo entre datas, e mantenha uma lista de aniversários e datas especiais.</p>
+          <a class="gp" href="https://play.google.com/store/apps/details?id=com.agecalculator.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a>
         </div>
-      </section>
-      <section class="app" style="--tint:#E5544B">
-        <img class="icon" src="whereami/icon.svg" alt="Where Am I?" width="72" height="72" loading="lazy">
-        <div class="body">
-          <h2><span lang="tr">Neredeyim?</span><span lang="en">Where Am I?</span><span lang="es">¿Dónde estoy?</span><span lang="pt">Onde estou?</span></h2>
-          <p lang="tr">Haritada nerede olduğunu, açık adresini ve koordinatlarını gör; kopyala ya da paylaş.</p>
-          <p lang="en">See where you are on the map with your address and coordinates; copy or share them.</p><p lang="es">Mira dónde estás en el mapa con tu dirección y coordenadas; cópialas o compártelas.</p><p lang="pt">Veja onde você está no mapa com seu endereço e coordenadas; copie ou compartilhe.</p>
-          <div class="links">
-            <a class="play" href="https://play.google.com/store/apps/details?id=com.whereami.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img lang="tr" src="badges/google-play-tr.svg" alt="Google Play'den indir"><img lang="en" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="es" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="pt" src="badges/google-play-en.svg" alt="Get it on Google Play"></a>
-            <a class="small" href="whereami/" lang="tr"><b>Daha fazla</b></a>
-            <a class="small" href="whereami/" lang="en"><b>Learn more</b></a><a class="small" href="whereami/" lang="es"><b>Más información</b></a><a class="small" href="whereami/" lang="pt"><b>Saiba mais</b></a>
-            <a class="small" href="whereami/privacy.html#tr" lang="tr">Gizlilik Politikası</a>
-            <a class="small" href="whereami/privacy.html#en" lang="en">Privacy Policy</a><a class="small" href="whereami/privacy.html#es" lang="es">Política de privacidad</a><a class="small" href="whereami/privacy.html#pt" lang="pt">Política de privacidade</a>
-          </div>
+      </article>
+      <article class="tool" style="--tint:#E04F5F" data-slug="sondepremler" data-pkg="com.sondepremler.nesimapps">
+        <img class="icon" src="sondepremler/icon.svg" alt="" width="64" height="64" loading="lazy">
+        <div class="tbody">
+          <h3><a class="stretch" href="sondepremler/"><span lang="tr">Son Depremler</span><span lang="en">Son Depremler</span><span lang="es">Son Depremler</span><span lang="pt">Son Depremler</span></a></h3>
+          <p lang="tr">Türkiye ve çevresindeki son depremler: AFAD ve Kandilli kaynakları, harita ve istatistik.</p><p lang="en">Recent earthquakes in and around Turkey from AFAD and Kandilli, with a map and statistics.</p><p lang="es">Terremotos recientes en Turquía y alrededores según AFAD y Kandilli, con mapa y estadísticas.</p><p lang="pt">Terremotos recentes na Turquia e arredores segundo AFAD e Kandilli, com mapa e estatísticas.</p>
+          <a class="gp" href="https://play.google.com/store/apps/details?id=com.sondepremler.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a>
         </div>
-      </section>
-      <section class="app" style="--tint:#5AB8D8">
-        <img class="icon" src="agecalculator/icon.svg" alt="Age Calculator" width="72" height="72" loading="lazy">
-        <div class="body">
-          <h2><span lang="tr">Yaş Hesaplama</span><span lang="en">Age Calculator</span><span lang="es">Calculadora de edad</span><span lang="pt">Calculadora de idade</span></h2>
-          <p lang="tr">Tam yaşını ve iki tarih arasındaki süreyi hesapla; doğum günleri ve yıldönümlerinden bir liste tut.</p>
-          <p lang="en">Calculate exact age and the time between dates, and keep a list of birthdays and anniversaries.</p><p lang="es">Calcula tu edad exacta y el tiempo entre fechas, y guarda una lista de cumpleaños y aniversarios.</p><p lang="pt">Calcule sua idade exata e o tempo entre datas, e mantenha uma lista de aniversários e datas especiais.</p>
-          <div class="links">
-            <a class="play" href="https://play.google.com/store/apps/details?id=com.agecalculator.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img lang="tr" src="badges/google-play-tr.svg" alt="Google Play'den indir"><img lang="en" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="es" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="pt" src="badges/google-play-en.svg" alt="Get it on Google Play"></a>
-            <a class="small" href="agecalculator/" lang="tr"><b>Daha fazla</b></a>
-            <a class="small" href="agecalculator/" lang="en"><b>Learn more</b></a><a class="small" href="agecalculator/" lang="es"><b>Más información</b></a><a class="small" href="agecalculator/" lang="pt"><b>Saiba mais</b></a>
-            <a class="small" href="agecalculator/privacy.html#tr" lang="tr">Gizlilik Politikası</a>
-            <a class="small" href="agecalculator/privacy.html#en" lang="en">Privacy Policy</a><a class="small" href="agecalculator/privacy.html#es" lang="es">Política de privacidad</a><a class="small" href="agecalculator/privacy.html#pt" lang="pt">Política de privacidade</a>
-          </div>
+      </article>
+      <article class="tool" style="--tint:#5BB27A" data-slug="bmicalculator" data-pkg="com.bmicalculator.nesimapps">
+        <img class="icon" src="bmicalculator/icon.svg" alt="" width="64" height="64" loading="lazy">
+        <div class="tbody">
+          <h3><a class="stretch" href="bmicalculator/"><span lang="tr">Vücut Kitle İndeksi Hesaplama</span><span lang="en">BMI Calculator</span><span lang="es">Calculadora de IMC</span><span lang="pt">Calculadora de IMC</span></a></h3>
+          <p lang="tr">Vücut kitle indeksini Dünya Sağlık Örgütü sınıflarıyla hesapla, boyuna göre sağlıklı kilo aralığını gör.</p><p lang="en">Calculate your BMI with WHO categories and see the healthy weight range for your height.</p><p lang="es">Calcula tu IMC con las categorías de la OMS y consulta el rango de peso saludable para tu estatura.</p><p lang="pt">Calcule seu IMC com as categorias da OMS e veja a faixa de peso saudável para sua altura.</p>
+          <a class="gp" href="https://play.google.com/store/apps/details?id=com.bmicalculator.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a>
         </div>
-      </section>
-      <section class="app" style="--tint:#E04F5F">
-        <img class="icon" src="sondepremler/icon.svg" alt="Son Depremler" width="72" height="72" loading="lazy">
-        <div class="body">
-          <h2>Son Depremler</h2>
-          <p lang="tr">Türkiye ve çevresindeki son depremler: AFAD ve Kandilli kaynakları, harita ve istatistik.</p>
-          <p lang="en">Recent earthquakes in and around Turkey from AFAD and Kandilli, with a map and statistics.</p><p lang="es">Terremotos recientes en Turquía y alrededores según AFAD y Kandilli, con mapa y estadísticas.</p><p lang="pt">Terremotos recentes na Turquia e arredores segundo AFAD e Kandilli, com mapa e estatísticas.</p>
-          <div class="links">
-            <a class="play" href="https://play.google.com/store/apps/details?id=com.sondepremler.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img lang="tr" src="badges/google-play-tr.svg" alt="Google Play'den indir"><img lang="en" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="es" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="pt" src="badges/google-play-en.svg" alt="Get it on Google Play"></a>
-            <a class="small" href="sondepremler/" lang="tr"><b>Daha fazla</b></a>
-            <a class="small" href="sondepremler/" lang="en"><b>Learn more</b></a><a class="small" href="sondepremler/" lang="es"><b>Más información</b></a><a class="small" href="sondepremler/" lang="pt"><b>Saiba mais</b></a>
-            <a class="small" href="sondepremler/privacy.html#tr" lang="tr">Gizlilik Politikası</a>
-            <a class="small" href="sondepremler/privacy.html#en" lang="en">Privacy Policy</a><a class="small" href="sondepremler/privacy.html#en" lang="es">Política de privacidad</a><a class="small" href="sondepremler/privacy.html#en" lang="pt">Política de privacidade</a>
-          </div>
+      </article>
+      <article class="tool" style="--tint:#E30A17" data-slug="anthemturkey" data-pkg="com.nationalanthemofturkey.nesimapps">
+        <img class="icon" src="anthemturkey/icon.svg" alt="" width="64" height="64" loading="lazy">
+        <div class="tbody">
+          <h3><a class="stretch" href="anthemturkey/"><span lang="tr">İstiklal Marşı</span><span lang="en">National Anthem of Turkey</span><span lang="es">National Anthem of Turkey</span><span lang="pt">National Anthem of Turkey</span></a></h3>
+          <p lang="tr">Türkiye Cumhuriyeti Millî Marşı İstiklal Marşı, dalgalanan bayrakla; arka planda ve Chromecast ile çalar.</p><p lang="en">İstiklal Marşı, the national anthem of Türkiye, with a waving flag; plays in the background and on Chromecast.</p><p lang="es">İstiklal Marşı, el himno nacional de Türkiye, con una bandera ondeante; suena en segundo plano y en Chromecast.</p><p lang="pt">İstiklal Marşı, o hino nacional da Türkiye, com uma bandeira ondulante; toca em segundo plano e no Chromecast.</p>
+          <a class="gp" href="https://play.google.com/store/apps/details?id=com.nationalanthemofturkey.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a>
         </div>
-      </section>
-      <section class="app" style="--tint:#5BB27A">
-        <img class="icon" src="bmicalculator/icon.svg" alt="BMI Calculator" width="72" height="72" loading="lazy">
-        <div class="body">
-          <h2><span lang="tr">Vücut Kitle İndeksi Hesaplama</span><span lang="en">BMI Calculator</span><span lang="es">Calculadora de IMC</span><span lang="pt">Calculadora de IMC</span></h2>
-          <p lang="tr">Vücut kitle indeksini Dünya Sağlık Örgütü sınıflarıyla hesapla, boyuna göre sağlıklı kilo aralığını gör.</p>
-          <p lang="en">Calculate your BMI with WHO categories and see the healthy weight range for your height.</p><p lang="es">Calcula tu IMC con las categorías de la OMS y consulta el rango de peso saludable para tu estatura.</p><p lang="pt">Calcule seu IMC com as categorias da OMS e veja a faixa de peso saudável para sua altura.</p>
-          <div class="links">
-            <a class="play" href="https://play.google.com/store/apps/details?id=com.bmicalculator.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img lang="tr" src="badges/google-play-tr.svg" alt="Google Play'den indir"><img lang="en" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="es" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="pt" src="badges/google-play-en.svg" alt="Get it on Google Play"></a>
-            <a class="small" href="bmicalculator/" lang="tr"><b>Daha fazla</b></a>
-            <a class="small" href="bmicalculator/" lang="en"><b>Learn more</b></a><a class="small" href="bmicalculator/" lang="es"><b>Más información</b></a><a class="small" href="bmicalculator/" lang="pt"><b>Saiba mais</b></a>
-            <a class="small" href="bmicalculator/privacy.html#tr" lang="tr">Gizlilik Politikası</a>
-            <a class="small" href="bmicalculator/privacy.html#en" lang="en">Privacy Policy</a><a class="small" href="bmicalculator/privacy.html#es" lang="es">Política de privacidad</a><a class="small" href="bmicalculator/privacy.html#pt" lang="pt">Política de privacidade</a>
-          </div>
+      </article>
+      <article class="tool" style="--tint:#D52B1E" data-slug="anthemcanada" data-pkg="com.nationalanthemofcanada.nesimapps">
+        <img class="icon" src="anthemcanada/icon.svg" alt="" width="64" height="64" loading="lazy">
+        <div class="tbody">
+          <h3><a class="stretch" href="anthemcanada/"><span lang="tr">Kanada Milli Marşı</span><span lang="en">National Anthem of Canada</span><span lang="es">National Anthem of Canada</span><span lang="pt">National Anthem of Canada</span></a></h3>
+          <p lang="tr">Kanada millî marşı O Canada, dalgalanan bayrakla; arka planda ve Chromecast ile çalar.</p><p lang="en">O Canada, the national anthem of Canada, with a waving flag; plays in the background and on Chromecast.</p><p lang="es">O Canada, el himno nacional de Canadá, con una bandera ondeante; suena en segundo plano y en Chromecast.</p><p lang="pt">O Canada, o hino nacional do Canadá, com uma bandeira ondulante; toca em segundo plano e no Chromecast.</p>
+          <a class="gp" href="https://play.google.com/store/apps/details?id=com.nationalanthemofcanada.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a>
         </div>
-      </section>
-      <section class="app" style="--tint:#E30A17">
-        <img class="icon" src="anthemturkey/icon.svg" alt="National Anthem of Turkey" width="72" height="72" loading="lazy">
-        <div class="body">
-          <h2>National Anthem of Turkey</h2>
-          <p lang="tr">Türkiye Cumhuriyeti Millî Marşı İstiklal Marşı, dalgalanan bayrakla; arka planda ve Chromecast ile çalar.</p>
-          <p lang="en">İstiklal Marşı, the national anthem of Türkiye, with a waving flag; plays in the background and on Chromecast.</p><p lang="es">İstiklal Marşı, el himno nacional de Türkiye, con una bandera ondeante; suena en segundo plano y en Chromecast.</p><p lang="pt">İstiklal Marşı, o hino nacional da Türkiye, com uma bandeira ondulante; toca em segundo plano e no Chromecast.</p>
-          <div class="links">
-            <a class="play" href="https://play.google.com/store/apps/details?id=com.nationalanthemofturkey.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img lang="tr" src="badges/google-play-tr.svg" alt="Google Play'den indir"><img lang="en" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="es" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="pt" src="badges/google-play-en.svg" alt="Get it on Google Play"></a>
-            <a class="small" href="anthemturkey/" lang="tr"><b>Daha fazla</b></a>
-            <a class="small" href="anthemturkey/" lang="en"><b>Learn more</b></a><a class="small" href="anthemturkey/" lang="es"><b>Más información</b></a><a class="small" href="anthemturkey/" lang="pt"><b>Saiba mais</b></a>
-            <a class="small" href="anthemturkey/privacy.html#tr" lang="tr">Gizlilik Politikası</a>
-            <a class="small" href="anthemturkey/privacy.html#en" lang="en">Privacy Policy</a><a class="small" href="anthemturkey/privacy.html#en" lang="es">Política de privacidad</a><a class="small" href="anthemturkey/privacy.html#en" lang="pt">Política de privacidade</a>
-          </div>
+      </article>
+      <article class="tool" style="--tint:#2E6FBF" data-slug="turksail" data-pkg="com.nesim.turksail">
+        <img class="icon" src="turksail/icon.svg" alt="" width="64" height="64" loading="lazy">
+        <div class="tbody">
+          <h3><a class="stretch" href="turksail/"><span lang="tr">TurkSail</span><span lang="en">TurkSail</span><span lang="es">TurkSail</span><span lang="pt">TurkSail</span></a></h3>
+          <p lang="tr">Yelken ve deniz dünyasından haberler, yarış sonuçları ve yazılar (turksail.com).</p><p lang="en">Sailing and sea news, race results and articles from turksail.com (in Turkish).</p><p lang="es">Noticias de vela y mar, resultados de regatas y artículos de turksail.com (en turco).</p><p lang="pt">Notícias de vela e mar, resultados de regatas e artigos de turksail.com (em turco).</p>
+          <a class="gp" href="https://play.google.com/store/apps/details?id=com.nesim.turksail&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a>
         </div>
-      </section>
-      <section class="app" style="--tint:#D52B1E">
-        <img class="icon" src="anthemcanada/icon.svg" alt="National Anthem of Canada" width="72" height="72" loading="lazy">
-        <div class="body">
-          <h2>National Anthem of Canada</h2>
-          <p lang="tr">Kanada millî marşı O Canada, dalgalanan bayrakla; arka planda ve Chromecast ile çalar.</p>
-          <p lang="en">O Canada, the national anthem of Canada, with a waving flag; plays in the background and on Chromecast.</p><p lang="es">O Canada, el himno nacional de Canadá, con una bandera ondeante; suena en segundo plano y en Chromecast.</p><p lang="pt">O Canada, o hino nacional do Canadá, com uma bandeira ondulante; toca em segundo plano e no Chromecast.</p>
-          <div class="links">
-            <a class="play" href="https://play.google.com/store/apps/details?id=com.nationalanthemofcanada.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img lang="tr" src="badges/google-play-tr.svg" alt="Google Play'den indir"><img lang="en" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="es" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="pt" src="badges/google-play-en.svg" alt="Get it on Google Play"></a>
-            <a class="small" href="anthemcanada/" lang="tr"><b>Daha fazla</b></a>
-            <a class="small" href="anthemcanada/" lang="en"><b>Learn more</b></a><a class="small" href="anthemcanada/" lang="es"><b>Más información</b></a><a class="small" href="anthemcanada/" lang="pt"><b>Saiba mais</b></a>
-            <a class="small" href="anthemcanada/privacy.html#tr" lang="tr">Gizlilik Politikası</a>
-            <a class="small" href="anthemcanada/privacy.html#en" lang="en">Privacy Policy</a><a class="small" href="anthemcanada/privacy.html#en" lang="es">Política de privacidad</a><a class="small" href="anthemcanada/privacy.html#en" lang="pt">Política de privacidade</a>
-          </div>
+      </article>
+      <article class="tool" style="--tint:#D9302C" data-slug="medyafobi" data-pkg="com.nesim.medyafobi">
+        <img class="icon" src="medyafobi/icon.svg" alt="" width="64" height="64" loading="lazy">
+        <div class="tbody">
+          <h3><a class="stretch" href="medyafobi/"><span lang="tr">MedyaFobi</span><span lang="en">MedyaFobi</span><span lang="es">MedyaFobi</span><span lang="pt">MedyaFobi</span></a></h3>
+          <p lang="tr">Medya ilişkileri, kriz iletişimi ve konuşma eğitimleri; Medya Kaza Raporu yazıları (medyafobi.com).</p><p lang="en">Media relations, crisis communication and speaking trainings from medyafobi.com (in Turkish).</p><p lang="es">Relaciones con los medios, comunicación de crisis y formación en oratoria de medyafobi.com (en turco).</p><p lang="pt">Relações com a mídia, comunicação de crise e treinamentos de oratória de medyafobi.com (em turco).</p>
+          <a class="gp" href="https://play.google.com/store/apps/details?id=com.nesim.medyafobi&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a>
         </div>
-      </section>
-      <section class="app" style="--tint:#2E6FBF">
-        <img class="icon" src="turksail/icon.svg" alt="TurkSail" width="72" height="72" loading="lazy">
-        <div class="body">
-          <h2>TurkSail</h2>
-          <p lang="tr">Yelken ve deniz dünyasından haberler, yarış sonuçları ve yazılar (turksail.com).</p>
-          <p lang="en">Sailing and sea news, race results and articles from turksail.com (in Turkish).</p><p lang="es">Noticias de vela y mar, resultados de regatas y artículos de turksail.com (en turco).</p><p lang="pt">Notícias de vela e mar, resultados de regatas e artigos de turksail.com (em turco).</p>
-          <div class="links">
-            <a class="play" href="https://play.google.com/store/apps/details?id=com.nesim.turksail&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img lang="tr" src="badges/google-play-tr.svg" alt="Google Play'den indir"><img lang="en" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="es" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="pt" src="badges/google-play-en.svg" alt="Get it on Google Play"></a>
-            <a class="small" href="turksail/" lang="tr"><b>Daha fazla</b></a>
-            <a class="small" href="turksail/" lang="en"><b>Learn more</b></a><a class="small" href="turksail/" lang="es"><b>Más información</b></a><a class="small" href="turksail/" lang="pt"><b>Saiba mais</b></a>
-            <a class="small" href="turksail/privacy.html#tr" lang="tr">Gizlilik Politikası</a>
-            <a class="small" href="turksail/privacy.html#en" lang="en">Privacy Policy</a><a class="small" href="turksail/privacy.html#en" lang="es">Política de privacidad</a><a class="small" href="turksail/privacy.html#en" lang="pt">Política de privacidade</a>
-          </div>
-        </div>
-      </section>
-      <section class="app" style="--tint:#D9302C">
-        <img class="icon" src="medyafobi/icon.svg" alt="MedyaFobi" width="72" height="72" loading="lazy">
-        <div class="body">
-          <h2>MedyaFobi</h2>
-          <p lang="tr">Medya ilişkileri, kriz iletişimi ve konuşma eğitimleri; Medya Kaza Raporu yazıları (medyafobi.com).</p>
-          <p lang="en">Media relations, crisis communication and speaking trainings from medyafobi.com (in Turkish).</p><p lang="es">Relaciones con los medios, comunicación de crisis y formación en oratoria de medyafobi.com (en turco).</p><p lang="pt">Relações com a mídia, comunicação de crise e treinamentos de oratória de medyafobi.com (em turco).</p>
-          <div class="links">
-            <a class="play" href="https://play.google.com/store/apps/details?id=com.nesim.medyafobi&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img lang="tr" src="badges/google-play-tr.svg" alt="Google Play'den indir"><img lang="en" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="es" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="pt" src="badges/google-play-en.svg" alt="Get it on Google Play"></a>
-            <a class="small" href="medyafobi/" lang="tr"><b>Daha fazla</b></a>
-            <a class="small" href="medyafobi/" lang="en"><b>Learn more</b></a><a class="small" href="medyafobi/" lang="es"><b>Más información</b></a><a class="small" href="medyafobi/" lang="pt"><b>Saiba mais</b></a>
-            <a class="small" href="medyafobi/privacy.html#tr" lang="tr">Gizlilik Politikası</a>
-            <a class="small" href="medyafobi/privacy.html#en" lang="en">Privacy Policy</a><a class="small" href="medyafobi/privacy.html#en" lang="es">Política de privacidad</a><a class="small" href="medyafobi/privacy.html#en" lang="pt">Política de privacidade</a>
-          </div>
-        </div>
-      </section>
+      </article>
     </div>
-  </div>
+  </section>
 
-  <footer><span lang="tr">İletişim</span><span lang="en">Contact</span><span lang="es">Contacto</span><span lang="pt">Contato</span>: <a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html"><span lang="tr">Site gizliliği</span><span lang="en">Website privacy</span><span lang="es">Privacidad del sitio</span><span lang="pt">Privacidade do site</span></a></footer>
+  <section id="soon">
+    <h2 class="sec"><span lang="tr">Çok yakında</span><span lang="en">Coming soon</span><span lang="es">Próximamente</span><span lang="pt">Em breve</span></h2>
+    <div class="tools two" style="margin-top:14px">
+      <article class="tool soon" style="--tint:#2F6F5E" data-slug="calisan">
+        <img class="icon" src="calisan/icon.svg" alt="" width="64" height="64" loading="lazy">
+        <div class="tbody">
+          <h3>Çalışan Asistanı <span class="chip"><span lang="tr">YAKINDA</span><span lang="en">COMING SOON</span><span lang="es">PRÓXIMAMENTE</span><span lang="pt">EM BREVE</span></span></h3>
+          <p lang="tr">Net maaş, kıdem ve ihbar tazminatı, fazla mesai ve izin planı tek uygulamada. Türkiye'deki çalışanlar için; Google Play'de çok yakında.</p><p lang="en">Net salary, severance and notice pay, overtime and leave planning in one app, for employees in Turkey (Turkish only). Coming soon to Google Play.</p><p lang="es">Salario neto, indemnización por despido y preaviso, horas extra y planificación de vacaciones en una sola app, para empleados en Turquía (solo en turco). Próximamente en Google Play.</p><p lang="pt">Salário líquido, indenização e aviso prévio, horas extras e planejamento de folgas em um só app, para trabalhadores na Turquia (só em turco). Em breve no Google Play.</p>
+          <a class="small" href="calisan/privacy.html#tr" lang="tr">Gizlilik Politikası</a><a class="small" href="calisan/privacy.html#en" lang="en">Privacy Policy</a><a class="small" href="calisan/privacy.html#en" lang="es">Política de privacidad</a><a class="small" href="calisan/privacy.html#en" lang="pt">Política de privacidade</a>
+        </div>
+      </article>
+      <article class="tool soon" style="--tint:#3A5BC7" data-slug="uzaygunlugu">
+        <img class="icon" src="uzaygunlugu/icon.png" alt="" width="64" height="64" loading="lazy">
+        <div class="tbody">
+          <h3>Uzay Günlüğü <span class="chip"><span lang="tr">YAKINDA</span><span lang="en">COMING SOON</span><span lang="es">PRÓXIMAMENTE</span><span lang="pt">EM BREVE</span></span></h3>
+          <p lang="tr">Her gün yeni bir uzay kartı, Türkiye'nin uzaydan görüntüsü, dönen Dünya ve ISS'in anlık konumu. NASA'nın herkese açık verileriyle; Google Play'de çok yakında.</p><p lang="en">A new space card every day, Turkey from space, the spinning Earth and the live position of the ISS, built on NASA's public data (Turkish only). Coming soon to Google Play.</p><p lang="es">Una nueva tarjeta espacial cada día, Turquía desde el espacio, la Tierra girando y la posición en vivo de la ISS, con datos públicos de la NASA (solo en turco). Próximamente en Google Play.</p><p lang="pt">Um novo cartão espacial por dia, a Turquia vista do espaço, a Terra girando e a posição ao vivo da ISS, com dados públicos da NASA (só em turco). Em breve no Google Play.</p>
+          <a class="small" href="uzaygunlugu/privacy.html#tr" lang="tr">Gizlilik Politikası</a><a class="small" href="uzaygunlugu/privacy.html#en" lang="en">Privacy Policy</a><a class="small" href="uzaygunlugu/privacy.html#en" lang="es">Política de privacidad</a><a class="small" href="uzaygunlugu/privacy.html#en" lang="pt">Política de privacidade</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <img src="nesim.jpg" alt="Nesim Razon" width="96" height="96">
+    <div class="abody">
+      <h2><span lang="tr">Merhaba, ben Nesim.</span><span lang="en">Hi, I'm Nesim.</span><span lang="es">Hola, soy Nesim.</span><span lang="pt">Olá, eu sou o Nesim.</span></h2>
+      <p lang="tr">Android için bağımsız bir geliştiriciyim. Oyunlarımı ve uygulamalarımı tek başıma tasarlıyor, yazıyor ve yayınlıyorum. Çoğu ücretsiz ve hiçbiri hesap açmanı istemiyor. Önerin ya da bir hata bildirimin olursa yaz, hepsini okurum.</p><p lang="en">I'm an independent Android developer. I design, build and publish my games and apps on my own. Most are free and none of them asks you to create an account. If you have a suggestion or a bug report, write to me, I read every message.</p><p lang="es">Soy un desarrollador Android independiente. Diseño, programo y publico mis juegos y apps yo solo. La mayoría son gratis y ninguna te pide crear una cuenta. Si tienes una sugerencia o un error que contar, escríbeme: leo todos los mensajes.</p><p lang="pt">Sou um desenvolvedor Android independente. Eu mesmo projeto, programo e publico meus jogos e apps. A maioria é grátis e nenhum pede que você crie uma conta. Se tiver uma sugestão ou um erro para relatar, escreva para mim: leio todas as mensagens.</p>
+      <div class="contacts">
+        <a class="main" href="mailto:nesim.razon@gmail.com"><span lang="tr">E-posta gönder</span><span lang="en">Send an email</span><span lang="es">Enviar un correo</span><span lang="pt">Enviar e-mail</span></a>
+        <a href="https://play.google.com/store/apps/dev?id=4632277715794688965" rel="noopener">Google Play</a>
+        <a href="https://www.linkedin.com/in/nesimrazon/" rel="me noopener">LinkedIn</a><a href="https://x.com/nrazon" rel="me noopener">X</a><a href="https://www.instagram.com/nesimrazon/" rel="me noopener">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="row"><span>© 2026 Nesim Razon</span><span>·</span><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a><span>·</span><a href="/site-privacy.html"><span lang="tr">Site gizliliği</span><span lang="en">Website privacy</span><span lang="es">Privacidad del sitio</span><span lang="pt">Privacidade do site</span></a></div>
+    <details><summary><span lang="tr">Uygulama gizlilik politikaları</span><span lang="en">App privacy policies</span><span lang="es">Políticas de privacidad de las apps</span><span lang="pt">Políticas de privacidade dos apps</span></summary><ul><li><a href="cardles/privacy.html">Cardles</a></li><li><a href="cubbles/privacy.html">Cubbles</a></li><li><a href="sliplines/privacy.html">Sliplines</a></li><li><a href="game2048/privacy.html">2048</a></li><li><a href="tictactoe/privacy.html">Tic-Tac-Toe</a></li><li><a href="calisan/privacy.html">Çalışan Asistanı</a></li><li><a href="uzaygunlugu/privacy.html">Uzay Günlüğü</a></li><li><a href="sansoyunlari/privacy.html">Şans Oyunları</a></li><li><a href="whereami/privacy.html">Where Am I?</a></li><li><a href="agecalculator/privacy.html">Age Calculator</a></li><li><a href="sondepremler/privacy.html">Son Depremler</a></li><li><a href="bmicalculator/privacy.html">BMI Calculator</a></li><li><a href="anthemturkey/privacy.html">National Anthem of Turkey</a></li><li><a href="anthemcanada/privacy.html">National Anthem of Canada</a></li><li><a href="turksail/privacy.html">TurkSail</a></li><li><a href="medyafobi/privacy.html">MedyaFobi</a></li></ul></details>
+  </footer>
 </main>
 <script src="eyes.js"></script>
 <script>
   setLang(document.documentElement.className);
   expireBadges();
-  setFilter(location.hash.replace("#", ""));
 </script>
 </body>
 </html>

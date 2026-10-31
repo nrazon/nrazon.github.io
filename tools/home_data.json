@@ -1,0 +1,349 @@
+[
+ {
+  "slug": "cardles",
+  "cat": "games",
+  "icon": "cardles/icon.svg",
+  "names": {
+   "tr": "Cardles",
+   "en": "Cardles",
+   "es": "Cardles",
+   "pt": "Cardles"
+  },
+  "tint": "#2FA37F",
+  "pkg": "com.cardles.nesimapps",
+  "new": "2026-12-15",
+  "status": "live",
+  "popular": false,
+  "desc": {}
+ },
+ {
+  "slug": "cubbles",
+  "cat": "games",
+  "icon": "cubbles/icon.svg",
+  "names": {
+   "tr": "Cubbles",
+   "en": "Cubbles",
+   "es": "Cubbles",
+   "pt": "Cubbles"
+  },
+  "tint": "#7C5CC9",
+  "pkg": "com.cubbles.nesimapps",
+  "new": "2026-11-30",
+  "desc": {
+   "tr": "Sevimli yüzlü bloklarla bulmaca: blokları tahtaya sürükle, satır ve sütunları doldurup temizle, kombolar yap. Günlük meydan okuma, görevler ve temalar.",
+   "en": "A block puzzle with cute faces: drag blocks onto the board, fill rows and columns to clear them and chain combos. Daily challenge, quests and themes.",
+   "es": "Un puzle de bloques con caritas adorables: arrastra bloques al tablero, completa filas y columnas para limpiarlas y encadena combos. Reto diario, misiones y temas.",
+   "pt": "Um quebra-cabeça de blocos com carinhas fofas: arraste blocos para o tabuleiro, complete linhas e colunas para limpá-las e encadeie combos. Desafio diário, missões e temas."
+  },
+  "status": "live",
+  "popular": false
+ },
+ {
+  "slug": "sliplines",
+  "cat": "games",
+  "icon": "sliplines/icon.png",
+  "names": {
+   "tr": "Sliplines",
+   "en": "Sliplines",
+   "es": "Sliplines",
+   "pt": "Sliplines"
+  },
+  "tint": "#F08A4B",
+  "pkg": "com.sliplines.nesimapps",
+  "new": "2026-11-30",
+  "desc": {
+   "tr": "Okları doğru sırayla kaydırıp tahtayı boşalttığın bir bulmaca oyunu. Yüzlerce seviye, dünya sıralamalı Günün Bulmacası ve toplanacak rozetler.",
+   "en": "An arrow puzzle game: slide the arrows out in the right order and clear the board. Hundreds of levels, a Daily Puzzle with a global leaderboard, and badges to collect.",
+   "es": "Un puzle de flechas: saca las flechas en el orden correcto y despeja el tablero. Cientos de niveles, un Reto diario con clasificación mundial e insignias para coleccionar.",
+   "pt": "Um quebra-cabeça de setas: tire as setas na ordem certa e limpe o tabuleiro. Centenas de níveis, um Desafio diário com classificação mundial e emblemas para colecionar."
+  },
+  "status": "live",
+  "popular": false
+ },
+ {
+  "slug": "game2048",
+  "cat": "games",
+  "icon": "game2048/icon.svg",
+  "names": {
+   "tr": "2048",
+   "en": "2048",
+   "es": "2048",
+   "pt": "2048"
+  },
+  "tint": "#EDC22E",
+  "pkg": "com.game2048.nesimapps",
+  "new": null,
+  "desc": {
+   "tr": "Klasik sayı bulmacası: kaydır, aynı sayıları birleştir, 2048 taşına ulaş.",
+   "en": "The classic number puzzle: swipe, merge matching numbers and reach the 2048 tile.",
+   "es": "El clásico puzle de números: desliza, combina números iguales y llega a la ficha 2048.",
+   "pt": "O clássico quebra-cabeça de números: deslize, combine números iguais e chegue à peça 2048."
+  },
+  "status": "live",
+  "popular": false
+ },
+ {
+  "slug": "tictactoe",
+  "cat": "games",
+  "icon": "tictactoe/icon.svg",
+  "names": {
+   "tr": "Tic-Tac-Toe",
+   "en": "Tic-Tac-Toe",
+   "es": "Tic-Tac-Toe",
+   "pt": "Tic-Tac-Toe"
+  },
+  "tint": "#4CC9C0",
+  "pkg": "com.tictactoe.nesimapps",
+  "new": null,
+  "desc": {
+   "tr": "Bilgisayara karşı klasik XOX: Kolay, Orta ya da Zor. Zor seviyede bilgisayar hiç kaybetmez.",
+   "en": "Classic Tic-Tac-Toe against the computer: Easy, Medium or Hard. On Hard it never loses.",
+   "es": "El clásico tres en raya contra el ordenador: Fácil, Medio o Difícil. En Difícil nunca pierde.",
+   "pt": "O clássico jogo da velha contra o computador: Fácil, Médio ou Difícil. No Difícil ele nunca perde."
+  },
+  "status": "live",
+  "popular": false
+ },
+ {
+  "slug": "calisan",
+  "cat": "apps",
+  "icon": "calisan/icon.svg",
+  "names": {
+   "tr": "Çalışan Asistanı",
+   "en": "Çalışan Asistanı",
+   "es": "Çalışan Asistanı",
+   "pt": "Çalışan Asistanı"
+  },
+  "tint": "#2F6F5E",
+  "pkg": null,
+  "new": null,
+  "desc": {
+   "tr": "Net maaş, kıdem ve ihbar tazminatı, fazla mesai ve izin planı tek uygulamada. Türkiye'deki çalışanlar için; Google Play'de çok yakında.",
+   "en": "Net salary, severance and notice pay, overtime and leave planning in one app, for employees in Turkey (Turkish only). Coming soon to Google Play.",
+   "es": "Salario neto, indemnización por despido y preaviso, horas extra y planificación de vacaciones en una sola app, para empleados en Turquía (solo en turco). Próximamente en Google Play.",
+   "pt": "Salário líquido, indenização e aviso prévio, horas extras e planejamento de folgas em um só app, para trabalhadores na Turquia (só em turco). Em breve no Google Play."
+  },
+  "status": "soon",
+  "popular": false
+ },
+ {
+  "slug": "uzaygunlugu",
+  "cat": "apps",
+  "icon": "uzaygunlugu/icon.png",
+  "names": {
+   "tr": "Uzay Günlüğü",
+   "en": "Uzay Günlüğü",
+   "es": "Uzay Günlüğü",
+   "pt": "Uzay Günlüğü"
+  },
+  "tint": "#3A5BC7",
+  "pkg": null,
+  "new": null,
+  "desc": {
+   "tr": "Her gün yeni bir uzay kartı, Türkiye'nin uzaydan görüntüsü, dönen Dünya ve ISS'in anlık konumu. NASA'nın herkese açık verileriyle; Google Play'de çok yakında.",
+   "en": "A new space card every day, Turkey from space, the spinning Earth and the live position of the ISS, built on NASA's public data (Turkish only). Coming soon to Google Play.",
+   "es": "Una nueva tarjeta espacial cada día, Turquía desde el espacio, la Tierra girando y la posición en vivo de la ISS, con datos públicos de la NASA (solo en turco). Próximamente en Google Play.",
+   "pt": "Um novo cartão espacial por dia, a Turquia vista do espaço, a Terra girando e a posição ao vivo da ISS, com dados públicos da NASA (só em turco). Em breve no Google Play."
+  },
+  "status": "soon",
+  "popular": false
+ },
+ {
+  "slug": "sansoyunlari",
+  "cat": "apps",
+  "icon": "sansoyunlari/icon.svg",
+  "names": {
+   "tr": "Şans Oyunları",
+   "en": "Şans Oyunları",
+   "es": "Şans Oyunları",
+   "pt": "Şans Oyunları"
+  },
+  "tint": "#F2B23A",
+  "pkg": "com.nesim.sansoyunlari",
+  "new": null,
+  "desc": {
+   "tr": "Sayısal Loto, Süper Loto, Şans Topu, On Numara ve Milli Piyango sonuçları; kupon üret, kuponun tuttu mu gör.",
+   "en": "Results of the Turkish lotteries (Sayısal Loto, Süper Loto, Şans Topu, On Numara, Milli Piyango), random tickets and ticket checking.",
+   "es": "Resultados de las loterías turcas (Sayısal Loto, Süper Loto, Şans Topu, On Numara, Milli Piyango), boletos aleatorios y comprobación de boletos.",
+   "pt": "Resultados das loterias turcas (Sayısal Loto, Süper Loto, Şans Topu, On Numara, Milli Piyango), bilhetes aleatórios e conferência de bilhetes."
+  },
+  "status": "live",
+  "popular": true
+ },
+ {
+  "slug": "whereami",
+  "cat": "apps",
+  "icon": "whereami/icon.svg",
+  "names": {
+   "tr": "Neredeyim?",
+   "en": "Where Am I?",
+   "es": "¿Dónde estoy?",
+   "pt": "Onde estou?"
+  },
+  "tint": "#E5544B",
+  "pkg": "com.whereami.nesimapps",
+  "new": null,
+  "desc": {
+   "tr": "Haritada nerede olduğunu, açık adresini ve koordinatlarını gör; kopyala ya da paylaş.",
+   "en": "See where you are on the map with your address and coordinates; copy or share them.",
+   "es": "Mira dónde estás en el mapa con tu dirección y coordenadas; cópialas o compártelas.",
+   "pt": "Veja onde você está no mapa com seu endereço e coordenadas; copie ou compartilhe."
+  },
+  "status": "live",
+  "popular": false
+ },
+ {
+  "slug": "agecalculator",
+  "cat": "apps",
+  "icon": "agecalculator/icon.svg",
+  "names": {
+   "tr": "Yaş Hesaplama",
+   "en": "Age Calculator",
+   "es": "Calculadora de edad",
+   "pt": "Calculadora de idade"
+  },
+  "tint": "#5AB8D8",
+  "pkg": "com.agecalculator.nesimapps",
+  "new": null,
+  "desc": {
+   "tr": "Tam yaşını ve iki tarih arasındaki süreyi hesapla; doğum günleri ve yıldönümlerinden bir liste tut.",
+   "en": "Calculate exact age and the time between dates, and keep a list of birthdays and anniversaries.",
+   "es": "Calcula tu edad exacta y el tiempo entre fechas, y guarda una lista de cumpleaños y aniversarios.",
+   "pt": "Calcule sua idade exata e o tempo entre datas, e mantenha uma lista de aniversários e datas especiais."
+  },
+  "status": "live",
+  "popular": false
+ },
+ {
+  "slug": "sondepremler",
+  "cat": "apps",
+  "icon": "sondepremler/icon.svg",
+  "names": {
+   "tr": "Son Depremler",
+   "en": "Son Depremler",
+   "es": "Son Depremler",
+   "pt": "Son Depremler"
+  },
+  "tint": "#E04F5F",
+  "pkg": "com.sondepremler.nesimapps",
+  "new": null,
+  "desc": {
+   "tr": "Türkiye ve çevresindeki son depremler: AFAD ve Kandilli kaynakları, harita ve istatistik.",
+   "en": "Recent earthquakes in and around Turkey from AFAD and Kandilli, with a map and statistics.",
+   "es": "Terremotos recientes en Turquía y alrededores según AFAD y Kandilli, con mapa y estadísticas.",
+   "pt": "Terremotos recentes na Turquia e arredores segundo AFAD e Kandilli, com mapa e estatísticas."
+  },
+  "status": "live",
+  "popular": false
+ },
+ {
+  "slug": "bmicalculator",
+  "cat": "apps",
+  "icon": "bmicalculator/icon.svg",
+  "names": {
+   "tr": "Vücut Kitle İndeksi Hesaplama",
+   "en": "BMI Calculator",
+   "es": "Calculadora de IMC",
+   "pt": "Calculadora de IMC"
+  },
+  "tint": "#5BB27A",
+  "pkg": "com.bmicalculator.nesimapps",
+  "new": null,
+  "desc": {
+   "tr": "Vücut kitle indeksini Dünya Sağlık Örgütü sınıflarıyla hesapla, boyuna göre sağlıklı kilo aralığını gör.",
+   "en": "Calculate your BMI with WHO categories and see the healthy weight range for your height.",
+   "es": "Calcula tu IMC con las categorías de la OMS y consulta el rango de peso saludable para tu estatura.",
+   "pt": "Calcule seu IMC com as categorias da OMS e veja a faixa de peso saudável para sua altura."
+  },
+  "status": "live",
+  "popular": false
+ },
+ {
+  "slug": "anthemturkey",
+  "cat": "apps",
+  "icon": "anthemturkey/icon.svg",
+  "names": {
+   "tr": "İstiklal Marşı",
+   "en": "National Anthem of Turkey",
+   "es": "National Anthem of Turkey",
+   "pt": "National Anthem of Turkey"
+  },
+  "tint": "#E30A17",
+  "pkg": "com.nationalanthemofturkey.nesimapps",
+  "new": null,
+  "desc": {
+   "tr": "Türkiye Cumhuriyeti Millî Marşı İstiklal Marşı, dalgalanan bayrakla; arka planda ve Chromecast ile çalar.",
+   "en": "İstiklal Marşı, the national anthem of Türkiye, with a waving flag; plays in the background and on Chromecast.",
+   "es": "İstiklal Marşı, el himno nacional de Türkiye, con una bandera ondeante; suena en segundo plano y en Chromecast.",
+   "pt": "İstiklal Marşı, o hino nacional da Türkiye, com uma bandeira ondulante; toca em segundo plano e no Chromecast."
+  },
+  "status": "live",
+  "popular": false
+ },
+ {
+  "slug": "anthemcanada",
+  "cat": "apps",
+  "icon": "anthemcanada/icon.svg",
+  "names": {
+   "tr": "Kanada Milli Marşı",
+   "en": "National Anthem of Canada",
+   "es": "National Anthem of Canada",
+   "pt": "National Anthem of Canada"
+  },
+  "tint": "#D52B1E",
+  "pkg": "com.nationalanthemofcanada.nesimapps",
+  "new": null,
+  "desc": {
+   "tr": "Kanada millî marşı O Canada, dalgalanan bayrakla; arka planda ve Chromecast ile çalar.",
+   "en": "O Canada, the national anthem of Canada, with a waving flag; plays in the background and on Chromecast.",
+   "es": "O Canada, el himno nacional de Canadá, con una bandera ondeante; suena en segundo plano y en Chromecast.",
+   "pt": "O Canada, o hino nacional do Canadá, com uma bandeira ondulante; toca em segundo plano e no Chromecast."
+  },
+  "status": "live",
+  "popular": false
+ },
+ {
+  "slug": "turksail",
+  "cat": "apps",
+  "icon": "turksail/icon.svg",
+  "names": {
+   "tr": "TurkSail",
+   "en": "TurkSail",
+   "es": "TurkSail",
+   "pt": "TurkSail"
+  },
+  "tint": "#2E6FBF",
+  "pkg": "com.nesim.turksail",
+  "new": null,
+  "desc": {
+   "tr": "Yelken ve deniz dünyasından haberler, yarış sonuçları ve yazılar (turksail.com).",
+   "en": "Sailing and sea news, race results and articles from turksail.com (in Turkish).",
+   "es": "Noticias de vela y mar, resultados de regatas y artículos de turksail.com (en turco).",
+   "pt": "Notícias de vela e mar, resultados de regatas e artigos de turksail.com (em turco)."
+  },
+  "status": "live",
+  "popular": false
+ },
+ {
+  "slug": "medyafobi",
+  "cat": "apps",
+  "icon": "medyafobi/icon.svg",
+  "names": {
+   "tr": "MedyaFobi",
+   "en": "MedyaFobi",
+   "es": "MedyaFobi",
+   "pt": "MedyaFobi"
+  },
+  "tint": "#D9302C",
+  "pkg": "com.nesim.medyafobi",
+  "new": null,
+  "desc": {
+   "tr": "Medya ilişkileri, kriz iletişimi ve konuşma eğitimleri; Medya Kaza Raporu yazıları (medyafobi.com).",
+   "en": "Media relations, crisis communication and speaking trainings from medyafobi.com (in Turkish).",
+   "es": "Relaciones con los medios, comunicación de crisis y formación en oratoria de medyafobi.com (en turco).",
+   "pt": "Relações com a mídia, comunicação de crise e treinamentos de oratória de medyafobi.com (em turco)."
+  },
+  "status": "live",
+  "popular": false
+ }
+]
