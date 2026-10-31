@@ -86,6 +86,12 @@
     }
   }, true);
 
+  // "QR ile yükle" açıldı (taramayı sitede ölçemeyiz; yüklemeler Play Console'da utm_medium=qr ile ayrışır).
+  document.addEventListener("toggle", function (e) {
+    var d = e.target;
+    if (d && d.matches && d.matches("details.qr") && d.open) gtag("event", "qr_open", { app: d.getAttribute("data-qr") || "", page_path: location.pathname, transport_type: "beacon" });
+  }, true);
+
   // --- Onay bandı (yalnız AB/AEA/BK/CH ve henüz seçilmediyse) ---
   var TXT = {
     tr: ["Siteyi iyileştirmek için anonim kullanım istatistiği (Google Analytics) kullanıyoruz. Kabul eder misin?", "Kabul et", "Reddet", "Ayrıntılar"],

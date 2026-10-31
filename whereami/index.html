@@ -18,7 +18,7 @@
 <style>
 :root { --accent:#973731; --hero-a:#571F1C; --hero-b:#A43C36; }
 </style>
-<link rel="stylesheet" href="../landing.css?v=3">
+<link rel="stylesheet" href="../landing.css?v=4">
 <script src="/analytics.js?v=1" defer></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Where Am I?", "operatingSystem": "Android", "applicationCategory": "GameApplication", "description": "See where you are on the map, with your address and GPS coordinates.", "url": "https://nrazon.github.io/whereami/", "image": "https://nrazon.github.io/whereami/icon.svg", "author": {"@type": "Person", "name": "Nesim Razon"}, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "installUrl": "https://play.google.com/store/apps/details?id=com.whereami.nesimapps"}</script>
 </head>
@@ -38,6 +38,7 @@
       
       <div class="cta">
         <a class="play" href="https://play.google.com/store/apps/details?id=com.whereami.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img src="../badges/google-play-tr.svg" alt="Google Play" data-l="tr"><img src="../badges/google-play-en.svg" alt="Get it on Google Play" data-l="en"><img src="../badges/google-play-en.svg" alt="Google Play" data-l="es"><img src="../badges/google-play-en.svg" alt="Google Play" data-l="pt"></a>
+        <details class="qr" data-qr="whereami"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z"/></svg><span data-l="tr">QR ile yükle</span><span data-l="en">Install via QR</span><span data-l="es">Instalar con QR</span><span data-l="pt">Instalar com QR</span></summary><div class="qrpop"><img src="../qr/whereami.svg" alt="QR" width="183" height="183" loading="lazy"><p data-l="tr">Telefonunla tara</p><p data-l="en">Scan with your phone</p><p data-l="es">Escanea con tu móvil</p><p data-l="pt">Escaneie com o celular</p></div></details>
         <a class="small" href="privacy.html#en" data-l-privacy><span data-l="tr">Gizlilik Politikası</span><span data-l="en">Privacy Policy</span><span data-l="es">Política de privacidad</span><span data-l="pt">Política de privacidade</span></a>
       </div>
     </div>
@@ -108,5 +109,10 @@
   })();
 </script>
 <script src="../eyes.js?v=3"></script>
+<script>
+  // QR açılırken: dışarı tıklayınca ya da Esc ile kapanır (aynı anda yalnız biri açık).
+  document.addEventListener("click", function (e) { document.querySelectorAll("details.qr[open]").forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute("open"); }); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") document.querySelectorAll("details.qr[open]").forEach(function (d) { d.removeAttribute("open"); }); });
+</script>
 </body>
 </html>

@@ -69,6 +69,17 @@ html[data-lang="fr"] [data-l]:not([data-l="fr"]) { display:none; }
 @keyframes blink { 0%,93%,100% { transform:scaleY(1); } 96% { transform:scaleY(.08); } }
 @media (prefers-reduced-motion: reduce) { .eye { animation:none; } .pcard { transition:none; } html { scroll-behavior:auto; } }
 
+/* QR ile yükle: yalnız fare olan geniş ekranlarda (masaüstü); telefonda Play rozeti yeterli */
+.qr { display:none; position:relative; z-index:2; }
+@media (hover:hover) and (pointer:fine) and (min-width:900px) { .qr { display:inline-block; } }
+.qr summary { list-style:none; cursor:pointer; display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:700; padding:6px 12px; border-radius:999px; border:1.5px solid color-mix(in srgb, currentColor 35%, transparent); color:inherit; user-select:none; }
+.qr summary::-webkit-details-marker { display:none; }
+.qr summary svg { width:14px; height:14px; flex:none; }
+.qr summary:hover, .qr[open] summary { background:color-mix(in srgb, currentColor 14%, transparent); }
+.qrpop { position:absolute; left:0; bottom:calc(100% + 10px); z-index:30; width:211px; padding:14px 14px 10px; background:#fff; color:#171A2B; border-radius:16px; box-shadow:0 10px 32px rgba(0,0,0,.4); text-align:center; }
+.qrpop img { display:block; width:183px; height:183px; margin:0 auto 6px; }
+.qrpop p { margin:0; font-size:13px; font-weight:700; line-height:1.3; }
+
 .feat.b { grid-template-columns:30px minmax(0,1fr); align-items:center; padding:14px 18px; }
 .feat.b svg { width:30px; height:30px; grid-row:auto; }
 .feat.b h3 { font-size:15.5px; font-weight:600; line-height:1.45; }

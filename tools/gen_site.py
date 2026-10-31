@@ -121,6 +121,17 @@ html[data-lang="fr"] [data-l]:not([data-l="fr"]) { display:none; }
 .eye { transform-box:fill-box; transform-origin:center; animation:blink 6s infinite; animation-delay:var(--d,0s); }
 @keyframes blink { 0%,93%,100% { transform:scaleY(1); } 96% { transform:scaleY(.08); } }
 @media (prefers-reduced-motion: reduce) { .eye { animation:none; } .pcard { transition:none; } html { scroll-behavior:auto; } }
+
+/* QR ile yükle: yalnız fare olan geniş ekranlarda (masaüstü); telefonda Play rozeti yeterli */
+.qr { display:none; position:relative; z-index:2; }
+@media (hover:hover) and (pointer:fine) and (min-width:900px) { .qr { display:inline-block; } }
+.qr summary { list-style:none; cursor:pointer; display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:700; padding:6px 12px; border-radius:999px; border:1.5px solid color-mix(in srgb, currentColor 35%, transparent); color:inherit; user-select:none; }
+.qr summary::-webkit-details-marker { display:none; }
+.qr summary svg { width:14px; height:14px; flex:none; }
+.qr summary:hover, .qr[open] summary { background:color-mix(in srgb, currentColor 14%, transparent); }
+.qrpop { position:absolute; left:0; bottom:calc(100% + 10px); z-index:30; width:211px; padding:14px 14px 10px; background:#fff; color:#171A2B; border-radius:16px; box-shadow:0 10px 32px rgba(0,0,0,.4); text-align:center; }
+.qrpop img { display:block; width:183px; height:183px; margin:0 auto 6px; }
+.qrpop p { margin:0; font-size:13px; font-weight:700; line-height:1.3; }
 '''
 
 # ------------------------------------------------------------------ SVG parçaları
@@ -237,6 +248,8 @@ SEC = {
     "more": {"fr": "Autres applis", "tr": "Diğer uygulamalarım", "en": "More from me", "es": "Más apps", "pt": "Mais apps"},
     "privacy": {"fr": "Politique de confidentialité", "tr": "Gizlilik Politikası", "en": "Privacy Policy", "es": "Política de privacidad", "pt": "Política de privacidade"},
     "webprivacy": {"fr": "Confidentialité du site", "tr": "Site gizliliği", "en": "Website privacy", "es": "Privacidad del sitio", "pt": "Privacidade do site"},
+    "qr": {"fr": "Installer via QR", "tr": "QR ile yükle", "en": "Install via QR", "es": "Instalar con QR", "pt": "Instalar com QR"},
+    "qrscan": {"fr": "Scannez avec votre téléphone", "tr": "Telefonunla tara", "en": "Scan with your phone", "es": "Escanea con tu móvil", "pt": "Escaneie com o celular"},
     "contact": {"fr": "Contact", "tr": "İletişim", "en": "Contact", "es": "Contacto", "pt": "Contato"},
     "back": {"fr": "← Nesim Apps", "tr": "← Nesim Apps", "en": "← Nesim Apps", "es": "← Nesim Apps", "pt": "← Nesim Apps"},
     "new": {"fr": "NOUVEAU JEU", "tr": "YENİ OYUN", "en": "NEW GAME", "es": "JUEGO NUEVO", "pt": "JOGO NOVO"},
@@ -363,6 +376,9 @@ def esc(s):
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
 
 
+GLYPH = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z"/></svg>'
+
+
 def page(cfg):
     L = cfg["langs"]
     slug = cfg["slug"]
@@ -403,6 +419,9 @@ def page(cfg):
         "installUrl": f"https://play.google.com/store/apps/details?id={cfg['pkg']}",
     }, ensure_ascii=False)
     title_main = t(cfg["title"], "en")
+    qr_html = "" if cfg["slug"] in HIDDEN else (
+        f'<details class="qr" data-qr="{cfg["slug"]}"><summary>' + GLYPH + multi(SEC["qr"], L) + '</summary><div class="qrpop">'
+        f'<img src="../qr/{cfg["slug"]}.svg" alt="QR" width="183" height="183" loading="lazy">' + multi(SEC["qrscan"], L, "p") + '</div></details>')
     noindex = '\n<meta name="robots" content="noindex">' if cfg["slug"] in HIDDEN else ""
     return f'''<!doctype html>
 <html lang="en" data-lang="en">
@@ -424,7 +443,7 @@ def page(cfg):
 <style>
 :root {{ --accent:{cfg['accent']}; --hero-a:{cfg['hero'][0]}; --hero-b:{cfg['hero'][1]}; }}
 </style>
-<link rel="stylesheet" href="../landing.css?v=3">
+<link rel="stylesheet" href="../landing.css?v=4">
 <script src="/analytics.js?v=1" defer></script>
 <script type="application/ld+json">{jsonld}</script>
 </head>
@@ -444,6 +463,7 @@ def page(cfg):
       {('<ul class="chips">' + chips + '</ul>') if chips else ""}
       <div class="cta">
         <a class="play" href="{play}"><img src="../badges/google-play-tr.svg" alt="Google Play" data-l="tr"><img src="../badges/google-play-en.svg" alt="Get it on Google Play" data-l="en">{"".join(f'<img src="../badges/google-play-en.svg" alt="Google Play" data-l="{l}">' for l in L if l not in ("tr", "en"))}</a>
+        {qr_html}
         <a class="small" href="privacy.html#{ 'tr' if False else 'en'}" data-l-privacy>{multi(SEC['privacy'], L)}</a>
       </div>
     </div>
@@ -494,6 +514,11 @@ def page(cfg):
   }})();
 </script>
 <script src="../eyes.js?v=3"></script>
+<script>
+  // QR açılırken: dışarı tıklayınca ya da Esc ile kapanır (aynı anda yalnız biri açık).
+  document.addEventListener("click", function (e) {{ document.querySelectorAll("details.qr[open]").forEach(function (d) {{ if (!d.contains(e.target)) d.removeAttribute("open"); }}); }});
+  document.addEventListener("keydown", function (e) {{ if (e.key === "Escape") document.querySelectorAll("details.qr[open]").forEach(function (d) {{ d.removeAttribute("open"); }}); }});
+</script>
 </body>
 </html>
 '''

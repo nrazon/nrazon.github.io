@@ -19,7 +19,7 @@
 <style>
 :root { --accent:#263C83; --hero-a:#16224B; --hero-b:#29418F; }
 </style>
-<link rel="stylesheet" href="../landing.css?v=3">
+<link rel="stylesheet" href="../landing.css?v=4">
 <script src="/analytics.js?v=1" defer></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Uzay Günlüğü", "operatingSystem": "Android", "applicationCategory": "GameApplication", "description": "Her gün yeni bir uzay kartı, Türkiye'nin uydu görüntüsü, dönen Dünya ve ISS.", "url": "https://nrazon.github.io/uzaygunlugu/", "image": "https://nrazon.github.io/uzaygunlugu/icon.svg", "author": {"@type": "Person", "name": "Nesim Razon"}, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "installUrl": "https://play.google.com/store/apps/details?id=com.uzaygunlugu.nesimapps"}</script>
 </head>
@@ -39,6 +39,7 @@
       
       <div class="cta">
         <a class="play" href="https://play.google.com/store/apps/details?id=com.uzaygunlugu.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img src="../badges/google-play-tr.svg" alt="Google Play" data-l="tr"><img src="../badges/google-play-en.svg" alt="Get it on Google Play" data-l="en"></a>
+        
         <a class="small" href="privacy.html#en" data-l-privacy><span data-l="tr">Gizlilik Politikası</span></a>
       </div>
     </div>
@@ -106,5 +107,10 @@
   })();
 </script>
 <script src="../eyes.js?v=3"></script>
+<script>
+  // QR açılırken: dışarı tıklayınca ya da Esc ile kapanır (aynı anda yalnız biri açık).
+  document.addEventListener("click", function (e) { document.querySelectorAll("details.qr[open]").forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute("open"); }); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") document.querySelectorAll("details.qr[open]").forEach(function (d) { d.removeAttribute("open"); }); });
+</script>
 </body>
 </html>

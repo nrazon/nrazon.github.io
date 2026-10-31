@@ -61,6 +61,9 @@ T = {
     "email": {"tr": "E-posta gönder", "en": "Send an email", "es": "Enviar un correo", "pt": "Enviar e-mail"},
     "contact": {"tr": "İletişim", "en": "Contact", "es": "Contacto", "pt": "Contato"},
     "webprivacy": {"tr": "Site gizliliği", "en": "Website privacy", "es": "Privacidad del sitio", "pt": "Privacidade do site"},
+    "qr": {"tr": "QR ile yükle", "en": "Install via QR", "es": "Instalar con QR", "pt": "Instalar com QR"},
+    "qrshort": {"tr": "QR", "en": "QR", "es": "QR", "pt": "QR"},
+    "qrscan": {"tr": "Telefonunla tara", "en": "Scan with your phone", "es": "Escanea con tu móvil", "pt": "Escaneie com o celular"},
     "allprivacy": {"tr": "Uygulama gizlilik politikaları", "en": "App privacy policies", "es": "Políticas de privacidad de las apps", "pt": "Políticas de privacidade dos apps"},
 }
 CARDLES = {
@@ -110,6 +113,18 @@ def badge_new(until, key="new"):
     return f' <span class="badge" data-new-until="{until}">{L(T[key])}</span>' if until else ""
 
 
+GLYPH = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z"/></svg>'
+
+
+def qr_html(slug, short=False):
+    """Masaüstü ziyaretçiler için "QR ile yükle" (CSS yalnız fare olan geniş ekranlarda gösterir). QR: tools/gen_qr.py ile üretilen qr/<slug>.svg"""
+    if not os.path.exists(os.path.join(G, "qr", slug + ".svg")):
+        return ""
+    lab = L(T["qrshort" if short else "qr"])
+    return (f'<details class="qr" data-qr="{slug}"><summary>{GLYPH}{lab}</summary><div class="qrpop">'
+            f'<img src="qr/{slug}.svg" alt="QR" width="183" height="183" loading="lazy">{L(T["qrscan"], "p")}</div></details>')
+
+
 def show_card(a):
     s = a["slug"]
     pk = a["pkg"]
@@ -122,7 +137,7 @@ def show_card(a):
         <h3><a class="stretch" href="{s}/">{esc(a["names"]["en"])}</a>{badge_new(a["new"])}</h3>
         <p class="stag">{L(SHOW_TAG[s])}</p>
         {L(desc, "p", "sdesc")}
-        <div class="links">{badge(pk)}<a class="small" href="{s}/">{L(T["more"], "b")}</a></div>
+        <div class="links">{badge(pk)}{qr_html(s)}<a class="small" href="{s}/">{L(T["more"], "b")}</a></div>
       </div>
       <div class="shots" aria-hidden="true">{shot_imgs(s, picks)}</div>
     </article>'''
@@ -137,7 +152,7 @@ def tool_card(a):
         <div class="tbody">
           <h3><a class="stretch" href="{s}/">{L(a["names"])}</a>{chip}</h3>
           {L(a["desc"], "p")}
-          <a class="gp" href="{play_url(pk)}"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a>
+          <div class="gprow"><a class="gp" href="{play_url(pk)}"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a>{qr_html(s, short=True)}</div>
         </div>
       </article>'''
 
@@ -186,11 +201,11 @@ CSS = r'''
   .sec { margin:44px 0 6px; font-size:clamp(24px,3.4vw,32px); letter-spacing:-.01em; line-height:1.2; }
   .sec + .sub { color:var(--dim); margin:0 0 18px; }
   /* Öne çıkan (Cardles) */
-  .hero { background:var(--card); border-radius:24px; overflow:hidden; box-shadow:var(--shadow); margin:0 0 16px; }
+  .hero { background:var(--card); border-radius:24px; box-shadow:var(--shadow); margin:0 0 16px; } /* overflow görünür: QR penceresi taşabilsin; köşe yuvarlaması sanat alanında */
   .hero .body { padding:20px 22px 24px; display:flex; flex-direction:column; }
   .hero p { margin:0 0 14px; color:var(--dim); }
-  @media (min-width:700px) { .hero { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); align-items:center; } .hero .body { padding:24px 28px; } }
-  .hero-art { position:relative; background:linear-gradient(135deg,#0F6B52,#16A07F); color:#fff; padding:22px 18px 22px 26px; display:flex; flex-direction:column; justify-content:center; gap:6px; overflow:hidden; min-height:270px; }
+  @media (min-width:700px) { .hero { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); align-items:center; } .hero .body { padding:24px 28px; } .hero-art { border-radius:24px 0 0 24px; } }
+  .hero-art { border-radius:24px 24px 0 0; position:relative; background:linear-gradient(135deg,#0F6B52,#16A07F); color:#fff; padding:22px 18px 22px 26px; display:flex; flex-direction:column; justify-content:center; gap:6px; overflow:hidden; min-height:270px; }
   .hero-art .ha-text { display:flex; flex-direction:column; position:relative; z-index:1; }
   .hero-art .ha-title { font-size:clamp(34px,4.6vw,46px); font-weight:900; line-height:1; letter-spacing:-.02em; }
   .hero-art .ha-tag { font-weight:650; font-size:clamp(15px,2.6vw,19px); opacity:.95; margin-top:4px; }
@@ -234,6 +249,8 @@ CSS = r'''
   .tool p { margin:0 0 8px; color:var(--dim); font-size:14px; line-height:1.45; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
   .chip { display:inline-block; vertical-align:middle; background:var(--chip); color:var(--dim); font-size:10.5px; font-weight:800; letter-spacing:.06em; padding:2px 8px; border-radius:999px; margin-left:4px; position:relative; top:-1px; }
   .chip.pop { background:var(--accent); color:#fff; }
+  .gprow { display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+  .tool:has(.qr[open]) { z-index:40; }
   .gp { position:relative; z-index:2; display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:700; color:var(--link); text-decoration:none; padding:5px 11px; border:1.5px solid var(--line); border-radius:999px; }
   .gp:hover { background:var(--chip); }
   .tool.soon { border:1.5px dashed var(--line); box-shadow:none; background:transparent; }
@@ -242,6 +259,17 @@ CSS = r'''
   .links { display:flex; flex-wrap:wrap; gap:8px 14px; align-items:center; }
   .play img { height:44px; width:auto; display:block; }
   .small { color:var(--link); font-size:14px; }
+
+  /* QR ile yükle: yalnız fare olan geniş ekranlarda (masaüstü); telefonda Play rozeti yeterli */
+  .qr { display:none; position:relative; z-index:2; }
+  @media (hover:hover) and (pointer:fine) and (min-width:900px) { .qr { display:inline-block; } }
+  .qr summary { list-style:none; cursor:pointer; display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:700; padding:6px 12px; border-radius:999px; border:1.5px solid color-mix(in srgb, currentColor 35%, transparent); color:inherit; user-select:none; }
+  .qr summary::-webkit-details-marker { display:none; }
+  .qr summary svg { width:14px; height:14px; flex:none; }
+  .qr summary:hover, .qr[open] summary { background:color-mix(in srgb, currentColor 14%, transparent); }
+  .qrpop { position:absolute; left:0; bottom:calc(100% + 10px); z-index:30; width:211px; padding:14px 14px 10px; background:#fff; color:#171A2B; border-radius:16px; box-shadow:0 10px 32px rgba(0,0,0,.4); text-align:center; }
+  .qrpop img { display:block; width:183px; height:183px; margin:0 auto 6px; }
+  .qrpop p { margin:0; font-size:13px; font-weight:700; line-height:1.3; }
   /* Hakkımda */
   .about { margin-top:48px; display:flex; flex-wrap:wrap; gap:22px 28px; align-items:center; background:var(--card); border-radius:24px; padding:26px; box-shadow:var(--shadow); }
   .about img { width:96px; height:96px; border-radius:50%; flex:none; object-fit:cover; box-shadow:0 4px 14px rgba(0,0,0,.3); }
@@ -280,6 +308,9 @@ JS = r'''
     try { localStorage.setItem("lang", lang); } catch (e) {}
     document.querySelectorAll(".lang button").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.lang === lang); });
   }
+  // QR açılırken: dışarı tıklayınca ya da Esc ile kapanır (aynı anda yalnız biri açık).
+  document.addEventListener("click", function (e) { document.querySelectorAll("details.qr[open]").forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute("open"); }); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") document.querySelectorAll("details.qr[open]").forEach(function (d) { d.removeAttribute("open"); }); });
   // "Yeni" rozetleri tarihi geçince kendiliğinden kalkar (data-new-until: yyyy-mm-dd).
   function expireBadges() {
     var today = new Date().toISOString().slice(0, 10);
@@ -319,7 +350,7 @@ def build(preview):
       <span class="tag" data-new-until="{cardles["new"]}">{L(T["newgame"])}</span>
       {L(CARDLES, "p")}
       <ul class="chips"><li>Klondike</li><li>Spider</li><li>FreeCell</li><li>TriPeaks</li></ul>
-      <div class="links">{badge("com.cardles.nesimapps")}<a class="small" href="cardles/">{L(T["more"], "b")}</a></div>
+      <div class="links">{badge("com.cardles.nesimapps")}{qr_html("cardles")}<a class="small" href="cardles/">{L(T["more"], "b")}</a></div>
     </div>
   </section>'''
     return f'''<!doctype html>
