@@ -63,6 +63,7 @@ T = {
     "webprivacy": {"tr": "Site gizliliği", "en": "Website privacy", "es": "Privacidad del sitio", "pt": "Privacidade do site"},
     "demo": {"tr": "Tarayıcıda dene", "en": "Try it here", "es": "Pruébalo aquí", "pt": "Experimente aqui"},
     "demotitle": {"tr": "Tic-Tac-Toe: tarayıcıda dene", "en": "Tic-Tac-Toe: try it in your browser", "es": "Tic-Tac-Toe: pruébalo en el navegador", "pt": "Tic-Tac-Toe: experimente no navegador"},
+    "demotitle2048": {"tr": "2048: tarayıcıda dene", "en": "2048: try it in your browser", "es": "2048: pruébalo en el navegador", "pt": "2048: experimente no navegador"},
     "qr": {"tr": "QR ile yükle", "en": "Install via QR", "es": "Instalar con QR", "pt": "Instalar com QR"},
     "qrshort": {"tr": "QR", "en": "QR", "es": "QR", "pt": "QR"},
     "qrscan": {"tr": "Telefonunla tara", "en": "Scan with your phone", "es": "Escanea con tu móvil", "pt": "Escaneie com o celular"},
@@ -127,11 +128,17 @@ def qr_html(slug, short=False):
             f'<img src="qr/{slug}.svg" alt="QR" width="183" height="183" loading="lazy">{L(T["qrscan"], "p")}</div></details>')
 
 
+# Tarayıcı demosu olan oyunlar: slug -> (panel kimliği, betik). Betik ilk açılışta yüklenir.
+DEMOS = {"tictactoe": ("ttt-demo", "ttt.js?v=2"), "game2048": ("g2048-demo", "g2048.js?v=1")}
+
+
 def demo_btn(slug):
-    """Tarayıcı demosu olan oyunlarda (şimdilik Tic-Tac-Toe) kartta 'Tarayıcıda dene' düğmesi; panel #ttt-demo."""
-    if slug != "tictactoe":
+    """Tarayıcı demosu olan oyunlarda kartta 'Tarayıcıda dene' düğmesi (panel DEMOS'taki kimlikle)."""
+    if slug not in DEMOS:
         return ""
-    return f'<button type="button" class="gp demo" data-ttt-toggle aria-expanded="false" aria-controls="ttt-demo">▶ {L(T["demo"])}</button>'
+    panel, src = DEMOS[slug]
+    return (f'<button type="button" class="gp demo" data-demo-toggle="{slug}" data-demo-src="{src}" aria-expanded="false" aria-controls="{panel}">'
+            f'▶ {L(T["demo"])}</button>')
 
 
 def show_card(a):
@@ -322,15 +329,16 @@ JS = r'''
   // QR açılırken: dışarı tıklayınca ya da Esc ile kapanır (aynı anda yalnız biri açık).
   document.addEventListener("click", function (e) { document.querySelectorAll("details.qr[open]").forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute("open"); }); });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") document.querySelectorAll("details.qr[open]").forEach(function (d) { d.removeAttribute("open"); }); });
-  // Tarayıcı demosu: kartta düğme; ilk açılışta ttt.js yüklenir (gerekmedikçe indirilmez).
+  // Tarayıcı demosu: kartta düğme; ilk açılışta ilgili betik yüklenir (gerekmedikçe indirilmez).
   document.addEventListener("click", function (e) {
-    var b = e.target.closest && e.target.closest("[data-ttt-toggle]");
+    var b = e.target.closest && e.target.closest("[data-demo-toggle]");
     if (!b) return;
     var panel = document.getElementById(b.getAttribute("aria-controls"));
     var open = panel.hidden;
     panel.hidden = !open;
     b.setAttribute("aria-expanded", open);
-    if (open && !window.TTT && !document.getElementById("ttt-js")) { var s = document.createElement("script"); s.id = "ttt-js"; s.src = "ttt.js?v=1"; document.head.appendChild(s); }
+    var id = "demo-js-" + b.getAttribute("data-demo-toggle");
+    if (open && !document.getElementById(id)) { var s = document.createElement("script"); s.id = id; s.src = b.getAttribute("data-demo-src"); document.head.appendChild(s); }
     if (open) panel.scrollIntoView({ block: "nearest", behavior: "smooth" });
   });
   // "Yeni" rozetleri tarihi geçince kendiliğinden kalkar (data-new-until: yyyy-mm-dd).
@@ -433,6 +441,10 @@ def build(preview):
     <div class="demo-panel" id="ttt-demo" hidden>
       <h3>{L(T["demotitle"])}</h3>
       <div data-ttt data-play="{play_url(by["tictactoe"]["pkg"])}"></div>
+    </div>
+    <div class="demo-panel" id="g2048-demo" hidden>
+      <h3>{L(T["demotitle2048"])}</h3>
+      <div data-g2048 data-play="{play_url(by["game2048"]["pkg"])}"></div>
     </div>
   </section>
 

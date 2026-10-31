@@ -79,8 +79,8 @@
           gtag("event", "app_open", { app: parts[0], page_path: location.pathname, transport_type: "beacon" });
         }
       }
-    } else if (el.hasAttribute && el.hasAttribute("data-ttt-toggle")) {
-      gtag("event", "demo_open", { app: "tictactoe", page_path: location.pathname, transport_type: "beacon" });
+    } else if (el.hasAttribute && el.hasAttribute("data-demo-toggle")) {
+      gtag("event", "demo_open", { app: el.getAttribute("data-demo-toggle"), page_path: location.pathname, transport_type: "beacon" });
     } else if (el.dataset && el.dataset.lang) {
       gtag("event", "lang_change", { lang: el.dataset.lang, transport_type: "beacon" });
     } else if (el.dataset && el.dataset.filter) {

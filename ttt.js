@@ -153,8 +153,8 @@
     if (!document.getElementById("ttt-css")) {
       var st = document.createElement("style"); st.id = "ttt-css"; st.textContent = CSS; document.head.appendChild(st);
     }
-    var diff = store("ttt_diff") || "hard";
-    if (["easy", "medium", "hard"].indexOf(diff) < 0) diff = "hard";
+    var diff = store("ttt_diff") || "easy"; // ilk açılışta Kolay (seçim sonra hatırlanır)
+    if (["easy", "medium", "hard"].indexOf(diff) < 0) diff = "easy";
     var scores = store("ttt_scores") || {};
     var starter = "X", cells, ended, started, timer;
     var els = {};

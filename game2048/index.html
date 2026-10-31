@@ -45,6 +45,11 @@
     <div class="art"><div class="iconart"><img src="icon.svg" alt="" width="200" height="200"></div></div>
   </section>
 
+  <section class="block" aria-labelledby="h-demo">
+    <h2 class="h" id="h-demo"><span data-l="tr">Tarayıcıda dene</span><span data-l="en">Try it in your browser</span><span data-l="es">Pruébalo en el navegador</span><span data-l="pt">Experimente no navegador</span></h2>
+    <div class="demo-wrap"><div data-g2048 data-play="https://play.google.com/store/apps/details?id=com.game2048.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"></div></div>
+  </section>
+
   <section class="block" aria-labelledby="h-shots">
     <h2 class="h" id="h-shots"><span data-l="tr">Ekran görüntüleri</span><span data-l="en">Screenshots</span><span data-l="es">Capturas de pantalla</span><span data-l="pt">Capturas de tela</span></h2>
     <div class="strip">
@@ -112,6 +117,7 @@
   })();
 </script>
 <script src="../eyes.js?v=3"></script>
+<script src="../g2048.js?v=1" defer></script>
 <script>
   // QR açılırken: dışarı tıklayınca ya da Esc ile kapanır (aynı anda yalnız biri açık).
   document.addEventListener("click", function (e) { document.querySelectorAll("details.qr[open]").forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute("open"); }); });

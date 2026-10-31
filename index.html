@@ -163,15 +163,16 @@
   // QR açılırken: dışarı tıklayınca ya da Esc ile kapanır (aynı anda yalnız biri açık).
   document.addEventListener("click", function (e) { document.querySelectorAll("details.qr[open]").forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute("open"); }); });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") document.querySelectorAll("details.qr[open]").forEach(function (d) { d.removeAttribute("open"); }); });
-  // Tarayıcı demosu: kartta düğme; ilk açılışta ttt.js yüklenir (gerekmedikçe indirilmez).
+  // Tarayıcı demosu: kartta düğme; ilk açılışta ilgili betik yüklenir (gerekmedikçe indirilmez).
   document.addEventListener("click", function (e) {
-    var b = e.target.closest && e.target.closest("[data-ttt-toggle]");
+    var b = e.target.closest && e.target.closest("[data-demo-toggle]");
     if (!b) return;
     var panel = document.getElementById(b.getAttribute("aria-controls"));
     var open = panel.hidden;
     panel.hidden = !open;
     b.setAttribute("aria-expanded", open);
-    if (open && !window.TTT && !document.getElementById("ttt-js")) { var s = document.createElement("script"); s.id = "ttt-js"; s.src = "ttt.js?v=1"; document.head.appendChild(s); }
+    var id = "demo-js-" + b.getAttribute("data-demo-toggle");
+    if (open && !document.getElementById(id)) { var s = document.createElement("script"); s.id = id; s.src = b.getAttribute("data-demo-src"); document.head.appendChild(s); }
     if (open) panel.scrollIntoView({ block: "nearest", behavior: "smooth" });
   });
   // "Yeni" rozetleri tarihi geçince kendiliğinden kalkar (data-new-until: yyyy-mm-dd).
@@ -271,7 +272,7 @@
         <div class="tbody">
           <h3><a class="stretch" href="game2048/"><span lang="tr">2048</span><span lang="en">2048</span><span lang="es">2048</span><span lang="pt">2048</span></a></h3>
           <p lang="tr">Klasik sayı bulmacası: kaydır, aynı sayıları birleştir, 2048 taşına ulaş.</p><p lang="en">The classic number puzzle: swipe, merge matching numbers and reach the 2048 tile.</p><p lang="es">El clásico puzle de números: desliza, combina números iguales y llega a la ficha 2048.</p><p lang="pt">O clássico quebra-cabeça de números: deslize, combine números iguais e chegue à peça 2048.</p>
-          <div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.game2048.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a><details class="qr" data-qr="game2048"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z"/></svg><span lang="tr">QR</span><span lang="en">QR</span><span lang="es">QR</span><span lang="pt">QR</span></summary><div class="qrpop"><img src="qr/game2048.svg" alt="QR" width="183" height="183" loading="lazy"><p lang="tr">Telefonunla tara</p><p lang="en">Scan with your phone</p><p lang="es">Escanea con tu móvil</p><p lang="pt">Escaneie com o celular</p></div></details></div>
+          <div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.game2048.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a><details class="qr" data-qr="game2048"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z"/></svg><span lang="tr">QR</span><span lang="en">QR</span><span lang="es">QR</span><span lang="pt">QR</span></summary><div class="qrpop"><img src="qr/game2048.svg" alt="QR" width="183" height="183" loading="lazy"><p lang="tr">Telefonunla tara</p><p lang="en">Scan with your phone</p><p lang="es">Escanea con tu móvil</p><p lang="pt">Escaneie com o celular</p></div></details><button type="button" class="gp demo" data-demo-toggle="game2048" data-demo-src="g2048.js?v=1" aria-expanded="false" aria-controls="g2048-demo">▶ <span lang="tr">Tarayıcıda dene</span><span lang="en">Try it here</span><span lang="es">Pruébalo aquí</span><span lang="pt">Experimente aqui</span></button></div>
         </div>
       </article>
       <article class="tool" style="--tint:#4CC9C0" data-slug="tictactoe" data-pkg="com.tictactoe.nesimapps">
@@ -279,13 +280,17 @@
         <div class="tbody">
           <h3><a class="stretch" href="tictactoe/"><span lang="tr">Tic-Tac-Toe</span><span lang="en">Tic-Tac-Toe</span><span lang="es">Tic-Tac-Toe</span><span lang="pt">Tic-Tac-Toe</span></a></h3>
           <p lang="tr">Bilgisayara karşı klasik XOX: Kolay, Orta ya da Zor. Zor seviyede bilgisayar hiç kaybetmez.</p><p lang="en">Classic Tic-Tac-Toe against the computer: Easy, Medium or Hard. On Hard it never loses.</p><p lang="es">El clásico tres en raya contra el ordenador: Fácil, Medio o Difícil. En Difícil nunca pierde.</p><p lang="pt">O clássico jogo da velha contra o computador: Fácil, Médio ou Difícil. No Difícil ele nunca perde.</p>
-          <div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.tictactoe.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a><details class="qr" data-qr="tictactoe"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z"/></svg><span lang="tr">QR</span><span lang="en">QR</span><span lang="es">QR</span><span lang="pt">QR</span></summary><div class="qrpop"><img src="qr/tictactoe.svg" alt="QR" width="183" height="183" loading="lazy"><p lang="tr">Telefonunla tara</p><p lang="en">Scan with your phone</p><p lang="es">Escanea con tu móvil</p><p lang="pt">Escaneie com o celular</p></div></details><button type="button" class="gp demo" data-ttt-toggle aria-expanded="false" aria-controls="ttt-demo">▶ <span lang="tr">Tarayıcıda dene</span><span lang="en">Try it here</span><span lang="es">Pruébalo aquí</span><span lang="pt">Experimente aqui</span></button></div>
+          <div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.tictactoe.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a><details class="qr" data-qr="tictactoe"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z"/></svg><span lang="tr">QR</span><span lang="en">QR</span><span lang="es">QR</span><span lang="pt">QR</span></summary><div class="qrpop"><img src="qr/tictactoe.svg" alt="QR" width="183" height="183" loading="lazy"><p lang="tr">Telefonunla tara</p><p lang="en">Scan with your phone</p><p lang="es">Escanea con tu móvil</p><p lang="pt">Escaneie com o celular</p></div></details><button type="button" class="gp demo" data-demo-toggle="tictactoe" data-demo-src="ttt.js?v=2" aria-expanded="false" aria-controls="ttt-demo">▶ <span lang="tr">Tarayıcıda dene</span><span lang="en">Try it here</span><span lang="es">Pruébalo aquí</span><span lang="pt">Experimente aqui</span></button></div>
         </div>
       </article>
     </div>
     <div class="demo-panel" id="ttt-demo" hidden>
       <h3><span lang="tr">Tic-Tac-Toe: tarayıcıda dene</span><span lang="en">Tic-Tac-Toe: try it in your browser</span><span lang="es">Tic-Tac-Toe: pruébalo en el navegador</span><span lang="pt">Tic-Tac-Toe: experimente no navegador</span></h3>
       <div data-ttt data-play="https://play.google.com/store/apps/details?id=com.tictactoe.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"></div>
+    </div>
+    <div class="demo-panel" id="g2048-demo" hidden>
+      <h3><span lang="tr">2048: tarayıcıda dene</span><span lang="en">2048: try it in your browser</span><span lang="es">2048: pruébalo en el navegador</span><span lang="pt">2048: experimente no navegador</span></h3>
+      <div data-g2048 data-play="https://play.google.com/store/apps/details?id=com.game2048.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"></div>
     </div>
   </section>
 
