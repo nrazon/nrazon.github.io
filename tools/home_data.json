@@ -115,8 +115,8 @@
    "pt": "Çalışan Asistanı"
   },
   "tint": "#2F6F5E",
-  "pkg": null,
-  "new": null,
+  "pkg": "com.calisanasistani.nesimapps",
+  "new": "2026-12-15",
   "desc": {
    "tr": "Net maaş, kıdem ve ihbar tazminatı, fazla mesai ve izin planı tek uygulamada. Türkiye'deki çalışanlar için; Google Play'de çok yakında.",
    "en": "Net salary, severance and notice pay, overtime and leave planning in one app, for employees in Turkey (Turkish only). Coming soon to Google Play.",
@@ -124,7 +124,13 @@
    "pt": "Salário líquido, indenização e aviso prévio, horas extras e planejamento de folgas em um só app, para trabalhadores na Turquia (só em turco). Em breve no Google Play."
   },
   "status": "soon",
-  "popular": false
+  "popular": false,
+  "desc_live": {
+   "tr": "Net maaş, kıdem ve ihbar tazminatı, fazla mesai ve izin planı tek uygulamada. Türkiye'deki çalışanlar için; asistanın sana göz kırpar.",
+   "en": "Net salary, severance and notice pay, overtime and leave planning in one app, for employees in Turkey (Turkish only), with a friendly payslip assistant.",
+   "es": "Salario neto, indemnización por despido y preaviso, horas extra y planificación de vacaciones en una sola app, para empleados en Turquía (solo en turco), con un simpático asistente.",
+   "pt": "Salário líquido, indenização e aviso prévio, horas extras e planejamento de folgas em um só app, para trabalhadores na Turquia (só em turco), com um simpático assistente."
+  }
  },
  {
   "slug": "uzaygunlugu",
@@ -137,8 +143,8 @@
    "pt": "Uzay Günlüğü"
   },
   "tint": "#3A5BC7",
-  "pkg": null,
-  "new": null,
+  "pkg": "com.uzaygunlugu.nesimapps",
+  "new": "2026-12-15",
   "desc": {
    "tr": "Her gün yeni bir uzay kartı, Türkiye'nin uzaydan görüntüsü, dönen Dünya ve ISS'in anlık konumu. NASA'nın herkese açık verileriyle; Google Play'de çok yakında.",
    "en": "A new space card every day, Turkey from space, the spinning Earth and the live position of the ISS, built on NASA's public data (Turkish only). Coming soon to Google Play.",
@@ -146,7 +152,13 @@
    "pt": "Um novo cartão espacial por dia, a Turquia vista do espaço, a Terra girando e a posição ao vivo da ISS, com dados públicos da NASA (só em turco). Em breve no Google Play."
   },
   "status": "soon",
-  "popular": false
+  "popular": false,
+  "desc_live": {
+   "tr": "Her gün yeni bir uzay kartı, Türkiye'nin uzaydan görüntüsü, dönen Dünya ve ISS'in anlık konumu. NASA'nın herkese açık verileriyle.",
+   "en": "A new space card every day, Turkey from space, the spinning Earth and the live position of the ISS, built on NASA's public data (Turkish only).",
+   "es": "Una nueva tarjeta espacial cada día, Turquía desde el espacio, la Tierra girando y la posición en vivo de la ISS, con datos públicos de la NASA (solo en turco).",
+   "pt": "Um novo cartão espacial por dia, a Turquia vista do espaço, a Terra girando e a posição ao vivo da ISS, com dados públicos da NASA (só em turco)."
+  }
  },
  {
   "slug": "sansoyunlari",

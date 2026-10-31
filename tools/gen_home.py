@@ -14,6 +14,9 @@ import sys
 G = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LANGS = ("tr", "en", "es", "pt")
 DATA = json.load(open(os.path.join(G, "tools", "home_data.json"), encoding="utf-8"))
+for _a in DATA:  # yayına çıkınca (status: live) 'çok yakında' içermeyen metin kullanılır
+    if _a.get("status") == "live" and _a.get("desc_live"):
+        _a["desc"] = _a["desc_live"]
 HERO_SVG = open(os.path.join(G, "tools", "cardles_hero.svg"), encoding="utf-8").read()
 UTM = "&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"
 
@@ -293,6 +296,14 @@ def build(preview):
     apps = [a for a in live if a["cat"] == "apps"]
     cardles = by["cardles"]
     robots = '<meta name="robots" content="noindex">\n' if preview else ""
+    soon_html = f'''  <section id="soon">
+    <h2 class="sec">{L(T["h_soon"])}</h2>
+    <div class="tools two" style="margin-top:14px">
+{chr(10).join(soon_card(a) for a in soon)}
+    </div>
+  </section>
+
+''' if soon else ""
     privacy_links = "".join(
         f'<li><a href="{a["slug"]}/privacy.html">{esc(a["names"]["en"])}</a></li>' for a in DATA)
     hero = f'''  <section class="hero" data-slug="cardles" data-pkg="com.cardles.nesimapps">
@@ -376,14 +387,7 @@ def build(preview):
     </div>
   </section>
 
-  <section id="soon">
-    <h2 class="sec">{L(T["h_soon"])}</h2>
-    <div class="tools two" style="margin-top:14px">
-{chr(10).join(soon_card(a) for a in soon)}
-    </div>
-  </section>
-
-  <section class="about" id="about">
+{soon_html}  <section class="about" id="about">
     <img src="nesim.jpg" alt="Nesim Razon" width="96" height="96">
     <div class="abody">
       <h2>{L(T["h_about"])}</h2>
