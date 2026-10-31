@@ -231,6 +231,7 @@ SEC = {
     "faq": {"fr": "Questions fréquentes", "tr": "Sık sorulanlar", "en": "Frequently asked questions", "es": "Preguntas frecuentes", "pt": "Perguntas frequentes"},
     "more": {"fr": "Autres applis", "tr": "Diğer uygulamalarım", "en": "More from me", "es": "Más apps", "pt": "Mais apps"},
     "privacy": {"fr": "Politique de confidentialité", "tr": "Gizlilik Politikası", "en": "Privacy Policy", "es": "Política de privacidad", "pt": "Política de privacidade"},
+    "webprivacy": {"fr": "Confidentialité du site", "tr": "Site gizliliği", "en": "Website privacy", "es": "Privacidad del sitio", "pt": "Privacidade do site"},
     "contact": {"fr": "Contact", "tr": "İletişim", "en": "Contact", "es": "Contacto", "pt": "Contato"},
     "back": {"fr": "← Nesim Apps", "tr": "← Nesim Apps", "en": "← Nesim Apps", "es": "← Nesim Apps", "pt": "← Nesim Apps"},
     "new": {"fr": "NOUVEAU JEU", "tr": "YENİ OYUN", "en": "NEW GAME", "es": "JUEGO NUEVO", "pt": "JOGO NOVO"},
@@ -417,6 +418,7 @@ def page(cfg):
 :root {{ --accent:{cfg['accent']}; --hero-a:{cfg['hero'][0]}; --hero-b:{cfg['hero'][1]}; }}
 </style>
 <link rel="stylesheet" href="../landing.css?v=3">
+<script src="/analytics.js?v=1" defer></script>
 <script type="application/ld+json">{jsonld}</script>
 </head>
 <body>
@@ -460,7 +462,7 @@ def page(cfg):
     <div class="more">{more}</div>
   </section>
 
-  <footer>{multi(SEC['contact'], L)}: <a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="privacy.html">{multi(SEC['privacy'], L)}</a></footer>
+  <footer>{multi(SEC['contact'], L)}: <a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="privacy.html">{multi(SEC['privacy'], L)}</a> · <a href="/site-privacy.html">{multi(SEC['webprivacy'], L)}</a></footer>
 </main>
 <script>
   (function () {{
@@ -621,7 +623,7 @@ def tick_icon(color):
 def index_pkgs():
     s = open(os.path.join(G, "index.html"), encoding="utf-8").read()
     out = {}
-    for m in re.finditer(r'<img class="icon" src="([^/]+)/icon[^>]*>.*?id=([A-Za-z0-9_.]+)', s, re.S):
+    for m in re.finditer(r'<img (?:class="icon" )?src="([^/"]+)/icon[^>]*>.*?id=([A-Za-z0-9_.]+)', s, re.S):
         out.setdefault(m.group(1), m.group(2))
     return out
 
@@ -767,7 +769,7 @@ for cfg in ALL:
     open(os.path.join(G, cfg["slug"], "index.html"), "w", encoding="utf-8", newline="\n").write(page(cfg))
 
 # robots + sitemap
-pages = [""] + [f"{c['slug']}/{x}" for c in ALL for x in ("", "privacy.html")]
+pages = ["", "site-privacy.html"] + [f"{c['slug']}/{x}" for c in ALL for x in ("", "privacy.html")]
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(f"  <url><loc>{BASE}/{p}</loc></url>\n" for p in pages) + "</urlset>\n"
 open(os.path.join(G, "sitemap.xml"), "w", encoding="utf-8", newline="\n").write(sm)
 open(os.path.join(G, "robots.txt"), "w", encoding="utf-8", newline="\n").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")
