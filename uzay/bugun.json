@@ -1,7 +1,16 @@
 {
- "uretim": "2026-10-30T20:51:57Z",
+ "uretim": "2026-10-31T10:55:47Z",
  "surum": 1,
  "apod": [
+  {
+   "tarih": "2026-10-31",
+   "baslik": "Night on a Spooky Planet",
+   "tur": "image",
+   "baglanti": "https://science.nasa.gov/image-article/apod-2026-october-31-night-on-a-spooky-planet/",
+   "ozet_en": "Explanation: What spooky planet is this? Planet Earth on a dark and stormy night, of course. The ghostly scene was photographed at Hverir, a geothermally active area found along northeastern Iceland's volcanic landscape.",
+   "kredi": "Stéphane Vetter (Nuits sacrées)",
+   "nasa_kaynakli": false
+  },
   {
    "tarih": "2026-10-30",
    "baslik": "Haunting the Cepheus Flare",
@@ -81,15 +90,6 @@
    "baglanti": "https://science.nasa.gov/image-article/apod-2026-october-22-the-first-green-star-wd-j13306435/",
    "ozet_en": "Explanation: Star light, star bright: is there a green star out tonight? Other than the Sun, all stars are so far from Earth that they appear as points in the sky. They are mostly white, but sometimes noticeably red or blue. This color typically relates to the temperature: blue stars are hotter than red stars.",
    "kredi": "Mark A. Garlick/University of Warwick",
-   "nasa_kaynakli": false
-  },
-  {
-   "tarih": "2026-10-21",
-   "baslik": "New Ghosts Revealed in Cassiopeia",
-   "tur": "image",
-   "baglanti": "https://science.nasa.gov/image-article/apod-2026-october-21-new-ghosts-revealed-in-cassiopeia/",
-   "ozet_en": "Explanation: Jinkies, look at all those ghosts! It took 100 hours of observation and a special oxygen filter for today’s image to capture three faint nebulas hidden in the Cassiopeia constellation. IC 59 and IC 63, the original Ghosts of Cassiopeia, haunt the region near multi-star system γ Cassiopeia.",
-   "kredi": "Louis Leroux-Géré, Thibault Rouillée, Vincent Martin, Cédric de Decker (Starfront Observatories)",
    "nasa_kaynakli": false
   }
  ],
@@ -192,17 +192,10 @@
  },
  "asteroitler": {
   "aralik": [
-   "2026-10-30",
-   "2026-11-13"
+   "2026-10-31",
+   "2026-11-14"
   ],
   "liste": [
-   {
-    "ad": "(2026 UD)",
-    "tarih": "2026-Oct-30 08:32",
-    "mesafe_ay": 11.6,
-    "hiz_kms": 7.7,
-    "cap_m": 25
-   },
    {
     "ad": "(2025 UK9)",
     "tarih": "2026-Oct-31 02:35",
@@ -265,6 +258,13 @@
     "mesafe_ay": 8.4,
     "hiz_kms": 8.8,
     "cap_m": 19
+   },
+   {
+    "ad": "(2025 VG5)",
+    "tarih": "2026-Nov-13 03:15",
+    "mesafe_ay": 18.1,
+    "hiz_kms": 4.9,
+    "cap_m": 16
    }
   ],
   "kredi": "NASA/JPL CNEOS"
@@ -323,9 +323,9 @@
    {
     "baslik": "Super Typhoon In-fa",
     "tur": "Severe Storms",
-    "tarih": "2026-10-30",
-    "boylam": 144.5,
-    "enlem": 19.7
+    "tarih": "2026-10-31",
+    "boylam": 142.8,
+    "enlem": 21.5
    },
    {
     "baslik": "Wildfire BEE HAVEN (2) (24-06), Hamilton, Florida",
@@ -382,25 +382,25 @@
  "iss_tle": {
   "OBJECT_NAME": "ISS (ZARYA)",
   "OBJECT_ID": "1998-067A",
-  "EPOCH": "2026-10-30T11:12:14.281344",
-  "MEAN_MOTION": 15.49116094,
-  "ECCENTRICITY": 0.00070603,
+  "EPOCH": "2026-10-31T04:14:04.809120",
+  "MEAN_MOTION": 15.49124187,
+  "ECCENTRICITY": 0.0007016,
   "INCLINATION": 51.6332,
-  "RA_OF_ASC_NODE": 350.6604,
-  "ARG_OF_PERICENTER": 327.9433,
-  "MEAN_ANOMALY": 32.1125,
+  "RA_OF_ASC_NODE": 347.1486,
+  "ARG_OF_PERICENTER": 330.4977,
+  "MEAN_ANOMALY": 29.5614,
   "EPHEMERIS_TYPE": 0,
   "CLASSIFICATION_TYPE": "U",
   "NORAD_CAT_ID": 25544,
   "ELEMENT_SET_NO": 999,
-  "REV_AT_EPOCH": 59272,
-  "BSTAR": 0.000136016,
-  "MEAN_MOTION_DOT": 7.083e-05,
+  "REV_AT_EPOCH": 59283,
+  "BSTAR": 0.00011976,
+  "MEAN_MOTION_DOT": 6.183e-05,
   "MEAN_MOTION_DDOT": 0
  },
  "gibs": {
-  "tarih": "2026-10-29",
-  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-10-29&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
+  "tarih": "2026-10-30",
+  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-10-30&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
   "kredi": "NASA GIBS / Worldview"
  }
 }
