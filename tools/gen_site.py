@@ -133,6 +133,9 @@ html[data-lang="fr"] [data-l]:not([data-l="fr"]) { display:none; }
 .qrpop img { display:block; width:183px; height:183px; margin:0 auto 6px; }
 .qrpop p { margin:0; font-size:13px; font-weight:700; line-height:1.3; }
 .demo-wrap { background:var(--card); border-radius:22px; padding:22px; box-shadow:var(--shadow); }
+.demo-open { display:inline-flex; align-items:center; gap:10px; font:inherit; font-weight:800; font-size:16px; padding:13px 22px; border:2px solid var(--accent); border-radius:999px; background:var(--card); color:var(--accent); cursor:pointer; }
+.demo-open:hover, .demo-open[aria-expanded=true] { background:var(--accent); color:#fff; }
+.demo-open + .demo-wrap { margin-top:16px; }
 '''
 
 # ------------------------------------------------------------------ SVG parçaları
@@ -428,6 +431,14 @@ def page(cfg):
     demo_block = (f'  <section class="block" aria-labelledby="h-demo">\n    <h2 class="h" id="h-demo">{multi(SEC["try"], L)}</h2>\n'
                   f'    <div class="demo-wrap"><div {demo_attr[0]} data-play="{play}"></div></div>\n  </section>\n\n') if demo_attr else ""
     ttt_script = f'\n<script src="../{demo_attr[1]}" defer></script>' if demo_attr else ""
+    if cfg["slug"] == "calisan":
+        # Uzun telefon demosu: kapalı gelir, düğmeye basınca açılır ve betik o zaman yüklenir (sayfa kısa kalsın, gereksiz indirme olmasın).
+        demo_block = (f'  <section class="block" id="demo">\n    <button type="button" class="demo-open" data-demo-toggle="calisan" aria-expanded="false" aria-controls="demo-body"><span class="ar">▶</span> <span>{multi(SEC["try"], L)}</span></button>\n'
+                      f'    <div class="demo-wrap" id="demo-body" hidden><div data-calisan data-play="{play}"></div></div>\n  </section>\n\n')
+        ttt_script = ("\n<script>(function(){var b=document.querySelector('.demo-open');if(!b)return;b.addEventListener('click',function(){var w=document.getElementById('demo-body'),o=w.hidden;"
+                      "w.hidden=!o;b.setAttribute('aria-expanded',o);b.querySelector('.ar').textContent=o?'▼':'▶';"
+                      "if(o&&!document.getElementById('demo-js')){var s=document.createElement('script');s.id='demo-js';s.src='../calisan.js?v=1';document.head.appendChild(s);}"
+                      "if(o)setTimeout(function(){w.scrollIntoView({behavior:'smooth',block:'start'});},50);});})();</script>")
     noindex = '\n<meta name="robots" content="noindex">' if cfg["slug"] in HIDDEN else ""
     return f'''<!doctype html>
 <html lang="en" data-lang="en">
@@ -449,7 +460,7 @@ def page(cfg):
 <style>
 :root {{ --accent:{cfg['accent']}; --hero-a:{cfg['hero'][0]}; --hero-b:{cfg['hero'][1]}; }}
 </style>
-<link rel="stylesheet" href="../landing.css?v=5">
+<link rel="stylesheet" href="../landing.css?v=6">
 <script src="/analytics.js?v=1" defer></script>
 <script type="application/ld+json">{jsonld}</script>
 </head>

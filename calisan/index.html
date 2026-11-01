@@ -19,7 +19,7 @@
 <style>
 :root { --accent:#1F493E; --hero-a:#112A23; --hero-b:#214F43; }
 </style>
-<link rel="stylesheet" href="../landing.css?v=5">
+<link rel="stylesheet" href="../landing.css?v=6">
 <script src="/analytics.js?v=1" defer></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Çalışan Asistanı", "operatingSystem": "Android", "applicationCategory": "GameApplication", "description": "Net maaş, kıdem ve ihbar tazminatı, fazla mesai ve izin planı tek uygulamada.", "url": "https://nrazon.github.io/calisan/", "image": "https://nrazon.github.io/calisan/icon.svg", "author": {"@type": "Person", "name": "Nesim Razon"}, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "installUrl": "https://play.google.com/store/apps/details?id=com.calisanasistani.nesimapps"}</script>
 </head>
@@ -46,9 +46,9 @@
     <div class="art"><div class="iconart"><img src="icon.svg" alt="" width="200" height="200"></div></div>
   </section>
 
-  <section class="block" aria-labelledby="h-demo">
-    <h2 class="h" id="h-demo"><span data-l="tr">Tarayıcıda dene</span></h2>
-    <div class="demo-wrap"><div data-calisan data-play="https://play.google.com/store/apps/details?id=com.calisanasistani.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"></div></div>
+  <section class="block" id="demo">
+    <button type="button" class="demo-open" data-demo-toggle="calisan" aria-expanded="false" aria-controls="demo-body"><span class="ar">▶</span> <span><span data-l="tr">Tarayıcıda dene</span></span></button>
+    <div class="demo-wrap" id="demo-body" hidden><div data-calisan data-play="https://play.google.com/store/apps/details?id=com.calisanasistani.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"></div></div>
   </section>
 
   <section class="block" aria-labelledby="h-shots">
@@ -121,7 +121,7 @@
   })();
 </script>
 <script src="../eyes.js?v=3"></script>
-<script src="../calisan.js?v=1" defer></script>
+<script>(function(){var b=document.querySelector('.demo-open');if(!b)return;b.addEventListener('click',function(){var w=document.getElementById('demo-body'),o=w.hidden;w.hidden=!o;b.setAttribute('aria-expanded',o);b.querySelector('.ar').textContent=o?'▼':'▶';if(o&&!document.getElementById('demo-js')){var s=document.createElement('script');s.id='demo-js';s.src='../calisan.js?v=1';document.head.appendChild(s);}if(o)setTimeout(function(){w.scrollIntoView({behavior:'smooth',block:'start'});},50);});})();</script>
 <script>
   // QR açılırken: dışarı tıklayınca ya da Esc ile kapanır (aynı anda yalnız biri açık).
   document.addEventListener("click", function (e) { document.querySelectorAll("details.qr[open]").forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute("open"); }); });
