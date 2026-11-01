@@ -371,6 +371,7 @@
       ".cal-field input{flex:1;min-width:0;border:0;outline:0;background:transparent;font-size:17px;font-weight:600;color:#1F2A27;padding:2px 0}",
       ".cal-field .sf{color:#6B7A75;font-size:15px}",
       ".cal-field:focus-within{box-shadow:inset 0 -2px 0 #2F6F5E}",
+      ".cal-clear{border:0;background:transparent;color:#2F6F5E;font-weight:700;font-size:14px;cursor:pointer;padding:4px 0 4px 8px}",
       ".cal-chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:1px 0;position:relative}",
       ".cal-chips::-webkit-scrollbar{display:none}",
       ".cal-chip{border:0;border-radius:999px;padding:9px 15px;background:var(--cb,#fff);color:#6B7A75;font-weight:700;font-size:14px;white-space:nowrap;cursor:pointer;flex:none}",
@@ -617,7 +618,7 @@
         h += card("yuzey", '<div class="cal-in cal-col" style="gap:12px"><h3 class="cal-title">Profilim</h3><p class="cal-small cal-soluk" style="font-size:13px">Bir kez yaz: Net maaş, Tazminat ve Mesai ekranları bu bilgilerle hazır açılır. Bilgiler yalnızca bu tarayıcıda saklanır, sunucuya gönderilmez; aşağıdaki "Tüm verilerimi sil" ile silebilirsin.</p>' +
           pills(["Brüt maaş", "Net maaş"], a.net ? 1 : 0, "net") +
           field("ayar.tutar", a.net ? "Aylık net maaş" : "Aylık brüt maaş", a.tutar, { dolgu: dolgu, ondalik: true }) +
-          '<label class="cal-field" style="--fd:' + dolgu + '"><small>İşe giriş tarihi</small><span class="in"><input id="ayar.giris" type="date" data-chg="giris" value="' + girisDeger + '" min="2000-01-01" max="2100-12-31" style="font-size:16px"><span class="sf"></span></span></label>' +
+          '<label class="cal-field" style="--fd:' + dolgu + '"><small>İşe giriş tarihi</small><span class="in"><input id="ayar.giris" type="date" data-chg="giris" value="' + girisDeger + '" min="2000-01-01" max="2100-12-31" style="font-size:16px"><button type="button" class="cal-clear" data-act="giris-temizle">Temizle</button></span></label>' +
           '<div class="cal-row"><div class="cal-grow"><b class="cal-sub" style="display:block">Emekli çalışanım</b><span class="cal-small cal-soluk">Sosyal güvenlik destek primi %7,5, işsizlik yok</span></div>' + sw("emekli", a.emekli) + "</div>" +
           '<div class="cal-col" style="gap:8px"><b class="cal-sub">Maaş ne zaman yatıyor?</b><p class="cal-small cal-soluk">Çoğu şirket çalışılan ayı izleyen ayın 1-5\'inde öder. Net maaşım, henüz yatmamış ilk maaşını gösterir.</p>' +
           pills(["Sonraki ayın", "Aynı ayın"], a.sonrakiAy ? 0 : 1, "maaszaman") + field("ayar.gun", "Ayın kaçında yatıyor?", a.gun, { dolgu: dolgu, sonek: "günü" }) + "</div>" +
@@ -875,6 +876,7 @@
           case "taksit+": A.primTaksit = Math.min(12, A.primTaksit + 1); render(true); return;
           case "goster": if ((parseFloat(S.basla.tutar) || 0) > 0) { A.tutar = S.basla.tutar; render(false); } return;
           case "sil": S.ayar = { tutar: "", net: false, giris: null, emekli: false, sonrakiAy: true, gun: "5", sozlesme: "", prim: "", primBas: 1, primTaksit: 0, primBirikimli: false, kgvm: "", kgvmAy: M(bugun), kgvmYil: Y(bugun) }; S.zam = { acik: false, yuzde: 20, ozel: "", ayS: 0 }; S.basla.tutar = ""; S.secili = null; render(false); return;
+          case "giris-temizle": A.giris = null; render(true); return;
           case "zamy": S.zam.yuzde = +v; S.zam.ozel = ""; render(true); return;
           case "zamay": S.zam.ayS = +v; S.yny = 0; render(true); return;
           case "sec": S.secili = +v; render(true); return;
@@ -900,7 +902,14 @@
         start();
         if (c === "emekli") S.ayar.emekli = t.checked; else if (c === "birikimli") S.ayar.primBirikimli = t.checked;
         else if (c === "zam") { S.zam.acik = t.checked; S.zam.ayS = 0; S.yny = 0; }
-        else if (c === "giris") { var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(t.value); S.ayar.giris = m ? ld(+m[1], +m[2], +m[3]) : null; }
+        else if (c === "giris") {
+          // Elle yazarken tarayıcı yılın her rakamında (0002, 0020, 0202, 2026) "değişti" der: ekranı yeniden çizmek alanı sıfırlayıp odağı güne döndürür.
+          // Bu yüzden burada yalnız durumu güncelleriz (geçerli aralık: 2000-2100), yeniden çizmeyiz.
+          var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(t.value);
+          S.ayar.giris = m && +m[1] >= 2000 && +m[1] <= 2100 ? ld(+m[1], +m[2], +m[3]) : null;
+          kaydet();
+          return;
+        }
         render(true);
       });
 
