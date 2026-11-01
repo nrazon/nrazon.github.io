@@ -121,7 +121,7 @@
   })();
 </script>
 <script src="../eyes.js?v=3"></script>
-<script>(function(){var b=document.querySelector('.demo-open');if(!b)return;b.addEventListener('click',function(){var w=document.getElementById('demo-body'),o=w.hidden;w.hidden=!o;b.setAttribute('aria-expanded',o);b.querySelector('.ar').textContent=o?'▼':'▶';if(o&&!document.getElementById('demo-js')){var s=document.createElement('script');s.id='demo-js';s.src='../calisan.js?v=1';document.head.appendChild(s);}if(o)setTimeout(function(){w.scrollIntoView({behavior:'smooth',block:'start'});},50);});})();</script>
+<script>(function(){var b=document.querySelector('.demo-open');if(!b)return;b.addEventListener('click',function(){var w=document.getElementById('demo-body'),o=w.hidden;w.hidden=!o;b.setAttribute('aria-expanded',o);b.querySelector('.ar').textContent=o?'▼':'▶';if(o&&!document.getElementById('demo-js')){var s=document.createElement('script');s.id='demo-js';s.src='../calisan.js?v=2';document.head.appendChild(s);}if(o)setTimeout(function(){w.scrollIntoView({behavior:'smooth',block:'start'});},50);});})();</script>
 <script>
   // QR açılırken: dışarı tıklayınca ya da Esc ile kapanır (aynı anda yalnız biri açık).
   document.addEventListener("click", function (e) { document.querySelectorAll("details.qr[open]").forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute("open"); }); });

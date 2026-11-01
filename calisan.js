@@ -1,6 +1,6 @@
 /* Çalışan Asistanı tarayıcı demosu (nrazon.github.io/calisan/). Android uygulamasındaki hesap motorunun (CalisanAsistani/.../hesap/*.kt:
    Maas, Parametreler, MaasOngorusu, SaglikPrimi, Tatiller) JavaScript karşılığı + uygulamanın Ana ekran / Net maaşım / İzin planı / Ayarlar ekranları.
-   Hiçbir veri sunucuya gitmez; girilen maaş yalnızca bu sayfada, bellekte durur (sayfa yenilenince silinir).
+   Hiçbir veri sunucuya gitmez; girilen bilgiler yalnızca bu tarayıcıda (localStorage) saklanır; Ayarlar > "Tüm verilerimi sil" ile silinir.
    Kullanım: <div data-calisan data-play="<Play adresi>"></div>  (calisan.js yüklenince kendiliğinden kurulur). Testler: node tools/calisan.test.js */
 (function () {
   "use strict";
@@ -450,6 +450,33 @@
       };
       var play = root.getAttribute("data-play") || "https://play.google.com/store/apps/details?id=com.calisanasistani.nesimapps";
 
+      // ------------------------------------------------ kayıt: yalnız bu tarayıcıda (localStorage), sunucuya gitmez; "Tüm verilerimi sil" siler
+      var KEY = "calisan_demo_v1";
+      function ymd(d) { return Y(d) + "-" + String(M(d)).padStart(2, "0") + "-" + String(D(d)).padStart(2, "0"); }
+      function sade(a) { var o = {}; for (var k in a) o[k] = a[k]; o.giris = a.giris ? ymd(a.giris) : null; return o; }
+      var VARSAYILAN = JSON.stringify(sade(S.ayar));
+      function yukle() {
+        try {
+          var j = JSON.parse(localStorage.getItem(KEY) || "null"); if (!j || !j.ayar) return;
+          var a = j.ayar, A = S.ayar;
+          ["tutar", "gun", "sozlesme", "prim", "kgvm"].forEach(function (k) { if (typeof a[k] === "string") A[k] = ondalikTemizle(a[k]).slice(0, 12); });
+          ["net", "emekli", "sonrakiAy", "primBirikimli"].forEach(function (k) { if (typeof a[k] === "boolean") A[k] = a[k]; });
+          if (a.primBas >= 1 && a.primBas <= 12) A.primBas = Math.floor(a.primBas);
+          if (a.primTaksit >= 0 && a.primTaksit <= 12) A.primTaksit = Math.floor(a.primTaksit);
+          if (a.kgvmAy >= 1 && a.kgvmAy <= 12) A.kgvmAy = Math.floor(a.kgvmAy);
+          if (typeof a.kgvmYil === "number") A.kgvmYil = a.kgvmYil;
+          var m = typeof a.giris === "string" ? /^(\d{4})-(\d{2})-(\d{2})$/.exec(a.giris) : null;
+          A.giris = m ? ld(+m[1], +m[2], +m[3]) : null;
+        } catch (x) {}
+      }
+      function kaydet() {
+        try {
+          var s = JSON.stringify(sade(S.ayar));
+          if (s === VARSAYILAN) localStorage.removeItem(KEY); else localStorage.setItem(KEY, JSON.stringify({ ayar: JSON.parse(s) }));
+        } catch (x) {}
+      }
+      yukle();
+
       function profilDolu() { return S.ayar.tutar !== "" || S.ayar.giris !== null; }
       function profil() {
         var a = S.ayar;
@@ -587,7 +614,7 @@
         var a = S.ayar, dolgu = "#F7F3EC";
         var girisDeger = a.giris ? Y(a.giris) + "-" + String(M(a.giris)).padStart(2, "0") + "-" + String(D(a.giris)).padStart(2, "0") : "";
         var h = '<div class="cal-col">' + top("Ayarlar");
-        h += card("yuzey", '<div class="cal-in cal-col" style="gap:12px"><h3 class="cal-title">Profilim</h3><p class="cal-small cal-soluk" style="font-size:13px">Bir kez yaz: Net maaş, Tazminat ve Mesai ekranları bu bilgilerle hazır açılır. Bu demoda bilgiler yalnızca bu sayfada kalır, sayfayı yenileyince silinir.</p>' +
+        h += card("yuzey", '<div class="cal-in cal-col" style="gap:12px"><h3 class="cal-title">Profilim</h3><p class="cal-small cal-soluk" style="font-size:13px">Bir kez yaz: Net maaş, Tazminat ve Mesai ekranları bu bilgilerle hazır açılır. Bilgiler yalnızca bu tarayıcıda saklanır, sunucuya gönderilmez; aşağıdaki "Tüm verilerimi sil" ile silebilirsin.</p>' +
           pills(["Brüt maaş", "Net maaş"], a.net ? 1 : 0, "net") +
           field("ayar.tutar", a.net ? "Aylık net maaş" : "Aylık brüt maaş", a.tutar, { dolgu: dolgu, ondalik: true }) +
           '<label class="cal-field" style="--fd:' + dolgu + '"><small>İşe giriş tarihi</small><span class="in"><input id="ayar.giris" type="date" data-chg="giris" value="' + girisDeger + '" min="2000-01-01" max="2100-12-31" style="font-size:16px"><span class="sf"></span></span></label>' +
@@ -636,7 +663,7 @@
 
       function baslangicHTML() {
         var pr = parseFloat(S.basla.tutar) || 0;
-        return card("maas", '<div class="cal-in cal-col" style="gap:12px"><h3 class="cal-title cal-t-maas">Önümüzdeki aylarda ne alacaksın?</h3><p class="cal-p">Maaşını bir kez yaz: sıradaki maaşını ve vergi diliminin maaşına etkisini gösterelim. Bu demoda bilgi yalnızca bu sayfada kalır.</p>' +
+        return card("maas", '<div class="cal-in cal-col" style="gap:12px"><h3 class="cal-title cal-t-maas">Önümüzdeki aylarda ne alacaksın?</h3><p class="cal-p">Maaşını bir kez yaz: sıradaki maaşını ve vergi diliminin maaşına etkisini gösterelim. Bilgi yalnızca bu tarayıcıda saklanır, sunucuya gönderilmez.</p>' +
           pills(["Brüt maaş", "Net maaş"], S.ayar.net ? 1 : 0, "net") + field("basla.tutar", S.ayar.net ? "Aylık net maaş" : "Aylık brüt maaş", S.basla.tutar, { dolgu: "#fff", ondalik: true }) +
           not("Bordrodaki \"SGK matrahı\" ya da sözleşmedeki brüt ücret; kuruşlu yazabilirsin. Örnek: 120000") +
           '<button type="button" class="cal-btn" data-act="goster" id="cal-goster"' + (pr > 0 ? "" : " disabled") + ">Göster</button></div>") + digerButon();
@@ -805,7 +832,7 @@
         geri: ["✉️", "Geri bildirim", "Bu bir web demosudur. Geri bildirimini Google Play sayfasındaki uygulamadan, ya da nesim.razon@gmail.com adresine yazarak iletebilirsin."],
       };
       root.innerHTML = '<div class="cal-wrap"><div class="cal-phone"><div class="cal-screen"><div class="cal-island"></div><div class="cal-status"><span>9:41</span><span>5G ▮▮▮▯</span></div><div class="cal-body" tabindex="0"></div><div class="cal-sheet" aria-hidden="true"><div></div></div></div><div class="cal-homebar"></div></div>' +
-        '<p class="cal-cap">Gerçek uygulamanın ekranları ve hesapları. Ayarlar, Net maaş ve İzin planı çalışır; diğer bölümler Android uygulamasında.</p></div>';
+        '<p class="cal-cap">Gerçek uygulamanın ekranları ve hesapları. Ayarlar, Net maaş ve İzin planı çalışır; diğer bölümler Android uygulamasında. Girdiğin bilgiler yalnızca bu tarayıcında saklanır.</p></div>';
       var body = root.querySelector(".cal-body"), sheet = root.querySelector(".cal-sheet"), sheetIn = sheet.firstChild;
 
       function render(keepScroll) {
@@ -816,6 +843,7 @@
         if (fid) { var el = document.getElementById(fid); if (el && root.contains(el)) { el.focus({ preventScroll: true }); if (sel && el.setSelectionRange && el.type !== "date") try { el.setSelectionRange(sel[0], sel[1]); } catch (x) {} } }
         if (S.sheet) { var sh = SHEETS[S.sheet]; sheetIn.innerHTML = '<div class="cal-col" style="gap:10px"><span class="e">' + sh[0] + '</span><h3 class="cal-title" style="font-size:22px">' + sh[1] + '</h3><p class="cal-p cal-soluk" style="font-size:15px;line-height:1.5">' + sh[2] + '</p><p class="cal-p" style="font-weight:700">Bu bölüm Android uygulamasında.</p><a class="cal-play" href="' + e(play) + '" target="_blank" rel="noopener">▶ Google Play\'de aç</a><button type="button" class="cal-ghost" data-act="sheet-kapat">Kapat</button></div>'; sheet.classList.add("open"); sheet.setAttribute("aria-hidden", "false"); }
         else { sheet.classList.remove("open"); sheet.setAttribute("aria-hidden", "true"); }
+        kaydet();
       }
       function start() { if (!S.started) { S.started = true; track("demo_start", { app: "calisan" }); } }
       function go(p) {
@@ -865,6 +893,7 @@
         else if (f === "ayar.kgvm") { A.kgvm = temiz; A.kgvmYil = Y(bugun); var box = document.getElementById("cal-kgvm-ay"); if (box) box.style.display = temiz === "" ? "none" : ""; }
         else if (f === "basla.tutar") { S.basla.tutar = temiz; var b = document.getElementById("cal-goster"); if (b) b.disabled = !((parseFloat(temiz) || 0) > 0); }
         else if (f === "zam.ozel") { S.zam.ozel = temiz; render(true); }
+        kaydet();
       });
       root.addEventListener("change", function (ev) {
         var t = ev.target, c = t.getAttribute && t.getAttribute("data-chg"); if (!c) return;

@@ -130,7 +130,7 @@ def qr_html(slug, short=False):
 
 
 # Tarayıcı demosu olan oyunlar: slug -> (panel kimliği, betik). Betik ilk açılışta yüklenir.
-DEMOS = {"tictactoe": ("ttt-demo", "ttt.js?v=2"), "game2048": ("g2048-demo", "g2048.js?v=1"), "calisan": ("calisan-demo", "calisan.js?v=1")}
+DEMOS = {"tictactoe": ("ttt-demo", "ttt.js?v=2"), "game2048": ("g2048-demo", "g2048.js?v=1"), "calisan": ("calisan-demo", "calisan.js?v=2")}
 
 
 def demo_btn(slug):
