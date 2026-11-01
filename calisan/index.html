@@ -46,6 +46,11 @@
     <div class="art"><div class="iconart"><img src="icon.svg" alt="" width="200" height="200"></div></div>
   </section>
 
+  <section class="block" aria-labelledby="h-demo">
+    <h2 class="h" id="h-demo"><span data-l="tr">Tarayıcıda dene</span></h2>
+    <div class="demo-wrap"><div data-calisan data-play="https://play.google.com/store/apps/details?id=com.calisanasistani.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"></div></div>
+  </section>
+
   <section class="block" aria-labelledby="h-shots">
     <h2 class="h" id="h-shots"><span data-l="tr">Ekran görüntüleri</span></h2>
     <div class="strip">
@@ -116,6 +121,7 @@
   })();
 </script>
 <script src="../eyes.js?v=3"></script>
+<script src="../calisan.js?v=1" defer></script>
 <script>
   // QR açılırken: dışarı tıklayınca ya da Esc ile kapanır (aynı anda yalnız biri açık).
   document.addEventListener("click", function (e) { document.querySelectorAll("details.qr[open]").forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute("open"); }); });

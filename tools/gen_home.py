@@ -63,6 +63,7 @@ T = {
     "webprivacy": {"tr": "Site gizliliği", "en": "Website privacy", "es": "Privacidad del sitio", "pt": "Privacidade do site"},
     "demo": {"tr": "Tarayıcıda dene", "en": "Try it here", "es": "Pruébalo aquí", "pt": "Experimente aqui"},
     "demotitle": {"tr": "Tic-Tac-Toe: tarayıcıda dene", "en": "Tic-Tac-Toe: try it in your browser", "es": "Tic-Tac-Toe: pruébalo en el navegador", "pt": "Tic-Tac-Toe: experimente no navegador"},
+    "demotitlecalisan": {"tr": "Çalışan Asistanı: tarayıcıda dene", "en": "Çalışan Asistanı: try it in your browser", "es": "Çalışan Asistanı: pruébalo en el navegador", "pt": "Çalışan Asistanı: experimente no navegador"},
     "demotitle2048": {"tr": "2048: tarayıcıda dene", "en": "2048: try it in your browser", "es": "2048: pruébalo en el navegador", "pt": "2048: experimente no navegador"},
     "qr": {"tr": "QR ile yükle", "en": "Install via QR", "es": "Instalar con QR", "pt": "Instalar com QR"},
     "qrshort": {"tr": "QR", "en": "QR", "es": "QR", "pt": "QR"},
@@ -129,7 +130,7 @@ def qr_html(slug, short=False):
 
 
 # Tarayıcı demosu olan oyunlar: slug -> (panel kimliği, betik). Betik ilk açılışta yüklenir.
-DEMOS = {"tictactoe": ("ttt-demo", "ttt.js?v=2"), "game2048": ("g2048-demo", "g2048.js?v=1")}
+DEMOS = {"tictactoe": ("ttt-demo", "ttt.js?v=2"), "game2048": ("g2048-demo", "g2048.js?v=1"), "calisan": ("calisan-demo", "calisan.js?v=1")}
 
 
 def demo_btn(slug):
@@ -453,6 +454,10 @@ def build(preview):
     <p class="sub">{L(T["h_apps_sub"])}</p>
     <div class="tools">
 {chr(10).join(tool_card(a) for a in apps)}
+    </div>
+    <div class="demo-panel" id="calisan-demo" hidden>
+      <h3>{L(T["demotitlecalisan"])}</h3>
+      <div data-calisan data-play="{play_url(by["calisan"]["pkg"])}"></div>
     </div>
   </section>
 
