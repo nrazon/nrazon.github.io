@@ -1,7 +1,16 @@
 {
- "uretim": "2026-11-01T11:50:42Z",
+ "uretim": "2026-11-02T13:30:07Z",
  "surum": 1,
  "apod": [
+  {
+   "tarih": "2026-11-02",
+   "baslik": "A Long Cloud on Mars",
+   "tur": "image",
+   "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-2-a-long-cloud-on-mars/",
+   "ozet_en": "Explanation: What’s causing this unusually long cloud on Mars? Known as the Arsia Mons Elongated Cloud (AMEC) and first recorded by NASA’s Viking Orbiter 2 in 1977, the strange cloud has been imaged in greater detail more recently by ESA’s robotic Mars Express spacecraft. The featured image is from 2018.",
+   "kredi": "ESA, DLR, FU Berlin; Processing &amp; License: J. Cowart",
+   "nasa_kaynakli": false
+  },
   {
    "tarih": "2026-11-01",
    "baslik": "Colors of the Moon",
@@ -81,15 +90,6 @@
    "baglanti": "https://science.nasa.gov/image-article/apod-2026-october-24-rosettas-selfie/",
    "ozet_en": "Explanation: This Rosetta spacecraft selfie was snapped on October 7th, 2014. At the time the comet-chasing spacecraft was about 472 million kilometers from planet Earth, but only 16 kilometers from the surface of comet 67P/Churyumov-Gerasimenko.",
    "kredi": "ESA/Rosetta/Philae/CIVA",
-   "nasa_kaynakli": false
-  },
-  {
-   "tarih": "2026-10-23",
-   "baslik": "Andromeda in Southern Spring",
-   "tur": "image",
-   "baglanti": "https://science.nasa.gov/image-article/apod-2026-october-23-andromeda-in-southern-spring/",
-   "ozet_en": "Explanation: Looking toward the north from Mullion, New South Wales, Australia, the Andromeda Galaxy never gets more than a few degrees above the horizon. During the southern hemisphere spring, Andromeda is highest in the sky around midnight though.",
-   "kredi": "Lucy Yunxi Hu",
    "nasa_kaynakli": false
   }
  ],
@@ -192,10 +192,17 @@
  },
  "asteroitler": {
   "aralik": [
-   "2026-11-01",
-   "2026-11-15"
+   "2026-11-02",
+   "2026-11-16"
   ],
   "liste": [
+   {
+    "ad": "(2026 VA)",
+    "tarih": "2026-Nov-02 06:48",
+    "mesafe_ay": 3.2,
+    "hiz_kms": 9.0,
+    "cap_m": 29
+   },
    {
     "ad": "524522 Zoozve (2002 VE68)",
     "tarih": "2026-Nov-02 19:10",
@@ -293,20 +300,6 @@
     "enlem": 35.017139
    },
    {
-    "baslik": "Tropical Cyclone Arnab",
-    "tur": "Severe Storms",
-    "tarih": "2026-10-28",
-    "boylam": 81.8,
-    "enlem": 16.4
-   },
-   {
-    "baslik": "Tropical Storm Olana",
-    "tur": "Severe Storms",
-    "tarih": "2026-10-27",
-    "boylam": -176.2,
-    "enlem": 13.2
-   },
-   {
     "baslik": "Wildfire Range 47B, Forrest, Mississippi",
     "tur": "Wildfires",
     "tarih": "2026-10-24",
@@ -316,9 +309,9 @@
    {
     "baslik": "Super Typhoon In-fa",
     "tur": "Severe Storms",
-    "tarih": "2026-11-01",
-    "boylam": 144.3,
-    "enlem": 22.8
+    "tarih": "2026-11-02",
+    "boylam": 140.9,
+    "enlem": 22.6
    },
    {
     "baslik": "Wildfire BEE HAVEN (2) (24-06), Hamilton, Florida",
@@ -368,6 +361,20 @@
     "tarih": "2026-10-16",
     "boylam": -117.63483,
     "enlem": 33.47965118
+   },
+   {
+    "baslik": "Prescribed Fire Rx Polk 9275, Polk, Texas",
+    "tur": "Wildfires",
+    "tarih": "2026-10-16",
+    "boylam": -94.72916667,
+    "enlem": 30.57111111
+   },
+   {
+    "baslik": "Wildfire HENDERSON, San Diego, California",
+    "tur": "Wildfires",
+    "tarih": "2026-10-15",
+    "boylam": -117.40938,
+    "enlem": 33.34329
    }
   ],
   "kredi": "NASA EONET"
@@ -375,25 +382,25 @@
  "iss_tle": {
   "OBJECT_NAME": "ISS (ZARYA)",
   "OBJECT_ID": "1998-067A",
-  "EPOCH": "2026-11-01T05:00:23.160096",
-  "MEAN_MOTION": 15.49138562,
-  "ECCENTRICITY": 0.0007056,
+  "EPOCH": "2026-11-01T18:56:25.712736",
+  "MEAN_MOTION": 15.49143202,
+  "ECCENTRICITY": 0.0007095,
   "INCLINATION": 51.6332,
-  "RA_OF_ASC_NODE": 342.0408,
-  "ARG_OF_PERICENTER": 334.5041,
-  "MEAN_ANOMALY": 25.5599,
+  "RA_OF_ASC_NODE": 339.1679,
+  "ARG_OF_PERICENTER": 336.8847,
+  "MEAN_ANOMALY": 23.1822,
   "EPHEMERIS_TYPE": 0,
   "CLASSIFICATION_TYPE": "U",
   "NORAD_CAT_ID": 25544,
   "ELEMENT_SET_NO": 999,
-  "REV_AT_EPOCH": 59299,
-  "BSTAR": 0.00013267,
-  "MEAN_MOTION_DOT": 6.903e-05,
+  "REV_AT_EPOCH": 59308,
+  "BSTAR": 0.00011503,
+  "MEAN_MOTION_DOT": 5.925e-05,
   "MEAN_MOTION_DDOT": 0
  },
  "gibs": {
-  "tarih": "2026-10-31",
-  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-10-31&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
+  "tarih": "2026-11-01",
+  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-11-01&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
   "kredi": "NASA GIBS / Worldview"
  }
 }
