@@ -144,14 +144,14 @@
   },
   "tint": "#3A5BC7",
   "pkg": "com.uzaygunlugu.nesimapps",
-  "new": "2026-12-15",
+  "new": "2026-12-02",
   "desc": {
    "tr": "Her gün yeni bir uzay kartı, Türkiye'nin uzaydan görüntüsü, dönen Dünya ve ISS'in anlık konumu. NASA'nın herkese açık verileriyle; Google Play'de çok yakında.",
    "en": "A new space card every day, Turkey from space, the spinning Earth and the live position of the ISS, built on NASA's public data (Turkish only). Coming soon to Google Play.",
    "es": "Una nueva tarjeta espacial cada día, Turquía desde el espacio, la Tierra girando y la posición en vivo de la ISS, con datos públicos de la NASA (solo en turco). Próximamente en Google Play.",
    "pt": "Um novo cartão espacial por dia, a Turquia vista do espaço, a Terra girando e a posição ao vivo da ISS, com dados públicos da NASA (só em turco). Em breve no Google Play."
   },
-  "status": "soon",
+  "status": "live",
   "popular": false,
   "desc_live": {
    "tr": "Her gün yeni bir uzay kartı, Türkiye'nin uzaydan görüntüsü, dönen Dünya ve ISS'in anlık konumu. NASA'nın herkese açık verileriyle.",
