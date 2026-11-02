@@ -12,7 +12,7 @@ BASE = "https://nrazon.github.io"
 # sayfada noindex var. Uygulama Play'de yayınlanınca slug buradan silinir (ve home_data.json'da status=live yapılır).
 HIDDEN = set()
 # Ana sayfada kartında data-pkg olmayan (henüz "yakında" kartı olan) uygulamaların paket adları.
-PKG_FALLBACK = {"calisan": "com.calisanasistani.nesimapps", "uzaygunlugu": "com.uzaygunlugu.nesimapps"}
+PKG_FALLBACK = {"calisan": "com.calisanasistani.nesimapps", "uzaygunlugu": "com.uzaygunlugu.nesimapps", "haftasonum": "com.haftasonum.nesimapps"}
 REF = "&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"
 
 # ------------------------------------------------------------------ ortak: göz takip betiği
@@ -585,6 +585,7 @@ LANDING_CSS += CSS_EXTRA
 
 # slug, klasör, ad(tr), ad(en), simge, tint, ekran görüntüsü kaynakları {dil: klasör}, yeni-rozet
 APPDEFS = [
+    ("haftasonum", "Etkinlik", "Hafta Sonum", "Hafta Sonum", "icon.png", "#FFC857", {"tr": "tr"}, "2026-12-02"),
     ("calisan", "CalisanAsistani", "Çalışan Asistanı", "Çalışan Asistanı", "icon.svg", "#2F6F5E", {"tr": "tr"}, "2026-12-15"),
     ("uzaygunlugu", "UzayGunlugu", "Uzay Günlüğü", "Uzay Günlüğü", "icon.png", "#3A5BC7", {"tr": "tr"}, "2026-12-15"),
     ("sliplines", "OkKacisi", "Sliplines", "Sliplines", "icon.png", "#F08A4B", {"en": "en-US", "tr": "tr-TR", "es": "es-ES", "pt": "pt-BR"}, "2026-11-30"),

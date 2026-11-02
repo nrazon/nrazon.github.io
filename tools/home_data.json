@@ -105,6 +105,34 @@
   "popular": false
  },
  {
+  "slug": "haftasonum",
+  "cat": "apps",
+  "icon": "haftasonum/icon.png",
+  "names": {
+   "tr": "Hafta Sonum",
+   "en": "Hafta Sonum",
+   "es": "Hafta Sonum",
+   "pt": "Hafta Sonum"
+  },
+  "tint": "#FFC857",
+  "pkg": "com.haftasonum.nesimapps",
+  "new": "2026-12-02",
+  "desc": {
+   "tr": "Bu hafta sonu ne yapsak? Şehrindeki tiyatro, konser, sergi ve çocuk etkinlikleri tek ekranda; hesap ve konum izni gerekmez.",
+   "en": "What to do this weekend? Theatre, concerts, exhibitions and kids' events in your city on one screen, no account or location needed (Turkish only, Turkey).",
+   "es": "¿Qué hacemos este fin de semana? Teatro, conciertos, exposiciones y eventos infantiles de tu ciudad en una sola pantalla, sin cuenta ni ubicación (solo en turco, Turquía).",
+   "pt": "O que fazer neste fim de semana? Teatro, shows, exposições e eventos infantis na sua cidade em uma só tela, sem conta nem localização (só em turco, Turquia)."
+  },
+  "status": "live",
+  "popular": false,
+  "desc_live": {
+   "tr": "Bu hafta sonu ne yapsak? Şehrindeki tiyatro, konser, sergi ve çocuk etkinlikleri tek ekranda; hesap ve konum izni gerekmez.",
+   "en": "What to do this weekend? Theatre, concerts, exhibitions and kids' events in your city on one screen, no account or location needed (Turkish only, Turkey).",
+   "es": "¿Qué hacemos este fin de semana? Teatro, conciertos, exposiciones y eventos infantiles de tu ciudad en una sola pantalla, sin cuenta ni ubicación (solo en turco, Turquía).",
+   "pt": "O que fazer neste fim de semana? Teatro, shows, exposições e eventos infantis na sua cidade em uma só tela, sem conta nem localização (só em turco, Turquia)."
+  }
+ },
+ {
   "slug": "calisan",
   "cat": "apps",
   "icon": "calisan/icon.svg",
