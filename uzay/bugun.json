@@ -1,7 +1,16 @@
 {
- "uretim": "2026-11-02T13:30:07Z",
+ "uretim": "2026-11-03T12:47:57Z",
  "surum": 1,
  "apod": [
+  {
+   "tarih": "2026-11-03",
+   "baslik": "Comet PanSTARRs and Rainbow Meteor",
+   "tur": "image",
+   "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-3-comet-panstarrs-and-rainbow-meteor/",
+   "ozet_en": "Explanation: Did this meteor come from that comet? Probably not. Although many meteors do originate from comets, there are thousands of comets that have visited the inner Solar System recently, and matching meteors to them can be tricky. And to be clear, the pictured comet is far behind the streaking meteor.",
+   "kredi": "Eddy Metais",
+   "nasa_kaynakli": false
+  },
   {
    "tarih": "2026-11-02",
    "baslik": "A Long Cloud on Mars",
@@ -81,15 +90,6 @@
    "baglanti": "https://science.nasa.gov/image-article/apod-2026-october-25-dark-matter-in-a-simulated-universe/",
    "ozet_en": "Explanation: Is our universe haunted? It might look that way on this dark matter map. The gravity of unseen dark matter is the leading explanation for why galaxies rotate so fast, why galaxies orbit clusters so fast, why gravitational lenses so strongly deflect light, and how visible matter is distributed.",
    "kredi": "Tom Abel &amp; Ralf Kaehler (KIPAC , SLAC), AMNH",
-   "nasa_kaynakli": false
-  },
-  {
-   "tarih": "2026-10-24",
-   "baslik": "Rosetta's Selfie",
-   "tur": "image",
-   "baglanti": "https://science.nasa.gov/image-article/apod-2026-october-24-rosettas-selfie/",
-   "ozet_en": "Explanation: This Rosetta spacecraft selfie was snapped on October 7th, 2014. At the time the comet-chasing spacecraft was about 472 million kilometers from planet Earth, but only 16 kilometers from the surface of comet 67P/Churyumov-Gerasimenko.",
-   "kredi": "ESA/Rosetta/Philae/CIVA",
    "nasa_kaynakli": false
   }
  ],
@@ -192,23 +192,16 @@
  },
  "asteroitler": {
   "aralik": [
-   "2026-11-02",
-   "2026-11-16"
+   "2026-11-03",
+   "2026-11-17"
   ],
   "liste": [
    {
-    "ad": "(2026 VA)",
-    "tarih": "2026-Nov-02 06:48",
-    "mesafe_ay": 3.2,
-    "hiz_kms": 9.0,
-    "cap_m": 29
-   },
-   {
-    "ad": "524522 Zoozve (2002 VE68)",
-    "tarih": "2026-Nov-02 19:10",
-    "mesafe_ay": 15.7,
-    "hiz_kms": 8.7,
-    "cap_m": 277
+    "ad": "(2026 VE)",
+    "tarih": "2026-Nov-03 07:54",
+    "mesafe_ay": 9.1,
+    "hiz_kms": 14.8,
+    "cap_m": 26
    },
    {
     "ad": "(2021 VC4)",
@@ -216,6 +209,13 @@
     "mesafe_ay": 6.0,
     "hiz_kms": 11.2,
     "cap_m": 15
+   },
+   {
+    "ad": "(2026 VC)",
+    "tarih": "2026-Nov-04 14:53",
+    "mesafe_ay": 13.0,
+    "hiz_kms": 11.7,
+    "cap_m": 20
    },
    {
     "ad": "(2017 WJ2)",
@@ -272,6 +272,34 @@
  "eonet": {
   "liste": [
    {
+    "baslik": "Tropical Cyclone Murasu",
+    "tur": "Severe Storms",
+    "tarih": "2026-11-03",
+    "boylam": 80.2,
+    "enlem": 15.8
+   },
+   {
+    "baslik": "Prescribed Fire Dry Lake Hills Piles RX, Coconino, Arizona",
+    "tur": "Wildfires",
+    "tarih": "2026-10-30",
+    "boylam": -111.616667,
+    "enlem": 35.266667
+   },
+   {
+    "baslik": "Prescribed Fire McCarty Piles RX, Coconino, Arizona",
+    "tur": "Wildfires",
+    "tarih": "2026-10-29",
+    "boylam": -111.262694,
+    "enlem": 34.513944
+   },
+   {
+    "baslik": "Prescribed Fire Freidland-Chimney Piles RX, Coconino, Arizona",
+    "tur": "Wildfires",
+    "tarih": "2026-10-29",
+    "boylam": -111.666667,
+    "enlem": 35.283333
+   },
+   {
     "baslik": "Wildfire South Tank Trail, Perry, Mississippi",
     "tur": "Wildfires",
     "tarih": "2026-10-28",
@@ -309,9 +337,9 @@
    {
     "baslik": "Super Typhoon In-fa",
     "tur": "Severe Storms",
-    "tarih": "2026-11-02",
-    "boylam": 140.9,
-    "enlem": 22.6
+    "tarih": "2026-11-03",
+    "boylam": 139.1,
+    "enlem": 23.1
    },
    {
     "baslik": "Wildfire BEE HAVEN (2) (24-06), Hamilton, Florida",
@@ -347,34 +375,6 @@
     "tarih": "2026-10-17",
     "boylam": -114.5861111,
     "enlem": 47.2780556
-   },
-   {
-    "baslik": "Wildfire COOLEY, Mendocino, California",
-    "tur": "Wildfires",
-    "tarih": "2026-10-16",
-    "boylam": -123.188056,
-    "enlem": 38.819722
-   },
-   {
-    "baslik": "Wildfire NORTE, Orange, California",
-    "tur": "Wildfires",
-    "tarih": "2026-10-16",
-    "boylam": -117.63483,
-    "enlem": 33.47965118
-   },
-   {
-    "baslik": "Prescribed Fire Rx Polk 9275, Polk, Texas",
-    "tur": "Wildfires",
-    "tarih": "2026-10-16",
-    "boylam": -94.72916667,
-    "enlem": 30.57111111
-   },
-   {
-    "baslik": "Wildfire HENDERSON, San Diego, California",
-    "tur": "Wildfires",
-    "tarih": "2026-10-15",
-    "boylam": -117.40938,
-    "enlem": 33.34329
    }
   ],
   "kredi": "NASA EONET"
@@ -382,25 +382,25 @@
  "iss_tle": {
   "OBJECT_NAME": "ISS (ZARYA)",
   "OBJECT_ID": "1998-067A",
-  "EPOCH": "2026-11-01T18:56:25.712736",
-  "MEAN_MOTION": 15.49143202,
-  "ECCENTRICITY": 0.0007095,
-  "INCLINATION": 51.6332,
-  "RA_OF_ASC_NODE": 339.1679,
-  "ARG_OF_PERICENTER": 336.8847,
-  "MEAN_ANOMALY": 23.1822,
+  "EPOCH": "2026-11-02T18:09:49.393152",
+  "MEAN_MOTION": 15.49154261,
+  "ECCENTRICITY": 0.0007124,
+  "INCLINATION": 51.6331,
+  "RA_OF_ASC_NODE": 334.3796,
+  "ARG_OF_PERICENTER": 340.7366,
+  "MEAN_ANOMALY": 19.3352,
   "EPHEMERIS_TYPE": 0,
   "CLASSIFICATION_TYPE": "U",
   "NORAD_CAT_ID": 25544,
   "ELEMENT_SET_NO": 999,
-  "REV_AT_EPOCH": 59308,
-  "BSTAR": 0.00011503,
-  "MEAN_MOTION_DOT": 5.925e-05,
+  "REV_AT_EPOCH": 59323,
+  "BSTAR": 0.0001062,
+  "MEAN_MOTION_DOT": 5.437e-05,
   "MEAN_MOTION_DDOT": 0
  },
  "gibs": {
-  "tarih": "2026-11-01",
-  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-11-01&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
+  "tarih": "2026-11-02",
+  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-11-02&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
   "kredi": "NASA GIBS / Worldview"
  }
 }
