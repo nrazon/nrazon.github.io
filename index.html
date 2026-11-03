@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nesim Apps</title>
-<meta name="description" content="Android games and apps by Nesim Razon: Cardles, Cubbles, Sliplines, 2048, Tic-Tac-Toe, Son Depremler, Age Calculator, BMI Calculator, Where Am I?, National Anthems and more. Android oyunları ve uygulamaları.">
+<meta name="description" content="Android games and apps by Nesim Razon: Beamies, Cardles, Cubbles, Sliplines, 2048, Tic-Tac-Toe, Son Depremler, Age Calculator, BMI Calculator, Where Am I?, National Anthems and more. Android oyunları ve uygulamaları.">
 <link rel="canonical" href="https://nrazon.github.io/">
 <link rel="icon" href="logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -56,6 +56,7 @@
   .hero p { margin:0 0 14px; color:var(--dim); }
   @media (min-width:700px) { .hero { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); align-items:center; } .hero .body { padding:24px 28px; } .hero-art { border-radius:24px 0 0 24px; } }
   .hero-art { border-radius:24px 24px 0 0; position:relative; background:linear-gradient(135deg,#0F6B52,#16A07F); color:#fff; padding:22px 18px 22px 26px; display:flex; flex-direction:column; justify-content:center; gap:6px; overflow:hidden; min-height:270px; }
+  .hero-art.beamies { background:linear-gradient(135deg,#1A2350,#4B2E8F); }
   .hero-art .ha-text { display:flex; flex-direction:column; position:relative; z-index:1; }
   .hero-art .ha-title { font-size:clamp(34px,4.6vw,46px); font-weight:900; line-height:1; letter-spacing:-.02em; }
   .hero-art .ha-tag { font-weight:650; font-size:clamp(15px,2.6vw,19px); opacity:.95; margin-top:4px; }
@@ -204,44 +205,68 @@
   </div>
 
   <section id="games">
-  <section class="hero" data-slug="cardles" data-pkg="com.cardles.nesimapps">
-    <h2 class="sr">Cardles</h2>
-    <div class="hero-art">
+  <section class="hero" data-slug="beamies" data-pkg="com.beamies.nesimapps">
+    <h2 class="sr">Beamies</h2>
+    <div class="hero-art beamies">
       <div class="ha-text">
-        <span class="ha-title">Cardles</span>
-        <span class="ha-tag"><span lang="tr">Güldüren solitaire</span><span lang="en">Solitaire that makes you smile</span><span lang="es">El solitario que te hace sonreír</span><span lang="pt">Paciência que faz você sorrir</span></span>
+        <span class="ha-title">Beamies</span>
+        <span class="ha-tag"><span lang="tr">Uzaylıları eve ışınla!</span><span lang="en">Beam the aliens home!</span><span lang="es">¡Lleva a los alienígenas a casa!</span><span lang="pt">Leve os alienígenas para casa!</span></span>
       </div>
-      <svg viewBox="0 0 640 400" role="img" aria-label="Cards with faces"><g transform="translate(20 60) scale(1.08) rotate(-12 95.0 135.0)"><g class="pcard" data-eyes>
-  <rect x="5" y="9" width="190" height="270" rx="20" fill="#000" opacity=".25"/>
-  <rect width="190" height="270" rx="20" fill="#FFFCF4"/>
-  <text x="15" y="62" font-family="system-ui,Segoe UI,Arial" font-weight="900" font-size="58" fill="#E0192F">A</text>
-  <g transform="translate(134 24) scale(34)"><path d="M.5,.28 C.5,.08 0,.04 0,.36 C0,.62 .4,.78 .5,.97 C.6,.78 1,.62 1,.36 C1,.04 .5,.08 .5,.28 Z" fill="#E0192F"/></g>
-  <g transform="translate(39.0 101.0) scale(112)"><path d="M.5,.28 C.5,.08 0,.04 0,.36 C0,.62 .4,.78 .5,.97 C.6,.78 1,.62 1,.36 C1,.04 .5,.08 .5,.28 Z" fill="#E0192F"/><g class="eye" style="--d:0.0s"><path d="M0.27499999999999997,0.5 a0.085,0.085 0 1 0 0.17,0 a0.085,0.085 0 1 0 -0.17,0 Z" fill="#fff"/><path class="pupil" d="M0.325,0.51 a0.045,0.045 0 1 0 0.09,0 a0.045,0.045 0 1 0 -0.09,0 Z" fill="#1B1B2B"/></g><g class="eye" style="--d:0.0s"><path d="M0.555,0.5 a0.085,0.085 0 1 0 0.17,0 a0.085,0.085 0 1 0 -0.17,0 Z" fill="#fff"/><path class="pupil" d="M0.605,0.51 a0.045,0.045 0 1 0 0.09,0 a0.045,0.045 0 1 0 -0.09,0 Z" fill="#1B1B2B"/></g><path d="M.4,0.65 Q.5,0.76 .6,0.65" fill="none" stroke="#fff" stroke-width=".04" stroke-linecap="round"/></g>
-</g></g><g transform="translate(170 14) scale(1.08) rotate(-4 95.0 135.0)"><g class="pcard" data-eyes>
-  <rect x="5" y="9" width="190" height="270" rx="20" fill="#000" opacity=".25"/>
-  <rect width="190" height="270" rx="20" fill="#FFFCF4"/>
-  <text x="15" y="62" font-family="system-ui,Segoe UI,Arial" font-weight="900" font-size="58" fill="#16161C">K</text>
-  <g transform="translate(134 24) scale(34)"><path d="M.5,.03 C.56,.28 1,.4 1,.65 C1,.9 .62,.92 .52,.72 L.62,.98 L.38,.98 L.48,.72 C.38,.92 0,.9 0,.65 C0,.4 .44,.28 .5,.03 Z" fill="#16161C"/></g>
-  <g transform="translate(39.0 101.0) scale(112)"><path d="M.5,.03 C.56,.28 1,.4 1,.65 C1,.9 .62,.92 .52,.72 L.62,.98 L.38,.98 L.48,.72 C.38,.92 0,.9 0,.65 C0,.4 .44,.28 .5,.03 Z" fill="#16161C"/><g class="eye" style="--d:1.1s"><path d="M0.27499999999999997,0.5 a0.085,0.085 0 1 0 0.17,0 a0.085,0.085 0 1 0 -0.17,0 Z" fill="#fff"/><path class="pupil" d="M0.325,0.51 a0.045,0.045 0 1 0 0.09,0 a0.045,0.045 0 1 0 -0.09,0 Z" fill="#1B1B2B"/></g><g class="eye" style="--d:1.1s"><path d="M0.555,0.5 a0.085,0.085 0 1 0 0.17,0 a0.085,0.085 0 1 0 -0.17,0 Z" fill="#fff"/><path class="pupil" d="M0.605,0.51 a0.045,0.045 0 1 0 0.09,0 a0.045,0.045 0 1 0 -0.09,0 Z" fill="#1B1B2B"/></g><path d="M.4,0.65 Q.5,0.76 .6,0.65" fill="none" stroke="#fff" stroke-width=".04" stroke-linecap="round"/><path d="M.25,0 L.2,-.3 L.38,-.16 L.5,-.34 L.62,-.16 L.8,-.3 L.75,0 Z" fill="#FFC83D"/><path d="M.25,0 L.2,-.3 L.38,-.16 L.5,-.34 L.62,-.16 L.8,-.3 L.75,0 Z" fill="none" stroke="#000" stroke-opacity=".3" stroke-width=".02"/><circle cx=".5" cy="-.06" r=".04" fill="#fff"/></g>
-</g></g><g transform="translate(325 40) scale(1.08) rotate(6 95.0 135.0)"><g class="pcard" data-eyes>
-  <rect x="5" y="9" width="190" height="270" rx="20" fill="#000" opacity=".25"/>
-  <rect width="190" height="270" rx="20" fill="#FFFCF4"/>
-  <text x="15" y="62" font-family="system-ui,Segoe UI,Arial" font-weight="900" font-size="58" fill="#E0192F">Q</text>
-  <g transform="translate(134 24) scale(34)"><path d="M.5,0 Q.56,.4 .96,.5 Q.56,.6 .5,1 Q.44,.6 .04,.5 Q.44,.4 .5,0 Z" fill="#E0192F"/></g>
-  <g transform="translate(39.0 101.0) scale(112)"><path d="M.5,0 Q.56,.4 .96,.5 Q.56,.6 .5,1 Q.44,.6 .04,.5 Q.44,.4 .5,0 Z" fill="#E0192F"/><g class="eye" style="--d:2.3s"><path d="M0.27499999999999997,0.5 a0.085,0.085 0 1 0 0.17,0 a0.085,0.085 0 1 0 -0.17,0 Z" fill="#fff"/><path class="pupil" d="M0.325,0.51 a0.045,0.045 0 1 0 0.09,0 a0.045,0.045 0 1 0 -0.09,0 Z" fill="#1B1B2B"/></g><g class="eye" style="--d:2.3s"><path d="M0.555,0.5 a0.085,0.085 0 1 0 0.17,0 a0.085,0.085 0 1 0 -0.17,0 Z" fill="#fff"/><path class="pupil" d="M0.605,0.51 a0.045,0.045 0 1 0 0.09,0 a0.045,0.045 0 1 0 -0.09,0 Z" fill="#1B1B2B"/></g><path d="M.4,0.65 Q.5,0.76 .6,0.65" fill="none" stroke="#fff" stroke-width=".04" stroke-linecap="round"/><path d="M.25,0 L.2,-.3 L.38,-.16 L.5,-.34 L.62,-.16 L.8,-.3 L.75,0 Z" fill="#FFC83D"/><path d="M.25,0 L.2,-.3 L.38,-.16 L.5,-.34 L.62,-.16 L.8,-.3 L.75,0 Z" fill="none" stroke="#000" stroke-opacity=".3" stroke-width=".02"/><circle cx=".5" cy="-.06" r=".04" fill="#fff"/></g>
-</g></g><g transform="translate(470 92) scale(1.08) rotate(14 95.0 135.0)"><g class="pcard" data-eyes>
-  <rect x="5" y="9" width="190" height="270" rx="20" fill="#000" opacity=".25"/>
-  <rect width="190" height="270" rx="20" fill="#FFFCF4"/>
-  <text x="15" y="62" font-family="system-ui,Segoe UI,Arial" font-weight="900" font-size="58" fill="#16161C">J</text>
-  <g transform="translate(134 24) scale(34)"><path d="M0.26,0.27 a0.24,0.24 0 1 0 0.48,0 a0.24,0.24 0 1 0 -0.48,0 Z M0.020000000000000018,0.58 a0.24,0.24 0 1 0 0.48,0 a0.24,0.24 0 1 0 -0.48,0 Z M0.5,0.58 a0.24,0.24 0 1 0 0.48,0 a0.24,0.24 0 1 0 -0.48,0 Z M.5,.5 L.62,.98 L.38,.98 Z" fill="#16161C"/></g>
-  <g transform="translate(39.0 101.0) scale(112)"><path d="M0.26,0.27 a0.24,0.24 0 1 0 0.48,0 a0.24,0.24 0 1 0 -0.48,0 Z M0.020000000000000018,0.58 a0.24,0.24 0 1 0 0.48,0 a0.24,0.24 0 1 0 -0.48,0 Z M0.5,0.58 a0.24,0.24 0 1 0 0.48,0 a0.24,0.24 0 1 0 -0.48,0 Z M.5,.5 L.62,.98 L.38,.98 Z" fill="#16161C"/><g class="eye" style="--d:3.4s"><path d="M0.27499999999999997,0.58 a0.085,0.085 0 1 0 0.17,0 a0.085,0.085 0 1 0 -0.17,0 Z" fill="#fff"/><path class="pupil" d="M0.325,0.59 a0.045,0.045 0 1 0 0.09,0 a0.045,0.045 0 1 0 -0.09,0 Z" fill="#1B1B2B"/></g><g class="eye" style="--d:3.4s"><path d="M0.555,0.58 a0.085,0.085 0 1 0 0.17,0 a0.085,0.085 0 1 0 -0.17,0 Z" fill="#fff"/><path class="pupil" d="M0.605,0.59 a0.045,0.045 0 1 0 0.09,0 a0.045,0.045 0 1 0 -0.09,0 Z" fill="#1B1B2B"/></g><path d="M.4,0.73 Q.5,0.84 .6,0.73" fill="none" stroke="#fff" stroke-width=".04" stroke-linecap="round"/><path d="M.34,0 L.5,-.38 L.66,0 Z" fill="#4DA3FF"/><path d="M.34,0 L.5,-.38 L.66,0 Z" fill="none" stroke="#000" stroke-opacity=".3" stroke-width=".02"/><circle cx=".5" cy="-.38" r=".055" fill="#FFE066"/></g>
-</g></g><path transform="translate(60 30) scale(20)" d="M0,-1 Q.12,-.12 1,0 Q.12,.12 0,1 Q-.12,.12 -1,0 Q-.12,-.12 0,-1Z" fill="#FFD166"/><path transform="translate(600 40) scale(14)" d="M0,-1 Q.12,-.12 1,0 Q.12,.12 0,1 Q-.12,.12 -1,0 Q-.12,-.12 0,-1Z" fill="#fff"/><path transform="translate(40 380) scale(13)" d="M0,-1 Q.12,-.12 1,0 Q.12,.12 0,1 Q-.12,.12 -1,0 Q-.12,-.12 0,-1Z" fill="#fff"/><path transform="translate(610 370) scale(21)" d="M0,-1 Q.12,-.12 1,0 Q.12,.12 0,1 Q-.12,.12 -1,0 Q-.12,-.12 0,-1Z" fill="#FFD166"/><path transform="translate(330 12) scale(11)" d="M0,-1 Q.12,-.12 1,0 Q.12,.12 0,1 Q-.12,.12 -1,0 Q-.12,-.12 0,-1Z" fill="#fff"/></svg>
+      <svg viewBox="0 0 640 400" role="img" aria-label="Cute aliens heading to a beam gate">
+<style>
+  .bmf { animation:bmf 4.2s ease-in-out infinite; } .bmf2 { animation-delay:-1.4s; } .bmf3 { animation-delay:-2.8s; }
+  @keyframes bmf { 0%,100% { translate:0 0; } 50% { translate:0 -10px; } }
+  .bmt { animation:bmt 3.2s ease-in-out infinite; } @keyframes bmt { 0%,100% { opacity:.25; } 50% { opacity:1; } }
+  .bmg { transform-box:fill-box; transform-origin:center; animation:bmg 6s linear infinite; } @keyframes bmg { to { transform:rotate(360deg); } }
+  @media (prefers-reduced-motion:reduce) { .bmf,.bmt,.bmg { animation:none; } }
+</style>
+<defs>
+  <radialGradient id="bmGlow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FFF4C2" stop-opacity=".95"/><stop offset=".45" stop-color="#9FD6FF" stop-opacity=".55"/><stop offset="1" stop-color="#7B5CFF" stop-opacity="0"/></radialGradient>
+</defs>
+<path class="bmt" style="animation-delay:0s" transform="translate(60 60)" d="M0,-9 Q1.6199999999999999,-1.6199999999999999 9,0 Q1.6199999999999999,1.6199999999999999 0,9 Q-1.6199999999999999,1.6199999999999999 -9,0 Q-1.6199999999999999,-1.6199999999999999 0,-9 Z" fill="#FFE9A8"/><path class="bmt" style="animation-delay:0.8s" transform="translate(170 130)" d="M0,-6 Q1.08,-1.08 6,0 Q1.08,1.08 0,6 Q-1.08,1.08 -6,0 Q-1.08,-1.08 0,-6 Z" fill="#FFE9A8"/><path class="bmt" style="animation-delay:1.6s" transform="translate(300 40)" d="M0,-8 Q1.44,-1.44 8,0 Q1.44,1.44 0,8 Q-1.44,1.44 -8,0 Q-1.44,-1.44 0,-8 Z" fill="#FFE9A8"/><path class="bmt" style="animation-delay:0.4s" transform="translate(420 80)" d="M0,-5 Q0.8999999999999999,-0.8999999999999999 5,0 Q0.8999999999999999,0.8999999999999999 0,5 Q-0.8999999999999999,0.8999999999999999 -5,0 Q-0.8999999999999999,-0.8999999999999999 0,-5 Z" fill="#FFE9A8"/><path class="bmt" style="animation-delay:1.1s" transform="translate(560 40)" d="M0,-9 Q1.6199999999999999,-1.6199999999999999 9,0 Q1.6199999999999999,1.6199999999999999 0,9 Q-1.6199999999999999,1.6199999999999999 -9,0 Q-1.6199999999999999,-1.6199999999999999 0,-9 Z" fill="#FFE9A8"/><path class="bmt" style="animation-delay:2.0s" transform="translate(610 170)" d="M0,-6 Q1.08,-1.08 6,0 Q1.08,1.08 0,6 Q-1.08,1.08 -6,0 Q-1.08,-1.08 0,-6 Z" fill="#FFE9A8"/><path class="bmt" style="animation-delay:1.4s" transform="translate(40 250)" d="M0,-7 Q1.26,-1.26 7,0 Q1.26,1.26 0,7 Q-1.26,1.26 -7,0 Q-1.26,-1.26 0,-7 Z" fill="#FFE9A8"/><path class="bmt" style="animation-delay:0.2s" transform="translate(230 330)" d="M0,-6 Q1.08,-1.08 6,0 Q1.08,1.08 0,6 Q-1.08,1.08 -6,0 Q-1.08,-1.08 0,-6 Z" fill="#FFE9A8"/><path class="bmt" style="animation-delay:1.8s" transform="translate(390 370)" d="M0,-8 Q1.44,-1.44 8,0 Q1.44,1.44 0,8 Q-1.44,1.44 -8,0 Q-1.44,-1.44 0,-8 Z" fill="#FFE9A8"/><path class="bmt" style="animation-delay:0.9s" transform="translate(600 340)" d="M0,-6 Q1.08,-1.08 6,0 Q1.08,1.08 0,6 Q-1.08,1.08 -6,0 Q-1.08,-1.08 0,-6 Z" fill="#FFE9A8"/><path class="bmt" style="animation-delay:2.4s" transform="translate(110 360)" d="M0,-5 Q0.8999999999999999,-0.8999999999999999 5,0 Q0.8999999999999999,0.8999999999999999 0,5 Q-0.8999999999999999,0.8999999999999999 -5,0 Q-0.8999999999999999,-0.8999999999999999 0,-5 Z" fill="#FFE9A8"/>
+  <g transform="translate(540 110)"><circle r="46" fill="#FF9E6D" stroke="#1B1030" stroke-width="5"/><circle cx="-14" cy="-12" r="9" fill="#FFB98F"/><circle cx="16" cy="14" r="6" fill="#E57A4A"/>
+    <ellipse rx="86" ry="20" fill="none" stroke="#FFE08A" stroke-width="8" transform="rotate(-18)" opacity=".9"/></g>
+  <g transform="translate(470 250)">
+    <circle class="bmg" r="118" fill="url(#bmGlow)"/>
+    <rect x="-70" y="-100" width="140" height="190" rx="34" fill="#0E0A24" stroke="#1B1030" stroke-width="6"/>
+    <rect x="-70" y="-100" width="140" height="190" rx="34" fill="none" stroke="#FFC83D" stroke-width="10" stroke-dasharray="20 20"/>
+    <ellipse cx="0" cy="-5" rx="46" ry="70" fill="url(#bmGlow)"/>
+    <g class="bmg" opacity=".85"><path d="M0,-58 C24,-58 40,-30 24,-6 C10,14 -18,10 -20,-8 C-22,-24 -6,-34 6,-26" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/></g>
+  </g>
+  <g class="bmf bmf1" transform="translate(120 270) scale(1.05)">
+    <line x1="-16" y1="-38" x2="-28" y2="-72" stroke="#1B1030" stroke-width="6" stroke-linecap="round"/><circle cx="-28" cy="-74" r="9" fill="#2BA866" stroke="#1B1030" stroke-width="4"/>
+    <line x1="16" y1="-38" x2="28" y2="-72" stroke="#1B1030" stroke-width="6" stroke-linecap="round"/><circle cx="28" cy="-74" r="9" fill="#2BA866" stroke="#1B1030" stroke-width="4"/>
+    <ellipse cx="0" cy="0" rx="48" ry="44" fill="#46D58A" stroke="#1B1030" stroke-width="5"/>
+    <ellipse cx="-16" cy="-6" rx="13" ry="16" fill="#fff" stroke="#1B1030" stroke-width="3"/><circle cx="-11" cy="-3" r="7" fill="#1B1030"/><circle cx="-9" cy="-7" r="2.4" fill="#fff"/>
+    <ellipse cx="16" cy="-6" rx="13" ry="16" fill="#fff" stroke="#1B1030" stroke-width="3"/><circle cx="21" cy="-3" r="7" fill="#1B1030"/><circle cx="23" cy="-7" r="2.4" fill="#fff"/>
+    <ellipse cx="-31" cy="14" rx="8" ry="5" fill="#FF8FA8" opacity=".65"/><ellipse cx="31" cy="14" rx="8" ry="5" fill="#FF8FA8" opacity=".65"/>
+    <path d="M-12 18 Q0 32 12 18" fill="none" stroke="#1B1030" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <g class="bmf bmf2" transform="translate(250 185) scale(0.82)">
+    <line x1="-16" y1="-38" x2="-28" y2="-72" stroke="#1B1030" stroke-width="6" stroke-linecap="round"/><circle cx="-28" cy="-74" r="9" fill="#D5507F" stroke="#1B1030" stroke-width="4"/>
+    <line x1="16" y1="-38" x2="28" y2="-72" stroke="#1B1030" stroke-width="6" stroke-linecap="round"/><circle cx="28" cy="-74" r="9" fill="#D5507F" stroke="#1B1030" stroke-width="4"/>
+    <ellipse cx="0" cy="0" rx="48" ry="44" fill="#FF7BA9" stroke="#1B1030" stroke-width="5"/>
+    <ellipse cx="-16" cy="-6" rx="13" ry="16" fill="#fff" stroke="#1B1030" stroke-width="3"/><circle cx="-11" cy="-3" r="7" fill="#1B1030"/><circle cx="-9" cy="-7" r="2.4" fill="#fff"/>
+    <ellipse cx="16" cy="-6" rx="13" ry="16" fill="#fff" stroke="#1B1030" stroke-width="3"/><circle cx="21" cy="-3" r="7" fill="#1B1030"/><circle cx="23" cy="-7" r="2.4" fill="#fff"/>
+    <ellipse cx="-31" cy="14" rx="8" ry="5" fill="#FF8FA8" opacity=".65"/><ellipse cx="31" cy="14" rx="8" ry="5" fill="#FF8FA8" opacity=".65"/>
+    <path d="M-12 18 Q0 32 12 18" fill="none" stroke="#1B1030" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <g class="bmf bmf3" transform="translate(300 320) scale(0.7)">
+    <line x1="-16" y1="-38" x2="-28" y2="-72" stroke="#1B1030" stroke-width="6" stroke-linecap="round"/><circle cx="-28" cy="-74" r="9" fill="#4286D6" stroke="#1B1030" stroke-width="4"/>
+    <line x1="16" y1="-38" x2="28" y2="-72" stroke="#1B1030" stroke-width="6" stroke-linecap="round"/><circle cx="28" cy="-74" r="9" fill="#4286D6" stroke="#1B1030" stroke-width="4"/>
+    <ellipse cx="0" cy="0" rx="48" ry="44" fill="#6EB6FF" stroke="#1B1030" stroke-width="5"/>
+    <ellipse cx="-16" cy="-6" rx="13" ry="16" fill="#fff" stroke="#1B1030" stroke-width="3"/><circle cx="-11" cy="-3" r="7" fill="#1B1030"/><circle cx="-9" cy="-7" r="2.4" fill="#fff"/>
+    <ellipse cx="16" cy="-6" rx="13" ry="16" fill="#fff" stroke="#1B1030" stroke-width="3"/><circle cx="21" cy="-3" r="7" fill="#1B1030"/><circle cx="23" cy="-7" r="2.4" fill="#fff"/>
+    <ellipse cx="-31" cy="14" rx="8" ry="5" fill="#FF8FA8" opacity=".65"/><ellipse cx="31" cy="14" rx="8" ry="5" fill="#FF8FA8" opacity=".65"/>
+    <path d="M-12 18 Q0 32 12 18" fill="none" stroke="#1B1030" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>
     </div>
     <div class="body">
-      <span class="tag" data-new-until="2026-12-15"><span lang="tr">YENİ OYUN</span><span lang="en">NEW GAME</span><span lang="es">JUEGO NUEVO</span><span lang="pt">JOGO NOVO</span></span>
-      <p lang="tr">Dört klasik solitaire tek uygulamada: sevimli yüzlü kartlarla Klondike, Spider, FreeCell ve TriPeaks. Günlük meydan okuma, seriler, ipuçları ve temalar.</p><p lang="en">Four classic solitaire games in one app, played with cards that have cute faces: Klondike, Spider, FreeCell and TriPeaks. A daily challenge, streaks, hints and themes.</p><p lang="es">Cuatro solitarios clásicos en una sola app, con cartas de caritas adorables: Klondike, Spider, FreeCell y TriPeaks. Reto diario, rachas, pistas y temas.</p><p lang="pt">Quatro paciências clássicas em um só app, com cartas de carinhas fofas: Klondike, Spider, FreeCell e TriPeaks. Desafio diário, sequências, dicas e temas.</p>
-      <ul class="chips"><li>Klondike</li><li>Spider</li><li>FreeCell</li><li>TriPeaks</li></ul>
-      <div class="links"><a class="play" href="https://play.google.com/store/apps/details?id=com.cardles.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img lang="tr" src="badges/google-play-tr.svg" alt="Google Play&#x27;den indir"><img lang="en" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="es" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="pt" src="badges/google-play-en.svg" alt="Get it on Google Play"></a><details class="qr" data-qr="cardles"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z"/></svg><span lang="tr">QR ile yükle</span><span lang="en">Install via QR</span><span lang="es">Instalar con QR</span><span lang="pt">Instalar com QR</span></summary><div class="qrpop"><img src="qr/cardles.svg" alt="QR" width="183" height="183" loading="lazy"><p lang="tr">Telefonunla tara</p><p lang="en">Scan with your phone</p><p lang="es">Escanea con tu móvil</p><p lang="pt">Escaneie com o celular</p></div></details><a class="small" href="cardles/"><b lang="tr">Daha fazla</b><b lang="en">Learn more</b><b lang="es">Más información</b><b lang="pt">Saiba mais</b></a></div>
+      <span class="tag" data-new-until="2026-12-03"><span lang="tr">YENİ OYUN</span><span lang="en">NEW GAME</span><span lang="es">JUEGO NUEVO</span><span lang="pt">JOGO NOVO</span></span>
+      <p lang="tr">Sevimli uzaylılar sadece eve dönmek istiyor, onları ışınlayan kapılar sende. Renkli kapıları kaydır, aynı renkteki uzaylıları topla ve eve ışınla: Ay'dan Galaksi'ye 400 bölüm, süre ve can yok.</p><p lang="en">Cute aliens just want to go home, and you hold the gates that beam them there. Slide colorful gates, sweep up aliens of the same color and beam them home: 400 levels from the Moon to the Galaxy, no timer, no lives.</p><p lang="es">Los alienígenas solo quieren volver a casa y tú manejas las puertas que los teletransportan. Desliza puertas de colores, recoge a los alienígenas del mismo color y llévalos a casa: 400 niveles de la Luna a la Galaxia, sin tiempo ni vidas.</p><p lang="pt">Os alienígenas só querem voltar para casa e você controla os portais que os levam. Deslize portais coloridos, recolha os alienígenas da mesma cor e leve-os para casa: 400 fases da Lua à Galáxia, sem cronômetro nem vidas.</p>
+      <ul class="chips" lang="tr"><li>400 bölüm</li><li>3 yıldız</li><li>Süre ve can yok</li><li>Ücretsiz</li></ul><ul class="chips" lang="en"><li>400 levels</li><li>3 stars each</li><li>No timer, no lives</li><li>Free</li></ul><ul class="chips" lang="es"><li>400 niveles</li><li>3 estrellas</li><li>Sin tiempo ni vidas</li><li>Gratis</li></ul><ul class="chips" lang="pt"><li>400 fases</li><li>3 estrelas</li><li>Sem cronômetro nem vidas</li><li>Grátis</li></ul>
+      <div class="links"><a class="play" href="https://play.google.com/store/apps/details?id=com.beamies.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img lang="tr" src="badges/google-play-tr.svg" alt="Google Play&#x27;den indir"><img lang="en" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="es" src="badges/google-play-en.svg" alt="Get it on Google Play"><img lang="pt" src="badges/google-play-en.svg" alt="Get it on Google Play"></a><details class="qr" data-qr="beamies"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z"/></svg><span lang="tr">QR ile yükle</span><span lang="en">Install via QR</span><span lang="es">Instalar con QR</span><span lang="pt">Instalar com QR</span></summary><div class="qrpop"><img src="qr/beamies.svg" alt="QR" width="183" height="183" loading="lazy"><p lang="tr">Telefonunla tara</p><p lang="en">Scan with your phone</p><p lang="es">Escanea con tu móvil</p><p lang="pt">Escaneie com o celular</p></div></details><a class="small" href="beamies/"><b lang="tr">Daha fazla</b><b lang="en">Learn more</b><b lang="es">Más información</b><b lang="pt">Saiba mais</b></a></div>
     </div>
   </section>
     <div class="showgrid">
@@ -267,12 +292,12 @@
     </article>
     </div>
     <div class="tools two">
-      <article class="tool" style="--tint:#F2C14E" data-slug="beamies" data-pkg="com.beamies.nesimapps">
-        <img class="icon" src="beamies/icon.svg" alt="" width="64" height="64" loading="lazy">
+      <article class="tool" style="--tint:#2FA37F" data-slug="cardles" data-pkg="com.cardles.nesimapps">
+        <img class="icon" src="cardles/icon.svg" alt="" width="64" height="64" loading="lazy">
         <div class="tbody">
-          <h3><a class="stretch" href="beamies/"><span lang="tr">Beamies</span><span lang="en">Beamies</span><span lang="es">Beamies</span><span lang="pt">Beamies</span></a> <span class="badge" data-new-until="2026-12-03"><span lang="tr">YENİ</span><span lang="en">NEW</span><span lang="es">NUEVO</span><span lang="pt">NOVO</span></span></h3>
-          <p lang="tr">Kapıları kaydır, sevimli uzaylıları eve ışınla. Ay'dan Galaksi'ye 400 bölüm!</p><p lang="en">Slide gates to beam cute aliens home. 400 levels from the Moon to the Galaxy!</p><p lang="es">Desliza puertas y lleva a adorables alienígenas a casa. ¡400 niveles!</p><p lang="pt">Deslize portais e leve alienígenas fofos para casa. 400 fases!</p>
-          <div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.beamies.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a><details class="qr" data-qr="beamies"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z"/></svg><span lang="tr">QR</span><span lang="en">QR</span><span lang="es">QR</span><span lang="pt">QR</span></summary><div class="qrpop"><img src="qr/beamies.svg" alt="QR" width="183" height="183" loading="lazy"><p lang="tr">Telefonunla tara</p><p lang="en">Scan with your phone</p><p lang="es">Escanea con tu móvil</p><p lang="pt">Escaneie com o celular</p></div></details></div>
+          <h3><a class="stretch" href="cardles/"><span lang="tr">Cardles</span><span lang="en">Cardles</span><span lang="es">Cardles</span><span lang="pt">Cardles</span></a> <span class="badge" data-new-until="2026-12-15"><span lang="tr">YENİ</span><span lang="en">NEW</span><span lang="es">NUEVO</span><span lang="pt">NOVO</span></span></h3>
+          <p lang="tr">Klondike, Spider, FreeCell ve TriPeaks, sevimli yüzlerle. Günlük meydan okuma!</p><p lang="en">Klondike, Spider, FreeCell & TriPeaks with cute faces. Daily challenge!</p><p lang="es">Klondike, Spider, FreeCell y TriPeaks con caritas. ¡Reto diario!</p><p lang="pt">Klondike, Spider, FreeCell e TriPeaks com carinhas. Desafio diário!</p>
+          <div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.cardles.nesimapps&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a><details class="qr" data-qr="cardles"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z"/></svg><span lang="tr">QR</span><span lang="en">QR</span><span lang="es">QR</span><span lang="pt">QR</span></summary><div class="qrpop"><img src="qr/cardles.svg" alt="QR" width="183" height="183" loading="lazy"><p lang="tr">Telefonunla tara</p><p lang="en">Scan with your phone</p><p lang="es">Escanea con tu móvil</p><p lang="pt">Escaneie com o celular</p></div></details></div>
         </div>
       </article>
       <article class="tool" style="--tint:#EDC22E" data-slug="game2048" data-pkg="com.game2048.nesimapps">

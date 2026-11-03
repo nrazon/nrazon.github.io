@@ -14,7 +14,18 @@
   "new": "2026-12-15",
   "status": "live",
   "popular": false,
-  "desc": {}
+  "desc": {
+   "en": "Klondike, Spider, FreeCell & TriPeaks with cute faces. Daily challenge!",
+   "tr": "Klondike, Spider, FreeCell ve TriPeaks, sevimli yüzlerle. Günlük meydan okuma!",
+   "es": "Klondike, Spider, FreeCell y TriPeaks con caritas. ¡Reto diario!",
+   "pt": "Klondike, Spider, FreeCell e TriPeaks com carinhas. Desafio diário!"
+  },
+  "desc_live": {
+   "en": "Klondike, Spider, FreeCell & TriPeaks with cute faces. Daily challenge!",
+   "tr": "Klondike, Spider, FreeCell ve TriPeaks, sevimli yüzlerle. Günlük meydan okuma!",
+   "es": "Klondike, Spider, FreeCell y TriPeaks con caritas. ¡Reto diario!",
+   "pt": "Klondike, Spider, FreeCell e TriPeaks com carinhas. Desafio diário!"
+  }
  },
  {
   "slug": "beamies",

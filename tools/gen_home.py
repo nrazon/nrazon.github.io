@@ -17,7 +17,7 @@ DATA = json.load(open(os.path.join(G, "tools", "home_data.json"), encoding="utf-
 for _a in DATA:  # yayına çıkınca (status: live) 'çok yakında' içermeyen metin kullanılır
     if _a.get("status") == "live" and _a.get("desc_live"):
         _a["desc"] = _a["desc_live"]
-HERO_SVG = open(os.path.join(G, "tools", "cardles_hero.svg"), encoding="utf-8").read()
+HERO_SVG = open(os.path.join(G, "tools", "beamies_hero.svg"), encoding="utf-8").read()
 UTM = "&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"
 
 
@@ -75,6 +75,19 @@ CARDLES = {
     "en": "Four classic solitaire games in one app, played with cards that have cute faces: Klondike, Spider, FreeCell and TriPeaks. A daily challenge, streaks, hints and themes.",
     "es": "Cuatro solitarios clásicos en una sola app, con cartas de caritas adorables: Klondike, Spider, FreeCell y TriPeaks. Reto diario, rachas, pistas y temas.",
     "pt": "Quatro paciências clássicas em um só app, com cartas de carinhas fofas: Klondike, Spider, FreeCell e TriPeaks. Desafio diário, sequências, dicas e temas.",
+}
+BEAMIES_TAG = {"tr": "Uzaylıları eve ışınla!", "en": "Beam the aliens home!", "es": "¡Lleva a los alienígenas a casa!", "pt": "Leve os alienígenas para casa!"}
+BEAMIES = {
+    "tr": "Sevimli uzaylılar sadece eve dönmek istiyor, onları ışınlayan kapılar sende. Renkli kapıları kaydır, aynı renkteki uzaylıları topla ve eve ışınla: Ay'dan Galaksi'ye 400 bölüm, süre ve can yok.",
+    "en": "Cute aliens just want to go home, and you hold the gates that beam them there. Slide colorful gates, sweep up aliens of the same color and beam them home: 400 levels from the Moon to the Galaxy, no timer, no lives.",
+    "es": "Los alienígenas solo quieren volver a casa y tú manejas las puertas que los teletransportan. Desliza puertas de colores, recoge a los alienígenas del mismo color y llévalos a casa: 400 niveles de la Luna a la Galaxia, sin tiempo ni vidas.",
+    "pt": "Os alienígenas só querem voltar para casa e você controla os portais que os levam. Deslize portais coloridos, recolha os alienígenas da mesma cor e leve-os para casa: 400 fases da Lua à Galáxia, sem cronômetro nem vidas.",
+}
+BEAMIES_CHIPS = {
+    "tr": ["400 bölüm", "3 yıldız", "Süre ve can yok", "Ücretsiz"],
+    "en": ["400 levels", "3 stars each", "No timer, no lives", "Free"],
+    "es": ["400 niveles", "3 estrellas", "Sin tiempo ni vidas", "Gratis"],
+    "pt": ["400 fases", "3 estrelas", "Sem cronômetro nem vidas", "Grátis"],
 }
 CARDLES_TAG = {"tr": "Güldüren solitaire", "en": "Solitaire that makes you smile", "es": "El solitario que te hace sonreír", "pt": "Paciência que faz você sorrir"}
 SHOW_TAG = {  # büyük oyun kartlarının kısa sloganı
@@ -223,6 +236,7 @@ CSS = r'''
   .hero p { margin:0 0 14px; color:var(--dim); }
   @media (min-width:700px) { .hero { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); align-items:center; } .hero .body { padding:24px 28px; } .hero-art { border-radius:24px 0 0 24px; } }
   .hero-art { border-radius:24px 24px 0 0; position:relative; background:linear-gradient(135deg,#0F6B52,#16A07F); color:#fff; padding:22px 18px 22px 26px; display:flex; flex-direction:column; justify-content:center; gap:6px; overflow:hidden; min-height:270px; }
+  .hero-art.beamies { background:linear-gradient(135deg,#1A2350,#4B2E8F); }
   .hero-art .ha-text { display:flex; flex-direction:column; position:relative; z-index:1; }
   .hero-art .ha-title { font-size:clamp(34px,4.6vw,46px); font-weight:900; line-height:1; letter-spacing:-.02em; }
   .hero-art .ha-tag { font-weight:650; font-size:clamp(15px,2.6vw,19px); opacity:.95; margin-top:4px; }
@@ -354,9 +368,9 @@ def build(preview):
     by = {a["slug"]: a for a in DATA}
     live = [a for a in DATA if a["status"] == "live"]
     soon = [a for a in DATA if a["status"] == "soon"]
-    games = [a for a in live if a["cat"] == "games" and a["slug"] not in ("cardles", "sliplines", "cubbles")]
+    games = [a for a in live if a["cat"] == "games" and a["slug"] not in ("beamies", "sliplines", "cubbles")]
     apps = [a for a in live if a["cat"] == "apps"]
-    cardles = by["cardles"]
+    beamies = by["beamies"]
     robots = '<meta name="robots" content="noindex">\n' if preview else ""
     soon_html = f'''  <section id="soon">
     <h2 class="sec">{L(T["h_soon"])}</h2>
@@ -368,20 +382,21 @@ def build(preview):
 ''' if soon else ""
     privacy_links = "".join(
         f'<li><a href="{a["slug"]}/privacy.html">{esc(a["names"]["en"])}</a></li>' for a in DATA)
-    hero = f'''  <section class="hero" data-slug="cardles" data-pkg="com.cardles.nesimapps">
-    <h2 class="sr">Cardles</h2>
-    <div class="hero-art">
+    chips = "".join(f'<ul class="chips" lang="{l}">' + "".join(f"<li>{esc(c)}</li>" for c in BEAMIES_CHIPS[l]) + "</ul>" for l in LANGS)
+    hero = f'''  <section class="hero" data-slug="beamies" data-pkg="com.beamies.nesimapps">
+    <h2 class="sr">Beamies</h2>
+    <div class="hero-art beamies">
       <div class="ha-text">
-        <span class="ha-title">Cardles</span>
-        <span class="ha-tag">{L(CARDLES_TAG)}</span>
+        <span class="ha-title">Beamies</span>
+        <span class="ha-tag">{L(BEAMIES_TAG)}</span>
       </div>
       {HERO_SVG}
     </div>
     <div class="body">
-      <span class="tag" data-new-until="{cardles["new"]}">{L(T["newgame"])}</span>
-      {L(CARDLES, "p")}
-      <ul class="chips"><li>Klondike</li><li>Spider</li><li>FreeCell</li><li>TriPeaks</li></ul>
-      <div class="links">{badge("com.cardles.nesimapps")}{qr_html("cardles")}<a class="small" href="cardles/">{L(T["more"], "b")}</a></div>
+      <span class="tag" data-new-until="{beamies["new"]}">{L(T["newgame"])}</span>
+      {L(BEAMIES, "p")}
+      {chips}
+      <div class="links">{badge("com.beamies.nesimapps")}{qr_html("beamies")}<a class="small" href="beamies/">{L(T["more"], "b")}</a></div>
     </div>
   </section>'''
     return f'''<!doctype html>
@@ -390,7 +405,7 @@ def build(preview):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nesim Apps</title>
-{robots}<meta name="description" content="Android games and apps by Nesim Razon: Cardles, Cubbles, Sliplines, 2048, Tic-Tac-Toe, Son Depremler, Age Calculator, BMI Calculator, Where Am I?, National Anthems and more. Android oyunları ve uygulamaları.">
+{robots}<meta name="description" content="Android games and apps by Nesim Razon: Beamies, Cardles, Cubbles, Sliplines, 2048, Tic-Tac-Toe, Son Depremler, Age Calculator, BMI Calculator, Where Am I?, National Anthems and more. Android oyunları ve uygulamaları.">
 <link rel="canonical" href="https://nrazon.github.io/">
 <link rel="icon" href="logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
