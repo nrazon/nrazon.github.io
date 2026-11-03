@@ -12,6 +12,9 @@ BASE = "https://nrazon.github.io"
 # sayfada noindex var. Uygulama Play'de yayınlanınca slug buradan silinir (ve home_data.json'da status=live yapılır).
 HIDDEN = set()
 # Ana sayfada kartında data-pkg olmayan (henüz "yakında" kartı olan) uygulamaların paket adları.
+VIDEOS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "videos.json"), encoding="utf-8"))
+VIDEO_LABEL = {"tr": "Tanıtım videosu", "en": "Promo video", "es": "Vídeo de presentación", "pt": "Vídeo de apresentação"}
+VIDEO_PLAY = {"tr": "Tanıtım videosunu oynat", "en": "Play promo video", "es": "Reproducir el vídeo", "pt": "Reproduzir o vídeo"}
 PKG_FALLBACK = {"calisan": "com.calisanasistani.nesimapps", "uzaygunlugu": "com.uzaygunlugu.nesimapps", "haftasonum": "com.haftasonum.nesimapps", "beamies": "com.beamies.nesimapps"}
 REF = "&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"
 
@@ -402,7 +405,11 @@ def page(cfg):
     sf = cfg.get("shotfiles")
     if sf is None:
         sf = {l: [f"shots/{l if os.path.isdir(os.path.join(G, slug, 'shots', l)) else 'en'}/{n:02d}.png" for n in range(1, cfg["shots"] + 1)] for l in L}
+    vids = VIDEOS.get(cfg["slug"], {})
     for l in L:
+        if l in vids:
+            shots += (f'<figure class="vid" data-l="{l}"><button type="button" class="vidbtn" data-yt="{vids[l]}" data-app="{cfg["slug"]}" aria-label="{esc(VIDEO_PLAY[l])}">'
+                      f'<img src="shots/{l}/video.jpg" alt="" width="640" height="360" loading="lazy"><span class="pl"><i></i></span><span class="vl">{esc(VIDEO_LABEL[l])}</span></button></figure>\n')
         files = sf.get(l) or sf.get("en") or next(iter(sf.values()))
         for n, f in enumerate(files, 1):
             dim = cfg.get("dims", {}).get(f)
@@ -417,6 +424,16 @@ def page(cfg):
     note_block = f'<p class="note">{multi(cfg["note"], L, "span")}</p>' if cfg.get("note") else ""
     tag_html = f'<span class="tag" data-new-until="{cfg["new_until"]}">{multi(SEC["new"] if cfg["slug"] in GAME_SLUGS else SEC["newapp"], L)}</span>' if cfg.get("new_until") else ""
     chips = "".join(f"<li>{c}</li>" for c in cfg["chips"])
+    video_dialog = ""
+    if vids:
+        video_dialog = (
+            '<dialog class="vmodal" id="vmodal" aria-label="Video"><div class="vframe" id="vframe"></div><button type="button" class="vclose" aria-label="Close">\u2715</button></dialog>\n'
+            '<script>(function(){var d=document.getElementById("vmodal");if(!d||!d.showModal)return;var f=document.getElementById("vframe");'
+            'document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".vidbtn");'
+            'if(b){f.innerHTML=\'<iframe src="https://www.youtube-nocookie.com/embed/\'+b.getAttribute("data-yt")+\'?autoplay=1&rel=0&playsinline=1" title="Video" '
+            'allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>\';d.showModal();return;}'
+            'if(e.target===d||(e.target.classList&&e.target.classList.contains("vclose")))d.close();});'
+            'd.addEventListener("close",function(){f.innerHTML="";});})();</script>\n')
     jsonld = json.dumps({
         "@context": "https://schema.org", "@type": "SoftwareApplication", "name": cfg["name"], "operatingSystem": "Android",
         "applicationCategory": "GameApplication", "description": cfg["desc"], "url": url, "image": f"{BASE}/{slug}/icon.svg",
@@ -460,8 +477,8 @@ def page(cfg):
 <style>
 :root {{ --accent:{cfg['accent']}; --hero-a:{cfg['hero'][0]}; --hero-b:{cfg['hero'][1]}; }}
 </style>
-<link rel="stylesheet" href="../landing.css?v=6">
-<script src="/analytics.js?v=1" defer></script>
+<link rel="stylesheet" href="../landing.css?v=7">
+<script src="/analytics.js?v=2" defer></script>
 <script type="application/ld+json">{jsonld}</script>
 </head>
 <body>
@@ -508,7 +525,7 @@ def page(cfg):
 
   <footer>{multi(SEC['contact'], L)}: <a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="privacy.html">{multi(SEC['privacy'], L)}</a> · <a href="/site-privacy.html">{multi(SEC['webprivacy'], L)}</a></footer>
 </main>
-<script>
+{video_dialog}<script>
   (function () {{
     var supported = {json.dumps(L)};
     var priv = {json.dumps(cfg.get("priv", ["tr", "en", "es", "pt"]))};
@@ -581,7 +598,25 @@ CSS_EXTRA = '''
 .iconart { display:flex; align-items:center; justify-content:center; padding:10px 0 26px; }
 .iconart img { width:min(46vw,200px); height:auto; border-radius:23%; box-shadow:0 14px 34px rgba(0,0,0,.35); }
 '''
+VIDEO_CSS = r'''
+/* Mağaza videosu kutusu (ekran görüntüleri şeridinin ilki) ve modal */
+.strip figure.vid { display:flex; align-items:center; }
+.vidbtn { position:relative; display:block; width:min(80vw,440px); aspect-ratio:16/9; border:0; padding:0; border-radius:22px; overflow:hidden; cursor:pointer; background:#0b0d18; box-shadow:var(--shadow); }
+.vidbtn img { display:block; width:100%; height:100%; object-fit:cover; }
+.vidbtn .pl { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.35)); }
+.vidbtn .pl i { width:74px; height:74px; border-radius:50%; background:rgba(255,255,255,.93); display:flex; align-items:center; justify-content:center; box-shadow:0 8px 24px rgba(0,0,0,.45); transition:transform .15s; }
+.vidbtn:hover .pl i, .vidbtn:focus-visible .pl i { transform:scale(1.1); }
+.vidbtn .pl i::after { content:""; margin-left:6px; border-style:solid; border-width:15px 0 15px 25px; border-color:transparent transparent transparent #1B1030; }
+.vidbtn .vl { position:absolute; left:12px; bottom:10px; background:rgba(0,0,0,.62); color:#fff; font-size:12px; font-weight:700; padding:4px 11px; border-radius:999px; }
+.vidbtn:focus-visible { outline:3px solid var(--accent,#fff); outline-offset:3px; }
+dialog.vmodal { border:0; padding:0; background:transparent; max-width:none; width:min(94vw,960px); overflow:visible; }
+dialog.vmodal::backdrop { background:rgba(8,6,20,.84); }
+.vframe { position:relative; aspect-ratio:16/9; background:#000; border-radius:16px; overflow:hidden; box-shadow:0 20px 60px rgba(0,0,0,.6); }
+.vframe iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+.vclose { position:absolute; top:-48px; right:0; width:40px; height:40px; border-radius:50%; border:0; background:rgba(255,255,255,.92); color:#1B1030; font-size:18px; font-weight:800; cursor:pointer; }
+'''
 LANDING_CSS += CSS_EXTRA
+LANDING_CSS += VIDEO_CSS
 
 # slug, klasör, ad(tr), ad(en), simge, tint, ekran görüntüsü kaynakları {dil: klasör}, yeni-rozet
 APPDEFS = [

@@ -91,3 +91,19 @@ html[data-lang="fr"] [data-l]:not([data-l="fr"]) { display:none; }
 .note { color:var(--dim); margin:16px 0 0; max-width:70ch; }
 .iconart { display:flex; align-items:center; justify-content:center; padding:10px 0 26px; }
 .iconart img { width:min(46vw,200px); height:auto; border-radius:23%; box-shadow:0 14px 34px rgba(0,0,0,.35); }
+
+/* Mağaza videosu kutusu (ekran görüntüleri şeridinin ilki) ve modal */
+.strip figure.vid { display:flex; align-items:center; }
+.vidbtn { position:relative; display:block; width:min(80vw,440px); aspect-ratio:16/9; border:0; padding:0; border-radius:22px; overflow:hidden; cursor:pointer; background:#0b0d18; box-shadow:var(--shadow); }
+.vidbtn img { display:block; width:100%; height:100%; object-fit:cover; }
+.vidbtn .pl { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.35)); }
+.vidbtn .pl i { width:74px; height:74px; border-radius:50%; background:rgba(255,255,255,.93); display:flex; align-items:center; justify-content:center; box-shadow:0 8px 24px rgba(0,0,0,.45); transition:transform .15s; }
+.vidbtn:hover .pl i, .vidbtn:focus-visible .pl i { transform:scale(1.1); }
+.vidbtn .pl i::after { content:""; margin-left:6px; border-style:solid; border-width:15px 0 15px 25px; border-color:transparent transparent transparent #1B1030; }
+.vidbtn .vl { position:absolute; left:12px; bottom:10px; background:rgba(0,0,0,.62); color:#fff; font-size:12px; font-weight:700; padding:4px 11px; border-radius:999px; }
+.vidbtn:focus-visible { outline:3px solid var(--accent,#fff); outline-offset:3px; }
+dialog.vmodal { border:0; padding:0; background:transparent; max-width:none; width:min(94vw,960px); overflow:visible; }
+dialog.vmodal::backdrop { background:rgba(8,6,20,.84); }
+.vframe { position:relative; aspect-ratio:16/9; background:#000; border-radius:16px; overflow:hidden; box-shadow:0 20px 60px rgba(0,0,0,.6); }
+.vframe iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+.vclose { position:absolute; top:-48px; right:0; width:40px; height:40px; border-radius:50%; border:0; background:rgba(255,255,255,.92); color:#1B1030; font-size:18px; font-weight:800; cursor:pointer; }
