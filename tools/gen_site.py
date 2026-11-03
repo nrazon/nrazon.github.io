@@ -10,12 +10,12 @@ G = r"C:\@Development\PersonalAndroidApps\github-pages"
 BASE = "https://nrazon.github.io"
 # Yayına henüz çıkmamış uygulamaların detay sayfaları: URL'den açılır ama ana sayfa kartı, "Diğer uygulamalarım" listeleri ve sitemap'e GİRMEZ,
 # sayfada noindex var. Uygulama Play'de yayınlanınca slug buradan silinir (ve home_data.json'da status=live yapılır).
-HIDDEN = set()
+HIDDEN = {"logiclings"}  # yayin gunu sil (Console onayindan sonra)
 # Ana sayfada kartında data-pkg olmayan (henüz "yakında" kartı olan) uygulamaların paket adları.
 VIDEOS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "videos.json"), encoding="utf-8"))
 VIDEO_LABEL = {"tr": "Tanıtım videosu", "en": "Promo video", "es": "Vídeo de presentación", "pt": "Vídeo de apresentação"}
 VIDEO_PLAY = {"tr": "Tanıtım videosunu oynat", "en": "Play promo video", "es": "Reproducir el vídeo", "pt": "Reproduzir o vídeo"}
-PKG_FALLBACK = {"calisan": "com.calisanasistani.nesimapps", "uzaygunlugu": "com.uzaygunlugu.nesimapps", "haftasonum": "com.haftasonum.nesimapps", "beamies": "com.beamies.nesimapps"}
+PKG_FALLBACK = {"calisan": "com.calisanasistani.nesimapps", "uzaygunlugu": "com.uzaygunlugu.nesimapps", "haftasonum": "com.haftasonum.nesimapps", "beamies": "com.beamies.nesimapps", "logiclings": "com.logiclings.nesimapps"}
 REF = "&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"
 
 # ------------------------------------------------------------------ ortak: göz takip betiği
@@ -620,6 +620,7 @@ LANDING_CSS += VIDEO_CSS
 
 # slug, klasör, ad(tr), ad(en), simge, tint, ekran görüntüsü kaynakları {dil: klasör}, yeni-rozet
 APPDEFS = [
+    ("logiclings", "Logiclings", "Logiclings", "Logiclings", "icon.png", "#E8B64C", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-15"),
     ("beamies", "Beamies", "Beamies", "Beamies", "icon.svg", "#F2C14E", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-03"),
     ("haftasonum", "Etkinlik", "Hafta Sonum", "Hafta Sonum", "icon.png", "#FFC857", {"tr": "tr"}, "2026-12-02"),
     ("calisan", "CalisanAsistani", "Çalışan Asistanı", "Çalışan Asistanı", "icon.svg", "#2F6F5E", {"tr": "tr"}, "2026-12-15"),
