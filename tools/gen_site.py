@@ -698,9 +698,21 @@ def split_full(full):
         if state == "intro":
             if not ln.rstrip().endswith(":"):
                 intro.append(ln.strip())
+        elif ln[:1].isspace() and ln.lstrip()[:1] in ("\u2013", "-"):
+            tail.append("\u00a7" + ln.strip())   # alt madde işareti
         else:
             tail.append(ln.strip())
     return intro, bullets, tail
+
+
+def format_note(tail):
+    """Girintili alt maddeleri satır satır, diğer cümleleri paragraf olarak birleştirir."""
+    subs = [x[1:] for x in tail if x.startswith("\u00a7")]
+    rest = [x for x in tail if not x.startswith("\u00a7")]
+    out = "<br>".join(subs)
+    if subs and rest:
+        out += "<br><br>"
+    return out + " ".join(rest)
 
 
 def darken(hexc, f):
@@ -750,7 +762,7 @@ def build_apps():
                 cfg["tagline"][l] = e["short"]
                 cfg["intro"][l] = " ".join(intro[:2])
                 bullets[l] = bl
-                notes[l] = " ".join(tail)
+                notes[l] = format_note(tail)
             cfg["desc"] = (lst.get("en") or lst["tr"])["short"]
             n = max(len(v) for v in bullets.values())
             cfg["bullets"] = [{l: (bullets[l][i] if i < len(bullets[l]) else bullets[langs[0]][i]) for l in langs} for i in range(n)]
