@@ -17,6 +17,34 @@
   "desc": {}
  },
  {
+  "slug": "beamies",
+  "cat": "games",
+  "icon": "beamies/icon.svg",
+  "names": {
+   "tr": "Beamies",
+   "en": "Beamies",
+   "es": "Beamies",
+   "pt": "Beamies"
+  },
+  "tint": "#F2C14E",
+  "pkg": "com.beamies.nesimapps",
+  "new": "2026-12-03",
+  "desc": {
+   "en": "Slide gates to beam cute aliens home. 400 levels from the Moon to the Galaxy!",
+   "tr": "Kapıları kaydır, sevimli uzaylıları eve ışınla. Ay'dan Galaksi'ye 400 bölüm!",
+   "es": "Desliza puertas y lleva a adorables alienígenas a casa. ¡400 niveles!",
+   "pt": "Deslize portais e leve alienígenas fofos para casa. 400 fases!"
+  },
+  "status": "live",
+  "popular": false,
+  "desc_live": {
+   "en": "Slide gates to beam cute aliens home. 400 levels from the Moon to the Galaxy!",
+   "tr": "Kapıları kaydır, sevimli uzaylıları eve ışınla. Ay'dan Galaksi'ye 400 bölüm!",
+   "es": "Desliza puertas y lleva a adorables alienígenas a casa. ¡400 niveles!",
+   "pt": "Deslize portais e leve alienígenas fofos para casa. 400 fases!"
+  }
+ },
+ {
   "slug": "cubbles",
   "cat": "games",
   "icon": "cubbles/icon.svg",

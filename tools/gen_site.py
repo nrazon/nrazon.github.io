@@ -12,7 +12,7 @@ BASE = "https://nrazon.github.io"
 # sayfada noindex var. Uygulama Play'de yayınlanınca slug buradan silinir (ve home_data.json'da status=live yapılır).
 HIDDEN = set()
 # Ana sayfada kartında data-pkg olmayan (henüz "yakında" kartı olan) uygulamaların paket adları.
-PKG_FALLBACK = {"calisan": "com.calisanasistani.nesimapps", "uzaygunlugu": "com.uzaygunlugu.nesimapps", "haftasonum": "com.haftasonum.nesimapps"}
+PKG_FALLBACK = {"calisan": "com.calisanasistani.nesimapps", "uzaygunlugu": "com.uzaygunlugu.nesimapps", "haftasonum": "com.haftasonum.nesimapps", "beamies": "com.beamies.nesimapps"}
 REF = "&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"
 
 # ------------------------------------------------------------------ ortak: göz takip betiği
@@ -585,6 +585,7 @@ LANDING_CSS += CSS_EXTRA
 
 # slug, klasör, ad(tr), ad(en), simge, tint, ekran görüntüsü kaynakları {dil: klasör}, yeni-rozet
 APPDEFS = [
+    ("beamies", "Beamies", "Beamies", "Beamies", "icon.svg", "#F2C14E", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-03"),
     ("haftasonum", "Etkinlik", "Hafta Sonum", "Hafta Sonum", "icon.png", "#FFC857", {"tr": "tr"}, "2026-12-02"),
     ("calisan", "CalisanAsistani", "Çalışan Asistanı", "Çalışan Asistanı", "icon.svg", "#2F6F5E", {"tr": "tr"}, "2026-12-15"),
     ("uzaygunlugu", "UzayGunlugu", "Uzay Günlüğü", "Uzay Günlüğü", "icon.png", "#3A5BC7", {"tr": "tr"}, "2026-12-15"),
@@ -631,7 +632,7 @@ def parse_listing(folder):
     txt = open(p, encoding="utf-8").read()
     out = {}
     for sec in re.split(r"\n## ", txt)[1:]:
-        m = re.match(r"[^\n]*\(([a-z]{2})-[A-Z]{2}\)", sec)
+        m = re.match(r"[^\n]*\(([a-z]{2})-[A-Za-z0-9]+", sec)
         if not m:
             continue
         lang = m.group(1)
@@ -639,7 +640,12 @@ def parse_listing(folder):
         def block(title):
             mm = re.search(r"### (?:" + title + r")[^\n]*\n\s*```[^\n]*\n(.*?)\n```", sec, re.S)
             return mm.group(1).strip() if mm else ""
-        out[lang] = dict(name=block("Uygulama adı|Başlık"), short=block("Kısa açıklama"), full=block("Tam açıklama"))
+        name = block("Uygulama adı|Başlık|Title")
+        short = block("Kısa açıklama|Short description")
+        full = block("Tam açıklama|Full description")
+        if not (name or short or full):
+            continue
+        out[lang] = dict(name=name, short=short, full=full)
     return out
 
 
