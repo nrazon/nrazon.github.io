@@ -11,14 +11,14 @@
   },
   "tint": "#E8B64C",
   "pkg": "com.logiclings.nesimapps",
-  "new": "2026-12-15",
+  "new": "2026-11-20",
   "desc": {
    "tr": "Her gün yeni üç mantık bulmacası: Taç, İkiz ve Yol. Zaman baskısı yok, sevimli yüzler var. Google Play'de çok yakında.",
    "en": "Three new logic puzzles every day: Crown, Twin and Path. No timers, just cute faces. Coming soon to Google Play.",
    "es": "Tres puzzles de lógica nuevos cada día: Corona, Gemelos y Camino. Sin cronómetro, con caritas adorables. Próximamente en Google Play.",
    "pt": "Três quebra-cabeças de lógica novos todo dia: Coroa, Gêmeos e Caminho. Sem pressão de tempo, com carinhas fofas. Em breve no Google Play."
   },
-  "status": "soon",
+  "status": "live",
   "popular": false,
   "desc_live": {
    "tr": "Her gün yeni üç mantık bulmacası: Taç, İkiz ve Yol. Zaman baskısı yok, sevimli yüzler var.",
