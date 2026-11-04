@@ -113,7 +113,7 @@ NOTES = {
 SEC_TAIL = [
     ({"en": "Availability and changes", "tr": "Erişilebilirlik ve değişiklikler", "es": "Disponibilidad y cambios", "pt": "Disponibilidade e alterações"},
      {"en": "I may update, change or stop offering the {kind}, or any feature, at any time. I try to keep it working but cannot promise it will always be available or free of errors.",
-      "tr": "Bu {kind} veya herhangi bir özelliğini istediğim zaman güncelleyebilir, değiştirebilir ya da sunmayı bırakabilirim. Çalışır durumda tutmaya çalışırım, ancak her zaman erişilebilir ya da hatasız olacağına söz veremem.",
+      "tr": "Bu {kind_gen} veya herhangi bir özelliğini istediğim zaman güncelleyebilir, değiştirebilir ya da sunmayı bırakabilirim. Çalışır durumda tutmaya çalışırım, ancak her zaman erişilebilir ya da hatasız olacağına söz veremem.",
       "es": "Puedo actualizar, cambiar o dejar de ofrecer {kind_def} o cualquier función en cualquier momento. Intento que funcione bien, pero no puedo prometer que esté siempre disponible ni libre de errores.",
       "pt": "Posso atualizar, alterar ou deixar de oferecer {kind_def} ou qualquer recurso a qualquer momento. Tento mantê-lo funcionando, mas não posso prometer que estará sempre disponível ou livre de erros."}),
     ({"en": "No warranty and liability", "tr": "Garanti ve sorumluluk", "es": "Sin garantía y responsabilidad", "pt": "Sem garantia e responsabilidade"},
