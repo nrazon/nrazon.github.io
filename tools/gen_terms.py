@@ -17,6 +17,7 @@ APPS = {
     "cardles": ("Cardles", "game", True, False, True, None),
     "beamies": ("Beamies: Beam Home", "game", True, True, True, None),
     "logiclings": ("Logiclings", "game", True, True, True, None),
+    "tilelings": ("Tilelings", "game", True, True, True, None),
     "nuzzlings": ("Nuzzlings", "game", False, True, True, "pet"),
     "sansoyunlari": ("Şans Oyunları", "app", True, False, False, "lottery"),
     "sondepremler": ("Son Depremler", "app", True, False, False, "quake"),
