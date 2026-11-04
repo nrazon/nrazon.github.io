@@ -620,7 +620,7 @@ LANDING_CSS += VIDEO_CSS
 
 # slug, klasör, ad(tr), ad(en), simge, tint, ekran görüntüsü kaynakları {dil: klasör}, yeni-rozet
 APPDEFS = [
-    ("nuzzlings", "Nuzzlings", "Nuzzlings", "Nuzzlings", "icon.png", "#F4A15B", {"en": "en", "tr": "en", "es": "en", "pt": "en"}, "2026-12-31"),
+    ("nuzzlings", "Nuzzlings", "Nuzzlings", "Nuzzlings", "icon.png", "#F4A15B", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-31"),
     ("logiclings", "Logiclings", "Logiclings", "Logiclings", "icon.png", "#E8B64C", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-15"),
     ("beamies", "Beamies", "Beamies", "Beamies", "icon.svg", "#F2C14E", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-03"),
     ("haftasonum", "Etkinlik", "Hafta Sonum", "Hafta Sonum", "icon.png", "#FFC857", {"tr": "tr"}, "2026-12-02"),
