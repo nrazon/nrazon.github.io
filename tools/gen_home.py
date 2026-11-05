@@ -117,12 +117,19 @@ def shots_for(slug, lang):
     return f"{slug}/shots/{lang}/%02d.{ext}"
 
 
+def app_name(slug):
+    for a in DATA:
+        if a["slug"] == slug:
+            return a["names"].get("en") or next(iter(a["names"].values()))
+    return slug
+
+
 def shot_imgs(slug, picks):
     out = []
     for n in picks:
         for l in LANGS:
             d = "en" if (slug == "cubbles" and l in ("es", "pt")) else l
-            out.append(f'<img class="shot" lang="{l}" src="{shots_for(slug, d) % n}" alt="" loading="lazy" width="150" height="267">')
+            out.append(f'<img class="shot" lang="{l}" src="{shots_for(slug, d) % n}" alt="{esc(app_name(slug))} screenshot {n}" loading="lazy" width="150" height="267">')
     return "".join(out)
 
 
@@ -139,7 +146,7 @@ def qr_html(slug, short=False):
         return ""
     lab = L(T["qrshort" if short else "qr"])
     return (f'<details class="qr" data-qr="{slug}"><summary>{GLYPH}{lab}</summary><div class="qrpop">'
-            f'<img src="qr/{slug}.svg" alt="QR" width="183" height="183" loading="lazy">{L(T["qrscan"], "p")}</div></details>')
+            f'<img src="qr/{slug}.svg" alt="QR code: install {esc(app_name(slug))}" width="183" height="183" loading="lazy">{L(T["qrscan"], "p")}</div></details>')
 
 
 # Tarayıcı demosu olan oyunlar: slug -> (panel kimliği, betik). Betik ilk açılışta yüklenir.
@@ -162,7 +169,7 @@ def show_card(a):
     c1, c2 = darken(a["tint"], .42), darken(a["tint"], .78)
     desc = {l: a["desc"][l] for l in LANGS}
     return f'''    <article class="show" style="--a:{c1};--b:{c2}" data-slug="{s}" data-pkg="{pk}">
-      <img class="icon" src="{a["icon"]}" alt="" width="64" height="64" loading="lazy">
+      <img class="icon" src="{a["icon"]}" alt="{esc(app_name(a["slug"]))} icon" width="64" height="64" loading="lazy">
       <div class="txt">
         <h3><a class="stretch" href="{s}/">{esc(a["names"]["en"])}</a>{badge_new(a["new"])}</h3>
         <p class="stag">{L(SHOW_TAG[s])}</p>
@@ -178,7 +185,7 @@ def tool_card(a):
     chip = f' <span class="chip pop">{L(T["popular"])}</span>' if a.get("popular") else ""
     chip += badge_new(a["new"]).replace('class="badge"', 'class="badge"') if a["new"] else ""
     return f'''      <article class="tool" style="--tint:{a["tint"]}" data-slug="{s}" data-pkg="{pk}">
-        <img class="icon" src="{a["icon"]}" alt="" width="64" height="64" loading="lazy">
+        <img class="icon" src="{a["icon"]}" alt="{esc(app_name(a["slug"]))} icon" width="64" height="64" loading="lazy">
         <div class="tbody">
           <h3><a class="stretch" href="{s}/">{L(a["names"])}</a>{chip}</h3>
           {L(a["desc"], "p")}
@@ -190,7 +197,7 @@ def tool_card(a):
 def soon_card(a):
     s = a["slug"]
     return f'''      <article class="tool soon" style="--tint:{a["tint"]}" data-slug="{s}">
-        <img class="icon" src="{a["icon"]}" alt="" width="64" height="64" loading="lazy">
+        <img class="icon" src="{a["icon"]}" alt="{esc(app_name(a["slug"]))} icon" width="64" height="64" loading="lazy">
         <div class="tbody">
           <h3>{esc(a["names"]["en"])} <span class="chip">{L(T["soonchip"])}</span></h3>
           {L(a["desc"], "p")}
@@ -427,7 +434,7 @@ def build(preview):
 <body>
 <main>
   <div class="top">
-    <a class="brand" href="#top"><img class="logo" src="logo.svg" alt="" width="40" height="40"><b>Nesim Apps</b></a>
+    <a class="brand" href="#top"><img class="logo" src="logo.svg" alt="Nesim Apps logo" width="40" height="40"><b>Nesim Apps</b></a>
     <div class="topr">
       <nav aria-label="Menu"><a href="#games">{L(T["nav_games"])}</a><a href="#apps">{L(T["nav_apps"])}</a><a href="#about">{L(T["nav_about"])}</a></nav>
       <div class="lang" role="group" aria-label="Language / Dil">
@@ -507,5 +514,31 @@ def build(preview):
 if __name__ == "__main__":
     yayin = "--yayin" in sys.argv
     out = os.path.join(G, "index.html" if yayin else "yeni.html")
-    open(out, "w", encoding="utf-8", newline="\n").write(build(preview=not yayin))
+    page = build(preview=not yayin)
+    # GEO/AEO: yapilandirilmis veri (JSON-LD) + llms.txt (5.11.2026)
+    live = [a for a in DATA if a.get("status") == "live"]
+    def nm_(a): return a["names"].get("en") or next(iter(a["names"].values()))
+    ld = {"@context": "https://schema.org", "@graph": [
+        {"@type": "WebSite", "@id": "https://nrazon.github.io/#site", "name": "Nesim Apps", "url": "https://nrazon.github.io/",
+         "inLanguage": ["tr", "en", "es", "pt"], "publisher": {"@id": "https://nrazon.github.io/#dev"}},
+        {"@type": "Person", "@id": "https://nrazon.github.io/#dev", "name": "Nesim Razon", "url": "https://nrazon.github.io/",
+         "image": "https://nrazon.github.io/nesim.jpg", "jobTitle": "Independent Android developer"},
+        {"@type": "ItemList", "name": "Nesim Apps: Android games and apps", "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "url": "https://nrazon.github.io/" + a["slug"] + "/", "name": nm_(a)} for i, a in enumerate(live)]}]}
+    page = page.replace("</head>", '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>\n</head>", 1)
+    open(out, "w", encoding="utf-8", newline="\n").write(page)
+    if yayin:
+        L_ = ["# Nesim Apps", "", "> Small, ad-supported Android games and utility apps by independent developer Nesim Razon, published on Google Play. Pages are available in Turkish, English, Spanish and Portuguese.", "", "## Games", ""]
+        for a in live:
+            if a["cat"] == "games":
+                L_.append("- [" + nm_(a) + "](https://nrazon.github.io/" + a["slug"] + "/): " + a["desc"]["en"])
+        L_ += ["", "## Apps", ""]
+        for a in live:
+            if a["cat"] == "apps":
+                L_.append("- [" + nm_(a) + "](https://nrazon.github.io/" + a["slug"] + "/): " + a["desc"]["en"])
+        L_ += ["", "## Policies", "", "- Each app has a privacy policy at /<app>/privacy.html and terms of use at /<app>/terms.html.", "- [Website privacy](https://nrazon.github.io/site-privacy.html)", "", "## Developer", "", "- Google Play developer page: https://play.google.com/store/apps/dev?id=4632277715794688965"]
+        open(os.path.join(G, "llms.txt"), "w", encoding="utf-8", newline="\n").write("\n".join(L_) + "\n")
     print("yazıldı:", out)
+    if yayin:
+        import subprocess as _sp
+        _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "seo_fix.py")])

@@ -409,14 +409,14 @@ def page(cfg):
     for l in L:
         if l in vids:
             shots += (f'<figure class="vid" data-l="{l}"><button type="button" class="vidbtn" data-yt="{vids[l]}" data-app="{cfg["slug"]}" aria-label="{esc(VIDEO_PLAY[l])}">'
-                      f'<img src="shots/{l}/video.jpg" alt="" width="640" height="360" loading="lazy"><span class="pl"><i></i></span><span class="vl">{esc(VIDEO_LABEL[l])}</span></button></figure>\n')
+                      f'<img src="shots/{l}/video.jpg" alt="{esc(cfg["name"])} video" width="640" height="360" loading="lazy"><span class="pl"><i></i></span><span class="vl">{esc(VIDEO_LABEL[l])}</span></button></figure>\n')
         files = sf.get(l) or sf.get("en") or next(iter(sf.values()))
         for n, f in enumerate(files, 1):
             dim = cfg.get("dims", {}).get(f)
             wh = f' width="{dim[0]}" height="{dim[1]}"' if dim else ' width="360"'
-            shots += f'<figure data-l="{l}"><div class="phone"><img src="{f}" alt="{esc(cfg["name"])} {n}"{wh} loading="lazy"></div></figure>\n'
+            shots += f'<figure data-l="{l}"><div class="phone"><img src="{f}" alt="{esc(cfg["name"])} screenshot {n}"{wh} loading="lazy"></div></figure>\n'
     langbtn = "".join(f'<button type="button" data-lang="{l}" onclick="setLang(\'{l}\')">{l.upper()}</button>' for l in L)
-    more = "".join(f'<a href="{href}"><img src="../{icon}" alt="" width="40" height="40">{name}</a>' for href, name, icon in OTHERS if name != cfg["name"])
+    more = "".join(f'<a href="{href}"><img src="../{icon}" alt="{esc(name)} icon" width="40" height="40">{name}</a>' for href, name, icon in OTHERS if name != cfg["name"])
     faq_block = f'''  <section class="block faq" aria-labelledby="h-faq">
     <h2 class="h" id="h-faq">{multi(SEC['faq'], L)}</h2>
 {faqs}  </section>
@@ -443,7 +443,7 @@ def page(cfg):
     title_main = t(cfg["title"], "en")
     qr_html = "" if cfg["slug"] in HIDDEN else (
         f'<details class="qr" data-qr="{cfg["slug"]}"><summary>' + GLYPH + multi(SEC["qr"], L) + '</summary><div class="qrpop">'
-        f'<img src="../qr/{cfg["slug"]}.svg" alt="QR" width="183" height="183" loading="lazy">' + multi(SEC["qrscan"], L, "p") + '</div></details>')
+        f'<img src="../qr/{cfg["slug"]}.svg" alt="QR code: install {esc(cfg["name"])}" width="183" height="183" loading="lazy">' + multi(SEC["qrscan"], L, "p") + '</div></details>')
     demo_attr = {"tictactoe": ("data-ttt", "ttt.js?v=2"), "game2048": ("data-g2048", "g2048.js?v=1"), "calisan": ("data-calisan", "calisan.js?v=3")}.get(cfg["slug"])
     demo_block = (f'  <section class="block" aria-labelledby="h-demo">\n    <h2 class="h" id="h-demo">{multi(SEC["try"], L)}</h2>\n'
                   f'    <div class="demo-wrap"><div {demo_attr[0]} data-play="{play}"></div></div>\n  </section>\n\n') if demo_attr else ""
@@ -754,7 +754,7 @@ def build_apps():
         cfg = dict(slug=slug, name=nen, names={"tr": ntr, "en": nen, "es": nen, "pt": nen, "fr": nen}, pkg=(PKG_FALLBACK.get(slug) or pk[slug]), icon=f"{slug}/{icon}", tint=tint,
                    hero=(darken(tint, .38), darken(tint, .72)), accent=darken(tint, .66), langs=langs, new_until=new,
                    title={}, tagline={}, intro={}, chips=[], bullets=[], note=None,
-                   art=(lambda s=slug, i=icon: f'<div class="iconart"><img src="{i}" alt="" width="200" height="200"></div>'))
+                   art=(lambda s=slug, i=icon, nen=nen: f'<div class="iconart"><img src="{i}" alt="{nen} icon" width="200" height="200"></div>'))
         if True:
             bullets, notes = {}, {}
             for l in langs:
@@ -900,3 +900,6 @@ open(_ip, "w", encoding="utf-8", newline="\n").write(_s)
 
 
 print("ok")
+
+import subprocess as _sp, sys as _sys
+_sp.run([_sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "seo_fix.py")])

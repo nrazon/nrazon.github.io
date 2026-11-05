@@ -1,0 +1,37 @@
+# Nesim Apps
+
+> Small, ad-supported Android games and utility apps by independent developer Nesim Razon, published on Google Play. Pages are available in Turkish, English, Spanish and Portuguese.
+
+## Games
+
+- [Logiclings](https://nrazon.github.io/logiclings/): Three new logic puzzles every day: Crown, Twin and Path. No timers, just cute faces.
+- [Cardles](https://nrazon.github.io/cardles/): Klondike, Spider, FreeCell & TriPeaks with cute faces. Daily challenge!
+- [Beamies](https://nrazon.github.io/beamies/): Slide gates to beam cute aliens home. 400 levels from the Moon to the Galaxy!
+- [Cubbles](https://nrazon.github.io/cubbles/): A block puzzle with cute faces: drag blocks onto the board, fill rows and columns to clear them and chain combos. Daily challenge, quests and themes.
+- [Sliplines](https://nrazon.github.io/sliplines/): An arrow puzzle game: slide the arrows out in the right order and clear the board. Hundreds of levels, a Daily Puzzle with a global leaderboard, and badges to collect.
+- [2048](https://nrazon.github.io/game2048/): The classic number puzzle: swipe, merge matching numbers and reach the 2048 tile.
+- [Tic-Tac-Toe](https://nrazon.github.io/tictactoe/): Classic Tic-Tac-Toe against the computer: Easy, Medium or Hard. On Hard it never loses.
+
+## Apps
+
+- [Hafta Sonum](https://nrazon.github.io/haftasonum/): What to do this weekend? Theatre, concerts, exhibitions and kids' events in your city on one screen, no account or location needed (Turkish only, Turkey).
+- [Çalışan Asistanı](https://nrazon.github.io/calisan/): Net salary, severance and notice pay, overtime and leave planning in one app, for employees in Turkey (Turkish only), with a friendly payslip assistant.
+- [Uzay Günlüğü](https://nrazon.github.io/uzaygunlugu/): A new space card every day, Turkey from space, the spinning Earth and the live position of the ISS, built on NASA's public data (Turkish only).
+- [Şans Oyunları](https://nrazon.github.io/sansoyunlari/): Results of the Turkish lotteries (Sayısal Loto, Süper Loto, Şans Topu, On Numara, Milli Piyango), random tickets and ticket checking.
+- [Where Am I?](https://nrazon.github.io/whereami/): See where you are on the map with your address and coordinates; copy or share them.
+- [Age Calculator](https://nrazon.github.io/agecalculator/): Calculate exact age and the time between dates, and keep a list of birthdays and anniversaries.
+- [Son Depremler](https://nrazon.github.io/sondepremler/): Recent earthquakes in and around Turkey from AFAD and Kandilli, with a map and statistics.
+- [BMI Calculator](https://nrazon.github.io/bmicalculator/): Calculate your BMI with WHO categories and see the healthy weight range for your height.
+- [National Anthem of Turkey](https://nrazon.github.io/anthemturkey/): İstiklal Marşı, the national anthem of Türkiye, with a waving flag; plays in the background and on Chromecast.
+- [National Anthem of Canada](https://nrazon.github.io/anthemcanada/): O Canada, the national anthem of Canada, with a waving flag; plays in the background and on Chromecast.
+- [TurkSail](https://nrazon.github.io/turksail/): Sailing and sea news, race results and articles from turksail.com (in Turkish).
+- [MedyaFobi](https://nrazon.github.io/medyafobi/): Media relations, crisis communication and speaking trainings from medyafobi.com (in Turkish).
+
+## Policies
+
+- Each app has a privacy policy at /<app>/privacy.html and terms of use at /<app>/terms.html.
+- [Website privacy](https://nrazon.github.io/site-privacy.html)
+
+## Developer
+
+- Google Play developer page: https://play.google.com/store/apps/dev?id=4632277715794688965

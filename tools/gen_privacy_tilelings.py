@@ -59,3 +59,6 @@ if os.path.exists(icon):
     from PIL import Image
     Image.open(icon).convert("RGBA").resize((192, 192), Image.LANCZOS).save(os.path.join(dst, "icon.png"))
 print("tamam:", os.path.join(dst, "privacy.html"))
+
+import subprocess as _sp, sys as _sys
+_sp.run([_sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "seo_fix.py")])
