@@ -8,6 +8,7 @@ import html as H
 import importlib.util
 import json
 import os
+import re
 
 TOOLS = os.path.dirname(os.path.abspath(__file__))
 G = os.path.dirname(TOOLS)
@@ -91,7 +92,17 @@ def head(lang, title, desc, canon, alternates, og_image, ld, accent):
     alts = "".join(f'<link rel="alternate" hreflang="{HREFLANG[l]}" href="{u}">\n' for l, u in alternates.items())
     xdef = f'<link rel="alternate" hreflang="x-default" href="{alternates["en"]}">\n'
     ogalt = "".join(f'<meta property="og:locale:alternate" content="{OGLOC[l]}">\n' for l in alternates if l != lang)
-    short = title if len(title) + 14 > 70 else f"{title} | Nesim Apps"
+    # <title>: en çok ~60 karakter (Google keser). Uzunsa ilk bölümde (":" "?" "(" öncesi) kes; marka sığarsa ekle. Sayfadaki h1 tam kalır.
+    st = title
+    if len(st) > 60:
+        m = re.search(r"[:?(]", st)
+        if m and m.start() >= 14:
+            st = st[:m.start()].rstrip() + ("?" if st[m.start()] == "?" else "")
+    short = st if len(st) + 14 > 60 else f"{st} | Nesim Apps"
+    if len(desc) > 158:
+        cut = desc[:158]
+        q = max(cut.rfind(". "), cut.rfind("! "), cut.rfind("? "))
+        desc = cut[:q + 1] if q > 100 else cut[:cut.rfind(" ")].rstrip(",;:") + "…"
     return f"""<!doctype html>
 <html lang="{lang}" data-lang="{lang}">
 <head>

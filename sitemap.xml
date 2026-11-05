@@ -621,14 +621,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/agecalculator/"/>
   </url>
   <url>
-    <loc>https://nrazon.github.io/tr/anthemcanada/</loc>
-    <lastmod>2026-11-05</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/anthemcanada/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/anthemcanada/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://nrazon.github.io/fr/anthemcanada/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/anthemcanada/"/>
-  </url>
-  <url>
     <loc>https://nrazon.github.io/tr/anthemturkey/</loc>
     <lastmod>2026-11-05</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/anthemturkey/"/>
@@ -652,13 +644,6 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/bmicalculator/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/bmicalculator/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/bmicalculator/"/>
-  </url>
-  <url>
-    <loc>https://nrazon.github.io/tr/calisan/</loc>
-    <lastmod>2026-11-05</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/calisan/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/calisan/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/calisan/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/cardles/</loc>
@@ -688,13 +673,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/game2048/"/>
   </url>
   <url>
-    <loc>https://nrazon.github.io/tr/haftasonum/</loc>
-    <lastmod>2026-11-05</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/haftasonum/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/haftasonum/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/haftasonum/"/>
-  </url>
-  <url>
     <loc>https://nrazon.github.io/tr/logiclings/</loc>
     <lastmod>2026-11-05</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/logiclings/"/>
@@ -702,13 +680,6 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/logiclings/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/logiclings/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/logiclings/"/>
-  </url>
-  <url>
-    <loc>https://nrazon.github.io/tr/medyafobi/</loc>
-    <lastmod>2026-11-05</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/medyafobi/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/medyafobi/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/medyafobi/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/rehber/</loc>
@@ -792,13 +763,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/"/>
   </url>
   <url>
-    <loc>https://nrazon.github.io/tr/sansoyunlari/</loc>
-    <lastmod>2026-11-05</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/sansoyunlari/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/sansoyunlari/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/sansoyunlari/"/>
-  </url>
-  <url>
     <loc>https://nrazon.github.io/tr/sliplines/</loc>
     <lastmod>2026-11-05</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/sliplines/"/>
@@ -831,20 +795,6 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/tilelings/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/tilelings/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/tilelings/"/>
-  </url>
-  <url>
-    <loc>https://nrazon.github.io/tr/turksail/</loc>
-    <lastmod>2026-11-05</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/turksail/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/turksail/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/turksail/"/>
-  </url>
-  <url>
-    <loc>https://nrazon.github.io/tr/uzaygunlugu/</loc>
-    <lastmod>2026-11-05</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/uzaygunlugu/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/uzaygunlugu/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/uzaygunlugu/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/whereami/</loc>

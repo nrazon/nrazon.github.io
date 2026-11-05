@@ -46,14 +46,14 @@ HOWTO = {  # oyun detay sayfasına eklenen rehber bağlantısı bölümü
     "fr": ("Comment jouer", "Lire le guide : comment jouer à {name}"),
 }
 HOME = {
-    "en": ("Nesim Apps – Free Android Games & Apps: Mahjong, Solitaire, Puzzles",
-           "Free Android games and apps by Nesim Razon: Tilelings Mahjong, Beamies, Cubbles block puzzle, Cardles solitaire, Logiclings logic puzzles, Sliplines and more. Play in your browser or get them on Google Play."),
-    "tr": ("Nesim Apps – Ücretsiz Android Oyunları ve Uygulamaları (Mahjong, Solitaire, Bulmaca)",
-           "Nesim Razon'dan ücretsiz Android oyunları ve uygulamaları: Tilelings Mahjong, Beamies, Cubbles blok bulmaca, Cardles solitaire, Logiclings mantık bulmacaları, Sliplines ve fazlası. Tarayıcıda dene ya da Google Play'den indir."),
-    "es": ("Nesim Apps – Juegos y Apps Android gratis: Mahjong, Solitario, Puzles",
-           "Juegos y aplicaciones Android gratis de Nesim Razon: Tilelings Mahjong, Beamies, Cubbles puzle de bloques, Cardles solitario, Logiclings puzles de lógica, Sliplines y más. Juega en el navegador o descárgalos en Google Play."),
-    "pt": ("Nesim Apps – Jogos e Apps Android grátis: Mahjong, Paciência, Quebra-cabeças",
-           "Jogos e aplicativos Android grátis de Nesim Razon: Tilelings Mahjong, Beamies, Cubbles quebra-cabeça de blocos, Cardles paciência, Logiclings quebra-cabeças de lógica, Sliplines e mais. Jogue no navegador ou baixe no Google Play."),
+    "en": ("Nesim Apps – Free Android Games & Apps",
+           "Free Android games and apps: Tilelings Mahjong, Beamies, Cubbles, Cardles, Logiclings and more. Play in your browser or get them on Google Play."),
+    "tr": ("Nesim Apps – Ücretsiz Android Oyunları ve Uygulamaları",
+           "Ücretsiz Android oyunları ve uygulamaları: Tilelings Mahjong, Beamies, Cubbles, Cardles, Logiclings ve daha fazlası. Tarayıcıda dene, Google Play'den indir."),
+    "es": ("Nesim Apps – Juegos y Apps Android gratis",
+           "Juegos y apps Android gratis: Tilelings Mahjong, Beamies, Cubbles, Cardles, Logiclings y más. Juega en el navegador o descárgalos en Google Play."),
+    "pt": ("Nesim Apps – Jogos e Apps Android grátis",
+           "Jogos e apps Android grátis: Tilelings Mahjong, Beamies, Cubbles, Cardles, Logiclings e mais. Jogue no navegador ou baixe no Google Play."),
 }
 
 
@@ -112,7 +112,7 @@ def make_desc(tagline, intro, lang):
 
 def make_title(store_title, lang, cat):
     t = f"{store_title} – {SUFFIX[lang][cat]}"
-    if len(t) + 12 <= 66:
+    if len(t) + 12 <= 60:
         t += " | Nesim Apps"
     return t
 
@@ -233,6 +233,10 @@ def process_source(rel, plan, guides, registry, pagedata, lastmod, today, guides
                 ld["description"] = desc
                 ld["url"] = url
                 ld["inLanguage"] = lang
+                for cand in (f"{slug}/feature-{lang}.png", f"{slug}/feature-en.png", f"{slug}/shots/{lang}/01.jpg", f"{slug}/shots/en/01.jpg"):
+                    if os.path.exists(os.path.join(G, cand)):
+                        ld["image"] = f"{BASE}/{cand}"
+                        break
                 ld["author"] = person
                 ld.setdefault("offers", {"@type": "Offer", "price": "0", "priceCurrency": "USD"})
                 shots = [f"{BASE}/{slug}/shots/{lang}/{n:02d}.jpg" for n in range(1, 5) if os.path.exists(os.path.join(G, slug, "shots", lang, f"{n:02d}.jpg"))]
@@ -402,8 +406,14 @@ def main():
     if done:
         # kayıt: bu çalıştırmada üretilenler + önceki kayıt
         reg = load_json(os.path.join(TOOLS, "_registry.json"), {})
+        redone = {r["slug"] for r in registry}
+        reg = {u: r for u, r in reg.items() if r.get("slug") not in redone}   # yeniden işlenen sayfanın bayat girdileri (eski dil planı) silinir
         for r in registry:
             reg[r["url"]] = r
+        for u in list(reg):                                                    # diskte dosyası olmayan adresler sitemap'e girmez
+            pth = u.replace(BASE, "").strip("/")
+            if not os.path.exists(os.path.join(G, pth, "index.html") if pth else os.path.join(G, "index.html")):
+                del reg[u]
         json.dump(reg, open(os.path.join(TOOLS, "_registry.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     write_sitemap(lastmod, today)
     print(f"i18n_split: {done} kaynak sayfa işlendi")
