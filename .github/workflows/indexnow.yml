@@ -2,13 +2,11 @@
 # Anahtar dosyası kökte: https://nrazon.github.io/f2a977ef0f7d9bb6575d95c57f05a594.txt
 name: IndexNow
 on:
-  workflow_run:
-    workflows: ["pages build and deployment"]
-    types: [completed]
+  push:
+    branches: [main]
   workflow_dispatch:
 jobs:
   ping:
-    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -16,7 +14,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 2
-          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+      - name: GitHub Pages yayını bitsin diye bekle
+        run: sleep 150
       - name: Değişen sayfaları bildir
         run: |
           python3 - <<'PY'
