@@ -1,45 +1,875 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://nrazon.github.io/</loc></url>
-  <url><loc>https://nrazon.github.io/site-privacy.html</loc></url>
-  <url><loc>https://nrazon.github.io/cardles/</loc></url>
-  <url><loc>https://nrazon.github.io/cardles/privacy.html</loc></url>
-  <url><loc>https://nrazon.github.io/cubbles/</loc></url>
-  <url><loc>https://nrazon.github.io/cubbles/privacy.html</loc></url>
-  <url><loc>https://nrazon.github.io/tilelings/</loc></url>
-  <url><loc>https://nrazon.github.io/tilelings/privacy.html</loc></url>
-  <url><loc>https://nrazon.github.io/logiclings/</loc></url>
-  <url><loc>https://nrazon.github.io/logiclings/privacy.html</loc></url>
-  <url><loc>https://nrazon.github.io/beamies/</loc></url>
-  <url><loc>https://nrazon.github.io/beamies/privacy.html</loc></url>
-  <url><loc>https://nrazon.github.io/haftasonum/</loc></url>
-  <url><loc>https://nrazon.github.io/haftasonum/privacy.html</loc></url>
-  <url><loc>https://nrazon.github.io/calisan/</loc></url>
-  <url><loc>https://nrazon.github.io/calisan/privacy.html</loc></url>
-  <url><loc>https://nrazon.github.io/uzaygunlugu/</loc></url>
-  <url><loc>https://nrazon.github.io/uzaygunlugu/privacy.html</loc></url>
-  <url><loc>https://nrazon.github.io/sliplines/</loc></url>
-  <url><loc>https://nrazon.github.io/sliplines/privacy.html</loc></url>
-  <url><loc>https://nrazon.github.io/game2048/</loc></url>
-  <url><loc>https://nrazon.github.io/game2048/privacy.html</loc></url>
-  <url><loc>https://nrazon.github.io/tictactoe/</loc></url>
-  <url><loc>https://nrazon.github.io/tictactoe/privacy.html</loc></url>
-  <url><loc>https://nrazon.github.io/sansoyunlari/</loc></url>
-  <url><loc>https://nrazon.github.io/sansoyunlari/privacy.html</loc></url>
-  <url><loc>https://nrazon.github.io/whereami/</loc></url>
-  <url><loc>https://nrazon.github.io/whereami/privacy.html</loc></url>
-  <url><loc>https://nrazon.github.io/agecalculator/</loc></url>
-  <url><loc>https://nrazon.github.io/agecalculator/privacy.html</loc></url>
-  <url><loc>https://nrazon.github.io/sondepremler/</loc></url>
-  <url><loc>https://nrazon.github.io/sondepremler/privacy.html</loc></url>
-  <url><loc>https://nrazon.github.io/bmicalculator/</loc></url>
-  <url><loc>https://nrazon.github.io/bmicalculator/privacy.html</loc></url>
-  <url><loc>https://nrazon.github.io/anthemturkey/</loc></url>
-  <url><loc>https://nrazon.github.io/anthemturkey/privacy.html</loc></url>
-  <url><loc>https://nrazon.github.io/anthemcanada/</loc></url>
-  <url><loc>https://nrazon.github.io/anthemcanada/privacy.html</loc></url>
-  <url><loc>https://nrazon.github.io/turksail/</loc></url>
-  <url><loc>https://nrazon.github.io/turksail/privacy.html</loc></url>
-  <url><loc>https://nrazon.github.io/medyafobi/</loc></url>
-  <url><loc>https://nrazon.github.io/medyafobi/privacy.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://nrazon.github.io/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/agecalculator/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/agecalculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/agecalculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/agecalculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/agecalculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/agecalculator/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/anthemcanada/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/anthemcanada/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nrazon.github.io/fr/anthemcanada/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/anthemcanada/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/anthemturkey/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/anthemturkey/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/anthemturkey/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/anthemturkey/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/beamies/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/beamies/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/beamies/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/beamies/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/beamies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/beamies/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/bmicalculator/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/bmicalculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/bmicalculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/bmicalculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/bmicalculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/bmicalculator/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/calisan/</loc>
+    <lastmod>2026-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/cardles/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/cardles/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/cardles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/cardles/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/cardles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/cardles/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/cubbles/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/cubbles/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/cubbles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/cubbles/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/cubbles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/cubbles/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/agecalculator/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/agecalculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/agecalculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/agecalculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/agecalculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/agecalculator/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/beamies/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/beamies/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/beamies/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/beamies/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/beamies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/beamies/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/bmicalculator/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/bmicalculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/bmicalculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/bmicalculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/bmicalculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/bmicalculator/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/cardles/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/cardles/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/cardles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/cardles/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/cardles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/cardles/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/cubbles/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/cubbles/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/cubbles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/cubbles/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/cubbles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/cubbles/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/game2048/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/game2048/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/game2048/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/game2048/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/game2048/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/game2048/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/guias/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/guias/como-jugar-2048-estrategia/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-2048-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/2048-nasil-oynanir-strateji/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-2048-estrategia/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-2048-estrategia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-2048-strategy/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/guias/como-jugar-beamies/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-beamies/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/beamies-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-beamies/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-beamies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-beamies/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/guias/como-jugar-mahjong-solitario/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-mahjong-solitaire/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/mahjong-solitaire-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-mahjong-solitario/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-mahjong-paciencia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-mahjong-solitaire/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/guias/como-jugar-puzle-de-flechas/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-arrow-puzzle/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/ok-bulmacasi-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-puzle-de-flechas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-quebra-cabeca-de-setas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-arrow-puzzle/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/guias/como-jugar-solitario-klondike/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-klondike-solitaire/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/klondike-solitaire-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-solitario-klondike/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-paciencia-klondike/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-klondike-solitaire/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/guias/como-resolver-corona-gemelos-camino/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-solve-crown-twin-path-puzzles/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/tac-ikiz-yol-bulmacalari-nasil-cozulur/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-resolver-corona-gemelos-camino/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-resolver-coroa-gemeos-caminho/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-solve-crown-twin-path-puzzles/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/guias/tres-en-raya-estrategia-para-no-perder/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/xox-yenilmez-strateji/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/tres-en-raya-estrategia-para-no-perder/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/jogo-da-velha-estrategia-para-nao-perder/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/guias/trucos-puzle-de-bloques/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/block-puzzle-tips-and-tricks/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/blok-bulmaca-ipuclari/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/trucos-puzle-de-bloques/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/dicas-quebra-cabeca-de-blocos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/block-puzzle-tips-and-tricks/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/logiclings/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/logiclings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/logiclings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/logiclings/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/logiclings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/logiclings/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/sliplines/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/sliplines/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/sliplines/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/sliplines/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/sliplines/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/sliplines/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/tictactoe/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/tictactoe/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/tictactoe/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/tictactoe/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/tictactoe/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/tictactoe/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/tilelings/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/tilelings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/tilelings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/tilelings/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/tilelings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/tilelings/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/whereami/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/whereami/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/whereami/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/whereami/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/whereami/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/whereami/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/fr/anthemcanada/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/anthemcanada/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nrazon.github.io/fr/anthemcanada/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/anthemcanada/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/game2048/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/game2048/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/game2048/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/game2048/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/game2048/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/game2048/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/guides/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/guides/block-puzzle-tips-and-tricks/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/block-puzzle-tips-and-tricks/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/blok-bulmaca-ipuclari/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/trucos-puzle-de-bloques/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/dicas-quebra-cabeca-de-blocos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/block-puzzle-tips-and-tricks/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/guides/how-to-play-2048-strategy/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-2048-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/2048-nasil-oynanir-strateji/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-2048-estrategia/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-2048-estrategia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-2048-strategy/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/guides/how-to-play-arrow-puzzle/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-arrow-puzzle/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/ok-bulmacasi-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-puzle-de-flechas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-quebra-cabeca-de-setas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-arrow-puzzle/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/guides/how-to-play-beamies/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-beamies/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/beamies-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-beamies/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-beamies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-beamies/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/guides/how-to-play-klondike-solitaire/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-klondike-solitaire/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/klondike-solitaire-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-solitario-klondike/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-paciencia-klondike/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-klondike-solitaire/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/guides/how-to-play-mahjong-solitaire/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-mahjong-solitaire/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/mahjong-solitaire-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-mahjong-solitario/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-mahjong-paciencia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-mahjong-solitaire/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/guides/how-to-solve-crown-twin-path-puzzles/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-solve-crown-twin-path-puzzles/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/tac-ikiz-yol-bulmacalari-nasil-cozulur/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-resolver-corona-gemelos-camino/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-resolver-coroa-gemeos-caminho/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-solve-crown-twin-path-puzzles/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/xox-yenilmez-strateji/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/tres-en-raya-estrategia-para-no-perder/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/jogo-da-velha-estrategia-para-nao-perder/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/haftasonum/</loc>
+    <lastmod>2026-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/logiclings/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/logiclings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/logiclings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/logiclings/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/logiclings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/logiclings/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/medyafobi/</loc>
+    <lastmod>2026-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/agecalculator/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/agecalculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/agecalculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/agecalculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/agecalculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/agecalculator/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/beamies/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/beamies/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/beamies/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/beamies/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/beamies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/beamies/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/bmicalculator/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/bmicalculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/bmicalculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/bmicalculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/bmicalculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/bmicalculator/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/cardles/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/cardles/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/cardles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/cardles/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/cardles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/cardles/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/cubbles/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/cubbles/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/cubbles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/cubbles/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/cubbles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/cubbles/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/game2048/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/game2048/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/game2048/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/game2048/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/game2048/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/game2048/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/guias/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/guias/como-jogar-2048-estrategia/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-2048-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/2048-nasil-oynanir-strateji/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-2048-estrategia/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-2048-estrategia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-2048-strategy/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/guias/como-jogar-beamies/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-beamies/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/beamies-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-beamies/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-beamies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-beamies/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/guias/como-jogar-mahjong-paciencia/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-mahjong-solitaire/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/mahjong-solitaire-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-mahjong-solitario/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-mahjong-paciencia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-mahjong-solitaire/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/guias/como-jogar-paciencia-klondike/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-klondike-solitaire/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/klondike-solitaire-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-solitario-klondike/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-paciencia-klondike/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-klondike-solitaire/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/guias/como-jogar-quebra-cabeca-de-setas/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-arrow-puzzle/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/ok-bulmacasi-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-puzle-de-flechas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-quebra-cabeca-de-setas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-arrow-puzzle/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/guias/como-resolver-coroa-gemeos-caminho/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-solve-crown-twin-path-puzzles/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/tac-ikiz-yol-bulmacalari-nasil-cozulur/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-resolver-corona-gemelos-camino/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-resolver-coroa-gemeos-caminho/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-solve-crown-twin-path-puzzles/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/guias/dicas-quebra-cabeca-de-blocos/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/block-puzzle-tips-and-tricks/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/blok-bulmaca-ipuclari/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/trucos-puzle-de-bloques/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/dicas-quebra-cabeca-de-blocos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/block-puzzle-tips-and-tricks/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/guias/jogo-da-velha-estrategia-para-nao-perder/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/xox-yenilmez-strateji/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/tres-en-raya-estrategia-para-no-perder/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/jogo-da-velha-estrategia-para-nao-perder/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/logiclings/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/logiclings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/logiclings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/logiclings/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/logiclings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/logiclings/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/sliplines/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/sliplines/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/sliplines/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/sliplines/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/sliplines/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/sliplines/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/tictactoe/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/tictactoe/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/tictactoe/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/tictactoe/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/tictactoe/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/tictactoe/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/tilelings/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/tilelings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/tilelings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/tilelings/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/tilelings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/tilelings/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/whereami/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/whereami/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/whereami/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/whereami/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/whereami/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/whereami/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/sansoyunlari/</loc>
+    <lastmod>2026-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/sliplines/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/sliplines/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/sliplines/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/sliplines/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/sliplines/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/sliplines/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/sondepremler/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/sondepremler/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/sondepremler/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/sondepremler/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tictactoe/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/tictactoe/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/tictactoe/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/tictactoe/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/tictactoe/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/tictactoe/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tilelings/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/tilelings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/tilelings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/tilelings/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/tilelings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/tilelings/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/agecalculator/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/agecalculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/agecalculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/agecalculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/agecalculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/agecalculator/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/anthemcanada/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/anthemcanada/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/anthemcanada/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nrazon.github.io/fr/anthemcanada/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/anthemcanada/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/anthemturkey/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/anthemturkey/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/anthemturkey/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/anthemturkey/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/beamies/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/beamies/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/beamies/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/beamies/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/beamies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/beamies/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/bmicalculator/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/bmicalculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/bmicalculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/bmicalculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/bmicalculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/bmicalculator/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/calisan/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/calisan/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/calisan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/calisan/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/cardles/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/cardles/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/cardles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/cardles/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/cardles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/cardles/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/cubbles/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/cubbles/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/cubbles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/cubbles/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/cubbles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/cubbles/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/game2048/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/game2048/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/game2048/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/game2048/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/game2048/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/game2048/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/haftasonum/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/haftasonum/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/haftasonum/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/haftasonum/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/logiclings/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/logiclings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/logiclings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/logiclings/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/logiclings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/logiclings/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/medyafobi/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/medyafobi/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/medyafobi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/medyafobi/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/rehber/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/rehber/2048-nasil-oynanir-strateji/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-2048-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/2048-nasil-oynanir-strateji/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-2048-estrategia/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-2048-estrategia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-2048-strategy/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/rehber/beamies-nasil-oynanir/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-beamies/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/beamies-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-beamies/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-beamies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-beamies/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/rehber/blok-bulmaca-ipuclari/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/block-puzzle-tips-and-tricks/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/blok-bulmaca-ipuclari/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/trucos-puzle-de-bloques/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/dicas-quebra-cabeca-de-blocos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/block-puzzle-tips-and-tricks/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/rehber/klondike-solitaire-nasil-oynanir/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-klondike-solitaire/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/klondike-solitaire-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-solitario-klondike/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-paciencia-klondike/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-klondike-solitaire/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/rehber/mahjong-solitaire-nasil-oynanir/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-mahjong-solitaire/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/mahjong-solitaire-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-mahjong-solitario/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-mahjong-paciencia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-mahjong-solitaire/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/rehber/ok-bulmacasi-nasil-oynanir/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-arrow-puzzle/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/ok-bulmacasi-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-puzle-de-flechas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-quebra-cabeca-de-setas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-arrow-puzzle/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/rehber/tac-ikiz-yol-bulmacalari-nasil-cozulur/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-solve-crown-twin-path-puzzles/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/tac-ikiz-yol-bulmacalari-nasil-cozulur/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-resolver-corona-gemelos-camino/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-resolver-coroa-gemeos-caminho/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-solve-crown-twin-path-puzzles/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/rehber/xox-yenilmez-strateji/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/xox-yenilmez-strateji/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/tres-en-raya-estrategia-para-no-perder/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/jogo-da-velha-estrategia-para-nao-perder/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/sansoyunlari/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/sansoyunlari/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/sansoyunlari/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/sansoyunlari/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/sliplines/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/sliplines/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/sliplines/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/sliplines/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/sliplines/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/sliplines/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/sondepremler/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/sondepremler/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/sondepremler/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/sondepremler/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/tictactoe/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/tictactoe/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/tictactoe/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/tictactoe/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/tictactoe/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/tictactoe/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/tilelings/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/tilelings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/tilelings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/tilelings/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/tilelings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/tilelings/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/turksail/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/turksail/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/turksail/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/turksail/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/uzaygunlugu/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/uzaygunlugu/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/uzaygunlugu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/uzaygunlugu/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/whereami/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/whereami/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/whereami/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/whereami/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/whereami/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/whereami/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/turksail/</loc>
+    <lastmod>2026-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/uzaygunlugu/</loc>
+    <lastmod>2026-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/whereami/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/whereami/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/whereami/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/whereami/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/whereami/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/whereami/"/>
+  </url>
 </urlset>

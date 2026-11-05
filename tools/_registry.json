@@ -9,7 +9,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "a41fe4bdfc705184e8b871867391554b",
+  "hash": "79c8cbadaa7a16a23c5ff37c91436c75",
   "slug": ""
  },
  "https://nrazon.github.io/tr/": {
@@ -22,7 +22,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "5ed0ca9d987e4caca49aaad33af36382",
+  "hash": "efaa355823f60a5fe3235e1c8c539c4a",
   "slug": ""
  },
  "https://nrazon.github.io/es/": {
@@ -35,7 +35,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "de2c65188117faa66fc89cd9ebed3e4d",
+  "hash": "1f3a30544145fc748a2080af827e0925",
   "slug": ""
  },
  "https://nrazon.github.io/pt/": {
@@ -48,7 +48,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "4b4c8a3606a71c02233128f70eeaa1ea",
+  "hash": "4d10cad6ec975a40eabb270b83075f91",
   "slug": ""
  },
  "https://nrazon.github.io/agecalculator/": {
@@ -61,7 +61,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "6bdfcbd3067ab66da1e649da887ad143",
+  "hash": "6a8dade02f5025228f0084306b480125",
   "slug": "agecalculator"
  },
  "https://nrazon.github.io/tr/agecalculator/": {
@@ -74,7 +74,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "6f62df891c68d13cc1a70603632ac4de",
+  "hash": "c3e22b11f0968e3c3bd99cb4557d7912",
   "slug": "agecalculator"
  },
  "https://nrazon.github.io/es/agecalculator/": {
@@ -87,7 +87,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "fca367f82dcc96f0b2ffd387e35e04b1",
+  "hash": "cae5a9e671e02690003af9b54041a13e",
   "slug": "agecalculator"
  },
  "https://nrazon.github.io/pt/agecalculator/": {
@@ -100,7 +100,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "ed1d9495c5779e6ede4da851579f7e4a",
+  "hash": "2edfba91ac47aeacd3793193250214b2",
   "slug": "agecalculator"
  },
  "https://nrazon.github.io/anthemcanada/": {
@@ -111,7 +111,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "05e31d1da770268c8e0c7a06aa429dab",
+  "hash": "f4eb919a798d1658585bd4a3ffee655a",
   "slug": "anthemcanada"
  },
  "https://nrazon.github.io/tr/anthemcanada/": {
@@ -134,7 +134,7 @@
   },
   "lang": "fr",
   "default": "en",
-  "hash": "f66b80f43010d349691eb123622a7ab4",
+  "hash": "50bbc026ae4a37ced68a09aa03d15379",
   "slug": "anthemcanada"
  },
  "https://nrazon.github.io/anthemturkey/": {
@@ -145,7 +145,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "787050d09f548a041abdd7e02e21ee92",
+  "hash": "8793851b87bdfab39b1667bbb9fc3eaf",
   "slug": "anthemturkey"
  },
  "https://nrazon.github.io/tr/anthemturkey/": {
@@ -156,7 +156,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "f3dcddb49e6f8c5d625fa8963c516c62",
+  "hash": "c7b0fe5ca1c86132a5f9e8de0bcc1d09",
   "slug": "anthemturkey"
  },
  "https://nrazon.github.io/beamies/": {
@@ -169,7 +169,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "1e319f0df42f819a781741a30b1d891b",
+  "hash": "fb31b3880e643bdeed27ec7f002bc723",
   "slug": "beamies"
  },
  "https://nrazon.github.io/tr/beamies/": {
@@ -182,7 +182,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "1cd9d60bf0879f6ba406a581e969ee15",
+  "hash": "8a07daed91e64eed165959310370bca7",
   "slug": "beamies"
  },
  "https://nrazon.github.io/es/beamies/": {
@@ -195,7 +195,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "d8ee4965e053c08e4062cc2d9ee5e03e",
+  "hash": "b94fa2001ae501e0ec71b824311013ee",
   "slug": "beamies"
  },
  "https://nrazon.github.io/pt/beamies/": {
@@ -208,7 +208,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "4199c5a24ff96140330932fb07e3c40a",
+  "hash": "6da086898995a42a86597ed22774ab24",
   "slug": "beamies"
  },
  "https://nrazon.github.io/bmicalculator/": {
@@ -221,7 +221,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "7a1f7e427bb0fe4f560f5f2b9ff7e1a3",
+  "hash": "7b539b14514d7b788a5876cd1c439acd",
   "slug": "bmicalculator"
  },
  "https://nrazon.github.io/tr/bmicalculator/": {
@@ -234,7 +234,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "41f28cf9a5c4dd214886c587fcda98a5",
+  "hash": "ada2e0045d89413719dcdd31cbe46c14",
   "slug": "bmicalculator"
  },
  "https://nrazon.github.io/es/bmicalculator/": {
@@ -247,7 +247,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "92fef2ed041d1f80174dd59e0e74e960",
+  "hash": "225bb4cdbd15d4807783db8dcdc17b90",
   "slug": "bmicalculator"
  },
  "https://nrazon.github.io/pt/bmicalculator/": {
@@ -260,7 +260,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "0416626aab05bc9998fb5b0d5aa9dd54",
+  "hash": "cc11d69e11e4f9aca978032112120688",
   "slug": "bmicalculator"
  },
  "https://nrazon.github.io/calisan/": {
@@ -294,7 +294,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "079d18821ca5622314deb09268fe7b1a",
+  "hash": "ad9ea9ae2651f9b9d67d2d442352cdc9",
   "slug": "cardles"
  },
  "https://nrazon.github.io/tr/cardles/": {
@@ -307,7 +307,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "12f0fe4389f3a59df2fee8a76a00e21a",
+  "hash": "ffda27ee5597d68e8e6e215d64b6c9e8",
   "slug": "cardles"
  },
  "https://nrazon.github.io/es/cardles/": {
@@ -320,7 +320,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "3279b3da1a352fabbb00b35af72fdbca",
+  "hash": "0efe41a1a01ef641f3aad4d8b1e1545d",
   "slug": "cardles"
  },
  "https://nrazon.github.io/pt/cardles/": {
@@ -333,7 +333,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "ebaae61099332fe725488493acf7420a",
+  "hash": "d9d858964454faf7d97c92b6c35b6f27",
   "slug": "cardles"
  },
  "https://nrazon.github.io/cubbles/": {
@@ -346,7 +346,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "6075d5d03088d38fe220ff348dadee83",
+  "hash": "51470c0c2e197d5a16671da463e79888",
   "slug": "cubbles"
  },
  "https://nrazon.github.io/tr/cubbles/": {
@@ -359,7 +359,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "d003d15e12f072fd9a76ad05fbd2c4fd",
+  "hash": "9ec863248b701d261605b5e08cc5caca",
   "slug": "cubbles"
  },
  "https://nrazon.github.io/es/cubbles/": {
@@ -372,7 +372,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "5d72b93dba52b88a1ea8115d8d38c30e",
+  "hash": "b5189639dadea507870ddf2dd67a7f76",
   "slug": "cubbles"
  },
  "https://nrazon.github.io/pt/cubbles/": {
@@ -385,7 +385,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "9979d198657f5f442740fe880a055b55",
+  "hash": "1e3c14375dcf75fa88bc9e68841be256",
   "slug": "cubbles"
  },
  "https://nrazon.github.io/game2048/": {
@@ -398,7 +398,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "69c32144e00c7bd67198bb1e8c558c67",
+  "hash": "62f322b4fc3b6a84a76c2434a73f1187",
   "slug": "game2048"
  },
  "https://nrazon.github.io/tr/game2048/": {
@@ -411,7 +411,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "18639a45e277c5d9732152aec914ae62",
+  "hash": "356383f82c99f5ffc0c5fb2cdcf86522",
   "slug": "game2048"
  },
  "https://nrazon.github.io/es/game2048/": {
@@ -424,7 +424,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "93c7d70f637ee2f861230edfc0a94418",
+  "hash": "89320f85e4b39e0ae870d91ba138e6c5",
   "slug": "game2048"
  },
  "https://nrazon.github.io/pt/game2048/": {
@@ -437,7 +437,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "2693fe975c575f6fba8d2a2f1053e644",
+  "hash": "00d5cddd640e64e4e48bd16f414fa0dd",
   "slug": "game2048"
  },
  "https://nrazon.github.io/haftasonum/": {
@@ -471,7 +471,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "bf6446a7a35b9ba23dfecde0b6bd79cd",
+  "hash": "f3318c52a037df5a66934ead2c915ca9",
   "slug": "logiclings"
  },
  "https://nrazon.github.io/tr/logiclings/": {
@@ -484,7 +484,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "9130b1efa479d829068f120540bb6b4a",
+  "hash": "ba0302d922d7415a521181ac72d7ad15",
   "slug": "logiclings"
  },
  "https://nrazon.github.io/es/logiclings/": {
@@ -497,7 +497,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "2e83e1acc1be0c5e0fef46bc8d750789",
+  "hash": "e639b0bcee311bb6979ba4c1300901c5",
   "slug": "logiclings"
  },
  "https://nrazon.github.io/pt/logiclings/": {
@@ -510,7 +510,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "dbd9b21f5ce1e3ce64220b96ec9b90bc",
+  "hash": "e0d7a28fffa68bb36e1d27082622c4a4",
   "slug": "logiclings"
  },
  "https://nrazon.github.io/medyafobi/": {
@@ -565,7 +565,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "be7a4d5f245f3d05a76a94255b3e1941",
+  "hash": "1aa6bd18c5d067bce1f47c526cdab239",
   "slug": "sliplines"
  },
  "https://nrazon.github.io/tr/sliplines/": {
@@ -578,7 +578,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "2bdbee8f3a9913431d47eb2605883ffc",
+  "hash": "86b60538c2e22649218ea968746d70b5",
   "slug": "sliplines"
  },
  "https://nrazon.github.io/es/sliplines/": {
@@ -591,7 +591,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "805bcda5b495f3363d7157d94b9dd59d",
+  "hash": "586fd4242d11eae652da25d74bb367a0",
   "slug": "sliplines"
  },
  "https://nrazon.github.io/pt/sliplines/": {
@@ -604,7 +604,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "857078cc4bae80cf879b248fa5ff6a07",
+  "hash": "b4409a0edac949cdb40b1acb42fbb6fe",
   "slug": "sliplines"
  },
  "https://nrazon.github.io/sondepremler/": {
@@ -615,7 +615,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "220a0f23f4d4cb2f1cb420d1250b5680",
+  "hash": "5b7a1bc88fe3d266086d8690842b695d",
   "slug": "sondepremler"
  },
  "https://nrazon.github.io/tr/sondepremler/": {
@@ -626,7 +626,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "93e37a75b6fcd7d0e4e9862f18728e9d",
+  "hash": "3604d47b0aa31360604a5d8aa9e6334b",
   "slug": "sondepremler"
  },
  "https://nrazon.github.io/tictactoe/": {
@@ -639,7 +639,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "068b07eac4342b83e7b308144ba9648a",
+  "hash": "94b0c780211979564b38576a659ba62f",
   "slug": "tictactoe"
  },
  "https://nrazon.github.io/tr/tictactoe/": {
@@ -652,7 +652,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "2964c21e1b5969bc72b85242edf72803",
+  "hash": "c99121d55e1e4c28e799b274d7b163dc",
   "slug": "tictactoe"
  },
  "https://nrazon.github.io/es/tictactoe/": {
@@ -665,7 +665,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "8c36f7eb6dcf61fb71878e782bb046ce",
+  "hash": "4eb565c7d2f6c5039a3b63aa128c26e7",
   "slug": "tictactoe"
  },
  "https://nrazon.github.io/pt/tictactoe/": {
@@ -678,7 +678,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "c8ed8995733bc1c2b279791c1b3437d1",
+  "hash": "f78091b97b10c470a1215332f0396101",
   "slug": "tictactoe"
  },
  "https://nrazon.github.io/tilelings/": {
@@ -691,7 +691,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "1d640aab35c491f5adf0bb4856940653",
+  "hash": "f4f0f3255606659372f1554ce104ae0b",
   "slug": "tilelings"
  },
  "https://nrazon.github.io/tr/tilelings/": {
@@ -704,7 +704,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "5b14e443c148b304a66b703f17f3a52b",
+  "hash": "e76ee3e4f70aff7491870c530d68d833",
   "slug": "tilelings"
  },
  "https://nrazon.github.io/es/tilelings/": {
@@ -717,7 +717,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "4c3439f674dcec7ff8192b94e12a9593",
+  "hash": "10b74f5d742ad1bb0a6299cdf30ba868",
   "slug": "tilelings"
  },
  "https://nrazon.github.io/pt/tilelings/": {
@@ -730,7 +730,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "00ec0d47a0c53c007ee81883f796dc82",
+  "hash": "f40e8891ce733fd942f177e44391d200",
   "slug": "tilelings"
  },
  "https://nrazon.github.io/turksail/": {
@@ -785,7 +785,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "d5c30e182d3f0c7a2e791e3c513a775c",
+  "hash": "365b9c2ab025171424261dac75c021be",
   "slug": "whereami"
  },
  "https://nrazon.github.io/tr/whereami/": {
@@ -798,7 +798,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "6a227fdea300103ef5b766b71085c207",
+  "hash": "48f34b11a9d52adf5b2253c84e6e7a24",
   "slug": "whereami"
  },
  "https://nrazon.github.io/es/whereami/": {
@@ -811,7 +811,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "8f79294fe0fa1d10a170c4fe92bc68a1",
+  "hash": "9e6db7a736da3edad7d99253975fa4f2",
   "slug": "whereami"
  },
  "https://nrazon.github.io/pt/whereami/": {
@@ -824,7 +824,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "d9279be1a745a198c1fdb77dc3931742",
+  "hash": "04d8fce160a35397a445217db7501ba1",
   "slug": "whereami"
  }
 }

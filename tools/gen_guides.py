@@ -132,6 +132,9 @@ def home_url(lang):
     return "/" if lang == "en" else f"/{lang}/"
 
 
+LANGJS = "(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();"
+
+
 def page_shell(lang, alternates, body):
     t = T[lang]
     return f"""<body>
@@ -143,7 +146,7 @@ def page_shell(lang, alternates, body):
 {body}
   <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
 </main>
-<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+<script>{LANGJS}</script>
 </body>
 </html>
 """
