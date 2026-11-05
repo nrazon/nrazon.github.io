@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+
+<html class="pt" lang="pt">
+<head><!--i18n-split-->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Nesim Apps – Jogos e Apps Android grátis: Mahjong, Paciência, Quebra-cabeças</title><link href="https://nrazon.github.io/pt/" rel="canonical"/><link href="https://nrazon.github.io/" hreflang="en" rel="alternate"/><link href="https://nrazon.github.io/tr/" hreflang="tr" rel="alternate"/><link href="https://nrazon.github.io/es/" hreflang="es" rel="alternate"/><link href="https://nrazon.github.io/pt/" hreflang="pt" rel="alternate"/><link href="https://nrazon.github.io/" hreflang="x-default" rel="alternate"/>
+<meta content="Jogos e aplicativos Android grátis de Nesim Razon: Tilelings Mahjong, Beamies, Cubbles quebra-cabeça de blocos, Cardles paciência, Logiclings quebra-cabeças de lógica, Sliplines e mais. Jogue no navegador ou baixe no Google Play." name="description"/>
+
+<link href="/logo.svg" rel="icon" type="image/svg+xml"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="#141829" media="(prefers-color-scheme: dark)" name="theme-color"/>
+<meta content="#F4F5FB" media="(prefers-color-scheme: light)" name="theme-color"/>
+<meta content="website" property="og:type"/>
+<meta content="Nesim Apps" property="og:site_name"/>
+<meta content="Nesim Apps – Jogos e Apps Android grátis: Mahjong, Paciência, Quebra-cabeças" property="og:title"/>
+<meta content="Jogos e aplicativos Android grátis de Nesim Razon: Tilelings Mahjong, Beamies, Cubbles quebra-cabeça de blocos, Cardles paciência, Logiclings quebra-cabeças de lógica, Sliplines e mais. Jogue no navegador ou baixe no Google Play." property="og:description"/>
+<meta content="https://nrazon.github.io/pt/" property="og:url"/>
+<meta content="https://nrazon.github.io/og-v3.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<style>
+  :root { --bg:#141829; --card:#1E2440; --text:#F3F4FA; --dim:#A9B0CF; --link:#6EA8FF; --chip:#252C4D; --shadow:0 6px 20px rgba(0,0,0,.28); --accent:#8E6CF0; --line:rgba(255,255,255,.09); }
+  @media (prefers-color-scheme: light) {
+    :root { --bg:#F4F5FB; --card:#FFFFFF; --text:#171A2B; --dim:#5B6280; --link:#2F5BD8; --chip:#E6E9F5; --shadow:0 6px 18px rgba(30,40,90,.12); --accent:#6A45D8; --line:rgba(23,26,43,.1); }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior:smooth; scroll-padding-top:16px; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:1040px; margin:0 auto; padding:24px 16px 56px; }
+  a { color:var(--link); }
+  a:focus-visible, button:focus-visible { outline:3px solid var(--accent); outline-offset:2px; }
+  .sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+  /* Üst çubuk */
+  .top { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:12px 16px; }
+  .brand { display:flex; gap:12px; align-items:center; min-width:0; text-decoration:none; color:var(--text); }
+  .logo { width:40px; height:40px; border-radius:10px; flex:none; }
+  .brand b { font-size:22px; font-weight:900; letter-spacing:-.01em; }
+  .topr { display:flex; flex-wrap:wrap; align-items:center; gap:4px 6px; }
+  .topr nav { display:flex; gap:2px; }
+  .topr nav a { color:var(--dim); text-decoration:none; font-weight:600; font-size:15px; padding:8px 12px; border-radius:999px; }
+  .topr nav a:hover { color:var(--text); background:var(--chip); }
+  .lang { display:flex; background:var(--card); border-radius:999px; padding:4px; flex:none; box-shadow:var(--shadow); }
+  .lang button { border:0; background:none; color:var(--dim); font:inherit; font-weight:700; font-size:14px; padding:6px 14px; border-radius:999px; cursor:pointer; }
+  .lang button[aria-pressed="true"] { background:var(--text); color:var(--bg); }
+  .lang a { color:var(--dim); font-weight:700; font-size:14px; padding:6px 14px; border-radius:999px; text-decoration:none; }
+  .lang a[aria-current] { background:var(--text); color:var(--bg); }
+  /* Giriş */
+  .intro { padding:36px 4px 26px; }
+  .eyebrow { display:inline-block; background:var(--chip); color:var(--dim); font-weight:800; font-size:12px; letter-spacing:.09em; text-transform:uppercase; padding:6px 12px; border-radius:999px; margin:0 0 14px; }
+  h1 { font-size:clamp(32px,5.6vw,56px); line-height:1.06; letter-spacing:-.02em; margin:0; font-weight:900; }
+  .lead { color:var(--dim); margin:14px 0 0; font-size:18px; max-width:620px; }
+  .sec { margin:44px 0 6px; font-size:clamp(24px,3.4vw,32px); letter-spacing:-.01em; line-height:1.2; }
+  .sec + .sub { color:var(--dim); margin:0 0 18px; }
+  /* Öne çıkan (Cardles) */
+  .hero { background:var(--card); border-radius:24px; box-shadow:var(--shadow); margin:0 0 16px; } /* overflow görünür: QR penceresi taşabilsin; köşe yuvarlaması sanat alanında */
+  .hero .body { padding:20px 22px 24px; display:flex; flex-direction:column; }
+  .hero p { margin:0 0 14px; color:var(--dim); }
+  @media (min-width:700px) { .hero { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); align-items:center; } .hero .body { padding:24px 28px; } .hero-art { border-radius:24px 0 0 24px; } }
+  .hero-art { border-radius:24px 24px 0 0; position:relative; background:linear-gradient(135deg,#0F6B52,#16A07F); color:#fff; padding:22px 18px 22px 26px; display:flex; flex-direction:column; justify-content:center; gap:6px; overflow:hidden; min-height:270px; }
+  .hero-art.beamies { background:linear-gradient(135deg,#1A2350,#4B2E8F); }
+  .hero-art .ha-text { display:flex; flex-direction:column; position:relative; z-index:1; }
+  .hero-art .ha-title { font-size:clamp(34px,4.6vw,46px); font-weight:900; line-height:1; letter-spacing:-.02em; }
+  .hero-art .ha-tag { font-weight:650; font-size:clamp(15px,2.6vw,19px); opacity:.95; margin-top:4px; }
+  .hero-art svg { width:100%; max-width:420px; height:auto; overflow:visible; align-self:flex-end; margin-top:-6px; }
+  @media (min-width:700px) { .hero-art svg { position:absolute; right:-6px; bottom:-6px; width:56%; max-width:none; margin:0; } .hero-art .ha-text { max-width:40%; } }
+  .tag, .badge { display:inline-block; background:var(--accent); color:#fff; font-size:11px; font-weight:800; letter-spacing:.06em; padding:3px 10px; border-radius:999px; }
+  .tag { align-self:flex-start; margin-bottom:8px; } .badge { margin-left:6px; position:relative; top:-2px; padding:2px 8px; }
+  .chips { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 14px; padding:0; list-style:none; }
+  .chips li { background:var(--chip); font-size:13px; font-weight:700; padding:3px 11px; border-radius:999px; }
+  .pcard { transition:transform .25s cubic-bezier(.3,1.6,.5,1); transform-box:fill-box; transform-origin:center; }
+  .pcard:hover { transform:translateY(-10px); }
+  .eye { transform-box:fill-box; transform-origin:center; animation:blink 6s infinite; animation-delay:var(--d,0s); }
+  @keyframes blink { 0%,93%,100% { transform:scaleY(1); } 96% { transform:scaleY(.08); } }
+  /* Oyun vitrini: Sliplines + Cubbles, gerçek ekran görüntüleriyle */
+  .showgrid { display:grid; gap:16px; grid-template-columns:minmax(0,1fr); margin:0 0 16px; }
+  @media (min-width:760px) { .showgrid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+  .show { position:relative; overflow:hidden; border-radius:24px; color:#fff; padding:22px 22px 0; background:linear-gradient(150deg,var(--a),var(--b)); box-shadow:var(--shadow); display:flex; flex-direction:column; gap:10px; min-height:420px; }
+  .show .icon { width:56px; height:56px; border-radius:14px; box-shadow:0 4px 12px rgba(0,0,0,.35); }
+  .show h3 { margin:0; font-size:28px; line-height:1.15; font-weight:900; letter-spacing:-.01em; }
+  .show h3 a { color:#fff; text-decoration:none; }
+  .show .stag { margin:0; font-weight:700; opacity:.95; }
+  .show .sdesc { margin:0; color:rgba(255,255,255,.82); font-size:15px; line-height:1.5; max-width:430px; }
+  .show .links { margin-top:6px; position:relative; z-index:2; }
+  .show .small { color:#fff; opacity:.9; }
+  .show .badge { background:#fff; color:#222; }
+  .shots { display:flex; justify-content:center; gap:12px; margin:14px 0 -34px; }
+  .shot { width:min(42%,150px); height:auto; border-radius:18px; border:3px solid rgba(255,255,255,.2); box-shadow:0 12px 28px rgba(0,0,0,.4); background:#000; }
+  .shot:nth-child(odd) { transform:rotate(-3deg) translateY(6px); } .shot:nth-child(even) { transform:rotate(3deg); }
+  @media (min-width:520px) { .show .txt { padding-right:4%; } }
+  /* Kompakt kartlar (araçlar ve klasik oyunlar) */
+  .tools { display:grid; gap:12px; grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr)); }
+  @media (min-width:760px) { .tools.two { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+  .tool { position:relative; display:flex; gap:14px; align-items:flex-start; background:linear-gradient(165deg,color-mix(in srgb,var(--tint,var(--card)) 14%,var(--card)) 0%,var(--card) 62%); border-radius:18px; padding:14px 16px; box-shadow:var(--shadow); transition:transform .15s ease; }
+  .tool:hover { transform:translateY(-2px); }
+  .tool .icon { width:56px; height:56px; border-radius:14px; flex:none; box-shadow:0 3px 10px rgba(0,0,0,.25); }
+  .tbody { min-width:0; flex:1; }
+  .tool h3 { margin:0 0 2px; font-size:17px; line-height:1.3; }
+  .stretch { color:var(--text); text-decoration:none; }
+  .stretch::after { content:""; position:absolute; inset:0; border-radius:18px; }
+  .show .stretch::after { border-radius:24px; z-index:1; }
+  .tool p { margin:0 0 8px; color:var(--dim); font-size:14px; line-height:1.45; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+  .chip { display:inline-block; vertical-align:middle; background:var(--chip); color:var(--dim); font-size:10.5px; font-weight:800; letter-spacing:.06em; padding:2px 8px; border-radius:999px; margin-left:4px; position:relative; top:-1px; }
+  .chip.pop { background:var(--accent); color:#fff; }
+  .demo-panel { margin-top:12px; background:var(--card); border-radius:18px; padding:22px; box-shadow:var(--shadow); }
+  .demo-panel h3 { margin:0 0 14px; font-size:18px; }
+  .gprow { display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+  .tool:has(.qr[open]) { z-index:40; }
+  .gp { position:relative; z-index:2; display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:700; color:var(--link); text-decoration:none; padding:5px 11px; border:1.5px solid var(--line); border-radius:999px; }
+  .gp:hover { background:var(--chip); }
+  .tool.soon { border:1.5px dashed var(--line); box-shadow:none; background:transparent; }
+  .tool.soon:hover { transform:none; }
+  .tool.soon .small { margin-right:10px; position:relative; z-index:2; }
+  .links { display:flex; flex-wrap:wrap; gap:8px 14px; align-items:center; }
+  .play img { height:44px; width:auto; display:block; }
+  .small { color:var(--link); font-size:14px; }
+
+  /* QR ile yükle: yalnız fare olan geniş ekranlarda (masaüstü); telefonda Play rozeti yeterli */
+  .qr { display:none; position:relative; z-index:2; }
+  @media (hover:hover) and (pointer:fine) and (min-width:900px) { .qr { display:inline-block; } }
+  .qr summary { list-style:none; cursor:pointer; display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:700; padding:6px 12px; border-radius:999px; border:1.5px solid color-mix(in srgb, currentColor 35%, transparent); color:inherit; user-select:none; }
+  .qr summary::-webkit-details-marker { display:none; }
+  .qr summary svg { width:14px; height:14px; flex:none; }
+  .qr summary:hover, .qr[open] summary { background:color-mix(in srgb, currentColor 14%, transparent); }
+  .qrpop { position:absolute; left:0; bottom:calc(100% + 10px); z-index:30; width:211px; padding:14px 14px 10px; background:#fff; color:#171A2B; border-radius:16px; box-shadow:0 10px 32px rgba(0,0,0,.4); text-align:center; }
+  .qrpop img { display:block; width:183px; height:183px; margin:0 auto 6px; }
+  .qrpop p { margin:0; font-size:13px; font-weight:700; line-height:1.3; }
+  /* Hakkımda */
+  .about { margin-top:48px; display:flex; flex-wrap:wrap; gap:22px 28px; align-items:center; background:var(--card); border-radius:24px; padding:26px; box-shadow:var(--shadow); }
+  .about img { width:96px; height:96px; border-radius:50%; flex:none; object-fit:cover; box-shadow:0 4px 14px rgba(0,0,0,.3); }
+  .about .abody { flex:1 1 320px; min-width:0; }
+  .about h2 { margin:0 0 8px; font-size:26px; line-height:1.2; }
+  .about p { margin:0 0 16px; color:var(--dim); }
+  .contacts { display:flex; flex-wrap:wrap; gap:8px; }
+  .contacts a { display:inline-block; text-decoration:none; font-weight:700; font-size:14px; padding:9px 16px; border-radius:999px; background:var(--chip); color:var(--text); }
+  .contacts a.main { background:var(--accent); color:#fff; }
+  .contacts a:hover { filter:brightness(1.1); }
+  /* Alt bilgi */
+  footer { color:var(--dim); font-size:14px; margin-top:36px; }
+  footer .row { display:flex; flex-wrap:wrap; gap:6px 14px; align-items:center; }
+  footer details { margin-top:12px; }
+  footer summary { cursor:pointer; font-weight:600; }
+  footer ul { list-style:none; padding:0; margin:10px 0 0; display:grid; gap:4px 18px; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); }
+  /* Dil: <html class="tr"> ya da "en"; diğer dildeki metinler gizlenir. */
+  html.tr [lang]:not([lang="tr"]):not(html), html.en [lang]:not([lang="en"]):not(html), html.es [lang]:not([lang="es"]):not(html), html.pt [lang]:not([lang="pt"]):not(html) { display:none; }
+  [hidden] { display:none !important; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } .eye { animation:none; } .pcard, .tool { transition:none; } .tool:hover { transform:none; } }
+  @media (max-width:560px) { .intro { padding-top:24px; } .about { padding:20px; } .topr nav a { padding:8px 9px; font-size:14px; } }
+</style>
+<script defer="" src="/analytics.js?v=3"></script>
+<script>
+  // QR açılırken: dışarı tıklayınca ya da Esc ile kapanır (aynı anda yalnız biri açık).
+  document.addEventListener("click", function (e) { document.querySelectorAll("details.qr[open]").forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute("open"); }); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") document.querySelectorAll("details.qr[open]").forEach(function (d) { d.removeAttribute("open"); }); });
+  // Tarayıcı demosu: kartta düğme; ilk açılışta ilgili betik yüklenir (gerekmedikçe indirilmez).
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest && e.target.closest("[data-demo-toggle]");
+    if (!b) return;
+    var panel = document.getElementById(b.getAttribute("aria-controls"));
+    var open = panel.hidden;
+    panel.hidden = !open;
+    b.setAttribute("aria-expanded", open);
+    var id = "demo-js-" + b.getAttribute("data-demo-toggle");
+    if (open && !document.getElementById(id)) { var s = document.createElement("script"); s.id = id; s.src = b.getAttribute("data-demo-src"); document.head.appendChild(s); }
+    if (open) panel.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  });
+  // "Yeni" rozetleri tarihi geçince kendiliğinden kalkar (data-new-until: yyyy-mm-dd).
+  function expireBadges() {
+    var today = new Date().toISOString().slice(0, 10);
+    document.querySelectorAll("[data-new-until]").forEach(function (el) { if (today > el.dataset.newUntil) el.remove(); });
+  }
+</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://nrazon.github.io/#site", "name": "Nesim Apps", "url": "https://nrazon.github.io/pt/", "inLanguage": "pt", "publisher": {"@id": "https://nrazon.github.io/#dev"}}, {"@type": "Person", "@id": "https://nrazon.github.io/#dev", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "image": "https://nrazon.github.io/nesim.jpg", "jobTitle": "Independent Android developer", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, {"@type": "ItemList", "name": "Nesim Apps: Android games and apps", "itemListElement": [{"@type": "ListItem", "position": 1, "url": "https://nrazon.github.io/pt/tilelings/", "name": "Tilelings"}, {"@type": "ListItem", "position": 2, "url": "https://nrazon.github.io/pt/logiclings/", "name": "Logiclings"}, {"@type": "ListItem", "position": 3, "url": "https://nrazon.github.io/pt/cardles/", "name": "Cardles"}, {"@type": "ListItem", "position": 4, "url": "https://nrazon.github.io/pt/beamies/", "name": "Beamies"}, {"@type": "ListItem", "position": 5, "url": "https://nrazon.github.io/pt/cubbles/", "name": "Cubbles"}, {"@type": "ListItem", "position": 6, "url": "https://nrazon.github.io/pt/sliplines/", "name": "Sliplines"}, {"@type": "ListItem", "position": 7, "url": "https://nrazon.github.io/pt/game2048/", "name": "2048"}, {"@type": "ListItem", "position": 8, "url": "https://nrazon.github.io/pt/tictactoe/", "name": "Tic-Tac-Toe"}, {"@type": "ListItem", "position": 9, "url": "https://nrazon.github.io/haftasonum/", "name": "Hafta Sonum"}, {"@type": "ListItem", "position": 10, "url": "https://nrazon.github.io/calisan/", "name": "Çalışan Asistanı"}, {"@type": "ListItem", "position": 11, "url": "https://nrazon.github.io/uzaygunlugu/", "name": "Uzay Günlüğü"}, {"@type": "ListItem", "position": 12, "url": "https://nrazon.github.io/sansoyunlari/", "name": "Şans Oyunları"}, {"@type": "ListItem", "position": 13, "url": "https://nrazon.github.io/pt/whereami/", "name": "Where Am I?"}, {"@type": "ListItem", "position": 14, "url": "https://nrazon.github.io/pt/agecalculator/", "name": "Age Calculator"}, {"@type": "ListItem", "position": 15, "url": "https://nrazon.github.io/sondepremler/", "name": "Son Depremler"}, {"@type": "ListItem", "position": 16, "url": "https://nrazon.github.io/pt/bmicalculator/", "name": "BMI Calculator"}, {"@type": "ListItem", "position": 17, "url": "https://nrazon.github.io/anthemturkey/", "name": "National Anthem of Turkey"}, {"@type": "ListItem", "position": 18, "url": "https://nrazon.github.io/anthemcanada/", "name": "National Anthem of Canada"}, {"@type": "ListItem", "position": 19, "url": "https://nrazon.github.io/turksail/", "name": "TurkSail"}, {"@type": "ListItem", "position": 20, "url": "https://nrazon.github.io/medyafobi/", "name": "MedyaFobi"}]}]}</script>
+<meta content="pt_BR" property="og:locale"/><meta content="en_US" property="og:locale:alternate"/><meta content="tr_TR" property="og:locale:alternate"/><meta content="es_ES" property="og:locale:alternate"/><meta content="Nesim Apps – Jogos e Apps Android grátis: Mahjong, Paciência, Quebra-cabeças" name="twitter:title"/><meta content="Jogos e aplicativos Android grátis de Nesim Razon: Tilelings Mahjong, Beamies, Cubbles quebra-cabeça de blocos, Cardles paciência, Logiclings quebra-cabeças de lógica, Sliplines e mais. Jogue no navegador ou baixe no Google Play." name="twitter:description"/></head>
+<body>
+<main>
+<div class="top">
+<a class="brand" href="#top"><img alt="Nesim Apps logo" class="logo" height="40" src="/logo.svg" width="40"/><b>Nesim Apps</b></a>
+<div class="topr">
+<nav aria-label="Menu"><a href="#games"><span lang="pt">Jogos</span></a><a href="#apps"><span lang="pt">Apps</span></a><a href="/pt/guias/"><span lang="pt">Guias</span></a><a href="#about"><span lang="pt">Sobre</span></a></nav>
+<div aria-label="Language / Dil" class="lang" role="navigation"><a data-lang="en" href="/pt/" hreflang="en">EN</a><a data-lang="tr" href="/tr/" hreflang="tr">TR</a><a data-lang="es" href="/es/" hreflang="es">ES</a><a aria-current="page" data-lang="pt" href="/pt/" hreflang="pt">PT</a></div>
+</div>
+</div>
+<div class="intro" id="top">
+<p class="eyebrow"><span lang="pt">Desenvolvedor Android independente</span></p>
+<h1><span lang="pt">Jogos que fazem sorrir,<br/>apps que resolvem.</span></h1>
+<p class="lead"><span lang="pt">Jogos e aplicativos Android de Nesim Razon</span></p>
+</div>
+<section id="games">
+<section class="hero" data-pkg="com.beamies.nesimapps" data-slug="beamies">
+<h2 class="sr">Beamies</h2>
+<div class="hero-art beamies">
+<div class="ha-text">
+<span class="ha-title">Beamies</span>
+<span class="ha-tag"><span lang="pt">Leve os alienígenas para casa!</span></span>
+</div>
+<svg aria-label="Cute aliens heading to a beam gate" role="img" viewbox="0 0 640 400">
+<style>
+  .bmf { animation:bmf 4.2s ease-in-out infinite; } .bmf2 { animation-delay:-1.4s; } .bmf3 { animation-delay:-2.8s; }
+  @keyframes bmf { 0%,100% { translate:0 0; } 50% { translate:0 -10px; } }
+  .bmt { animation:bmt 3.2s ease-in-out infinite; } @keyframes bmt { 0%,100% { opacity:.25; } 50% { opacity:1; } }
+  .bmg { transform-box:fill-box; transform-origin:center; animation:bmg 6s linear infinite; } @keyframes bmg { to { transform:rotate(360deg); } }
+  @media (prefers-reduced-motion:reduce) { .bmf,.bmt,.bmg { animation:none; } }
+</style>
+<defs>
+<radialgradient cx="50%" cy="50%" id="bmGlow" r="50%"><stop offset="0" stop-color="#FFF4C2" stop-opacity=".95"></stop><stop offset=".45" stop-color="#9FD6FF" stop-opacity=".55"></stop><stop offset="1" stop-color="#7B5CFF" stop-opacity="0"></stop></radialgradient>
+</defs>
+<path class="bmt" d="M0,-9 Q1.6199999999999999,-1.6199999999999999 9,0 Q1.6199999999999999,1.6199999999999999 0,9 Q-1.6199999999999999,1.6199999999999999 -9,0 Q-1.6199999999999999,-1.6199999999999999 0,-9 Z" fill="#FFE9A8" style="animation-delay:0s" transform="translate(60 60)"></path><path class="bmt" d="M0,-6 Q1.08,-1.08 6,0 Q1.08,1.08 0,6 Q-1.08,1.08 -6,0 Q-1.08,-1.08 0,-6 Z" fill="#FFE9A8" style="animation-delay:0.8s" transform="translate(170 130)"></path><path class="bmt" d="M0,-8 Q1.44,-1.44 8,0 Q1.44,1.44 0,8 Q-1.44,1.44 -8,0 Q-1.44,-1.44 0,-8 Z" fill="#FFE9A8" style="animation-delay:1.6s" transform="translate(300 40)"></path><path class="bmt" d="M0,-5 Q0.8999999999999999,-0.8999999999999999 5,0 Q0.8999999999999999,0.8999999999999999 0,5 Q-0.8999999999999999,0.8999999999999999 -5,0 Q-0.8999999999999999,-0.8999999999999999 0,-5 Z" fill="#FFE9A8" style="animation-delay:0.4s" transform="translate(420 80)"></path><path class="bmt" d="M0,-9 Q1.6199999999999999,-1.6199999999999999 9,0 Q1.6199999999999999,1.6199999999999999 0,9 Q-1.6199999999999999,1.6199999999999999 -9,0 Q-1.6199999999999999,-1.6199999999999999 0,-9 Z" fill="#FFE9A8" style="animation-delay:1.1s" transform="translate(560 40)"></path><path class="bmt" d="M0,-6 Q1.08,-1.08 6,0 Q1.08,1.08 0,6 Q-1.08,1.08 -6,0 Q-1.08,-1.08 0,-6 Z" fill="#FFE9A8" style="animation-delay:2.0s" transform="translate(610 170)"></path><path class="bmt" d="M0,-7 Q1.26,-1.26 7,0 Q1.26,1.26 0,7 Q-1.26,1.26 -7,0 Q-1.26,-1.26 0,-7 Z" fill="#FFE9A8" style="animation-delay:1.4s" transform="translate(40 250)"></path><path class="bmt" d="M0,-6 Q1.08,-1.08 6,0 Q1.08,1.08 0,6 Q-1.08,1.08 -6,0 Q-1.08,-1.08 0,-6 Z" fill="#FFE9A8" style="animation-delay:0.2s" transform="translate(230 330)"></path><path class="bmt" d="M0,-8 Q1.44,-1.44 8,0 Q1.44,1.44 0,8 Q-1.44,1.44 -8,0 Q-1.44,-1.44 0,-8 Z" fill="#FFE9A8" style="animation-delay:1.8s" transform="translate(390 370)"></path><path class="bmt" d="M0,-6 Q1.08,-1.08 6,0 Q1.08,1.08 0,6 Q-1.08,1.08 -6,0 Q-1.08,-1.08 0,-6 Z" fill="#FFE9A8" style="animation-delay:0.9s" transform="translate(600 340)"></path><path class="bmt" d="M0,-5 Q0.8999999999999999,-0.8999999999999999 5,0 Q0.8999999999999999,0.8999999999999999 0,5 Q-0.8999999999999999,0.8999999999999999 -5,0 Q-0.8999999999999999,-0.8999999999999999 0,-5 Z" fill="#FFE9A8" style="animation-delay:2.4s" transform="translate(110 360)"></path>
+<g transform="translate(540 110)"><circle fill="#FF9E6D" r="46" stroke="#1B1030" stroke-width="5"></circle><circle cx="-14" cy="-12" fill="#FFB98F" r="9"></circle><circle cx="16" cy="14" fill="#E57A4A" r="6"></circle>
+<ellipse fill="none" opacity=".9" rx="86" ry="20" stroke="#FFE08A" stroke-width="8" transform="rotate(-18)"></ellipse></g>
+<g transform="translate(470 250)">
+<circle class="bmg" fill="url(#bmGlow)" r="118"></circle>
+<rect fill="#0E0A24" height="190" rx="34" stroke="#1B1030" stroke-width="6" width="140" x="-70" y="-100"></rect>
+<rect fill="none" height="190" rx="34" stroke="#FFC83D" stroke-dasharray="20 20" stroke-width="10" width="140" x="-70" y="-100"></rect>
+<ellipse cx="0" cy="-5" fill="url(#bmGlow)" rx="46" ry="70"></ellipse>
+<g class="bmg" opacity=".85"><path d="M0,-58 C24,-58 40,-30 24,-6 C10,14 -18,10 -20,-8 C-22,-24 -6,-34 6,-26" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="5"></path></g>
+</g>
+<g class="bmf bmf1" transform="translate(120 270) scale(1.05)">
+<line stroke="#1B1030" stroke-linecap="round" stroke-width="6" x1="-16" x2="-28" y1="-38" y2="-72"></line><circle cx="-28" cy="-74" fill="#2BA866" r="9" stroke="#1B1030" stroke-width="4"></circle>
+<line stroke="#1B1030" stroke-linecap="round" stroke-width="6" x1="16" x2="28" y1="-38" y2="-72"></line><circle cx="28" cy="-74" fill="#2BA866" r="9" stroke="#1B1030" stroke-width="4"></circle>
+<ellipse cx="0" cy="0" fill="#46D58A" rx="48" ry="44" stroke="#1B1030" stroke-width="5"></ellipse>
+<ellipse cx="-16" cy="-6" fill="#fff" rx="13" ry="16" stroke="#1B1030" stroke-width="3"></ellipse><circle cx="-11" cy="-3" fill="#1B1030" r="7"></circle><circle cx="-9" cy="-7" fill="#fff" r="2.4"></circle>
+<ellipse cx="16" cy="-6" fill="#fff" rx="13" ry="16" stroke="#1B1030" stroke-width="3"></ellipse><circle cx="21" cy="-3" fill="#1B1030" r="7"></circle><circle cx="23" cy="-7" fill="#fff" r="2.4"></circle>
+<ellipse cx="-31" cy="14" fill="#FF8FA8" opacity=".65" rx="8" ry="5"></ellipse><ellipse cx="31" cy="14" fill="#FF8FA8" opacity=".65" rx="8" ry="5"></ellipse>
+<path d="M-12 18 Q0 32 12 18" fill="none" stroke="#1B1030" stroke-linecap="round" stroke-width="5"></path>
+</g>
+<g class="bmf bmf2" transform="translate(250 185) scale(0.82)">
+<line stroke="#1B1030" stroke-linecap="round" stroke-width="6" x1="-16" x2="-28" y1="-38" y2="-72"></line><circle cx="-28" cy="-74" fill="#D5507F" r="9" stroke="#1B1030" stroke-width="4"></circle>
+<line stroke="#1B1030" stroke-linecap="round" stroke-width="6" x1="16" x2="28" y1="-38" y2="-72"></line><circle cx="28" cy="-74" fill="#D5507F" r="9" stroke="#1B1030" stroke-width="4"></circle>
+<ellipse cx="0" cy="0" fill="#FF7BA9" rx="48" ry="44" stroke="#1B1030" stroke-width="5"></ellipse>
+<ellipse cx="-16" cy="-6" fill="#fff" rx="13" ry="16" stroke="#1B1030" stroke-width="3"></ellipse><circle cx="-11" cy="-3" fill="#1B1030" r="7"></circle><circle cx="-9" cy="-7" fill="#fff" r="2.4"></circle>
+<ellipse cx="16" cy="-6" fill="#fff" rx="13" ry="16" stroke="#1B1030" stroke-width="3"></ellipse><circle cx="21" cy="-3" fill="#1B1030" r="7"></circle><circle cx="23" cy="-7" fill="#fff" r="2.4"></circle>
+<ellipse cx="-31" cy="14" fill="#FF8FA8" opacity=".65" rx="8" ry="5"></ellipse><ellipse cx="31" cy="14" fill="#FF8FA8" opacity=".65" rx="8" ry="5"></ellipse>
+<path d="M-12 18 Q0 32 12 18" fill="none" stroke="#1B1030" stroke-linecap="round" stroke-width="5"></path>
+</g>
+<g class="bmf bmf3" transform="translate(300 320) scale(0.7)">
+<line stroke="#1B1030" stroke-linecap="round" stroke-width="6" x1="-16" x2="-28" y1="-38" y2="-72"></line><circle cx="-28" cy="-74" fill="#4286D6" r="9" stroke="#1B1030" stroke-width="4"></circle>
+<line stroke="#1B1030" stroke-linecap="round" stroke-width="6" x1="16" x2="28" y1="-38" y2="-72"></line><circle cx="28" cy="-74" fill="#4286D6" r="9" stroke="#1B1030" stroke-width="4"></circle>
+<ellipse cx="0" cy="0" fill="#6EB6FF" rx="48" ry="44" stroke="#1B1030" stroke-width="5"></ellipse>
+<ellipse cx="-16" cy="-6" fill="#fff" rx="13" ry="16" stroke="#1B1030" stroke-width="3"></ellipse><circle cx="-11" cy="-3" fill="#1B1030" r="7"></circle><circle cx="-9" cy="-7" fill="#fff" r="2.4"></circle>
+<ellipse cx="16" cy="-6" fill="#fff" rx="13" ry="16" stroke="#1B1030" stroke-width="3"></ellipse><circle cx="21" cy="-3" fill="#1B1030" r="7"></circle><circle cx="23" cy="-7" fill="#fff" r="2.4"></circle>
+<ellipse cx="-31" cy="14" fill="#FF8FA8" opacity=".65" rx="8" ry="5"></ellipse><ellipse cx="31" cy="14" fill="#FF8FA8" opacity=".65" rx="8" ry="5"></ellipse>
+<path d="M-12 18 Q0 32 12 18" fill="none" stroke="#1B1030" stroke-linecap="round" stroke-width="5"></path>
+</g>
+</svg>
+</div>
+<div class="body">
+<span class="tag" data-new-until="2026-12-03"><span lang="pt">JOGO NOVO</span></span>
+<p lang="pt">Os alienígenas só querem voltar para casa e você controla os portais que os levam. Deslize portais coloridos, recolha os alienígenas da mesma cor e leve-os para casa: 400 fases da Lua à Galáxia, sem cronômetro nem vidas.</p>
+<ul class="chips" lang="pt"><li>400 fases</li><li>3 estrelas</li><li>Sem cronômetro nem vidas</li><li>Grátis</li></ul>
+<div class="links"><a class="play" href="https://play.google.com/store/apps/details?id=com.beamies.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img alt="Get it on Google Play" lang="pt" src="/badges/google-play-en.svg"/></a><details class="qr" data-qr="beamies"><summary><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z" fill="currentColor"></path></svg><span lang="pt">Instalar com QR</span></summary><div class="qrpop"><img alt="QR code: install Beamies" height="183" loading="lazy" src="/qr/beamies.svg" width="183"/><p lang="pt">Escaneie com o celular</p></div></details><a class="small" href="/pt/beamies/"><b lang="pt">Saiba mais</b></a></div>
+</div>
+</section>
+<div class="showgrid">
+<article class="show" data-pkg="com.sliplines.nesimapps" data-slug="sliplines" style="--a:#64391F;--b:#BB6B3A">
+<img alt="Sliplines icon" class="icon" height="64" loading="lazy" src="/sliplines/icon.png" width="64"/>
+<div class="txt">
+<h3><a class="stretch" href="/pt/sliplines/">Sliplines</a> <span class="badge" data-new-until="2026-11-30"><span lang="pt">NOVO</span></span></h3>
+<p class="stag"><span lang="pt">Deslize as setas na ordem certa</span></p>
+<p class="sdesc" lang="pt">Um quebra-cabeça de setas: tire as setas na ordem certa e limpe o tabuleiro. Centenas de níveis, um Desafio diário com classificação mundial e emblemas para colecionar.</p>
+<div class="links"><a class="play" href="https://play.google.com/store/apps/details?id=com.sliplines.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img alt="Get it on Google Play" lang="pt" src="/badges/google-play-en.svg"/></a><details class="qr" data-qr="sliplines"><summary><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z" fill="currentColor"></path></svg><span lang="pt">Instalar com QR</span></summary><div class="qrpop"><img alt="QR code: install Sliplines" height="183" loading="lazy" src="/qr/sliplines.svg" width="183"/><p lang="pt">Escaneie com o celular</p></div></details><a class="small" href="/pt/sliplines/"><b lang="pt">Saiba mais</b></a></div>
+</div>
+<div aria-hidden="true" class="shots"><img alt="Sliplines screenshot 1" class="shot" height="267" lang="pt" loading="lazy" src="/sliplines/shots/pt/01.jpg" width="150"/><img alt="Sliplines screenshot 2" class="shot" height="267" lang="pt" loading="lazy" src="/sliplines/shots/pt/02.jpg" width="150"/></div>
+</article>
+<article class="show" data-pkg="com.cubbles.nesimapps" data-slug="cubbles" style="--a:#342654;--b:#60479C">
+<img alt="Cubbles icon" class="icon" height="64" loading="lazy" src="/cubbles/icon.svg" width="64"/>
+<div class="txt">
+<h3><a class="stretch" href="/pt/cubbles/">Cubbles</a> <span class="badge" data-new-until="2026-11-30"><span lang="pt">NOVO</span></span></h3>
+<p class="stag"><span lang="pt">Quebra-cabeça de blocos com carinhas</span></p>
+<p class="sdesc" lang="pt">Um quebra-cabeça de blocos com carinhas fofas: arraste blocos para o tabuleiro, complete linhas e colunas para limpá-las e encadeie combos. Desafio diário, missões e temas.</p>
+<div class="links"><a class="play" href="https://play.google.com/store/apps/details?id=com.cubbles.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img alt="Get it on Google Play" lang="pt" src="/badges/google-play-en.svg"/></a><details class="qr" data-qr="cubbles"><summary><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z" fill="currentColor"></path></svg><span lang="pt">Instalar com QR</span></summary><div class="qrpop"><img alt="QR code: install Cubbles" height="183" loading="lazy" src="/qr/cubbles.svg" width="183"/><p lang="pt">Escaneie com o celular</p></div></details><a class="small" href="/pt/cubbles/"><b lang="pt">Saiba mais</b></a></div>
+</div>
+<div aria-hidden="true" class="shots"><img alt="Cubbles screenshot 1" class="shot" height="267" lang="pt" loading="lazy" src="/cubbles/shots/en/01.png" width="150"/><img alt="Cubbles screenshot 2" class="shot" height="267" lang="pt" loading="lazy" src="/cubbles/shots/en/02.png" width="150"/></div>
+</article>
+</div>
+<div class="tools two">
+<article class="tool" data-pkg="com.tilelings.nesimapps" data-slug="tilelings" style="--tint:#2E9E73">
+<img alt="Tilelings icon" class="icon" height="64" loading="lazy" src="/tilelings/icon.png" width="64"/>
+<div class="tbody">
+<h3><a class="stretch" href="/pt/tilelings/"><span lang="pt">Tilelings</span></a> <span class="badge" data-new-until="2026-12-05"><span lang="pt">NOVO</span></span></h3>
+<p lang="pt">Mahjong Paciência fofo, Connect e Tile Match. Novos desafios todo dia!</p>
+<div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.tilelings.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg aria-hidden="true" height="14" viewbox="0 0 24 24" width="14"><path d="M5 3.5v17l15-8.5z" fill="currentColor"></path></svg>Google Play</a><details class="qr" data-qr="tilelings"><summary><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z" fill="currentColor"></path></svg><span lang="pt">QR</span></summary><div class="qrpop"><img alt="QR code: install Tilelings" height="183" loading="lazy" src="/qr/tilelings.svg" width="183"/><p lang="pt">Escaneie com o celular</p></div></details></div>
+</div>
+</article>
+<article class="tool" data-pkg="com.logiclings.nesimapps" data-slug="logiclings" style="--tint:#E8B64C">
+<img alt="Logiclings icon" class="icon" height="64" loading="lazy" src="/logiclings/icon.png" width="64"/>
+<div class="tbody">
+<h3><a class="stretch" href="/pt/logiclings/"><span lang="pt">Logiclings</span></a> <span class="badge" data-new-until="2026-11-20"><span lang="pt">NOVO</span></span></h3>
+<p lang="pt">Três quebra-cabeças de lógica novos todo dia: Coroa, Gêmeos e Caminho. Sem pressão de tempo, com carinhas fofas.</p>
+<div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.logiclings.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg aria-hidden="true" height="14" viewbox="0 0 24 24" width="14"><path d="M5 3.5v17l15-8.5z" fill="currentColor"></path></svg>Google Play</a><details class="qr" data-qr="logiclings"><summary><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z" fill="currentColor"></path></svg><span lang="pt">QR</span></summary><div class="qrpop"><img alt="QR code: install Logiclings" height="183" loading="lazy" src="/qr/logiclings.svg" width="183"/><p lang="pt">Escaneie com o celular</p></div></details></div>
+</div>
+</article>
+<article class="tool" data-pkg="com.cardles.nesimapps" data-slug="cardles" style="--tint:#2FA37F">
+<img alt="Cardles icon" class="icon" height="64" loading="lazy" src="/cardles/icon.svg" width="64"/>
+<div class="tbody">
+<h3><a class="stretch" href="/pt/cardles/"><span lang="pt">Cardles</span></a> <span class="badge" data-new-until="2026-12-15"><span lang="pt">NOVO</span></span></h3>
+<p lang="pt">Klondike, Spider, FreeCell e TriPeaks com carinhas. Desafio diário!</p>
+<div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.cardles.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg aria-hidden="true" height="14" viewbox="0 0 24 24" width="14"><path d="M5 3.5v17l15-8.5z" fill="currentColor"></path></svg>Google Play</a><details class="qr" data-qr="cardles"><summary><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z" fill="currentColor"></path></svg><span lang="pt">QR</span></summary><div class="qrpop"><img alt="QR code: install Cardles" height="183" loading="lazy" src="/qr/cardles.svg" width="183"/><p lang="pt">Escaneie com o celular</p></div></details></div>
+</div>
+</article>
+<article class="tool" data-pkg="com.game2048.nesimapps" data-slug="game2048" style="--tint:#EDC22E">
+<img alt="2048 icon" class="icon" height="64" loading="lazy" src="/game2048/icon.svg" width="64"/>
+<div class="tbody">
+<h3><a class="stretch" href="/pt/game2048/"><span lang="pt">2048</span></a></h3>
+<p lang="pt">O clássico quebra-cabeça de números: deslize, combine números iguais e chegue à peça 2048.</p>
+<div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.game2048.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg aria-hidden="true" height="14" viewbox="0 0 24 24" width="14"><path d="M5 3.5v17l15-8.5z" fill="currentColor"></path></svg>Google Play</a><details class="qr" data-qr="game2048"><summary><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z" fill="currentColor"></path></svg><span lang="pt">QR</span></summary><div class="qrpop"><img alt="QR code: install 2048" height="183" loading="lazy" src="/qr/game2048.svg" width="183"/><p lang="pt">Escaneie com o celular</p></div></details><button aria-controls="g2048-demo" aria-expanded="false" class="gp demo" data-demo-src="/g2048.js?v=1" data-demo-toggle="game2048" type="button">▶ <span lang="pt">Experimente aqui</span></button></div>
+</div>
+</article>
+<article class="tool" data-pkg="com.tictactoe.nesimapps" data-slug="tictactoe" style="--tint:#4CC9C0">
+<img alt="Tic-Tac-Toe icon" class="icon" height="64" loading="lazy" src="/tictactoe/icon.svg" width="64"/>
+<div class="tbody">
+<h3><a class="stretch" href="/pt/tictactoe/"><span lang="pt">Tic-Tac-Toe</span></a></h3>
+<p lang="pt">O clássico jogo da velha contra o computador: Fácil, Médio ou Difícil. No Difícil ele nunca perde.</p>
+<div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.tictactoe.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg aria-hidden="true" height="14" viewbox="0 0 24 24" width="14"><path d="M5 3.5v17l15-8.5z" fill="currentColor"></path></svg>Google Play</a><details class="qr" data-qr="tictactoe"><summary><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z" fill="currentColor"></path></svg><span lang="pt">QR</span></summary><div class="qrpop"><img alt="QR code: install Tic-Tac-Toe" height="183" loading="lazy" src="/qr/tictactoe.svg" width="183"/><p lang="pt">Escaneie com o celular</p></div></details><button aria-controls="ttt-demo" aria-expanded="false" class="gp demo" data-demo-src="/ttt.js?v=2" data-demo-toggle="tictactoe" type="button">▶ <span lang="pt">Experimente aqui</span></button></div>
+</div>
+</article>
+</div>
+<div class="demo-panel" hidden="" id="ttt-demo">
+<h3><span lang="pt">Tic-Tac-Toe: experimente no navegador</span></h3>
+<div data-play="https://play.google.com/store/apps/details?id=com.tictactoe.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb" data-ttt=""></div>
+</div>
+<div class="demo-panel" hidden="" id="g2048-demo">
+<h3><span lang="pt">2048: experimente no navegador</span></h3>
+<div data-g2048="" data-play="https://play.google.com/store/apps/details?id=com.game2048.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"></div>
+</div>
+</section>
+<section id="apps">
+<h2 class="sec"><span lang="pt">Apps</span></h2>
+<p class="sub"><span lang="pt">Pequenos ajudantes para o dia a dia.</span></p>
+<div class="tools">
+<article class="tool" data-pkg="com.haftasonum.nesimapps" data-slug="haftasonum" style="--tint:#FFC857">
+<img alt="Hafta Sonum icon" class="icon" height="64" loading="lazy" src="/haftasonum/icon.png" width="64"/>
+<div class="tbody">
+<h3><a class="stretch" href="/haftasonum/"><span lang="pt">Hafta Sonum</span></a> <span class="badge" data-new-until="2026-12-02"><span lang="pt">NOVO</span></span></h3>
+<p lang="pt">O que fazer neste fim de semana? Teatro, shows, exposições e eventos infantis na sua cidade em uma só tela, sem conta nem localização (só em turco, Turquia).</p>
+<div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.haftasonum.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg aria-hidden="true" height="14" viewbox="0 0 24 24" width="14"><path d="M5 3.5v17l15-8.5z" fill="currentColor"></path></svg>Google Play</a><details class="qr" data-qr="haftasonum"><summary><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z" fill="currentColor"></path></svg><span lang="pt">QR</span></summary><div class="qrpop"><img alt="QR code: install Hafta Sonum" height="183" loading="lazy" src="/qr/haftasonum.svg" width="183"/><p lang="pt">Escaneie com o celular</p></div></details></div>
+</div>
+</article>
+<article class="tool" data-pkg="com.calisanasistani.nesimapps" data-slug="calisan" style="--tint:#2F6F5E">
+<img alt="Çalışan Asistanı icon" class="icon" height="64" loading="lazy" src="/calisan/icon.svg" width="64"/>
+<div class="tbody">
+<h3><a class="stretch" href="/calisan/"><span lang="pt">Çalışan Asistanı</span></a> <span class="badge" data-new-until="2026-12-02"><span lang="pt">NOVO</span></span></h3>
+<p lang="pt">Salário líquido, indenização e aviso prévio, horas extras e planejamento de folgas em um só app, para trabalhadores na Turquia (só em turco), com um simpático assistente.</p>
+<div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.calisanasistani.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg aria-hidden="true" height="14" viewbox="0 0 24 24" width="14"><path d="M5 3.5v17l15-8.5z" fill="currentColor"></path></svg>Google Play</a><details class="qr" data-qr="calisan"><summary><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z" fill="currentColor"></path></svg><span lang="pt">QR</span></summary><div class="qrpop"><img alt="QR code: install Çalışan Asistanı" height="183" loading="lazy" src="/qr/calisan.svg" width="183"/><p lang="pt">Escaneie com o celular</p></div></details><button aria-controls="calisan-demo" aria-expanded="false" class="gp demo" data-demo-src="/calisan.js?v=3" data-demo-toggle="calisan" type="button">▶ <span lang="pt">Experimente aqui</span></button></div>
+</div>
+</article>
+<article class="tool" data-pkg="com.uzaygunlugu.nesimapps" data-slug="uzaygunlugu" style="--tint:#3A5BC7">
+<img alt="Uzay Günlüğü icon" class="icon" height="64" loading="lazy" src="/uzaygunlugu/icon.png" width="64"/>
+<div class="tbody">
+<h3><a class="stretch" href="/uzaygunlugu/"><span lang="pt">Uzay Günlüğü</span></a> <span class="badge" data-new-until="2026-12-02"><span lang="pt">NOVO</span></span></h3>
+<p lang="pt">Um novo cartão espacial por dia, a Turquia vista do espaço, a Terra girando e a posição ao vivo da ISS, com dados públicos da NASA (só em turco).</p>
+<div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.uzaygunlugu.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg aria-hidden="true" height="14" viewbox="0 0 24 24" width="14"><path d="M5 3.5v17l15-8.5z" fill="currentColor"></path></svg>Google Play</a><details class="qr" data-qr="uzaygunlugu"><summary><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z" fill="currentColor"></path></svg><span lang="pt">QR</span></summary><div class="qrpop"><img alt="QR code: install Uzay Günlüğü" height="183" loading="lazy" src="/qr/uzaygunlugu.svg" width="183"/><p lang="pt">Escaneie com o celular</p></div></details></div>
+</div>
+</article>
+<article class="tool" data-pkg="com.nesim.sansoyunlari" data-slug="sansoyunlari" style="--tint:#F2B23A">
+<img alt="Şans Oyunları icon" class="icon" height="64" loading="lazy" src="/sansoyunlari/icon.svg" width="64"/>
+<div class="tbody">
+<h3><a class="stretch" href="/sansoyunlari/"><span lang="pt">Şans Oyunları</span></a> <span class="chip pop"><span lang="pt">POPULAR</span></span></h3>
+<p lang="pt">Resultados das loterias turcas (Sayısal Loto, Süper Loto, Şans Topu, On Numara, Milli Piyango), bilhetes aleatórios e conferência de bilhetes.</p>
+<div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.nesim.sansoyunlari&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg aria-hidden="true" height="14" viewbox="0 0 24 24" width="14"><path d="M5 3.5v17l15-8.5z" fill="currentColor"></path></svg>Google Play</a><details class="qr" data-qr="sansoyunlari"><summary><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z" fill="currentColor"></path></svg><span lang="pt">QR</span></summary><div class="qrpop"><img alt="QR code: install Şans Oyunları" height="183" loading="lazy" src="/qr/sansoyunlari.svg" width="183"/><p lang="pt">Escaneie com o celular</p></div></details></div>
+</div>
+</article>
+<article class="tool" data-pkg="com.whereami.nesimapps" data-slug="whereami" style="--tint:#E5544B">
+<img alt="Where Am I? icon" class="icon" height="64" loading="lazy" src="/whereami/icon.svg" width="64"/>
+<div class="tbody">
+<h3><a class="stretch" href="/pt/whereami/"><span lang="pt">Onde estou?</span></a></h3>
+<p lang="pt">Veja onde você está no mapa com seu endereço e coordenadas; copie ou compartilhe.</p>
+<div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.whereami.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg aria-hidden="true" height="14" viewbox="0 0 24 24" width="14"><path d="M5 3.5v17l15-8.5z" fill="currentColor"></path></svg>Google Play</a><details class="qr" data-qr="whereami"><summary><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z" fill="currentColor"></path></svg><span lang="pt">QR</span></summary><div class="qrpop"><img alt="QR code: install Where Am I?" height="183" loading="lazy" src="/qr/whereami.svg" width="183"/><p lang="pt">Escaneie com o celular</p></div></details></div>
+</div>
+</article>
+<article class="tool" data-pkg="com.agecalculator.nesimapps" data-slug="agecalculator" style="--tint:#5AB8D8">
+<img alt="Age Calculator icon" class="icon" height="64" loading="lazy" src="/agecalculator/icon.svg" width="64"/>
+<div class="tbody">
+<h3><a class="stretch" href="/pt/agecalculator/"><span lang="pt">Calculadora de idade</span></a></h3>
+<p lang="pt">Calcule sua idade exata e o tempo entre datas, e mantenha uma lista de aniversários e datas especiais.</p>
+<div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.agecalculator.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg aria-hidden="true" height="14" viewbox="0 0 24 24" width="14"><path d="M5 3.5v17l15-8.5z" fill="currentColor"></path></svg>Google Play</a><details class="qr" data-qr="agecalculator"><summary><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z" fill="currentColor"></path></svg><span lang="pt">QR</span></summary><div class="qrpop"><img alt="QR code: install Age Calculator" height="183" loading="lazy" src="/qr/agecalculator.svg" width="183"/><p lang="pt">Escaneie com o celular</p></div></details></div>
+</div>
+</article>
+<article class="tool" data-pkg="com.sondepremler.nesimapps" data-slug="sondepremler" style="--tint:#E04F5F">
+<img alt="Son Depremler icon" class="icon" height="64" loading="lazy" src="/sondepremler/icon.svg" width="64"/>
+<div class="tbody">
+<h3><a class="stretch" href="/sondepremler/"><span lang="pt">Son Depremler</span></a></h3>
+<p lang="pt">Terremotos recentes na Turquia e arredores segundo AFAD e Kandilli, com mapa e estatísticas.</p>
+<div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.sondepremler.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg aria-hidden="true" height="14" viewbox="0 0 24 24" width="14"><path d="M5 3.5v17l15-8.5z" fill="currentColor"></path></svg>Google Play</a><details class="qr" data-qr="sondepremler"><summary><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z" fill="currentColor"></path></svg><span lang="pt">QR</span></summary><div class="qrpop"><img alt="QR code: install Son Depremler" height="183" loading="lazy" src="/qr/sondepremler.svg" width="183"/><p lang="pt">Escaneie com o celular</p></div></details></div>
+</div>
+</article>
+<article class="tool" data-pkg="com.bmicalculator.nesimapps" data-slug="bmicalculator" style="--tint:#5BB27A">
+<img alt="BMI Calculator icon" class="icon" height="64" loading="lazy" src="/bmicalculator/icon.svg" width="64"/>
+<div class="tbody">
+<h3><a class="stretch" href="/pt/bmicalculator/"><span lang="pt">Calculadora de IMC</span></a></h3>
+<p lang="pt">Calcule seu IMC com as categorias da OMS e veja a faixa de peso saudável para sua altura.</p>
+<div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.bmicalculator.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg aria-hidden="true" height="14" viewbox="0 0 24 24" width="14"><path d="M5 3.5v17l15-8.5z" fill="currentColor"></path></svg>Google Play</a><details class="qr" data-qr="bmicalculator"><summary><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z" fill="currentColor"></path></svg><span lang="pt">QR</span></summary><div class="qrpop"><img alt="QR code: install BMI Calculator" height="183" loading="lazy" src="/qr/bmicalculator.svg" width="183"/><p lang="pt">Escaneie com o celular</p></div></details></div>
+</div>
+</article>
+<article class="tool" data-pkg="com.nationalanthemofturkey.nesimapps" data-slug="anthemturkey" style="--tint:#E30A17">
+<img alt="National Anthem of Turkey icon" class="icon" height="64" loading="lazy" src="/anthemturkey/icon.svg" width="64"/>
+<div class="tbody">
+<h3><a class="stretch" href="/anthemturkey/"><span lang="pt">National Anthem of Turkey</span></a></h3>
+<p lang="pt">İstiklal Marşı, o hino nacional da Türkiye, com uma bandeira ondulante; toca em segundo plano e no Chromecast.</p>
+<div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.nationalanthemofturkey.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg aria-hidden="true" height="14" viewbox="0 0 24 24" width="14"><path d="M5 3.5v17l15-8.5z" fill="currentColor"></path></svg>Google Play</a><details class="qr" data-qr="anthemturkey"><summary><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z" fill="currentColor"></path></svg><span lang="pt">QR</span></summary><div class="qrpop"><img alt="QR code: install National Anthem of Turkey" height="183" loading="lazy" src="/qr/anthemturkey.svg" width="183"/><p lang="pt">Escaneie com o celular</p></div></details></div>
+</div>
+</article>
+<article class="tool" data-pkg="com.nationalanthemofcanada.nesimapps" data-slug="anthemcanada" style="--tint:#D52B1E">
+<img alt="National Anthem of Canada icon" class="icon" height="64" loading="lazy" src="/anthemcanada/icon.svg" width="64"/>
+<div class="tbody">
+<h3><a class="stretch" href="/anthemcanada/"><span lang="pt">National Anthem of Canada</span></a></h3>
+<p lang="pt">O Canada, o hino nacional do Canadá, com uma bandeira ondulante; toca em segundo plano e no Chromecast.</p>
+<div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.nationalanthemofcanada.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg aria-hidden="true" height="14" viewbox="0 0 24 24" width="14"><path d="M5 3.5v17l15-8.5z" fill="currentColor"></path></svg>Google Play</a><details class="qr" data-qr="anthemcanada"><summary><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z" fill="currentColor"></path></svg><span lang="pt">QR</span></summary><div class="qrpop"><img alt="QR code: install National Anthem of Canada" height="183" loading="lazy" src="/qr/anthemcanada.svg" width="183"/><p lang="pt">Escaneie com o celular</p></div></details></div>
+</div>
+</article>
+<article class="tool" data-pkg="com.nesim.turksail" data-slug="turksail" style="--tint:#2E6FBF">
+<img alt="TurkSail icon" class="icon" height="64" loading="lazy" src="/turksail/icon.svg" width="64"/>
+<div class="tbody">
+<h3><a class="stretch" href="/turksail/"><span lang="pt">TurkSail</span></a></h3>
+<p lang="pt">Notícias de vela e mar, resultados de regatas e artigos de turksail.com (em turco).</p>
+<div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.nesim.turksail&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg aria-hidden="true" height="14" viewbox="0 0 24 24" width="14"><path d="M5 3.5v17l15-8.5z" fill="currentColor"></path></svg>Google Play</a><details class="qr" data-qr="turksail"><summary><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z" fill="currentColor"></path></svg><span lang="pt">QR</span></summary><div class="qrpop"><img alt="QR code: install TurkSail" height="183" loading="lazy" src="/qr/turksail.svg" width="183"/><p lang="pt">Escaneie com o celular</p></div></details></div>
+</div>
+</article>
+<article class="tool" data-pkg="com.nesim.medyafobi" data-slug="medyafobi" style="--tint:#D9302C">
+<img alt="MedyaFobi icon" class="icon" height="64" loading="lazy" src="/medyafobi/icon.svg" width="64"/>
+<div class="tbody">
+<h3><a class="stretch" href="/medyafobi/"><span lang="pt">MedyaFobi</span></a></h3>
+<p lang="pt">Relações com a mídia, comunicação de crise e treinamentos de oratória de medyafobi.com (em turco).</p>
+<div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.nesim.medyafobi&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg aria-hidden="true" height="14" viewbox="0 0 24 24" width="14"><path d="M5 3.5v17l15-8.5z" fill="currentColor"></path></svg>Google Play</a><details class="qr" data-qr="medyafobi"><summary><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z" fill="currentColor"></path></svg><span lang="pt">QR</span></summary><div class="qrpop"><img alt="QR code: install MedyaFobi" height="183" loading="lazy" src="/qr/medyafobi.svg" width="183"/><p lang="pt">Escaneie com o celular</p></div></details></div>
+</div>
+</article>
+</div>
+<div class="demo-panel" hidden="" id="calisan-demo">
+<h3><span lang="pt">Çalışan Asistanı: experimente no navegador</span></h3>
+<div data-calisan="" data-play="https://play.google.com/store/apps/details?id=com.calisanasistani.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"></div>
+</div>
+</section>
+<section class="about" id="about">
+<img alt="Nesim Razon" height="96" src="/nesim.jpg" width="96"/>
+<div class="abody">
+<h2><span lang="pt">Olá, eu sou o Nesim.</span></h2>
+<p lang="pt">Sou um desenvolvedor Android independente. Eu mesmo projeto, programo e publico meus jogos e apps. A maioria é grátis e nenhum pede que você crie uma conta. Se tiver uma sugestão ou um erro para relatar, escreva para mim: leio todas as mensagens.</p>
+<div class="contacts">
+<a class="main" href="mailto:nesim.razon@gmail.com"><span lang="pt">Enviar e-mail</span></a>
+<a href="https://play.google.com/store/apps/dev?id=4632277715794688965" rel="noopener">Google Play</a>
+<a href="https://www.linkedin.com/in/nesimrazon/" rel="me noopener">LinkedIn</a><a href="https://x.com/nrazon" rel="me noopener">X</a><a href="https://www.instagram.com/nesimrazon/" rel="me noopener">Instagram</a>
+</div>
+</div>
+</section>
+<footer>
+<div class="row"><span>© 2026 Nesim Razon</span><span>·</span><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a><span>·</span><a href="/site-privacy.html"><span lang="pt">Privacidade do site</span></a></div>
+<details><summary><span lang="pt">Políticas de privacidade dos apps</span></summary><ul><li><a href="/tilelings/privacy.html">Tilelings</a></li><li><a href="/logiclings/privacy.html">Logiclings</a></li><li><a href="/cardles/privacy.html">Cardles</a></li><li><a href="/beamies/privacy.html">Beamies</a></li><li><a href="/cubbles/privacy.html">Cubbles</a></li><li><a href="/sliplines/privacy.html">Sliplines</a></li><li><a href="/game2048/privacy.html">2048</a></li><li><a href="/tictactoe/privacy.html">Tic-Tac-Toe</a></li><li><a href="/haftasonum/privacy.html">Hafta Sonum</a></li><li><a href="/calisan/privacy.html">Çalışan Asistanı</a></li><li><a href="/uzaygunlugu/privacy.html">Uzay Günlüğü</a></li><li><a href="/sansoyunlari/privacy.html">Şans Oyunları</a></li><li><a href="/whereami/privacy.html">Where Am I?</a></li><li><a href="/agecalculator/privacy.html">Age Calculator</a></li><li><a href="/sondepremler/privacy.html">Son Depremler</a></li><li><a href="/bmicalculator/privacy.html">BMI Calculator</a></li><li><a href="/anthemturkey/privacy.html">National Anthem of Turkey</a></li><li><a href="/anthemcanada/privacy.html">National Anthem of Canada</a></li><li><a href="/turksail/privacy.html">TurkSail</a></li><li><a href="/medyafobi/privacy.html">MedyaFobi</a></li></ul></details>
+</footer>
+</main>
+<script src="/eyes.js"></script>
+<script>
+  
+  expireBadges();
+</script>
+</body>
+</html>

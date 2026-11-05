@@ -1,0 +1,414 @@
+{
+ "https://nrazon.github.io/": {
+  "hash": "b949a267369aa2f6d0b9581d6abbb5f8",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/agecalculator/": {
+  "hash": "7e2bbd57037ef32115970ab4dc9b2235",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/anthemcanada/": {
+  "hash": "43b5366e8064d963534e6374e2767aa0",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/anthemturkey/": {
+  "hash": "18c20d35f42940242c29f21b1b426492",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/beamies/": {
+  "hash": "da4dca37fec3a326a6ea3f09c0f9e62e",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/bmicalculator/": {
+  "hash": "54d4cdeee3f69a1239136b6f7aa84704",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/calisan/": {
+  "hash": "a1c564de59af09e94d4b7d11da99ba2f",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/cardles/": {
+  "hash": "ce1f9f8c6e1d9df42d50fd94db902aaf",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/cubbles/": {
+  "hash": "e2809f0a46f042a75f66ccc268c68e81",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/es/": {
+  "hash": "038c0498c487b05ab1955e31ff2e3bb9",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/es/agecalculator/": {
+  "hash": "4a58fee59d73e030a2d22b5a3aa9be14",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/es/beamies/": {
+  "hash": "a26503dd5333f07d0f9aa29be1c6efc7",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/es/bmicalculator/": {
+  "hash": "6393b320e0d4bd82b3b3b2fd5390647a",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/es/cardles/": {
+  "hash": "836773fad8ad1c6a475e66adb539eb00",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/es/cubbles/": {
+  "hash": "d394ed8a0b1e698c2d6efc3ea0b99513",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/es/game2048/": {
+  "hash": "15b61007d4150b607c9f6b6c121578dc",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/es/logiclings/": {
+  "hash": "f0de29ac8c3ef0842c82860453a26a36",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/es/sliplines/": {
+  "hash": "314ae6e354c555bc150670943a6c7ace",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/es/tictactoe/": {
+  "hash": "680647c6e2fa60db4b08ada121a1c873",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/es/tilelings/": {
+  "hash": "6b7091c811775bc660fa927f1bdbb7fb",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/es/whereami/": {
+  "hash": "f05bf726ce3a64c0af500c6a3b96de9b",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/fr/anthemcanada/": {
+  "hash": "461771758bca606165623d045df3b8ee",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/game2048/": {
+  "hash": "1bc073dcdd7e32cad959e117092e2745",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/haftasonum/": {
+  "hash": "c146cccc2fcb7221ea4c10f4b9a362dc",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/logiclings/": {
+  "hash": "b367b82ac6fef838a1cb74e25277c5d3",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/medyafobi/": {
+  "hash": "72c6223a94a8786298d627fe39cfef37",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/pt/": {
+  "hash": "e1e2b3958acaa8c74ba2c855a7ae3e38",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/pt/agecalculator/": {
+  "hash": "29321ff3d8ba78e8fd0d396a3d4b2e29",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/pt/beamies/": {
+  "hash": "7888c31306b051b318c157febba25b59",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/pt/bmicalculator/": {
+  "hash": "cb08fd9c8e5160ee46d4dc2f1c4e75b8",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/pt/cardles/": {
+  "hash": "aa59a684a90092eb17b7d1fe23daebf3",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/pt/cubbles/": {
+  "hash": "9a126b356afe295bbcd78cee4097e81a",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/pt/game2048/": {
+  "hash": "1241230a0d8183386b12afa5c8c8a638",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/pt/logiclings/": {
+  "hash": "e7746f27fde7225a44d8453ef047709b",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/pt/sliplines/": {
+  "hash": "1ab922bfe2a84c56e5eabe59104c1cee",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/pt/tictactoe/": {
+  "hash": "ec211345418439900ead3548c59bd34b",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/pt/tilelings/": {
+  "hash": "d89ddbafb0e80b47ddcaf05395be0f0a",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/pt/whereami/": {
+  "hash": "60a1d0db5c11f52180a1778bf89b4e2e",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/sansoyunlari/": {
+  "hash": "9f2c325103fdc06c0cd1b3c332a1f136",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/sliplines/": {
+  "hash": "7a70991b8aa0b120b838505d72aaefaa",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/sondepremler/": {
+  "hash": "4077b43609e27c75be44658373ea37e5",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tictactoe/": {
+  "hash": "c309fc4258b9acad2e1d0a19c47c36eb",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tilelings/": {
+  "hash": "1b8f82989cfe271e2a267b376607e7b0",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/": {
+  "hash": "18afdcabaf998ad8c91753821529654d",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/agecalculator/": {
+  "hash": "df8e2673c34e03cf8e942850a5776c89",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/anthemcanada/": {
+  "hash": "70ac8da3f3e694e808ae76a9f294a1f4",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/anthemturkey/": {
+  "hash": "d7755550248dfb51f924b551adf1fb76",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/beamies/": {
+  "hash": "2520f58efab257f0059f2d02dbcd4180",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/bmicalculator/": {
+  "hash": "5b2acd78d68e1c4042cb20a99f42b403",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/calisan/": {
+  "hash": "eacad80fdf24f78899a1428692b76c58",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/cardles/": {
+  "hash": "e810a09e664019b98473cdeb93a1626b",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/cubbles/": {
+  "hash": "e4e03c1b43e47bc704230104c6188e1e",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/game2048/": {
+  "hash": "17b3cc6b431535dd62fbdf5b95c28aa2",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/haftasonum/": {
+  "hash": "9a9e1091b481acf153ae4b2b4598efff",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/logiclings/": {
+  "hash": "cb27aaf6c2740674f1a612831aec18e8",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/medyafobi/": {
+  "hash": "fa63241f03bc3a3992e380e644bc3fac",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/sansoyunlari/": {
+  "hash": "c7340f8cf05bbbe463c463609b2906fa",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/sliplines/": {
+  "hash": "67d7d52d82a126d02839fa486f7f1718",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/sondepremler/": {
+  "hash": "2f922e53f59513ccfe1eaafeed5b5296",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/tictactoe/": {
+  "hash": "d74dc5344761a405459d61049185e9ba",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/tilelings/": {
+  "hash": "aae3a12ffe3825796582c770894a4c77",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/turksail/": {
+  "hash": "a6bec10fa118c657ebd62ea2bb3f121c",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/uzaygunlugu/": {
+  "hash": "2417048df8de92a7de51cf316893c225",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/whereami/": {
+  "hash": "7797829fc14a2f141e2df69df6812543",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/turksail/": {
+  "hash": "4bff3aaf24e07ae0ca22b8a40388d06b",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/uzaygunlugu/": {
+  "hash": "ae3240808699a412250e988f175949a5",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/whereami/": {
+  "hash": "cd69ee1fdb97d3e1d1156a05a07d2341",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/es/guias/": {
+  "hash": "e00c019ae10468515f1ffa6aef167a7a",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/es/guias/como-jugar-2048-estrategia/": {
+  "hash": "4156093450641294885fa911432cada0",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/es/guias/como-jugar-beamies/": {
+  "hash": "5b6f41f65aeb32b3df13ea9f52a474f1",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/es/guias/como-jugar-mahjong-solitario/": {
+  "hash": "3b589e9d5e9b909fe93ba9d18cf9c7d3",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/es/guias/como-jugar-puzle-de-flechas/": {
+  "hash": "63f056088947e66764386c49ddfddfc2",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/es/guias/como-jugar-solitario-klondike/": {
+  "hash": "8f1032915987a56cb04feccb606098dd",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/es/guias/como-resolver-corona-gemelos-camino/": {
+  "hash": "1933f575a45cf29b8a891ab3fa45f57f",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/es/guias/tres-en-raya-estrategia-para-no-perder/": {
+  "hash": "e92be493cfc8e1a3dbfd0414d97bb250",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/es/guias/trucos-puzle-de-bloques/": {
+  "hash": "58a1797893c423393c0344e2fe1300e4",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/guides/": {
+  "hash": "edb91cfb4ad2251e100305eedb33c6e3",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/guides/block-puzzle-tips-and-tricks/": {
+  "hash": "89361ae3a400b63e835935e72d41ea42",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/guides/how-to-play-2048-strategy/": {
+  "hash": "1b5598b7e0766681ad91ab2202067d4d",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/guides/how-to-play-arrow-puzzle/": {
+  "hash": "0b8ebc619b4ad644340a5d6688b17ead",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/guides/how-to-play-beamies/": {
+  "hash": "bdfba31f1ab6518a7364e9a68a7e7336",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/guides/how-to-play-klondike-solitaire/": {
+  "hash": "5d30173205e82b71e5a6bff261e2dd0b",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/guides/how-to-play-mahjong-solitaire/": {
+  "hash": "d8587f665f97b6bd6fc7fb84f6f192e9",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/guides/how-to-solve-crown-twin-path-puzzles/": {
+  "hash": "c2b50d1fed20069e278a607c74cccea0",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/": {
+  "hash": "ad4d3442645ab0fc9033457bbf94b219",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/pt/guias/": {
+  "hash": "47906fb4838d6bf4eba33134b82cc552",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/pt/guias/como-jogar-2048-estrategia/": {
+  "hash": "0a39b82115bb6926842cfc99b5a0f2fe",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/pt/guias/como-jogar-beamies/": {
+  "hash": "97faac8a0091a4c82472b75d55a92285",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/pt/guias/como-jogar-mahjong-paciencia/": {
+  "hash": "ab0075f7a2997962baa080e2dc690ded",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/pt/guias/como-jogar-paciencia-klondike/": {
+  "hash": "0370f0ad7374e61c9dfee936ca965590",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/pt/guias/como-jogar-quebra-cabeca-de-setas/": {
+  "hash": "90aeb28f4bce553bdd206ac40e106663",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/pt/guias/como-resolver-coroa-gemeos-caminho/": {
+  "hash": "b58776b7efa889b074cbc0b65ac4eed8",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/pt/guias/dicas-quebra-cabeca-de-blocos/": {
+  "hash": "a3f7375745aca5a0fc52460cd2b66a72",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/pt/guias/jogo-da-velha-estrategia-para-nao-perder/": {
+  "hash": "966cd683ce2e04fbaed86250c5c3346c",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/rehber/": {
+  "hash": "ba04fec1f58e809406b1a26d56453004",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/rehber/2048-nasil-oynanir-strateji/": {
+  "hash": "0c063495335a1f98bf98476149eeb2d7",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/rehber/beamies-nasil-oynanir/": {
+  "hash": "e3a6e925676f8940d57c7c708cffdce2",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/rehber/blok-bulmaca-ipuclari/": {
+  "hash": "6d83992270ac1711b1d3a40f7bab1494",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/rehber/klondike-solitaire-nasil-oynanir/": {
+  "hash": "617fc88095a0277c88bf0600bbf2216e",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/rehber/mahjong-solitaire-nasil-oynanir/": {
+  "hash": "d14a3aaf3011388ebe858ab55d88e364",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/rehber/ok-bulmacasi-nasil-oynanir/": {
+  "hash": "0b2da19334e4f2bf2f83f6f7e71bdb18",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/rehber/tac-ikiz-yol-bulmacalari-nasil-cozulur/": {
+  "hash": "d1c64f5e209d642b5b1f0828b7ef485b",
+  "date": "2026-11-05"
+ },
+ "https://nrazon.github.io/tr/rehber/xox-yenilmez-strateji/": {
+  "hash": "d1fd9c88697e1258ee0c4b8f8e6dabee",
+  "date": "2026-11-05"
+ }
+}

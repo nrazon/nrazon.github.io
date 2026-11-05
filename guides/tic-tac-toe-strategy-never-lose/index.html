@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tic-Tac-Toe Strategy: How to Never Lose | Nesim Apps</title>
+<meta name="description" content="The rules of Tic-Tac-Toe (noughts and crosses) and a simple strategy that guarantees you never lose: best first moves, blocking and forks.">
+<link rel="canonical" href="https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/xox-yenilmez-strateji/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/tres-en-raya-estrategia-para-no-perder/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/jogo-da-velha-estrategia-para-nao-perder/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#4CC9C0">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Tic-Tac-Toe Strategy: How to Never Lose">
+<meta property="og:description" content="The rules of Tic-Tac-Toe (noughts and crosses) and a simple strategy that guarantees you never lose: best first moves, blocking and forks.">
+<meta property="og:url" content="https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tic-Tac-Toe Strategy: How to Never Lose">
+<meta name="twitter:description" content="The rules of Tic-Tac-Toe (noughts and crosses) and a simple strategy that guarantees you never lose: best first moves, blocking and forks.">
+<style>:root { --accent:#4CC9C0; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=3" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "Tic-Tac-Toe Strategy: How to Never Lose", "description": "The rules of Tic-Tac-Toe (noughts and crosses) and a simple strategy that guarantees you never lose: best first moves, blocking and forks.", "inLanguage": "en", "mainEntityOfPage": "https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-05", "dateModified": "2026-11-05", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}, "about": {"@type": "SoftwareApplication", "name": "Tic-Tac-Toe", "operatingSystem": "Android", "applicationCategory": "GameApplication", "url": "https://nrazon.github.io/tictactoe/"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can Tic-Tac-Toe be won against perfect play?", "acceptedAnswer": {"@type": "Answer", "text": "No. If both players play perfectly the game ends in a draw. You win only when your opponent makes a mistake."}}, {"@type": "Question", "name": "Who should go first?", "acceptedAnswer": {"@type": "Answer", "text": "Going first is an advantage because you can set up a fork, but it never guarantees a win against perfect defense."}}, {"@type": "Question", "name": "How hard is the computer?", "acceptedAnswer": {"@type": "Answer", "text": "In the app, Easy is relaxed, Medium blocks your moves but can be tricked, and Hard plays perfectly and never loses. Can you draw?"}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://nrazon.github.io/guides/"}, {"@type": "ListItem", "position": 3, "name": "Tic-Tac-Toe Strategy: How to Never Lose", "item": "https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/"}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/guides/tic-tac-toe-strategy-never-lose/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/rehber/xox-yenilmez-strateji/" hreflang="tr" data-lang="tr">TR</a><a href="/es/guias/tres-en-raya-estrategia-para-no-perder/" hreflang="es" data-lang="es">ES</a><a href="/pt/guias/jogo-da-velha-estrategia-para-nao-perder/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/guides/">Guides</a></nav>
+    <h1>Tic-Tac-Toe Strategy: How to Never Lose</h1>
+    <p class="by">By Nesim Razon, independent Android developer</p>
+    <p class="lead">Tic-Tac-Toe is a solved game: with correct play by both sides it always ends in a draw. That means you can learn a few rules and never lose. Here are the rules and the strategy, which you can practice against the computer on Hard.</p>
+    <h2>The rules</h2>
+    <p>Two players take turns placing X and O on a 3x3 grid. The first player to get three of their marks in a row, horizontally, vertically or diagonally, wins. If the grid fills with no winner, it is a draw.</p>
+    <h2>If you go first</h2>
+    <ul><li>Start in a corner or in the center. A corner gives the opponent the most chances to go wrong.</li><li>If the opponent does not answer in the center, you can often force a win.</li><li>After your first move, aim to create a fork: a move that creates two threats of three in a row at once. The opponent can block only one.</li></ul>
+    <h2>If you go second</h2>
+    <ul><li>If the opponent starts in the center, take a corner.</li><li>If the opponent starts in a corner, take the center.</li><li>Never answer a corner or a center opening with an edge: against correct play, that loses.</li></ul>
+    <h2>Always, on every move</h2>
+    <ul><li>First check whether you can win this move. If you can, do it.</li><li>Then check whether the opponent threatens to win and block it.</li><li>Then look for a fork for yourself, and block the opponent&#x27;s forks.</li><li>If nothing else applies, take the center, then a corner, then an edge.</li></ul>
+    <aside class="gcta"><img class="ic" src="/tictactoe/icon.svg" alt="Tic-Tac-Toe icon" width="64" height="64"><div class="tx"><b>Try it free: Tic-Tac-Toe</b><span>Free on Google Play. No account needed.</span></div><a class="play" href="https://play.google.com/store/apps/details?id=com.tictactoe.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dguide%26utm_campaign%3Dtictactoe"><img src="/badges/google-play-en.svg" alt="Google Play" width="162" height="48"></a><a class="small" href="/tictactoe/">About Tic-Tac-Toe</a></aside>
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Can Tic-Tac-Toe be won against perfect play?</summary><p>No. If both players play perfectly the game ends in a draw. You win only when your opponent makes a mistake.</p></details><details><summary>Who should go first?</summary><p>Going first is an advantage because you can set up a fork, but it never guarantees a win against perfect defense.</p></details><details><summary>How hard is the computer?</summary><p>In the app, Easy is relaxed, Medium blocks your moves but can be tricked, and Hard plays perfectly and never loses. Can you draw?</p></details></section>
+    <section><h2>More guides</h2><ul class="glist"><li><a href="/guides/how-to-play-mahjong-solitaire/"><img src="/tilelings/icon.png" alt="" width="48" height="48"><div><b>How to Play Mahjong Solitaire: Rules, Free Tiles and Tips</b></div></a></li><li><a href="/guides/how-to-play-klondike-solitaire/"><img src="/cardles/icon.svg" alt="" width="48" height="48"><div><b>How to Play Klondike Solitaire (and Spider, FreeCell, TriPeaks)</b></div></a></li><li><a href="/guides/block-puzzle-tips-and-tricks/"><img src="/cubbles/icon.svg" alt="" width="48" height="48"><div><b>Block Puzzle Tips and Tricks: How to Get a High Score</b></div></a></li><li><a href="/guides/how-to-play-beamies/"><img src="/beamies/icon.svg" alt="" width="48" height="48"><div><b>How to Play Beamies: Rules, Gates and Tips for 3 Stars</b></div></a></li><li><a href="/guides/how-to-play-arrow-puzzle/"><img src="/sliplines/icon.png" alt="" width="48" height="48"><div><b>How to Play an Arrow Puzzle: Rules and Tips for Sliplines</b></div></a></li><li><a href="/guides/how-to-solve-crown-twin-path-puzzles/"><img src="/logiclings/icon.png" alt="" width="48" height="48"><div><b>How to Solve Crown, Twin and Path Logic Puzzles</b></div></a></li><li><a href="/guides/how-to-play-2048-strategy/"><img src="/game2048/icon.svg" alt="" width="48" height="48"><div><b>How to Play 2048: Rules and a Simple Winning Strategy</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,830 @@
+{
+ "https://nrazon.github.io/": {
+  "url": "https://nrazon.github.io/",
+  "loc": {
+   "en": "https://nrazon.github.io/",
+   "tr": "https://nrazon.github.io/tr/",
+   "es": "https://nrazon.github.io/es/",
+   "pt": "https://nrazon.github.io/pt/"
+  },
+  "lang": "en",
+  "default": "en",
+  "hash": "b949a267369aa2f6d0b9581d6abbb5f8",
+  "slug": ""
+ },
+ "https://nrazon.github.io/tr/": {
+  "url": "https://nrazon.github.io/tr/",
+  "loc": {
+   "en": "https://nrazon.github.io/",
+   "tr": "https://nrazon.github.io/tr/",
+   "es": "https://nrazon.github.io/es/",
+   "pt": "https://nrazon.github.io/pt/"
+  },
+  "lang": "tr",
+  "default": "en",
+  "hash": "18afdcabaf998ad8c91753821529654d",
+  "slug": ""
+ },
+ "https://nrazon.github.io/es/": {
+  "url": "https://nrazon.github.io/es/",
+  "loc": {
+   "en": "https://nrazon.github.io/",
+   "tr": "https://nrazon.github.io/tr/",
+   "es": "https://nrazon.github.io/es/",
+   "pt": "https://nrazon.github.io/pt/"
+  },
+  "lang": "es",
+  "default": "en",
+  "hash": "038c0498c487b05ab1955e31ff2e3bb9",
+  "slug": ""
+ },
+ "https://nrazon.github.io/pt/": {
+  "url": "https://nrazon.github.io/pt/",
+  "loc": {
+   "en": "https://nrazon.github.io/",
+   "tr": "https://nrazon.github.io/tr/",
+   "es": "https://nrazon.github.io/es/",
+   "pt": "https://nrazon.github.io/pt/"
+  },
+  "lang": "pt",
+  "default": "en",
+  "hash": "e1e2b3958acaa8c74ba2c855a7ae3e38",
+  "slug": ""
+ },
+ "https://nrazon.github.io/agecalculator/": {
+  "url": "https://nrazon.github.io/agecalculator/",
+  "loc": {
+   "en": "https://nrazon.github.io/agecalculator/",
+   "tr": "https://nrazon.github.io/tr/agecalculator/",
+   "es": "https://nrazon.github.io/es/agecalculator/",
+   "pt": "https://nrazon.github.io/pt/agecalculator/"
+  },
+  "lang": "en",
+  "default": "en",
+  "hash": "7e2bbd57037ef32115970ab4dc9b2235",
+  "slug": "agecalculator"
+ },
+ "https://nrazon.github.io/tr/agecalculator/": {
+  "url": "https://nrazon.github.io/tr/agecalculator/",
+  "loc": {
+   "en": "https://nrazon.github.io/agecalculator/",
+   "tr": "https://nrazon.github.io/tr/agecalculator/",
+   "es": "https://nrazon.github.io/es/agecalculator/",
+   "pt": "https://nrazon.github.io/pt/agecalculator/"
+  },
+  "lang": "tr",
+  "default": "en",
+  "hash": "df8e2673c34e03cf8e942850a5776c89",
+  "slug": "agecalculator"
+ },
+ "https://nrazon.github.io/es/agecalculator/": {
+  "url": "https://nrazon.github.io/es/agecalculator/",
+  "loc": {
+   "en": "https://nrazon.github.io/agecalculator/",
+   "tr": "https://nrazon.github.io/tr/agecalculator/",
+   "es": "https://nrazon.github.io/es/agecalculator/",
+   "pt": "https://nrazon.github.io/pt/agecalculator/"
+  },
+  "lang": "es",
+  "default": "en",
+  "hash": "4a58fee59d73e030a2d22b5a3aa9be14",
+  "slug": "agecalculator"
+ },
+ "https://nrazon.github.io/pt/agecalculator/": {
+  "url": "https://nrazon.github.io/pt/agecalculator/",
+  "loc": {
+   "en": "https://nrazon.github.io/agecalculator/",
+   "tr": "https://nrazon.github.io/tr/agecalculator/",
+   "es": "https://nrazon.github.io/es/agecalculator/",
+   "pt": "https://nrazon.github.io/pt/agecalculator/"
+  },
+  "lang": "pt",
+  "default": "en",
+  "hash": "29321ff3d8ba78e8fd0d396a3d4b2e29",
+  "slug": "agecalculator"
+ },
+ "https://nrazon.github.io/anthemcanada/": {
+  "url": "https://nrazon.github.io/anthemcanada/",
+  "loc": {
+   "en": "https://nrazon.github.io/anthemcanada/",
+   "fr": "https://nrazon.github.io/fr/anthemcanada/"
+  },
+  "lang": "en",
+  "default": "en",
+  "hash": "43b5366e8064d963534e6374e2767aa0",
+  "slug": "anthemcanada"
+ },
+ "https://nrazon.github.io/tr/anthemcanada/": {
+  "url": "https://nrazon.github.io/tr/anthemcanada/",
+  "loc": {
+   "en": "https://nrazon.github.io/anthemcanada/",
+   "tr": "https://nrazon.github.io/tr/anthemcanada/",
+   "fr": "https://nrazon.github.io/fr/anthemcanada/"
+  },
+  "lang": "tr",
+  "default": "en",
+  "hash": "70ac8da3f3e694e808ae76a9f294a1f4",
+  "slug": "anthemcanada"
+ },
+ "https://nrazon.github.io/fr/anthemcanada/": {
+  "url": "https://nrazon.github.io/fr/anthemcanada/",
+  "loc": {
+   "en": "https://nrazon.github.io/anthemcanada/",
+   "fr": "https://nrazon.github.io/fr/anthemcanada/"
+  },
+  "lang": "fr",
+  "default": "en",
+  "hash": "461771758bca606165623d045df3b8ee",
+  "slug": "anthemcanada"
+ },
+ "https://nrazon.github.io/anthemturkey/": {
+  "url": "https://nrazon.github.io/anthemturkey/",
+  "loc": {
+   "en": "https://nrazon.github.io/anthemturkey/",
+   "tr": "https://nrazon.github.io/tr/anthemturkey/"
+  },
+  "lang": "en",
+  "default": "en",
+  "hash": "18c20d35f42940242c29f21b1b426492",
+  "slug": "anthemturkey"
+ },
+ "https://nrazon.github.io/tr/anthemturkey/": {
+  "url": "https://nrazon.github.io/tr/anthemturkey/",
+  "loc": {
+   "en": "https://nrazon.github.io/anthemturkey/",
+   "tr": "https://nrazon.github.io/tr/anthemturkey/"
+  },
+  "lang": "tr",
+  "default": "en",
+  "hash": "d7755550248dfb51f924b551adf1fb76",
+  "slug": "anthemturkey"
+ },
+ "https://nrazon.github.io/beamies/": {
+  "url": "https://nrazon.github.io/beamies/",
+  "loc": {
+   "en": "https://nrazon.github.io/beamies/",
+   "tr": "https://nrazon.github.io/tr/beamies/",
+   "es": "https://nrazon.github.io/es/beamies/",
+   "pt": "https://nrazon.github.io/pt/beamies/"
+  },
+  "lang": "en",
+  "default": "en",
+  "hash": "da4dca37fec3a326a6ea3f09c0f9e62e",
+  "slug": "beamies"
+ },
+ "https://nrazon.github.io/tr/beamies/": {
+  "url": "https://nrazon.github.io/tr/beamies/",
+  "loc": {
+   "en": "https://nrazon.github.io/beamies/",
+   "tr": "https://nrazon.github.io/tr/beamies/",
+   "es": "https://nrazon.github.io/es/beamies/",
+   "pt": "https://nrazon.github.io/pt/beamies/"
+  },
+  "lang": "tr",
+  "default": "en",
+  "hash": "2520f58efab257f0059f2d02dbcd4180",
+  "slug": "beamies"
+ },
+ "https://nrazon.github.io/es/beamies/": {
+  "url": "https://nrazon.github.io/es/beamies/",
+  "loc": {
+   "en": "https://nrazon.github.io/beamies/",
+   "tr": "https://nrazon.github.io/tr/beamies/",
+   "es": "https://nrazon.github.io/es/beamies/",
+   "pt": "https://nrazon.github.io/pt/beamies/"
+  },
+  "lang": "es",
+  "default": "en",
+  "hash": "a26503dd5333f07d0f9aa29be1c6efc7",
+  "slug": "beamies"
+ },
+ "https://nrazon.github.io/pt/beamies/": {
+  "url": "https://nrazon.github.io/pt/beamies/",
+  "loc": {
+   "en": "https://nrazon.github.io/beamies/",
+   "tr": "https://nrazon.github.io/tr/beamies/",
+   "es": "https://nrazon.github.io/es/beamies/",
+   "pt": "https://nrazon.github.io/pt/beamies/"
+  },
+  "lang": "pt",
+  "default": "en",
+  "hash": "7888c31306b051b318c157febba25b59",
+  "slug": "beamies"
+ },
+ "https://nrazon.github.io/bmicalculator/": {
+  "url": "https://nrazon.github.io/bmicalculator/",
+  "loc": {
+   "en": "https://nrazon.github.io/bmicalculator/",
+   "tr": "https://nrazon.github.io/tr/bmicalculator/",
+   "es": "https://nrazon.github.io/es/bmicalculator/",
+   "pt": "https://nrazon.github.io/pt/bmicalculator/"
+  },
+  "lang": "en",
+  "default": "en",
+  "hash": "54d4cdeee3f69a1239136b6f7aa84704",
+  "slug": "bmicalculator"
+ },
+ "https://nrazon.github.io/tr/bmicalculator/": {
+  "url": "https://nrazon.github.io/tr/bmicalculator/",
+  "loc": {
+   "en": "https://nrazon.github.io/bmicalculator/",
+   "tr": "https://nrazon.github.io/tr/bmicalculator/",
+   "es": "https://nrazon.github.io/es/bmicalculator/",
+   "pt": "https://nrazon.github.io/pt/bmicalculator/"
+  },
+  "lang": "tr",
+  "default": "en",
+  "hash": "5b2acd78d68e1c4042cb20a99f42b403",
+  "slug": "bmicalculator"
+ },
+ "https://nrazon.github.io/es/bmicalculator/": {
+  "url": "https://nrazon.github.io/es/bmicalculator/",
+  "loc": {
+   "en": "https://nrazon.github.io/bmicalculator/",
+   "tr": "https://nrazon.github.io/tr/bmicalculator/",
+   "es": "https://nrazon.github.io/es/bmicalculator/",
+   "pt": "https://nrazon.github.io/pt/bmicalculator/"
+  },
+  "lang": "es",
+  "default": "en",
+  "hash": "6393b320e0d4bd82b3b3b2fd5390647a",
+  "slug": "bmicalculator"
+ },
+ "https://nrazon.github.io/pt/bmicalculator/": {
+  "url": "https://nrazon.github.io/pt/bmicalculator/",
+  "loc": {
+   "en": "https://nrazon.github.io/bmicalculator/",
+   "tr": "https://nrazon.github.io/tr/bmicalculator/",
+   "es": "https://nrazon.github.io/es/bmicalculator/",
+   "pt": "https://nrazon.github.io/pt/bmicalculator/"
+  },
+  "lang": "pt",
+  "default": "en",
+  "hash": "cb08fd9c8e5160ee46d4dc2f1c4e75b8",
+  "slug": "bmicalculator"
+ },
+ "https://nrazon.github.io/calisan/": {
+  "url": "https://nrazon.github.io/calisan/",
+  "loc": {
+   "tr": "https://nrazon.github.io/calisan/"
+  },
+  "lang": "tr",
+  "default": "tr",
+  "hash": "a1c564de59af09e94d4b7d11da99ba2f",
+  "slug": "calisan"
+ },
+ "https://nrazon.github.io/tr/calisan/": {
+  "url": "https://nrazon.github.io/tr/calisan/",
+  "loc": {
+   "en": "https://nrazon.github.io/calisan/",
+   "tr": "https://nrazon.github.io/tr/calisan/"
+  },
+  "lang": "tr",
+  "default": "en",
+  "hash": "eacad80fdf24f78899a1428692b76c58",
+  "slug": "calisan"
+ },
+ "https://nrazon.github.io/cardles/": {
+  "url": "https://nrazon.github.io/cardles/",
+  "loc": {
+   "en": "https://nrazon.github.io/cardles/",
+   "tr": "https://nrazon.github.io/tr/cardles/",
+   "es": "https://nrazon.github.io/es/cardles/",
+   "pt": "https://nrazon.github.io/pt/cardles/"
+  },
+  "lang": "en",
+  "default": "en",
+  "hash": "ce1f9f8c6e1d9df42d50fd94db902aaf",
+  "slug": "cardles"
+ },
+ "https://nrazon.github.io/tr/cardles/": {
+  "url": "https://nrazon.github.io/tr/cardles/",
+  "loc": {
+   "en": "https://nrazon.github.io/cardles/",
+   "tr": "https://nrazon.github.io/tr/cardles/",
+   "es": "https://nrazon.github.io/es/cardles/",
+   "pt": "https://nrazon.github.io/pt/cardles/"
+  },
+  "lang": "tr",
+  "default": "en",
+  "hash": "e810a09e664019b98473cdeb93a1626b",
+  "slug": "cardles"
+ },
+ "https://nrazon.github.io/es/cardles/": {
+  "url": "https://nrazon.github.io/es/cardles/",
+  "loc": {
+   "en": "https://nrazon.github.io/cardles/",
+   "tr": "https://nrazon.github.io/tr/cardles/",
+   "es": "https://nrazon.github.io/es/cardles/",
+   "pt": "https://nrazon.github.io/pt/cardles/"
+  },
+  "lang": "es",
+  "default": "en",
+  "hash": "836773fad8ad1c6a475e66adb539eb00",
+  "slug": "cardles"
+ },
+ "https://nrazon.github.io/pt/cardles/": {
+  "url": "https://nrazon.github.io/pt/cardles/",
+  "loc": {
+   "en": "https://nrazon.github.io/cardles/",
+   "tr": "https://nrazon.github.io/tr/cardles/",
+   "es": "https://nrazon.github.io/es/cardles/",
+   "pt": "https://nrazon.github.io/pt/cardles/"
+  },
+  "lang": "pt",
+  "default": "en",
+  "hash": "aa59a684a90092eb17b7d1fe23daebf3",
+  "slug": "cardles"
+ },
+ "https://nrazon.github.io/cubbles/": {
+  "url": "https://nrazon.github.io/cubbles/",
+  "loc": {
+   "en": "https://nrazon.github.io/cubbles/",
+   "tr": "https://nrazon.github.io/tr/cubbles/",
+   "es": "https://nrazon.github.io/es/cubbles/",
+   "pt": "https://nrazon.github.io/pt/cubbles/"
+  },
+  "lang": "en",
+  "default": "en",
+  "hash": "e2809f0a46f042a75f66ccc268c68e81",
+  "slug": "cubbles"
+ },
+ "https://nrazon.github.io/tr/cubbles/": {
+  "url": "https://nrazon.github.io/tr/cubbles/",
+  "loc": {
+   "en": "https://nrazon.github.io/cubbles/",
+   "tr": "https://nrazon.github.io/tr/cubbles/",
+   "es": "https://nrazon.github.io/es/cubbles/",
+   "pt": "https://nrazon.github.io/pt/cubbles/"
+  },
+  "lang": "tr",
+  "default": "en",
+  "hash": "e4e03c1b43e47bc704230104c6188e1e",
+  "slug": "cubbles"
+ },
+ "https://nrazon.github.io/es/cubbles/": {
+  "url": "https://nrazon.github.io/es/cubbles/",
+  "loc": {
+   "en": "https://nrazon.github.io/cubbles/",
+   "tr": "https://nrazon.github.io/tr/cubbles/",
+   "es": "https://nrazon.github.io/es/cubbles/",
+   "pt": "https://nrazon.github.io/pt/cubbles/"
+  },
+  "lang": "es",
+  "default": "en",
+  "hash": "d394ed8a0b1e698c2d6efc3ea0b99513",
+  "slug": "cubbles"
+ },
+ "https://nrazon.github.io/pt/cubbles/": {
+  "url": "https://nrazon.github.io/pt/cubbles/",
+  "loc": {
+   "en": "https://nrazon.github.io/cubbles/",
+   "tr": "https://nrazon.github.io/tr/cubbles/",
+   "es": "https://nrazon.github.io/es/cubbles/",
+   "pt": "https://nrazon.github.io/pt/cubbles/"
+  },
+  "lang": "pt",
+  "default": "en",
+  "hash": "9a126b356afe295bbcd78cee4097e81a",
+  "slug": "cubbles"
+ },
+ "https://nrazon.github.io/game2048/": {
+  "url": "https://nrazon.github.io/game2048/",
+  "loc": {
+   "en": "https://nrazon.github.io/game2048/",
+   "tr": "https://nrazon.github.io/tr/game2048/",
+   "es": "https://nrazon.github.io/es/game2048/",
+   "pt": "https://nrazon.github.io/pt/game2048/"
+  },
+  "lang": "en",
+  "default": "en",
+  "hash": "1bc073dcdd7e32cad959e117092e2745",
+  "slug": "game2048"
+ },
+ "https://nrazon.github.io/tr/game2048/": {
+  "url": "https://nrazon.github.io/tr/game2048/",
+  "loc": {
+   "en": "https://nrazon.github.io/game2048/",
+   "tr": "https://nrazon.github.io/tr/game2048/",
+   "es": "https://nrazon.github.io/es/game2048/",
+   "pt": "https://nrazon.github.io/pt/game2048/"
+  },
+  "lang": "tr",
+  "default": "en",
+  "hash": "17b3cc6b431535dd62fbdf5b95c28aa2",
+  "slug": "game2048"
+ },
+ "https://nrazon.github.io/es/game2048/": {
+  "url": "https://nrazon.github.io/es/game2048/",
+  "loc": {
+   "en": "https://nrazon.github.io/game2048/",
+   "tr": "https://nrazon.github.io/tr/game2048/",
+   "es": "https://nrazon.github.io/es/game2048/",
+   "pt": "https://nrazon.github.io/pt/game2048/"
+  },
+  "lang": "es",
+  "default": "en",
+  "hash": "15b61007d4150b607c9f6b6c121578dc",
+  "slug": "game2048"
+ },
+ "https://nrazon.github.io/pt/game2048/": {
+  "url": "https://nrazon.github.io/pt/game2048/",
+  "loc": {
+   "en": "https://nrazon.github.io/game2048/",
+   "tr": "https://nrazon.github.io/tr/game2048/",
+   "es": "https://nrazon.github.io/es/game2048/",
+   "pt": "https://nrazon.github.io/pt/game2048/"
+  },
+  "lang": "pt",
+  "default": "en",
+  "hash": "1241230a0d8183386b12afa5c8c8a638",
+  "slug": "game2048"
+ },
+ "https://nrazon.github.io/haftasonum/": {
+  "url": "https://nrazon.github.io/haftasonum/",
+  "loc": {
+   "tr": "https://nrazon.github.io/haftasonum/"
+  },
+  "lang": "tr",
+  "default": "tr",
+  "hash": "c146cccc2fcb7221ea4c10f4b9a362dc",
+  "slug": "haftasonum"
+ },
+ "https://nrazon.github.io/tr/haftasonum/": {
+  "url": "https://nrazon.github.io/tr/haftasonum/",
+  "loc": {
+   "en": "https://nrazon.github.io/haftasonum/",
+   "tr": "https://nrazon.github.io/tr/haftasonum/"
+  },
+  "lang": "tr",
+  "default": "en",
+  "hash": "9a9e1091b481acf153ae4b2b4598efff",
+  "slug": "haftasonum"
+ },
+ "https://nrazon.github.io/logiclings/": {
+  "url": "https://nrazon.github.io/logiclings/",
+  "loc": {
+   "en": "https://nrazon.github.io/logiclings/",
+   "tr": "https://nrazon.github.io/tr/logiclings/",
+   "es": "https://nrazon.github.io/es/logiclings/",
+   "pt": "https://nrazon.github.io/pt/logiclings/"
+  },
+  "lang": "en",
+  "default": "en",
+  "hash": "b367b82ac6fef838a1cb74e25277c5d3",
+  "slug": "logiclings"
+ },
+ "https://nrazon.github.io/tr/logiclings/": {
+  "url": "https://nrazon.github.io/tr/logiclings/",
+  "loc": {
+   "en": "https://nrazon.github.io/logiclings/",
+   "tr": "https://nrazon.github.io/tr/logiclings/",
+   "es": "https://nrazon.github.io/es/logiclings/",
+   "pt": "https://nrazon.github.io/pt/logiclings/"
+  },
+  "lang": "tr",
+  "default": "en",
+  "hash": "cb27aaf6c2740674f1a612831aec18e8",
+  "slug": "logiclings"
+ },
+ "https://nrazon.github.io/es/logiclings/": {
+  "url": "https://nrazon.github.io/es/logiclings/",
+  "loc": {
+   "en": "https://nrazon.github.io/logiclings/",
+   "tr": "https://nrazon.github.io/tr/logiclings/",
+   "es": "https://nrazon.github.io/es/logiclings/",
+   "pt": "https://nrazon.github.io/pt/logiclings/"
+  },
+  "lang": "es",
+  "default": "en",
+  "hash": "f0de29ac8c3ef0842c82860453a26a36",
+  "slug": "logiclings"
+ },
+ "https://nrazon.github.io/pt/logiclings/": {
+  "url": "https://nrazon.github.io/pt/logiclings/",
+  "loc": {
+   "en": "https://nrazon.github.io/logiclings/",
+   "tr": "https://nrazon.github.io/tr/logiclings/",
+   "es": "https://nrazon.github.io/es/logiclings/",
+   "pt": "https://nrazon.github.io/pt/logiclings/"
+  },
+  "lang": "pt",
+  "default": "en",
+  "hash": "e7746f27fde7225a44d8453ef047709b",
+  "slug": "logiclings"
+ },
+ "https://nrazon.github.io/medyafobi/": {
+  "url": "https://nrazon.github.io/medyafobi/",
+  "loc": {
+   "tr": "https://nrazon.github.io/medyafobi/"
+  },
+  "lang": "tr",
+  "default": "tr",
+  "hash": "72c6223a94a8786298d627fe39cfef37",
+  "slug": "medyafobi"
+ },
+ "https://nrazon.github.io/tr/medyafobi/": {
+  "url": "https://nrazon.github.io/tr/medyafobi/",
+  "loc": {
+   "en": "https://nrazon.github.io/medyafobi/",
+   "tr": "https://nrazon.github.io/tr/medyafobi/"
+  },
+  "lang": "tr",
+  "default": "en",
+  "hash": "fa63241f03bc3a3992e380e644bc3fac",
+  "slug": "medyafobi"
+ },
+ "https://nrazon.github.io/sansoyunlari/": {
+  "url": "https://nrazon.github.io/sansoyunlari/",
+  "loc": {
+   "tr": "https://nrazon.github.io/sansoyunlari/"
+  },
+  "lang": "tr",
+  "default": "tr",
+  "hash": "9f2c325103fdc06c0cd1b3c332a1f136",
+  "slug": "sansoyunlari"
+ },
+ "https://nrazon.github.io/tr/sansoyunlari/": {
+  "url": "https://nrazon.github.io/tr/sansoyunlari/",
+  "loc": {
+   "en": "https://nrazon.github.io/sansoyunlari/",
+   "tr": "https://nrazon.github.io/tr/sansoyunlari/"
+  },
+  "lang": "tr",
+  "default": "en",
+  "hash": "c7340f8cf05bbbe463c463609b2906fa",
+  "slug": "sansoyunlari"
+ },
+ "https://nrazon.github.io/sliplines/": {
+  "url": "https://nrazon.github.io/sliplines/",
+  "loc": {
+   "en": "https://nrazon.github.io/sliplines/",
+   "tr": "https://nrazon.github.io/tr/sliplines/",
+   "es": "https://nrazon.github.io/es/sliplines/",
+   "pt": "https://nrazon.github.io/pt/sliplines/"
+  },
+  "lang": "en",
+  "default": "en",
+  "hash": "7a70991b8aa0b120b838505d72aaefaa",
+  "slug": "sliplines"
+ },
+ "https://nrazon.github.io/tr/sliplines/": {
+  "url": "https://nrazon.github.io/tr/sliplines/",
+  "loc": {
+   "en": "https://nrazon.github.io/sliplines/",
+   "tr": "https://nrazon.github.io/tr/sliplines/",
+   "es": "https://nrazon.github.io/es/sliplines/",
+   "pt": "https://nrazon.github.io/pt/sliplines/"
+  },
+  "lang": "tr",
+  "default": "en",
+  "hash": "67d7d52d82a126d02839fa486f7f1718",
+  "slug": "sliplines"
+ },
+ "https://nrazon.github.io/es/sliplines/": {
+  "url": "https://nrazon.github.io/es/sliplines/",
+  "loc": {
+   "en": "https://nrazon.github.io/sliplines/",
+   "tr": "https://nrazon.github.io/tr/sliplines/",
+   "es": "https://nrazon.github.io/es/sliplines/",
+   "pt": "https://nrazon.github.io/pt/sliplines/"
+  },
+  "lang": "es",
+  "default": "en",
+  "hash": "314ae6e354c555bc150670943a6c7ace",
+  "slug": "sliplines"
+ },
+ "https://nrazon.github.io/pt/sliplines/": {
+  "url": "https://nrazon.github.io/pt/sliplines/",
+  "loc": {
+   "en": "https://nrazon.github.io/sliplines/",
+   "tr": "https://nrazon.github.io/tr/sliplines/",
+   "es": "https://nrazon.github.io/es/sliplines/",
+   "pt": "https://nrazon.github.io/pt/sliplines/"
+  },
+  "lang": "pt",
+  "default": "en",
+  "hash": "1ab922bfe2a84c56e5eabe59104c1cee",
+  "slug": "sliplines"
+ },
+ "https://nrazon.github.io/sondepremler/": {
+  "url": "https://nrazon.github.io/sondepremler/",
+  "loc": {
+   "en": "https://nrazon.github.io/sondepremler/",
+   "tr": "https://nrazon.github.io/tr/sondepremler/"
+  },
+  "lang": "en",
+  "default": "en",
+  "hash": "4077b43609e27c75be44658373ea37e5",
+  "slug": "sondepremler"
+ },
+ "https://nrazon.github.io/tr/sondepremler/": {
+  "url": "https://nrazon.github.io/tr/sondepremler/",
+  "loc": {
+   "en": "https://nrazon.github.io/sondepremler/",
+   "tr": "https://nrazon.github.io/tr/sondepremler/"
+  },
+  "lang": "tr",
+  "default": "en",
+  "hash": "2f922e53f59513ccfe1eaafeed5b5296",
+  "slug": "sondepremler"
+ },
+ "https://nrazon.github.io/tictactoe/": {
+  "url": "https://nrazon.github.io/tictactoe/",
+  "loc": {
+   "en": "https://nrazon.github.io/tictactoe/",
+   "tr": "https://nrazon.github.io/tr/tictactoe/",
+   "es": "https://nrazon.github.io/es/tictactoe/",
+   "pt": "https://nrazon.github.io/pt/tictactoe/"
+  },
+  "lang": "en",
+  "default": "en",
+  "hash": "c309fc4258b9acad2e1d0a19c47c36eb",
+  "slug": "tictactoe"
+ },
+ "https://nrazon.github.io/tr/tictactoe/": {
+  "url": "https://nrazon.github.io/tr/tictactoe/",
+  "loc": {
+   "en": "https://nrazon.github.io/tictactoe/",
+   "tr": "https://nrazon.github.io/tr/tictactoe/",
+   "es": "https://nrazon.github.io/es/tictactoe/",
+   "pt": "https://nrazon.github.io/pt/tictactoe/"
+  },
+  "lang": "tr",
+  "default": "en",
+  "hash": "d74dc5344761a405459d61049185e9ba",
+  "slug": "tictactoe"
+ },
+ "https://nrazon.github.io/es/tictactoe/": {
+  "url": "https://nrazon.github.io/es/tictactoe/",
+  "loc": {
+   "en": "https://nrazon.github.io/tictactoe/",
+   "tr": "https://nrazon.github.io/tr/tictactoe/",
+   "es": "https://nrazon.github.io/es/tictactoe/",
+   "pt": "https://nrazon.github.io/pt/tictactoe/"
+  },
+  "lang": "es",
+  "default": "en",
+  "hash": "680647c6e2fa60db4b08ada121a1c873",
+  "slug": "tictactoe"
+ },
+ "https://nrazon.github.io/pt/tictactoe/": {
+  "url": "https://nrazon.github.io/pt/tictactoe/",
+  "loc": {
+   "en": "https://nrazon.github.io/tictactoe/",
+   "tr": "https://nrazon.github.io/tr/tictactoe/",
+   "es": "https://nrazon.github.io/es/tictactoe/",
+   "pt": "https://nrazon.github.io/pt/tictactoe/"
+  },
+  "lang": "pt",
+  "default": "en",
+  "hash": "ec211345418439900ead3548c59bd34b",
+  "slug": "tictactoe"
+ },
+ "https://nrazon.github.io/tilelings/": {
+  "url": "https://nrazon.github.io/tilelings/",
+  "loc": {
+   "en": "https://nrazon.github.io/tilelings/",
+   "tr": "https://nrazon.github.io/tr/tilelings/",
+   "es": "https://nrazon.github.io/es/tilelings/",
+   "pt": "https://nrazon.github.io/pt/tilelings/"
+  },
+  "lang": "en",
+  "default": "en",
+  "hash": "1b8f82989cfe271e2a267b376607e7b0",
+  "slug": "tilelings"
+ },
+ "https://nrazon.github.io/tr/tilelings/": {
+  "url": "https://nrazon.github.io/tr/tilelings/",
+  "loc": {
+   "en": "https://nrazon.github.io/tilelings/",
+   "tr": "https://nrazon.github.io/tr/tilelings/",
+   "es": "https://nrazon.github.io/es/tilelings/",
+   "pt": "https://nrazon.github.io/pt/tilelings/"
+  },
+  "lang": "tr",
+  "default": "en",
+  "hash": "aae3a12ffe3825796582c770894a4c77",
+  "slug": "tilelings"
+ },
+ "https://nrazon.github.io/es/tilelings/": {
+  "url": "https://nrazon.github.io/es/tilelings/",
+  "loc": {
+   "en": "https://nrazon.github.io/tilelings/",
+   "tr": "https://nrazon.github.io/tr/tilelings/",
+   "es": "https://nrazon.github.io/es/tilelings/",
+   "pt": "https://nrazon.github.io/pt/tilelings/"
+  },
+  "lang": "es",
+  "default": "en",
+  "hash": "6b7091c811775bc660fa927f1bdbb7fb",
+  "slug": "tilelings"
+ },
+ "https://nrazon.github.io/pt/tilelings/": {
+  "url": "https://nrazon.github.io/pt/tilelings/",
+  "loc": {
+   "en": "https://nrazon.github.io/tilelings/",
+   "tr": "https://nrazon.github.io/tr/tilelings/",
+   "es": "https://nrazon.github.io/es/tilelings/",
+   "pt": "https://nrazon.github.io/pt/tilelings/"
+  },
+  "lang": "pt",
+  "default": "en",
+  "hash": "d89ddbafb0e80b47ddcaf05395be0f0a",
+  "slug": "tilelings"
+ },
+ "https://nrazon.github.io/turksail/": {
+  "url": "https://nrazon.github.io/turksail/",
+  "loc": {
+   "tr": "https://nrazon.github.io/turksail/"
+  },
+  "lang": "tr",
+  "default": "tr",
+  "hash": "4bff3aaf24e07ae0ca22b8a40388d06b",
+  "slug": "turksail"
+ },
+ "https://nrazon.github.io/tr/turksail/": {
+  "url": "https://nrazon.github.io/tr/turksail/",
+  "loc": {
+   "en": "https://nrazon.github.io/turksail/",
+   "tr": "https://nrazon.github.io/tr/turksail/"
+  },
+  "lang": "tr",
+  "default": "en",
+  "hash": "a6bec10fa118c657ebd62ea2bb3f121c",
+  "slug": "turksail"
+ },
+ "https://nrazon.github.io/uzaygunlugu/": {
+  "url": "https://nrazon.github.io/uzaygunlugu/",
+  "loc": {
+   "tr": "https://nrazon.github.io/uzaygunlugu/"
+  },
+  "lang": "tr",
+  "default": "tr",
+  "hash": "ae3240808699a412250e988f175949a5",
+  "slug": "uzaygunlugu"
+ },
+ "https://nrazon.github.io/tr/uzaygunlugu/": {
+  "url": "https://nrazon.github.io/tr/uzaygunlugu/",
+  "loc": {
+   "en": "https://nrazon.github.io/uzaygunlugu/",
+   "tr": "https://nrazon.github.io/tr/uzaygunlugu/"
+  },
+  "lang": "tr",
+  "default": "en",
+  "hash": "2417048df8de92a7de51cf316893c225",
+  "slug": "uzaygunlugu"
+ },
+ "https://nrazon.github.io/whereami/": {
+  "url": "https://nrazon.github.io/whereami/",
+  "loc": {
+   "en": "https://nrazon.github.io/whereami/",
+   "tr": "https://nrazon.github.io/tr/whereami/",
+   "es": "https://nrazon.github.io/es/whereami/",
+   "pt": "https://nrazon.github.io/pt/whereami/"
+  },
+  "lang": "en",
+  "default": "en",
+  "hash": "cd69ee1fdb97d3e1d1156a05a07d2341",
+  "slug": "whereami"
+ },
+ "https://nrazon.github.io/tr/whereami/": {
+  "url": "https://nrazon.github.io/tr/whereami/",
+  "loc": {
+   "en": "https://nrazon.github.io/whereami/",
+   "tr": "https://nrazon.github.io/tr/whereami/",
+   "es": "https://nrazon.github.io/es/whereami/",
+   "pt": "https://nrazon.github.io/pt/whereami/"
+  },
+  "lang": "tr",
+  "default": "en",
+  "hash": "7797829fc14a2f141e2df69df6812543",
+  "slug": "whereami"
+ },
+ "https://nrazon.github.io/es/whereami/": {
+  "url": "https://nrazon.github.io/es/whereami/",
+  "loc": {
+   "en": "https://nrazon.github.io/whereami/",
+   "tr": "https://nrazon.github.io/tr/whereami/",
+   "es": "https://nrazon.github.io/es/whereami/",
+   "pt": "https://nrazon.github.io/pt/whereami/"
+  },
+  "lang": "es",
+  "default": "en",
+  "hash": "f05bf726ce3a64c0af500c6a3b96de9b",
+  "slug": "whereami"
+ },
+ "https://nrazon.github.io/pt/whereami/": {
+  "url": "https://nrazon.github.io/pt/whereami/",
+  "loc": {
+   "en": "https://nrazon.github.io/whereami/",
+   "tr": "https://nrazon.github.io/tr/whereami/",
+   "es": "https://nrazon.github.io/es/whereami/",
+   "pt": "https://nrazon.github.io/pt/whereami/"
+  },
+  "lang": "pt",
+  "default": "en",
+  "hash": "60a1d0db5c11f52180a1778bf89b4e2e",
+  "slug": "whereami"
+ }
+}

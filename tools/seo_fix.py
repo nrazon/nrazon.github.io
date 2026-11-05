@@ -36,6 +36,10 @@ def fix(path):
             d = html.escape(describe(path, html.unescape(m.group(1))), quote=True)
             s = s.replace(m.group(0), m.group(0) + f'\n<meta name="description" content="{d}">', 1)
 
+    # Gizlilik/şartlar sayfaları arama sonuçlarında çıkmasın (Play için erişilebilir kalır; noindex erişimi engellemez). sitemap'ten de çıkarılır.
+    if os.path.basename(path) in ("privacy.html", "terms.html", "site-privacy.html") and not re.search(r"<meta[^>]+name=.robots", s):
+        s = re.sub(r"(<meta charset=[^>]*>)", lambda m: m.group(1) + chr(10) + '<meta name="robots" content="noindex,follow">', s, count=1)
+
     def alt_for(m):
         tag = m.group(0)
         src = re.search(r'src="([^"]+)"', tag)

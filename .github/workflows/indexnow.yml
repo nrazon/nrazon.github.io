@@ -1,0 +1,45 @@
+# IndexNow: site yayınlandıktan sonra değişen sayfaları Bing/Yandex'e bildirir (Google IndexNow'u desteklemez; onun için Search Console).
+# Anahtar dosyası kökte: https://nrazon.github.io/f2a977ef0f7d9bb6575d95c57f05a594.txt
+name: IndexNow
+on:
+  workflow_run:
+    workflows: ["pages build and deployment"]
+    types: [completed]
+  workflow_dispatch:
+jobs:
+  ping:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+      - name: Değişen sayfaları bildir
+        run: |
+          python3 - <<'PY'
+          import json, subprocess, urllib.request
+          KEY = "f2a977ef0f7d9bb6575d95c57f05a594"
+          HOST = "nrazon.github.io"
+          out = subprocess.run(["git", "diff", "--name-only", "HEAD~1", "HEAD"], capture_output=True, text=True).stdout.split()
+          skip = ("tools/", ".github/")
+          urls = []
+          for f in out:
+              if not f.endswith(".html") or f.startswith(skip) or f.endswith(("privacy.html", "terms.html", "404.html")) or f.startswith("google"):
+                  continue
+              p = f[:-len("index.html")] if f.endswith("index.html") else f
+              urls.append(f"https://{HOST}/{p}")
+          urls = sorted(set(urls))[:9000]
+          print(len(urls), "adres")
+          if not urls:
+              raise SystemExit(0)
+          body = json.dumps({"host": HOST, "key": KEY, "keyLocation": f"https://{HOST}/{KEY}.txt", "urlList": urls}).encode()
+          req = urllib.request.Request("https://api.indexnow.org/indexnow", data=body, headers={"Content-Type": "application/json; charset=utf-8"})
+          try:
+              r = urllib.request.urlopen(req, timeout=30)
+              print("IndexNow:", r.status)
+          except Exception as e:
+              print("IndexNow hata (önemsiz):", e)
+          PY

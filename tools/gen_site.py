@@ -71,6 +71,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline:3px solid
 .lang { display:flex; gap:2px; background:var(--card); border-radius:999px; padding:4px; box-shadow:var(--shadow); }
 .lang button { border:0; background:none; color:var(--dim); font:inherit; font-weight:700; font-size:13px; padding:5px 11px; border-radius:999px; cursor:pointer; }
 .lang button[aria-pressed="true"] { background:var(--text); color:var(--bg); }
+.lang a { color:var(--dim); font-weight:700; font-size:13px; padding:5px 11px; border-radius:999px; text-decoration:none; }
+.lang a[aria-current] { background:var(--text); color:var(--bg); }
 /* Hero */
 .lhero { display:grid; grid-template-columns:minmax(0,1fr); background:linear-gradient(135deg,var(--hero-a),var(--hero-b)); color:#fff; border-radius:26px; overflow:hidden; box-shadow:var(--shadow); }
 .lhero .copy { padding:30px 26px 8px; display:flex; flex-direction:column; align-items:flex-start; gap:12px; }
@@ -478,7 +480,7 @@ def page(cfg):
 :root {{ --accent:{cfg['accent']}; --hero-a:{cfg['hero'][0]}; --hero-b:{cfg['hero'][1]}; }}
 </style>
 <link rel="stylesheet" href="../landing.css?v=7">
-<script src="/analytics.js?v=2" defer></script>
+<script src="/analytics.js?v=3" defer></script>
 <script type="application/ld+json">{jsonld}</script>
 </head>
 <body>
@@ -786,6 +788,9 @@ ICON = {c["slug"]: c["icon"] for c in ALL}
 VISIBLE = [c for c in ALL if c["slug"] not in HIDDEN]
 ORDER = GAME_SLUGS + [c["slug"] for c in VISIBLE if c["slug"] not in GAME_SLUGS]
 OTHERS = [(f"../{sl}/", NAME_EN[sl], ICON[sl]) for sl in ORDER]
+# i18n_split.py için sayfa verisi (dil başına başlık/slogan/giriş): anahtar kelimeli <title>/<meta description> buradan üretilir
+json.dump({c["slug"]: {"name": c["name"], "title": c.get("title", {}), "tagline": c.get("tagline", {}), "intro": c.get("intro", {})} for c in ALL},
+          open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "_pages.json"), "w", encoding="utf-8"), ensure_ascii=False)
 
 import base64
 import html as _html
@@ -920,3 +925,5 @@ print("ok")
 
 import subprocess as _sp, sys as _sys
 _sp.run([_sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "seo_fix.py")])
+if not os.environ.get("NO_SPLIT"):
+    _sp.run([_sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "i18n_split.py")])

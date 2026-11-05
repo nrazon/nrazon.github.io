@@ -67,6 +67,10 @@
   document.addEventListener("click", function (e) {
     var el = e.target.closest ? e.target.closest("a,button") : null;
     if (!el) return;
+    if (el.tagName === "A" && el.dataset && el.dataset.lang && el.closest(".lang")) {
+      gtag("event", "lang_change", { lang: el.dataset.lang, transport_type: "beacon" });
+      return;
+    }
     if (el.tagName === "A") {
       var href = el.href || "";
       if (href.indexOf("play.google.com/store/apps/details") >= 0) {
@@ -75,6 +79,7 @@
         gtag("event", "play_dev_click", { page_path: location.pathname, transport_type: "beacon" });
       } else if (el.hostname === h && /\/$|index\.html$|^[^.]*$/.test(el.pathname) && el.pathname !== location.pathname) {
         var parts = el.pathname.split("/").filter(Boolean);
+        if (parts.length > 1 && ["tr", "es", "pt", "fr"].indexOf(parts[0]) >= 0) parts.shift(); // /tr/beamies/ -> beamies
         if (parts.length === 1 && parts[0] !== "site-privacy.html") {
           gtag("event", "app_open", { app: parts[0], page_path: location.pathname, transport_type: "beacon" });
         }

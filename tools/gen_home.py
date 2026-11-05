@@ -40,6 +40,7 @@ T = {
     "nav_games": {"tr": "Oyunlar", "en": "Games", "es": "Juegos", "pt": "Jogos"},
     "nav_apps": {"tr": "Uygulamalar", "en": "Apps", "es": "Apps", "pt": "Apps"},
     "nav_about": {"tr": "Hakkımda", "en": "About", "es": "Acerca de", "pt": "Sobre"},
+    "nav_guides": {"tr": "Rehberler", "en": "Guides", "es": "Guías", "pt": "Guias"},
     "h_games": {"tr": "Oyunlar", "en": "Games", "es": "Juegos", "pt": "Jogos"},
     "h_games_sub": {"tr": "Kısa molalar için, uzun süre bırakamayacağın oyunlar. Hepsi ücretsiz.", "en": "Games for short breaks you won't want to put down. All free.",
                     "es": "Juegos para pausas cortas que no querrás soltar. Todos gratis.", "pt": "Jogos para pausas curtas que você não vai querer largar. Todos grátis."},
@@ -230,6 +231,8 @@ CSS = r'''
   .lang { display:flex; background:var(--card); border-radius:999px; padding:4px; flex:none; box-shadow:var(--shadow); }
   .lang button { border:0; background:none; color:var(--dim); font:inherit; font-weight:700; font-size:14px; padding:6px 14px; border-radius:999px; cursor:pointer; }
   .lang button[aria-pressed="true"] { background:var(--text); color:var(--bg); }
+  .lang a { color:var(--dim); font-weight:700; font-size:14px; padding:6px 14px; border-radius:999px; text-decoration:none; }
+  .lang a[aria-current] { background:var(--text); color:var(--bg); }
   /* Giriş */
   .intro { padding:36px 4px 26px; }
   .eyebrow { display:inline-block; background:var(--chip); color:var(--dim); font-weight:800; font-size:12px; letter-spacing:.09em; text-transform:uppercase; padding:6px 12px; border-radius:999px; margin:0 0 14px; }
@@ -428,7 +431,7 @@ def build(preview):
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <style>{CSS}</style>
-<script src="/analytics.js?v=1" defer></script>
+<script src="/analytics.js?v=3" defer></script>
 <script>{JS}</script>
 </head>
 <body>
@@ -436,7 +439,7 @@ def build(preview):
   <div class="top">
     <a class="brand" href="#top"><img class="logo" src="logo.svg" alt="Nesim Apps logo" width="40" height="40"><b>Nesim Apps</b></a>
     <div class="topr">
-      <nav aria-label="Menu"><a href="#games">{L(T["nav_games"])}</a><a href="#apps">{L(T["nav_apps"])}</a><a href="#about">{L(T["nav_about"])}</a></nav>
+      <nav aria-label="Menu"><a href="#games">{L(T["nav_games"])}</a><a href="#apps">{L(T["nav_apps"])}</a><a href="guides/" data-guides-index>{L(T["nav_guides"])}</a><a href="#about">{L(T["nav_about"])}</a></nav>
       <div class="lang" role="group" aria-label="Language / Dil">
         <button type="button" data-lang="tr" onclick="setLang('tr')">TR</button>
         <button type="button" data-lang="en" onclick="setLang('en')">EN</button>
@@ -542,3 +545,5 @@ if __name__ == "__main__":
     if yayin:
         import subprocess as _sp
         _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "seo_fix.py")])
+    if yayin and not os.environ.get("NO_SPLIT"):
+        _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "i18n_split.py")])
