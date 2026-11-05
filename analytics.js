@@ -79,8 +79,13 @@
         gtag("event", "play_dev_click", { page_path: location.pathname, transport_type: "beacon" });
       } else if (el.hostname === h && /\/$|index\.html$|^[^.]*$/.test(el.pathname) && el.pathname !== location.pathname) {
         var parts = el.pathname.split("/").filter(Boolean);
-        if (parts.length > 1 && ["tr", "es", "pt", "fr"].indexOf(parts[0]) >= 0) parts.shift(); // /tr/beamies/ -> beamies
-        if (parts.length === 1 && parts[0] !== "site-privacy.html") {
+        var LG = ["tr", "es", "pt", "fr"];
+        if (parts.length && LG.indexOf(parts[0]) >= 0) parts.shift(); // /tr/beamies/ -> beamies ; /tr/ -> (ana sayfa)
+        var GD = ["guides", "rehber", "guias"];
+        if (parts.length >= 1 && GD.indexOf(parts[0]) >= 0) {
+          // rehber sayfası ya da dizini: ayrı olay (uygulama sayfası açılışı sayılmaz)
+          if (parts.length === 2) gtag("event", "guide_open", { guide: parts[1], page_path: location.pathname, transport_type: "beacon" });
+        } else if (parts.length === 1 && parts[0] !== "site-privacy.html") {
           gtag("event", "app_open", { app: parts[0], page_path: location.pathname, transport_type: "beacon" });
         }
       }

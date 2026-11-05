@@ -431,7 +431,7 @@ def build(preview):
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <style>{CSS}</style>
-<script src="/analytics.js?v=3" defer></script>
+<script src="/analytics.js?v=4" defer></script>
 <script>{JS}</script>
 </head>
 <body>
