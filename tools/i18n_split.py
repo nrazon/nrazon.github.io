@@ -288,6 +288,8 @@ def process_source(rel, plan, guides, registry, pagedata, lastmod, today, guides
         # 7) göreli adresler (kök dışı diller)
         if lang != default:
             for t in soup.find_all(True):
+                if t.name == "a" and t.has_attr("data-lang"):  # dil düğmesi bağlantıları zaten doğru ve mutlak: dokunma
+                    continue
                 for attr in ("href", "src", "data-demo-src", "poster"):
                     if t.has_attr(attr):
                         t[attr] = rewrite_url(t[attr], page_dir, lang, plan)
@@ -298,6 +300,9 @@ def process_source(rel, plan, guides, registry, pagedata, lastmod, today, guides
             if gi:
                 a["href"] = gi
             del a["data-guides-index"]
+        # 7a) marka (Nesim Apps) bağlantıları her zaman kök "/" (varsayılan sayfa)
+        for t in soup.find_all("a", class_=["brand", "back"]):
+            t["href"] = "/"
         # 7b) olmayan ekran görüntüsü dosyası (ör. Cardles/Cubbles es/pt yalnız en klasörüne sahip) -> İngilizce karşılığı
         for t in soup.find_all("img"):
             src0 = t.get("src") or ""
@@ -330,6 +335,10 @@ def process_source(rel, plan, guides, registry, pagedata, lastmod, today, guides
             sc = soup.new_tag("script")
             sc.string = js
             soup.find("body").append(sc)
+        if soup.find(class_="lang") is not None and soup.find("body") is not None:  # dili elle seçen kişiye öneri çubuğu tekrar çıkmasın
+            sc2 = soup.new_tag("script")
+            sc2.string = "(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();"
+            soup.find("body").append(sc2)
         soup.find("head").insert(0, Comment("i18n-split"))
         out = str(soup)
         out = out.replace("<!--i18n-split-->", MARK, 1)

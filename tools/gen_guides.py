@@ -137,12 +137,13 @@ def page_shell(lang, alternates, body):
     return f"""<body>
 <main>
   <header class="top">
-    <a class="back" href="{home_url(lang)}">{t['back']}</a>
+    <a class="back" href="/">{t['back']}</a>
     {switcher(lang, alternates)}
   </header>
 {body}
   <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
 </main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
 </body>
 </html>
 """
