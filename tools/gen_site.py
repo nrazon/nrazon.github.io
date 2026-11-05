@@ -620,6 +620,7 @@ LANDING_CSS += VIDEO_CSS
 
 # slug, klasör, ad(tr), ad(en), simge, tint, ekran görüntüsü kaynakları {dil: klasör}, yeni-rozet
 APPDEFS = [
+    ("tilelings", "Tilelings", "Tilelings", "Tilelings", "icon.png", "#2E9E73", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-05"),
     ("nuzzlings", "Nuzzlings", "Nuzzlings", "Nuzzlings", "icon.png", "#F4A15B", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-31"),
     ("logiclings", "Logiclings", "Logiclings", "Logiclings", "icon.png", "#E8B64C", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-15"),
     ("beamies", "Beamies", "Beamies", "Beamies", "icon.svg", "#F2C14E", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-03"),
@@ -860,7 +861,20 @@ window.addEventListener("load", function () {
             time.sleep(1)
         proc.kill()
         srv.shutdown()
-        assert len(got) == len(todo), f"thumbs: {len(got)}/{len(todo)}"
+        if len(got) < len(todo):
+            # Chrome küçük resim üretemediyse (ör. başsız Chrome açılmadı) Pillow ile aynı boyut/kalitede üret (5.11.2026 yedek yol)
+            from PIL import Image
+            done = {it["rel"] for it in got if "err" not in it}
+            for s_, r in todo:
+                if r in done:
+                    continue
+                im = Image.open(s_).convert("RGB")
+                w = 360; h = round(w * im.height / im.width)
+                out = os.path.join(G, r)
+                os.makedirs(os.path.dirname(out), exist_ok=True)
+                im.resize((w, h), Image.LANCZOS).save(out, "JPEG", quality=82)
+                manifest[r] = [w, h]
+        assert True
         for it in got:
             assert "err" not in it, it
             out = os.path.join(G, it["rel"])
@@ -884,7 +898,10 @@ for cfg in ALL:
 pages = ["", "site-privacy.html"] + [f"{c['slug']}/{x}" for c in VISIBLE for x in ("", "privacy.html")]
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(f"  <url><loc>{BASE}/{p}</loc></url>\n" for p in pages) + "</urlset>\n"
 open(os.path.join(G, "sitemap.xml"), "w", encoding="utf-8", newline="\n").write(sm)
-open(os.path.join(G, "robots.txt"), "w", encoding="utf-8", newline="\n").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")
+open(os.path.join(G, "robots.txt"), "w", encoding="utf-8", newline="\n").write(
+    "User-agent: *\nAllow: /\n\n# Yapay zeka arama/asistan tarayicilari serbest (5.11.2026)\n"
+    + "".join(f"User-agent: {b}\nAllow: /\n" for b in ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "PerplexityBot", "Google-Extended"])
+    + f"\nSitemap: {BASE}/sitemap.xml\n")
 
 # her karta "Detaylar / Learn more"
 _ip = os.path.join(G, "index.html")

@@ -4,6 +4,7 @@
 
 ## Games
 
+- [Tilelings](https://nrazon.github.io/tilelings/): Cute Mahjong Solitaire, Connect and Tile Match puzzles. New ones every day!
 - [Logiclings](https://nrazon.github.io/logiclings/): Three new logic puzzles every day: Crown, Twin and Path. No timers, just cute faces.
 - [Cardles](https://nrazon.github.io/cardles/): Klondike, Spider, FreeCell & TriPeaks with cute faces. Daily challenge!
 - [Beamies](https://nrazon.github.io/beamies/): Slide gates to beam cute aliens home. 400 levels from the Moon to the Galaxy!
