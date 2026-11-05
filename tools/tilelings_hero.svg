@@ -1,0 +1,19 @@
+<svg viewBox="0 0 640 400" role="img" aria-label="Cute Mahjong tiles stacked in a pyramid">
+<style>
+  .tlf { animation:tlf 4.6s ease-in-out infinite; } .tlf2 { animation-duration:5.4s; } .tlf3 { animation-duration:6.2s; }
+  @keyframes tlf { 0%,100% { translate:0 0; } 50% { translate:0 -7px; } }
+  .tls { animation:tls 3.4s ease-in-out infinite; } @keyframes tls { 0%,100% { opacity:.25; } 50% { opacity:1; } }
+  @media (prefers-reduced-motion:reduce) { .tlf,.tls { animation:none; } }
+</style>
+<path class="tls" style="animation-delay:0s" transform="translate(70 70)" d="M0,-9 Q1.62,-1.62 9,0 Q1.62,1.62 0,9 Q-1.62,1.62 -9,0 Q-1.62,-1.62 0,-9 Z" fill="#FFE9A8"/><path class="tls" style="animation-delay:0.8s" transform="translate(560 60)" d="M0,-7 Q1.26,-1.26 7,0 Q1.26,1.26 0,7 Q-1.26,1.26 -7,0 Q-1.26,-1.26 0,-7 Z" fill="#FFE9A8"/><path class="tls" style="animation-delay:1.6s" transform="translate(40 300)" d="M0,-6 Q1.08,-1.08 6,0 Q1.08,1.08 0,6 Q-1.08,1.08 -6,0 Q-1.08,-1.08 0,-6 Z" fill="#FFE9A8"/><path class="tls" style="animation-delay:2.4s" transform="translate(590 320)" d="M0,-8 Q1.44,-1.44 8,0 Q1.44,1.44 0,8 Q-1.44,1.44 -8,0 Q-1.44,-1.44 0,-8 Z" fill="#FFE9A8"/><path class="tls" style="animation-delay:3.0s" transform="translate(300 34)" d="M0,-6 Q1.08,-1.08 6,0 Q1.08,1.08 0,6 Q-1.08,1.08 -6,0 Q-1.08,-1.08 0,-6 Z" fill="#FFE9A8"/>
+<ellipse cx="320" cy="372" rx="210" ry="20" fill="#06180F" opacity=".35"/>
+<g transform="translate(150 215) rotate(0 59 69)"><g class="tlf " style="animation-delay:0s"><image href="/tilelings/hero/cat.webp" width="118" height="139"/></g></g>
+<g transform="translate(262 215) rotate(0 59 69)"><g class="tlf " style="animation-delay:0s"><image href="/tilelings/hero/alien.webp" width="118" height="139"/></g></g>
+<g transform="translate(374 215) rotate(0 59 69)"><g class="tlf " style="animation-delay:0s"><image href="/tilelings/hero/frog.webp" width="118" height="139"/></g></g>
+<g transform="translate(206 140) rotate(0 59 69)"><g class="tlf tlf2" style="animation-delay:-1.2s"><image href="/tilelings/hero/sun.webp" width="118" height="139"/></g></g>
+<g transform="translate(318 140) rotate(0 59 69)"><g class="tlf tlf2" style="animation-delay:-1.2s"><image href="/tilelings/hero/panda.webp" width="118" height="139"/></g></g>
+<g transform="translate(262 65) rotate(0 59 69)"><g class="tlf tlf3" style="animation-delay:-2.4s"><image href="/tilelings/hero/fox.webp" width="118" height="139"/></g></g>
+<g transform="translate(22 160) rotate(-14 59 69)"><g class="tlf tlf2" style="animation-delay:-0.6s"><image href="/tilelings/hero/bunny.webp" width="118" height="139"/></g></g>
+<g transform="translate(506 92) rotate(12 59 69)"><g class="tlf tlf3" style="animation-delay:-1.8s"><image href="/tilelings/hero/star.webp" width="118" height="139"/></g></g>
+<g transform="translate(500 236) rotate(8 59 69)"><g class="tlf " style="animation-delay:-3.0s"><image href="/tilelings/hero/dog.webp" width="118" height="139"/></g></g>
+</svg>

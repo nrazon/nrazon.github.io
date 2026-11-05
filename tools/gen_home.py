@@ -17,7 +17,9 @@ DATA = json.load(open(os.path.join(G, "tools", "home_data.json"), encoding="utf-
 for _a in DATA:  # yayına çıkınca (status: live) 'çok yakında' içermeyen metin kullanılır
     if _a.get("status") == "live" and _a.get("desc_live"):
         _a["desc"] = _a["desc_live"]
-HERO_SVG = open(os.path.join(G, "tools", "beamies_hero.svg"), encoding="utf-8").read()
+# Kahraman (hero) = o an tanıtılan amiral gemisi. 5.11.2026: Tilelings (önceki hero Beamies: tools/beamies_hero.svg + BEAMIES* yedek)
+HERO_SLUG = "tilelings"
+HERO_SVG = open(os.path.join(G, "tools", "tilelings_hero.svg"), encoding="utf-8").read()
 UTM = "&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"
 
 
@@ -76,6 +78,19 @@ CARDLES = {
     "en": "Four classic solitaire games in one app, played with cards that have cute faces: Klondike, Spider, FreeCell and TriPeaks. A daily challenge, streaks, hints and themes.",
     "es": "Cuatro solitarios clásicos en una sola app, con cartas de caritas adorables: Klondike, Spider, FreeCell y TriPeaks. Reto diario, rachas, pistas y temas.",
     "pt": "Quatro paciências clássicas em um só app, com cartas de carinhas fofas: Klondike, Spider, FreeCell e TriPeaks. Desafio diário, sequências, dicas e temas.",
+}
+TILELINGS_TAG = {"tr": "Sevimli Mahjong bulmacaları", "en": "Cute Mahjong puzzles", "es": "Puzles de Mahjong adorables", "pt": "Quebra-cabeças de Mahjong fofos"}
+TILELINGS = {
+    "tr": "Sevimli taşlarla rahatlatıcı bir Mahjong koleksiyonu: klasik Mahjong Solitaire, Connect ve Taş Eşleştirme; üstüne her gün yeni bir üçlü ve 5 dakikalık Zamana Karşı. 53 yerleşim, 150 Connect, 300 Taş Eşleştirme seviyesi.",
+    "en": "A cozy Mahjong collection with cute tiles: classic Mahjong Solitaire, Connect and Tile Match, plus a fresh daily trio and a 5-minute Time Attack. 53 layouts, 150 Connect levels and 300 Tile Match levels.",
+    "es": "Una acogedora colección de Mahjong con fichas adorables: Mahjong Solitario clásico, Connect y Tile Match, más un trío diario nuevo y una Contrarreloj de 5 minutos. 53 diseños, 150 niveles de Connect y 300 de Tile Match.",
+    "pt": "Uma coleção de Mahjong aconchegante com peças fofas: Mahjong Paciência clássico, Connect e Tile Match, mais um trio diário novo e um Contra o Tempo de 5 minutos. 53 layouts, 150 níveis de Connect e 300 de Tile Match.",
+}
+TILELINGS_CHIPS = {
+    "tr": ["53 yerleşim", "150 Connect", "300 Taş Eşleştirme", "Ücretsiz"],
+    "en": ["53 layouts", "150 Connect levels", "300 Tile Match levels", "Free"],
+    "es": ["53 diseños", "150 niveles Connect", "300 Tile Match", "Gratis"],
+    "pt": ["53 layouts", "150 níveis Connect", "300 Tile Match", "Grátis"],
 }
 BEAMIES_TAG = {"tr": "Uzaylıları eve ışınla!", "en": "Beam the aliens home!", "es": "¡Lleva a los alienígenas a casa!", "pt": "Leve os alienígenas para casa!"}
 BEAMIES = {
@@ -247,6 +262,7 @@ CSS = r'''
   @media (min-width:700px) { .hero { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); align-items:center; } .hero .body { padding:24px 28px; } .hero-art { border-radius:24px 0 0 24px; } }
   .hero-art { border-radius:24px 24px 0 0; position:relative; background:linear-gradient(135deg,#0F6B52,#16A07F); color:#fff; padding:22px 18px 22px 26px; display:flex; flex-direction:column; justify-content:center; gap:6px; overflow:hidden; min-height:270px; }
   .hero-art.beamies { background:linear-gradient(135deg,#1A2350,#4B2E8F); }
+  .hero-art.tilelings { background:linear-gradient(135deg,#0F3326,#1E6048); }
   .hero-art .ha-text { display:flex; flex-direction:column; position:relative; z-index:1; }
   .hero-art .ha-title { font-size:clamp(34px,4.6vw,46px); font-weight:900; line-height:1; letter-spacing:-.02em; }
   .hero-art .ha-tag { font-weight:650; font-size:clamp(15px,2.6vw,19px); opacity:.95; margin-top:4px; }
@@ -378,9 +394,9 @@ def build(preview):
     by = {a["slug"]: a for a in DATA}
     live = [a for a in DATA if a["status"] == "live"]
     soon = [a for a in DATA if a["status"] == "soon"]
-    games = [a for a in live if a["cat"] == "games" and a["slug"] not in ("beamies", "sliplines", "cubbles")]
+    games = [a for a in live if a["cat"] == "games" and a["slug"] not in (HERO_SLUG, "sliplines", "cubbles")]
     apps = [a for a in live if a["cat"] == "apps"]
-    beamies = by["beamies"]
+    hero_app = by[HERO_SLUG]
     robots = '<meta name="robots" content="noindex">\n' if preview else ""
     soon_html = f'''  <section id="soon">
     <h2 class="sec">{L(T["h_soon"])}</h2>
@@ -392,21 +408,21 @@ def build(preview):
 ''' if soon else ""
     privacy_links = "".join(
         f'<li><a href="{a["slug"]}/privacy.html">{esc(a["names"]["en"])}</a></li>' for a in DATA)
-    chips = "".join(f'<ul class="chips" lang="{l}">' + "".join(f"<li>{esc(c)}</li>" for c in BEAMIES_CHIPS[l]) + "</ul>" for l in LANGS)
-    hero = f'''  <section class="hero" data-slug="beamies" data-pkg="com.beamies.nesimapps">
-    <h2 class="sr">Beamies</h2>
-    <div class="hero-art beamies">
+    chips = "".join(f'<ul class="chips" lang="{l}">' + "".join(f"<li>{esc(c)}</li>" for c in TILELINGS_CHIPS[l]) + "</ul>" for l in LANGS)
+    hero = f'''  <section class="hero" data-slug="tilelings" data-pkg="com.tilelings.nesimapps">
+    <h2 class="sr">Tilelings</h2>
+    <div class="hero-art tilelings">
       <div class="ha-text">
-        <span class="ha-title">Beamies</span>
-        <span class="ha-tag">{L(BEAMIES_TAG)}</span>
+        <span class="ha-title">Tilelings</span>
+        <span class="ha-tag">{L(TILELINGS_TAG)}</span>
       </div>
       {HERO_SVG}
     </div>
     <div class="body">
-      <span class="tag" data-new-until="{beamies["new"]}">{L(T["newgame"])}</span>
-      {L(BEAMIES, "p")}
+      <span class="tag" data-new-until="{hero_app["new"]}">{L(T["newgame"])}</span>
+      {L(TILELINGS, "p")}
       {chips}
-      <div class="links">{badge("com.beamies.nesimapps")}{qr_html("beamies")}<a class="small" href="beamies/">{L(T["more"], "b")}</a></div>
+      <div class="links">{badge("com.tilelings.nesimapps")}{qr_html("tilelings")}<a class="small" href="tilelings/">{L(T["more"], "b")}</a></div>
     </div>
   </section>'''
     return f'''<!doctype html>
