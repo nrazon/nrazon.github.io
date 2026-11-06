@@ -143,7 +143,7 @@ def gibs(bugun):
               "&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE")
     return {
         "tarih": dun,
-        "turkiye": sablon.format(k="VIIRS_SNPP_CorrectedReflectance_TrueColor", t=dun),
+        "turkiye": sablon.format(k="VIIRS_NOAA21_CorrectedReflectance_TrueColor", t=dun),
         "kredi": "NASA GIBS / Worldview",
     }
 
