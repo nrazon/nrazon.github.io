@@ -480,7 +480,7 @@ def page(cfg):
 :root {{ --accent:{cfg['accent']}; --hero-a:{cfg['hero'][0]}; --hero-b:{cfg['hero'][1]}; }}
 </style>
 <link rel="stylesheet" href="../landing.css?v=7">
-<script src="/analytics.js?v=4" defer></script>
+<script src="/analytics.js?v=5" defer></script>
 <script type="application/ld+json">{jsonld}</script>
 </head>
 <body>

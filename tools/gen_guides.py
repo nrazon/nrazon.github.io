@@ -126,7 +126,7 @@ def head(lang, title, desc, canon, alternates, og_image, ld, accent):
 <style>:root {{ --accent:{accent}; }}</style>
 <link rel="stylesheet" href="/landing.css?v=7">
 <link rel="stylesheet" href="/guides.css?v=1">
-<script src="/analytics.js?v=4" defer></script>
+<script src="/analytics.js?v=5" defer></script>
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 </head>
 """

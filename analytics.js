@@ -1,4 +1,5 @@
-/* Nesim Apps web sitesi analitiği (Google Analytics 4, Consent Mode v2).
+/* Nesim Apps web sitesi analitiği (Google Analytics 4, Consent Mode v2) + Microsoft Clarity (6.11.2026; GA ile AYNI onay kuralı).
+   Clarity yalnız analitik izni varken (AB/AEA/BK/CH'de "Kabul et" sonrası, diğer ülkelerde doğrudan) yüklenir.
    - AB/AEA, Birleşik Krallık ve İsviçre'de (saat diliminden tahmin) onay verilene kadar analitik reddedilmiş başlar ve bant çıkar.
    - Diğer ülkelerde (Türkiye dahil) bant yok, analitik doğrudan çalışır.
    - Reklam çerezleri/kişiselleştirme HİÇ kullanılmaz.
@@ -52,6 +53,16 @@
     s.async = true;
     s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
     document.head.appendChild(s);
+    loadClarity();
+  }
+  // Microsoft Clarity (ısı haritası/oturum kaydı). Bing Webmaster'dan verilen standart kod, aynı onay kapısının arkasında.
+  function loadClarity() {
+    if (window.clarity && window.clarity.q) return;
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+      t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt";
+      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "z9clczz2o5");
   }
   if (analyticsDefault === "granted") load();
 
@@ -108,10 +119,10 @@
 
   // --- Onay bandı (yalnız AB/AEA/BK/CH ve henüz seçilmediyse) ---
   var TXT = {
-    tr: ["Siteyi iyileştirmek için anonim kullanım istatistiği (Google Analytics) kullanıyoruz. Kabul eder misin?", "Kabul et", "Reddet", "Ayrıntılar"],
-    en: ["We use anonymous usage statistics (Google Analytics) to improve this site. Do you accept?", "Accept", "Decline", "Details"],
-    es: ["Usamos estadísticas de uso anónimas (Google Analytics) para mejorar este sitio. ¿Aceptas?", "Aceptar", "Rechazar", "Detalles"],
-    pt: ["Usamos estatísticas de uso anônimas (Google Analytics) para melhorar este site. Você aceita?", "Aceitar", "Recusar", "Detalhes"],
+    tr: ["Siteyi iyileştirmek için anonim kullanım istatistiği ve ısı haritası (Google Analytics, Microsoft Clarity) kullanıyoruz. Kabul eder misin?", "Kabul et", "Reddet", "Ayrıntılar"],
+    en: ["We use anonymous usage statistics and heatmaps (Google Analytics, Microsoft Clarity) to improve this site. Do you accept?", "Accept", "Decline", "Details"],
+    es: ["Usamos estadísticas de uso anónimas y mapas de calor (Google Analytics, Microsoft Clarity) para mejorar este sitio. ¿Aceptas?", "Aceptar", "Rechazar", "Detalles"],
+    pt: ["Usamos estatísticas de uso anônimas e mapas de calor (Google Analytics, Microsoft Clarity) para melhorar este site. Você aceita?", "Aceitar", "Recusar", "Detalhes"],
   };
   function lang() {
     var l = "";
