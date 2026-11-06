@@ -1,7 +1,16 @@
 {
- "uretim": "2026-11-05T13:12:55Z",
+ "uretim": "2026-11-06T12:57:23Z",
  "surum": 1,
  "apod": [
+  {
+   "tarih": "2026-11-06",
+   "baslik": "A Farewell to Swift",
+   "tur": "image",
+   "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-6-a-farewell-to-swift/",
+   "ozet_en": "Explanation: It is time to say goodbye to NASA's Neil Gehrels Swift Observatory. After nearly 22 years of service, the satellite re-entered Earth's atmosphere on November 4 at 7:39 EST over the North Sumatra region of Indonesia.",
+   "kredi": "NASA/Swift and AndreaMosaic",
+   "nasa_kaynakli": false
+  },
   {
    "tarih": "2026-11-05",
    "baslik": "Enceladus in Silhouette",
@@ -82,15 +91,6 @@
    "ozet_en": "Explanation: Jupiter is one of the least lonely planets in the Solar System, at least when it comes to natural satellites. 115 moons have been discovered orbiting Jupiter so far! (Saturn has the most with 293, but who’s counting.) Ganymede and Io, two of Jupiter’s Galilean moons, met in the sky on October 20th, 2026.",
    "kredi": "Michael Wong",
    "nasa_kaynakli": false
-  },
-  {
-   "tarih": "2026-10-27",
-   "baslik": "Noctilucent Clouds over Sweden",
-   "tur": "image",
-   "baglanti": "https://science.nasa.gov/image-article/apod-2026-october-27-noctilucent-clouds-over-sweden/",
-   "ozet_en": "Explanation: Sometimes it's night on the ground but day in the air. As the Earth rotates to eclipse the Sun, sunset rises up from the ground. Therefore, at sunset on the ground, sunlight still shines on clouds above.",
-   "kredi": "V. Höfer, D. Večerník &amp; B. Večerníková",
-   "nasa_kaynakli": false
   }
  ],
  "epic": {
@@ -150,38 +150,10 @@
  },
  "asteroitler": {
   "aralik": [
-   "2026-11-05",
-   "2026-11-19"
+   "2026-11-06",
+   "2026-11-20"
   ],
   "liste": [
-   {
-    "ad": "(2017 WJ2)",
-    "tarih": "2026-Nov-05 01:14",
-    "mesafe_ay": 14.7,
-    "hiz_kms": 12.0,
-    "cap_m": 118
-   },
-   {
-    "ad": "(2026 VP1)",
-    "tarih": "2026-Nov-05 14:06",
-    "mesafe_ay": 0.5,
-    "hiz_kms": 12.6,
-    "cap_m": 5
-   },
-   {
-    "ad": "(2026 VV1)",
-    "tarih": "2026-Nov-05 20:58",
-    "mesafe_ay": 4.5,
-    "hiz_kms": 6.1,
-    "cap_m": 12
-   },
-   {
-    "ad": "(2026 VF1)",
-    "tarih": "2026-Nov-05 23:18",
-    "mesafe_ay": 9.0,
-    "hiz_kms": 4.3,
-    "cap_m": 14
-   },
    {
     "ad": "(2001 KF54)",
     "tarih": "2026-Nov-06 03:38",
@@ -193,8 +165,22 @@
     "ad": "(2026 VN1)",
     "tarih": "2026-Nov-06 06:55",
     "mesafe_ay": 1.6,
-    "hiz_kms": 17.1,
+    "hiz_kms": 17.2,
     "cap_m": 7
+   },
+   {
+    "ad": "(2026 VG3)",
+    "tarih": "2026-Nov-07 00:00",
+    "mesafe_ay": 0.6,
+    "hiz_kms": 8.0,
+    "cap_m": 11
+   },
+   {
+    "ad": "(2026 VZ3)",
+    "tarih": "2026-Nov-07 00:18",
+    "mesafe_ay": 18.3,
+    "hiz_kms": 15.3,
+    "cap_m": 18
    },
    {
     "ad": "(2026 VK2)",
@@ -205,7 +191,7 @@
    },
    {
     "ad": "(2026 VB1)",
-    "tarih": "2026-Nov-08 12:43",
+    "tarih": "2026-Nov-08 12:42",
     "mesafe_ay": 8.8,
     "hiz_kms": 14.2,
     "cap_m": 25
@@ -222,7 +208,7 @@
     "tarih": "2026-Nov-08 13:49",
     "mesafe_ay": 6.7,
     "hiz_kms": 7.2,
-    "cap_m": 35
+    "cap_m": 34
    },
    {
     "ad": "(2026 VW2)",
@@ -237,12 +223,33 @@
     "mesafe_ay": 4.9,
     "hiz_kms": 7.1,
     "cap_m": 10
+   },
+   {
+    "ad": "(2025 UF5)",
+    "tarih": "2026-Nov-09 21:06",
+    "mesafe_ay": 18.8,
+    "hiz_kms": 1.9,
+    "cap_m": 10
+   },
+   {
+    "ad": "(2015 VH65)",
+    "tarih": "2026-Nov-10 00:24",
+    "mesafe_ay": 9.7,
+    "hiz_kms": 8.0,
+    "cap_m": 10
    }
   ],
   "kredi": "NASA/JPL CNEOS"
  },
  "eonet": {
   "liste": [
+   {
+    "baslik": "Wildfire Wild River, Coos, New Hampshire",
+    "tur": "Wildfires",
+    "tarih": "2026-11-02",
+    "boylam": -71.031283,
+    "enlem": 44.330583
+   },
    {
     "baslik": "Tropical Cyclone Murasu",
     "tur": "Severe Storms",
@@ -277,6 +284,13 @@
     "tarih": "2026-10-29",
     "boylam": -111.666667,
     "enlem": 35.283333
+   },
+   {
+    "baslik": "Prescribed Fire TON RX - BAILEY LOST HP, Okanogan, Washington",
+    "tur": "Wildfires",
+    "tarih": "2026-10-29",
+    "boylam": -119.055205,
+    "enlem": 48.532726
    },
    {
     "baslik": "Wildfire South Tank Trail, Perry, Mississippi",
@@ -333,20 +347,6 @@
     "tarih": "2026-10-21",
     "boylam": -111.657083,
     "enlem": 34.962583
-   },
-   {
-    "baslik": "Prescribed Fire STE - Goodin Ridge RX, McCreary, Kentucky",
-    "tur": "Wildfires",
-    "tarih": "2026-10-18",
-    "boylam": -84.376511,
-    "enlem": 36.948746
-   },
-   {
-    "baslik": "Wildfire Bras, Sanders, Montana",
-    "tur": "Wildfires",
-    "tarih": "2026-10-17",
-    "boylam": -114.5861111,
-    "enlem": 47.2780556
    }
   ],
   "kredi": "NASA EONET"
@@ -354,25 +354,25 @@
  "iss_tle": {
   "OBJECT_NAME": "ISS (ZARYA)",
   "OBJECT_ID": "1998-067A",
-  "EPOCH": "2026-11-04T21:15:15.204960",
-  "MEAN_MOTION": 15.49180468,
-  "ECCENTRICITY": 0.00072122,
+  "EPOCH": "2026-11-05T20:28:36.809184",
+  "MEAN_MOTION": 15.4919453,
+  "ECCENTRICITY": 0.00071954,
   "INCLINATION": 51.6327,
-  "RA_OF_ASC_NODE": 323.8448,
-  "ARG_OF_PERICENTER": 348.649,
-  "MEAN_ANOMALY": 11.4335,
+  "RA_OF_ASC_NODE": 319.056,
+  "ARG_OF_PERICENTER": 352.5747,
+  "MEAN_ANOMALY": 7.5134,
   "EPHEMERIS_TYPE": 0,
   "CLASSIFICATION_TYPE": "U",
   "NORAD_CAT_ID": 25544,
   "ELEMENT_SET_NO": 999,
-  "REV_AT_EPOCH": 59356,
-  "BSTAR": 0.00010456704,
-  "MEAN_MOTION_DOT": 5.352e-05,
+  "REV_AT_EPOCH": 59371,
+  "BSTAR": 0.0001274916,
+  "MEAN_MOTION_DOT": 6.629e-05,
   "MEAN_MOTION_DDOT": 0
  },
  "gibs": {
-  "tarih": "2026-11-04",
-  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-11-04&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
+  "tarih": "2026-11-05",
+  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_NOAA21_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-11-05&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
   "kredi": "NASA GIBS / Worldview"
  }
 }
