@@ -1,5 +1,33 @@
 [
   {
+    "slug": "nuzzlings",
+    "cat": "games",
+    "icon": "nuzzlings/icon.png",
+    "names": {
+      "tr": "Nuzzlings",
+      "en": "Nuzzlings",
+      "es": "Nuzzlings",
+      "pt": "Nuzzlings"
+    },
+    "tint": "#F4A15B",
+    "pkg": "com.nuzzlingscat.nesimapps",
+    "new": "2026-12-31",
+    "desc": {
+      "tr": "Bir yavru kedi sahiplen, sev, besle ve büyümesini izle. Sakin ve sıcacık. Google Play'de çok yakında.",
+      "en": "Adopt a kitten, cuddle it, feed it and watch it grow up. Cozy and calm. Coming soon to Google Play.",
+      "es": "Adopta un gatito, mímalo, aliméntalo y míralo crecer. Tranquilo y acogedor. Próximamente en Google Play.",
+      "pt": "Adote um gatinho, faça carinho, alimente e veja ele crescer. Calmo e fofo. Em breve no Google Play."
+    },
+    "status": "soon",
+    "popular": false,
+    "desc_live": {
+      "tr": "Bir yavru kedi sahiplen, sev, besle ve büyümesini izle. Sakin ve sıcacık.",
+      "en": "Adopt a kitten, cuddle it, feed it and watch it grow up. Cozy and calm.",
+      "es": "Adopta un gatito, mímalo, aliméntalo y míralo crecer. Tranquilo y acogedor.",
+      "pt": "Adote um gatinho, faça carinho, alimente e veja ele crescer. Calmo e fofo."
+    }
+  },
+  {
     "slug": "grumblings",
     "cat": "games",
     "icon": "grumblings/icon.png",
