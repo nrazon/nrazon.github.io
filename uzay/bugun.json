@@ -1,7 +1,16 @@
 {
- "uretim": "2026-11-06T12:57:23Z",
+ "uretim": "2026-11-07T11:44:10Z",
  "surum": 1,
  "apod": [
+  {
+   "tarih": "2026-11-07",
+   "baslik": "De Gerlache-Kocher Massif",
+   "tur": "image",
+   "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-7-de-gerlache-kocher-massif/",
+   "ozet_en": "Explanation: De Gerlache-Kocher massif looms on the visible horizon in this close-up of the edge of the Moon. The mountainous formation rises about 4 kilometers above its surroundings and is located very close to the lunar south pole.",
+   "kredi": "Alejandro Sanz",
+   "nasa_kaynakli": false
+  },
   {
    "tarih": "2026-11-06",
    "baslik": "A Farewell to Swift",
@@ -82,15 +91,6 @@
    "ozet_en": "Explanation: That's no moon. But you could be forgiven for thinking it was a crescent Moon in the sky. It is a lesser known fact that Venus also has phases. (What about other planets?) The featured image shows Venus seen almost directly between the Sun and the Earth.",
    "kredi": "Thierry Legault",
    "nasa_kaynakli": false
-  },
-  {
-   "tarih": "2026-10-28",
-   "baslik": "The Mutual Occultation of Ganymede and Io",
-   "tur": "video",
-   "baglanti": "https://science.nasa.gov/image-article/apod-2026-october-28-the-mutual-occultation-of-ganymede-and-io/",
-   "ozet_en": "Explanation: Jupiter is one of the least lonely planets in the Solar System, at least when it comes to natural satellites. 115 moons have been discovered orbiting Jupiter so far! (Saturn has the most with 293, but who’s counting.) Ganymede and Io, two of Jupiter’s Galilean moons, met in the sky on October 20th, 2026.",
-   "kredi": "Michael Wong",
-   "nasa_kaynakli": false
   }
  ],
  "epic": {
@@ -150,31 +150,10 @@
  },
  "asteroitler": {
   "aralik": [
-   "2026-11-06",
-   "2026-11-20"
+   "2026-11-07",
+   "2026-11-21"
   ],
   "liste": [
-   {
-    "ad": "(2001 KF54)",
-    "tarih": "2026-Nov-06 03:38",
-    "mesafe_ay": 18.8,
-    "hiz_kms": 16.4,
-    "cap_m": 391
-   },
-   {
-    "ad": "(2026 VN1)",
-    "tarih": "2026-Nov-06 06:55",
-    "mesafe_ay": 1.6,
-    "hiz_kms": 17.2,
-    "cap_m": 7
-   },
-   {
-    "ad": "(2026 VG3)",
-    "tarih": "2026-Nov-07 00:00",
-    "mesafe_ay": 0.6,
-    "hiz_kms": 8.0,
-    "cap_m": 11
-   },
    {
     "ad": "(2026 VZ3)",
     "tarih": "2026-Nov-07 00:18",
@@ -183,8 +162,15 @@
     "cap_m": 18
    },
    {
+    "ad": "(2026 VP4)",
+    "tarih": "2026-Nov-07 15:07",
+    "mesafe_ay": 10.3,
+    "hiz_kms": 10.7,
+    "cap_m": 11
+   },
+   {
     "ad": "(2026 VK2)",
-    "tarih": "2026-Nov-08 02:09",
+    "tarih": "2026-Nov-08 01:57",
     "mesafe_ay": 2.3,
     "hiz_kms": 4.9,
     "cap_m": 3
@@ -194,7 +180,7 @@
     "tarih": "2026-Nov-08 12:42",
     "mesafe_ay": 8.8,
     "hiz_kms": 14.2,
-    "cap_m": 25
+    "cap_m": 23
    },
    {
     "ad": "(2026 VY1)",
@@ -208,21 +194,21 @@
     "tarih": "2026-Nov-08 13:49",
     "mesafe_ay": 6.7,
     "hiz_kms": 7.2,
-    "cap_m": 34
+    "cap_m": 33
    },
    {
     "ad": "(2026 VW2)",
     "tarih": "2026-Nov-08 15:40",
-    "mesafe_ay": 7.9,
+    "mesafe_ay": 8.0,
     "hiz_kms": 14.7,
     "cap_m": 16
    },
    {
     "ad": "(2026 VO2)",
-    "tarih": "2026-Nov-08 18:48",
-    "mesafe_ay": 4.9,
-    "hiz_kms": 7.1,
-    "cap_m": 10
+    "tarih": "2026-Nov-08 18:16",
+    "mesafe_ay": 4.7,
+    "hiz_kms": 7.0,
+    "cap_m": 9
    },
    {
     "ad": "(2025 UF5)",
@@ -232,11 +218,25 @@
     "cap_m": 10
    },
    {
+    "ad": "(2026 VQ4)",
+    "tarih": "2026-Nov-09 21:14",
+    "mesafe_ay": 9.9,
+    "hiz_kms": 10.2,
+    "cap_m": 13
+   },
+   {
     "ad": "(2015 VH65)",
     "tarih": "2026-Nov-10 00:24",
     "mesafe_ay": 9.7,
     "hiz_kms": 8.0,
     "cap_m": 10
+   },
+   {
+    "ad": "(2026 VT3)",
+    "tarih": "2026-Nov-10 10:04",
+    "mesafe_ay": 4.3,
+    "hiz_kms": 9.8,
+    "cap_m": 13
    }
   ],
   "kredi": "NASA/JPL CNEOS"
@@ -354,25 +354,25 @@
  "iss_tle": {
   "OBJECT_NAME": "ISS (ZARYA)",
   "OBJECT_ID": "1998-067A",
-  "EPOCH": "2026-11-05T20:28:36.809184",
-  "MEAN_MOTION": 15.4919453,
-  "ECCENTRICITY": 0.00071954,
-  "INCLINATION": 51.6327,
-  "RA_OF_ASC_NODE": 319.056,
-  "ARG_OF_PERICENTER": 352.5747,
-  "MEAN_ANOMALY": 7.5134,
+  "EPOCH": "2026-11-06T21:14:50.459136",
+  "MEAN_MOTION": 15.49223765,
+  "ECCENTRICITY": 0.00072397,
+  "INCLINATION": 51.6322,
+  "RA_OF_ASC_NODE": 313.9479,
+  "ARG_OF_PERICENTER": 356.4073,
+  "MEAN_ANOMALY": 3.6863,
   "EPHEMERIS_TYPE": 0,
   "CLASSIFICATION_TYPE": "U",
   "NORAD_CAT_ID": 25544,
   "ELEMENT_SET_NO": 999,
-  "REV_AT_EPOCH": 59371,
-  "BSTAR": 0.0001274916,
-  "MEAN_MOTION_DOT": 6.629e-05,
+  "REV_AT_EPOCH": 59387,
+  "BSTAR": 0.00022777979,
+  "MEAN_MOTION_DOT": 0.00012224,
   "MEAN_MOTION_DDOT": 0
  },
  "gibs": {
-  "tarih": "2026-11-05",
-  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_NOAA21_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-11-05&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
+  "tarih": "2026-11-06",
+  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_NOAA21_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-11-06&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
   "kredi": "NASA GIBS / Worldview"
  }
 }
