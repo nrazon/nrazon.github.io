@@ -2,6 +2,7 @@
 # Kullanım: py -3 tools/gen_site.py   (github-pages kökünden). Kaynaklar: ../<Uygulama>/market_assets/listing.md + screenshots.
 # Yeni uygulama: APPDEFS'e satır ekle (ana sayfada kartı da olmalı; "Daha fazla" bağlantısını betik ekler). Cardles/Cubbles içeriği aşağıda elle yazılı.
 # Ekran görüntüsü küçükleri <slug>/shots/ altına Chrome ile üretilir (yoksa); tools/thumbs_manifest.json boyutları tutar (commit edilir).
+import glob
 import os
 import re
 import json
@@ -743,7 +744,9 @@ def index_pkgs():
 
 
 def shot_list(folder, srcdir):
-    d = os.path.join(MD, folder, "market_assets", "screenshots", srcdir)
+    base = os.path.join(MD, folder, "market_assets")
+    newer = sorted(glob.glob(os.path.join(base, "screenshots_*", srcdir)))  # örn. screenshots_1.1.0: varsa en yenisi kullanılır
+    d = newer[-1] if newer else os.path.join(base, "screenshots", srcdir)
     return [os.path.join(d, f) for f in sorted(os.listdir(d)) if f.lower().endswith(".png")]
 
 

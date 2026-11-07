@@ -17,7 +17,7 @@ LANGS = ["en", "tr", "es", "pt"]
 DIRS = {"en": "guides", "tr": "tr/rehber", "es": "es/guias", "pt": "pt/guias"}
 HREFLANG = {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}
 OGLOC = {"en": "en_US", "tr": "tr_TR", "es": "es_ES", "pt": "pt_BR"}
-GUIDE_MODULES = ["mahjong", "solitaire", "blocks", "beamies", "arrows", "logic", "g2048", "tictactoe"]
+GUIDE_MODULES = ["mahjong", "solitaire", "blocks", "beamies", "arrows", "logic", "lights", "peg", "g2048", "tictactoe"]
 SOCIAL = ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]
 
 T = {
@@ -224,7 +224,7 @@ def main():
                     f'    <h1>{esc(c["title"])}</h1>\n    <p class="by">{esc(t["by"])}</p>\n    <p class="lead">{esc(c["intro"])}</p>\n    ' + "\n    ".join(sec) + f"\n    {cta}\n    {faq}\n    {more}\n  </article>")
             out = head(lang, c["title"], c["desc"], canon, alternates, og_image, ld, accent) + page_shell(lang, alternates, body)
             write(f"{DIRS[lang]}/{c['slug']}/index.html", out)
-            by_app[g["app"]][lang] = f"/{DIRS[lang]}/{c['slug']}/"
+            by_app[g["app"]].setdefault(lang, f"/{DIRS[lang]}/{c['slug']}/")  # uygulama sayfasına ilk rehber bağlanır
             pages.append({"url": canon, "loc": alternates, "default": "en", "hash": hashlib.md5(out.encode("utf-8")).hexdigest()})
 
     # dizin sayfaları
