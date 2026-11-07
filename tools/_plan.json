@@ -141,6 +141,22 @@
    "pt"
   ]
  },
+ "grumblings": {
+  "langs": [
+   "en",
+   "tr",
+   "es",
+   "pt"
+  ],
+  "default": "en",
+  "cat": "games",
+  "priv": [
+   "en",
+   "tr",
+   "es",
+   "pt"
+  ]
+ },
  "haftasonum": {
   "langs": [
    "tr"

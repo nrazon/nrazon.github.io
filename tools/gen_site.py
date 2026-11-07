@@ -11,12 +11,12 @@ G = r"C:\@Development\PersonalAndroidApps\github-pages"
 BASE = "https://nrazon.github.io"
 # Yayına henüz çıkmamış uygulamaların detay sayfaları: URL'den açılır ama ana sayfa kartı, "Diğer uygulamalarım" listeleri ve sitemap'e GİRMEZ,
 # sayfada noindex var. Uygulama Play'de yayınlanınca slug buradan silinir (ve home_data.json'da status=live yapılır).
-HIDDEN = {"nuzzlings"}  # yayinda olmayan uygulama onceden buraya eklenir, yayin gunu silinir
+HIDDEN = {"nuzzlings", "grumblings"}  # yayinda olmayan uygulama onceden buraya eklenir, yayin gunu silinir
 # Ana sayfada kartında data-pkg olmayan (henüz "yakında" kartı olan) uygulamaların paket adları.
 VIDEOS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "videos.json"), encoding="utf-8"))
 VIDEO_LABEL = {"tr": "Tanıtım videosu", "en": "Promo video", "es": "Vídeo de presentación", "pt": "Vídeo de apresentação"}
 VIDEO_PLAY = {"tr": "Tanıtım videosunu oynat", "en": "Play promo video", "es": "Reproducir el vídeo", "pt": "Reproduzir o vídeo"}
-PKG_FALLBACK = {"calisan": "com.calisanasistani.nesimapps", "uzaygunlugu": "com.uzaygunlugu.nesimapps", "haftasonum": "com.haftasonum.nesimapps", "beamies": "com.beamies.nesimapps", "logiclings": "com.logiclings.nesimapps", "nuzzlings": "com.nuzzlingscat.nesimapps"}
+PKG_FALLBACK = {"calisan": "com.calisanasistani.nesimapps", "uzaygunlugu": "com.uzaygunlugu.nesimapps", "haftasonum": "com.haftasonum.nesimapps", "beamies": "com.beamies.nesimapps", "logiclings": "com.logiclings.nesimapps", "grumblings": "com.grumblings.nesimapps", "nuzzlings": "com.nuzzlingscat.nesimapps"}
 REF = "&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"
 
 # ------------------------------------------------------------------ ortak: göz takip betiği
@@ -623,6 +623,7 @@ LANDING_CSS += VIDEO_CSS
 
 # slug, klasör, ad(tr), ad(en), simge, tint, ekran görüntüsü kaynakları {dil: klasör}, yeni-rozet
 APPDEFS = [
+    ("grumblings", "Grumblings", "Grumblings", "Grumblings", "icon.png", "#9B6BFF", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-10"),
     ("tilelings", "Tilelings", "Tilelings", "Tilelings", "icon.png", "#2E9E73", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-05"),
     ("nuzzlings", "Nuzzlings", "Nuzzlings", "Nuzzlings", "icon.png", "#F4A15B", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-31"),
     ("logiclings", "Logiclings", "Logiclings", "Logiclings", "icon.png", "#E8B64C", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-15"),

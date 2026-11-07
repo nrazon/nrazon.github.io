@@ -1,5 +1,33 @@
 [
   {
+    "slug": "grumblings",
+    "cat": "games",
+    "icon": "grumblings/icon.png",
+    "names": {
+      "tr": "Grumblings",
+      "en": "Grumblings",
+      "es": "Grumblings",
+      "pt": "Grumblings"
+    },
+    "tint": "#9B6BFF",
+    "pkg": "com.grumblings.nesimapps",
+    "new": "2026-12-10",
+    "desc": {
+      "tr": "Huysuz canavarı kandır: sıra tabanlı labirent bulmacası, 30 dünyada 300 bölüm. Google Play'de çok yakında.",
+      "en": "Outsmart the grumpy monster: a turn-based maze puzzle with 300 levels in 30 worlds. Coming soon to Google Play.",
+      "es": "Engaña al monstruo gruñón: un puzle de laberinto por turnos con 300 niveles en 30 mundos. Próximamente en Google Play.",
+      "pt": "Engane o monstro rabugento: um quebra-cabeça de labirinto por turnos com 300 níveis em 30 mundos. Em breve no Google Play."
+    },
+    "status": "soon",
+    "popular": false,
+    "desc_live": {
+      "tr": "Huysuz canavarı kandır: sıra tabanlı labirent bulmacası, 30 dünyada 300 bölüm.",
+      "en": "Outsmart the grumpy monster: a turn-based maze puzzle with 300 levels in 30 worlds.",
+      "es": "Engaña al monstruo gruñón: un puzle de laberinto por turnos con 300 niveles en 30 mundos.",
+      "pt": "Engane o monstro rabugento: um quebra-cabeça de labirinto por turnos com 300 níveis em 30 mundos."
+    }
+  },
+  {
     "slug": "tilelings",
     "cat": "games",
     "icon": "tilelings/icon.png",

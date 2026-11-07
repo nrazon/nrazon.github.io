@@ -1,0 +1,80 @@
+# Rehber: Grumblings (sıra tabanlı labirent bulmacası). Yayın gününe kadar gen_guides.py GUIDE_MODULES'e EKLENMEZ (bkz. gen_guides.py PENDING).
+GUIDE = {
+    "id": "maze", "app": "grumblings", "date": "2026-11-08",
+    "en": {
+        "slug": "how-to-play-grumblings-maze-puzzle",
+        "title": "How to Play Grumblings: Rules, Monster Moves and Tips for 3 Stars",
+        "desc": "How Grumblings works: take one step, then the grumpy monster takes two. Learn how monsters move, how to use walls and waiting, and tips for two-monster levels and 3 stars.",
+        "intro": "Grumblings is a turn-based maze puzzle. You step through the maze to the glowing door, and after every step you take, the grumpy monster takes two. There is no timer and no luck: every level can be solved by planning ahead. This guide explains the rules, how the monsters decide where to go, and the tricks that make levels easy.",
+        "sections": [
+            {"h": "The rules in one minute", "ul": ["You move one step (up, down, left or right) or wait in place.", "After your move, each monster takes two steps toward you.", "Walls block both you and the monsters. You win by reaching the glowing door.", "If a monster reaches you, it only tickles you. Undo and try again; there is no penalty."]},
+            {"h": "How the monsters move", "p": ["Every monster has an arrow on its belly. A monster with a sideways arrow moves horizontally first and then up or down. A monster with an up-down arrow does the opposite. If the preferred direction is blocked by a wall, the monster tries the other direction, and if both are blocked it stays where it is.", "From later worlds, two monsters take turns: the first steps, the second steps, then the first and the second step again. A monster cannot step onto a cell where another monster stands."]},
+            {"h": "The two best tricks", "ul": ["Use walls: a monster that wants to move sideways but hits a wall has to go around or stay stuck. Lure it behind a wall and slip past.", "Wait on purpose: sometimes the best move is to stay put so the monster walks into a dead end. The Wait button counts as a move.", "Keep your distance: if you end your move more than two cells away from a monster, it cannot reach you on its next turn."]},
+            {"h": "Tips for two-monster levels", "ul": ["Watch which monster moves first: the order matters when both want the same cell.", "Make one monster block the other. A monster cannot pass through its friend.", "Separate them: lead the sideways monster one way and the up-down monster the other."]},
+            {"h": "Getting 3 stars", "p": ["Stars depend on how few moves you need compared with the shortest possible escape. Three stars means you found the shortest solution; two stars is a few moves more. Press and hold next to your hero to preview where the monsters will step before you commit, and use Undo freely to try ideas."]},
+        ],
+        "faq": [
+            ["Can the monsters hurt me?", "No. If a monster catches you it only tickles you, then you can undo and try again."],
+            ["Is there a time limit?", "No. Take as long as you like; only the number of moves matters for stars."],
+            ["Can every level be solved?", "Yes. All 300 levels are checked by a solver, so there is always a way to reach the door."],
+            ["What does the Wait button do?", "It makes you skip your step while the monsters still take theirs. It is often the key to trapping a monster behind a wall."],
+        ],
+    },
+    "tr": {
+        "slug": "grumblings-nasil-oynanir-labirent-bulmacasi",
+        "title": "Grumblings Nasıl Oynanır? Kurallar, Canavar Hareketleri ve 3 Yıldız İpuçları",
+        "desc": "Grumblings nasıl çalışır: sen bir adım atarsın, huysuz canavar iki adım atar. Canavarların nasıl hareket ettiğini, duvarları ve beklemeyi nasıl kullanacağını, iki canavarlı bölümler ve 3 yıldız için ipuçlarını öğren.",
+        "intro": "Grumblings sıra tabanlı bir labirent bulmacasıdır. Labirentte parlayan kapıya doğru ilerlersin ve attığın her adımdan sonra huysuz canavar iki adım atar. Süre ve şans yok: her bölüm önceden planlayarak çözülebilir. Bu rehber kuralları, canavarların nereye gideceğine nasıl karar verdiğini ve bölümleri kolaylaştıran püf noktalarını anlatıyor.",
+        "sections": [
+            {"h": "Kurallar bir dakikada", "ul": ["Bir adım atarsın (yukarı, aşağı, sola ya da sağa) ya da olduğun yerde beklersin.", "Hamlenden sonra her canavar sana doğru iki adım atar.", "Duvarlar hem seni hem canavarları engeller. Parlayan kapıya ulaşınca kazanırsın.", "Bir canavar sana ulaşırsa yalnızca seni gıdıklar. Geri alıp tekrar denersin; ceza yok."]},
+            {"h": "Canavarlar nasıl hareket eder?", "p": ["Her canavarın karnında bir ok vardır. Yana bakan oklu canavar önce yatay, sonra yukarı ya da aşağı gider. Yukarı-aşağı oklu canavar bunun tersini yapar. Tercih ettiği yön duvarla kapalıysa diğer yönü dener, ikisi de kapalıysa olduğu yerde kalır.", "İlerleyen dünyalarda iki canavar sırayla hareket eder: önce birinci adım atar, sonra ikinci, sonra birinci ve ikinci yine adım atar. Bir canavar, başka bir canavarın bulunduğu hücreye giremez."]},
+            {"h": "En iyi iki püf noktası", "ul": ["Duvarları kullan: yana gitmek isteyen canavar duvara çarparsa dolaşmak zorunda kalır ya da takılır. Onu duvarın arkasına çek ve yanından geç.", "Bilerek bekle: bazen en iyi hamle olduğun yerde kalmaktır; canavar çıkmaz sokağa girer. Bekle düğmesi de bir hamledir.", "Mesafeni koru: hamleni bir canavardan ikiden fazla hücre uzakta bitirirsen, bir sonraki turunda sana ulaşamaz."]},
+            {"h": "İki canavarlı bölümler için ipuçları", "ul": ["Hangi canavarın önce hareket ettiğine bak: ikisi de aynı hücreyi istediğinde sıra önemlidir.", "Bir canavarı diğerine engel yap. Bir canavar arkadaşının içinden geçemez.", "Onları ayır: yana giden canavarı bir yöne, yukarı-aşağı giden canavarı diğer yöne çek."]},
+            {"h": "3 yıldız nasıl alınır?", "p": ["Yıldızlar, en kısa kaçışa göre kaç hamle yaptığına bağlıdır. Üç yıldız en kısa çözümü bulduğun anlamına gelir; iki yıldız birkaç hamle fazladır. Hamle yapmadan önce canavarların nereye adım atacağını görmek için kahramanın yanına basılı tut ve fikirleri denemek için Geri al'ı rahatça kullan."]},
+        ],
+        "faq": [
+            ["Canavarlar bana zarar verir mi?", "Hayır. Bir canavar seni yakalarsa yalnızca gıdıklar; sonra geri alıp tekrar deneyebilirsin."],
+            ["Süre sınırı var mı?", "Hayır. İstediğin kadar düşünebilirsin; yıldızlar için yalnızca hamle sayısı önemlidir."],
+            ["Her bölüm çözülebilir mi?", "Evet. 300 bölümün hepsi bir çözücüyle kontrol edildi; kapıya ulaşmanın her zaman bir yolu var."],
+            ["Bekle düğmesi ne yapar?", "Canavarlar adımlarını atarken senin adımını atlamanı sağlar. Bir canavarı duvarın arkasına hapsetmenin anahtarı çoğu zaman budur."],
+        ],
+    },
+    "es": {
+        "slug": "como-jugar-grumblings-puzle-de-laberinto",
+        "title": "Cómo jugar a Grumblings: reglas, movimientos de los monstruos y consejos para 3 estrellas",
+        "desc": "Cómo funciona Grumblings: tú das un paso y el monstruo gruñón da dos. Aprende cómo se mueven los monstruos, cómo usar las paredes y la espera, y consejos para los niveles con dos monstruos y 3 estrellas.",
+        "intro": "Grumblings es un puzle de laberinto por turnos. Avanzas por el laberinto hasta la puerta brillante y, tras cada paso tuyo, el monstruo gruñón da dos. No hay cronómetro ni suerte: todos los niveles se resuelven planificando. Esta guía explica las reglas, cómo deciden los monstruos adónde ir y los trucos que facilitan los niveles.",
+        "sections": [
+            {"h": "Las reglas en un minuto", "ul": ["Das un paso (arriba, abajo, izquierda o derecha) o esperas en el sitio.", "Después de tu movimiento, cada monstruo da dos pasos hacia ti.", "Las paredes bloquean tanto a ti como a los monstruos. Ganas al llegar a la puerta brillante.", "Si un monstruo te alcanza, solo te hace cosquillas. Deshaz y vuelve a intentarlo; no hay penalización."]},
+            {"h": "Cómo se mueven los monstruos", "p": ["Cada monstruo tiene una flecha en la barriga. Un monstruo con flecha horizontal se mueve primero de lado y después arriba o abajo. Uno con flecha vertical hace lo contrario. Si la dirección preferida está bloqueada por una pared, prueba la otra, y si ambas están bloqueadas se queda donde está.", "En los mundos avanzados, dos monstruos se turnan: da un paso el primero, luego el segundo, y después vuelven a dar un paso el primero y el segundo. Un monstruo no puede pisar una casilla donde hay otro monstruo."]},
+            {"h": "Los dos mejores trucos", "ul": ["Usa las paredes: un monstruo que quiere ir de lado y choca con una pared tiene que rodearla o se queda atascado. Atráelo detrás de una pared y pasa de largo.", "Espera a propósito: a veces la mejor jugada es quedarte quieto para que el monstruo entre en un callejón sin salida. El botón Esperar cuenta como movimiento.", "Mantén la distancia: si terminas tu movimiento a más de dos casillas de un monstruo, no puede alcanzarte en su siguiente turno."]},
+            {"h": "Consejos para niveles con dos monstruos", "ul": ["Fíjate en qué monstruo se mueve primero: el orden importa cuando los dos quieren la misma casilla.", "Haz que un monstruo bloquee al otro. Un monstruo no puede atravesar a su compañero.", "Sepáralos: lleva al monstruo horizontal hacia un lado y al vertical hacia el otro."]},
+            {"h": "Cómo conseguir 3 estrellas", "p": ["Las estrellas dependen de cuántos movimientos necesitas en comparación con el escape más corto posible. Tres estrellas significa que encontraste la solución más corta; dos estrellas son unos pocos movimientos más. Mantén pulsado junto a tu héroe para ver adónde pisarán los monstruos antes de moverte, y usa Deshacer sin miedo para probar ideas."]},
+        ],
+        "faq": [
+            ["¿Pueden hacerme daño los monstruos?", "No. Si un monstruo te atrapa, solo te hace cosquillas y puedes deshacer e intentarlo de nuevo."],
+            ["¿Hay límite de tiempo?", "No. Tómate el tiempo que quieras; para las estrellas solo cuenta el número de movimientos."],
+            ["¿Se puede resolver todos los niveles?", "Sí. Los 300 niveles están comprobados por un solucionador, así que siempre hay un camino hasta la puerta."],
+            ["¿Qué hace el botón Esperar?", "Te hace saltar tu paso mientras los monstruos dan los suyos. Suele ser la clave para dejar a un monstruo atrapado detrás de una pared."],
+        ],
+    },
+    "pt": {
+        "slug": "como-jogar-grumblings-quebra-cabeca-de-labirinto",
+        "title": "Como jogar Grumblings: regras, movimentos dos monstros e dicas para 3 estrelas",
+        "desc": "Como funciona o Grumblings: você dá um passo e o monstro rabugento dá dois. Aprenda como os monstros se movem, como usar as paredes e a espera, e dicas para fases com dois monstros e 3 estrelas.",
+        "intro": "Grumblings é um quebra-cabeça de labirinto por turnos. Você avança pelo labirinto até a porta brilhante e, depois de cada passo seu, o monstro rabugento dá dois. Não há cronômetro nem sorte: todas as fases se resolvem planejando. Este guia explica as regras, como os monstros decidem para onde ir e os truques que facilitam as fases.",
+        "sections": [
+            {"h": "As regras em um minuto", "ul": ["Você dá um passo (para cima, para baixo, esquerda ou direita) ou espera no lugar.", "Depois do seu movimento, cada monstro dá dois passos na sua direção.", "As paredes bloqueiam você e os monstros. Você vence ao chegar à porta brilhante.", "Se um monstro alcançar você, ele só faz cócegas. Desfaça e tente de novo; não há penalidade."]},
+            {"h": "Como os monstros se movem", "p": ["Cada monstro tem uma seta na barriga. Um monstro com seta horizontal anda primeiro de lado e depois para cima ou para baixo. Um com seta vertical faz o contrário. Se a direção preferida estiver bloqueada por uma parede, ele tenta a outra, e se as duas estiverem bloqueadas ele fica onde está.", "Nos mundos mais avançados, dois monstros se revezam: o primeiro dá um passo, depois o segundo, e então o primeiro e o segundo dão mais um passo. Um monstro não pode pisar em uma casa onde há outro monstro."]},
+            {"h": "Os dois melhores truques", "ul": ["Use as paredes: um monstro que quer ir de lado e bate numa parede precisa contorná-la ou fica preso. Atraia-o para trás de uma parede e passe por ele.", "Espere de propósito: às vezes a melhor jogada é ficar parado para o monstro entrar num beco sem saída. O botão Esperar conta como movimento.", "Mantenha a distância: se você terminar o movimento a mais de duas casas de um monstro, ele não alcança você no próximo turno."]},
+            {"h": "Dicas para fases com dois monstros", "ul": ["Observe qual monstro se move primeiro: a ordem importa quando os dois querem a mesma casa.", "Faça um monstro bloquear o outro. Um monstro não atravessa o colega.", "Separe-os: leve o monstro horizontal para um lado e o vertical para o outro."]},
+            {"h": "Como conseguir 3 estrelas", "p": ["As estrelas dependem de quantos movimentos você usa em comparação com a fuga mais curta possível. Três estrelas significam que você achou a solução mais curta; duas estrelas são alguns movimentos a mais. Mantenha pressionado ao lado do herói para ver onde os monstros vão pisar antes de se mover, e use Desfazer à vontade para testar ideias."]},
+        ],
+        "faq": [
+            ["Os monstros podem me machucar?", "Não. Se um monstro pegar você, ele só faz cócegas, e você pode desfazer e tentar de novo."],
+            ["Existe limite de tempo?", "Não. Leve o tempo que quiser; para as estrelas só conta o número de movimentos."],
+            ["Todas as fases têm solução?", "Sim. As 300 fases são verificadas por um solucionador, então sempre existe um caminho até a porta."],
+            ["O que o botão Esperar faz?", "Ele faz você pular o seu passo enquanto os monstros dão os deles. Muitas vezes é a chave para prender um monstro atrás de uma parede."],
+        ],
+    },
+}

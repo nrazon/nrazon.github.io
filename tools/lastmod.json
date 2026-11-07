@@ -1,6 +1,6 @@
 {
  "https://nrazon.github.io/": {
-  "hash": "3339bcd0a8a33a09f91bbab0547dadcb",
+  "hash": "e82a23cb73e381f98e7378a2ea77e260",
   "date": "2026-11-07"
  },
  "https://nrazon.github.io/agecalculator/": {
@@ -36,7 +36,7 @@
   "date": "2026-11-06"
  },
  "https://nrazon.github.io/es/": {
-  "hash": "ef2be3e5bfbd113f0e8f520e90125a34",
+  "hash": "214e8f3be4332e633854b184f2f7b532",
   "date": "2026-11-07"
  },
  "https://nrazon.github.io/es/agecalculator/": {
@@ -104,7 +104,7 @@
   "date": "2026-11-06"
  },
  "https://nrazon.github.io/pt/": {
-  "hash": "37632045a3b44c9cd4c56a9624ac4301",
+  "hash": "d1dbc08538e5eb8292b967359f1ad85d",
   "date": "2026-11-07"
  },
  "https://nrazon.github.io/pt/agecalculator/": {
@@ -172,7 +172,7 @@
   "date": "2026-11-06"
  },
  "https://nrazon.github.io/tr/": {
-  "hash": "cdfd26892b9243d5e58c30b0d71c7e4e",
+  "hash": "2a28d2fb9cf6288907fe5a23d52c7072",
   "date": "2026-11-07"
  },
  "https://nrazon.github.io/tr/agecalculator/": {
@@ -441,6 +441,22 @@
  },
  "https://nrazon.github.io/tr/rehber/uykucu-yuzler-stratejisi-isiklari-kovala/": {
   "hash": "8326db0a6d6683fbc8d15fd336b5c46b",
+  "date": "2026-11-07"
+ },
+ "https://nrazon.github.io/es/guias/como-jugar-grumblings-puzle-de-laberinto/": {
+  "hash": "b77133df6d108ac98bbda55a45e6f13f",
+  "date": "2026-11-07"
+ },
+ "https://nrazon.github.io/guides/how-to-play-grumblings-maze-puzzle/": {
+  "hash": "913203db4ba8a4a4d3efff12d8f29a7b",
+  "date": "2026-11-07"
+ },
+ "https://nrazon.github.io/pt/guias/como-jogar-grumblings-quebra-cabeca-de-labirinto/": {
+  "hash": "223ff055989f111b8da47d0fa85171b3",
+  "date": "2026-11-07"
+ },
+ "https://nrazon.github.io/tr/rehber/grumblings-nasil-oynanir-labirent-bulmacasi/": {
+  "hash": "0017496c140619a1941da3f0a3166f42",
   "date": "2026-11-07"
  }
 }
