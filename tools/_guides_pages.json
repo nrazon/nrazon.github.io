@@ -47,6 +47,12 @@
    "tr": "/tr/rehber/xox-yenilmez-strateji/",
    "es": "/es/guias/tres-en-raya-estrategia-para-no-perder/",
    "pt": "/pt/guias/jogo-da-velha-estrategia-para-nao-perder/"
+  },
+  "grumblings": {
+   "en": "/guides/how-to-play-grumblings-maze-puzzle/",
+   "tr": "/tr/rehber/grumblings-nasil-oynanir-labirent-bulmacasi/",
+   "es": "/es/guias/como-jugar-grumblings-puzle-de-laberinto/",
+   "pt": "/pt/guias/como-jogar-grumblings-quebra-cabeca-de-labirinto/"
   }
  },
  "pages": [
@@ -59,7 +65,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-mahjong-paciencia/"
    },
    "default": "en",
-   "hash": "6f230b84f74be5a78e1400dfe5b674a3"
+   "hash": "6a50ce06256869a8a0287e6271fbdc01"
   },
   {
    "url": "https://nrazon.github.io/tr/rehber/mahjong-solitaire-nasil-oynanir/",
@@ -70,7 +76,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-mahjong-paciencia/"
    },
    "default": "en",
-   "hash": "3f0619e90830172d7f42ce3c9fb7d639"
+   "hash": "dc56fcf3ec91152773ea69e24f15d2a1"
   },
   {
    "url": "https://nrazon.github.io/es/guias/como-jugar-mahjong-solitario/",
@@ -81,7 +87,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-mahjong-paciencia/"
    },
    "default": "en",
-   "hash": "41b2e88ef785627cc3731e96b0f12ae1"
+   "hash": "bc2ffcbde22f1d8c7b0a3c44a0cd8dd6"
   },
   {
    "url": "https://nrazon.github.io/pt/guias/como-jogar-mahjong-paciencia/",
@@ -92,7 +98,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-mahjong-paciencia/"
    },
    "default": "en",
-   "hash": "f1395d0ecdacdea3ea7105aefc4955a7"
+   "hash": "00bee85c4c788949430be991f9477ddb"
   },
   {
    "url": "https://nrazon.github.io/guides/how-to-play-klondike-solitaire/",
@@ -103,7 +109,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-paciencia-klondike/"
    },
    "default": "en",
-   "hash": "998ab8028d160ce69cece669a388a651"
+   "hash": "99af97d277bad15fecb6f655255afc6d"
   },
   {
    "url": "https://nrazon.github.io/tr/rehber/klondike-solitaire-nasil-oynanir/",
@@ -114,7 +120,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-paciencia-klondike/"
    },
    "default": "en",
-   "hash": "5a1ff33ac3300f5b79bf1d40d6289b6d"
+   "hash": "8e0c567e396376f6f985040f33f7360b"
   },
   {
    "url": "https://nrazon.github.io/es/guias/como-jugar-solitario-klondike/",
@@ -125,7 +131,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-paciencia-klondike/"
    },
    "default": "en",
-   "hash": "8a49f7af22ca8573b7f1ff0a08bb7717"
+   "hash": "e6cf9d7429c328ac7e4f503d3f6d7255"
   },
   {
    "url": "https://nrazon.github.io/pt/guias/como-jogar-paciencia-klondike/",
@@ -136,7 +142,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-paciencia-klondike/"
    },
    "default": "en",
-   "hash": "8087882bd90e4822e99fd155581e5e71"
+   "hash": "bb4b5c9458f301b0f1e3b6b6ebe1a9f3"
   },
   {
    "url": "https://nrazon.github.io/guides/block-puzzle-tips-and-tricks/",
@@ -147,7 +153,7 @@
     "pt": "https://nrazon.github.io/pt/guias/dicas-quebra-cabeca-de-blocos/"
    },
    "default": "en",
-   "hash": "ca7b1f5dd13ffa599132377ecef797ad"
+   "hash": "e5431185129de50a89c77e20ee766f42"
   },
   {
    "url": "https://nrazon.github.io/tr/rehber/blok-bulmaca-ipuclari/",
@@ -158,7 +164,7 @@
     "pt": "https://nrazon.github.io/pt/guias/dicas-quebra-cabeca-de-blocos/"
    },
    "default": "en",
-   "hash": "d5ccb625f1fa7facbc705a01536eee40"
+   "hash": "ac3993889251ca3c3515383be3283f93"
   },
   {
    "url": "https://nrazon.github.io/es/guias/trucos-puzle-de-bloques/",
@@ -169,7 +175,7 @@
     "pt": "https://nrazon.github.io/pt/guias/dicas-quebra-cabeca-de-blocos/"
    },
    "default": "en",
-   "hash": "f703bb05b02889762636d84c82c51935"
+   "hash": "834b3204614db51881a0ec6ac6e6086f"
   },
   {
    "url": "https://nrazon.github.io/pt/guias/dicas-quebra-cabeca-de-blocos/",
@@ -180,7 +186,7 @@
     "pt": "https://nrazon.github.io/pt/guias/dicas-quebra-cabeca-de-blocos/"
    },
    "default": "en",
-   "hash": "6909cb763c340385e1de0cd0874a77e6"
+   "hash": "39a2c3445118d99064059d99e4c13ba5"
   },
   {
    "url": "https://nrazon.github.io/guides/how-to-play-beamies/",
@@ -191,7 +197,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-beamies/"
    },
    "default": "en",
-   "hash": "810ead79f0bd3df90c52efbaff822110"
+   "hash": "8654c55791355fb2ba6f9b1ba3c4bcf6"
   },
   {
    "url": "https://nrazon.github.io/tr/rehber/beamies-nasil-oynanir/",
@@ -202,7 +208,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-beamies/"
    },
    "default": "en",
-   "hash": "76e0ff92984a5b31a997278b6d26e674"
+   "hash": "4aa45464592dfcbb26af422c15c85edf"
   },
   {
    "url": "https://nrazon.github.io/es/guias/como-jugar-beamies/",
@@ -213,7 +219,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-beamies/"
    },
    "default": "en",
-   "hash": "293edb9e650f5eb20cfa644342eaef86"
+   "hash": "07da1003809223342839c39fa73b9965"
   },
   {
    "url": "https://nrazon.github.io/pt/guias/como-jogar-beamies/",
@@ -224,7 +230,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-beamies/"
    },
    "default": "en",
-   "hash": "9ff07348bfb62072e993f43ba9e58817"
+   "hash": "421e7b31dadf2d6eb9b8f6335529c006"
   },
   {
    "url": "https://nrazon.github.io/guides/how-to-play-arrow-puzzle/",
@@ -235,7 +241,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-quebra-cabeca-de-setas/"
    },
    "default": "en",
-   "hash": "bdda52f9c0a9080815f0cee6f553867c"
+   "hash": "f376bfe58c2d5c29afd1a9c9ca112e03"
   },
   {
    "url": "https://nrazon.github.io/tr/rehber/ok-bulmacasi-nasil-oynanir/",
@@ -246,7 +252,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-quebra-cabeca-de-setas/"
    },
    "default": "en",
-   "hash": "ccfa2a1826255b60c1d1defb1ffe309e"
+   "hash": "996954a5ed1219d6c298549cff1c4e97"
   },
   {
    "url": "https://nrazon.github.io/es/guias/como-jugar-puzle-de-flechas/",
@@ -257,7 +263,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-quebra-cabeca-de-setas/"
    },
    "default": "en",
-   "hash": "0abf56c114b5a58b7cef3d0a27e89182"
+   "hash": "e5b29f4cae1439405d3ea55dcb8d5e0a"
   },
   {
    "url": "https://nrazon.github.io/pt/guias/como-jogar-quebra-cabeca-de-setas/",
@@ -268,7 +274,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-quebra-cabeca-de-setas/"
    },
    "default": "en",
-   "hash": "e6bcf7ac2878cef52944ae915c109687"
+   "hash": "8dc5f868f99fc4e552449f8215fc940f"
   },
   {
    "url": "https://nrazon.github.io/guides/how-to-solve-crown-twin-path-puzzles/",
@@ -279,7 +285,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-resolver-coroa-gemeos-caminho/"
    },
    "default": "en",
-   "hash": "09b9cab96157eed57aaf50975e6b7072"
+   "hash": "7fbd546d5695b526c27d7b5720be25e4"
   },
   {
    "url": "https://nrazon.github.io/tr/rehber/tac-ikiz-yol-bulmacalari-nasil-cozulur/",
@@ -290,7 +296,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-resolver-coroa-gemeos-caminho/"
    },
    "default": "en",
-   "hash": "b6ad0d9f2d32a9d0d7e6e0ff9c920291"
+   "hash": "9d7b6b6e558378712bf6ae9584b8f37a"
   },
   {
    "url": "https://nrazon.github.io/es/guias/como-resolver-corona-gemelos-camino/",
@@ -301,7 +307,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-resolver-coroa-gemeos-caminho/"
    },
    "default": "en",
-   "hash": "95b80123d071f1a15e5b4afea1bf7726"
+   "hash": "7a7d7731bf3ec4e142a0ec1c392943af"
   },
   {
    "url": "https://nrazon.github.io/pt/guias/como-resolver-coroa-gemeos-caminho/",
@@ -312,7 +318,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-resolver-coroa-gemeos-caminho/"
    },
    "default": "en",
-   "hash": "9230e22ec576d7b4e3c24e19d64f39a7"
+   "hash": "c89a0d433cb94de2d8d05309af9665ce"
   },
   {
    "url": "https://nrazon.github.io/guides/sleepy-faces-strategy-chase-the-lights/",
@@ -323,7 +329,7 @@
     "pt": "https://nrazon.github.io/pt/guias/rostos-sonolentos-estrategia-perseguir-as-luzes/"
    },
    "default": "en",
-   "hash": "bc18acda0415230788f942eed3932ad7"
+   "hash": "df7fd932e1732703b43e64e809c3583b"
   },
   {
    "url": "https://nrazon.github.io/tr/rehber/uykucu-yuzler-stratejisi-isiklari-kovala/",
@@ -334,7 +340,7 @@
     "pt": "https://nrazon.github.io/pt/guias/rostos-sonolentos-estrategia-perseguir-as-luzes/"
    },
    "default": "en",
-   "hash": "8326db0a6d6683fbc8d15fd336b5c46b"
+   "hash": "e3eb3fb3844838eb6a770548a188a711"
   },
   {
    "url": "https://nrazon.github.io/es/guias/caras-dormilonas-estrategia-perseguir-las-luces/",
@@ -345,7 +351,7 @@
     "pt": "https://nrazon.github.io/pt/guias/rostos-sonolentos-estrategia-perseguir-as-luzes/"
    },
    "default": "en",
-   "hash": "d2b737dc3282f94ed5a3226d5a5b0f8e"
+   "hash": "c875d4fd27561acde323494fb8e49089"
   },
   {
    "url": "https://nrazon.github.io/pt/guias/rostos-sonolentos-estrategia-perseguir-as-luzes/",
@@ -356,7 +362,7 @@
     "pt": "https://nrazon.github.io/pt/guias/rostos-sonolentos-estrategia-perseguir-as-luzes/"
    },
    "default": "en",
-   "hash": "ef4ec4349cf848d54218990dbbb184a0"
+   "hash": "93c577d5e470c2bb22458ef832110fe0"
   },
   {
    "url": "https://nrazon.github.io/guides/frog-hops-peg-solitaire-strategy/",
@@ -367,7 +373,7 @@
     "pt": "https://nrazon.github.io/pt/guias/pulos-de-sapos-estrategia-resta-um/"
    },
    "default": "en",
-   "hash": "3fabfebbd406b74ee6bc11a8cad05743"
+   "hash": "efce978fa9d69ea4d7db29fc9383a37e"
   },
   {
    "url": "https://nrazon.github.io/tr/rehber/kurbaga-ziplatma-stratejisi-peg-solitaire/",
@@ -378,7 +384,7 @@
     "pt": "https://nrazon.github.io/pt/guias/pulos-de-sapos-estrategia-resta-um/"
    },
    "default": "en",
-   "hash": "8a759de93f1e64bb843f93b7d8b79e0e"
+   "hash": "8910b105d0657a5f3d459cc73fc1f99d"
   },
   {
    "url": "https://nrazon.github.io/es/guias/saltos-de-ranas-estrategia-solitario-de-fichas/",
@@ -389,7 +395,7 @@
     "pt": "https://nrazon.github.io/pt/guias/pulos-de-sapos-estrategia-resta-um/"
    },
    "default": "en",
-   "hash": "b338039cc0fce6d51b398bf6a461cfd4"
+   "hash": "fb79e1105a590c866dde9b0fe152d591"
   },
   {
    "url": "https://nrazon.github.io/pt/guias/pulos-de-sapos-estrategia-resta-um/",
@@ -400,7 +406,7 @@
     "pt": "https://nrazon.github.io/pt/guias/pulos-de-sapos-estrategia-resta-um/"
    },
    "default": "en",
-   "hash": "a0b128217733f5a703c8cf374e4494e4"
+   "hash": "26d5f6a4def855a4e642fae554bc625e"
   },
   {
    "url": "https://nrazon.github.io/guides/how-to-play-2048-strategy/",
@@ -411,7 +417,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-2048-estrategia/"
    },
    "default": "en",
-   "hash": "9f34bc9b0e5421ec1dbeff81a5462a2c"
+   "hash": "de1d6c4fdbd033cd75c7d0a4cdbea183"
   },
   {
    "url": "https://nrazon.github.io/tr/rehber/2048-nasil-oynanir-strateji/",
@@ -422,7 +428,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-2048-estrategia/"
    },
    "default": "en",
-   "hash": "d4b701e67f9c16329775b3738ec93af4"
+   "hash": "e60e40ac93cd39186b28105e76017662"
   },
   {
    "url": "https://nrazon.github.io/es/guias/como-jugar-2048-estrategia/",
@@ -433,7 +439,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-2048-estrategia/"
    },
    "default": "en",
-   "hash": "9282355719a5d6c4847edf96a95dfb7f"
+   "hash": "9b5395d2f062f7a5aeab54f926e47ccc"
   },
   {
    "url": "https://nrazon.github.io/pt/guias/como-jogar-2048-estrategia/",
@@ -444,7 +450,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-2048-estrategia/"
    },
    "default": "en",
-   "hash": "44ae28d84a8de4db40953f606c2ad2fc"
+   "hash": "61fbf665381991e7f524cd827c093e5a"
   },
   {
    "url": "https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/",
@@ -455,7 +461,7 @@
     "pt": "https://nrazon.github.io/pt/guias/jogo-da-velha-estrategia-para-nao-perder/"
    },
    "default": "en",
-   "hash": "531a5bbce2008d387ea49c737669c34a"
+   "hash": "3c6d535c145d508bac1c347a0dd62a94"
   },
   {
    "url": "https://nrazon.github.io/tr/rehber/xox-yenilmez-strateji/",
@@ -466,7 +472,7 @@
     "pt": "https://nrazon.github.io/pt/guias/jogo-da-velha-estrategia-para-nao-perder/"
    },
    "default": "en",
-   "hash": "07928fa7ee8b0b62107cc1ec05acad04"
+   "hash": "f0c06fba81d27537f15f149588ce5feb"
   },
   {
    "url": "https://nrazon.github.io/es/guias/tres-en-raya-estrategia-para-no-perder/",
@@ -477,7 +483,7 @@
     "pt": "https://nrazon.github.io/pt/guias/jogo-da-velha-estrategia-para-nao-perder/"
    },
    "default": "en",
-   "hash": "81b59f0edce8e9fc7d2d2d9bbe4a40bf"
+   "hash": "bcfb165eb603fdc0360b3afe9116a988"
   },
   {
    "url": "https://nrazon.github.io/pt/guias/jogo-da-velha-estrategia-para-nao-perder/",
@@ -488,7 +494,51 @@
     "pt": "https://nrazon.github.io/pt/guias/jogo-da-velha-estrategia-para-nao-perder/"
    },
    "default": "en",
-   "hash": "5bf821af8826aba139c753d275c2246e"
+   "hash": "cae6eaedb8607ecef72e8f76b8b057ed"
+  },
+  {
+   "url": "https://nrazon.github.io/guides/how-to-play-grumblings-maze-puzzle/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-play-grumblings-maze-puzzle/",
+    "tr": "https://nrazon.github.io/tr/rehber/grumblings-nasil-oynanir-labirent-bulmacasi/",
+    "es": "https://nrazon.github.io/es/guias/como-jugar-grumblings-puzle-de-laberinto/",
+    "pt": "https://nrazon.github.io/pt/guias/como-jogar-grumblings-quebra-cabeca-de-labirinto/"
+   },
+   "default": "en",
+   "hash": "913203db4ba8a4a4d3efff12d8f29a7b"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/rehber/grumblings-nasil-oynanir-labirent-bulmacasi/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-play-grumblings-maze-puzzle/",
+    "tr": "https://nrazon.github.io/tr/rehber/grumblings-nasil-oynanir-labirent-bulmacasi/",
+    "es": "https://nrazon.github.io/es/guias/como-jugar-grumblings-puzle-de-laberinto/",
+    "pt": "https://nrazon.github.io/pt/guias/como-jogar-grumblings-quebra-cabeca-de-labirinto/"
+   },
+   "default": "en",
+   "hash": "0017496c140619a1941da3f0a3166f42"
+  },
+  {
+   "url": "https://nrazon.github.io/es/guias/como-jugar-grumblings-puzle-de-laberinto/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-play-grumblings-maze-puzzle/",
+    "tr": "https://nrazon.github.io/tr/rehber/grumblings-nasil-oynanir-labirent-bulmacasi/",
+    "es": "https://nrazon.github.io/es/guias/como-jugar-grumblings-puzle-de-laberinto/",
+    "pt": "https://nrazon.github.io/pt/guias/como-jogar-grumblings-quebra-cabeca-de-labirinto/"
+   },
+   "default": "en",
+   "hash": "b77133df6d108ac98bbda55a45e6f13f"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/guias/como-jogar-grumblings-quebra-cabeca-de-labirinto/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-play-grumblings-maze-puzzle/",
+    "tr": "https://nrazon.github.io/tr/rehber/grumblings-nasil-oynanir-labirent-bulmacasi/",
+    "es": "https://nrazon.github.io/es/guias/como-jugar-grumblings-puzle-de-laberinto/",
+    "pt": "https://nrazon.github.io/pt/guias/como-jogar-grumblings-quebra-cabeca-de-labirinto/"
+   },
+   "default": "en",
+   "hash": "223ff055989f111b8da47d0fa85171b3"
   },
   {
    "url": "https://nrazon.github.io/guides/",
@@ -499,7 +549,7 @@
     "pt": "https://nrazon.github.io/pt/guias/"
    },
    "default": "en",
-   "hash": "beeb76fcecdd5e456400691a1aa34124"
+   "hash": "ee0fa0e1272f9aaacb419c248d61af58"
   },
   {
    "url": "https://nrazon.github.io/tr/rehber/",
@@ -510,7 +560,7 @@
     "pt": "https://nrazon.github.io/pt/guias/"
    },
    "default": "en",
-   "hash": "d500545c0bfe43773cc2f9b240ff4e8a"
+   "hash": "7660e55f3476037c47e806c2dc2ca8e9"
   },
   {
    "url": "https://nrazon.github.io/es/guias/",
@@ -521,7 +571,7 @@
     "pt": "https://nrazon.github.io/pt/guias/"
    },
    "default": "en",
-   "hash": "da9ded00b8adaea7d68ed24397720672"
+   "hash": "57674b23bd5d3cde6816bd7a1b1b0929"
   },
   {
    "url": "https://nrazon.github.io/pt/guias/",
@@ -532,7 +582,7 @@
     "pt": "https://nrazon.github.io/pt/guias/"
    },
    "default": "en",
-   "hash": "27f1f4cab78b5f754395d96f5add17fa"
+   "hash": "738124a01e501be1577cf3acd329182a"
   }
  ],
  "index": {

@@ -17,7 +17,7 @@ LANGS = ["en", "tr", "es", "pt"]
 DIRS = {"en": "guides", "tr": "tr/rehber", "es": "es/guias", "pt": "pt/guias"}
 HREFLANG = {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}
 OGLOC = {"en": "en_US", "tr": "tr_TR", "es": "es_ES", "pt": "pt_BR"}
-GUIDE_MODULES = ["mahjong", "solitaire", "blocks", "beamies", "arrows", "logic", "lights", "peg", "g2048", "tictactoe"]  # "maze" (Grumblings): yayin gunu eklenir (tools/guides/maze.py hazir)
+GUIDE_MODULES = ["mahjong", "solitaire", "blocks", "beamies", "arrows", "logic", "lights", "peg", "g2048", "tictactoe", "maze"]  # "maze" (Grumblings): yayin gunu eklenir (tools/guides/maze.py hazir)
 SOCIAL = ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]
 
 T = {
