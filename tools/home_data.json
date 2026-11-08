@@ -28,6 +28,34 @@
     }
   },
   {
+    "slug": "nudgelings",
+    "cat": "games",
+    "icon": "nudgelings/icon.png",
+    "names": {
+      "tr": "Nudgelings",
+      "en": "Nudgelings",
+      "es": "Nudgelings",
+      "pt": "Nudgelings"
+    },
+    "tint": "#2FBF8A",
+    "pkg": "com.nudgelings.nesimapps",
+    "new": "2026-12-20",
+    "desc": {
+      "tr": "Kaydır ve İt: sevimli iki bulmaca oyunu tek uygulamada, 400 bölüm. Google Play'de çok yakında.",
+      "en": "Slide and Push: two cute puzzle games in one app, 400 levels. Coming soon to Google Play.",
+      "es": "Desliza y Empuja: dos puzles adorables en una app, 400 niveles. Próximamente en Google Play.",
+      "pt": "Deslize e Empurre: dois quebra-cabeças fofos em um app, 400 níveis. Em breve no Google Play."
+    },
+    "status": "soon",
+    "popular": false,
+    "desc_live": {
+      "tr": "Kaydır ve İt: sevimli iki bulmaca oyunu tek uygulamada, 400 bölüm.",
+      "en": "Slide and Push: two cute puzzle games in one app, 400 levels.",
+      "es": "Desliza y Empuja: dos puzles adorables en una app, 400 niveles.",
+      "pt": "Deslize e Empurre: dois quebra-cabeças fofos em um app, 400 níveis."
+    }
+  },
+  {
     "slug": "grumblings",
     "cat": "games",
     "icon": "grumblings/icon.png",

@@ -19,6 +19,7 @@ APPS = {
     "logiclings": ("Logiclings", "game", True, True, True, None),
     "tilelings": ("Tilelings", "game", True, True, True, None),
     "grumblings": ("Grumblings", "game", True, True, True, None),
+    "nudgelings": ("Nudgelings", "game", True, True, True, None),
     "nuzzlings": ("Nuzzlings", "game", False, True, True, "pet"),
     "sansoyunlari": ("Şans Oyunları", "app", True, False, False, "lottery"),
     "sondepremler": ("Son Depremler", "app", True, False, False, "quake"),
