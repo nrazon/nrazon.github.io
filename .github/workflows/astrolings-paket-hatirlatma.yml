@@ -1,0 +1,39 @@
+name: Astrolings haftalık paket hatırlatması
+
+# Her ayın 20'sinde ve 27'sinde: gelecek 2 ay için haftalık tema paketi yayında mı? Eksikse bir "issue" açar;
+# GitHub, issue açılınca depo sahibine e-posta gönderir (bildirim ayarı varsayılan). Paket yazılıp yayınlanınca issue kendiliğinden kapanmaz,
+# elle kapat. Elle denemek için: Actions > bu iş akışı > Run workflow.
+on:
+  schedule:
+    - cron: "0 6 20,27 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  kontrol:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Paket var mı?
+        id: k
+        run: |
+          set +e
+          out=$(python3 tools/astrolings_paket.py kontrol)
+          code=$?
+          echo "out=$out" >> "$GITHUB_OUTPUT"
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          echo "$out"
+      - name: Eksikse issue aç
+        if: steps.k.outputs.code != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="Astrolings: haftalık tema paketi yazılmalı (${{ steps.k.outputs.out }})"
+          if gh issue list --state open --search "Astrolings haftalık tema paketi in:title" --json number --jq 'length' | grep -qv '^0$'; then
+            echo "Açık bir hatırlatma zaten var."
+          else
+            gh issue create --title "$title" --body "Gelecek iki ay için haftalık tema paketi yok. Claude oturumunda \"Astrolings aylık paketi yaz\" de; olay dökümünü, metinleri ve yayını Claude yapar (tools/astrolings_paket.py build, sonra push). Paket yoksa uygulamada yalnızca 'Haftanın teması' kartı görünmez, başka bir şey bozulmaz."
+          fi

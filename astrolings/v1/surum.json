@@ -1,0 +1,21 @@
+{
+ "paketler": {
+  "2026-10": {
+   "boyut": 5049,
+   "sha": "3dd822d96efc44a19fe0d0d8648f51bf5bcb350a7a1299574a9f9018fb89b2b1"
+  },
+  "2026-11": {
+   "boyut": 29902,
+   "sha": "16abdb220e7df80897aed8a6d354a91e572e8d677ef44a8baf5a2a5299998646"
+  },
+  "2026-12": {
+   "boyut": 25177,
+   "sha": "e0cf3294d6ef1d5d2707dbf88b9ffcbf69660d81c771bcfc05e14c33d44af95a"
+  },
+  "2027-01": {
+   "boyut": 5044,
+   "sha": "baa4b6822fd16e5597fcdb72a2965c6c7c17369a68b4d75f7b3df96dfbecdbf1"
+  }
+ },
+ "son": "2027-01"
+}
