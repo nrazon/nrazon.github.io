@@ -20,6 +20,7 @@ APPS = {
     "tilelings": ("Tilelings", "game", True, True, True, None),
     "grumblings": ("Grumblings", "game", True, True, True, None),
     "nudgelings": ("Nudgelings", "game", True, True, True, None),
+    "astrolings": ("Astrolings", "app", True, True, False, "astro"),
     "nuzzlings": ("Nuzzlings", "game", False, True, True, "pet"),
     "sansoyunlari": ("Şans Oyunları", "app", True, False, False, "lottery"),
     "sondepremler": ("Son Depremler", "app", True, False, False, "quake"),
@@ -76,6 +77,11 @@ PGS = ({"en": "Google Play Games", "tr": "Google Play Games", "es": "Google Play
         "pt": "Placares, conquistas e salvamento na nuvem usam o Google Play Games e são opcionais; seguem os termos do próprio Google. O progresso salvo na nuvem depende do serviço do Google e não posso garantir que esteja sempre disponível ou possa ser restaurado."})
 
 NOTES = {
+    "astro": ({"en": "Entertainment only", "tr": "Yalnızca eğlence amaçlı", "es": "Solo entretenimiento", "pt": "Apenas entretenimento"},
+              {"en": "The readings, ratings and texts in the app are written for entertainment. They are not predictions, are not scientifically proven and are not medical, financial, legal or any other professional advice. Please do not base important decisions on them.",
+               "tr": "Uygulamadaki yorumlar, puanlar ve metinler eğlence amacıyla yazılmıştır. Öngörü değildir, bilimsel olarak kanıtlanmış değildir; tıbbi, mali, hukuki ya da başka bir profesyonel tavsiye de değildir. Lütfen önemli kararlarını bunlara dayandırma.",
+               "es": "Las lecturas, puntuaciones y textos de la app están escritos con fines de entretenimiento. No son predicciones, no están demostrados científicamente y no constituyen asesoramiento médico, financiero, legal ni profesional de ningún tipo. Por favor, no bases decisiones importantes en ellos.",
+               "pt": "As leituras, pontuações e textos do app são escritos para entretenimento. Não são previsões, não são comprovados cientificamente e não constituem aconselhamento médico, financeiro, jurídico ou profissional de qualquer tipo. Por favor, não baseie decisões importantes neles."}),
     "lottery": ({"en": "Results information", "tr": "Sonuç bilgisi", "es": "Información de resultados", "pt": "Informação de resultados"},
                 {"en": "The app only shows draw results for information. It is not a gambling service, does not sell tickets and is not affiliated with any lottery operator. Results are taken from a third-party source; always check the official operator for the final result.",
                  "tr": "Uygulama yalnızca bilgi amacıyla çekiliş sonuçlarını gösterir. Bir kumar hizmeti değildir, bilet satmaz ve hiçbir şans oyunu işletmecisiyle bağlantılı değildir. Sonuçlar üçüncü taraf bir kaynaktan alınır; kesin sonuç için her zaman resmi işletmeciyi kontrol edin.",
