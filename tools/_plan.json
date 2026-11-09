@@ -50,6 +50,19 @@
    "tr"
   ]
  },
+ "astrolings": {
+  "langs": [
+   "tr"
+  ],
+  "default": "tr",
+  "cat": "apps",
+  "priv": [
+   "en",
+   "tr",
+   "es",
+   "pt"
+  ]
+ },
  "beamies": {
   "langs": [
    "en",
