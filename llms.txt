@@ -4,6 +4,7 @@
 
 ## Games
 
+- [Nudgelings](https://nrazon.github.io/nudgelings/): Slide and Push: two cute puzzle games in one app, 400 levels.
 - [Grumblings](https://nrazon.github.io/grumblings/): Outsmart the grumpy monster: a turn-based maze puzzle with 300 levels in 30 worlds.
 - [Tilelings](https://nrazon.github.io/tilelings/): Cute Mahjong Solitaire, Connect and Tile Match puzzles. New ones every day!
 - [Logiclings](https://nrazon.github.io/logiclings/): Three new logic puzzles every day from five kinds: Crown, Twin, Path, Sleepy Faces and Frog Hops. No timers, just cute faces.
