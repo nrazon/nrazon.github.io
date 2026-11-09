@@ -1,0 +1,105 @@
+{
+ "v": 1,
+ "games": [
+  {
+   "key": "nudgelings",
+   "name": "Nudgelings",
+   "pkg": "com.nudgelings.nesimapps",
+   "icon": "icons/nudgelings.png",
+   "tr": "Araçları kaydır, kristalleri it: tek uygulamada iki sevimli bulmaca. 400 bölüm.",
+   "en": "Slide the pods, push the crystals: two cute puzzle games in one. 400 levels.",
+   "es": "Desliza las cápsulas, empuja los cristales: dos puzles adorables en uno. 400 niveles.",
+   "pt": "Deslize as cápsulas, empurre os cristais: dois quebra-cabeças fofos em um. 400 níveis."
+  },
+  {
+   "key": "grumblings",
+   "name": "Grumblings",
+   "pkg": "com.grumblings.nesimapps",
+   "icon": "icons/grumblings.png",
+   "tr": "Huysuz canavarı kandır: 300 sıra tabanlı labirent bulmacası. Günlük meydan okuma.",
+   "en": "Outsmart a grumpy monster in 300 turn-based maze puzzles. Daily challenge.",
+   "es": "Engaña a un monstruo gruñón en 300 puzles de laberinto por turnos. Reto diario.",
+   "pt": "Engane um monstro rabugento em 300 quebra-cabeças de labirinto por turnos. Desafio diário."
+  },
+  {
+   "key": "tilelings",
+   "name": "Tilelings",
+   "pkg": "com.tilelings.nesimapps",
+   "icon": "icons/tilelings.png",
+   "tr": "Sevimli Mahjong Solitaire, Connect ve Taş Eşleştirme. Her gün yeni bulmaca.",
+   "en": "Cute Mahjong Solitaire, Connect and Tile Match. New puzzles every day.",
+   "es": "Mahjong Solitario adorable, Connect y Tile Match. Puzles nuevos cada día.",
+   "pt": "Mahjong Paciência fofo, Connect e Tile Match. Novos desafios todo dia."
+  },
+  {
+   "key": "logiclings",
+   "name": "Logiclings",
+   "pkg": "com.logiclings.nesimapps",
+   "icon": "icons/logiclings.png",
+   "tr": "Her gün yeni mantık bulmacaları: Taç, İkiz, Yol, Uykucu Yüzler ve Kurbağa Zıplatma.",
+   "en": "New logic puzzles every day: Crown, Twin, Path, Sleepy Faces and Frog Hops.",
+   "es": "Puzles de lógica nuevos cada día: Corona, Gemelos, Camino, Caras Dormilonas y Saltos de Ranas.",
+   "pt": "Novos quebra-cabeças de lógica todo dia: Coroa, Gêmeos, Caminho, Rostos Sonolentos e Pulos de Sapos."
+  },
+  {
+   "key": "beamies",
+   "name": "Beamies",
+   "pkg": "com.beamies.nesimapps",
+   "icon": "icons/beamies.png",
+   "tr": "Sevimli uzay bulmacası: kapıları kaydırıp uzaylıları eve ışınla. 400 bölüm, her birinde 3 yıldız.",
+   "en": "Cute space puzzle: slide gates to beam aliens home. 400 levels, 3 stars each.",
+   "es": "Puzle espacial adorable: desliza puertas y lleva a los alienígenas a casa. 400 niveles, 3 estrellas cada uno.",
+   "pt": "Quebra-cabeça espacial fofo: deslize portais e leve alienígenas para casa. 400 fases, 3 estrelas cada."
+  },
+  {
+   "key": "cardles",
+   "name": "Cardles",
+   "pkg": "com.cardles.nesimapps",
+   "icon": "icons/cardles.png",
+   "tr": "Solitaire koleksiyonu: Klondike, Spider, FreeCell, TriPeaks. Günlük meydan okuma.",
+   "en": "Solitaire collection: Klondike, Spider, FreeCell, TriPeaks. New daily challenge.",
+   "es": "Colección de solitarios: Klondike, Spider, FreeCell, TriPeaks. Reto diario.",
+   "pt": "Coleção de paciências: Klondike, Spider, FreeCell, TriPeaks. Desafio diário."
+  },
+  {
+   "key": "cubbles",
+   "name": "Cubbles",
+   "pkg": "com.cubbles.nesimapps",
+   "icon": "icons/cubbles.png",
+   "tr": "Sevimli blok bulmacası: sürükle, temizle, kombo yap. Günlük meydan okuma.",
+   "en": "Cute block puzzle: drag, clear lines, chain combos. New daily challenge.",
+   "es": "Puzle de bloques adorable: arrastra, limpia líneas y encadena combos. Reto diario.",
+   "pt": "Quebra-cabeça de blocos fofo: arraste, limpe linhas e faça combos. Desafio diário."
+  },
+  {
+   "key": "sliplines",
+   "name": "Sliplines",
+   "pkg": "com.sliplines.nesimapps",
+   "icon": "icons/sliplines.png",
+   "tr": "Ok bulmacası: okları tahtadan çıkar. Her gün yeni bulmaca.",
+   "en": "Arrow puzzle: slide every arrow off the board. New daily puzzle.",
+   "es": "Puzle de flechas: saca todas del tablero. Reto diario.",
+   "pt": "Quebra-cabeça de setas: tire todas do tabuleiro. Desafio diário."
+  },
+  {
+   "key": "2048",
+   "name": "2048",
+   "pkg": "com.game2048.nesimapps",
+   "icon": "icons/2048.png",
+   "tr": "Klasik sayı bulmacası. Kaydır, birleştir, 2048\\'e ulaş.",
+   "en": "The classic number puzzle. Slide, merge, reach 2048.",
+   "es": "El clásico puzle de números. Desliza, combina y llega a 2048.",
+   "pt": "O clássico quebra-cabeça de números. Deslize, combine e chegue ao 2048."
+  },
+  {
+   "key": "tictactoe",
+   "name": "Tic-Tac-Toe",
+   "pkg": "com.tictactoe.nesimapps",
+   "icon": "icons/tictactoe.png",
+   "tr": "Bilgisayara karşı XOX, üç zorluk seviyesi.",
+   "en": "Tic-Tac-Toe against the computer, three difficulty levels.",
+   "es": "Tres en raya contra el ordenador, tres niveles de dificultad.",
+   "pt": "Jogo da velha contra o computador, três níveis de dificuldade."
+  }
+ ]
+}
