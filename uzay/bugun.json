@@ -1,7 +1,16 @@
 {
- "uretim": "2026-11-09T13:54:45Z",
+ "uretim": "2026-11-10T13:28:40Z",
  "surum": 1,
  "apod": [
+  {
+   "tarih": "2026-11-10",
+   "baslik": "Saturn Behind the Moon",
+   "tur": "image",
+   "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-10-saturn-behind-the-moon/",
+   "ozet_en": "Explanation: Sometimes Saturn disappears. It doesn't really go away, of course -- it just disappears from our view when Earth's Moon moves in front.",
+   "kredi": "Roberto Ortu",
+   "nasa_kaynakli": false
+  },
   {
    "tarih": "2026-11-09",
    "baslik": "Rigel and the Witch Head Nebula",
@@ -81,15 +90,6 @@
    "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-1-colors-of-the-moon/",
    "ozet_en": "Explanation: What color is the Moon? It depends on the night -- and the time. Outside of the Earth's atmosphere, the dark Moon, which shines by reflected sunlight, appears a magnificently brown-tinged gray.",
    "kredi": "Marcella Giulia Pace",
-   "nasa_kaynakli": false
-  },
-  {
-   "tarih": "2026-10-31",
-   "baslik": "Night on a Spooky Planet",
-   "tur": "image",
-   "baglanti": "https://science.nasa.gov/image-article/apod-2026-october-31-night-on-a-spooky-planet/",
-   "ozet_en": "Explanation: What spooky planet is this? Planet Earth on a dark and stormy night, of course. The ghostly scene was photographed at Hverir, a geothermally active area found along northeastern Iceland's volcanic landscape.",
-   "kredi": "Stéphane Vetter (Nuits sacrées)",
    "nasa_kaynakli": false
   }
  ],
@@ -192,24 +192,10 @@
  },
  "asteroitler": {
   "aralik": [
-   "2026-11-09",
-   "2026-11-23"
+   "2026-11-10",
+   "2026-11-24"
   ],
   "liste": [
-   {
-    "ad": "(2025 UF5)",
-    "tarih": "2026-Nov-09 21:06",
-    "mesafe_ay": 18.8,
-    "hiz_kms": 1.9,
-    "cap_m": 10
-   },
-   {
-    "ad": "(2026 VQ4)",
-    "tarih": "2026-Nov-09 21:14",
-    "mesafe_ay": 9.9,
-    "hiz_kms": 10.2,
-    "cap_m": 13
-   },
    {
     "ad": "(2015 VH65)",
     "tarih": "2026-Nov-10 00:24",
@@ -274,17 +260,66 @@
     "cap_m": 10
    },
    {
+    "ad": "(2026 VY7)",
+    "tarih": "2026-Nov-12 08:14",
+    "mesafe_ay": 11.7,
+    "hiz_kms": 20.0,
+    "cap_m": 49
+   },
+   {
     "ad": "(2025 VG5)",
     "tarih": "2026-Nov-13 03:15",
     "mesafe_ay": 18.1,
     "hiz_kms": 4.9,
     "cap_m": 16
+   },
+   {
+    "ad": "(2026 VO1)",
+    "tarih": "2026-Nov-13 05:59",
+    "mesafe_ay": 9.8,
+    "hiz_kms": 14.2,
+    "cap_m": 38
    }
   ],
   "kredi": "NASA/JPL CNEOS"
  },
  "eonet": {
   "liste": [
+   {
+    "baslik": "Tropical Cyclone 03S",
+    "tur": "Severe Storms",
+    "tarih": "2026-11-08",
+    "boylam": 50.5,
+    "enlem": -11.3
+   },
+   {
+    "baslik": "Typhoon Cempaka",
+    "tur": "Severe Storms",
+    "tarih": "2026-11-10",
+    "boylam": 139.9,
+    "enlem": 25.4
+   },
+   {
+    "baslik": "Tropical Storm Pena",
+    "tur": "Severe Storms",
+    "tarih": "2026-11-10",
+    "boylam": -163.3,
+    "enlem": 11.7
+   },
+   {
+    "baslik": "Wildfire FOOT CREEK, Johnson, Wyoming",
+    "tur": "Wildfires",
+    "tarih": "2026-11-05",
+    "boylam": -106.93255,
+    "enlem": 44.318717
+   },
+   {
+    "baslik": "Prescribed Fire Cold Springs RX, Wasatch, Utah",
+    "tur": "Wildfires",
+    "tarih": "2026-11-03",
+    "boylam": -110.943493,
+    "enlem": 40.511329
+   },
    {
     "baslik": "Wildfire Wild River, Coos, New Hampshire",
     "tur": "Wildfires",
@@ -335,6 +370,13 @@
     "enlem": 31.085833
    },
    {
+    "baslik": "Prescribed Fire 3R RX - DRUMMOND MP, Stevens, Washington",
+    "tur": "Wildfires",
+    "tarih": "2026-10-28",
+    "boylam": -117.533129,
+    "enlem": 48.402056
+   },
+   {
     "baslik": "Prescribed Fire Walker Hill 3 Piles RX, Coconino, Arizona",
     "tur": "Wildfires",
     "tarih": "2026-10-28",
@@ -347,48 +389,6 @@
     "tarih": "2026-10-28",
     "boylam": -111.315915,
     "enlem": 34.545833
-   },
-   {
-    "baslik": "Prescribed Fire Newman 3 Piles RX, Coconino, Arizona",
-    "tur": "Wildfires",
-    "tarih": "2026-10-28",
-    "boylam": -111.639444,
-    "enlem": 35.017139
-   },
-   {
-    "baslik": "Wildfire Range 47B, Forrest, Mississippi",
-    "tur": "Wildfires",
-    "tarih": "2026-10-24",
-    "boylam": -89.161,
-    "enlem": 31.099
-   },
-   {
-    "baslik": "Super Typhoon In-fa",
-    "tur": "Severe Storms",
-    "tarih": "2026-11-05",
-    "boylam": 141.5,
-    "enlem": 29.4
-   },
-   {
-    "baslik": "Wildfire BEE HAVEN (2) (24-06), Hamilton, Florida",
-    "tur": "Wildfires",
-    "tarih": "2026-10-22",
-    "boylam": -82.8577778,
-    "enlem": 30.4952778
-   },
-   {
-    "baslik": "Prescribed Fire Frog Tank 2 Piles RX, Coconino, Arizona",
-    "tur": "Wildfires",
-    "tarih": "2026-10-21",
-    "boylam": -111.657083,
-    "enlem": 34.962583
-   },
-   {
-    "baslik": "Prescribed Fire STE - Goodin Ridge RX, McCreary, Kentucky",
-    "tur": "Wildfires",
-    "tarih": "2026-10-18",
-    "boylam": -84.376511,
-    "enlem": 36.948746
    }
   ],
   "kredi": "NASA EONET"
@@ -396,25 +396,25 @@
  "iss_tle": {
   "OBJECT_NAME": "ISS (ZARYA)",
   "OBJECT_ID": "1998-067A",
-  "EPOCH": "2026-11-09T04:58:46.240896",
-  "MEAN_MOTION": 15.49270212,
-  "ECCENTRICITY": 0.00072974,
-  "INCLINATION": 51.6321,
-  "RA_OF_ASC_NODE": 302.4538,
-  "ARG_OF_PERICENTER": 5.2479,
-  "MEAN_ANOMALY": 354.8585,
+  "EPOCH": "2026-11-10T04:12:02.822688",
+  "MEAN_MOTION": 15.49289712,
+  "ECCENTRICITY": 0.00072923,
+  "INCLINATION": 51.6322,
+  "RA_OF_ASC_NODE": 297.6644,
+  "ARG_OF_PERICENTER": 8.9462,
+  "MEAN_ANOMALY": 351.1656,
   "EPHEMERIS_TYPE": 0,
   "CLASSIFICATION_TYPE": "U",
   "NORAD_CAT_ID": 25544,
   "ELEMENT_SET_NO": 999,
-  "REV_AT_EPOCH": 59423,
-  "BSTAR": 0.0001553356,
-  "MEAN_MOTION_DOT": 8.201e-05,
+  "REV_AT_EPOCH": 59438,
+  "BSTAR": 0.0001757453,
+  "MEAN_MOTION_DOT": 9.346e-05,
   "MEAN_MOTION_DDOT": 0
  },
  "gibs": {
-  "tarih": "2026-11-08",
-  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_NOAA21_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-11-08&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
+  "tarih": "2026-11-09",
+  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_NOAA21_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-11-09&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
   "kredi": "NASA GIBS / Worldview"
  }
 }
