@@ -11,14 +11,14 @@
   },
   "tint": "#F4A15B",
   "pkg": "com.nuzzlingscat.nesimapps",
-  "new": "2026-12-31",
+  "new": "2026-11-24",
   "desc": {
    "tr": "Bir yavru kedi sahiplen, sev, besle ve büyümesini izle. Sakin ve sıcacık. Google Play'de çok yakında.",
    "en": "Adopt a kitten, cuddle it, feed it and watch it grow up. Cozy and calm. Coming soon to Google Play.",
    "es": "Adopta un gatito, mímalo, aliméntalo y míralo crecer. Tranquilo y acogedor. Próximamente en Google Play.",
    "pt": "Adote um gatinho, faça carinho, alimente e veja ele crescer. Calmo e fofo. Em breve no Google Play."
   },
-  "status": "soon",
+  "status": "live",
   "popular": false,
   "desc_live": {
    "tr": "Bir yavru kedi sahiplen, sev, besle ve büyümesini izle. Sakin ve sıcacık.",

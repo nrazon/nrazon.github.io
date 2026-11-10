@@ -11,7 +11,7 @@ G = r"C:\@Development\PersonalAndroidApps\github-pages"
 BASE = "https://nrazon.github.io"
 # Yayına henüz çıkmamış uygulamaların detay sayfaları: URL'den açılır ama ana sayfa kartı, "Diğer uygulamalarım" listeleri ve sitemap'e GİRMEZ,
 # sayfada noindex var. Uygulama Play'de yayınlanınca slug buradan silinir (ve home_data.json'da status=live yapılır).
-HIDDEN = {"nuzzlings", "astrolings", "pentolings"}  # yayinda olmayan uygulama onceden buraya eklenir, yayin gunu silinir
+HIDDEN = {"astrolings", "pentolings"}  # yayinda olmayan uygulama onceden buraya eklenir, yayin gunu silinir
 # Ana sayfada kartında data-pkg olmayan (henüz "yakında" kartı olan) uygulamaların paket adları.
 VIDEOS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "videos.json"), encoding="utf-8"))
 VIDEO_LABEL = {"tr": "Tanıtım videosu", "en": "Promo video", "es": "Vídeo de presentación", "pt": "Vídeo de apresentação"}
