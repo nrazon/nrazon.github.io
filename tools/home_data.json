@@ -379,14 +379,14 @@
   },
   "tint": "#6A5ACD",
   "pkg": "com.astrolings.nesimapps",
-  "new": "2026-12-25",
+  "new": "2026-11-24",
   "desc": {
    "tr": "Burcunun günlük arkadaşı: günlük burç yorumu, Ay takvimi, burç uyumu ve 12 sevimli burç yaratığı. Google Play'de çok yakında.",
    "en": "Your zodiac sign's daily companion: daily readings, a Moon calendar, sign compatibility and 12 cute zodiac creatures (Turkish only). Coming soon to Google Play.",
    "es": "El compañero diario de tu signo: lecturas diarias, calendario lunar, compatibilidad y 12 criaturas del zodiaco (solo en turco). Próximamente en Google Play.",
    "pt": "O companheiro diário do seu signo: leituras diárias, calendário lunar, compatibilidade e 12 criaturas do zodíaco (só em turco). Em breve no Google Play."
   },
-  "status": "soon",
+  "status": "live",
   "popular": false,
   "desc_live": {
    "tr": "Burcunun günlük arkadaşı: günlük burç yorumu, Ay takvimi, burç uyumu ve 12 sevimli burç yaratığı.",

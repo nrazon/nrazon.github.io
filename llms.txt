@@ -21,6 +21,7 @@
 
 - [Hafta Sonum](https://nrazon.github.io/haftasonum/): What to do this weekend? Theatre, concerts, exhibitions and kids' events in your city on one screen, no account or location needed (Turkish only, Turkey).
 - [Çalışan Asistanı](https://nrazon.github.io/calisan/): Net salary, severance and notice pay, overtime and leave planning in one app, for employees in Turkey (Turkish only), with a friendly payslip assistant.
+- [Astrolings](https://nrazon.github.io/astrolings/): Your zodiac sign's daily companion: daily readings, a Moon calendar, sign compatibility and 12 cute zodiac creatures (Turkish only).
 - [Uzay Günlüğü](https://nrazon.github.io/uzaygunlugu/): A new space card every day, Turkey from space, the spinning Earth and the live position of the ISS, built on NASA's public data (Turkish only).
 - [Şans Oyunları](https://nrazon.github.io/sansoyunlari/): Results of the Turkish lotteries (Sayısal Loto, Süper Loto, Şans Topu, On Numara, Milli Piyango), random tickets and ticket checking.
 - [Where Am I?](https://nrazon.github.io/whereami/): See where you are on the map with your address and coordinates; copy or share them.
