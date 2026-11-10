@@ -9,7 +9,7 @@ src = io.open(os.path.join(G, "pentolings", "privacy.html"), encoding="utf-8").r
 head = src[:src.index('  <section id="en"')]
 head = head.replace("Pentolings", "Tombalings").replace("pentolings", "tombalings")
 head = head.replace("--bg:#1B1838; --card:#2A2350; --text:#F3EFFA; --dim:#D9CCFF; --accent:#FFC857; --link:#B7A4FF;",
-                    "--bg:#1B1647; --card:#2E1F72; --text:#F3EFFA; --dim:#D9CCFF; --accent:#FFC94D; --link:#B7A4FF;")
+                    "--bg:#F4E4C6; --card:#FFFBF0; --text:#2B211C; --dim:#4A3C32; --accent:#C8372A; --link:#2B5FA8;")
 tail = src[src.rindex("</section>") + len("</section>"):]
 
 GOOGLE_ADS = {
