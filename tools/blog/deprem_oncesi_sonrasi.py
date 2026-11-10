@@ -23,16 +23,21 @@ POST = {'id': 'earthquake-preparedness-what-to-do',
                             'flammable materials so they cannot fall are also on the list. Do not place a bed next to a window or next to heavy cabinets that '
                             'could tip over. Keep exit routes clear and marked, and do not leave emergency exits locked.']},
                      {'h': 'Before: the disaster and emergency bag',
-                      'p': ['AFAD recommends a disaster and emergency bag that can cover your basic needs for roughly the first 72 hours, until help reaches '
-                            'you. Keep it where you can reach it quickly, and check it from time to time so food, water and batteries are not out of date. '
-                            "Typical items in AFAD's list are:"],
-                      'ul': ['Water, with the amount chosen by the number of people, and long-lasting, high-energy food such as canned food or dried fruit',
-                             'A first aid kit and the personal medicines each person needs',
-                             'A battery-powered radio, a flashlight and spare batteries',
-                             'A whistle, so rescuers can find you',
-                             'Copies of important documents, a list of phone numbers and, in some lists, some cash',
-                             'Clean clothes, a raincoat, a blanket or sleeping bag, hygiene items, a face mask and a notebook with a pen',
-                             'Items for babies, older people, people with disabilities and pets, if they are part of your household']},
+                      'p': ['AFAD recommends a Disaster and Emergency Bag for the first 72 hours after an earthquake, to hold your urgent needs and valuable '
+                            'documents until rescue teams reach you. The bag should be ready and within reach, and should cover the needs of people you are '
+                            'responsible for (babies, older people, people with disabilities) and of pets, if you have them. AFAD suggests keeping a bag not '
+                            "only at home but also at the workplace and at school, in the classroom. Check the food and drink inside regularly. AFAD's list "
+                            'includes:'],
+                      'ul': ['Food: high-calorie, long-lasting food that contains vitamins and carbohydrates and helps prevent water loss (such as canned '
+                             'food, dried fruit, tahini-molasses and fruit juice)',
+                             'Water: enough drinking water, thinking of every family member',
+                             'Photocopies of important documents: ID cards, title deeds, insurance and licence documents, the compulsory earthquake insurance '
+                             "policy (DASK), diplomas, passport, bank book; also documents such as a pet's health record",
+                             'Clothing: underwear, socks, a raincoat and clothes suited to the climate',
+                             'Hygiene items: soap and disinfectant, toothbrush and toothpaste, wet wipes, toilet paper, sanitary pads',
+                             'A first aid kit and a sleeping bag or blanket',
+                             'A pocket knife, a whistle and small scissors; paper and a pen',
+                             'A battery-powered radio, a flashlight and spare batteries (choose durable, long-life batteries)']},
                      {'h': 'During: Drop, Cover and Hold On',
                       'p': ['AFAD teaches the Drop-Cover-Hold On movement (Çök-Kapan-Tutun in Turkish). Get down on your knees (drop), protect your head and '
                             'neck (cover), and hold on to something stable so you are not thrown around (hold on). A sturdy table or the side of strong '
@@ -69,7 +74,7 @@ POST = {'id': 'earthquake-preparedness-what-to-do',
                       'ul': ["Check your area's earthquake hazard and your nearest gathering area.",
                              'Agree on a family meeting place and practice Drop-Cover-Hold On.',
                              'Fix heavy furniture and appliances to the wall or floor.',
-                             'Prepare one bag per person, keep it within reach and refresh it regularly.',
+                             'Keep a disaster bag within reach at home, at work and at school, and check its contents regularly.',
                              'During shaking: drop, cover, hold on; no elevator, no balcony.',
                              'Afterwards: check around, close gas, water and electricity, take your bag, go to the gathering area.',
                              'Use messaging instead of calls, leave the roads free, and call 112 for emergencies.',
@@ -117,16 +122,21 @@ POST = {'id': 'earthquake-preparedness-what-to-do',
                             'öneriler arasındadır. Yatağı pencerenin ve devrilebilecek ağır dolapların yanına koymayın. Çıkış yollarını boş tutun, işaretleyin '
                             've acil çıkış kapılarını kilitli bırakmayın.']},
                      {'h': 'Öncesinde: afet ve acil durum çantası',
-                      'p': ['AFAD, yardım size ulaşana kadar yaklaşık ilk 72 saatlik temel ihtiyaçlarınızı karşılayabilecek bir afet ve acil durum çantası '
-                            'hazırlamanızı önerir. Çantayı hızlıca ulaşabileceğiniz bir yerde tutun ve yiyecek, su ile pillerin tarihi geçmesin diye arada '
-                            'kontrol edin. AFAD listesinde tipik olarak şunlar yer alır:'],
-                      'ul': ['Kişi sayısına göre belirlenen miktarda su ile konserve, kuru meyve gibi uzun süre bozulmayan, yüksek enerjili gıdalar',
-                             'İlk yardım çantası ve her kişinin kullandığı kişisel ilaçlar',
-                             'Pilli radyo, el feneri ve yedek piller',
-                             'Kurtarma ekiplerinin sizi bulabilmesi için düdük',
-                             'Önemli belgelerin kopyaları, telefon numaraları listesi ve bazı listelerde biraz nakit para',
-                             'Temiz giysi, yağmurluk, battaniye ya da uyku tulumu, hijyen malzemeleri, maske ile not defteri ve kalem',
-                             'Evinizde varsa bebek, yaşlı, engelli bireylerin ve evcil hayvanların ihtiyaçları']},
+                      'p': ['AFAD, deprem sonrası ilk 72 saatte, yardım ekipleri size ulaşana kadar acil ihtiyaçlarınızı ve değerli evraklarınızı '
+                            'saklayacağınız bir Afet ve Acil Durum Çantası hazırlamanızı önerir. Çanta hazır ve ulaşabileceğiniz bir yerde durmalı; sorumlu '
+                            'olduğunuz kişilerin (bebekler, yaşlılar, engelliler) ve varsa evcil hayvanlarınızın ihtiyaçlarını da içermelidir. AFAD çantanın '
+                            'yalnızca evde değil, iş yerinde ve okulda, sınıfta da bulunmasını önerir. İçindeki yiyecek ve içecekleri düzenli kontrol edin. '
+                            "AFAD'ın listesinde şunlar yer alır:"],
+                      'ul': ['Gıda: yüksek kalorili, vitamin ve karbonhidrat içeren, su kaybını önleyen ve çabuk bozulmayan gıdalar (konserve, kuru meyve, '
+                             'tahin-pekmez, meyve suyu gibi)',
+                             'Su: her aile üyesi düşünülerek yeterli içme suyu',
+                             'Önemli belgelerin fotokopileri: kimlik kartları, tapu, sigorta ve ruhsat belgeleri, Zorunlu Deprem Poliçesi, diplomalar, '
+                             'pasaport, banka cüzdanı; evcil hayvan sağlık karnesi gibi belgeler',
+                             'Giyecek: iç çamaşırı, çorap, yağmurluk ve iklime uygun giysiler',
+                             'Hijyen malzemeleri: sabun ve dezenfektan, diş fırçası ve macunu, ıslak mendil, tuvalet kâğıdı, hijyenik ped',
+                             'İlk yardım çantası, uyku tulumu veya battaniye',
+                             'Çakı, düdük ve küçük makas; kâğıt ve kalem',
+                             'Pilli radyo, el feneri ve yedek piller (dayanıklı, uzun ömürlü pil seçin)']},
                      {'h': 'Sırasında: Çök-Kapan-Tutun',
                       'p': ['AFAD, sarsıntı sırasında Çök-Kapan-Tutun hareketini öğretir. Diz üstü çökün (çök), başınızı ve ensenizi koruyun (kapan) ve '
                             'savrulmamak için sabit bir yere tutunun (tutun). Pencerelerden ve sabitlenmemiş eşyalardan uzakta sağlam bir masa ya da sağlam '
@@ -162,7 +172,7 @@ POST = {'id': 'earthquake-preparedness-what-to-do',
                       'ul': ['Bölgenizin deprem tehlikesini ve en yakın toplanma alanını öğrenin.',
                              "Ailece bir buluşma yeri belirleyin ve Çök-Kapan-Tutun'u deneyin.",
                              'Ağır eşyaları ve cihazları duvara ya da zemine sabitleyin.',
-                             'Kişi başı bir çanta hazırlayın, ulaşılabilir yerde tutun ve düzenli yenileyin.',
+                             'Evde, iş yerinde ve okulda ulaşılabilir bir yerde afet çantası bulundurun ve içindekileri düzenli kontrol edin.',
                              'Sarsıntı sırasında: çök, kapan, tutun; asansör ve balkon yok.',
                              'Sonrasında: etrafı kontrol edin, gaz, su ve elektriği kapatın, çantanızı alın, toplanma alanına gidin.',
                              "Arama yerine mesajlaşın, yolları açık bırakın, acil durumda 112'yi arayın.",
@@ -224,16 +234,21 @@ POST = {'id': 'earthquake-preparedness-what-to-do',
                             'una ventana ni junto a armarios pesados que puedan volcarse. Mantén libres y señalizadas las vías de salida y no dejes cerradas '
                             'con llave las salidas de emergencia.']},
                      {'h': 'Antes: la mochila de desastres y emergencias',
-                      'p': ['AFAD recomienda preparar una mochila de desastres y emergencias que cubra tus necesidades básicas durante aproximadamente las '
-                            'primeras 72 horas, hasta que llegue la ayuda. Guárdala donde puedas alcanzarla rápido y revísala de vez en cuando para que la '
-                            'comida, el agua y las pilas no caduquen. Una lista típica de AFAD incluye:'],
-                      'ul': ['Agua, en cantidad según el número de personas, y alimentos duraderos y energéticos, como conservas o fruta seca',
-                             'Un botiquín de primeros auxilios y los medicamentos personales que necesite cada persona',
-                             'Una radio de pilas, una linterna y pilas de repuesto',
-                             'Un silbato, para que los equipos de rescate puedan encontrarte',
-                             'Copias de documentos importantes, una lista de teléfonos y, en algunas listas, algo de dinero en efectivo',
-                             'Ropa limpia, un impermeable, una manta o saco de dormir, artículos de higiene, una mascarilla y una libreta con bolígrafo',
-                             'Lo necesario para bebés, personas mayores, personas con discapacidad y mascotas, si forman parte de tu hogar']},
+                      'p': ['AFAD recomienda preparar una mochila de emergencia para las primeras 72 horas después de un terremoto, con tus necesidades '
+                            'urgentes y tus documentos importantes hasta que lleguen los equipos de rescate. La mochila debe estar lista y a mano, e incluir '
+                            'lo necesario para las personas a tu cargo (bebés, mayores, personas con discapacidad) y para tus mascotas, si las tienes. AFAD '
+                            'aconseja tener una mochila no solo en casa, sino también en el trabajo y en la escuela, en el aula. Revisa con regularidad los '
+                            'alimentos y bebidas. La lista de AFAD incluye:'],
+                      'ul': ['Alimentos: de alto contenido calórico, con vitaminas y carbohidratos, que eviten la pérdida de agua y duren mucho (conservas, '
+                             'frutas secas, tahini con melaza, zumo, etc.)',
+                             'Agua: suficiente agua potable pensando en cada miembro de la familia',
+                             'Fotocopias de documentos importantes: documentos de identidad, escrituras, seguros y licencias, la póliza obligatoria de seguro '
+                             'sísmico (DASK), diplomas, pasaporte, libreta bancaria; también documentos como la cartilla sanitaria de una mascota',
+                             'Ropa: ropa interior, calcetines, impermeable y prendas adecuadas al clima',
+                             'Higiene: jabón y desinfectante, cepillo y pasta de dientes, toallitas húmedas, papel higiénico, compresas',
+                             'Botiquín de primeros auxilios y saco de dormir o manta',
+                             'Navaja, silbato y tijeras pequeñas; papel y lápiz',
+                             'Radio de pilas, linterna y pilas de repuesto (elige pilas duraderas)']},
                      {'h': 'Durante: Agacharse, Cubrirse y Agarrarse',
                       'p': ['AFAD enseña el movimiento Çök-Kapan-Tutun, que en español puede decirse agacharse, cubrirse y agarrarse. Ponte de rodillas '
                             '(agacharse), protege la cabeza y la nuca (cubrirse) y sujétate a algo estable para que no te lance de un lado a otro (agarrarse). '
@@ -273,7 +288,7 @@ POST = {'id': 'earthquake-preparedness-what-to-do',
                       'ul': ['Infórmate de la amenaza sísmica de tu zona y de tu zona de reunión más cercana.',
                              'Acordad un punto de encuentro familiar y practicad Agacharse-Cubrirse-Agarrarse.',
                              'Fija a la pared o al suelo los muebles y aparatos pesados.',
-                             'Prepara una mochila por persona, guárdala al alcance y renuévala con regularidad.',
+                             'Ten una mochila de emergencia al alcance en casa, en el trabajo y en la escuela, y revisa su contenido con regularidad.',
                              'Durante la sacudida: agacharse, cubrirse, agarrarse; sin ascensor ni balcón.',
                              'Después: mira a tu alrededor, cierra gas, agua y electricidad, coge la mochila y ve a la zona de reunión.',
                              'Usa mensajes en lugar de llamadas, deja libres las calles y llama al 112 en emergencias.',
@@ -325,16 +340,22 @@ POST = {'id': 'earthquake-preparedness-what-to-do',
                             'substâncias tóxicas, explosivas ou inflamáveis para que não caiam. Não coloque a cama ao lado de uma janela nem de armários '
                             'pesados que possam tombar. Mantenha as saídas livres e sinalizadas e não deixe as saídas de emergência trancadas.']},
                      {'h': 'Antes: a mochila de desastres e emergências',
-                      'p': ['A AFAD recomenda preparar uma mochila de desastres e emergências que cubra suas necessidades básicas durante cerca das primeiras '
-                            '72 horas, até a ajuda chegar. Guarde-a onde você alcance rápido e confira de vez em quando para que comida, água e pilhas não '
-                            'vençam. Uma lista típica da AFAD inclui:'],
-                      'ul': ['Água, em quantidade conforme o número de pessoas, e alimentos duráveis e energéticos, como enlatados ou frutas secas',
-                             'Um kit de primeiros socorros e os remédios pessoais de cada pessoa',
-                             'Um rádio a pilha, uma lanterna e pilhas de reserva',
-                             'Um apito, para que as equipes de resgate encontrem você',
-                             'Cópias de documentos importantes, uma lista de telefones e, em algumas listas, algum dinheiro em espécie',
-                             'Roupas limpas, uma capa de chuva, um cobertor ou saco de dormir, itens de higiene, uma máscara e um caderno com caneta',
-                             'O necessário para bebês, idosos, pessoas com deficiência e animais de estimação, se fizerem parte da sua casa']},
+                      'p': ['A AFAD recomenda preparar uma mochila de emergência para as primeiras 72 horas depois de um terremoto, com suas necessidades '
+                            'urgentes e documentos importantes até que as equipes de resgate cheguem. A mochila deve estar pronta e ao alcance, e incluir o '
+                            'necessário para as pessoas sob sua responsabilidade (bebês, idosos, pessoas com deficiência) e para animais de estimação, se '
+                            'houver. A AFAD sugere ter uma mochila não só em casa, mas também no trabalho e na escola, na sala de aula. Verifique regularmente '
+                            'os alimentos e as bebidas. A lista da AFAD inclui:'],
+                      'ul': ['Alimentos: de alto valor calórico, com vitaminas e carboidratos, que evitem a perda de água e durem bastante (conservas, frutas '
+                             'secas, tahine com melaço, suco, etc.)',
+                             'Água: água potável suficiente, pensando em cada membro da família',
+                             'Fotocópias de documentos importantes: documentos de identidade, escrituras, seguros e licenças, a apólice obrigatória de seguro '
+                             'contra terremotos (DASK), diplomas, passaporte, caderneta bancária; também documentos como a carteira de saúde de um animal de '
+                             'estimação',
+                             'Roupas: roupa íntima, meias, capa de chuva e roupas adequadas ao clima',
+                             'Higiene: sabonete e desinfetante, escova e pasta de dentes, lenços umedecidos, papel higiênico, absorventes',
+                             'Kit de primeiros socorros e saco de dormir ou cobertor',
+                             'Canivete, apito e tesoura pequena; papel e caneta',
+                             'Rádio a pilha, lanterna e pilhas de reserva (escolha pilhas duráveis)']},
                      {'h': 'Durante: Abaixar, Cobrir e Segurar',
                       'p': ['A AFAD ensina o movimento Çök-Kapan-Tutun, que em português pode ser dito abaixar, cobrir e segurar. Fique de joelhos (abaixar), '
                             'proteja a cabeça e a nuca (cobrir) e segure-se em algo estável para não ser jogado de um lado para o outro (segurar). Prefere-se '
@@ -372,7 +393,7 @@ POST = {'id': 'earthquake-preparedness-what-to-do',
                       'ul': ['Descubra o perigo sísmico da sua região e a área de reunião mais próxima.',
                              'Combinem um ponto de encontro da família e pratiquem Abaixar-Cobrir-Segurar.',
                              'Fixe móveis e aparelhos pesados na parede ou no chão.',
-                             'Prepare uma mochila por pessoa, deixe ao alcance e renove regularmente.',
+                             'Mantenha uma mochila de emergência ao alcance em casa, no trabalho e na escola, e verifique o conteúdo regularmente.',
                              'Durante o tremor: abaixar, cobrir, segurar; sem elevador e sem varanda.',
                              'Depois: olhe ao redor, feche gás, água e eletricidade, pegue a mochila e vá à área de reunião.',
                              'Use mensagens em vez de ligações, deixe as ruas livres e ligue 112 em emergências.',
