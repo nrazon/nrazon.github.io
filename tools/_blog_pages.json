@@ -529,6 +529,94 @@
    "hash": "053dd19aefe028f363358f66e8168783"
   },
   {
+   "url": "https://nrazon.github.io/blog/pentominoes-history-golomb-twelve-pieces/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/pentominoes-history-golomb-twelve-pieces/",
+    "tr": "https://nrazon.github.io/tr/yazilar/pentomino-tarihi-golomb-12-parca/",
+    "es": "https://nrazon.github.io/es/blog/historia-de-los-pentominos-golomb-doce-piezas/",
+    "pt": "https://nrazon.github.io/pt/blog/historia-dos-pentominos-golomb-doze-pecas/"
+   },
+   "default": "en",
+   "hash": "339f7737fa4f69e5730d433053fffb95"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/pentomino-tarihi-golomb-12-parca/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/pentominoes-history-golomb-twelve-pieces/",
+    "tr": "https://nrazon.github.io/tr/yazilar/pentomino-tarihi-golomb-12-parca/",
+    "es": "https://nrazon.github.io/es/blog/historia-de-los-pentominos-golomb-doce-piezas/",
+    "pt": "https://nrazon.github.io/pt/blog/historia-dos-pentominos-golomb-doze-pecas/"
+   },
+   "default": "en",
+   "hash": "4def01e5735f5506f67220e56555a63a"
+  },
+  {
+   "url": "https://nrazon.github.io/es/blog/historia-de-los-pentominos-golomb-doce-piezas/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/pentominoes-history-golomb-twelve-pieces/",
+    "tr": "https://nrazon.github.io/tr/yazilar/pentomino-tarihi-golomb-12-parca/",
+    "es": "https://nrazon.github.io/es/blog/historia-de-los-pentominos-golomb-doce-piezas/",
+    "pt": "https://nrazon.github.io/pt/blog/historia-dos-pentominos-golomb-doze-pecas/"
+   },
+   "default": "en",
+   "hash": "3d71759ef47735c6734f332fcf8e3d7f"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/blog/historia-dos-pentominos-golomb-doze-pecas/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/pentominoes-history-golomb-twelve-pieces/",
+    "tr": "https://nrazon.github.io/tr/yazilar/pentomino-tarihi-golomb-12-parca/",
+    "es": "https://nrazon.github.io/es/blog/historia-de-los-pentominos-golomb-doce-piezas/",
+    "pt": "https://nrazon.github.io/pt/blog/historia-dos-pentominos-golomb-doze-pecas/"
+   },
+   "default": "en",
+   "hash": "fc95ef257d4718cf991e306c015904b1"
+  },
+  {
+   "url": "https://nrazon.github.io/blog/pentomino-puzzles-dancing-links-exact-cover/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/pentomino-puzzles-dancing-links-exact-cover/",
+    "tr": "https://nrazon.github.io/tr/yazilar/pentomino-bulmacalari-dancing-links-tam-kapsama/",
+    "es": "https://nrazon.github.io/es/blog/puzles-de-pentominos-dancing-links-cobertura-exacta/",
+    "pt": "https://nrazon.github.io/pt/blog/quebra-cabecas-de-pentominos-dancing-links-cobertura-exata/"
+   },
+   "default": "en",
+   "hash": "909f153ea15dae54df8853426ad07a69"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/pentomino-bulmacalari-dancing-links-tam-kapsama/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/pentomino-puzzles-dancing-links-exact-cover/",
+    "tr": "https://nrazon.github.io/tr/yazilar/pentomino-bulmacalari-dancing-links-tam-kapsama/",
+    "es": "https://nrazon.github.io/es/blog/puzles-de-pentominos-dancing-links-cobertura-exacta/",
+    "pt": "https://nrazon.github.io/pt/blog/quebra-cabecas-de-pentominos-dancing-links-cobertura-exata/"
+   },
+   "default": "en",
+   "hash": "774b020db028bade46e533b828bb461b"
+  },
+  {
+   "url": "https://nrazon.github.io/es/blog/puzles-de-pentominos-dancing-links-cobertura-exacta/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/pentomino-puzzles-dancing-links-exact-cover/",
+    "tr": "https://nrazon.github.io/tr/yazilar/pentomino-bulmacalari-dancing-links-tam-kapsama/",
+    "es": "https://nrazon.github.io/es/blog/puzles-de-pentominos-dancing-links-cobertura-exacta/",
+    "pt": "https://nrazon.github.io/pt/blog/quebra-cabecas-de-pentominos-dancing-links-cobertura-exata/"
+   },
+   "default": "en",
+   "hash": "f5231657131fb55d963beaa833a911bb"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/blog/quebra-cabecas-de-pentominos-dancing-links-cobertura-exata/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/pentomino-puzzles-dancing-links-exact-cover/",
+    "tr": "https://nrazon.github.io/tr/yazilar/pentomino-bulmacalari-dancing-links-tam-kapsama/",
+    "es": "https://nrazon.github.io/es/blog/puzles-de-pentominos-dancing-links-cobertura-exacta/",
+    "pt": "https://nrazon.github.io/pt/blog/quebra-cabecas-de-pentominos-dancing-links-cobertura-exata/"
+   },
+   "default": "en",
+   "hash": "07939e7094407fe7da0c196615582441"
+  },
+  {
    "url": "https://nrazon.github.io/blog/",
    "loc": {
     "en": "https://nrazon.github.io/blog/",
@@ -537,7 +625,7 @@
     "pt": "https://nrazon.github.io/pt/blog/"
    },
    "default": "en",
-   "hash": "1f6d6a3d720d5588cb6108bfa3067df5"
+   "hash": "ba26017de1828cb3ab7b14e1b0804ccb"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/",
@@ -548,7 +636,7 @@
     "pt": "https://nrazon.github.io/pt/blog/"
    },
    "default": "en",
-   "hash": "617d19134ae5ba4777db32359cd9ae33"
+   "hash": "c0dbb195a3d64b3b6c20bc63b761df95"
   },
   {
    "url": "https://nrazon.github.io/es/blog/",
@@ -559,7 +647,7 @@
     "pt": "https://nrazon.github.io/pt/blog/"
    },
    "default": "en",
-   "hash": "daaa87abd474605fb26ee30edcadafd9"
+   "hash": "8a4204e6e4b1caea4e9ac8f949094686"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/",
@@ -570,7 +658,7 @@
     "pt": "https://nrazon.github.io/pt/blog/"
    },
    "default": "en",
-   "hash": "59430e8d5ba327d893785c9c4451b2d1"
+   "hash": "179771f17c725d6f4ddf4fef877aa111"
   }
  ],
  "index": {

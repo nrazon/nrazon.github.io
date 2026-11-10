@@ -59,6 +59,12 @@
    "tr": "/tr/rehber/kaydirmali-park-bulmacasi-nasil-cozulur/",
    "es": "/es/guias/como-resolver-puzles-de-deslizar-vehiculos/",
    "pt": "/pt/guias/como-resolver-quebra-cabecas-de-deslizar-veiculos/"
+  },
+  "pentolings": {
+   "en": "/guides/how-to-solve-pentomino-puzzles/",
+   "tr": "/tr/rehber/pentomino-bulmacasi-nasil-cozulur/",
+   "es": "/es/guias/como-resolver-puzles-de-pentominos/",
+   "pt": "/pt/guias/como-resolver-quebra-cabecas-de-pentominos/"
   }
  },
  "pages": [
@@ -1031,6 +1037,94 @@
    "hash": "510e3637f0cd4124a471997ba5897d8e"
   },
   {
+   "url": "https://nrazon.github.io/guides/how-to-solve-pentomino-puzzles/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-solve-pentomino-puzzles/",
+    "tr": "https://nrazon.github.io/tr/rehber/pentomino-bulmacasi-nasil-cozulur/",
+    "es": "https://nrazon.github.io/es/guias/como-resolver-puzles-de-pentominos/",
+    "pt": "https://nrazon.github.io/pt/guias/como-resolver-quebra-cabecas-de-pentominos/"
+   },
+   "default": "en",
+   "hash": "0a2c8f0edf03544eae17556bcbef9192"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/rehber/pentomino-bulmacasi-nasil-cozulur/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-solve-pentomino-puzzles/",
+    "tr": "https://nrazon.github.io/tr/rehber/pentomino-bulmacasi-nasil-cozulur/",
+    "es": "https://nrazon.github.io/es/guias/como-resolver-puzles-de-pentominos/",
+    "pt": "https://nrazon.github.io/pt/guias/como-resolver-quebra-cabecas-de-pentominos/"
+   },
+   "default": "en",
+   "hash": "f56845b5f431c5a177b804d5c66644e7"
+  },
+  {
+   "url": "https://nrazon.github.io/es/guias/como-resolver-puzles-de-pentominos/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-solve-pentomino-puzzles/",
+    "tr": "https://nrazon.github.io/tr/rehber/pentomino-bulmacasi-nasil-cozulur/",
+    "es": "https://nrazon.github.io/es/guias/como-resolver-puzles-de-pentominos/",
+    "pt": "https://nrazon.github.io/pt/guias/como-resolver-quebra-cabecas-de-pentominos/"
+   },
+   "default": "en",
+   "hash": "b3cfafcc1ef308ad8feca07c05b45c7f"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/guias/como-resolver-quebra-cabecas-de-pentominos/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-solve-pentomino-puzzles/",
+    "tr": "https://nrazon.github.io/tr/rehber/pentomino-bulmacasi-nasil-cozulur/",
+    "es": "https://nrazon.github.io/es/guias/como-resolver-puzles-de-pentominos/",
+    "pt": "https://nrazon.github.io/pt/guias/como-resolver-quebra-cabecas-de-pentominos/"
+   },
+   "default": "en",
+   "hash": "59adba4f358ec652c6f952ef082b7e8b"
+  },
+  {
+   "url": "https://nrazon.github.io/guides/falling-blocks-color-pop-strategy/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/falling-blocks-color-pop-strategy/",
+    "tr": "https://nrazon.github.io/tr/rehber/dusen-bloklar-renk-patlatma-stratejisi/",
+    "es": "https://nrazon.github.io/es/guias/bloques-que-caen-estrategia-explotar-colores/",
+    "pt": "https://nrazon.github.io/pt/guias/blocos-que-caem-estrategia-estourar-cores/"
+   },
+   "default": "en",
+   "hash": "4e5fc41d00af5cf4ebe8cd8a4128e198"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/rehber/dusen-bloklar-renk-patlatma-stratejisi/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/falling-blocks-color-pop-strategy/",
+    "tr": "https://nrazon.github.io/tr/rehber/dusen-bloklar-renk-patlatma-stratejisi/",
+    "es": "https://nrazon.github.io/es/guias/bloques-que-caen-estrategia-explotar-colores/",
+    "pt": "https://nrazon.github.io/pt/guias/blocos-que-caem-estrategia-estourar-cores/"
+   },
+   "default": "en",
+   "hash": "a12138709316562f3b6ccb848500e808"
+  },
+  {
+   "url": "https://nrazon.github.io/es/guias/bloques-que-caen-estrategia-explotar-colores/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/falling-blocks-color-pop-strategy/",
+    "tr": "https://nrazon.github.io/tr/rehber/dusen-bloklar-renk-patlatma-stratejisi/",
+    "es": "https://nrazon.github.io/es/guias/bloques-que-caen-estrategia-explotar-colores/",
+    "pt": "https://nrazon.github.io/pt/guias/blocos-que-caem-estrategia-estourar-cores/"
+   },
+   "default": "en",
+   "hash": "2979674843b3673708553d5c71e84951"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/guias/blocos-que-caem-estrategia-estourar-cores/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/falling-blocks-color-pop-strategy/",
+    "tr": "https://nrazon.github.io/tr/rehber/dusen-bloklar-renk-patlatma-stratejisi/",
+    "es": "https://nrazon.github.io/es/guias/bloques-que-caen-estrategia-explotar-colores/",
+    "pt": "https://nrazon.github.io/pt/guias/blocos-que-caem-estrategia-estourar-cores/"
+   },
+   "default": "en",
+   "hash": "32c8932076a368469b6b730e4219de88"
+  },
+  {
    "url": "https://nrazon.github.io/guides/",
    "loc": {
     "en": "https://nrazon.github.io/guides/",
@@ -1039,7 +1133,7 @@
     "pt": "https://nrazon.github.io/pt/guias/"
    },
    "default": "en",
-   "hash": "4f4b608080ca7dc8c8185037d328e253"
+   "hash": "cc7ee5000fb8024d6499f487f8a4331e"
   },
   {
    "url": "https://nrazon.github.io/tr/rehber/",
@@ -1050,7 +1144,7 @@
     "pt": "https://nrazon.github.io/pt/guias/"
    },
    "default": "en",
-   "hash": "d2522725a80eeb10b3231a0223f756cc"
+   "hash": "39df7a06abd6df77a9d949ab3b38a2fc"
   },
   {
    "url": "https://nrazon.github.io/es/guias/",
@@ -1061,7 +1155,7 @@
     "pt": "https://nrazon.github.io/pt/guias/"
    },
    "default": "en",
-   "hash": "0e7a076effdc1780448a973530214c4e"
+   "hash": "d1437f06f2aae18a9c4f42ae125391ff"
   },
   {
    "url": "https://nrazon.github.io/pt/guias/",
@@ -1072,7 +1166,7 @@
     "pt": "https://nrazon.github.io/pt/guias/"
    },
    "default": "en",
-   "hash": "edbf13c29027f64ebcbdd62c92a622e0"
+   "hash": "1ddd12033ffe4a62e225d320f149af62"
   }
  ],
  "index": {

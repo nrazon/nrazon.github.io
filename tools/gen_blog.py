@@ -16,7 +16,7 @@ T = GG.T
 DIRS = {"en": "blog", "tr": "tr/yazilar", "es": "es/blog", "pt": "pt/blog"}
 # Yayın günü eklenenler (Pentolings yayına çıkınca): "pento_history", "pento_dlx"
 BLOG_MODULES = ["mahjong_solvable", "mahjong_history", "daily_seed", "generated_levels", "ttt_history",
-                "deprem_buyukluk", "deprem_oncesi_sonrasi", "deprem_veri_kaynaklari", "bmi_nedir", "bmi_hatalar", "yas_hesaplama", "artik_yil_dogum_gunu"]
+                "deprem_buyukluk", "deprem_oncesi_sonrasi", "deprem_veri_kaynaklari", "bmi_nedir", "bmi_hatalar", "yas_hesaplama", "artik_yil_dogum_gunu", "pento_history", "pento_dlx"]
 
 BT = {
     "en": {"idx_title": "Blog: puzzle design, game history and dev notes", "idx_h1": "Blog", "idx_desc": "Notes from an independent Android developer: how puzzles are generated and checked, the history of classic puzzle games and behind-the-scenes dev stories.",

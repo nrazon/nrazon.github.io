@@ -2,6 +2,16 @@
  "v": 1,
  "games": [
   {
+   "key": "pentolings",
+   "name": "Pentolings",
+   "pkg": "com.pentolings.nesimapps",
+   "icon": "icons/pentolings.png",
+   "tr": "Parçaları şekle döşe, renkleri patlat: tek uygulamada iki sevimli bulmaca. 150 bölüm.",
+   "en": "Fit the pieces, pop the colours: two cute puzzle games in one. 150 levels.",
+   "es": "Encaja las piezas, explota los colores: dos puzles adorables en uno. 150 niveles.",
+   "pt": "Encaixe as peças, estoure as cores: dois quebra-cabeças fofos em um. 150 níveis."
+  },
+  {
    "key": "nudgelings",
    "name": "Nudgelings",
    "pkg": "com.nudgelings.nesimapps",

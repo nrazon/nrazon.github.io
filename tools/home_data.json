@@ -39,14 +39,14 @@
   },
   "tint": "#8E6BFF",
   "pkg": "com.pentolings.nesimapps",
-  "new": "2027-01-05",
+  "new": "2026-11-24",
   "desc": {
    "tr": "Döşe ve Düşür: sevimli iki bulmaca oyunu tek uygulamada. Parçaları şekle yerleştir, renkleri patlat. Google Play'de çok yakında.",
    "en": "Fit and Drop: two cute puzzle games in one app. Fill shapes with pieces, pop the colours. Coming soon to Google Play.",
    "es": "Encajar y Caída: dos puzles adorables en una app. Rellena formas con piezas y explota los colores. Próximamente en Google Play.",
    "pt": "Encaixar e Queda: dois quebra-cabeças fofos em um app. Preencha formas com peças e estoure as cores. Em breve no Google Play."
   },
-  "status": "soon",
+  "status": "live",
   "popular": false,
   "desc_live": {
    "tr": "Döşe ve Düşür: sevimli iki bulmaca oyunu tek uygulamada. Parçaları şekle yerleştir, renkleri patlat.",

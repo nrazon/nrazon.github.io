@@ -132,6 +132,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/mahjong-solitaire-history-vs-real-mahjong/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/blog/pentomino-puzzles-dancing-links-exact-cover/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/pentomino-puzzles-dancing-links-exact-cover/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/pentomino-bulmacalari-dancing-links-tam-kapsama/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/puzles-de-pentominos-dancing-links-cobertura-exacta/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/quebra-cabecas-de-pentominos-dancing-links-cobertura-exata/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/pentomino-puzzles-dancing-links-exact-cover/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/blog/pentominoes-history-golomb-twelve-pieces/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/pentominoes-history-golomb-twelve-pieces/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/pentomino-tarihi-golomb-12-parca/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/historia-de-los-pentominos-golomb-doce-piezas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/historia-dos-pentominos-golomb-doze-pecas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/pentominoes-history-golomb-twelve-pieces/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/blog/tic-tac-toe-history-and-variants/</loc>
     <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/tic-tac-toe-history-and-variants/"/>
@@ -280,6 +298,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/bmi-common-mistakes-and-limits/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/es/blog/historia-de-los-pentominos-golomb-doce-piezas/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/pentominoes-history-golomb-twelve-pieces/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/pentomino-tarihi-golomb-12-parca/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/historia-de-los-pentominos-golomb-doce-piezas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/historia-dos-pentominos-golomb-doze-pecas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/pentominoes-history-golomb-twelve-pieces/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/es/blog/historia-del-tres-en-raya-y-sus-variantes/</loc>
     <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/tic-tac-toe-history-and-variants/"/>
@@ -314,6 +341,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/blog/puzles-de-pentominos-dancing-links-cobertura-exacta/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/pentomino-puzzles-dancing-links-exact-cover/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/pentomino-bulmacalari-dancing-links-tam-kapsama/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/puzles-de-pentominos-dancing-links-cobertura-exacta/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/quebra-cabecas-de-pentominos-dancing-links-cobertura-exata/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/pentomino-puzzles-dancing-links-exact-cover/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/es/blog/que-es-el-imc-como-se-calcula-y-se-interpreta/</loc>
@@ -395,6 +431,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/2048-despues-4096-8192-errores-comunes/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/2048-depois-4096-8192-erros-comuns/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/2048-beyond-4096-8192-common-mistakes/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/guias/bloques-que-caen-estrategia-explotar-colores/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/falling-blocks-color-pop-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/dusen-bloklar-renk-patlatma-stratejisi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/bloques-que-caen-estrategia-explotar-colores/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/blocos-que-caem-estrategia-estourar-cores/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/falling-blocks-color-pop-strategy/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/es/guias/caras-dormilonas-estrategia-perseguir-las-luces/</loc>
@@ -514,6 +559,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-solve-sliding-parking-puzzles/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/es/guias/como-resolver-puzles-de-pentominos/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-solve-pentomino-puzzles/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/pentomino-bulmacasi-nasil-cozulur/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-resolver-puzles-de-pentominos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-resolver-quebra-cabecas-de-pentominos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-solve-pentomino-puzzles/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/es/guias/estrategia-puzle-de-empujar-cajas-evita-bloqueos/</loc>
     <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/box-pushing-puzzle-strategy-avoid-deadlocks/"/>
@@ -611,6 +665,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/nuzzlings/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/nuzzlings/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/nuzzlings/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/pentolings/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/pentolings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/pentolings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/pentolings/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/pentolings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/pentolings/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/es/sliplines/</loc>
@@ -719,6 +782,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/box-pushing-puzzle-strategy-avoid-deadlocks/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/guides/falling-blocks-color-pop-strategy/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/falling-blocks-color-pop-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/dusen-bloklar-renk-patlatma-stratejisi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/bloques-que-caen-estrategia-explotar-colores/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/blocos-que-caem-estrategia-estourar-cores/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/falling-blocks-color-pop-strategy/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/guides/frog-hops-peg-solitaire-strategy/</loc>
     <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/frog-hops-peg-solitaire-strategy/"/>
@@ -818,6 +890,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-solve-crown-twin-path-puzzles/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/guides/how-to-solve-pentomino-puzzles/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-solve-pentomino-puzzles/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/pentomino-bulmacasi-nasil-cozulur/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-resolver-puzles-de-pentominos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-resolver-quebra-cabecas-de-pentominos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-solve-pentomino-puzzles/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/guides/how-to-solve-sliding-parking-puzzles/</loc>
     <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-solve-sliding-parking-puzzles/"/>
@@ -914,6 +995,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/nuzzlings/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/nuzzlings/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/nuzzlings/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pentolings/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/pentolings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/pentolings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/pentolings/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/pentolings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/pentolings/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/</loc>
@@ -1015,6 +1105,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/tic-tac-toe-history-and-variants/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/pt/blog/historia-dos-pentominos-golomb-doze-pecas/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/pentominoes-history-golomb-twelve-pieces/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/pentomino-tarihi-golomb-12-parca/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/historia-de-los-pentominos-golomb-doce-piezas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/historia-dos-pentominos-golomb-doze-pecas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/pentominoes-history-golomb-twelve-pieces/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/</loc>
     <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/mahjong-solitaire-history-vs-real-mahjong/"/>
@@ -1049,6 +1148,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/blog/quebra-cabecas-de-pentominos-dancing-links-cobertura-exata/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/pentomino-puzzles-dancing-links-exact-cover/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/pentomino-bulmacalari-dancing-links-tam-kapsama/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/puzles-de-pentominos-dancing-links-cobertura-exacta/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/quebra-cabecas-de-pentominos-dancing-links-cobertura-exata/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/pentomino-puzzles-dancing-links-exact-cover/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/blog/terremoto-o-que-fazer-antes-durante-depois/</loc>
@@ -1121,6 +1229,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/2048-despues-4096-8192-errores-comunes/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/2048-depois-4096-8192-erros-comuns/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/2048-beyond-4096-8192-common-mistakes/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/guias/blocos-que-caem-estrategia-estourar-cores/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/falling-blocks-color-pop-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/dusen-bloklar-renk-patlatma-stratejisi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/bloques-que-caen-estrategia-explotar-colores/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/blocos-que-caem-estrategia-estourar-cores/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/falling-blocks-color-pop-strategy/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/guias/como-jogar-2048-estrategia/</loc>
@@ -1231,6 +1348,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-solve-sliding-parking-puzzles/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/pt/guias/como-resolver-quebra-cabecas-de-pentominos/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-solve-pentomino-puzzles/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/pentomino-bulmacasi-nasil-cozulur/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-resolver-puzles-de-pentominos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-resolver-quebra-cabecas-de-pentominos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-solve-pentomino-puzzles/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/pt/guias/dicas-quebra-cabeca-de-blocos/</loc>
     <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/block-puzzle-tips-and-tricks/"/>
@@ -1337,6 +1463,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/nuzzlings/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/nuzzlings/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/nuzzlings/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/pentolings/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/pentolings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/pentolings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/pentolings/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/pentolings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/pentolings/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/sliplines/</loc>
@@ -1519,6 +1654,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/nuzzlings/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/tr/pentolings/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/pentolings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/pentolings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/pentolings/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/pentolings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/pentolings/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/tr/rehber/</loc>
     <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/"/>
@@ -1571,6 +1715,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/puzle-de-bloques-combos-y-estrategia-de-puntuacion/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/quebra-cabeca-de-blocos-combos-e-estrategia-de-pontuacao/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/block-puzzle-combos-and-high-score-strategy/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/rehber/dusen-bloklar-renk-patlatma-stratejisi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/falling-blocks-color-pop-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/dusen-bloklar-renk-patlatma-stratejisi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/bloques-que-caen-estrategia-explotar-colores/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/blocos-que-caem-estrategia-estourar-cores/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/falling-blocks-color-pop-strategy/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/rehber/freecell-nasil-oynanir-strateji/</loc>
@@ -1670,6 +1823,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-puzle-de-flechas/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-quebra-cabeca-de-setas/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-arrow-puzzle/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/rehber/pentomino-bulmacasi-nasil-cozulur/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-solve-pentomino-puzzles/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/pentomino-bulmacasi-nasil-cozulur/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-resolver-puzles-de-pentominos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-resolver-quebra-cabecas-de-pentominos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-solve-pentomino-puzzles/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/rehber/spider-solitaire-nasil-oynanir/</loc>
@@ -1848,6 +2010,24 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/historia-mahjong-solitario-y-diferencias-con-mahjong/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/mahjong-solitaire-history-vs-real-mahjong/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/yazilar/pentomino-bulmacalari-dancing-links-tam-kapsama/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/pentomino-puzzles-dancing-links-exact-cover/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/pentomino-bulmacalari-dancing-links-tam-kapsama/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/puzles-de-pentominos-dancing-links-cobertura-exacta/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/quebra-cabecas-de-pentominos-dancing-links-cobertura-exata/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/pentomino-puzzles-dancing-links-exact-cover/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/yazilar/pentomino-tarihi-golomb-12-parca/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/pentominoes-history-golomb-twelve-pieces/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/pentomino-tarihi-golomb-12-parca/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/historia-de-los-pentominos-golomb-doce-piezas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/historia-dos-pentominos-golomb-doze-pecas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/pentominoes-history-golomb-twelve-pieces/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/yazilar/son-deprem-verileri-nereden-geliyor/</loc>
