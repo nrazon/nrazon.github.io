@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tic-Tac-Toe: A Solved Game, an Early Computer and Its Variants</title>
+<meta name="description" content="From OXO on EDSAC in 1952 to Ultimate Tic-Tac-Toe: why it is a solved game, how small its game tree is and which bigger variants keep it interesting.">
+<link rel="canonical" href="https://nrazon.github.io/blog/tic-tac-toe-history-and-variants/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/tic-tac-toe-history-and-variants/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/xox-tarihi-ve-cesitleri/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/historia-del-tres-en-raya-y-sus-variantes/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/historia-do-jogo-da-velha-e-variantes/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/tic-tac-toe-history-and-variants/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#4CC9C0">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Tic-Tac-Toe: A Solved Game, an Early Computer and Its Variants">
+<meta property="og:description" content="From OXO on EDSAC in 1952 to Ultimate Tic-Tac-Toe: why it is a solved game, how small its game tree is and which bigger variants keep it interesting.">
+<meta property="og:url" content="https://nrazon.github.io/blog/tic-tac-toe-history-and-variants/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tic-Tac-Toe: A Solved Game, an Early Computer and Its Variants">
+<meta name="twitter:description" content="From OXO on EDSAC in 1952 to Ultimate Tic-Tac-Toe: why it is a solved game, how small its game tree is and which bigger variants keep it interesting.">
+<style>:root { --accent:#4CC9C0; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Tic-Tac-Toe: A Solved Game, an Early Computer and Its Variants", "description": "From OXO on EDSAC in 1952 to Ultimate Tic-Tac-Toe: why it is a solved game, how small its game tree is and which bigger variants keep it interesting.", "inLanguage": "en", "mainEntityOfPage": "https://nrazon.github.io/blog/tic-tac-toe-history-and-variants/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-10", "dateModified": "2026-11-10", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}, "about": {"@type": "SoftwareApplication", "name": "Tic-Tac-Toe", "operatingSystem": "Android", "applicationCategory": "GameApplication", "url": "https://nrazon.github.io/tictactoe/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nrazon.github.io/blog/"}, {"@type": "ListItem", "position": 3, "name": "Tic-Tac-Toe: A Solved Game, an Early Computer and Its Variants", "item": "https://nrazon.github.io/blog/tic-tac-toe-history-and-variants/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Who invented Tic-Tac-Toe?", "acceptedAnswer": {"@type": "Answer", "text": "Nobody knows for sure, so we do not claim an inventor. What is documented is that Alexander S. Douglas wrote the computer game OXO for the EDSAC in 1952."}}, {"@type": "Question", "name": "Is Tic-Tac-Toe a solved game?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. With perfect play from both players the game always ends in a draw."}}, {"@type": "Question", "name": "Can you always win by going first?", "acceptedAnswer": {"@type": "Answer", "text": "No. Going first helps, but a player who never makes a mistake can always at least draw, so perfect play from both sides leads to a draw."}}, {"@type": "Question", "name": "How many games of Tic-Tac-Toe are possible?", "acceptedAnswer": {"@type": "Answer", "text": "255,168 complete games if play stops when someone wins, using 5,478 different reachable positions."}}, {"@type": "Question", "name": "Can I beat the computer in the app?", "acceptedAnswer": {"@type": "Answer", "text": "You can beat Easy and, with a clever trap, Medium. Hard plays perfectly and never loses, so the best result against it is a draw."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/tic-tac-toe-history-and-variants/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/xox-tarihi-ve-cesitleri/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/historia-del-tres-en-raya-y-sus-variantes/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/historia-do-jogo-da-velha-e-variantes/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>Tic-Tac-Toe: A Solved Game, an Early Computer and Its Variants</h1>
+    <p class="by">By Nesim Razon, independent Android developer · 2026-11-10</p>
+    <p class="lead">Tic-Tac-Toe is the first game most of us ever play, and it is also one of the first games a computer ever played. It is tiny, it is solved, and yet it has a surprising number of cousins. Here is what we can say for sure about its past, its maths and its variants.</p>
+    <h2>One game, many names</h2>
+    <p>In the United Kingdom and many other places the game is called noughts and crosses. In the United States it is Tic-Tac-Toe, in Turkey it is often called XOX, in Spanish-speaking countries tres en raya and in Brazil jogo da velha. The rules are the same everywhere: two players take turns marking a 3x3 grid, one with X and one with O, and the first to complete a line of three wins.</p>
+    <p>A line can be a row, a column or a diagonal. If all nine squares are filled and nobody has a line, the game is a draw. Those few lines of rules are all there is, which is exactly why the game works as a first lesson in strategy for children.</p>
+    <h2>OXO: an early computer game in 1952</h2>
+    <p>One of the first video-style computer games was a version of noughts and crosses. In 1952 Alexander S. Douglas, a student at the University of Cambridge, wrote a program called OXO for the EDSAC computer. It was part of his PhD work on how people interact with computers, and it let a human play against the machine, with the board shown on a small display.</p>
+    <p>It is a good reminder that Tic-Tac-Toe is a perfect test case for a young machine. The rules are short, the board is small and the program can check every possibility. That is also why the game appears so often in early computing stories and in teaching examples about search and decision making.</p>
+    <h2>Why the game is solved</h2>
+    <p>A game is called solved when we know the result with perfect play from both sides. For Tic-Tac-Toe, the result is a draw. If both players never make a mistake, nobody wins. A player who follows the right moves can always avoid defeat, whether they start or not.</p>
+    <p>This is not a guess or a rule of thumb. It can be proved by checking every possible line of play, and a computer does it in a blink. The idea behind such a check is called minimax: assume your opponent always picks the reply that is worst for you, and choose your move so that the worst case is as good as possible.</p>
+    <h2>How small is the game tree?</h2>
+    <p>Counting all the ways a game can unfold gives 255,168 possible complete games if you stop when someone wins. If you count only the different board positions that can really appear, there are 5,478. Once you treat rotated and mirrored boards as the same position, the number becomes much smaller still.</p>
+    <p>For a modern computer these are tiny numbers. For a human they are small enough to learn by heart, which is why people stop finding the game exciting once they have mastered the opening. It also explains why a perfect computer opponent is easy to build, while games like chess or Go need far more clever methods.</p>
+    <h2>From 3x3 to m,n,k games</h2>
+    <p>Mathematicians generalise the idea. An m,n,k game is played on a board with m columns and n rows, where the first player to get k marks in a row wins. Tic-Tac-Toe is the 3,3,3 game. Changing the three numbers gives a whole family of games.</p>
+    <p>A neat result about this family is the strategy-stealing argument. In these games an extra mark never hurts you, so the second player cannot have a guaranteed winning strategy. At best the second player can force a draw, and often the first player has the edge. Even this simple idea says a lot about fairness in turn-based games without telling you the actual best move.</p>
+    <h2>Famous cousins</h2>
+    <ul><li>Gomoku: players place stones on a large grid, traditionally the same kind of grid used for Go, and try to make five in a row. It is Tic-Tac-Toe scaled up, and the first player has a known advantage in the basic version.</li><li>Connect Four: stones fall to the bottom of a vertical grid and four in a row wins. It was solved in 1988 and the first player can force a win with perfect play.</li><li>Ultimate Tic-Tac-Toe: a 3x3 grid of small boards. Where you play inside a small board decides which small board your opponent must play in next. Winning small boards wins squares of the big board, so you need to think about two levels at once.</li><li>Misere versions: the player who completes three in a row loses. The strategy flips and can feel unexpectedly tricky.</li><li>Three-dimensional boards, such as the 4x4x4 cube, give the game extra depth.</li></ul>
+    <h2>Playing it against a computer</h2>
+    <p>A good Tic-Tac-Toe app can show you what perfect play looks like. In our Tic-Tac-Toe app you choose between three difficulties. Easy takes an immediate win about half the time and otherwise picks a square at random. Medium blocks your winning moves and takes its own chances, but it can be tricked with a fork, a move that creates two threats at once. Hard plays perfectly with the minimax idea and never loses.</p>
+    <p>That means you cannot beat Hard, but you can draw with it, and that is a real achievement. The starting player changes from game to game, so you practise both sides. If you want to learn how to get those draws and how to set traps against weaker players, our strategy guide goes through the moves step by step.</p>
+    <h2>What the little game teaches</h2>
+    <p>Tic-Tac-Toe is a tiny laboratory for ideas that matter far beyond it: planning ahead, spotting threats, forcing the opponent&#x27;s reply and understanding that some games end in a draw when both sides are careful. Learning that a draw is a good result can be a first step toward thinking strategically.</p>
+    <p>Try making your own variants too. Change the board size, require four in a row, or forbid the centre on the first move. Rule tweaks turn a solved game into something fresh, and that is how many of the games above began.</p>
+    <h2>Try it yourself</h2>
+    <p>A fun experiment: play ten games against Easy, then ten against Medium, and note how often you can set up a fork. Then try Hard and count your draws. Watching how the three levels respond to the same opening shows, better than any text, how a perfect player thinks.</p>
+    <aside class="gcta"><img class="ic" src="/tictactoe/icon.svg" alt="Tic-Tac-Toe icon" width="64" height="64"><div class="tx"><b>Try it free: Tic-Tac-Toe</b><span>Free on Google Play. No account needed.</span></div><a class="play" href="https://play.google.com/store/apps/details?id=com.tictactoe.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dblog%26utm_campaign%3Dtic-tac-toe-history-variants"><img src="/badges/google-play-en.svg" alt="Google Play" width="162" height="48"></a><a class="small" href="/tictactoe/">About Tic-Tac-Toe</a></aside>
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Who invented Tic-Tac-Toe?</summary><p>Nobody knows for sure, so we do not claim an inventor. What is documented is that Alexander S. Douglas wrote the computer game OXO for the EDSAC in 1952.</p></details><details><summary>Is Tic-Tac-Toe a solved game?</summary><p>Yes. With perfect play from both players the game always ends in a draw.</p></details><details><summary>Can you always win by going first?</summary><p>No. Going first helps, but a player who never makes a mistake can always at least draw, so perfect play from both sides leads to a draw.</p></details><details><summary>How many games of Tic-Tac-Toe are possible?</summary><p>255,168 complete games if play stops when someone wins, using 5,478 different reachable positions.</p></details><details><summary>Can I beat the computer in the app?</summary><p>You can beat Easy and, with a clever trap, Medium. Hard plays perfectly and never loses, so the best result against it is a draw.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/how-we-guarantee-mahjong-solitaire-is-solvable/"><img src="/tilelings/icon.png" alt="" width="48" height="48"><div><b>How We Guarantee a Mahjong Solitaire Board Is Solvable</b></div></a></li><li><a href="/blog/mahjong-solitaire-history-vs-real-mahjong/"><img src="/tilelings/icon.png" alt="" width="48" height="48"><div><b>Mahjong Solitaire History and How It Differs From Mahjong</b></div></a></li><li><a href="/blog/how-daily-puzzles-work-without-a-server/"><img src="/logo.svg" alt="" width="48" height="48"><div><b>How a Daily Puzzle Can Be the Same for Everyone, No Server</b></div></a></li><li><a href="/blog/how-puzzle-levels-are-generated-and-checked/"><img src="/logo.svg" alt="" width="48" height="48"><div><b>How Hundreds of Puzzle Levels Are Generated and Checked</b></div></a></li><li><a href="/blog/earthquake-magnitude-vs-intensity/"><img src="/sondepremler/icon.svg" alt="" width="48" height="48"><div><b>Earthquake Magnitude vs Intensity: What Is the Difference?</b></div></a></li><li><a href="/blog/earthquake-preparedness-what-to-do/"><img src="/sondepremler/icon.svg" alt="" width="48" height="48"><div><b>Earthquake Preparedness: Before, During and After (AFAD)</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

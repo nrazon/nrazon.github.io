@@ -9,7 +9,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/"
    },
    "default": "en",
-   "hash": "0f8c90d1c64421e19d0f43d2f12f4c70"
+   "hash": "f403de5879f0bd5778a00522ebc38275"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tahtasi-cozulebilir-nasil-garanti-ederiz/",
@@ -20,7 +20,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/"
    },
    "default": "en",
-   "hash": "683a31af396d81f87462f770af549a58"
+   "hash": "69a7efb05e9f2621ea7b860508f01124"
   },
   {
    "url": "https://nrazon.github.io/es/blog/como-garantizamos-que-un-mahjong-solitario-tenga-solucion/",
@@ -31,7 +31,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/"
    },
    "default": "en",
-   "hash": "9fec935f1d29a0703b2c980447d39deb"
+   "hash": "08959a715da765d638a06279e7b55901"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/",
@@ -42,7 +42,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/"
    },
    "default": "en",
-   "hash": "9cec85d02fa5c1cc08f8a50417f5cbf7"
+   "hash": "4d50ee1712cd2ccd65d042a30853ea8c"
   },
   {
    "url": "https://nrazon.github.io/blog/mahjong-solitaire-history-vs-real-mahjong/",
@@ -53,7 +53,7 @@
     "pt": "https://nrazon.github.io/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/"
    },
    "default": "en",
-   "hash": "c6fe73271ce890834bbc7ef166b106c0"
+   "hash": "911eed3acf247fdd19b4a1b6abef29fa"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tarihi-ve-klasik-mahjong-farki/",
@@ -64,7 +64,7 @@
     "pt": "https://nrazon.github.io/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/"
    },
    "default": "en",
-   "hash": "369af1b52687b0da18cf566e1ea72898"
+   "hash": "dcc216f9cb971e9256d4f93d582b6a2e"
   },
   {
    "url": "https://nrazon.github.io/es/blog/historia-mahjong-solitario-y-diferencias-con-mahjong/",
@@ -75,7 +75,7 @@
     "pt": "https://nrazon.github.io/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/"
    },
    "default": "en",
-   "hash": "cda0333e2bca8bf88bf42283e8ed4d1c"
+   "hash": "ebc66869c00bd1696eab215a6bdfca11"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/",
@@ -86,7 +86,7 @@
     "pt": "https://nrazon.github.io/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/"
    },
    "default": "en",
-   "hash": "734774e680c49ab31dd43bbc8c3cd327"
+   "hash": "b7365e6ede67abe11cba9958097823a2"
   },
   {
    "url": "https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/",
@@ -97,7 +97,7 @@
     "pt": "https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"
    },
    "default": "en",
-   "hash": "228a6d3684ba22d07d6bc17faee841a9"
+   "hash": "2f679ecfbb6b01fda1cfce32036895f6"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/",
@@ -108,7 +108,7 @@
     "pt": "https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"
    },
    "default": "en",
-   "hash": "c3d5a1ffb7fdcb18adcf93449b09cba7"
+   "hash": "9f46debff174b9669778139783e3ddc7"
   },
   {
    "url": "https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/",
@@ -119,7 +119,7 @@
     "pt": "https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"
    },
    "default": "en",
-   "hash": "2cc15e4e9c7ed27a3f91c05c41298fec"
+   "hash": "c67fcaa03ba2f130565cb208abda1c43"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/",
@@ -130,7 +130,7 @@
     "pt": "https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"
    },
    "default": "en",
-   "hash": "83fa99fc1a07726b3e6f2bb9f35fc093"
+   "hash": "6a03c43d610e0d229ba1ee828c5cffd1"
   },
   {
    "url": "https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/",
@@ -141,7 +141,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"
    },
    "default": "en",
-   "hash": "80292a0319ca3c22faec677936463219"
+   "hash": "985866d69261dd18a523f2231cfbadb9"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/",
@@ -152,7 +152,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"
    },
    "default": "en",
-   "hash": "221be54f588ced13429efd569dd1e74f"
+   "hash": "6f12eeabfe46facf3f0ed79e5ce07ed9"
   },
   {
    "url": "https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/",
@@ -163,7 +163,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"
    },
    "default": "en",
-   "hash": "70c11a2dae2d4e1d6aa7933a5826ec4b"
+   "hash": "b5dd971bd2a0dec79ab755273fb4b366"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/",
@@ -174,7 +174,359 @@
     "pt": "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"
    },
    "default": "en",
-   "hash": "affe35bcfffd3a8fd317f5b8e4e6e1ef"
+   "hash": "1851f75579d810bf2c7cd2e5fa64126a"
+  },
+  {
+   "url": "https://nrazon.github.io/blog/tic-tac-toe-history-and-variants/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/tic-tac-toe-history-and-variants/",
+    "tr": "https://nrazon.github.io/tr/yazilar/xox-tarihi-ve-cesitleri/",
+    "es": "https://nrazon.github.io/es/blog/historia-del-tres-en-raya-y-sus-variantes/",
+    "pt": "https://nrazon.github.io/pt/blog/historia-do-jogo-da-velha-e-variantes/"
+   },
+   "default": "en",
+   "hash": "ad41f84d0b7463646dfc706120f43831"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/xox-tarihi-ve-cesitleri/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/tic-tac-toe-history-and-variants/",
+    "tr": "https://nrazon.github.io/tr/yazilar/xox-tarihi-ve-cesitleri/",
+    "es": "https://nrazon.github.io/es/blog/historia-del-tres-en-raya-y-sus-variantes/",
+    "pt": "https://nrazon.github.io/pt/blog/historia-do-jogo-da-velha-e-variantes/"
+   },
+   "default": "en",
+   "hash": "154bd2cd35dcccbc1b8e2ff7aa77545b"
+  },
+  {
+   "url": "https://nrazon.github.io/es/blog/historia-del-tres-en-raya-y-sus-variantes/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/tic-tac-toe-history-and-variants/",
+    "tr": "https://nrazon.github.io/tr/yazilar/xox-tarihi-ve-cesitleri/",
+    "es": "https://nrazon.github.io/es/blog/historia-del-tres-en-raya-y-sus-variantes/",
+    "pt": "https://nrazon.github.io/pt/blog/historia-do-jogo-da-velha-e-variantes/"
+   },
+   "default": "en",
+   "hash": "93dc0067e05d51bca22b90f2c58d2c35"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/blog/historia-do-jogo-da-velha-e-variantes/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/tic-tac-toe-history-and-variants/",
+    "tr": "https://nrazon.github.io/tr/yazilar/xox-tarihi-ve-cesitleri/",
+    "es": "https://nrazon.github.io/es/blog/historia-del-tres-en-raya-y-sus-variantes/",
+    "pt": "https://nrazon.github.io/pt/blog/historia-do-jogo-da-velha-e-variantes/"
+   },
+   "default": "en",
+   "hash": "82dca9f06b421d4b9a0b50241a7d9df7"
+  },
+  {
+   "url": "https://nrazon.github.io/blog/earthquake-magnitude-vs-intensity/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/earthquake-magnitude-vs-intensity/",
+    "tr": "https://nrazon.github.io/tr/yazilar/deprem-buyuklugu-ve-siddeti-arasindaki-fark/",
+    "es": "https://nrazon.github.io/es/blog/magnitud-e-intensidad-de-un-terremoto/",
+    "pt": "https://nrazon.github.io/pt/blog/magnitude-e-intensidade-de-um-terremoto/"
+   },
+   "default": "en",
+   "hash": "9f42f738f6554adafee44840344f8802"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/deprem-buyuklugu-ve-siddeti-arasindaki-fark/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/earthquake-magnitude-vs-intensity/",
+    "tr": "https://nrazon.github.io/tr/yazilar/deprem-buyuklugu-ve-siddeti-arasindaki-fark/",
+    "es": "https://nrazon.github.io/es/blog/magnitud-e-intensidad-de-un-terremoto/",
+    "pt": "https://nrazon.github.io/pt/blog/magnitude-e-intensidade-de-um-terremoto/"
+   },
+   "default": "en",
+   "hash": "1469318861fabfc74dc057d850de9b8e"
+  },
+  {
+   "url": "https://nrazon.github.io/es/blog/magnitud-e-intensidad-de-un-terremoto/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/earthquake-magnitude-vs-intensity/",
+    "tr": "https://nrazon.github.io/tr/yazilar/deprem-buyuklugu-ve-siddeti-arasindaki-fark/",
+    "es": "https://nrazon.github.io/es/blog/magnitud-e-intensidad-de-un-terremoto/",
+    "pt": "https://nrazon.github.io/pt/blog/magnitude-e-intensidade-de-um-terremoto/"
+   },
+   "default": "en",
+   "hash": "0d33d4630260727d15efc7b727a81eff"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/blog/magnitude-e-intensidade-de-um-terremoto/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/earthquake-magnitude-vs-intensity/",
+    "tr": "https://nrazon.github.io/tr/yazilar/deprem-buyuklugu-ve-siddeti-arasindaki-fark/",
+    "es": "https://nrazon.github.io/es/blog/magnitud-e-intensidad-de-un-terremoto/",
+    "pt": "https://nrazon.github.io/pt/blog/magnitude-e-intensidade-de-um-terremoto/"
+   },
+   "default": "en",
+   "hash": "d00e661246d84ed973d40564cf89a457"
+  },
+  {
+   "url": "https://nrazon.github.io/blog/earthquake-preparedness-what-to-do/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/earthquake-preparedness-what-to-do/",
+    "tr": "https://nrazon.github.io/tr/yazilar/deprem-oncesi-sirasinda-sonrasinda-ne-yapilir/",
+    "es": "https://nrazon.github.io/es/blog/terremoto-que-hacer-antes-durante-despues/",
+    "pt": "https://nrazon.github.io/pt/blog/terremoto-o-que-fazer-antes-durante-depois/"
+   },
+   "default": "en",
+   "hash": "ed1826d6a5581d066593ec15fa5eff1d"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/deprem-oncesi-sirasinda-sonrasinda-ne-yapilir/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/earthquake-preparedness-what-to-do/",
+    "tr": "https://nrazon.github.io/tr/yazilar/deprem-oncesi-sirasinda-sonrasinda-ne-yapilir/",
+    "es": "https://nrazon.github.io/es/blog/terremoto-que-hacer-antes-durante-despues/",
+    "pt": "https://nrazon.github.io/pt/blog/terremoto-o-que-fazer-antes-durante-depois/"
+   },
+   "default": "en",
+   "hash": "f17f95e2a20de64ba60e47cbfd6a1765"
+  },
+  {
+   "url": "https://nrazon.github.io/es/blog/terremoto-que-hacer-antes-durante-despues/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/earthquake-preparedness-what-to-do/",
+    "tr": "https://nrazon.github.io/tr/yazilar/deprem-oncesi-sirasinda-sonrasinda-ne-yapilir/",
+    "es": "https://nrazon.github.io/es/blog/terremoto-que-hacer-antes-durante-despues/",
+    "pt": "https://nrazon.github.io/pt/blog/terremoto-o-que-fazer-antes-durante-depois/"
+   },
+   "default": "en",
+   "hash": "b0de6cef69b72e9bbaf1988303b9d1b7"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/blog/terremoto-o-que-fazer-antes-durante-depois/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/earthquake-preparedness-what-to-do/",
+    "tr": "https://nrazon.github.io/tr/yazilar/deprem-oncesi-sirasinda-sonrasinda-ne-yapilir/",
+    "es": "https://nrazon.github.io/es/blog/terremoto-que-hacer-antes-durante-despues/",
+    "pt": "https://nrazon.github.io/pt/blog/terremoto-o-que-fazer-antes-durante-depois/"
+   },
+   "default": "en",
+   "hash": "c1a40177a8290a84506386988c2c4c5a"
+  },
+  {
+   "url": "https://nrazon.github.io/blog/where-earthquake-data-comes-from/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/where-earthquake-data-comes-from/",
+    "tr": "https://nrazon.github.io/tr/yazilar/son-deprem-verileri-nereden-geliyor/",
+    "es": "https://nrazon.github.io/es/blog/de-donde-vienen-los-datos-de-terremotos/",
+    "pt": "https://nrazon.github.io/pt/blog/de-onde-vem-os-dados-de-terremotos/"
+   },
+   "default": "en",
+   "hash": "c0a3546a5c7edac0b09fbc359bbcd2ec"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/son-deprem-verileri-nereden-geliyor/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/where-earthquake-data-comes-from/",
+    "tr": "https://nrazon.github.io/tr/yazilar/son-deprem-verileri-nereden-geliyor/",
+    "es": "https://nrazon.github.io/es/blog/de-donde-vienen-los-datos-de-terremotos/",
+    "pt": "https://nrazon.github.io/pt/blog/de-onde-vem-os-dados-de-terremotos/"
+   },
+   "default": "en",
+   "hash": "186edae002adcb34ca609f571acdc9ef"
+  },
+  {
+   "url": "https://nrazon.github.io/es/blog/de-donde-vienen-los-datos-de-terremotos/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/where-earthquake-data-comes-from/",
+    "tr": "https://nrazon.github.io/tr/yazilar/son-deprem-verileri-nereden-geliyor/",
+    "es": "https://nrazon.github.io/es/blog/de-donde-vienen-los-datos-de-terremotos/",
+    "pt": "https://nrazon.github.io/pt/blog/de-onde-vem-os-dados-de-terremotos/"
+   },
+   "default": "en",
+   "hash": "6db57f7182de2d757bcc299123fdb20c"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/blog/de-onde-vem-os-dados-de-terremotos/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/where-earthquake-data-comes-from/",
+    "tr": "https://nrazon.github.io/tr/yazilar/son-deprem-verileri-nereden-geliyor/",
+    "es": "https://nrazon.github.io/es/blog/de-donde-vienen-los-datos-de-terremotos/",
+    "pt": "https://nrazon.github.io/pt/blog/de-onde-vem-os-dados-de-terremotos/"
+   },
+   "default": "en",
+   "hash": "bac01c722f7c424eeb8267fe9527273f"
+  },
+  {
+   "url": "https://nrazon.github.io/blog/what-is-bmi-how-to-calculate-and-read-it/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/what-is-bmi-how-to-calculate-and-read-it/",
+    "tr": "https://nrazon.github.io/tr/yazilar/bmi-nedir-nasil-hesaplanir-yorumlanir/",
+    "es": "https://nrazon.github.io/es/blog/que-es-el-imc-como-se-calcula-y-se-interpreta/",
+    "pt": "https://nrazon.github.io/pt/blog/o-que-e-imc-como-calcular-e-interpretar/"
+   },
+   "default": "en",
+   "hash": "3f1867fd05e39098c2d6975c30eac242"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/bmi-nedir-nasil-hesaplanir-yorumlanir/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/what-is-bmi-how-to-calculate-and-read-it/",
+    "tr": "https://nrazon.github.io/tr/yazilar/bmi-nedir-nasil-hesaplanir-yorumlanir/",
+    "es": "https://nrazon.github.io/es/blog/que-es-el-imc-como-se-calcula-y-se-interpreta/",
+    "pt": "https://nrazon.github.io/pt/blog/o-que-e-imc-como-calcular-e-interpretar/"
+   },
+   "default": "en",
+   "hash": "cc516b7e1a5fde000c836c19ffd360b3"
+  },
+  {
+   "url": "https://nrazon.github.io/es/blog/que-es-el-imc-como-se-calcula-y-se-interpreta/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/what-is-bmi-how-to-calculate-and-read-it/",
+    "tr": "https://nrazon.github.io/tr/yazilar/bmi-nedir-nasil-hesaplanir-yorumlanir/",
+    "es": "https://nrazon.github.io/es/blog/que-es-el-imc-como-se-calcula-y-se-interpreta/",
+    "pt": "https://nrazon.github.io/pt/blog/o-que-e-imc-como-calcular-e-interpretar/"
+   },
+   "default": "en",
+   "hash": "3d7088b07b09d7009d73aeae663e716f"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/blog/o-que-e-imc-como-calcular-e-interpretar/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/what-is-bmi-how-to-calculate-and-read-it/",
+    "tr": "https://nrazon.github.io/tr/yazilar/bmi-nedir-nasil-hesaplanir-yorumlanir/",
+    "es": "https://nrazon.github.io/es/blog/que-es-el-imc-como-se-calcula-y-se-interpreta/",
+    "pt": "https://nrazon.github.io/pt/blog/o-que-e-imc-como-calcular-e-interpretar/"
+   },
+   "default": "en",
+   "hash": "eca896a2e007b4537900a123021a573c"
+  },
+  {
+   "url": "https://nrazon.github.io/blog/bmi-common-mistakes-and-limits/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/bmi-common-mistakes-and-limits/",
+    "tr": "https://nrazon.github.io/tr/yazilar/bmi-yanilgilari-ve-sinirlari/",
+    "es": "https://nrazon.github.io/es/blog/errores-comunes-y-limites-del-imc/",
+    "pt": "https://nrazon.github.io/pt/blog/erros-comuns-e-limites-do-imc/"
+   },
+   "default": "en",
+   "hash": "99cf701266d6c516b41948cf379870d7"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/bmi-yanilgilari-ve-sinirlari/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/bmi-common-mistakes-and-limits/",
+    "tr": "https://nrazon.github.io/tr/yazilar/bmi-yanilgilari-ve-sinirlari/",
+    "es": "https://nrazon.github.io/es/blog/errores-comunes-y-limites-del-imc/",
+    "pt": "https://nrazon.github.io/pt/blog/erros-comuns-e-limites-do-imc/"
+   },
+   "default": "en",
+   "hash": "8c7552e479dc523a2ba263a27d2f7620"
+  },
+  {
+   "url": "https://nrazon.github.io/es/blog/errores-comunes-y-limites-del-imc/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/bmi-common-mistakes-and-limits/",
+    "tr": "https://nrazon.github.io/tr/yazilar/bmi-yanilgilari-ve-sinirlari/",
+    "es": "https://nrazon.github.io/es/blog/errores-comunes-y-limites-del-imc/",
+    "pt": "https://nrazon.github.io/pt/blog/erros-comuns-e-limites-do-imc/"
+   },
+   "default": "en",
+   "hash": "ca26ad5a84d63740c2889595d7973b3a"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/blog/erros-comuns-e-limites-do-imc/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/bmi-common-mistakes-and-limits/",
+    "tr": "https://nrazon.github.io/tr/yazilar/bmi-yanilgilari-ve-sinirlari/",
+    "es": "https://nrazon.github.io/es/blog/errores-comunes-y-limites-del-imc/",
+    "pt": "https://nrazon.github.io/pt/blog/erros-comuns-e-limites-do-imc/"
+   },
+   "default": "en",
+   "hash": "c4f52e1589c302dd21ccc8b0ddc3f459"
+  },
+  {
+   "url": "https://nrazon.github.io/blog/how-to-calculate-exact-age-years-months-days/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/how-to-calculate-exact-age-years-months-days/",
+    "tr": "https://nrazon.github.io/tr/yazilar/yas-hesaplama-yil-ay-gun-nasil-hesaplanir/",
+    "es": "https://nrazon.github.io/es/blog/como-calcular-la-edad-exacta-anos-meses-dias/",
+    "pt": "https://nrazon.github.io/pt/blog/como-calcular-idade-exata-anos-meses-dias/"
+   },
+   "default": "en",
+   "hash": "801c722f92ec9fe8d406d49a3dccf1a5"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/yas-hesaplama-yil-ay-gun-nasil-hesaplanir/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/how-to-calculate-exact-age-years-months-days/",
+    "tr": "https://nrazon.github.io/tr/yazilar/yas-hesaplama-yil-ay-gun-nasil-hesaplanir/",
+    "es": "https://nrazon.github.io/es/blog/como-calcular-la-edad-exacta-anos-meses-dias/",
+    "pt": "https://nrazon.github.io/pt/blog/como-calcular-idade-exata-anos-meses-dias/"
+   },
+   "default": "en",
+   "hash": "dc22538a71a91ecb08db29f536582597"
+  },
+  {
+   "url": "https://nrazon.github.io/es/blog/como-calcular-la-edad-exacta-anos-meses-dias/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/how-to-calculate-exact-age-years-months-days/",
+    "tr": "https://nrazon.github.io/tr/yazilar/yas-hesaplama-yil-ay-gun-nasil-hesaplanir/",
+    "es": "https://nrazon.github.io/es/blog/como-calcular-la-edad-exacta-anos-meses-dias/",
+    "pt": "https://nrazon.github.io/pt/blog/como-calcular-idade-exata-anos-meses-dias/"
+   },
+   "default": "en",
+   "hash": "d2f07c119e585c107cb61f488802e213"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/blog/como-calcular-idade-exata-anos-meses-dias/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/how-to-calculate-exact-age-years-months-days/",
+    "tr": "https://nrazon.github.io/tr/yazilar/yas-hesaplama-yil-ay-gun-nasil-hesaplanir/",
+    "es": "https://nrazon.github.io/es/blog/como-calcular-la-edad-exacta-anos-meses-dias/",
+    "pt": "https://nrazon.github.io/pt/blog/como-calcular-idade-exata-anos-meses-dias/"
+   },
+   "default": "en",
+   "hash": "3d2a4c8832c47ac290cd4ac39b52ec4c"
+  },
+  {
+   "url": "https://nrazon.github.io/blog/leap-day-birthday-how-to-count-age/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/leap-day-birthday-how-to-count-age/",
+    "tr": "https://nrazon.github.io/tr/yazilar/29-subat-dogum-gunu-yas-nasil-sayilir/",
+    "es": "https://nrazon.github.io/es/blog/cumpleanos-29-de-febrero-como-contar-la-edad/",
+    "pt": "https://nrazon.github.io/pt/blog/aniversario-29-de-fevereiro-como-contar-a-idade/"
+   },
+   "default": "en",
+   "hash": "6039224f2c0c9901dea01201095120b4"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/29-subat-dogum-gunu-yas-nasil-sayilir/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/leap-day-birthday-how-to-count-age/",
+    "tr": "https://nrazon.github.io/tr/yazilar/29-subat-dogum-gunu-yas-nasil-sayilir/",
+    "es": "https://nrazon.github.io/es/blog/cumpleanos-29-de-febrero-como-contar-la-edad/",
+    "pt": "https://nrazon.github.io/pt/blog/aniversario-29-de-fevereiro-como-contar-a-idade/"
+   },
+   "default": "en",
+   "hash": "ed23036901e1e329ccb654dbf5ddd54e"
+  },
+  {
+   "url": "https://nrazon.github.io/es/blog/cumpleanos-29-de-febrero-como-contar-la-edad/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/leap-day-birthday-how-to-count-age/",
+    "tr": "https://nrazon.github.io/tr/yazilar/29-subat-dogum-gunu-yas-nasil-sayilir/",
+    "es": "https://nrazon.github.io/es/blog/cumpleanos-29-de-febrero-como-contar-la-edad/",
+    "pt": "https://nrazon.github.io/pt/blog/aniversario-29-de-fevereiro-como-contar-a-idade/"
+   },
+   "default": "en",
+   "hash": "ca9c3fe197415de6de84f8b7ded045d8"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/blog/aniversario-29-de-fevereiro-como-contar-a-idade/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/leap-day-birthday-how-to-count-age/",
+    "tr": "https://nrazon.github.io/tr/yazilar/29-subat-dogum-gunu-yas-nasil-sayilir/",
+    "es": "https://nrazon.github.io/es/blog/cumpleanos-29-de-febrero-como-contar-la-edad/",
+    "pt": "https://nrazon.github.io/pt/blog/aniversario-29-de-fevereiro-como-contar-a-idade/"
+   },
+   "default": "en",
+   "hash": "053dd19aefe028f363358f66e8168783"
   },
   {
    "url": "https://nrazon.github.io/blog/",
@@ -185,7 +537,7 @@
     "pt": "https://nrazon.github.io/pt/blog/"
    },
    "default": "en",
-   "hash": "a19919cfb4278138159ebdfd5210d379"
+   "hash": "1f6d6a3d720d5588cb6108bfa3067df5"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/",
@@ -196,7 +548,7 @@
     "pt": "https://nrazon.github.io/pt/blog/"
    },
    "default": "en",
-   "hash": "e6853e7863225c0a94561652f039c5a2"
+   "hash": "617d19134ae5ba4777db32359cd9ae33"
   },
   {
    "url": "https://nrazon.github.io/es/blog/",
@@ -207,7 +559,7 @@
     "pt": "https://nrazon.github.io/pt/blog/"
    },
    "default": "en",
-   "hash": "d5bc4d3b4e43b64bfddce8a612ec058e"
+   "hash": "daaa87abd474605fb26ee30edcadafd9"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/",
@@ -218,7 +570,7 @@
     "pt": "https://nrazon.github.io/pt/blog/"
    },
    "default": "en",
-   "hash": "d4a17d01d4b27172073fec5b00acfa43"
+   "hash": "59430e8d5ba327d893785c9c4451b2d1"
   }
  ],
  "index": {

@@ -15,7 +15,8 @@ G, BASE, LANGS, esc, head, page_shell, home_url, app_url = GG.G, GG.BASE, GG.LAN
 T = GG.T
 DIRS = {"en": "blog", "tr": "tr/yazilar", "es": "es/blog", "pt": "pt/blog"}
 # Yayın günü eklenenler (Pentolings yayına çıkınca): "pento_history", "pento_dlx"
-BLOG_MODULES = ["mahjong_solvable", "mahjong_history", "daily_seed", "generated_levels"]
+BLOG_MODULES = ["mahjong_solvable", "mahjong_history", "daily_seed", "generated_levels", "ttt_history",
+                "deprem_buyukluk", "deprem_oncesi_sonrasi", "deprem_veri_kaynaklari", "bmi_nedir", "bmi_hatalar", "yas_hesaplama", "artik_yil_dogum_gunu"]
 
 BT = {
     "en": {"idx_title": "Blog: puzzle design, game history and dev notes", "idx_h1": "Blog", "idx_desc": "Notes from an independent Android developer: how puzzles are generated and checked, the history of classic puzzle games and behind-the-scenes dev stories.",
@@ -100,7 +101,7 @@ def main():
                        f'<a class="play" href="{esc(play)}"><img src="/badges/google-play-{badge}.svg" alt="Google Play" width="162" height="48"></a>'
                        f'<a class="small" href="{app_url(p["app"], lang)}">{esc(t["about"].format(name=name))}</a></aside>')
             faqh = ('<section class="faq"><h2>' + esc(t["faq"]) + "</h2>" + "".join(f"<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>" for q, a in faq) + "</section>") if faq else ""
-            others = [x for x in posts if x["id"] != p["id"]]
+            others = sorted([x for x in posts if x["id"] != p["id"]], key=lambda x: (x.get("app") != p.get("app")))[:6]  # aynı uygulamanınkiler önde, en çok 6
             more = ""
             if others:
                 more = ('<section><h2>' + esc(b["more"]) + '</h2><ul class="glist">' + "".join(

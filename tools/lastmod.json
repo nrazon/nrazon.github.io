@@ -268,7 +268,7 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/es/guias/": {
-  "hash": "88082cbac29b3771986c7b0a3e2786d6",
+  "hash": "0e7a076effdc1780448a973530214c4e",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/es/guias/como-jugar-2048-estrategia/": {
@@ -280,7 +280,7 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/es/guias/como-jugar-mahjong-solitario/": {
-  "hash": "ac04ababbfb08636f45a45b097fc95c3",
+  "hash": "fbd581a42506e7b017d9771932ecd372",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/es/guias/como-jugar-puzle-de-flechas/": {
@@ -288,7 +288,7 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/es/guias/como-jugar-solitario-klondike/": {
-  "hash": "8023c8011e0bc11dc8b74f2e32d703b3",
+  "hash": "0dd176ad653692f896160c3882cf0125",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/es/guias/como-resolver-corona-gemelos-camino/": {
@@ -304,7 +304,7 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/guides/": {
-  "hash": "f0865414400f79178cb6b5ac06415dc5",
+  "hash": "4f4b608080ca7dc8c8185037d328e253",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/guides/block-puzzle-tips-and-tricks/": {
@@ -324,11 +324,11 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/guides/how-to-play-klondike-solitaire/": {
-  "hash": "4ed3f30bfb812040d51635fcb65c536c",
+  "hash": "50ad45265093bf7487da823c2fec9179",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/guides/how-to-play-mahjong-solitaire/": {
-  "hash": "37b2e1246227a09df38b36d4061d282b",
+  "hash": "59d920a4e1715874518e0bf4ed57b2bf",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/guides/how-to-solve-crown-twin-path-puzzles/": {
@@ -340,7 +340,7 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/pt/guias/": {
-  "hash": "df8e918c40beb280c2661cb20bc14c3a",
+  "hash": "edbf13c29027f64ebcbdd62c92a622e0",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/pt/guias/como-jogar-2048-estrategia/": {
@@ -352,11 +352,11 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/pt/guias/como-jogar-mahjong-paciencia/": {
-  "hash": "b2040617e6d4dcf8d6f30293fd6e8a81",
+  "hash": "0096ce3f09c77ab39ada5e7f25b30ec0",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/pt/guias/como-jogar-paciencia-klondike/": {
-  "hash": "546a12127e65fd656341cdb7a0a437f1",
+  "hash": "464b90f625ce9c9b6539fdbec3b62d03",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/pt/guias/como-jogar-quebra-cabeca-de-setas/": {
@@ -376,7 +376,7 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/tr/rehber/": {
-  "hash": "3e862454b3f0b7216a0276e01db3674d",
+  "hash": "d2522725a80eeb10b3231a0223f756cc",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/tr/rehber/2048-nasil-oynanir-strateji/": {
@@ -392,11 +392,11 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/tr/rehber/klondike-solitaire-nasil-oynanir/": {
-  "hash": "6f7edffa3834fb6414947b8ba5e1bf40",
+  "hash": "59c0a4782b34ae7ccad761fdf99582ca",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/tr/rehber/mahjong-solitaire-nasil-oynanir/": {
-  "hash": "2fd6a9795ffa7febbffdd7ca0a7fe342",
+  "hash": "fe9e424abf1a02f0f165cc19b6e6ae47",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/tr/rehber/ok-bulmacasi-nasil-oynanir/": {
@@ -508,43 +508,43 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/blog/": {
-  "hash": "a19919cfb4278138159ebdfd5210d379",
+  "hash": "1f6d6a3d720d5588cb6108bfa3067df5",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/": {
-  "hash": "228a6d3684ba22d07d6bc17faee841a9",
+  "hash": "2f679ecfbb6b01fda1cfce32036895f6",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/": {
-  "hash": "80292a0319ca3c22faec677936463219",
+  "hash": "985866d69261dd18a523f2231cfbadb9",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/blog/how-we-guarantee-mahjong-solitaire-is-solvable/": {
-  "hash": "0f8c90d1c64421e19d0f43d2f12f4c70",
+  "hash": "f403de5879f0bd5778a00522ebc38275",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/blog/mahjong-solitaire-history-vs-real-mahjong/": {
-  "hash": "c6fe73271ce890834bbc7ef166b106c0",
+  "hash": "911eed3acf247fdd19b4a1b6abef29fa",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/es/blog/": {
-  "hash": "d5bc4d3b4e43b64bfddce8a612ec058e",
+  "hash": "daaa87abd474605fb26ee30edcadafd9",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/es/blog/como-garantizamos-que-un-mahjong-solitario-tenga-solucion/": {
-  "hash": "9fec935f1d29a0703b2c980447d39deb",
+  "hash": "08959a715da765d638a06279e7b55901",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/": {
-  "hash": "70c11a2dae2d4e1d6aa7933a5826ec4b",
+  "hash": "b5dd971bd2a0dec79ab755273fb4b366",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/es/blog/historia-mahjong-solitario-y-diferencias-con-mahjong/": {
-  "hash": "cda0333e2bca8bf88bf42283e8ed4d1c",
+  "hash": "ebc66869c00bd1696eab215a6bdfca11",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/": {
-  "hash": "2cc15e4e9c7ed27a3f91c05c41298fec",
+  "hash": "c67fcaa03ba2f130565cb208abda1c43",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/es/guias/2048-despues-4096-8192-errores-comunes/": {
@@ -556,15 +556,15 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/es/guias/como-jugar-freecell-estrategia/": {
-  "hash": "eba78d063c69cdc5336e54a00b0dfeeb",
+  "hash": "b69349ebfaf207e98846e7ec92ec620d",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/es/guias/como-jugar-solitario-spider/": {
-  "hash": "eed1ec49467b3d5ef23e0bf8ca38d277",
+  "hash": "439d166d520abb34ff8903401608ed13",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/es/guias/como-jugar-solitario-tripeaks/": {
-  "hash": "cd6f244d37548593344a3ab865da1093",
+  "hash": "1ae7c7187067d61065173a45c59ff8c4",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/es/guias/como-resolver-puzles-de-deslizar-vehiculos/": {
@@ -576,7 +576,7 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/es/guias/mahjong-solitario-atascado-que-ficha-quitar-primero/": {
-  "hash": "7457488dbd49cbb1659dacbdadbf70af",
+  "hash": "5bdf8adb487428f5d23c404fdb160f41",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/es/guias/puzle-de-bloques-combos-y-estrategia-de-puntuacion/": {
@@ -596,15 +596,15 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/guides/how-to-play-freecell-strategy/": {
-  "hash": "3278bf6abda20fa95287f6c355e291cc",
+  "hash": "a8e61fefdb3e64e20cb1d9b0e8e94b9b",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/guides/how-to-play-spider-solitaire/": {
-  "hash": "80da79d22be4f9c9fa96fafc562cb4fb",
+  "hash": "feb3d641ed2cc61b8165e1f2e721b4ab",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/guides/how-to-play-tripeaks-solitaire/": {
-  "hash": "d533772d72920b471bf402ad01fe84a4",
+  "hash": "ae2221c874772820d50782f50790c2d5",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/guides/how-to-solve-sliding-parking-puzzles/": {
@@ -612,31 +612,31 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/guides/mahjong-solitaire-stuck-which-tile-first/": {
-  "hash": "c06b7fd4b7bea71206b6aaa91b864def",
+  "hash": "ebe216304c6dabb74da8ac02fedfe6bb",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/guides/tile-connect-puzzle-how-to-play/": {
-  "hash": "3ad17aaef15cfc2428e53b63a50e8c35",
+  "hash": "408f519b3ba1474a5ff89482b76f6550",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/pt/blog/": {
-  "hash": "d4a17d01d4b27172073fec5b00acfa43",
+  "hash": "59430e8d5ba327d893785c9c4451b2d1",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/": {
-  "hash": "affe35bcfffd3a8fd317f5b8e4e6e1ef",
+  "hash": "1851f75579d810bf2c7cd2e5fa64126a",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/": {
-  "hash": "9cec85d02fa5c1cc08f8a50417f5cbf7",
+  "hash": "4d50ee1712cd2ccd65d042a30853ea8c",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/": {
-  "hash": "734774e680c49ab31dd43bbc8c3cd327",
+  "hash": "b7365e6ede67abe11cba9958097823a2",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/": {
-  "hash": "83fa99fc1a07726b3e6f2bb9f35fc093",
+  "hash": "6a03c43d610e0d229ba1ee828c5cffd1",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/pt/guias/2048-depois-4096-8192-erros-comuns/": {
@@ -644,19 +644,19 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/pt/guias/como-jogar-conectar-pecas-quebra-cabeca/": {
-  "hash": "19fce5df705f0c4dba5f38803726bd73",
+  "hash": "ecc71b5d4f47ac82980bd28ca8cf4b60",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/pt/guias/como-jogar-freecell-estrategia/": {
-  "hash": "d37924bf6a601d3a8d6877203a326f76",
+  "hash": "5532adc56d6158b1bf0193a806788efb",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/pt/guias/como-jogar-paciencia-spider/": {
-  "hash": "97a0d6a0b0fa6e06a704871190102b84",
+  "hash": "ea1a7fae7434cea878d7b54437247d97",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/pt/guias/como-jogar-paciencia-tripeaks/": {
-  "hash": "47f56a01869496789c22ca15e019deb5",
+  "hash": "7635f864d90e666877b98bd463af830f",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/pt/guias/como-resolver-quebra-cabecas-de-deslizar-veiculos/": {
@@ -668,7 +668,7 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/pt/guias/mahjong-paciencia-travado-qual-peca-tirar-primeiro/": {
-  "hash": "6f9ca871c1ea6a91e89f3ce7fe7e565c",
+  "hash": "03032be1927ab3c653edc08d6869ff0e",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/pt/guias/quebra-cabeca-de-blocos-combos-e-estrategia-de-pontuacao/": {
@@ -684,7 +684,7 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/tr/rehber/freecell-nasil-oynanir-strateji/": {
-  "hash": "b8b193eefd0ded47a33b2aee3801e893",
+  "hash": "62cab7ef53cebc5173cfa97762fdba32",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/tr/rehber/kaydirmali-park-bulmacasi-nasil-cozulur/": {
@@ -696,43 +696,203 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/tr/rehber/mahjong-solitaire-takildim-hangi-tasi-once-almali/": {
-  "hash": "bd863fee2207fc494204f0e815b12002",
+  "hash": "9146f1ea64f086cf84b6e6fe3f2e5f8c",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/tr/rehber/spider-solitaire-nasil-oynanir/": {
-  "hash": "1017cc60150c75e849ba3f3ab3441dc8",
+  "hash": "4d0cb65703040e7cfc85e6d8f2b3730d",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/tr/rehber/tas-baglama-bulmacasi-nasil-oynanir/": {
-  "hash": "ebbc39ca37041426f42774befbf6b1bf",
+  "hash": "8280aafb49041c0b97bec77eaec4189b",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/tr/rehber/tripeaks-solitaire-nasil-oynanir/": {
-  "hash": "3e5c9eca2b92f2ad8e937b3ad1b42c8a",
+  "hash": "0cd4e7f2a3f1270113ef033e3f391468",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/tr/yazilar/": {
-  "hash": "e6853e7863225c0a94561652f039c5a2",
+  "hash": "617d19134ae5ba4777db32359cd9ae33",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/": {
-  "hash": "221be54f588ced13429efd569dd1e74f",
+  "hash": "6f12eeabfe46facf3f0ed79e5ce07ed9",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tahtasi-cozulebilir-nasil-garanti-ederiz/": {
-  "hash": "683a31af396d81f87462f770af549a58",
+  "hash": "69a7efb05e9f2621ea7b860508f01124",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tarihi-ve-klasik-mahjong-farki/": {
-  "hash": "369af1b52687b0da18cf566e1ea72898",
+  "hash": "dcc216f9cb971e9256d4f93d582b6a2e",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/": {
-  "hash": "c3d5a1ffb7fdcb18adcf93449b09cba7",
+  "hash": "9f46debff174b9669778139783e3ddc7",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/es/guias/como-jugar-conectar-fichas-puzle/": {
-  "hash": "4f9080667a57d8fc1f83fbb2d6434cff",
+  "hash": "dc763dfaf4516928a20ff011058fb8de",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/blog/bmi-common-mistakes-and-limits/": {
+  "hash": "99cf701266d6c516b41948cf379870d7",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/blog/earthquake-magnitude-vs-intensity/": {
+  "hash": "9f42f738f6554adafee44840344f8802",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/blog/earthquake-preparedness-what-to-do/": {
+  "hash": "ed1826d6a5581d066593ec15fa5eff1d",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/blog/how-to-calculate-exact-age-years-months-days/": {
+  "hash": "801c722f92ec9fe8d406d49a3dccf1a5",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/blog/leap-day-birthday-how-to-count-age/": {
+  "hash": "6039224f2c0c9901dea01201095120b4",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/blog/tic-tac-toe-history-and-variants/": {
+  "hash": "ad41f84d0b7463646dfc706120f43831",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/blog/what-is-bmi-how-to-calculate-and-read-it/": {
+  "hash": "3f1867fd05e39098c2d6975c30eac242",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/blog/where-earthquake-data-comes-from/": {
+  "hash": "c0a3546a5c7edac0b09fbc359bbcd2ec",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/es/blog/como-calcular-la-edad-exacta-anos-meses-dias/": {
+  "hash": "d2f07c119e585c107cb61f488802e213",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/es/blog/cumpleanos-29-de-febrero-como-contar-la-edad/": {
+  "hash": "ca9c3fe197415de6de84f8b7ded045d8",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/es/blog/de-donde-vienen-los-datos-de-terremotos/": {
+  "hash": "6db57f7182de2d757bcc299123fdb20c",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/es/blog/errores-comunes-y-limites-del-imc/": {
+  "hash": "ca26ad5a84d63740c2889595d7973b3a",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/es/blog/historia-del-tres-en-raya-y-sus-variantes/": {
+  "hash": "93dc0067e05d51bca22b90f2c58d2c35",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/es/blog/magnitud-e-intensidad-de-un-terremoto/": {
+  "hash": "0d33d4630260727d15efc7b727a81eff",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/es/blog/que-es-el-imc-como-se-calcula-y-se-interpreta/": {
+  "hash": "3d7088b07b09d7009d73aeae663e716f",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/es/blog/terremoto-que-hacer-antes-durante-despues/": {
+  "hash": "b0de6cef69b72e9bbaf1988303b9d1b7",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/es/guias/fichas-de-mahjong-y-sus-significados/": {
+  "hash": "026635ce37ae8fe63b6c0774cd520dd6",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/es/guias/que-solitario-elegir-klondike-spider-freecell-tripeaks/": {
+  "hash": "d183d7a70bc738ee57c3943dc2fa0cdd",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/guides/mahjong-tiles-and-their-meanings-guide/": {
+  "hash": "2dedcef3fe0549c65ad3fd7521e42ea5",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/guides/which-solitaire-should-you-play-klondike-spider-freecell-tripeaks/": {
+  "hash": "00909cb7fb539badb06d8a293a6708b6",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/pt/blog/aniversario-29-de-fevereiro-como-contar-a-idade/": {
+  "hash": "053dd19aefe028f363358f66e8168783",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/pt/blog/como-calcular-idade-exata-anos-meses-dias/": {
+  "hash": "3d2a4c8832c47ac290cd4ac39b52ec4c",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/pt/blog/de-onde-vem-os-dados-de-terremotos/": {
+  "hash": "bac01c722f7c424eeb8267fe9527273f",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/pt/blog/erros-comuns-e-limites-do-imc/": {
+  "hash": "c4f52e1589c302dd21ccc8b0ddc3f459",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/pt/blog/historia-do-jogo-da-velha-e-variantes/": {
+  "hash": "82dca9f06b421d4b9a0b50241a7d9df7",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/pt/blog/magnitude-e-intensidade-de-um-terremoto/": {
+  "hash": "d00e661246d84ed973d40564cf89a457",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/pt/blog/o-que-e-imc-como-calcular-e-interpretar/": {
+  "hash": "eca896a2e007b4537900a123021a573c",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/pt/blog/terremoto-o-que-fazer-antes-durante-depois/": {
+  "hash": "c1a40177a8290a84506386988c2c4c5a",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/pt/guias/pecas-de-mahjong-e-seus-significados/": {
+  "hash": "3ba17b972aed392a95fb07884904a7da",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/pt/guias/qual-paciencia-escolher-klondike-spider-freecell-tripeaks/": {
+  "hash": "510e3637f0cd4124a471997ba5897d8e",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/tr/rehber/hangi-solitaire-sana-gore-klondike-spider-freecell-tripeaks/": {
+  "hash": "8bdcea3fa3a2adcf7e90ddd0c0092276",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/tr/rehber/mahjong-taslari-ve-anlamlari/": {
+  "hash": "6992997d92bdc84ddd93f1d7f72eec18",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/tr/yazilar/29-subat-dogum-gunu-yas-nasil-sayilir/": {
+  "hash": "ed23036901e1e329ccb654dbf5ddd54e",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/tr/yazilar/bmi-nedir-nasil-hesaplanir-yorumlanir/": {
+  "hash": "cc516b7e1a5fde000c836c19ffd360b3",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/tr/yazilar/bmi-yanilgilari-ve-sinirlari/": {
+  "hash": "8c7552e479dc523a2ba263a27d2f7620",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/tr/yazilar/deprem-buyuklugu-ve-siddeti-arasindaki-fark/": {
+  "hash": "1469318861fabfc74dc057d850de9b8e",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/tr/yazilar/deprem-oncesi-sirasinda-sonrasinda-ne-yapilir/": {
+  "hash": "f17f95e2a20de64ba60e47cbfd6a1765",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/tr/yazilar/son-deprem-verileri-nereden-geliyor/": {
+  "hash": "186edae002adcb34ca609f571acdc9ef",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/tr/yazilar/xox-tarihi-ve-cesitleri/": {
+  "hash": "154bd2cd35dcccbc1b8e2ff7aa77545b",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/tr/yazilar/yas-hesaplama-yil-ay-gun-nasil-hesaplanir/": {
+  "hash": "dc22538a71a91ecb08db29f536582597",
   "date": "2026-11-10"
  }
 }
