@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yüzlerce Bulmaca Bölümü Nasıl Üretilir ve Doğrulanır?</title>
+<meta name="description" content="Bulmaca oyunları yüzlerce bölümü elle çizmeden nasıl üretir: üretici ve çözücü, zorluğu ölçme, geriye doğru üretim ve tepe tırmanma.">
+<link rel="canonical" href="https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Yüzlerce Bulmaca Bölümü Nasıl Üretilir ve Doğrulanır?">
+<meta property="og:description" content="Bulmaca oyunları yüzlerce bölümü elle çizmeden nasıl üretir: üretici ve çözücü, zorluğu ölçme, geriye doğru üretim ve tepe tırmanma.">
+<meta property="og:url" content="https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Yüzlerce Bulmaca Bölümü Nasıl Üretilir ve Doğrulanır?">
+<meta name="twitter:description" content="Bulmaca oyunları yüzlerce bölümü elle çizmeden nasıl üretir: üretici ve çözücü, zorluğu ölçme, geriye doğru üretim ve tepe tırmanma.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Yüzlerce Bulmaca Bölümü Nasıl Üretilir ve Doğrulanır?", "description": "Bulmaca oyunları yüzlerce bölümü elle çizmeden nasıl üretir: üretici ve çözücü, zorluğu ölçme, geriye doğru üretim ve tepe tırmanma.", "inLanguage": "tr", "mainEntityOfPage": "https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-10", "dateModified": "2026-11-10", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/tr/"}, {"@type": "ListItem", "position": 2, "name": "Yazılar", "item": "https://nrazon.github.io/tr/yazilar/"}, {"@type": "ListItem", "position": 3, "name": "Yüzlerce Bulmaca Bölümü Nasıl Üretilir ve Doğrulanır?", "item": "https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Üretilen bir bölümün çözülebildiğini nereden biliyorsunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Önce bir çözücü onu oynar. Bazı üreticiler ayrıca bölümü bitmiş konumdan geriye doğru kurar; böylece bölüm yapısı gereği çözülebilir."}}, {"@type": "Question", "name": "Bölüm tasarımında tepe tırmanma nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Bölümde küçük bir değişiklik yapıp yeniden ölçmek ve yalnızca bölüm zorlaştıysa değişikliği tutmak. Bunu çok kez tekrarlamak rastgele bölümlerden çok daha zorlarını verir."}}, {"@type": "Question", "name": "Neden bölümleri oyun çalışırken üretmiyorsunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Zor bölümlerin üretimi birkaç saniye sürebilir. Önceden üretmek her oyuncuya aynı bölümleri verir ve kimse beklemez."}}, {"@type": "Question", "name": "Çözücü bir bölümün keyifli olup olmadığını söyler mi?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Çözüm uzunluğu ve çıkmazlar gibi şeyleri ölçer. Değerlendirmek için bir insanın bölümü oynaması gerekir."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/how-puzzle-levels-are-generated-and-checked/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/" hreflang="tr" data-lang="tr" aria-current="page">TR</a><a href="/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/tr/">Nesim Apps</a> › <a href="/tr/yazilar/">Yazılar</a></nav>
+    <h1>Yüzlerce Bulmaca Bölümü Nasıl Üretilir ve Doğrulanır?</h1>
+    <p class="by">Nesim Razon, bağımsız Android geliştiricisi · 2026-11-10</p>
+    <p class="lead">300 ya da 400 bölümlük bir bulmaca oyununu elle çizmek aylar alır; çözülemeyen tek bir bölüm de oyuncunun güvenini bozar. Bölümleri bilgisayara kurduruyor, sonra her birinin çözülebildiğini kanıtlıyoruz. Bunun kendi oyunlarımızda nasıl çalıştığını anlatıyoruz.</p>
+    <h2>İki program: üretici ve çözücü</h2>
+    <p>Üretilen hemen her bulmaca iki kod parçası ister. Üretici bir bölüm önerir: duvarların, taşların ya da ipuçlarının dizilişi. Çözücü bölümü kendi kendine oynar ve bitirilip bitirilemediğini, kaç hamlede bittiğini, bazen de kaç farklı yolla bittiğini bildirir.</p>
+    <p>İkisi arasında önemli olan çözücüdür. Üretici özensiz olabilir, çünkü ürettiği her şey kontrol edilir. Bir bölüm ancak çözücü çalıştığını doğrularsa oyuna girer. Oyunlarımızın birkaçında çözücü, bulmacanın ulaşabildiği her konumu gezen sade bir genişlik öncelikli aramadır; büyük bulmacada yavaştır ama küçük tahtada kesindir.</p>
+    <p>Çözücü, bir insan test uzmanının veremeyeceği bir şey de verir: bir sayı. En kısa çözümün uzunluğu bulmacanın ne kadar uzun olduğunun ölçüsüdür ve zorluğu değerlendirmenin başlangıç noktasıdır.</p>
+    <h2>Çözülmüş tahtadan geriye doğru</h2>
+    <p>Rastgele bir yerleşim tahmin edip çözülebilir olmasını ummak çok emek harcatır. Daha akıllı yol, bitmiş durumdan başlayıp hamleleri geri almaktır. Geriye attığın her adım tersten oynanmış yasal bir hamleyse ulaştığın konumun çözülebilir olması garantidir: hamleleri yeniden ileri oynamak yeter.</p>
+    <p>Beamies bu mantıkla tasarlandı. Üretici geriye doğru çalışarak çözülebilir bir aday kurar; çözücü de asıl olarak onun ne kadar zor olduğunu ölçmek için kullanılır. Nudgelings&#x27;in kutu itme modunda aynı fikir var: bölümleri oyunu tersten oynayarak, yani iterek değil çekerek üretir; böylece bölüm yapısı gereği çözülebilir. Kayan araç modu ise farklı bir yol izler: üretici, başlangıç yerleşimine bağlı tüm konumlara bakar ve çıkışlardan geriye doğru arar; bu da her konum için kesin en kısa çözümü tek seferde verir.</p>
+    <p>Geriye doğru çalışmak garanti verir ama iyi bir bulmaca vermez. Birkaç rastgele ters adımla yapılmış bölüm çoğunlukla fazla kolaydır. Ölçme tam burada devreye girer.</p>
+    <h2>Zorluğu ölçmek</h2>
+    <p>Zorluğun tek bir tanımı yok ama birkaç ölçüt iyi çalışır. En basiti en kısa çözümün uzunluğudur. Uzun olan genelde daha zor hissettirir; çünkü doğru yapılacak hamle ve hata yapılabilecek yer daha çoktur.</p>
+    <p>Beamies&#x27;te en az sürükleme sayısını, en ucuz çözümü bulan bir aramayla ölçüyoruz. Bölümlere bu sayı için bölüm numarasıyla yükselen bir hedef veriliyor; her dünyanın içinde hafif bir testere dişi var: zor bir bölümün ardından daha kolayı, dünyanın sonunda daha zoru. Nudgelings&#x27;in planı benzer. Kayan araç bölümleri başta yaklaşık 3 hamleyi, 20. bölüm civarında 10&#x27;u, 200 bölümün sonuna doğru 40&#x27;tan fazlasını hedefler; itme modunun itme sayısıyla ölçülen, daha düşük kendi eğrisi vardır.</p>
+    <p>Başka ölçütler başka bir şeyi yakalar. Grumblings konumların tüm grafına bakar ve örneğin ulaşılabilir konumların kaçının çıkmaz olduğunu, canavarın kahramana ne sıklıkla yaklaştığını kontrol eder. Yolların çoğunun tuzak olduğu bir bölüm, en kısa çözüm uzunluğu aynı olsa bile çoğunun güvenli olduğu bölümden çok farklı hissettirir.</p>
+    <p>Logiclings&#x27;te taç bulmacaları için bir derecelendirici var: bulmacayı bir insanın kullandığı akıl yürütmelerle, tek olası kareden bir tahmin deneyip çelişki bulmaya kadar çözer. Bulmaca, çözmeye yetecek en düşük teknik seviyesini alır.</p>
+    <h2>Tepe tırmanma: küçük değişikliklerle iyileştirmek</h2>
+    <p>Rastgele bir bölüm çoğunlukla kolaydır. Daha zorlarını elde etmek için tepe tırmanma kullanırız. Bir bölüm al, küçük bir şeyi değiştir (bir duvarı, bir uzaylıyı ya da bir aracı oynat) ve yeniden ölç. Bölüm zorlaştıysa değişikliği tut, zorlaşmadıysa at. Bunu yüzlerce kez tekrarla. Dağa tırmanan biri gibi hep yukarı doğru adım atarsın; iniş yok.</p>
+    <p>Basit ve işe yarıyor. Beamies&#x27;te tipik bir adayın en kısa çözümü, birkaç yüz tırmanma adımından sonra 4 sürüklemeden 10 ile 19 arasına çıktı. Nudgelings, ilk bölümleri oyuncular için fazla düz çıkınca iki moduna da aynı fikri ekledi. Logiclings taç bulmacalarında bunun bir sürümünü kullanır: üretici bölgeler arasındaki sınırları daha az çözüm bırakacak yönde oynatır ve bulmacanın tam bir çözümü kalana kadar sürer.</p>
+    <p>Tırmanmanın sınırı var. Çok uzakta daha iyi bir bölüm dururken küçük bir tepede takılabilir; bir bölüm de sıkıcı bir biçimde zorlaşabilir, örneğin uzun bir zorunlu hamle dizisiyle. Bu yüzden birkaç adaydan seçiyor ve sonuçlara gerçek bir cihazda bakıyoruz.</p>
+    <p>Nudgelings&#x27;te tırmanma yalnızca en kısa çözümü uzatmaz; bir bölümde kaç farklı aracın hareket ettiğine de bakılır. Tek bir aracı uzun uzun kaydırmak yerine birçok aracın sırayla yer değiştirmesini gerektiren bölümler daha ilginç bulunduğu için o tür adaylar tercih edilir.</p>
+    <h2>Tek cevap: benzersizlik</h2>
+    <p>Bazı bulmacaların tam olarak tek çözümü olmalıdır; yoksa oyuncu her şeyi doğru yapıp yine yanlış olduğunu duyabilir. Mantık bulmacalarımızın birkaçı böyledir. Çözücü çözümleri sayacak biçimde yazılır ve ikincisini bulur bulmaz durur.</p>
+    <p>Logiclings iki renkli bulmacasını tam dolu bir tahtadan kurar, sonra ipuçlarını ve işaretleri tek tek kaldırır; bir kaldırmayı yalnızca çözücü hâlâ tek cevap buluyorsa tutar. Yol bulmacası her kareden geçen tam bir güzergâhla başlar, sonra o güzergâhın tek olması için gereken sayıları bırakır ve kolay ayarlarda birkaç fazladan sayı ekler.</p>
+    <p>Benzersizlik ile zorluğun ters yönlere çektiğine dikkat et. Daha az ipucu bulmacayı zorlaştırır ama çok azı tek cevabı kaybettirir. Bu sınırın tam kenarına kadar yürümemizi sağlayan şey çözücüdür.</p>
+    <h2>Önceden üret, her bölümü doğrula</h2>
+    <p>Zor bir bölümü üretmek yavaş olabilir. Beamies&#x27;te bazı ileri bölümleri oyun çalışırken üretmek 8 saniyeden uzun sürüyordu; oyuncuyu bekletmek için çok fazla. Bu yüzden 400 bölüm önceden bir bilgisayarda kuruluyor ve uygulamaya dosya olarak konuyor. Her telefon tam olarak aynı bölümleri anında yüklüyor. Grumblings 300 bölümünü aynı şekilde yapar; hepsi birlikte bir dakikadan kısa sürede üretilir ve bir aday havuzundan zorluk puanına göre seçilir.</p>
+    <p>Hiçbir şey denetlenmeden girmez. Grumblings&#x27;teki bir test paketteki her bölümü açar ve saklı çözümü gerçek oyun kurallarıyla yeniden oynar; Nudgelings&#x27;teki bir test de iki paketi çözücüyle doğrular. Bir bölüm başarısız olursa derleme başarısız olur. Kurallar değişirse paket yeniden üretilir.</p>
+    <p>Son kontrol insan işidir. Bilgisayar bir bölümün çözülebilir olduğunu ve ne kadar uzun olduğunu söyler; keyifli olup olmadığını söyleyemez. Bölümleri telefonda oynuyoruz ve eğri orada ayarlanıyor.</p>
+    <h2>Yaptığımız hatalar</h2>
+    <p>Ölçmek gerçek sorunları yakalamamıza yardım etti. Nudgelings&#x27;in erken bir oyuncu denemesinde araç bölümlerinin 27. bölüme kadar zorlaşmadığı görüldü; bunun üzerine tüm paket daha dik bir eğri ve yeni mekaniklerle yeniden üretildi.</p>
+    <p>Çözücülerin de sınırı olmalı. Üretim sırasında sorun olmayan bir arama telefonda belleği tüketebilir. Beamies&#x27;te bir ipucu ve takılma kontrolü bellek sınırı olmayan bir çözücü kullanıyordu ve büyük bir bölüm onu çökertti. Artık bu aramaları bütçeyle çalıştırıyoruz.</p>
+    <p>Üretilmiş bir bulmaca, ölçtüğü kural kadar iyidir. Yanlış şeyi ölçersen yanlış bölümleri çok verimli üreten bir makine kurmuş olursun.</p>
+    
+    <section class="faq"><h2>Sık sorulan sorular</h2><details><summary>Üretilen bir bölümün çözülebildiğini nereden biliyorsunuz?</summary><p>Önce bir çözücü onu oynar. Bazı üreticiler ayrıca bölümü bitmiş konumdan geriye doğru kurar; böylece bölüm yapısı gereği çözülebilir.</p></details><details><summary>Bölüm tasarımında tepe tırmanma nedir?</summary><p>Bölümde küçük bir değişiklik yapıp yeniden ölçmek ve yalnızca bölüm zorlaştıysa değişikliği tutmak. Bunu çok kez tekrarlamak rastgele bölümlerden çok daha zorlarını verir.</p></details><details><summary>Neden bölümleri oyun çalışırken üretmiyorsunuz?</summary><p>Zor bölümlerin üretimi birkaç saniye sürebilir. Önceden üretmek her oyuncuya aynı bölümleri verir ve kimse beklemez.</p></details><details><summary>Çözücü bir bölümün keyifli olup olmadığını söyler mi?</summary><p>Hayır. Çözüm uzunluğu ve çıkmazlar gibi şeyleri ölçer. Değerlendirmek için bir insanın bölümü oynaması gerekir.</p></details></section>
+    <section><h2>Diğer yazılar</h2><ul class="glist"><li><a href="/tr/yazilar/mahjong-solitaire-tahtasi-cozulebilir-nasil-garanti-ederiz/"><img src="/tilelings/icon.png" alt="" width="48" height="48"><div><b>Mahjong Solitaire Tahtası Çözülebilir mi? Nasıl Garanti Ederiz</b></div></a></li><li><a href="/tr/yazilar/mahjong-solitaire-tarihi-ve-klasik-mahjong-farki/"><img src="/tilelings/icon.png" alt="" width="48" height="48"><div><b>Mahjong Solitaire&#x27;in Tarihi ve Klasik Mahjong&#x27;dan Farkı</b></div></a></li><li><a href="/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/"><img src="/logo.svg" alt="" width="48" height="48"><div><b>Sunucu Olmadan Herkese Aynı Günlük Bulmaca Nasıl Verilir?</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

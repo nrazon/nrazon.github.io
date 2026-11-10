@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt" data-lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Como centenas de fases de quebra-cabeça são geradas e verificadas</title>
+<meta name="description" content="Como jogos de quebra-cabeça criam centenas de fases sem desenhá-las à mão: geradores, resolvedores, medir dificuldade e subida de encosta.">
+<link rel="canonical" href="https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Como centenas de fases de quebra-cabeça são geradas e verificadas">
+<meta property="og:description" content="Como jogos de quebra-cabeça criam centenas de fases sem desenhá-las à mão: geradores, resolvedores, medir dificuldade e subida de encosta.">
+<meta property="og:url" content="https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Como centenas de fases de quebra-cabeça são geradas e verificadas">
+<meta name="twitter:description" content="Como jogos de quebra-cabeça criam centenas de fases sem desenhá-las à mão: geradores, resolvedores, medir dificuldade e subida de encosta.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Como centenas de fases de quebra-cabeça são geradas e verificadas", "description": "Como jogos de quebra-cabeça criam centenas de fases sem desenhá-las à mão: geradores, resolvedores, medir dificuldade e subida de encosta.", "inLanguage": "pt", "mainEntityOfPage": "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-10", "dateModified": "2026-11-10", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/pt/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nrazon.github.io/pt/blog/"}, {"@type": "ListItem", "position": 3, "name": "Como centenas de fases de quebra-cabeça são geradas e verificadas", "item": "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Como se sabe que uma fase gerada pode ser resolvida?", "acceptedAnswer": {"@type": "Answer", "text": "Primeiro um resolvedor a joga. Alguns geradores também constroem as fases de trás para frente a partir da posição final, então elas são resolvíveis por construção."}}, {"@type": "Question", "name": "O que é subida de encosta no design de fases?", "acceptedAnswer": {"@type": "Answer", "text": "Fazer uma pequena mudança em uma fase, medir de novo e manter a mudança só se a fase ficou mais difícil. Repetir isso muitas vezes produz fases bem mais difíceis do que as aleatórias."}}, {"@type": "Question", "name": "Por que não gerar as fases enquanto o jogo roda?", "acceptedAnswer": {"@type": "Answer", "text": "Fases difíceis podem levar vários segundos para serem criadas. Gerá-las antes dá as mesmas fases a todos os jogadores e ninguém espera."}}, {"@type": "Question", "name": "Um resolvedor diz se uma fase é divertida?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Ele mede coisas como o comprimento da solução e os becos sem saída. Uma pessoa ainda precisa jogar a fase para avaliá-la."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/how-puzzle-levels-are-generated-and-checked/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/" hreflang="pt" data-lang="pt" aria-current="page">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/pt/">Nesim Apps</a> › <a href="/pt/blog/">Blog</a></nav>
+    <h1>Como centenas de fases de quebra-cabeça são geradas e verificadas</h1>
+    <p class="by">Por Nesim Razon, desenvolvedor Android independente · 2026-11-10</p>
+    <p class="lead">Desenhar à mão um jogo de quebra-cabeça com 300 ou 400 fases levaria meses, e uma única fase impossível de resolver destrói a confiança do jogador. Deixamos o computador construir as fases e depois provamos que cada uma pode ser resolvida. É assim que isso funciona nos nossos jogos.</p>
+    <h2>Dois programas: um gerador e um resolvedor</h2>
+    <p>Quase todo quebra-cabeça gerado precisa de dois pedaços de código. O gerador propõe uma fase: uma disposição de paredes, peças ou dicas. O resolvedor joga a fase sozinho e informa se ela pode ser concluída, em quantos movimentos e, às vezes, de quantas maneiras diferentes.</p>
+    <p>O mais importante dos dois é o resolvedor. O gerador pode ser descuidado, porque tudo o que ele produz é verificado. Uma fase só entra no jogo se o resolvedor confirmar que ela funciona. Em vários dos nossos jogos, o resolvedor é uma simples busca em largura sobre todas as posições que o quebra-cabeça pode alcançar, lenta em um quebra-cabeça grande, mas exata em um tabuleiro pequeno.</p>
+    <p>O resolvedor também dá algo que um testador humano não dá: um número. O comprimento da solução mais curta mede o tamanho do quebra-cabeça e é o ponto de partida para avaliar a dificuldade.</p>
+    <h2>Ir de trás para frente a partir de um tabuleiro resolvido</h2>
+    <p>Adivinhar uma disposição aleatória e torcer para que seja resolvível desperdiça muito trabalho. Um jeito mais inteligente é partir do estado final e desfazer movimentos. Se cada passo que você dá para trás é um movimento legal jogado ao contrário, a posição a que você chega com certeza é resolvível: basta jogar os movimentos de novo para a frente.</p>
+    <p>O Beamies foi projetado assim. O gerador constrói um candidato resolvível trabalhando de trás para frente, e o resolvedor é usado principalmente para medir a dificuldade. O Nudgelings usa a mesma ideia no modo de empurrar caixas: gera as fases jogando ao contrário, puxando em vez de empurrar, de modo que a fase é resolvível por construção. O modo de veículos deslizantes segue outro caminho: o gerador examina todas as posições ligadas a uma disposição inicial e busca de trás para frente a partir das saídas, o que dá a solução mais curta exata de todas as posições de uma vez.</p>
+    <p>Trabalhar de trás para frente dá uma garantia, mas não dá um bom quebra-cabeça. Uma fase feita com poucos passos inversos aleatórios costuma ser fácil demais. É aí que entra a medição.</p>
+    <h2>Medir a dificuldade</h2>
+    <p>A dificuldade não tem uma definição única, mas algumas medidas funcionam bem. A mais simples é o comprimento da solução mais curta. O que é mais longo costuma parecer mais difícil, porque há mais movimentos a acertar e mais lugares para errar.</p>
+    <p>No Beamies medimos o número mínimo de arrastos com uma busca que encontra a solução mais barata. As fases recebem uma meta para esse número que cresce com a fase, com um leve dente de serra dentro de cada mundo: uma fase mais fácil depois de uma difícil e uma mais difícil no fim. O Nudgelings tem um plano parecido. As fases de veículos deslizantes miram cerca de 3 movimentos no começo, 10 perto da fase 20 e mais de 40 perto do fim das 200 fases, e o modo de empurrar tem sua própria curva, mais baixa, medida em empurrões.</p>
+    <p>Outras medidas captam algo diferente. O Grumblings analisa o grafo completo de posições e verifica, por exemplo, quantas das posições alcançáveis são becos sem saída e com que frequência o monstro fica perto do herói. Uma fase em que a maioria dos caminhos é armadilha parece muito diferente de outra em que quase todos são seguros, mesmo que a solução mais curta tenha o mesmo tamanho.</p>
+    <p>O Logiclings tem um avaliador para os quebra-cabeças de coroas que os resolve com os tipos de raciocínio que uma pessoa usa, desde uma única casa possível até testar um palpite e encontrar uma contradição. O quebra-cabeça recebe o menor nível de técnica que basta para resolvê-lo.</p>
+    <h2>Subida de encosta: melhorar uma fase com pequenas mudanças</h2>
+    <p>Uma fase aleatória costuma ser fácil. Para obter fases mais difíceis usamos a subida de encosta. Pegue uma fase, mude uma coisa pequena, como mover uma parede, um alienígena ou um veículo, e meça de novo. Se a fase ficou mais difícil, mantenha a mudança. Se não, descarte. Repita centenas de vezes.</p>
+    <p>É simples e funciona. No Beamies, a solução mais curta de um candidato típico passou de 4 arrastos para algo entre 10 e 19 depois de algumas centenas de passos de subida. O Nudgelings acrescentou a mesma ideia aos seus dois modos quando as primeiras fases se mostraram planas demais para os jogadores. O Logiclings usa uma versão nos quebra-cabeças de coroas: o gerador move as divisas entre regiões no sentido que deixa menos soluções, até o quebra-cabeça ter exatamente uma.</p>
+    <p>A subida tem um limite. Ela pode ficar presa em uma colina pequena quando existe uma fase melhor bem longe, e uma fase pode ficar difícil de um jeito chato, por exemplo com uma longa sequência forçada. Por isso também escolhemos entre vários candidatos e olhamos os resultados em um aparelho de verdade.</p>
+    <h2>Uma única resposta: unicidade</h2>
+    <p>Alguns quebra-cabeças precisam ter exatamente uma solução; caso contrário, o jogador pode fazer tudo certo e ainda ouvir que errou. É o caso de vários dos nossos quebra-cabeças de lógica. O resolvedor é escrito para contar soluções e para assim que encontra uma segunda.</p>
+    <p>O Logiclings constrói o quebra-cabeça de duas cores a partir de um tabuleiro completo e depois remove dicas e marcas uma a uma, mantendo cada remoção apenas se o resolvedor ainda encontrar uma única resposta. O quebra-cabeça de caminho começa com um percurso completo por todas as casas, depois mantém só os números necessários para que esse percurso seja o único e acrescenta alguns extras nos ajustes fáceis.</p>
+    <p>Repare que unicidade e dificuldade puxam em direções opostas. Menos dicas deixam o quebra-cabeça mais difícil, mas dicas demais a menos perdem a resposta única. O resolvedor é o que nos permite chegar até a beira desse limite.</p>
+    <h2>Gerar antes e verificar cada fase</h2>
+    <p>Gerar uma fase difícil pode ser lento. No Beamies, criar algumas fases avançadas com o jogo em execução levava mais de 8 segundos, tempo demais para fazer o jogador esperar. Por isso as 400 fases são construídas antes em um computador e guardadas no aplicativo como um arquivo. Cada celular carrega então exatamente as mesmas fases na hora. O Grumblings faz o mesmo com as suas 300 fases, que são geradas juntas em menos de um minuto e escolhidas de um conjunto de candidatos pela pontuação de dificuldade.</p>
+    <p>Nada entra sem verificação. Um teste no Grumblings abre todas as fases do pacote e reproduz a solução guardada com as regras reais do jogo, e um teste no Nudgelings verifica os seus dois pacotes com o resolvedor. Se uma fase falha, a compilação falha. Se as regras mudam, o pacote é gerado de novo.</p>
+    <p>A última verificação é humana. Um computador pode dizer que uma fase é resolvível e qual é o seu tamanho. Ele não pode dizer se ela é divertida. Jogamos as fases em um celular, e é ali que a curva é ajustada.</p>
+    <h2>Erros que cometemos</h2>
+    <p>Medir nos ajudou a encontrar problemas reais. Em um teste inicial com jogadores do Nudgelings, viu-se que as fases de veículos não pareciam mais difíceis até a fase 27, então o pacote inteiro foi gerado de novo com uma curva mais íngreme e novas mecânicas.</p>
+    <p>Os resolvedores também precisam de limites. Uma busca que não dá problema na geração pode esgotar a memória em um celular. Uma dica e uma verificação de travamento do Beamies usavam um resolvedor sem limite de memória, e uma fase grande o derrubou. Hoje executamos essas buscas com um orçamento.</p>
+    <p>Um quebra-cabeça gerado vale o que vale a regra que ele mede. Se você mede a coisa errada, constrói uma máquina muito eficiente que produz as fases erradas.</p>
+    
+    <section class="faq"><h2>Perguntas frequentes</h2><details><summary>Como se sabe que uma fase gerada pode ser resolvida?</summary><p>Primeiro um resolvedor a joga. Alguns geradores também constroem as fases de trás para frente a partir da posição final, então elas são resolvíveis por construção.</p></details><details><summary>O que é subida de encosta no design de fases?</summary><p>Fazer uma pequena mudança em uma fase, medir de novo e manter a mudança só se a fase ficou mais difícil. Repetir isso muitas vezes produz fases bem mais difíceis do que as aleatórias.</p></details><details><summary>Por que não gerar as fases enquanto o jogo roda?</summary><p>Fases difíceis podem levar vários segundos para serem criadas. Gerá-las antes dá as mesmas fases a todos os jogadores e ninguém espera.</p></details><details><summary>Um resolvedor diz se uma fase é divertida?</summary><p>Não. Ele mede coisas como o comprimento da solução e os becos sem saída. Uma pessoa ainda precisa jogar a fase para avaliá-la.</p></details></section>
+    <section><h2>Mais do blog</h2><ul class="glist"><li><a href="/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/"><img src="/tilelings/icon.png" alt="" width="48" height="48"><div><b>Como garantimos que um Mahjong Paciência tenha solução</b></div></a></li><li><a href="/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/"><img src="/tilelings/icon.png" alt="" width="48" height="48"><div><b>História do Mahjong Paciência e a diferença para o Mahjong</b></div></a></li><li><a href="/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"><img src="/logo.svg" alt="" width="48" height="48"><div><b>Como dar o mesmo quebra-cabeça diário a todos sem servidor</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Box-Pushing Puzzle Strategy: Avoid Deadlocks and Plan Pushes</title>
+<meta name="description" content="Learn how box-pushing puzzles work and how to avoid deadlocks: stuck corners, push order, planning from the pads backwards and using undo wisely.">
+<link rel="canonical" href="https://nrazon.github.io/guides/box-pushing-puzzle-strategy-avoid-deadlocks/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/box-pushing-puzzle-strategy-avoid-deadlocks/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/kutu-itme-bulmacasi-stratejisi-kilitlenmeden-kacin/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/estrategia-puzle-de-empujar-cajas-evita-bloqueos/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/estrategia-quebra-cabeca-de-empurrar-caixas-evite-travamentos/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/box-pushing-puzzle-strategy-avoid-deadlocks/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#2FBF8A">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Box-Pushing Puzzle Strategy: Avoid Deadlocks and Plan Pushes">
+<meta property="og:description" content="Learn how box-pushing puzzles work and how to avoid deadlocks: stuck corners, push order, planning from the pads backwards and using undo wisely.">
+<meta property="og:url" content="https://nrazon.github.io/guides/box-pushing-puzzle-strategy-avoid-deadlocks/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Box-Pushing Puzzle Strategy: Avoid Deadlocks and Plan Pushes">
+<meta name="twitter:description" content="Learn how box-pushing puzzles work and how to avoid deadlocks: stuck corners, push order, planning from the pads backwards and using undo wisely.">
+<style>:root { --accent:#2FBF8A; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "Box-Pushing Puzzle Strategy: Avoid Deadlocks and Plan Pushes", "description": "Learn how box-pushing puzzles work and how to avoid deadlocks: stuck corners, push order, planning from the pads backwards and using undo wisely.", "inLanguage": "en", "mainEntityOfPage": "https://nrazon.github.io/guides/box-pushing-puzzle-strategy-avoid-deadlocks/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-10", "dateModified": "2026-11-10", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}, "about": {"@type": "SoftwareApplication", "name": "Nudgelings", "operatingSystem": "Android", "applicationCategory": "GameApplication", "url": "https://nrazon.github.io/nudgelings/"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a box-pushing puzzle?", "acceptedAnswer": {"@type": "Answer", "text": "It is a puzzle where you move a character who can only push crystals or boxes, never pull them, until every one sits on a target pad."}}, {"@type": "Question", "name": "What is a deadlock?", "acceptedAnswer": {"@type": "Answer", "text": "A position where a crystal can no longer reach any pad. The classic example is a crystal pushed into a corner that is not a pad."}}, {"@type": "Question", "name": "Do I count steps or pushes in Nudgelings?", "acceptedAnswer": {"@type": "Answer", "text": "Pushes. Walking is free, and your star rating depends on how many pushes you used."}}, {"@type": "Question", "name": "Can I undo a bad push?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Undo is always free in the app, and you also have Restart for starting a level over."}}, {"@type": "Question", "name": "Where should I start?", "acceptedAnswer": {"@type": "Answer", "text": "Find the hardest pad to reach and plan backwards from it, then choose which crystal goes where."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://nrazon.github.io/guides/"}, {"@type": "ListItem", "position": 3, "name": "Box-Pushing Puzzle Strategy: Avoid Deadlocks and Plan Pushes", "item": "https://nrazon.github.io/guides/box-pushing-puzzle-strategy-avoid-deadlocks/"}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/guides/box-pushing-puzzle-strategy-avoid-deadlocks/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/rehber/kutu-itme-bulmacasi-stratejisi-kilitlenmeden-kacin/" hreflang="tr" data-lang="tr">TR</a><a href="/es/guias/estrategia-puzle-de-empujar-cajas-evita-bloqueos/" hreflang="es" data-lang="es">ES</a><a href="/pt/guias/estrategia-quebra-cabeca-de-empurrar-caixas-evite-travamentos/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/guides/">Guides</a></nav>
+    <h1>Box-Pushing Puzzle Strategy: Avoid Deadlocks and Plan Pushes</h1>
+    <p class="by">By Nesim Razon, independent Android developer</p>
+    <p class="lead">In a box-pushing puzzle you can push things but never pull them. That single rule is what makes it tricky: one careless push can ruin the whole level. Here is how to read the room, avoid dead ends and push in the right order.</p>
+    <h2>The rules</h2>
+    <p>You guide a small character around a room. The room has walls, glowing pads and crystals. Walk into a crystal and you push it one square. You can only push, never pull. You can push only one crystal at a time, and a crystal cannot be pushed into a wall or into another crystal. When every crystal sits on a pad, the level is done.</p>
+    <p>In Nudgelings, which has this puzzle as its Push mode, the star rating counts pushes, not steps. Walking around is free, so never worry about long walks. Only think about how many times you move a crystal.</p>
+    <h2>What a deadlock is</h2>
+    <p>A deadlock means a crystal has reached a place from which no sequence of pushes can bring it to a pad. Since you cannot pull, mistakes are permanent. The most common deadlock is the corner: a crystal pushed into a corner has two walls beside it, so it can never be pushed away from either one.</p>
+    <p>A crystal against a wall is also in danger. It can slide along the wall, but it can never leave it. If no pad lies along that wall, the crystal is lost. Before every push, ask one question: can this crystal still reach a pad from its new square?</p>
+    <h2>How to spot dead squares</h2>
+    <ul><li>Corners without a pad are always dead. Never push a crystal into one unless the corner itself is a pad.</li><li>A wall edge is dead for a crystal if no pad lies on that same edge in a straight line.</li><li>Two crystals side by side against a wall block each other, because neither can be pushed from the side that matters.</li><li>A crystal beside an obstacle you cannot move may be stuck even if the square looks open.</li><li>Mark the dead squares in your head before the first move. Walk the room and note which edges lead somewhere.</li></ul>
+    <h2>Plan from the pads backwards</h2>
+    <p>A reliable trick is to think backwards. Pick a pad and imagine the crystal sitting on it. For the crystal to arrive, it must have been pushed in a straight line from the square next to it, and you must have been able to stand on the square behind the crystal. Step backwards from the pad this way and you find which lanes work.</p>
+    <p>Often you will discover that one pad can only be reached from one direction. That tells you which crystal should go there, and which crystal must be sent to a different pad. Plan the hardest pad first, not the easiest.</p>
+    <h2>Choose the push order</h2>
+    <p>The order of pushes matters as much as the pushes themselves. A crystal that sits on a corridor you need to walk through should usually be moved early. A crystal that is already in a safe position can wait. Fill the pads that are hardest to reach first, because crystals placed on easy pads can block the route to the harder ones.</p>
+    <p>Leave yourself room to walk. Many solutions require you to get behind a crystal, so before you push, check that you will be able to reach the square on the far side later. If the pushing path is blocked by another crystal, you have probably chosen the wrong order.</p>
+    <h2>Ice and later twists</h2>
+    <p>In later worlds some floor tiles are slippery blue ice. A crystal pushed onto ice keeps sliding in the same direction until something stops it, such as a wall or another crystal, or until it reaches ordinary floor. That changes the whole puzzle, because one push can carry a crystal a long way and you cannot stop it halfway. Look along the line before you push and find where it will end up.</p>
+    <p>The new rules also change the dead-square map. A square that is dangerous on plain floor may be safe on ice, and the other way round. Trust the sliding rule, not your old habits.</p>
+    <h2>Use undo wisely</h2>
+    <p>Undo is always free in the app, so use it. It is not cheating; it is how you test a plan. Try a push, look at the new position and ask the dead-square question. If the crystal is stuck, step back and change the plan. Use Restart if the whole level feels wrong.</p>
+    <p>If you ask for a hint from a position that cannot be solved any more, the app tells you there is no solution from here, which means you should undo or restart. You get 3 free hints a day, and an optional ad can give more.</p>
+    <h2>A small example of a dangerous push</h2>
+    <p>Imagine a crystal sitting one square away from the top wall, with a pad two rows below it. You walk below the crystal and push it up. It now touches the wall, and from there it can only slide left or right. If no pad lies in that top row, you have just ruined the level. The safe plan is the opposite: stand above the crystal, push it down toward the pad, and keep it away from walls that lead nowhere. The same idea works everywhere. Before you walk around a crystal, think about which side you will push from, and whether the square it will land on still has a way out. A few seconds of looking saves many undos.</p>
+    <aside class="gcta"><img class="ic" src="/nudgelings/icon.png" alt="Nudgelings icon" width="64" height="64"><div class="tx"><b>Try it free: Nudgelings</b><span>Free on Google Play. No account needed.</span></div><a class="play" href="https://play.google.com/store/apps/details?id=com.nudgelings.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dguide%26utm_campaign%3Dnudge-push"><img src="/badges/google-play-en.svg" alt="Google Play" width="162" height="48"></a><a class="small" href="/nudgelings/">About Nudgelings</a></aside>
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>What is a box-pushing puzzle?</summary><p>It is a puzzle where you move a character who can only push crystals or boxes, never pull them, until every one sits on a target pad.</p></details><details><summary>What is a deadlock?</summary><p>A position where a crystal can no longer reach any pad. The classic example is a crystal pushed into a corner that is not a pad.</p></details><details><summary>Do I count steps or pushes in Nudgelings?</summary><p>Pushes. Walking is free, and your star rating depends on how many pushes you used.</p></details><details><summary>Can I undo a bad push?</summary><p>Yes. Undo is always free in the app, and you also have Restart for starting a level over.</p></details><details><summary>Where should I start?</summary><p>Find the hardest pad to reach and plan backwards from it, then choose which crystal goes where.</p></details></section>
+    <section><h2>More guides</h2><ul class="glist"><li><a href="/guides/how-to-solve-sliding-parking-puzzles/"><img src="/nudgelings/icon.png" alt="" width="48" height="48"><div><b>How to Solve Sliding Parking Puzzles: Free the Gold Pod</b></div></a></li><li><a href="/guides/how-to-play-mahjong-solitaire/"><img src="/tilelings/icon.png" alt="" width="48" height="48"><div><b>How to Play Mahjong Solitaire: Rules, Free Tiles and Tips</b></div></a></li><li><a href="/guides/how-to-play-klondike-solitaire/"><img src="/cardles/icon.svg" alt="" width="48" height="48"><div><b>How to Play Klondike Solitaire (and Spider, FreeCell, TriPeaks)</b></div></a></li><li><a href="/guides/block-puzzle-tips-and-tricks/"><img src="/cubbles/icon.svg" alt="" width="48" height="48"><div><b>Block Puzzle Tips and Tricks: How to Get a High Score</b></div></a></li><li><a href="/guides/how-to-play-beamies/"><img src="/beamies/icon.svg" alt="" width="48" height="48"><div><b>How to Play Beamies: Rules, Gates and Tips for 3 Stars</b></div></a></li><li><a href="/guides/how-to-play-arrow-puzzle/"><img src="/sliplines/icon.png" alt="" width="48" height="48"><div><b>How to Play an Arrow Puzzle: Rules and Tips for Sliplines</b></div></a></li><li><a href="/guides/how-to-solve-crown-twin-path-puzzles/"><img src="/logiclings/icon.png" alt="" width="48" height="48"><div><b>How to Solve Crown, Twin and Path Logic Puzzles</b></div></a></li><li><a href="/guides/sleepy-faces-strategy-chase-the-lights/"><img src="/logiclings/icon.png" alt="" width="48" height="48"><div><b>Sleepy Faces Strategy: Chase the Lights Method</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

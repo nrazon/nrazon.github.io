@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt" data-lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Como dar o mesmo quebra-cabeça diário a todos sem servidor</title>
+<meta name="description" content="Como um jogo pode dar o mesmo quebra-cabeça diário a todos sem servidor: semente a partir da data, aleatoriedade determinística, fusos horários e trapaça.">
+<link rel="canonical" href="https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Como dar o mesmo quebra-cabeça diário a todos sem servidor">
+<meta property="og:description" content="Como um jogo pode dar o mesmo quebra-cabeça diário a todos sem servidor: semente a partir da data, aleatoriedade determinística, fusos horários e trapaça.">
+<meta property="og:url" content="https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Como dar o mesmo quebra-cabeça diário a todos sem servidor">
+<meta name="twitter:description" content="Como um jogo pode dar o mesmo quebra-cabeça diário a todos sem servidor: semente a partir da data, aleatoriedade determinística, fusos horários e trapaça.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Como dar o mesmo quebra-cabeça diário a todos sem servidor", "description": "Como um jogo pode dar o mesmo quebra-cabeça diário a todos sem servidor: semente a partir da data, aleatoriedade determinística, fusos horários e trapaça.", "inLanguage": "pt", "mainEntityOfPage": "https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-10", "dateModified": "2026-11-10", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/pt/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nrazon.github.io/pt/blog/"}, {"@type": "ListItem", "position": 3, "name": "Como dar o mesmo quebra-cabeça diário a todos sem servidor", "item": "https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Um desafio diário precisa de conexão com a internet?", "acceptedAnswer": {"@type": "Answer", "text": "Nos nossos jogos, não. O quebra-cabeça é montado no seu celular a partir da data, então funciona offline."}}, {"@type": "Question", "name": "Meu amigo em outro país recebe hoje o mesmo quebra-cabeça?", "acceptedAnswer": {"@type": "Answer", "text": "Normalmente sim, mas o dia novo começa na meia-noite de cada jogador, então alguém distante pode estar um dia à frente ou atrás."}}, {"@type": "Question", "name": "Dá para trapacear mudando o relógio do celular?", "acceptedAnswer": {"@type": "Answer", "text": "Dá para abrir o quebra-cabeça de outro dia. Sem servidor, o jogo confia na data do celular, por isso vemos o desafio diário como uma disputa amigável."}}, {"@type": "Question", "name": "O que é uma semente?", "acceptedAnswer": {"@type": "Answer", "text": "É o número inicial de um gerador de números aleatórios. A mesma semente sempre dá a mesma sequência, e assim aparelhos diferentes montam o mesmo quebra-cabeça."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/how-daily-puzzles-work-without-a-server/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/puzle-diario-igual-para-todos-sin-servidor/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/" hreflang="pt" data-lang="pt" aria-current="page">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/pt/">Nesim Apps</a> › <a href="/pt/blog/">Blog</a></nav>
+    <h1>Como dar o mesmo quebra-cabeça diário a todos sem servidor</h1>
+    <p class="by">Por Nesim Razon, desenvolvedor Android independente · 2026-11-10</p>
+    <p class="lead">Muitos jogos de quebra-cabeça oferecem um desafio diário idêntico para todos os jogadores, para que você compare sua pontuação com a dos amigos. Parece que seria preciso um servidor para distribuir o quebra-cabeça. Não é preciso. Aqui explicamos como fazemos nos nossos jogos e quais são os limites.</p>
+    <h2>A ideia: a data é o quebra-cabeça</h2>
+    <p>Um computador não consegue produzir sozinho números realmente aleatórios. Um gerador de números aleatórios é uma receita: você dá a ele um número inicial, chamado semente, e ele produz uma sequência longa que parece aleatória. O ponto importante é que a mesma semente sempre produz exatamente a mesma sequência.</p>
+    <p>Esse é todo o truque. Se cada celular transforma a data de hoje em um número e o usa como semente, todos os celulares montam o mesmo embaralhamento, as mesmas peças ou a mesma disposição. Ninguém precisa enviar nada. A data funciona como um segredo compartilhado que todos já têm.</p>
+    <p>Na prática, os jogos não usam a data sozinha. Eles a misturam com mais alguns números, como o tipo de quebra-cabeça ou o tamanho do tabuleiro, para que quebra-cabeças diferentes no mesmo dia não sejam cópias uns dos outros.</p>
+    <h2>O que nossos jogos realmente fazem</h2>
+    <p>O Cubbles transforma a data local em um único número no formato ano, mês, dia, por exemplo 20261110, e o usa como semente das peças. Cada conjunto de três peças sai de um gerador que parte do número do dia, do número do conjunto e de um contador de tentativas. Assim, o primeiro conjunto do dia é sempre o mesmo, o segundo também, e assim por diante.</p>
+    <p>O Cardles usa o número do dia como semente das distribuições. O código que embaralha é um pequeno gerador aleatório próprio e portátil, escrito para que a mesma semente dê a mesma distribuição em qualquer aparelho e versão do Android. O tipo de jogo também gira com o calendário, então o desafio diário percorre quatro paciências diferentes.</p>
+    <p>O Logiclings monta todo dia um pacote de três quebra-cabeças. A semente combina o número do dia com o tipo e o tamanho do quebra-cabeça, e o tipo gira entre as cinco variedades para que cada uma volte com regularidade. O Pentolings escolhe o quebra-cabeça diário de encaixe em um grupo fixo de fases médias pelo número do dia, e a rodada diária de blocos que caem usa uma semente derivada do dia.</p>
+    <h2>Por que a aleatoriedade determinística basta</h2>
+    <p>Determinístico quer dizer que o resultado depende apenas das entradas. Um embaralhamento que parte da mesma semente e segue os mesmos passos não pode sair diferente. Enquanto o código que monta o quebra-cabeça for idêntico em todos os celulares, o quebra-cabeça também será.</p>
+    <p>Isso mostra também que um bom quebra-cabeça diário depende mais do construtor do que da entrega. No Cardles, por exemplo, uma distribuição não é aceita às cegas. Algumas distribuições são impossíveis de vencer, então o jogo verifica a distribuição do dia e, se ela estiver travada ou não puder ser vencida, tenta a próxima semente próxima em uma ordem fixa. Todos os celulares seguem a mesma ordem, então todos chegam à mesma distribuição.</p>
+    <p>O Cubbles faz algo parecido. As três peças precisam poder ser colocadas juntas, então o jogo faz até quarenta tentativas com semente e usa a primeira que funciona. Já vamos ver o que isso significa para a justiça.</p>
+    <h2>Fusos horários: a meia-noite de quem?</h2>
+    <p>Sem servidor, não existe um relógio único que decida quando começa um novo dia. Nossos jogos usam a data do seu próprio celular. Quando já é amanhã em Sydney, um jogador em Los Angeles ainda está no quebra-cabeça de hoje. Os dois estão certos segundo o próprio calendário.</p>
+    <p>Para um jogador individual, é a escolha mais amigável. O quebra-cabeça novo aparece na sua meia-noite e a sua sequência acompanha os seus dias. O custo é que uma comparação diária global fica um pouco difusa: duas pessoas podem estar jogando dias diferentes ao mesmo tempo.</p>
+    <p>A sequência é calculada do mesmo jeito. Ela conta dias locais consecutivos e o jogo é tolerante: se você ainda não jogou hoje, o dia de ontem mantém a sequência viva até o dia acabar.</p>
+    <h2>O mesmo quebra-cabeça, quase sempre</h2>
+    <p>No sentido mais estrito, um quebra-cabeça com semente só é idêntico se cada passo depender da semente e de mais nada. O Cubbles é um exemplo honesto de que nem sempre é assim. A verificação de que cada conjunto de peças pode ser colocado depende do estado do seu tabuleiro. Se uma tentativa não cabe no seu tabuleiro, o jogo passa para a próxima, então dois jogadores podem ver, de vez em quando, conjuntos de peças diferentes. Na maior parte das vezes a primeira tentativa funciona e todos veem as mesmas peças, por isso descrevemos o jogo diário como igual para quase todos, e não para todos.</p>
+    <p>Há outra pequena ressalva para quebra-cabeças escolhidos de uma lista. Se uma atualização muda a lista de fases, a escolha de um dia específico pode mudar. Jogadores em versões diferentes podem ver quebra-cabeças diferentes por alguns dias.</p>
+    <p>São detalhes que vale decidir de propósito. Ou o quebra-cabeça não depende de nada além da semente, ou se aceita uma pequena diferença e se diz isso com clareza.</p>
+    <h2>Trapaça, relógios e o que custa não ter servidor</h2>
+    <p>O preço de abrir mão do servidor é a confiança. O jogo acredita na data do seu celular. Se você mudar o relógio, poderá abrir o quebra-cabeça de outro dia. Em um jogo feito para se divertir, em que as pontuações são compartilhadas como desafio entre amigos, achamos uma troca aceitável. Um servidor que verificasse cada pontuação exigiria contas, armazenamento e cuidado com os dados das pessoas, e seria mais uma coisa que pode quebrar.</p>
+    <p>As pontuações que vão para um ranking são informadas pelo aplicativo. Uma pessoa determinada pode enviar um número que o jogo não conquistou, e o aplicativo não consegue impedir isso por completo. Por isso tratamos os rankings como um jogo entre amigos, e não como uma competição com prêmios.</p>
+    <p>Se você for criar um, decida logo do que o quebra-cabeça diário nunca deve depender. Deixe-o depender só da semente, teste se dois aparelhos produzem o mesmo resultado e mantenha congelada a regra que monta o quebra-cabeça. Se precisar mudar o construtor, faça isso com uma nova versão do desafio diário, e não em silêncio, ou o quebra-cabeça de ontem deixará de coincidir.</p>
+    
+    <section class="faq"><h2>Perguntas frequentes</h2><details><summary>Um desafio diário precisa de conexão com a internet?</summary><p>Nos nossos jogos, não. O quebra-cabeça é montado no seu celular a partir da data, então funciona offline.</p></details><details><summary>Meu amigo em outro país recebe hoje o mesmo quebra-cabeça?</summary><p>Normalmente sim, mas o dia novo começa na meia-noite de cada jogador, então alguém distante pode estar um dia à frente ou atrás.</p></details><details><summary>Dá para trapacear mudando o relógio do celular?</summary><p>Dá para abrir o quebra-cabeça de outro dia. Sem servidor, o jogo confia na data do celular, por isso vemos o desafio diário como uma disputa amigável.</p></details><details><summary>O que é uma semente?</summary><p>É o número inicial de um gerador de números aleatórios. A mesma semente sempre dá a mesma sequência, e assim aparelhos diferentes montam o mesmo quebra-cabeça.</p></details></section>
+    <section><h2>Mais do blog</h2><ul class="glist"><li><a href="/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/"><img src="/tilelings/icon.png" alt="" width="48" height="48"><div><b>Como garantimos que um Mahjong Paciência tenha solução</b></div></a></li><li><a href="/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/"><img src="/tilelings/icon.png" alt="" width="48" height="48"><div><b>História do Mahjong Paciência e a diferença para o Mahjong</b></div></a></li><li><a href="/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"><img src="/logo.svg" alt="" width="48" height="48"><div><b>Como centenas de fases de quebra-cabeça são geradas e verificadas</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

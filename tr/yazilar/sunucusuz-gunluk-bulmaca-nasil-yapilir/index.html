@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunucu Olmadan Herkese Aynı Günlük Bulmaca Nasıl Verilir?</title>
+<meta name="description" content="Sunucu kullanmadan her oyuncuya aynı günlük bulmacayı vermenin yolu: tarihten tohum, belirlenimli rastgelelik, saat dilimi ve hile meselesi.">
+<link rel="canonical" href="https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Sunucu Olmadan Herkese Aynı Günlük Bulmaca Nasıl Verilir?">
+<meta property="og:description" content="Sunucu kullanmadan her oyuncuya aynı günlük bulmacayı vermenin yolu: tarihten tohum, belirlenimli rastgelelik, saat dilimi ve hile meselesi.">
+<meta property="og:url" content="https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sunucu Olmadan Herkese Aynı Günlük Bulmaca Nasıl Verilir?">
+<meta name="twitter:description" content="Sunucu kullanmadan her oyuncuya aynı günlük bulmacayı vermenin yolu: tarihten tohum, belirlenimli rastgelelik, saat dilimi ve hile meselesi.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Sunucu Olmadan Herkese Aynı Günlük Bulmaca Nasıl Verilir?", "description": "Sunucu kullanmadan her oyuncuya aynı günlük bulmacayı vermenin yolu: tarihten tohum, belirlenimli rastgelelik, saat dilimi ve hile meselesi.", "inLanguage": "tr", "mainEntityOfPage": "https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-10", "dateModified": "2026-11-10", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/tr/"}, {"@type": "ListItem", "position": 2, "name": "Yazılar", "item": "https://nrazon.github.io/tr/yazilar/"}, {"@type": "ListItem", "position": 3, "name": "Sunucu Olmadan Herkese Aynı Günlük Bulmaca Nasıl Verilir?", "item": "https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Günlük meydan okuma için internet gerekir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Oyunlarımızda gerekmez. Bulmaca telefonunda tarihten kurulur, çevrimdışı çalışır."}}, {"@type": "Question", "name": "Başka ülkedeki arkadaşım bugün aynı bulmacayı alır mı?", "acceptedAnswer": {"@type": "Answer", "text": "Genellikle evet; ama yeni gün her oyuncunun kendi gece yarısında başlar, uzaktaki biri bir gün önde ya da geride olabilir."}}, {"@type": "Question", "name": "Telefonun saatini değiştirerek hile yapılabilir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Başka bir günün bulmacası açılabilir. Sunucu olmadığı için oyun telefonun tarihine güvenir; günlüğü dostça bir meydan okuma olarak görüyoruz."}}, {"@type": "Question", "name": "Tohum nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Rastgele sayı üretecinin başlangıç sayısı. Aynı tohum hep aynı diziyi verir; farklı cihazlar bulmacayı böyle aynı kurar."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/how-daily-puzzles-work-without-a-server/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/" hreflang="tr" data-lang="tr" aria-current="page">TR</a><a href="/es/blog/puzle-diario-igual-para-todos-sin-servidor/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/tr/">Nesim Apps</a> › <a href="/tr/yazilar/">Yazılar</a></nav>
+    <h1>Sunucu Olmadan Herkese Aynı Günlük Bulmaca Nasıl Verilir?</h1>
+    <p class="by">Nesim Razon, bağımsız Android geliştiricisi · 2026-11-10</p>
+    <p class="lead">Birçok bulmaca oyununda herkese aynı günlük meydan okuma gelir; böylece skorlarını arkadaşlarınla karşılaştırabilirsin. Bunun için bulmacayı dağıtan bir sunucu gerekir gibi görünür. Gerekmiyor. Kendi oyunlarımızda bunu nasıl yaptığımızı ve sınırlarını anlatıyoruz.</p>
+    <h2>Fikir: bulmaca tarihin kendisi</h2>
+    <p>Bilgisayar kendi başına gerçekten rastgele sayı üretemez. Rastgele sayı üreteci aslında bir tariftir: ona tohum denen bir başlangıç sayısı verirsin, o da rastgele görünen uzun bir dizi üretir. Önemli nokta şu: aynı tohum her seferinde birebir aynı diziyi verir.</p>
+    <p>Bütün hile bundan ibaret. Her telefon bugünün tarihini bir sayıya çevirip tohum olarak kullanırsa, her telefon aynı karıştırmayı, aynı parçaları ya da aynı yerleşimi kurar. Kimsenin bir şey göndermesi gerekmez. Tarih, herkesin zaten elinde olan ortak bir sır gibi çalışır.</p>
+    <p>Pratikte oyunlar ham tarihi tek başına kullanmaz. Aynı gün içindeki farklı bulmacalar birbirinin kopyası olmasın diye tarihi bulmaca türü ya da tahta boyutu gibi birkaç sayıyla karıştırırlar.</p>
+    <h2>Oyunlarımız bunu gerçekte nasıl yapıyor</h2>
+    <p>Cubbles yerel tarihi yıl, ay, gün biçiminde tek bir sayıya çevirir, örneğin 20261110, ve parçaların tohumu olarak kullanır. Her üçlü parça takımı; gün sayısından, takımın sırasından ve bir deneme sayacından başlayan bir üreteçle çekilir. Böylece günün ilk takımı hep aynıdır, ikincisi de, üçüncüsü de.</p>
+    <p>Cardles dağıtımlar için gün sayısını tohum alır. Oyundaki karıştırma kodu kendi küçük, taşınabilir rastgele üretecidir; aynı tohum her cihazda ve her Android sürümünde aynı dağıtımı versin diye böyle yazılmıştır. Oyun türü de takvimle döner, yani günlük meydan okuma dört farklı solitaire oyununu sırayla gezer.</p>
+    <p>Logiclings her gün üç bulmacalık bir paket kurar. Tohumu gün sayısını, bulmaca türünü ve boyutunu birleştirir; tür beş bulmaca çeşidi arasında döner, her çeşit düzenli aralıkla sıra gelir. Pentolings günlük döşeme bulmacasını gün sayısıyla orta zorluktaki sabit bir bölüm havuzundan seçer; günlük düşme turunda ise günden türetilmiş bir tohum kullanır.</p>
+    <p>Bu ayrıntıların hepsinin ortak noktası şu: günün sayısı bir sır değil, herkesin hesaplayabildiği bir girdi. Cardles bir adım daha gider. FreeCell günlüğü için gün sayısını sabit bir çarpanla karıştırıp numaralı klasik dağıtımlardan birine eşler. Klondike ve Spider dağıtımlarında tohum, günün sayısının on katına küçük bir sabit eklenerek bulunur.</p>
+    <h2>Belirlenimli rastgelelik neden yeter</h2>
+    <p>Belirlenimli demek, sonucun yalnızca girdilere bağlı olması demek. Aynı tohumdan başlayıp aynı adımlardan geçen bir karıştırma farklı çıkamaz. Bulmacayı kuran kod her telefonda aynıysa bulmaca da aynıdır.</p>
+    <p>Bu, iyi bir günlük bulmacanın işin büyük kısmının dağıtımda değil kurucuda olduğunu da gösterir. Cardles&#x27;ta örneğin bir dağıtım körü körüne kabul edilmez. Bazı dağıtımları kazanmak imkânsızdır; oyun günlük dağıtımı kontrol eder, tıkanıksa ya da kazanılamıyorsa sabit bir sırayla yakın bir sonraki tohumu dener. Her telefon aynı sırayı izlediği için hepsi aynı dağıtıma varır.</p>
+    <p>Cubbles de benzer bir şey yapar. Üç parçanın birlikte yerleştirilebilmesi gerekir; bu yüzden oyun tohumlu en fazla kırk deneme yapar ve işe yarayan ilkini kullanır. Bunun adalet açısından ne anlama geldiğine birazdan döneceğiz.</p>
+    <p>Bir oyunun günlük görevleri de aynı yoldan gelir. Cubbles her günün üç görevini yine gün sayısından üretir, yani görevler de herkese aynıdır ve hiçbir sunucu onları dağıtmaz.</p>
+    <h2>Saat dilimleri: kimin gece yarısı?</h2>
+    <p>Sunucu olmayınca yeni günün ne zaman başladığına karar veren tek bir saat de yok. Oyunlarımız kendi telefonundaki tarihi kullanır. Sidney&#x27;de yarın olmuşken Los Angeles&#x27;taki oyuncu hâlâ bugünün bulmacasındadır. İkisi de kendi takvimine göre doğrudur.</p>
+    <p>Tek bir oyuncu için bu en dostane seçim. Yeni bulmaca kendi gece yarında gelir, serin kendi günlerine göre ilerler. Bedeli, küresel bir günlük karşılaştırmanın biraz bulanık olması: iki kişi aynı anda farklı günlerin bulmacasını oynuyor olabilir.</p>
+    <p>Seri de aynı mantıkla hesaplanır. Seri, art arda yerel günleri sayar ve oyun bağışlayıcıdır: bugün henüz oynamadıysan gün bitene kadar dün seriyi hayatta tutar.</p>
+    <h2>Aynı bulmaca, çoğunlukla</h2>
+    <p>En katı anlamda tohumlu bir bulmaca ancak her adım yalnızca tohuma bağlıysa herkeste aynıdır. Cubbles bunun tam doğru olmadığı dürüst bir örnek. Her parça takımının yerleştirilebilir olduğunu denetleyen kontrol senin tahtanın durumuna bağlı. Bir deneme tahtana uymuyorsa oyun bir sonrakine geçer; yani iki oyuncu ara sıra farklı parça takımları görebilir. Çoğu zaman ilk deneme tutar ve herkes aynı parçaları görür; bu yüzden günlük oyunu herkes için değil, neredeyse herkes için aynı diye tarif ediyoruz.</p>
+    <p>Listeden seçilen bulmacalar için küçük bir uyarı daha var. Bir güncelleme bölüm listesini değiştirirse, belli bir günün seçimi de değişebilir. Farklı sürümlerdeki oyuncular birkaç gün farklı bulmaca görebilir.</p>
+    <p>Bunlar bilerek karar verilmesi gereken ayrıntılar. Ya bulmaca tohumdan başka hiçbir şeye bağlı olmaz ya da küçük bir farkı kabul eder ve bunu açıkça söylersin.</p>
+    <p>Cardles bu konuda daha sıkıdır: dağıtım yalnızca günün sayısına ve sabit bir deneme sırasına bağlıdır, oyuncunun yaptığı hamlelere bağlı değildir. Bu yüzden iki kişi aynı günün Cardles dağıtımını aynı kartlarla görür; fark ancak oyunu farklı oynamalarından doğar.</p>
+    <h2>Hile, saat ve sunucusuzluğun bedeli</h2>
+    <p>Sunucudan vazgeçmenin bedeli güvendir. Oyun telefondaki tarihe inanır. Saati değiştirirsen başka bir günün bulmacasını açabilirsin. Eğlence için oynanan, skorların dostça meydan okuma olarak paylaşıldığı bir oyunda bunu kabul edilebilir bir takas sayıyoruz. Her skoru denetleyen bir sunucu hesap, depolama ve insanların verisine özen gerektirir; üstelik bozulabilecek bir şey daha olur.</p>
+    <p>Liderlik tablosuna giden skorları uygulama bildirir. Kararlı biri oyunun kazanmadığı bir sayıyı gönderebilir ve uygulama bunu tamamen engelleyemez. Bu yüzden liderlik tablolarını ödüllü bir yarışma değil, arkadaşlar arasında bir oyun olarak görüyoruz.</p>
+    <p>Sen de bir tane yapacaksan, günlük bulmacanın hiçbir zaman neye bağlı olmaması gerektiğine baştan karar ver. Onu tohuma bağla, iki cihazın aynı sonucu verdiğini test et ve bulmacayı kuran kuralı dondur. Kurucuyu değiştirmek zorundaysan bunu sessizce değil günlüğün yeni bir sürümüyle yap; yoksa dünkü bulmaca artık tutmaz.</p>
+    
+    <section class="faq"><h2>Sık sorulan sorular</h2><details><summary>Günlük meydan okuma için internet gerekir mi?</summary><p>Oyunlarımızda gerekmez. Bulmaca telefonunda tarihten kurulur, çevrimdışı çalışır.</p></details><details><summary>Başka ülkedeki arkadaşım bugün aynı bulmacayı alır mı?</summary><p>Genellikle evet; ama yeni gün her oyuncunun kendi gece yarısında başlar, uzaktaki biri bir gün önde ya da geride olabilir.</p></details><details><summary>Telefonun saatini değiştirerek hile yapılabilir mi?</summary><p>Başka bir günün bulmacası açılabilir. Sunucu olmadığı için oyun telefonun tarihine güvenir; günlüğü dostça bir meydan okuma olarak görüyoruz.</p></details><details><summary>Tohum nedir?</summary><p>Rastgele sayı üretecinin başlangıç sayısı. Aynı tohum hep aynı diziyi verir; farklı cihazlar bulmacayı böyle aynı kurar.</p></details></section>
+    <section><h2>Diğer yazılar</h2><ul class="glist"><li><a href="/tr/yazilar/mahjong-solitaire-tahtasi-cozulebilir-nasil-garanti-ederiz/"><img src="/tilelings/icon.png" alt="" width="48" height="48"><div><b>Mahjong Solitaire Tahtası Çözülebilir mi? Nasıl Garanti Ederiz</b></div></a></li><li><a href="/tr/yazilar/mahjong-solitaire-tarihi-ve-klasik-mahjong-farki/"><img src="/tilelings/icon.png" alt="" width="48" height="48"><div><b>Mahjong Solitaire&#x27;in Tarihi ve Klasik Mahjong&#x27;dan Farkı</b></div></a></li><li><a href="/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/"><img src="/logo.svg" alt="" width="48" height="48"><div><b>Yüzlerce Bulmaca Bölümü Nasıl Üretilir ve Doğrulanır?</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

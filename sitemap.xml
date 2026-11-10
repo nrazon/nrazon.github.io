@@ -42,6 +42,51 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/beamies/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/blog/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/blog/how-we-guarantee-mahjong-solitaire-is-solvable/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-we-guarantee-mahjong-solitaire-is-solvable/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tahtasi-cozulebilir-nasil-garanti-ederiz/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/como-garantizamos-que-un-mahjong-solitario-tenga-solucion/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-we-guarantee-mahjong-solitaire-is-solvable/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/blog/mahjong-solitaire-history-vs-real-mahjong/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/mahjong-solitaire-history-vs-real-mahjong/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tarihi-ve-klasik-mahjong-farki/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/historia-mahjong-solitario-y-diferencias-con-mahjong/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/mahjong-solitaire-history-vs-real-mahjong/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/bmicalculator/</loc>
     <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/bmicalculator/"/>
@@ -100,6 +145,51 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/beamies/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/es/blog/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/blog/como-garantizamos-que-un-mahjong-solitario-tenga-solucion/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-we-guarantee-mahjong-solitaire-is-solvable/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tahtasi-cozulebilir-nasil-garanti-ederiz/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/como-garantizamos-que-un-mahjong-solitario-tenga-solucion/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-we-guarantee-mahjong-solitaire-is-solvable/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/blog/historia-mahjong-solitario-y-diferencias-con-mahjong/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/mahjong-solitaire-history-vs-real-mahjong/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tarihi-ve-klasik-mahjong-farki/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/historia-mahjong-solitario-y-diferencias-con-mahjong/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/mahjong-solitaire-history-vs-real-mahjong/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/es/bmicalculator/</loc>
     <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/bmicalculator/"/>
@@ -146,7 +236,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/es/guias/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/"/>
@@ -154,8 +244,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/es/guias/2048-despues-4096-8192-errores-comunes/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/2048-beyond-4096-8192-common-mistakes/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/2048-den-sonra-4096-8192-ve-sik-yapilan-hatalar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/2048-despues-4096-8192-errores-comunes/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/2048-depois-4096-8192-erros-comuns/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/2048-beyond-4096-8192-common-mistakes/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/es/guias/caras-dormilonas-estrategia-perseguir-las-luces/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/sleepy-faces-strategy-chase-the-lights/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/uykucu-yuzler-stratejisi-isiklari-kovala/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/caras-dormilonas-estrategia-perseguir-las-luces/"/>
@@ -164,7 +263,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/es/guias/como-jugar-2048-estrategia/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-2048-strategy/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/2048-nasil-oynanir-strateji/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-2048-estrategia/"/>
@@ -173,7 +272,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/es/guias/como-jugar-beamies/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-beamies/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/beamies-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-beamies/"/>
@@ -181,8 +280,26 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-beamies/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/es/guias/como-jugar-conectar-fichas-puzle/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/tile-connect-puzzle-how-to-play/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/tas-baglama-bulmacasi-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-conectar-fichas-puzle/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-conectar-pecas-quebra-cabeca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/tile-connect-puzzle-how-to-play/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/guias/como-jugar-freecell-estrategia/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-freecell-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/freecell-nasil-oynanir-strateji/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-freecell-estrategia/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-freecell-estrategia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-freecell-strategy/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/es/guias/como-jugar-grumblings-puzle-de-laberinto/</loc>
-    <lastmod>2026-11-07</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-grumblings-maze-puzzle/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/grumblings-nasil-oynanir-labirent-bulmacasi/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-grumblings-puzle-de-laberinto/"/>
@@ -191,7 +308,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/es/guias/como-jugar-mahjong-solitario/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-mahjong-solitaire/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/mahjong-solitaire-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-mahjong-solitario/"/>
@@ -200,7 +317,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/es/guias/como-jugar-puzle-de-flechas/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-arrow-puzzle/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/ok-bulmacasi-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-puzle-de-flechas/"/>
@@ -209,7 +326,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/es/guias/como-jugar-solitario-klondike/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-klondike-solitaire/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/klondike-solitaire-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-solitario-klondike/"/>
@@ -217,8 +334,26 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-klondike-solitaire/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/es/guias/como-jugar-solitario-spider/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-spider-solitaire/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/spider-solitaire-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-solitario-spider/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-paciencia-spider/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-spider-solitaire/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/guias/como-jugar-solitario-tripeaks/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-tripeaks-solitaire/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/tripeaks-solitaire-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-solitario-tripeaks/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-paciencia-tripeaks/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-tripeaks-solitaire/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/es/guias/como-resolver-corona-gemelos-camino/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-solve-crown-twin-path-puzzles/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/tac-ikiz-yol-bulmacalari-nasil-cozulur/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-resolver-corona-gemelos-camino/"/>
@@ -226,8 +361,44 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-solve-crown-twin-path-puzzles/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/es/guias/como-resolver-puzles-de-deslizar-vehiculos/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-solve-sliding-parking-puzzles/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/kaydirmali-park-bulmacasi-nasil-cozulur/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-resolver-puzles-de-deslizar-vehiculos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-resolver-quebra-cabecas-de-deslizar-veiculos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-solve-sliding-parking-puzzles/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/guias/estrategia-puzle-de-empujar-cajas-evita-bloqueos/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/box-pushing-puzzle-strategy-avoid-deadlocks/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/kutu-itme-bulmacasi-stratejisi-kilitlenmeden-kacin/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/estrategia-puzle-de-empujar-cajas-evita-bloqueos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/estrategia-quebra-cabeca-de-empurrar-caixas-evite-travamentos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/box-pushing-puzzle-strategy-avoid-deadlocks/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/guias/mahjong-solitario-atascado-que-ficha-quitar-primero/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/mahjong-solitaire-stuck-which-tile-first/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/mahjong-solitaire-takildim-hangi-tasi-once-almali/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/mahjong-solitario-atascado-que-ficha-quitar-primero/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/mahjong-paciencia-travado-qual-peca-tirar-primeiro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/mahjong-solitaire-stuck-which-tile-first/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/guias/puzle-de-bloques-combos-y-estrategia-de-puntuacion/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/block-puzzle-combos-and-high-score-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/blok-bulmaca-kombo-ve-yuksek-skor-stratejisi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/puzle-de-bloques-combos-y-estrategia-de-puntuacion/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/quebra-cabeca-de-blocos-combos-e-estrategia-de-pontuacao/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/block-puzzle-combos-and-high-score-strategy/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/es/guias/saltos-de-ranas-estrategia-solitario-de-fichas/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/frog-hops-peg-solitaire-strategy/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/kurbaga-ziplatma-stratejisi-peg-solitaire/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/saltos-de-ranas-estrategia-solitario-de-fichas/"/>
@@ -236,7 +407,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/es/guias/tres-en-raya-estrategia-para-no-perder/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/xox-yenilmez-strateji/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/tres-en-raya-estrategia-para-no-perder/"/>
@@ -245,7 +416,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/es/guias/trucos-puzle-de-bloques/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/block-puzzle-tips-and-tricks/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/blok-bulmaca-ipuclari/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/trucos-puzle-de-bloques/"/>
@@ -342,7 +513,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/guides/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/"/>
@@ -350,8 +521,26 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/guides/2048-beyond-4096-8192-common-mistakes/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/2048-beyond-4096-8192-common-mistakes/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/2048-den-sonra-4096-8192-ve-sik-yapilan-hatalar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/2048-despues-4096-8192-errores-comunes/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/2048-depois-4096-8192-erros-comuns/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/2048-beyond-4096-8192-common-mistakes/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/guides/block-puzzle-combos-and-high-score-strategy/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/block-puzzle-combos-and-high-score-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/blok-bulmaca-kombo-ve-yuksek-skor-stratejisi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/puzle-de-bloques-combos-y-estrategia-de-puntuacion/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/quebra-cabeca-de-blocos-combos-e-estrategia-de-pontuacao/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/block-puzzle-combos-and-high-score-strategy/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/guides/block-puzzle-tips-and-tricks/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/block-puzzle-tips-and-tricks/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/blok-bulmaca-ipuclari/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/trucos-puzle-de-bloques/"/>
@@ -359,8 +548,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/block-puzzle-tips-and-tricks/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/guides/box-pushing-puzzle-strategy-avoid-deadlocks/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/box-pushing-puzzle-strategy-avoid-deadlocks/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/kutu-itme-bulmacasi-stratejisi-kilitlenmeden-kacin/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/estrategia-puzle-de-empujar-cajas-evita-bloqueos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/estrategia-quebra-cabeca-de-empurrar-caixas-evite-travamentos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/box-pushing-puzzle-strategy-avoid-deadlocks/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/guides/frog-hops-peg-solitaire-strategy/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/frog-hops-peg-solitaire-strategy/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/kurbaga-ziplatma-stratejisi-peg-solitaire/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/saltos-de-ranas-estrategia-solitario-de-fichas/"/>
@@ -369,7 +567,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/guides/how-to-play-2048-strategy/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-2048-strategy/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/2048-nasil-oynanir-strateji/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-2048-estrategia/"/>
@@ -378,7 +576,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/guides/how-to-play-arrow-puzzle/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-arrow-puzzle/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/ok-bulmacasi-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-puzle-de-flechas/"/>
@@ -387,7 +585,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/guides/how-to-play-beamies/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-beamies/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/beamies-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-beamies/"/>
@@ -395,8 +593,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-beamies/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/guides/how-to-play-freecell-strategy/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-freecell-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/freecell-nasil-oynanir-strateji/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-freecell-estrategia/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-freecell-estrategia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-freecell-strategy/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/guides/how-to-play-grumblings-maze-puzzle/</loc>
-    <lastmod>2026-11-07</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-grumblings-maze-puzzle/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/grumblings-nasil-oynanir-labirent-bulmacasi/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-grumblings-puzle-de-laberinto/"/>
@@ -405,7 +612,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/guides/how-to-play-klondike-solitaire/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-klondike-solitaire/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/klondike-solitaire-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-solitario-klondike/"/>
@@ -414,7 +621,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/guides/how-to-play-mahjong-solitaire/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-mahjong-solitaire/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/mahjong-solitaire-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-mahjong-solitario/"/>
@@ -422,8 +629,26 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-mahjong-solitaire/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/guides/how-to-play-spider-solitaire/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-spider-solitaire/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/spider-solitaire-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-solitario-spider/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-paciencia-spider/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-spider-solitaire/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/guides/how-to-play-tripeaks-solitaire/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-tripeaks-solitaire/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/tripeaks-solitaire-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-solitario-tripeaks/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-paciencia-tripeaks/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-tripeaks-solitaire/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/guides/how-to-solve-crown-twin-path-puzzles/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-solve-crown-twin-path-puzzles/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/tac-ikiz-yol-bulmacalari-nasil-cozulur/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-resolver-corona-gemelos-camino/"/>
@@ -431,8 +656,26 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-solve-crown-twin-path-puzzles/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/guides/how-to-solve-sliding-parking-puzzles/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-solve-sliding-parking-puzzles/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/kaydirmali-park-bulmacasi-nasil-cozulur/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-resolver-puzles-de-deslizar-vehiculos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-resolver-quebra-cabecas-de-deslizar-veiculos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-solve-sliding-parking-puzzles/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/guides/mahjong-solitaire-stuck-which-tile-first/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/mahjong-solitaire-stuck-which-tile-first/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/mahjong-solitaire-takildim-hangi-tasi-once-almali/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/mahjong-solitario-atascado-que-ficha-quitar-primero/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/mahjong-paciencia-travado-qual-peca-tirar-primeiro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/mahjong-solitaire-stuck-which-tile-first/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/guides/sleepy-faces-strategy-chase-the-lights/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/sleepy-faces-strategy-chase-the-lights/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/uykucu-yuzler-stratejisi-isiklari-kovala/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/caras-dormilonas-estrategia-perseguir-las-luces/"/>
@@ -441,12 +684,21 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/xox-yenilmez-strateji/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/tres-en-raya-estrategia-para-no-perder/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/jogo-da-velha-estrategia-para-nao-perder/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/guides/tile-connect-puzzle-how-to-play/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/tile-connect-puzzle-how-to-play/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/tas-baglama-bulmacasi-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-conectar-fichas-puzle/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-conectar-pecas-quebra-cabeca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/tile-connect-puzzle-how-to-play/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/haftasonum/</loc>
@@ -511,6 +763,51 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/beamies/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/pt/blog/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-we-guarantee-mahjong-solitaire-is-solvable/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tahtasi-cozulebilir-nasil-garanti-ederiz/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/como-garantizamos-que-un-mahjong-solitario-tenga-solucion/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-we-guarantee-mahjong-solitaire-is-solvable/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/mahjong-solitaire-history-vs-real-mahjong/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tarihi-ve-klasik-mahjong-farki/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/historia-mahjong-solitario-y-diferencias-con-mahjong/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/mahjong-solitaire-history-vs-real-mahjong/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/pt/bmicalculator/</loc>
     <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/bmicalculator/"/>
@@ -557,7 +854,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/guias/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/"/>
@@ -565,8 +862,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/pt/guias/2048-depois-4096-8192-erros-comuns/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/2048-beyond-4096-8192-common-mistakes/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/2048-den-sonra-4096-8192-ve-sik-yapilan-hatalar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/2048-despues-4096-8192-errores-comunes/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/2048-depois-4096-8192-erros-comuns/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/2048-beyond-4096-8192-common-mistakes/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/pt/guias/como-jogar-2048-estrategia/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-2048-strategy/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/2048-nasil-oynanir-strateji/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-2048-estrategia/"/>
@@ -575,7 +881,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/guias/como-jogar-beamies/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-beamies/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/beamies-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-beamies/"/>
@@ -583,8 +889,26 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-beamies/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/pt/guias/como-jogar-conectar-pecas-quebra-cabeca/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/tile-connect-puzzle-how-to-play/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/tas-baglama-bulmacasi-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-conectar-fichas-puzle/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-conectar-pecas-quebra-cabeca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/tile-connect-puzzle-how-to-play/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/guias/como-jogar-freecell-estrategia/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-freecell-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/freecell-nasil-oynanir-strateji/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-freecell-estrategia/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-freecell-estrategia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-freecell-strategy/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/pt/guias/como-jogar-grumblings-quebra-cabeca-de-labirinto/</loc>
-    <lastmod>2026-11-07</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-grumblings-maze-puzzle/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/grumblings-nasil-oynanir-labirent-bulmacasi/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-grumblings-puzle-de-laberinto/"/>
@@ -593,7 +917,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/guias/como-jogar-mahjong-paciencia/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-mahjong-solitaire/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/mahjong-solitaire-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-mahjong-solitario/"/>
@@ -602,7 +926,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/guias/como-jogar-paciencia-klondike/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-klondike-solitaire/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/klondike-solitaire-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-solitario-klondike/"/>
@@ -610,8 +934,26 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-klondike-solitaire/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/pt/guias/como-jogar-paciencia-spider/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-spider-solitaire/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/spider-solitaire-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-solitario-spider/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-paciencia-spider/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-spider-solitaire/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/guias/como-jogar-paciencia-tripeaks/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-tripeaks-solitaire/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/tripeaks-solitaire-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-solitario-tripeaks/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-paciencia-tripeaks/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-tripeaks-solitaire/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/pt/guias/como-jogar-quebra-cabeca-de-setas/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-arrow-puzzle/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/ok-bulmacasi-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-puzle-de-flechas/"/>
@@ -620,7 +962,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/guias/como-resolver-coroa-gemeos-caminho/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-solve-crown-twin-path-puzzles/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/tac-ikiz-yol-bulmacalari-nasil-cozulur/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-resolver-corona-gemelos-camino/"/>
@@ -628,8 +970,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-solve-crown-twin-path-puzzles/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/pt/guias/como-resolver-quebra-cabecas-de-deslizar-veiculos/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-solve-sliding-parking-puzzles/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/kaydirmali-park-bulmacasi-nasil-cozulur/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-resolver-puzles-de-deslizar-vehiculos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-resolver-quebra-cabecas-de-deslizar-veiculos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-solve-sliding-parking-puzzles/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/pt/guias/dicas-quebra-cabeca-de-blocos/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/block-puzzle-tips-and-tricks/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/blok-bulmaca-ipuclari/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/trucos-puzle-de-bloques/"/>
@@ -637,8 +988,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/block-puzzle-tips-and-tricks/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/pt/guias/estrategia-quebra-cabeca-de-empurrar-caixas-evite-travamentos/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/box-pushing-puzzle-strategy-avoid-deadlocks/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/kutu-itme-bulmacasi-stratejisi-kilitlenmeden-kacin/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/estrategia-puzle-de-empujar-cajas-evita-bloqueos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/estrategia-quebra-cabeca-de-empurrar-caixas-evite-travamentos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/box-pushing-puzzle-strategy-avoid-deadlocks/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/pt/guias/jogo-da-velha-estrategia-para-nao-perder/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/xox-yenilmez-strateji/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/tres-en-raya-estrategia-para-no-perder/"/>
@@ -646,8 +1006,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/pt/guias/mahjong-paciencia-travado-qual-peca-tirar-primeiro/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/mahjong-solitaire-stuck-which-tile-first/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/mahjong-solitaire-takildim-hangi-tasi-once-almali/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/mahjong-solitario-atascado-que-ficha-quitar-primero/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/mahjong-paciencia-travado-qual-peca-tirar-primeiro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/mahjong-solitaire-stuck-which-tile-first/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/pt/guias/pulos-de-sapos-estrategia-resta-um/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/frog-hops-peg-solitaire-strategy/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/kurbaga-ziplatma-stratejisi-peg-solitaire/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/saltos-de-ranas-estrategia-solitario-de-fichas/"/>
@@ -655,8 +1024,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/frog-hops-peg-solitaire-strategy/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/pt/guias/quebra-cabeca-de-blocos-combos-e-estrategia-de-pontuacao/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/block-puzzle-combos-and-high-score-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/blok-bulmaca-kombo-ve-yuksek-skor-stratejisi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/puzle-de-bloques-combos-y-estrategia-de-puntuacion/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/quebra-cabeca-de-blocos-combos-e-estrategia-de-pontuacao/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/block-puzzle-combos-and-high-score-strategy/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/pt/guias/rostos-sonolentos-estrategia-perseguir-as-luzes/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/sleepy-faces-strategy-chase-the-lights/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/uykucu-yuzler-stratejisi-isiklari-kovala/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/caras-dormilonas-estrategia-perseguir-las-luces/"/>
@@ -872,7 +1250,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/rehber/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/"/>
@@ -880,8 +1258,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/tr/rehber/2048-den-sonra-4096-8192-ve-sik-yapilan-hatalar/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/2048-beyond-4096-8192-common-mistakes/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/2048-den-sonra-4096-8192-ve-sik-yapilan-hatalar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/2048-despues-4096-8192-errores-comunes/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/2048-depois-4096-8192-erros-comuns/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/2048-beyond-4096-8192-common-mistakes/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/tr/rehber/2048-nasil-oynanir-strateji/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-2048-strategy/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/2048-nasil-oynanir-strateji/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-2048-estrategia/"/>
@@ -890,7 +1277,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/rehber/beamies-nasil-oynanir/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-beamies/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/beamies-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-beamies/"/>
@@ -899,7 +1286,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/rehber/blok-bulmaca-ipuclari/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/block-puzzle-tips-and-tricks/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/blok-bulmaca-ipuclari/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/trucos-puzle-de-bloques/"/>
@@ -907,8 +1294,26 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/block-puzzle-tips-and-tricks/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/tr/rehber/blok-bulmaca-kombo-ve-yuksek-skor-stratejisi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/block-puzzle-combos-and-high-score-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/blok-bulmaca-kombo-ve-yuksek-skor-stratejisi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/puzle-de-bloques-combos-y-estrategia-de-puntuacion/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/quebra-cabeca-de-blocos-combos-e-estrategia-de-pontuacao/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/block-puzzle-combos-and-high-score-strategy/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/rehber/freecell-nasil-oynanir-strateji/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-freecell-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/freecell-nasil-oynanir-strateji/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-freecell-estrategia/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-freecell-estrategia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-freecell-strategy/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/tr/rehber/grumblings-nasil-oynanir-labirent-bulmacasi/</loc>
-    <lastmod>2026-11-07</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-grumblings-maze-puzzle/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/grumblings-nasil-oynanir-labirent-bulmacasi/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-grumblings-puzle-de-laberinto/"/>
@@ -916,8 +1321,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-grumblings-maze-puzzle/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/tr/rehber/kaydirmali-park-bulmacasi-nasil-cozulur/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-solve-sliding-parking-puzzles/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/kaydirmali-park-bulmacasi-nasil-cozulur/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-resolver-puzles-de-deslizar-vehiculos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-resolver-quebra-cabecas-de-deslizar-veiculos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-solve-sliding-parking-puzzles/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/tr/rehber/klondike-solitaire-nasil-oynanir/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-klondike-solitaire/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/klondike-solitaire-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-solitario-klondike/"/>
@@ -926,7 +1340,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/rehber/kurbaga-ziplatma-stratejisi-peg-solitaire/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/frog-hops-peg-solitaire-strategy/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/kurbaga-ziplatma-stratejisi-peg-solitaire/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/saltos-de-ranas-estrategia-solitario-de-fichas/"/>
@@ -934,8 +1348,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/frog-hops-peg-solitaire-strategy/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/tr/rehber/kutu-itme-bulmacasi-stratejisi-kilitlenmeden-kacin/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/box-pushing-puzzle-strategy-avoid-deadlocks/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/kutu-itme-bulmacasi-stratejisi-kilitlenmeden-kacin/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/estrategia-puzle-de-empujar-cajas-evita-bloqueos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/estrategia-quebra-cabeca-de-empurrar-caixas-evite-travamentos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/box-pushing-puzzle-strategy-avoid-deadlocks/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/tr/rehber/mahjong-solitaire-nasil-oynanir/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-mahjong-solitaire/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/mahjong-solitaire-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-mahjong-solitario/"/>
@@ -943,8 +1366,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-mahjong-solitaire/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/tr/rehber/mahjong-solitaire-takildim-hangi-tasi-once-almali/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/mahjong-solitaire-stuck-which-tile-first/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/mahjong-solitaire-takildim-hangi-tasi-once-almali/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/mahjong-solitario-atascado-que-ficha-quitar-primero/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/mahjong-paciencia-travado-qual-peca-tirar-primeiro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/mahjong-solitaire-stuck-which-tile-first/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/tr/rehber/ok-bulmacasi-nasil-oynanir/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-arrow-puzzle/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/ok-bulmacasi-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-puzle-de-flechas/"/>
@@ -952,8 +1384,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-arrow-puzzle/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/tr/rehber/spider-solitaire-nasil-oynanir/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-spider-solitaire/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/spider-solitaire-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-solitario-spider/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-paciencia-spider/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-spider-solitaire/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/tr/rehber/tac-ikiz-yol-bulmacalari-nasil-cozulur/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-solve-crown-twin-path-puzzles/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/tac-ikiz-yol-bulmacalari-nasil-cozulur/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-resolver-corona-gemelos-camino/"/>
@@ -961,8 +1402,26 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-solve-crown-twin-path-puzzles/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/tr/rehber/tas-baglama-bulmacasi-nasil-oynanir/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/tile-connect-puzzle-how-to-play/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/tas-baglama-bulmacasi-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-conectar-fichas-puzle/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-conectar-pecas-quebra-cabeca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/tile-connect-puzzle-how-to-play/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/rehber/tripeaks-solitaire-nasil-oynanir/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-tripeaks-solitaire/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/tripeaks-solitaire-nasil-oynanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-solitario-tripeaks/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-paciencia-tripeaks/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-tripeaks-solitaire/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/tr/rehber/uykucu-yuzler-stratejisi-isiklari-kovala/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/sleepy-faces-strategy-chase-the-lights/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/uykucu-yuzler-stratejisi-isiklari-kovala/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/caras-dormilonas-estrategia-perseguir-las-luces/"/>
@@ -971,7 +1430,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/rehber/xox-yenilmez-strateji/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/xox-yenilmez-strateji/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/tres-en-raya-estrategia-para-no-perder/"/>
@@ -1020,6 +1479,51 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/whereami/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/whereami/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/whereami/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/yazilar/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tahtasi-cozulebilir-nasil-garanti-ederiz/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-we-guarantee-mahjong-solitaire-is-solvable/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tahtasi-cozulebilir-nasil-garanti-ederiz/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/como-garantizamos-que-un-mahjong-solitario-tenga-solucion/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-we-guarantee-mahjong-solitaire-is-solvable/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tarihi-ve-klasik-mahjong-farki/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/mahjong-solitaire-history-vs-real-mahjong/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tarihi-ve-klasik-mahjong-farki/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/historia-mahjong-solitario-y-diferencias-con-mahjong/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/mahjong-solitaire-history-vs-real-mahjong/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/turksail/</loc>

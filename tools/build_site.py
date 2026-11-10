@@ -21,4 +21,6 @@ run(os.path.join(T, "gen_home.py"), "--yayin")
 run(os.path.join(T, "gen_site.py"))
 if os.path.exists(os.path.join(T, "gen_guides.py")):
     run(os.path.join(T, "gen_guides.py"))
+if os.path.exists(os.path.join(T, "gen_blog.py")):
+    run(os.path.join(T, "gen_blog.py"))
 run(os.path.join(T, "i18n_split.py"))

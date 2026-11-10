@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How a Daily Puzzle Can Be the Same for Everyone, No Server</title>
+<meta name="description" content="How a game can give every player the same daily puzzle without a server: date seeds, deterministic randomness, time zones and what cheating looks like.">
+<link rel="canonical" href="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="How a Daily Puzzle Can Be the Same for Everyone, No Server">
+<meta property="og:description" content="How a game can give every player the same daily puzzle without a server: date seeds, deterministic randomness, time zones and what cheating looks like.">
+<meta property="og:url" content="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How a Daily Puzzle Can Be the Same for Everyone, No Server">
+<meta name="twitter:description" content="How a game can give every player the same daily puzzle without a server: date seeds, deterministic randomness, time zones and what cheating looks like.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "How a Daily Puzzle Can Be the Same for Everyone, No Server", "description": "How a game can give every player the same daily puzzle without a server: date seeds, deterministic randomness, time zones and what cheating looks like.", "inLanguage": "en", "mainEntityOfPage": "https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-10", "dateModified": "2026-11-10", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nrazon.github.io/blog/"}, {"@type": "ListItem", "position": 3, "name": "How a Daily Puzzle Can Be the Same for Everyone, No Server", "item": "https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does a daily challenge need an internet connection?", "acceptedAnswer": {"@type": "Answer", "text": "In our games, no. The puzzle is built on your phone from the date, so it works offline."}}, {"@type": "Question", "name": "Will my friend in another country get the same puzzle today?", "acceptedAnswer": {"@type": "Answer", "text": "Usually yes, but a new day starts at each player's own midnight, so someone far away may be a day ahead or behind."}}, {"@type": "Question", "name": "Can someone cheat by changing the phone's clock?", "acceptedAnswer": {"@type": "Answer", "text": "They can open another day's puzzle. Without a server the game trusts the phone's date, so we treat the daily as a friendly challenge."}}, {"@type": "Question", "name": "What is a seed?", "acceptedAnswer": {"@type": "Answer", "text": "A starting number for a random number generator. The same seed always gives the same sequence, which is how different devices build the same puzzle."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/how-daily-puzzles-work-without-a-server/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/puzle-diario-igual-para-todos-sin-servidor/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>How a Daily Puzzle Can Be the Same for Everyone, No Server</h1>
+    <p class="by">By Nesim Razon, independent Android developer · 2026-11-10</p>
+    <p class="lead">Many puzzle games offer a daily challenge that is identical for every player, so you can compare scores with friends. It sounds like it needs a server that hands out the puzzle. It does not. Here is how we do it in our own games, and where the limits are.</p>
+    <h2>The idea: the date is the puzzle</h2>
+    <p>A computer cannot produce truly random numbers on its own. A random number generator is a recipe: you give it a starting number, called a seed, and it produces a long sequence that looks random. The important part is that the same seed always produces exactly the same sequence.</p>
+    <p>That is the whole trick. If every phone turns today&#x27;s date into a number and uses that number as the seed, every phone builds the same shuffle, the same pieces or the same layout. Nobody has to send anything. The date works as the shared secret that everyone already has.</p>
+    <p>In practice the games do not use the raw date as a recipe on its own. They mix it with a few more numbers, such as a puzzle type or a board size, so that different puzzles on the same day do not become copies of each other.</p>
+    <h2>What our games actually do</h2>
+    <p>Cubbles turns the local date into a single number in the form year, month, day, for example 20261110, and uses it as the seed for the pieces. Each set of three pieces is drawn from a generator that is started from that day number, the number of the set, and an attempt counter. So the first set of the day is always the same, and so is the second, and so on.</p>
+    <p>Cardles uses the day number as the seed for its deals. The shuffling code in the game is its own small, portable random generator, written so that the same seed gives the same deal on every device and every Android version. The type of game also rotates with the calendar, so the daily challenge cycles through four different solitaire games.</p>
+    <p>Logiclings builds a pack of three puzzles each day. Its seed combines the day count with the puzzle type and size, and the type rotates through the five kinds of puzzle so each one comes around regularly. Pentolings picks its daily fitting puzzle from a fixed pool of medium levels using the day count, and its daily falling-blocks round uses a seed derived from the day.</p>
+    <h2>Why deterministic randomness is enough</h2>
+    <p>The word deterministic means that the result depends only on the inputs. A shuffle that starts from the same seed and goes through the same steps cannot come out differently. As long as the code that builds the puzzle is identical on every phone, the puzzle is identical too.</p>
+    <p>This also means that a good daily puzzle is mostly about the builder, not the delivery. In Cardles, for example, a deal is not accepted blindly. Some deals are impossible to win, so the game checks the daily deal and, if it is stuck or cannot be won, tries the next nearby seed in a fixed order. Every phone follows the same order, so every phone ends up on the same deal.</p>
+    <p>Cubbles does something similar. A set of three pieces has to be placeable together, so the game tries up to forty seeded attempts and uses the first one that works. We will come back to what that means for fairness in a moment.</p>
+    <h2>Time zones: whose midnight?</h2>
+    <p>Without a server there is no single clock that decides when a new day starts. Our games use the date on your own phone. When it is already tomorrow in Sydney, a player in Los Angeles is still on today&#x27;s puzzle. Both are correct for their own calendar.</p>
+    <p>For a single player this is the friendliest choice. The new puzzle appears at your own midnight, and your streak follows your own days. The cost is that a global daily comparison is slightly fuzzy: two people can be playing different days at the same moment.</p>
+    <p>A streak is calculated the same way. A streak counts consecutive local days, and the game is forgiving: if you have not played yet today, yesterday still keeps the streak alive until the day is over.</p>
+    <h2>Same puzzle, mostly</h2>
+    <p>In the strictest sense a seeded puzzle is identical only if every step depends on the seed and nothing else. Cubbles is an honest example of where that is not quite true. The check that each set of pieces can be placed depends on the state of your board. If an attempt does not fit your board, the game moves to the next attempt, so two players can occasionally see a different set of pieces. Most of the time the first attempt works and everyone sees the same ones, which is why we describe the daily game as the same for nearly everyone rather than for everyone.</p>
+    <p>There is another small caveat for puzzles that are picked from a list. If an update changes the list of levels, the pick for a given day can change with it. Players on different versions may then see different puzzles for a few days.</p>
+    <p>These are the kinds of details worth deciding on purpose. Either the puzzle depends on nothing but the seed, or you accept a small difference and say so.</p>
+    <h2>Cheating, clocks and what no server costs you</h2>
+    <p>The price of skipping a server is trust. The game believes the date on your phone. If you change the clock, you can open another day&#x27;s puzzle. For a game played for fun, with scores that are shared as a friendly challenge, we think that is an acceptable trade. A server that checks every score would need accounts, storage and care for people&#x27;s data, and it would be one more thing that can break.</p>
+    <p>Scores that go to a leaderboard are reported by the app. A determined person can send a number the game did not earn, and the app cannot fully prevent that. That is why we treat leaderboards as a game between friends and not as a contest with prizes.</p>
+    <p>If you ever build one, decide early what the daily puzzle must never depend on. Keep it to the seed, test that two devices produce the same result, and keep the rule that builds the puzzle frozen. If you must change the builder, change it with a new version of the daily and not silently, or yesterday&#x27;s puzzle will no longer match.</p>
+    
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Does a daily challenge need an internet connection?</summary><p>In our games, no. The puzzle is built on your phone from the date, so it works offline.</p></details><details><summary>Will my friend in another country get the same puzzle today?</summary><p>Usually yes, but a new day starts at each player&#x27;s own midnight, so someone far away may be a day ahead or behind.</p></details><details><summary>Can someone cheat by changing the phone&#x27;s clock?</summary><p>They can open another day&#x27;s puzzle. Without a server the game trusts the phone&#x27;s date, so we treat the daily as a friendly challenge.</p></details><details><summary>What is a seed?</summary><p>A starting number for a random number generator. The same seed always gives the same sequence, which is how different devices build the same puzzle.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/how-we-guarantee-mahjong-solitaire-is-solvable/"><img src="/tilelings/icon.png" alt="" width="48" height="48"><div><b>How We Guarantee a Mahjong Solitaire Board Is Solvable</b></div></a></li><li><a href="/blog/mahjong-solitaire-history-vs-real-mahjong/"><img src="/tilelings/icon.png" alt="" width="48" height="48"><div><b>Mahjong Solitaire History and How It Differs From Mahjong</b></div></a></li><li><a href="/blog/how-puzzle-levels-are-generated-and-checked/"><img src="/logo.svg" alt="" width="48" height="48"><div><b>How Hundreds of Puzzle Levels Are Generated and Checked</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

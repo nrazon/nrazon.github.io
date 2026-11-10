@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cómo se generan y verifican cientos de niveles de puzle</title>
+<meta name="description" content="Cómo crean los juegos de puzles cientos de niveles sin dibujarlos a mano: generadores, solucionadores, medir la dificultad, ir hacia atrás y escalada.">
+<link rel="canonical" href="https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Cómo se generan y verifican cientos de niveles de puzle">
+<meta property="og:description" content="Cómo crean los juegos de puzles cientos de niveles sin dibujarlos a mano: generadores, solucionadores, medir la dificultad, ir hacia atrás y escalada.">
+<meta property="og:url" content="https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cómo se generan y verifican cientos de niveles de puzle">
+<meta name="twitter:description" content="Cómo crean los juegos de puzles cientos de niveles sin dibujarlos a mano: generadores, solucionadores, medir la dificultad, ir hacia atrás y escalada.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Cómo se generan y verifican cientos de niveles de puzle", "description": "Cómo crean los juegos de puzles cientos de niveles sin dibujarlos a mano: generadores, solucionadores, medir la dificultad, ir hacia atrás y escalada.", "inLanguage": "es", "mainEntityOfPage": "https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-10", "dateModified": "2026-11-10", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/es/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nrazon.github.io/es/blog/"}, {"@type": "ListItem", "position": 3, "name": "Cómo se generan y verifican cientos de niveles de puzle", "item": "https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Cómo se sabe que un nivel generado se puede resolver?", "acceptedAnswer": {"@type": "Answer", "text": "Primero lo juega un solucionador. Algunos generadores además construyen los niveles hacia atrás desde la posición final, por lo que son resolubles por construcción."}}, {"@type": "Question", "name": "¿Qué es la escalada en el diseño de niveles?", "acceptedAnswer": {"@type": "Answer", "text": "Hacer un cambio pequeño en un nivel, medirlo otra vez y conservar el cambio solo si el nivel se volvió más difícil. Repetirlo muchas veces da niveles mucho más difíciles que los aleatorios."}}, {"@type": "Question", "name": "¿Por qué no generar los niveles mientras corre el juego?", "acceptedAnswer": {"@type": "Answer", "text": "Los niveles difíciles pueden tardar varios segundos en crearse. Generarlos antes da a todos los jugadores los mismos niveles y nadie espera."}}, {"@type": "Question", "name": "¿Un solucionador dice si un nivel es divertido?", "acceptedAnswer": {"@type": "Answer", "text": "No. Mide cosas como la longitud de la solución y los callejones sin salida. Una persona tiene que jugar el nivel para juzgarlo."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/how-puzzle-levels-are-generated-and-checked/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/" hreflang="es" data-lang="es" aria-current="page">ES</a><a href="/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/es/">Nesim Apps</a> › <a href="/es/blog/">Blog</a></nav>
+    <h1>Cómo se generan y verifican cientos de niveles de puzle</h1>
+    <p class="by">Por Nesim Razon, desarrollador Android independiente · 2026-11-10</p>
+    <p class="lead">Dibujar a mano un juego de puzles de 300 o 400 niveles llevaría meses, y un solo nivel imposible de resolver rompe la confianza del jugador. Dejamos que el ordenador construya los niveles y después demostramos que cada uno se puede resolver. Así funciona en nuestros propios juegos.</p>
+    <h2>Dos programas: un generador y un solucionador</h2>
+    <p>Casi todo puzle generado necesita dos piezas de código. El generador propone un nivel: una disposición de muros, piezas o pistas. El solucionador juega el nivel por sí solo e informa de si se puede terminar, en cuántos movimientos y, a veces, de cuántas maneras distintas.</p>
+    <p>El más importante de los dos es el solucionador. El generador puede ser descuidado, porque todo lo que produce se comprueba. Un nivel solo entra en el juego si el solucionador confirma que funciona. En varios de nuestros juegos el solucionador es una simple búsqueda en anchura sobre todas las posiciones que puede alcanzar el puzle, lenta en un puzle grande pero exacta en un tablero pequeño.</p>
+    <p>El solucionador también da algo que un probador humano no puede dar: un número. La longitud de la solución más corta mide lo largo que es el puzle, y es el punto de partida para juzgar la dificultad.</p>
+    <h2>Ir hacia atrás desde un tablero resuelto</h2>
+    <p>Adivinar una disposición al azar y esperar que se pueda resolver desperdicia mucho trabajo. Una forma más inteligente es partir del estado terminado y deshacer movimientos. Si cada paso que das hacia atrás es un movimiento legal jugado al revés, la posición a la que llegas es resoluble con seguridad: basta volver a jugar los movimientos hacia delante.</p>
+    <p>Beamies se diseñó así. El generador construye un candidato resoluble trabajando hacia atrás, y el solucionador se usa sobre todo para medir su dificultad. Nudgelings emplea la misma idea en su modo de empujar cajas: genera los niveles jugando al revés, tirando en lugar de empujar, de modo que el nivel es resoluble por construcción. Su modo de vehículos deslizantes sigue otro camino: el generador examina todas las posiciones conectadas con una disposición inicial y busca hacia atrás desde las salidas, lo que da la solución más corta exacta de todas las posiciones de una vez.</p>
+    <p>Trabajar hacia atrás da una garantía, pero no da un buen puzle. Un nivel hecho con unos pocos pasos inversos al azar suele ser demasiado fácil. Ahí entra la medición.</p>
+    <h2>Medir la dificultad</h2>
+    <p>La dificultad no tiene una definición única, pero algunas medidas funcionan bien. La más simple es la longitud de la solución más corta. Lo más largo suele sentirse más difícil, porque hay más movimientos que acertar y más sitios donde equivocarse.</p>
+    <p>En Beamies medimos el número mínimo de arrastres con una búsqueda que encuentra la solución más barata. A los niveles se les da un objetivo para ese número que sube con el nivel, con un suave diente de sierra dentro de cada mundo: un nivel más fácil después de uno difícil y uno más duro al final. Nudgelings tiene un plan parecido. Sus niveles de vehículos deslizantes apuntan a unos 3 movimientos al principio, 10 hacia el nivel 20 y más de 40 hacia el final de los 200 niveles, y el modo de empujar tiene su propia curva más baja, medida en empujes.</p>
+    <p>Otras medidas captan algo distinto. Grumblings analiza el grafo completo de posiciones y comprueba, por ejemplo, cuántas de las posiciones alcanzables son callejones sin salida y con qué frecuencia el monstruo queda cerca del héroe. Un nivel en el que la mayoría de los caminos son trampas se siente muy distinto de otro en el que casi todos son seguros, aunque la solución más corta tenga la misma longitud.</p>
+    <p>Logiclings tiene un evaluador para sus puzles de coronas que los resuelve con los tipos de razonamiento que usa una persona, desde una única casilla posible hasta probar una suposición y descubrir una contradicción. El puzle recibe el nivel de técnica más bajo que basta para resolverlo.</p>
+    <h2>Escalada: mejorar un nivel con cambios pequeños</h2>
+    <p>Un nivel al azar suele ser fácil. Para conseguir niveles más difíciles usamos la escalada. Toma un nivel, cambia una cosa pequeña, como mover un muro, un alienígena o un vehículo, y vuelve a medirlo. Si el nivel se volvió más difícil, conserva el cambio. Si no, descártalo. Repite cientos de veces.</p>
+    <p>Es simple y funciona. En Beamies, la solución más corta de un candidato típico pasó de 4 arrastres a entre 10 y 19 después de unos cientos de pasos de escalada. Nudgelings añadió la misma idea a sus dos modos cuando sus primeros niveles resultaron demasiado planos para los jugadores. Logiclings usa una versión en sus puzles de coronas: el generador mueve los límites entre regiones en el sentido que deja menos soluciones, hasta que el puzle tiene exactamente una.</p>
+    <p>La escalada tiene un límite. Puede quedarse atascada en una colina pequeña cuando existe un nivel mejor muy lejos, y un nivel puede volverse difícil de forma aburrida, por ejemplo con una larga secuencia forzada. Por eso también elegimos entre varios candidatos y miramos los resultados en un dispositivo real.</p>
+    <h2>Una sola respuesta: unicidad</h2>
+    <p>Algunos puzles deben tener exactamente una solución; si no, el jugador puede hacerlo todo bien y aun así oír que se equivoca. Es el caso de varios de nuestros puzles de lógica. El solucionador está escrito para contar soluciones y se detiene en cuanto encuentra una segunda.</p>
+    <p>Logiclings construye su puzle de dos colores a partir de un tablero completo y luego quita pistas y marcas una a una, conservando cada eliminación solo si el solucionador sigue encontrando una única respuesta. El puzle de caminos parte de un recorrido completo por todas las casillas, conserva solo los números necesarios para que ese recorrido sea el único y añade algunos más en los ajustes fáciles.</p>
+    <p>Fíjate en que unicidad y dificultad tiran en direcciones opuestas. Menos pistas dan un puzle más difícil, pero con muy pocas se pierde la respuesta única. El solucionador es lo que nos permite llegar justo hasta ese borde.</p>
+    <h2>Generar antes y verificar cada nivel</h2>
+    <p>Generar un nivel difícil puede ser lento. En Beamies, crear algunos niveles avanzados mientras el juego estaba en marcha tardaba más de 8 segundos, demasiado para hacer esperar a un jugador. Por eso los 400 niveles se construyen de antemano en un ordenador y se guardan en la aplicación como un archivo. Cada móvil carga entonces exactamente los mismos niveles al instante. Grumblings hace lo mismo con sus 300 niveles, que se generan juntos en menos de un minuto y se eligen de un conjunto de candidatos según su puntuación de dificultad.</p>
+    <p>Nada entra sin comprobar. Una prueba de Grumblings abre todos los niveles del paquete y reproduce la solución guardada con las reglas reales del juego, y una prueba de Nudgelings comprueba sus dos paquetes con el solucionador. Si un nivel falla, falla la compilación. Si cambian las reglas, el paquete se genera de nuevo.</p>
+    <p>La última comprobación es humana. Un ordenador puede decirte que un nivel es resoluble y lo largo que es. No puede decirte si es divertido. Jugamos los niveles en un móvil, y ahí se ajusta la curva.</p>
+    <h2>Errores que cometimos</h2>
+    <p>Medir nos ayudó a detectar problemas reales. En una prueba temprana con jugadores de Nudgelings se vio que los niveles de vehículos no se sentían más difíciles hasta el nivel 27, así que se generó de nuevo todo el paquete con una curva más empinada y mecánicas nuevas.</p>
+    <p>Los solucionadores también necesitan límites. Una búsqueda que no da problemas al generar puede agotar la memoria en un móvil. Una pista y una comprobación de bloqueo de Beamies usaban un solucionador sin límite de memoria, y un nivel grande lo hizo fallar. Ahora ejecutamos esas búsquedas con un presupuesto.</p>
+    <p>Un puzle generado vale lo que vale la regla que mide. Si mides lo equivocado, construyes una máquina muy eficiente que produce los niveles equivocados.</p>
+    
+    <section class="faq"><h2>Preguntas frecuentes</h2><details><summary>¿Cómo se sabe que un nivel generado se puede resolver?</summary><p>Primero lo juega un solucionador. Algunos generadores además construyen los niveles hacia atrás desde la posición final, por lo que son resolubles por construcción.</p></details><details><summary>¿Qué es la escalada en el diseño de niveles?</summary><p>Hacer un cambio pequeño en un nivel, medirlo otra vez y conservar el cambio solo si el nivel se volvió más difícil. Repetirlo muchas veces da niveles mucho más difíciles que los aleatorios.</p></details><details><summary>¿Por qué no generar los niveles mientras corre el juego?</summary><p>Los niveles difíciles pueden tardar varios segundos en crearse. Generarlos antes da a todos los jugadores los mismos niveles y nadie espera.</p></details><details><summary>¿Un solucionador dice si un nivel es divertido?</summary><p>No. Mide cosas como la longitud de la solución y los callejones sin salida. Una persona tiene que jugar el nivel para juzgarlo.</p></details></section>
+    <section><h2>Más del blog</h2><ul class="glist"><li><a href="/es/blog/como-garantizamos-que-un-mahjong-solitario-tenga-solucion/"><img src="/tilelings/icon.png" alt="" width="48" height="48"><div><b>Cómo garantizamos que un Mahjong Solitario tenga solución</b></div></a></li><li><a href="/es/blog/historia-mahjong-solitario-y-diferencias-con-mahjong/"><img src="/tilelings/icon.png" alt="" width="48" height="48"><div><b>Historia del Mahjong Solitario y su diferencia con el Mahjong</b></div></a></li><li><a href="/es/blog/puzle-diario-igual-para-todos-sin-servidor/"><img src="/logo.svg" alt="" width="48" height="48"><div><b>Cómo dar el mismo puzle diario a todos sin un servidor</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

@@ -31,6 +31,11 @@
 - [TurkSail](https://nrazon.github.io/turksail/): Sailing and sea news, race results and articles from turksail.com (in Turkish).
 - [MedyaFobi](https://nrazon.github.io/medyafobi/): Media relations, crisis communication and speaking trainings from medyafobi.com (in Turkish).
 
+## Guides and blog
+
+- [How-to-play guides](https://nrazon.github.io/guides/): rules, tips and strategy for Mahjong Solitaire, tile connect, Klondike, Spider, FreeCell, TriPeaks, block puzzles, 2048, Tic-Tac-Toe, sliding-vehicle and box-pushing puzzles and more. Also in Turkish (/tr/rehber/), Spanish (/es/guias/) and Portuguese (/pt/guias/).
+- [Blog](https://nrazon.github.io/blog/): developer notes on how puzzle levels are generated and verified, how daily puzzles work without a server, and puzzle game history. Also in Turkish (/tr/yazilar/), Spanish (/es/blog/) and Portuguese (/pt/blog/).
+
 ## Policies
 
 - Each app has a privacy policy at /<app>/privacy.html and terms of use at /<app>/terms.html.

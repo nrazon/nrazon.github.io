@@ -43,6 +43,7 @@ T = {
     "nav_apps": {"tr": "Uygulamalar", "en": "Apps", "es": "Apps", "pt": "Apps"},
     "nav_about": {"tr": "Hakkımda", "en": "About", "es": "Acerca de", "pt": "Sobre"},
     "nav_guides": {"tr": "Rehberler", "en": "Guides", "es": "Guías", "pt": "Guias"},
+    "nav_blog": {"tr": "Yazılar", "en": "Blog", "es": "Blog", "pt": "Blog"},
     "h_games": {"tr": "Oyunlar", "en": "Games", "es": "Juegos", "pt": "Jogos"},
     "h_games_sub": {"tr": "Kısa molalar için, uzun süre bırakamayacağın oyunlar. Hepsi ücretsiz.", "en": "Games for short breaks you won't want to put down. All free.",
                     "es": "Juegos para pausas cortas que no querrás soltar. Todos gratis.", "pt": "Jogos para pausas curtas que você não vai querer largar. Todos grátis."},
@@ -240,7 +241,7 @@ CSS = r'''
   .logo { width:40px; height:40px; border-radius:10px; flex:none; }
   .brand b { font-size:22px; font-weight:900; letter-spacing:-.01em; }
   .topr { display:flex; flex-wrap:wrap; align-items:center; gap:4px 6px; }
-  .topr nav { display:flex; gap:2px; }
+  .topr nav { display:flex; flex-wrap:wrap; gap:2px; }
   .topr nav a { color:var(--dim); text-decoration:none; font-weight:600; font-size:15px; padding:8px 12px; border-radius:999px; }
   .topr nav a:hover { color:var(--text); background:var(--chip); }
   .lang { display:flex; background:var(--card); border-radius:999px; padding:4px; flex:none; box-shadow:var(--shadow); }
@@ -455,7 +456,7 @@ def build(preview):
   <div class="top">
     <a class="brand" href="#top"><img class="logo" src="logo.svg" alt="Nesim Apps logo" width="40" height="40"><b>Nesim Apps</b></a>
     <div class="topr">
-      <nav aria-label="Menu"><a href="#games">{L(T["nav_games"])}</a><a href="#apps">{L(T["nav_apps"])}</a><a href="guides/" data-guides-index>{L(T["nav_guides"])}</a><a href="#about">{L(T["nav_about"])}</a></nav>
+      <nav aria-label="Menu"><a href="#games">{L(T["nav_games"])}</a><a href="#apps">{L(T["nav_apps"])}</a><a href="guides/" data-guides-index>{L(T["nav_guides"])}</a><a href="blog/" data-blog-index>{L(T["nav_blog"])}</a><a href="#about">{L(T["nav_about"])}</a></nav>
       <div class="lang" role="group" aria-label="Language / Dil">
         <button type="button" data-lang="tr" onclick="setLang('tr')">TR</button>
         <button type="button" data-lang="en" onclick="setLang('en')">EN</button>

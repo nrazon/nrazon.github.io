@@ -27,7 +27,7 @@ MARK = "<!--i18n-split-->"
 LANGS = ["en", "tr", "es", "pt", "fr"]
 LABEL = {"tr": "TR", "en": "EN", "es": "ES", "pt": "PT", "fr": "FR"}
 OGLOC = {"en": "en_US", "tr": "tr_TR", "es": "es_ES", "pt": "pt_BR", "fr": "fr_CA"}
-SKIP_DIRS = {"tools", "qr", "badges", "node_modules", ".git", ".github", "playreports", "tr", "es", "pt", "fr", "guides", "rehber", "guias"}
+SKIP_DIRS = {"tools", "qr", "badges", "node_modules", ".git", ".github", "playreports", "tr", "es", "pt", "fr", "guides", "rehber", "guias", "blog", "yazilar"}
 SOCIAL = ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]
 
 SUFFIX = {
@@ -143,7 +143,7 @@ def rewrite_url(val, page_dir, lang, plan):
     return ab + rest if slug else "/" + rest
 
 
-def process_source(rel, plan, guides, registry, pagedata, lastmod, today, guides_idx=None):
+def process_source(rel, plan, guides, registry, pagedata, lastmod, today, guides_idx=None, blog_idx=None):
     path = os.path.join(G, rel)
     text = read(path)
     if MARK in text:
@@ -304,6 +304,11 @@ def process_source(rel, plan, guides, registry, pagedata, lastmod, today, guides
             if gi:
                 a["href"] = gi
             del a["data-guides-index"]
+        for a in soup.find_all(attrs={"data-blog-index": True}):  # ana sayfa menüsü: blog dizini (dile göre)
+            bi = (blog_idx or {}).get(lang)
+            if bi:
+                a["href"] = bi
+            del a["data-blog-index"]
         # 7a) marka (Nesim Apps) bağlantıları her zaman kök "/" (varsayılan sayfa)
         for t in soup.find_all("a", class_=["brand", "back"]):
             t["href"] = "/"
@@ -389,6 +394,7 @@ def main():
     _gp = load_json(os.path.join(TOOLS, "_guides_pages.json"), {})
     guides = _gp.get("by_app", {})
     guides_idx = _gp.get("index", {})
+    blog_idx = load_json(os.path.join(TOOLS, "_blog_pages.json"), {}).get("index", {})
     plan = build_plan(sources, pagedata)
     # işlenmiş sayfaların da planda olması için (idempotent yeniden çalışma): önceki plan kaydı
     prev = load_json(os.path.join(TOOLS, "_plan.json"), {})
@@ -400,7 +406,7 @@ def main():
     for rel in sources:
         if MARK in read(os.path.join(G, rel)):
             continue
-        process_source(rel, plan, guides, registry, pagedata, lastmod, today, guides_idx)
+        process_source(rel, plan, guides, registry, pagedata, lastmod, today, guides_idx, blog_idx)
         done += 1
     json.dump(plan, open(os.path.join(TOOLS, "_plan.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     if done:
@@ -423,6 +429,7 @@ def write_sitemap(lastmod, today):
     reg = load_json(os.path.join(TOOLS, "_registry.json"), {})
     guides = load_json(os.path.join(TOOLS, "_guides_pages.json"), {}).get("pages", [])
     entries = list(reg.values())
+    guides = guides + load_json(os.path.join(TOOLS, "_blog_pages.json"), {}).get("pages", [])
     for g in guides:  # {"url","loc":{lang:url},"hash"}
         entries.append(g)
     xml = ['<?xml version="1.0" encoding="UTF-8"?>',

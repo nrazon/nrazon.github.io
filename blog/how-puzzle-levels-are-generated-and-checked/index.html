@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Hundreds of Puzzle Levels Are Generated and Checked</title>
+<meta name="description" content="How puzzle games create hundreds of levels without drawing each by hand: generators, solvers, measuring difficulty, working backwards and hill climbing.">
+<link rel="canonical" href="https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="How Hundreds of Puzzle Levels Are Generated and Checked">
+<meta property="og:description" content="How puzzle games create hundreds of levels without drawing each by hand: generators, solvers, measuring difficulty, working backwards and hill climbing.">
+<meta property="og:url" content="https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Hundreds of Puzzle Levels Are Generated and Checked">
+<meta name="twitter:description" content="How puzzle games create hundreds of levels without drawing each by hand: generators, solvers, measuring difficulty, working backwards and hill climbing.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "How Hundreds of Puzzle Levels Are Generated and Checked", "description": "How puzzle games create hundreds of levels without drawing each by hand: generators, solvers, measuring difficulty, working backwards and hill climbing.", "inLanguage": "en", "mainEntityOfPage": "https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-10", "dateModified": "2026-11-10", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nrazon.github.io/blog/"}, {"@type": "ListItem", "position": 3, "name": "How Hundreds of Puzzle Levels Are Generated and Checked", "item": "https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do you know a generated level can be solved?", "acceptedAnswer": {"@type": "Answer", "text": "A solver plays it first. Some generators also build levels by working backwards from the finished position, so they are solvable by construction."}}, {"@type": "Question", "name": "What is hill climbing in level design?", "acceptedAnswer": {"@type": "Answer", "text": "Making one small change to a level, measuring it again and keeping the change only if the level got harder. Repeating it many times produces much harder levels than random ones."}}, {"@type": "Question", "name": "Why not generate levels while the game runs?", "acceptedAnswer": {"@type": "Answer", "text": "Hard levels can take several seconds to make. Building them ahead of time means every player gets the same levels and no one waits."}}, {"@type": "Question", "name": "Does a solver tell you if a level is fun?", "acceptedAnswer": {"@type": "Answer", "text": "No. It measures things like solution length and dead ends. A person still has to play the level to judge it."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/how-puzzle-levels-are-generated-and-checked/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>How Hundreds of Puzzle Levels Are Generated and Checked</h1>
+    <p class="by">By Nesim Razon, independent Android developer · 2026-11-10</p>
+    <p class="lead">A puzzle game with 300 or 400 levels would take months to draw by hand, and a single unsolvable level ruins the trust of a player. We let the computer build the levels and then prove each one can be solved. This is how that works in our own games.</p>
+    <h2>Two programs: a generator and a solver</h2>
+    <p>Almost every generated puzzle needs two pieces of code. The generator proposes a level: a layout of walls, pieces or clues. The solver then plays the level by itself and reports whether it can be finished, in how many moves, and sometimes how many ways there are to do it.</p>
+    <p>The solver is the more important of the two. A generator can be sloppy, because anything it produces gets checked. A level only goes into the game if the solver confirms it works. In several of our games the solver is a plain breadth first search over every position the puzzle can reach, which is slow in a big puzzle but exact on a small board.</p>
+    <p>A solver also gives us something a human tester cannot: a number. The shortest solution length is a measurement of how long the puzzle is, and that is the starting point for judging difficulty.</p>
+    <h2>Working backwards from a solved board</h2>
+    <p>Guessing a random layout and hoping it can be solved wastes a lot of work. A cleverer way is to start from the finished state and undo moves. If every step you take backwards is a legal move played in reverse, the position you reach is guaranteed to be solvable: just play the moves forward again.</p>
+    <p>Beamies was designed this way. The generator builds a solvable candidate by working backwards, and the solver is then used mainly to measure how hard it is. Nudgelings uses the same idea in its crate pushing mode: it generates levels by playing the game in reverse, pulling instead of pushing, so the level is solvable by construction. Its sliding vehicle mode takes a different route. There, the generator looks at all the positions connected to a starting layout and searches backwards from the exits, which gives the exact shortest solution for every position at once.</p>
+    <p>Working backwards gives you a guarantee, but it does not give you a good puzzle. A level made by a few random reverse steps is often too easy. That is where measuring comes in.</p>
+    <h2>Measuring difficulty</h2>
+    <p>Difficulty has no single definition, but a few measurements work well. The simplest is the length of the shortest solution. Longer usually feels harder, because there are more moves to get right and more places to make a mistake.</p>
+    <p>For Beamies we measure the minimum number of drags with a search that finds the cheapest solution. The game&#x27;s levels are given a target for that number which rises with the level, with a gentle sawtooth inside each world: an easier level after a hard one, and a harder one at the end. Nudgelings has a similar plan. Its sliding vehicle levels aim for around 3 moves at the start, 10 near level 20 and more than 40 near the end of 200 levels, and the push mode has its own, lower curve measured in pushes.</p>
+    <p>Other measurements capture something different. Grumblings looks at the whole graph of positions and checks, for example, how many of the reachable positions are dead ends, and how often the monster ends up close to the hero. A level where most of the paths are traps feels very different from one where most are safe, even if the shortest solution has the same length.</p>
+    <p>Logiclings has a rater for its crown puzzles that solves them with the kinds of reasoning a person uses, from a single possible square up to trying a guess and spotting a contradiction. The puzzle gets the lowest level of technique that is enough to solve it.</p>
+    <h2>Hill climbing: improving a level by small changes</h2>
+    <p>A random level is usually easy. To get harder ones we use hill climbing. Take a level, change one small thing, such as moving a wall, an alien or a vehicle, and measure it again. If the level became harder, keep the change. If not, throw it away. Repeat hundreds of times.</p>
+    <p>This is simple and it works. In Beamies the shortest solution of a typical candidate went from 4 drags to between 10 and 19 after a few hundred steps of climbing. Nudgelings added the same idea to both of its modes after its first levels turned out too flat for players. Logiclings uses a version of it in its crown puzzles: the generator moves the borders between regions in the way that leaves fewer solutions, until the puzzle has exactly one.</p>
+    <p>Climbing has a limit. It can get stuck on a small hill when a better level exists far away, and a level can become hard in a boring way, such as a long forced sequence. That is why we also pick from several candidates and look at the results on a real device.</p>
+    <h2>One answer only: uniqueness</h2>
+    <p>Some puzzles must have exactly one solution, otherwise the player can do everything right and still be told they are wrong. This is the case for several of our logic puzzles. The solver is written to count solutions, and it stops as soon as it finds a second one.</p>
+    <p>Logiclings builds its two-colour puzzle from a complete board and then removes clues and marks one by one, keeping a removal only if the solver still finds a single answer. The path puzzle starts from a full route through every square, then keeps only the numbers needed for that route to be the only one, and adds a few extra on easier settings.</p>
+    <p>Notice that uniqueness and difficulty pull in opposite directions. Fewer clues make a harder puzzle, but too few lose the single answer. The solver is what lets us walk right up to that edge.</p>
+    <h2>Pre-generate, then verify every level</h2>
+    <p>Generating a hard level can be slow. In Beamies, making some later levels while the game is running took more than 8 seconds, which is too long to make a player wait. So the 400 levels are built ahead of time on a computer and stored in the app as a file. Every phone then loads exactly the same levels instantly. Grumblings does the same with its 300 levels, which take under a minute to generate together and are picked from a pool of candidates by how hard they score.</p>
+    <p>Nothing goes in unchecked. A test in Grumblings opens every level in the pack and replays the stored solution through the real game rules, and a test in Nudgelings checks both of its packs with the solver. If one level fails, the build fails. If the rules change, the pack is generated again.</p>
+    <p>The last check is a human one. A computer can tell you that a level is solvable and how long it is. It cannot tell you whether it is fun. We play levels on a phone, and that is where the curve gets adjusted.</p>
+    <h2>Mistakes we made</h2>
+    <p>Measuring helped us catch real problems. An early player test of Nudgelings found that its vehicle levels did not feel harder until level 27, so the whole pack was generated again with a steeper curve and new mechanics.</p>
+    <p>Solvers also need limits. A search that is fine at generation time can run out of memory on a phone. A Beamies hint and stuck-check once used a solver with no memory limit, and a large level crashed it. We now run those searches with a budget.</p>
+    <p>A generated puzzle is only as good as the rule it measures. If you measure the wrong thing, you build a very efficient machine that makes the wrong levels.</p>
+    
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>How do you know a generated level can be solved?</summary><p>A solver plays it first. Some generators also build levels by working backwards from the finished position, so they are solvable by construction.</p></details><details><summary>What is hill climbing in level design?</summary><p>Making one small change to a level, measuring it again and keeping the change only if the level got harder. Repeating it many times produces much harder levels than random ones.</p></details><details><summary>Why not generate levels while the game runs?</summary><p>Hard levels can take several seconds to make. Building them ahead of time means every player gets the same levels and no one waits.</p></details><details><summary>Does a solver tell you if a level is fun?</summary><p>No. It measures things like solution length and dead ends. A person still has to play the level to judge it.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/how-we-guarantee-mahjong-solitaire-is-solvable/"><img src="/tilelings/icon.png" alt="" width="48" height="48"><div><b>How We Guarantee a Mahjong Solitaire Board Is Solvable</b></div></a></li><li><a href="/blog/mahjong-solitaire-history-vs-real-mahjong/"><img src="/tilelings/icon.png" alt="" width="48" height="48"><div><b>Mahjong Solitaire History and How It Differs From Mahjong</b></div></a></li><li><a href="/blog/how-daily-puzzles-work-without-a-server/"><img src="/logo.svg" alt="" width="48" height="48"><div><b>How a Daily Puzzle Can Be the Same for Everyone, No Server</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

@@ -9,7 +9,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "8a419fc9e4c23506bfb38ef31da767ae",
+  "hash": "bc57d8beb24a6d02cc5578f04635ac0c",
   "slug": ""
  },
  "https://nrazon.github.io/tr/": {
@@ -22,7 +22,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "b694c6e36a465a062ba84a805484ecad",
+  "hash": "7feddfca743e81e1ab867ecb14f0ad70",
   "slug": ""
  },
  "https://nrazon.github.io/es/": {
@@ -35,7 +35,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "1eafaf715c2ee6d20a2b929a400a03c3",
+  "hash": "2cd960ceafc94d4a5099f74da53474dd",
   "slug": ""
  },
  "https://nrazon.github.io/pt/": {
@@ -48,7 +48,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "226b11012e39c075f75a052b162d0cc0",
+  "hash": "0b019a280ddfa91f14c7fd4dd34560ce",
   "slug": ""
  },
  "https://nrazon.github.io/agecalculator/": {
@@ -551,7 +551,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "0e611b961818b47900e1ddf7ede57f5e",
+  "hash": "938b68f9508399ba0739c30996f44e2e",
   "slug": "nudgelings"
  },
  "https://nrazon.github.io/tr/nudgelings/": {
@@ -564,7 +564,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "d83f232f324d658f7b4d839df8361558",
+  "hash": "c185a8ef11f8236cddb0936c27d1666a",
   "slug": "nudgelings"
  },
  "https://nrazon.github.io/es/nudgelings/": {
@@ -577,7 +577,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "7059de2f5bf0afe236702800f0b636ce",
+  "hash": "67ec33346c60513a0c60b4bb016ceda3",
   "slug": "nudgelings"
  },
  "https://nrazon.github.io/pt/nudgelings/": {
@@ -590,7 +590,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "8a83393e427eccc33f909b143227e616",
+  "hash": "9b79373f85531da77906a7aac058c264",
   "slug": "nudgelings"
  },
  "https://nrazon.github.io/nuzzlings/": {

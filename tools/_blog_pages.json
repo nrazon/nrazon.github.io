@@ -1,0 +1,230 @@
+{
+ "pages": [
+  {
+   "url": "https://nrazon.github.io/blog/how-we-guarantee-mahjong-solitaire-is-solvable/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/how-we-guarantee-mahjong-solitaire-is-solvable/",
+    "tr": "https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tahtasi-cozulebilir-nasil-garanti-ederiz/",
+    "es": "https://nrazon.github.io/es/blog/como-garantizamos-que-un-mahjong-solitario-tenga-solucion/",
+    "pt": "https://nrazon.github.io/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/"
+   },
+   "default": "en",
+   "hash": "0f8c90d1c64421e19d0f43d2f12f4c70"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tahtasi-cozulebilir-nasil-garanti-ederiz/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/how-we-guarantee-mahjong-solitaire-is-solvable/",
+    "tr": "https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tahtasi-cozulebilir-nasil-garanti-ederiz/",
+    "es": "https://nrazon.github.io/es/blog/como-garantizamos-que-un-mahjong-solitario-tenga-solucion/",
+    "pt": "https://nrazon.github.io/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/"
+   },
+   "default": "en",
+   "hash": "683a31af396d81f87462f770af549a58"
+  },
+  {
+   "url": "https://nrazon.github.io/es/blog/como-garantizamos-que-un-mahjong-solitario-tenga-solucion/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/how-we-guarantee-mahjong-solitaire-is-solvable/",
+    "tr": "https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tahtasi-cozulebilir-nasil-garanti-ederiz/",
+    "es": "https://nrazon.github.io/es/blog/como-garantizamos-que-un-mahjong-solitario-tenga-solucion/",
+    "pt": "https://nrazon.github.io/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/"
+   },
+   "default": "en",
+   "hash": "9fec935f1d29a0703b2c980447d39deb"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/how-we-guarantee-mahjong-solitaire-is-solvable/",
+    "tr": "https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tahtasi-cozulebilir-nasil-garanti-ederiz/",
+    "es": "https://nrazon.github.io/es/blog/como-garantizamos-que-un-mahjong-solitario-tenga-solucion/",
+    "pt": "https://nrazon.github.io/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/"
+   },
+   "default": "en",
+   "hash": "9cec85d02fa5c1cc08f8a50417f5cbf7"
+  },
+  {
+   "url": "https://nrazon.github.io/blog/mahjong-solitaire-history-vs-real-mahjong/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/mahjong-solitaire-history-vs-real-mahjong/",
+    "tr": "https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tarihi-ve-klasik-mahjong-farki/",
+    "es": "https://nrazon.github.io/es/blog/historia-mahjong-solitario-y-diferencias-con-mahjong/",
+    "pt": "https://nrazon.github.io/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/"
+   },
+   "default": "en",
+   "hash": "c6fe73271ce890834bbc7ef166b106c0"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tarihi-ve-klasik-mahjong-farki/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/mahjong-solitaire-history-vs-real-mahjong/",
+    "tr": "https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tarihi-ve-klasik-mahjong-farki/",
+    "es": "https://nrazon.github.io/es/blog/historia-mahjong-solitario-y-diferencias-con-mahjong/",
+    "pt": "https://nrazon.github.io/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/"
+   },
+   "default": "en",
+   "hash": "369af1b52687b0da18cf566e1ea72898"
+  },
+  {
+   "url": "https://nrazon.github.io/es/blog/historia-mahjong-solitario-y-diferencias-con-mahjong/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/mahjong-solitaire-history-vs-real-mahjong/",
+    "tr": "https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tarihi-ve-klasik-mahjong-farki/",
+    "es": "https://nrazon.github.io/es/blog/historia-mahjong-solitario-y-diferencias-con-mahjong/",
+    "pt": "https://nrazon.github.io/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/"
+   },
+   "default": "en",
+   "hash": "cda0333e2bca8bf88bf42283e8ed4d1c"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/mahjong-solitaire-history-vs-real-mahjong/",
+    "tr": "https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tarihi-ve-klasik-mahjong-farki/",
+    "es": "https://nrazon.github.io/es/blog/historia-mahjong-solitario-y-diferencias-con-mahjong/",
+    "pt": "https://nrazon.github.io/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/"
+   },
+   "default": "en",
+   "hash": "734774e680c49ab31dd43bbc8c3cd327"
+  },
+  {
+   "url": "https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/",
+    "tr": "https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/",
+    "es": "https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/",
+    "pt": "https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"
+   },
+   "default": "en",
+   "hash": "228a6d3684ba22d07d6bc17faee841a9"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/",
+    "tr": "https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/",
+    "es": "https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/",
+    "pt": "https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"
+   },
+   "default": "en",
+   "hash": "c3d5a1ffb7fdcb18adcf93449b09cba7"
+  },
+  {
+   "url": "https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/",
+    "tr": "https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/",
+    "es": "https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/",
+    "pt": "https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"
+   },
+   "default": "en",
+   "hash": "2cc15e4e9c7ed27a3f91c05c41298fec"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/",
+    "tr": "https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/",
+    "es": "https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/",
+    "pt": "https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"
+   },
+   "default": "en",
+   "hash": "83fa99fc1a07726b3e6f2bb9f35fc093"
+  },
+  {
+   "url": "https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/",
+    "tr": "https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/",
+    "es": "https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/",
+    "pt": "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"
+   },
+   "default": "en",
+   "hash": "80292a0319ca3c22faec677936463219"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/",
+    "tr": "https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/",
+    "es": "https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/",
+    "pt": "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"
+   },
+   "default": "en",
+   "hash": "221be54f588ced13429efd569dd1e74f"
+  },
+  {
+   "url": "https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/",
+    "tr": "https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/",
+    "es": "https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/",
+    "pt": "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"
+   },
+   "default": "en",
+   "hash": "70c11a2dae2d4e1d6aa7933a5826ec4b"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/",
+    "tr": "https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/",
+    "es": "https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/",
+    "pt": "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"
+   },
+   "default": "en",
+   "hash": "affe35bcfffd3a8fd317f5b8e4e6e1ef"
+  },
+  {
+   "url": "https://nrazon.github.io/blog/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/",
+    "tr": "https://nrazon.github.io/tr/yazilar/",
+    "es": "https://nrazon.github.io/es/blog/",
+    "pt": "https://nrazon.github.io/pt/blog/"
+   },
+   "default": "en",
+   "hash": "a19919cfb4278138159ebdfd5210d379"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/",
+    "tr": "https://nrazon.github.io/tr/yazilar/",
+    "es": "https://nrazon.github.io/es/blog/",
+    "pt": "https://nrazon.github.io/pt/blog/"
+   },
+   "default": "en",
+   "hash": "e6853e7863225c0a94561652f039c5a2"
+  },
+  {
+   "url": "https://nrazon.github.io/es/blog/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/",
+    "tr": "https://nrazon.github.io/tr/yazilar/",
+    "es": "https://nrazon.github.io/es/blog/",
+    "pt": "https://nrazon.github.io/pt/blog/"
+   },
+   "default": "en",
+   "hash": "d5bc4d3b4e43b64bfddce8a612ec058e"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/blog/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/",
+    "tr": "https://nrazon.github.io/tr/yazilar/",
+    "es": "https://nrazon.github.io/es/blog/",
+    "pt": "https://nrazon.github.io/pt/blog/"
+   },
+   "default": "en",
+   "hash": "d4a17d01d4b27172073fec5b00acfa43"
+  }
+ ],
+ "index": {
+  "en": "/blog/",
+  "tr": "/tr/yazilar/",
+  "es": "/es/blog/",
+  "pt": "/pt/blog/"
+ }
+}

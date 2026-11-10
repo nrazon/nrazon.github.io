@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How We Guarantee a Mahjong Solitaire Board Is Solvable</title>
+<meta name="description" content="A developer&#x27;s look at how Tilelings builds every Mahjong Solitaire deal backward from an empty board, so that a solution always exists.">
+<link rel="canonical" href="https://nrazon.github.io/blog/how-we-guarantee-mahjong-solitaire-is-solvable/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-we-guarantee-mahjong-solitaire-is-solvable/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tahtasi-cozulebilir-nasil-garanti-ederiz/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/como-garantizamos-que-un-mahjong-solitario-tenga-solucion/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-we-guarantee-mahjong-solitaire-is-solvable/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#2E9E73">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="How We Guarantee a Mahjong Solitaire Board Is Solvable">
+<meta property="og:description" content="A developer&#x27;s look at how Tilelings builds every Mahjong Solitaire deal backward from an empty board, so that a solution always exists.">
+<meta property="og:url" content="https://nrazon.github.io/blog/how-we-guarantee-mahjong-solitaire-is-solvable/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How We Guarantee a Mahjong Solitaire Board Is Solvable">
+<meta name="twitter:description" content="A developer&#x27;s look at how Tilelings builds every Mahjong Solitaire deal backward from an empty board, so that a solution always exists.">
+<style>:root { --accent:#2E9E73; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "How We Guarantee a Mahjong Solitaire Board Is Solvable", "description": "A developer's look at how Tilelings builds every Mahjong Solitaire deal backward from an empty board, so that a solution always exists.", "inLanguage": "en", "mainEntityOfPage": "https://nrazon.github.io/blog/how-we-guarantee-mahjong-solitaire-is-solvable/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-10", "dateModified": "2026-11-10", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}, "about": {"@type": "SoftwareApplication", "name": "Tilelings", "operatingSystem": "Android", "applicationCategory": "GameApplication", "url": "https://nrazon.github.io/tilelings/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nrazon.github.io/blog/"}, {"@type": "ListItem", "position": 3, "name": "How We Guarantee a Mahjong Solitaire Board Is Solvable", "item": "https://nrazon.github.io/blog/how-we-guarantee-mahjong-solitaire-is-solvable/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is every Mahjong Solitaire deal in Tilelings solvable?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Each deal is built from a legal sequence of moves, so at least one solution exists when you start."}}, {"@type": "Question", "name": "Then how can I get stuck?", "acceptedAnswer": {"@type": "Answer", "text": "Because some sequences of your own moves can bury matching tiles. The guarantee covers the starting deal, not every path."}}, {"@type": "Question", "name": "How does Shuffle stay solvable?", "acceptedAnswer": {"@type": "Answer", "text": "It rebuilds the remaining positions with the same backward method and the remaining pictures."}}, {"@type": "Question", "name": "Are hints always correct?", "acceptedAnswer": {"@type": "Answer", "text": "A hint comes from a search of the current position. If the search finishes, it follows a real solution. If not, it suggests the move that frees the most tiles."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/how-we-guarantee-mahjong-solitaire-is-solvable/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/mahjong-solitaire-tahtasi-cozulebilir-nasil-garanti-ederiz/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/como-garantizamos-que-un-mahjong-solitario-tenga-solucion/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>How We Guarantee a Mahjong Solitaire Board Is Solvable</h1>
+    <p class="by">By Nesim Razon, independent Android developer · 2026-11-10</p>
+    <p class="lead">A Mahjong Solitaire board that cannot be finished is a small betrayal. You spend ten minutes thinking, and then learn that nothing you did could have worked. In Tilelings every deal has a solution, and we do not hope for it: we build it in. This post explains the method in plain language, including where the guarantee stops.</p>
+    <h2>The problem with random deals</h2>
+    <p>The obvious way to make a board is to take the tiles, shuffle them and lay them on the layout. It is quick, and it is what many simple games do. The trouble is that Mahjong Solitaire is a game of blocking. Tiles sit on top of each other and beside each other, and a tile can only leave when it is free. If two identical tiles end up in the wrong places, for example one directly on top of the other, neither can ever be removed. A random deal can contain such traps without anyone noticing.</p>
+    <p>You could shuffle and then test whether the board can be solved, and shuffle again if not. That works, but testing is a search problem that can be slow on a phone, and it gives you no control over how hard the result is. We chose a different route.</p>
+    <h2>The idea: play the game before the tiles exist</h2>
+    <p>Instead of placing pictures first and checking afterwards, we start with a layout that has no pictures at all, only empty positions. Then we play a pretend game of solitaire on it. At every step we look at which positions are free, pick two of them at random, and take them off the board. We write the two positions down. We repeat this until the layout is empty.</p>
+    <p>The list we wrote down is a complete sequence of legal moves: each pair was free at the moment it was taken. Now comes the clever part. We hand out the pictures along that list. Pair number one gets two tiles with the same picture, pair number two gets another matching pair, and so on. When you play the finished board, the very same sequence of moves is available to you, because every pair of positions was free in turn and every pair now matches. A solution exists by construction.</p>
+    <h2>What happens at a dead end</h2>
+    <p>Choosing pairs at random can paint us into a corner. If two positions are taken and only one free position is left while many tiles remain, the pretend game cannot continue. So the builder keeps a rule: after taking a pair, at least two free positions must remain, unless the board is empty. If the rule fails, the builder steps back and tries a different pair. This is called backtracking.</p>
+    <p>To keep it fast on a phone, the search has a limit of a few thousand steps. If it hits the limit, it throws the attempt away and starts again with a fresh random choice. In practice a good sequence is found quickly, and the player never waits.</p>
+    <h2>A tiny example</h2>
+    <p>Picture a layout of just six positions in one row, with nothing stacked. A tile in a row is free when its left or right side is open, so only the two end positions are free at the start. We take both ends and note them down as step one. Now the next two positions are the new ends, so we take them as step two, and the last two positions become step three.</p>
+    <p>Next we hand out pictures along those steps. Step one gets a sun and a sun, step two a moon and a moon, step three a star and a star. The finished row reads sun, moon, star, star, moon, sun. Play it and you take the suns, then the moons, then the stars: the same order we built. A random shuffle of the same six tiles could produce a row such as sun, star, moon, sun, star, moon, where the suns are never free together. Real layouts have towers and many rows, so the traps are far less obvious, but the idea is exactly the same.</p>
+    <h2>Handing out the pictures</h2>
+    <p>Most pictures in the set appear four times. Flowers are four different tiles that all match each other, and so are the seasons. When we assign tiles, we group them into packages: each ordinary picture contributes two pairs, which together make its four tiles. Packages are shuffled and handed out to the steps of the solution.</p>
+    <p>On harder levels there is an extra twist. The two pairs of the same picture are spread between the first half and the second half of the solution. That means identical tiles tend to become free at different times, so you cannot simply grab matches that are available together. The board feels tighter and asks for more planning.</p>
+    <h2>Choosing the difficulty</h2>
+    <p>For every level we build several candidate deals, six in the current version. Then we measure each one by replaying its solution and counting, at every step, how many matching pairs were available to the player. The average is a good proxy for difficulty. A high average means many choices and a forgiving board. A low average means few choices and a demanding one.</p>
+    <p>Easy takes the candidate with the most choices, Hard takes the one with the fewest, and Normal picks the middle one. All three are solvable. The difference is how many ways you have to go wrong.</p>
+    <h2>The same seed, the same board</h2>
+    <p>The random choices come from a seeded generator, so a given seed always produces the same board. That is why the daily challenge can be identical for everyone and why a half-finished game can be restored: the game saves only your moves and the seed, and rebuilds the board by replaying them.</p>
+    <h2>Shuffle, hints and the honest limit</h2>
+    <p>The guarantee is about the deal you start with. It does not say that every sequence of moves leads to a win. A player can still take a pair that buries the last two copies of a tile, and the board becomes impossible from that point. That is part of the puzzle.</p>
+    <p>For those moments the game has helpers. Hint uses a real solver. It searches the current position, tries the moves that free the most tiles first, remembers positions it has already shown to be dead ends, and has a limit on the number of positions it will look at. If it finds a full solution, the hint is the first move of it. If it hits the limit, it falls back to the move that frees the most tiles. Shuffle runs the same backward building process again, this time on the remaining positions, using the remaining pictures grouped into pairs. The shuffled board is solvable again. Very rarely the remaining positions themselves are the problem, for example when two tiles are stacked on each other. Then no shuffle can help, and the game says so, so that you can undo or restart.</p>
+    <h2>Connect mode uses the same trick</h2>
+    <p>Connect, the mode where you link tiles with a path of at most two turns, is built the same way. We start with a full grid, repeatedly choose two tiles that can currently be connected, remove them, apply the sliding rule for that level, and record the pair. Pictures are handed out along the recorded list. The board is solvable, and so is the shuffled one.</p>
+    <h2>Why we care</h2>
+    <p>Honest difficulty matters. When a puzzle is hard because it asks for planning, it feels fair and you want to try again. When it is hard because the deal was broken, it feels like a trick. Building boards backward lets us promise the first kind. If you ever meet a board that looks impossible, use Undo, take a hint or shuffle. There is always a way through from the start.</p>
+    <aside class="gcta"><img class="ic" src="/tilelings/icon.png" alt="Tilelings icon" width="64" height="64"><div class="tx"><b>Try it free: Tilelings</b><span>Free on Google Play. No account needed.</span></div><a class="play" href="https://play.google.com/store/apps/details?id=com.tilelings.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dblog%26utm_campaign%3Dmahjong-solvable"><img src="/badges/google-play-en.svg" alt="Google Play" width="162" height="48"></a><a class="small" href="/tilelings/">About Tilelings</a></aside>
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Is every Mahjong Solitaire deal in Tilelings solvable?</summary><p>Yes. Each deal is built from a legal sequence of moves, so at least one solution exists when you start.</p></details><details><summary>Then how can I get stuck?</summary><p>Because some sequences of your own moves can bury matching tiles. The guarantee covers the starting deal, not every path.</p></details><details><summary>How does Shuffle stay solvable?</summary><p>It rebuilds the remaining positions with the same backward method and the remaining pictures.</p></details><details><summary>Are hints always correct?</summary><p>A hint comes from a search of the current position. If the search finishes, it follows a real solution. If not, it suggests the move that frees the most tiles.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/mahjong-solitaire-history-vs-real-mahjong/"><img src="/tilelings/icon.png" alt="" width="48" height="48"><div><b>Mahjong Solitaire History and How It Differs From Mahjong</b></div></a></li><li><a href="/blog/how-daily-puzzles-work-without-a-server/"><img src="/logo.svg" alt="" width="48" height="48"><div><b>How a Daily Puzzle Can Be the Same for Everyone, No Server</b></div></a></li><li><a href="/blog/how-puzzle-levels-are-generated-and-checked/"><img src="/logo.svg" alt="" width="48" height="48"><div><b>How Hundreds of Puzzle Levels Are Generated and Checked</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

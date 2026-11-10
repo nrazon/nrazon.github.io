@@ -17,7 +17,8 @@ LANGS = ["en", "tr", "es", "pt"]
 DIRS = {"en": "guides", "tr": "tr/rehber", "es": "es/guias", "pt": "pt/guias"}
 HREFLANG = {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}
 OGLOC = {"en": "en_US", "tr": "tr_TR", "es": "es_ES", "pt": "pt_BR"}
-GUIDE_MODULES = ["mahjong", "solitaire", "blocks", "beamies", "arrows", "logic", "lights", "peg", "g2048", "tictactoe", "maze"]  # "maze" (Grumblings): yayin gunu eklenir (tools/guides/maze.py hazir)
+GUIDE_MODULES = ["mahjong", "solitaire", "blocks", "beamies", "arrows", "logic", "lights", "peg", "g2048", "tictactoe", "maze",
+                "freecell", "spider", "tripeaks", "shisen", "mahjong_stuck", "nudge_slide", "nudge_push", "g2048_beyond", "blocks_advanced"]  # Pentolings rehberleri ("pento", "pento_drop") yayin gunu eklenir  # "maze" (Grumblings): yayin gunu eklenir (tools/guides/maze.py hazir)
 SOCIAL = ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]
 
 T = {
@@ -190,6 +191,7 @@ def main():
             feat = os.path.join(G, g["app"], f"feature-{lang}.png")
             og_image = f"{BASE}/{g['app']}/feature-{lang}.png" if os.path.exists(feat) else f"{BASE}/og-v3.png"
             others = [x for x in guides if x["id"] != g["id"]]
+            others = sorted(others, key=lambda x: (x["app"] != g["app"]))[:8]  # aynı uygulamanın rehberleri önde, en çok 8
             faq_ld = {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in c["faq"]]}
             art_ld = {"@type": "Article", "headline": c["title"], "description": c["desc"], "inLanguage": lang, "mainEntityOfPage": canon, "image": og_image,
                       "datePublished": g["date"], "dateModified": g["date"],

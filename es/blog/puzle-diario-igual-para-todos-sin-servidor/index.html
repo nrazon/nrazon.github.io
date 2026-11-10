@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cómo dar el mismo puzle diario a todos sin un servidor</title>
+<meta name="description" content="Cómo un juego puede dar el mismo puzle diario a todos sin servidor: semilla a partir de la fecha, aleatoriedad determinista, husos horarios y trampas.">
+<link rel="canonical" href="https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Cómo dar el mismo puzle diario a todos sin un servidor">
+<meta property="og:description" content="Cómo un juego puede dar el mismo puzle diario a todos sin servidor: semilla a partir de la fecha, aleatoriedad determinista, husos horarios y trampas.">
+<meta property="og:url" content="https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cómo dar el mismo puzle diario a todos sin un servidor">
+<meta name="twitter:description" content="Cómo un juego puede dar el mismo puzle diario a todos sin servidor: semilla a partir de la fecha, aleatoriedad determinista, husos horarios y trampas.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Cómo dar el mismo puzle diario a todos sin un servidor", "description": "Cómo un juego puede dar el mismo puzle diario a todos sin servidor: semilla a partir de la fecha, aleatoriedad determinista, husos horarios y trampas.", "inLanguage": "es", "mainEntityOfPage": "https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-10", "dateModified": "2026-11-10", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/es/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nrazon.github.io/es/blog/"}, {"@type": "ListItem", "position": 3, "name": "Cómo dar el mismo puzle diario a todos sin un servidor", "item": "https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Un reto diario necesita conexión a internet?", "acceptedAnswer": {"@type": "Answer", "text": "En nuestros juegos, no. El puzle se construye en tu móvil a partir de la fecha, así que funciona sin conexión."}}, {"@type": "Question", "name": "¿Mi amigo de otro país recibirá hoy el mismo puzle?", "acceptedAnswer": {"@type": "Answer", "text": "Normalmente sí, pero el día nuevo empieza en la medianoche de cada jugador, así que alguien lejano puede ir un día por delante o por detrás."}}, {"@type": "Question", "name": "¿Se puede hacer trampa cambiando el reloj del móvil?", "acceptedAnswer": {"@type": "Answer", "text": "Se puede abrir el puzle de otro día. Sin servidor, el juego se fía de la fecha del móvil, por eso vemos el reto diario como un desafío entre amigos."}}, {"@type": "Question", "name": "¿Qué es una semilla?", "acceptedAnswer": {"@type": "Answer", "text": "Es el número inicial de un generador de números aleatorios. La misma semilla da siempre la misma secuencia, y así distintos dispositivos construyen el mismo puzle."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/how-daily-puzzles-work-without-a-server/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/puzle-diario-igual-para-todos-sin-servidor/" hreflang="es" data-lang="es" aria-current="page">ES</a><a href="/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/es/">Nesim Apps</a> › <a href="/es/blog/">Blog</a></nav>
+    <h1>Cómo dar el mismo puzle diario a todos sin un servidor</h1>
+    <p class="by">Por Nesim Razon, desarrollador Android independiente · 2026-11-10</p>
+    <p class="lead">Muchos juegos de puzles ofrecen un reto diario idéntico para todos los jugadores, de modo que puedes comparar tu puntuación con tus amigos. Parece que haría falta un servidor que reparta el puzle. No hace falta. Aquí explicamos cómo lo hacemos en nuestros propios juegos y dónde están los límites.</p>
+    <h2>La idea: la fecha es el puzle</h2>
+    <p>Un ordenador no puede producir por sí solo números realmente aleatorios. Un generador de números aleatorios es una receta: le das un número inicial, llamado semilla, y produce una secuencia larga que parece aleatoria. Lo importante es que la misma semilla siempre produce exactamente la misma secuencia.</p>
+    <p>Ahí está todo el truco. Si cada móvil convierte la fecha de hoy en un número y lo usa como semilla, todos los móviles construyen la misma mezcla, las mismas piezas o la misma disposición. Nadie tiene que enviar nada. La fecha funciona como un secreto compartido que todos ya tienen.</p>
+    <p>En la práctica, los juegos no usan la fecha sola. La mezclan con algunos números más, como el tipo de puzle o el tamaño del tablero, para que los distintos puzles del mismo día no sean copias unos de otros.</p>
+    <h2>Qué hacen realmente nuestros juegos</h2>
+    <p>Cubbles convierte la fecha local en un solo número con el formato año, mes, día, por ejemplo 20261110, y lo usa como semilla de las piezas. Cada grupo de tres piezas sale de un generador que parte del número del día, el número del grupo y un contador de intentos. Así, el primer grupo del día es siempre el mismo, y también el segundo, y así sucesivamente.</p>
+    <p>Cardles usa el número del día como semilla de sus repartos. El código que baraja es un pequeño generador aleatorio propio y portátil, escrito para que la misma semilla dé el mismo reparto en cualquier dispositivo y versión de Android. El tipo de juego también rota con el calendario, de modo que el reto diario recorre cuatro solitarios distintos.</p>
+    <p>Logiclings arma cada día un paquete de tres puzles. Su semilla combina el número del día con el tipo y el tamaño del puzle, y el tipo rota entre las cinco clases de puzle para que cada una vuelva con regularidad. Pentolings elige el puzle diario de encaje entre un grupo fijo de niveles medios según el número del día, y su ronda diaria de bloques que caen usa una semilla derivada del día.</p>
+    <h2>Por qué basta la aleatoriedad determinista</h2>
+    <p>Determinista significa que el resultado depende únicamente de los datos de entrada. Una mezcla que parte de la misma semilla y sigue los mismos pasos no puede salir distinta. Mientras el código que construye el puzle sea idéntico en todos los móviles, el puzle también lo será.</p>
+    <p>Esto también demuestra que un buen puzle diario depende sobre todo del constructor y no de la entrega. En Cardles, por ejemplo, un reparto no se acepta a ciegas. Algunos repartos son imposibles de ganar, así que el juego comprueba el reparto diario y, si está atascado o no se puede ganar, prueba la siguiente semilla cercana en un orden fijo. Todos los móviles siguen el mismo orden, así que todos acaban en el mismo reparto.</p>
+    <p>Cubbles hace algo parecido. Las tres piezas deben poder colocarse juntas, así que el juego prueba hasta cuarenta intentos con semilla y usa el primero que funciona. Enseguida veremos qué significa eso para la equidad.</p>
+    <h2>Husos horarios: ¿la medianoche de quién?</h2>
+    <p>Sin servidor no existe un reloj único que decida cuándo empieza un día nuevo. Nuestros juegos usan la fecha de tu propio móvil. Cuando en Sídney ya es mañana, un jugador de Los Ángeles sigue en el puzle de hoy. Ambos tienen razón según su calendario.</p>
+    <p>Para un jugador individual es la opción más amable. El puzle nuevo aparece en tu medianoche y tu racha sigue tus propios días. El coste es que una comparación diaria global resulta algo difusa: dos personas pueden estar jugando días distintos en el mismo instante.</p>
+    <p>La racha se calcula igual. Cuenta días locales consecutivos y el juego es indulgente: si hoy todavía no has jugado, el día de ayer mantiene viva la racha hasta que termine el día.</p>
+    <h2>El mismo puzle, casi siempre</h2>
+    <p>En sentido estricto, un puzle con semilla es idéntico solo si cada paso depende de la semilla y de nada más. Cubbles es un ejemplo honesto de que no siempre es así. La comprobación de que cada grupo de piezas se puede colocar depende del estado de tu tablero. Si un intento no encaja en tu tablero, el juego pasa al siguiente, así que dos jugadores pueden ver de vez en cuando grupos de piezas distintos. Casi siempre funciona el primer intento y todos ven las mismas piezas, por eso decimos que el juego diario es igual para casi todos y no para todos.</p>
+    <p>Hay otra pequeña salvedad en los puzles que se eligen de una lista. Si una actualización cambia la lista de niveles, la elección de un día concreto puede cambiar. Jugadores con versiones distintas podrían ver puzles diferentes durante unos días.</p>
+    <p>Son detalles que conviene decidir a propósito. O bien el puzle no depende más que de la semilla, o bien se acepta una pequeña diferencia y se dice con claridad.</p>
+    <h2>Trampas, relojes y lo que cuesta no tener servidor</h2>
+    <p>El precio de prescindir del servidor es la confianza. El juego se fía de la fecha de tu móvil. Si cambias el reloj, puedes abrir el puzle de otro día. En un juego para divertirse, donde las puntuaciones se comparten como un reto entre amigos, nos parece un trato aceptable. Un servidor que verificara cada puntuación exigiría cuentas, almacenamiento y cuidado con los datos de las personas, y sería una cosa más que puede fallar.</p>
+    <p>Las puntuaciones que llegan a una clasificación las comunica la aplicación. Una persona decidida puede enviar una cifra que el juego no ha logrado, y la aplicación no puede impedirlo del todo. Por eso vemos las clasificaciones como un juego entre amigos y no como un concurso con premios.</p>
+    <p>Si alguna vez haces uno, decide pronto de qué no debe depender nunca el puzle diario. Que dependa solo de la semilla, comprueba que dos dispositivos dan el mismo resultado y mantén congelada la regla que construye el puzle. Si tienes que cambiar el constructor, hazlo con una nueva versión del reto diario y no en silencio, o el puzle de ayer dejará de coincidir.</p>
+    
+    <section class="faq"><h2>Preguntas frecuentes</h2><details><summary>¿Un reto diario necesita conexión a internet?</summary><p>En nuestros juegos, no. El puzle se construye en tu móvil a partir de la fecha, así que funciona sin conexión.</p></details><details><summary>¿Mi amigo de otro país recibirá hoy el mismo puzle?</summary><p>Normalmente sí, pero el día nuevo empieza en la medianoche de cada jugador, así que alguien lejano puede ir un día por delante o por detrás.</p></details><details><summary>¿Se puede hacer trampa cambiando el reloj del móvil?</summary><p>Se puede abrir el puzle de otro día. Sin servidor, el juego se fía de la fecha del móvil, por eso vemos el reto diario como un desafío entre amigos.</p></details><details><summary>¿Qué es una semilla?</summary><p>Es el número inicial de un generador de números aleatorios. La misma semilla da siempre la misma secuencia, y así distintos dispositivos construyen el mismo puzle.</p></details></section>
+    <section><h2>Más del blog</h2><ul class="glist"><li><a href="/es/blog/como-garantizamos-que-un-mahjong-solitario-tenga-solucion/"><img src="/tilelings/icon.png" alt="" width="48" height="48"><div><b>Cómo garantizamos que un Mahjong Solitario tenga solución</b></div></a></li><li><a href="/es/blog/historia-mahjong-solitario-y-diferencias-con-mahjong/"><img src="/tilelings/icon.png" alt="" width="48" height="48"><div><b>Historia del Mahjong Solitario y su diferencia con el Mahjong</b></div></a></li><li><a href="/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/"><img src="/logo.svg" alt="" width="48" height="48"><div><b>Cómo se generan y verifican cientos de niveles de puzle</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>
