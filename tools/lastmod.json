@@ -712,7 +712,7 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/tr/yazilar/": {
-  "hash": "c0dbb195a3d64b3b6c20bc63b761df95",
+  "hash": "d461847956aa32b218098611de4ad410",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/": {
@@ -977,6 +977,18 @@
  },
  "https://nrazon.github.io/astrolings/": {
   "hash": "27014f785d5b960ff947c82846792f41",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/tr/yazilar/ay-evreleri-neden-29-5-gunde-doner-yeniay-dolunay/": {
+  "hash": "64c38c1038b793ce84e47444ae1fb60e",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/tr/yazilar/burclar-takimyildizlardan-neden-kaydi-13-burc-yilanci/": {
+  "hash": "98fcc04420c0000dbf25585a587f9bbc",
+  "date": "2026-11-10"
+ },
+ "https://nrazon.github.io/tr/yazilar/merkur-retrosu-nedir-gokyuzunde-gercekte-ne-oluyor/": {
+  "hash": "0d412243f7f1f0d12289500945b8c81e",
   "date": "2026-11-10"
  }
 }

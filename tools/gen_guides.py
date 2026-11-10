@@ -92,7 +92,7 @@ def esc(s):
 
 def head(lang, title, desc, canon, alternates, og_image, ld, accent):
     alts = "".join(f'<link rel="alternate" hreflang="{HREFLANG[l]}" href="{u}">\n' for l, u in alternates.items())
-    xdef = f'<link rel="alternate" hreflang="x-default" href="{alternates["en"]}">\n'
+    xdef = f'<link rel="alternate" hreflang="x-default" href="{alternates.get("en") or next(iter(alternates.values()))}">\n'
     ogalt = "".join(f'<meta property="og:locale:alternate" content="{OGLOC[l]}">\n' for l in alternates if l != lang)
     # <title>: en çok ~60 karakter (Google keser). Uzunsa ilk bölümde (":" "?" "(" öncesi) kes; marka sığarsa ekle. Sayfadaki h1 tam kalır.
     st = title

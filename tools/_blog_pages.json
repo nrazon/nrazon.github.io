@@ -617,6 +617,30 @@
    "hash": "07939e7094407fe7da0c196615582441"
   },
   {
+   "url": "https://nrazon.github.io/tr/yazilar/merkur-retrosu-nedir-gokyuzunde-gercekte-ne-oluyor/",
+   "loc": {
+    "tr": "https://nrazon.github.io/tr/yazilar/merkur-retrosu-nedir-gokyuzunde-gercekte-ne-oluyor/"
+   },
+   "default": "tr",
+   "hash": "0d412243f7f1f0d12289500945b8c81e"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/burclar-takimyildizlardan-neden-kaydi-13-burc-yilanci/",
+   "loc": {
+    "tr": "https://nrazon.github.io/tr/yazilar/burclar-takimyildizlardan-neden-kaydi-13-burc-yilanci/"
+   },
+   "default": "tr",
+   "hash": "98fcc04420c0000dbf25585a587f9bbc"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/ay-evreleri-neden-29-5-gunde-doner-yeniay-dolunay/",
+   "loc": {
+    "tr": "https://nrazon.github.io/tr/yazilar/ay-evreleri-neden-29-5-gunde-doner-yeniay-dolunay/"
+   },
+   "default": "tr",
+   "hash": "64c38c1038b793ce84e47444ae1fb60e"
+  },
+  {
    "url": "https://nrazon.github.io/blog/",
    "loc": {
     "en": "https://nrazon.github.io/blog/",
@@ -636,7 +660,7 @@
     "pt": "https://nrazon.github.io/pt/blog/"
    },
    "default": "en",
-   "hash": "c0dbb195a3d64b3b6c20bc63b761df95"
+   "hash": "d461847956aa32b218098611de4ad410"
   },
   {
    "url": "https://nrazon.github.io/es/blog/",
