@@ -51,8 +51,8 @@ def res_text(d, key):
 
 
 def icon_src(key, folder):
-    for p in (os.path.join(ROOT, 'Cardles', 'app', 'src', 'main', 'res', 'drawable-nodpi', f'promo_{key}.png'),
-              os.path.join(ROOT, folder, 'market_assets', 'icon-512.png')):
+    for p in (os.path.join(ROOT, folder, 'market_assets', 'icon-512.png'),
+              os.path.join(ROOT, 'Cardles', 'app', 'src', 'main', 'res', 'drawable-nodpi', f'promo_{key}.png')):
         if os.path.exists(p):
             return p
     sys.exit('ikon yok: ' + key)
