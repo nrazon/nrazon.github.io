@@ -62,6 +62,9 @@
 
 
 
+
+
+<figure class="vid" data-l="es"><button aria-label="Reproducir el vídeo" class="vidbtn" data-app="pentolings" data-yt="JQtbnktCzqk" type="button"><img alt="Pentolings video" height="360" loading="lazy" src="/pentolings/shots/es/video.jpg" width="640"/><span class="pl"><i></i></span><span class="vl">Vídeo de presentación</span></button></figure>
 <figure data-l="es"><div class="phone"><img alt="Pentolings screenshot 1" height="640" loading="lazy" src="/pentolings/shots/es/01.jpg" width="360"/></div></figure>
 <figure data-l="es"><div class="phone"><img alt="Pentolings screenshot 2" height="640" loading="lazy" src="/pentolings/shots/es/02.jpg" width="360"/></div></figure>
 <figure data-l="es"><div class="phone"><img alt="Pentolings screenshot 3" height="640" loading="lazy" src="/pentolings/shots/es/03.jpg" width="360"/></div></figure>
@@ -70,6 +73,7 @@
 <figure data-l="es"><div class="phone"><img alt="Pentolings screenshot 6" height="640" loading="lazy" src="/pentolings/shots/es/06.jpg" width="360"/></div></figure>
 <figure data-l="es"><div class="phone"><img alt="Pentolings screenshot 7" height="640" loading="lazy" src="/pentolings/shots/es/07.jpg" width="360"/></div></figure>
 <figure data-l="es"><div class="phone"><img alt="Pentolings screenshot 8" height="640" loading="lazy" src="/pentolings/shots/es/08.jpg" width="360"/></div></figure>
+
 
 
 
@@ -106,6 +110,8 @@
 </section>
 <section class="block howto"><h2 class="h">Cómo jugar</h2><p><a href="/es/guias/como-resolver-puzles-de-pentominos/">Lee la guía: cómo jugar a Pentolings</a></p></section><footer><span data-l="es">Contacto</span>: <a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/pentolings/privacy.html"><span data-l="es">Política de privacidad</span></a> · <a href="/site-privacy.html"><span data-l="es">Privacidad del sitio</span></a></footer>
 </main>
+<dialog aria-label="Video" class="vmodal" id="vmodal"><div class="vframe" id="vframe"></div><button aria-label="Close" class="vclose" type="button">✕</button></dialog>
+<script>(function(){var d=document.getElementById("vmodal");if(!d||!d.showModal)return;var f=document.getElementById("vframe");document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".vidbtn");if(b){f.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+b.getAttribute("data-yt")+'?autoplay=1&rel=0&playsinline=1" title="Video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>';d.showModal();return;}if(e.target===d||(e.target.classList&&e.target.classList.contains("vclose")))d.close();});d.addEventListener("close",function(){f.innerHTML="";});})();</script>
 <script>
   (function () {
     var today = new Date().toISOString().slice(0, 10);
