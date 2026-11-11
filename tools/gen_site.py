@@ -369,7 +369,7 @@ CUBBLES = dict(
          {"tr": "Hayır, oyun çevrimdışı oynanır. Reklamlar ve liderlik tabloları için bağlantı gerekir.",
           "en": "No, the game works offline. Ads and leaderboards need a connection."}),
         ({"tr": "Hangi dillerde?", "en": "Which languages?"},
-         {"tr": "Oyun Türkçe ve İngilizce.", "en": "The game is available in English and Turkish."}),
+         {"tr": "Oyun Türkçe, İngilizce, İspanyolca ve Portekizce.", "en": "The game is available in English, Turkish, Spanish and Portuguese."}),
     ],
 )
 
@@ -582,7 +582,7 @@ for (_s, _t, _x), ((_te, _tp), (_xe, _xp)) in zip(CUBBLES["features"], _cf):
 _cq = [
     (("¿Es gratis?", "É grátis?"), ("Sí. Se muestran anuncios entre partidas y, tras perder, puedes ver un anuncio opcional para liberar espacio y seguir jugando.", "Sim. Anúncios aparecem entre as partidas e, após perder, você pode assistir a um anúncio opcional para liberar espaço e continuar.")),
     (("¿Necesito internet?", "Preciso de internet?"), ("No, el juego funciona sin conexión. Los anuncios y las clasificaciones necesitan conexión.", "Não, o jogo funciona offline. Anúncios e classificações precisam de conexão.")),
-    (("¿En qué idiomas está?", "Em quais idiomas?"), ("El juego está disponible en inglés y turco.", "O jogo está disponível em inglês e turco.")),
+    (("¿En qué idiomas está?", "Em quais idiomas?"), ("El juego está disponible en inglés, turco, español y portugués.", "O jogo está disponível em inglês, turco, espanhol e português.")),
 ]
 for (_q, _a), ((_qe, _qp), (_ae, _ap)) in zip(CUBBLES["faq"], _cq):
     _q["es"], _q["pt"], _a["es"], _a["pt"] = _qe, _qp, _ae, _ap

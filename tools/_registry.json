@@ -333,7 +333,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "4301a157d5be81cd00e4c651b2c46143",
+  "hash": "3169dba67ccec4b3a1f1adbce43b8a57",
   "slug": "cubbles"
  },
  "https://nrazon.github.io/tr/cubbles/": {
@@ -346,7 +346,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "7588f80ae7500205764b07a8b698efb9",
+  "hash": "453a1a2859c3cbc1d569f60fc24d9baf",
   "slug": "cubbles"
  },
  "https://nrazon.github.io/es/cubbles/": {
@@ -359,7 +359,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "4118f56db20b9d8b73ad16015b043caf",
+  "hash": "37a67dad84b4f8e6d6b62582f85be9c9",
   "slug": "cubbles"
  },
  "https://nrazon.github.io/pt/cubbles/": {
@@ -372,7 +372,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "40803e67bb61606580af6374f3ef1956",
+  "hash": "583a65d5e2708762c9bc4e9eea19aeb0",
   "slug": "cubbles"
  },
  "https://nrazon.github.io/game2048/": {
