@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cómo se genera un cartón de Tómbola | Nesim Apps</title>
+<meta name="description" content="Notas de desarrollo: cómo Tombalings crea series de seis cartones que cubren del 1 al 90 exactamente una vez, y cómo se temporiza a los rivales para que…">
+<link rel="canonical" href="https://nrazon.github.io/es/blog/como-se-genera-un-carton-de-tombola-seis-cartones-noventa-numeros/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/tombala-karti-nasil-uretilir-alti-kart-doksan-sayi/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/como-se-genera-un-carton-de-tombola-seis-cartones-noventa-numeros/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/como-uma-cartela-de-tombala-e-gerada-seis-cartelas-noventa-numeros/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#C8372A">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Cómo se genera un cartón de Tómbola: seis cartones, noventa números">
+<meta property="og:description" content="Notas de desarrollo: cómo Tombalings crea series de seis cartones que cubren del 1 al 90 exactamente una vez, y cómo se temporiza a los rivales para que…">
+<meta property="og:url" content="https://nrazon.github.io/es/blog/como-se-genera-un-carton-de-tombola-seis-cartones-noventa-numeros/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cómo se genera un cartón de Tómbola: seis cartones, noventa números">
+<meta name="twitter:description" content="Notas de desarrollo: cómo Tombalings crea series de seis cartones que cubren del 1 al 90 exactamente una vez, y cómo se temporiza a los rivales para que…">
+<style>:root { --accent:#C8372A; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Cómo se genera un cartón de Tómbola: seis cartones, noventa números", "description": "Notas de desarrollo: cómo Tombalings crea series de seis cartones que cubren del 1 al 90 exactamente una vez, y cómo se temporiza a los rivales para que parezcan humanos.", "inLanguage": "es", "mainEntityOfPage": "https://nrazon.github.io/es/blog/como-se-genera-un-carton-de-tombola-seis-cartones-noventa-numeros/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-12", "dateModified": "2026-11-12", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}, "about": {"@type": "SoftwareApplication", "name": "Tombalings", "operatingSystem": "Android", "applicationCategory": "GameApplication", "url": "https://nrazon.github.io/es/tombalings/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/es/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nrazon.github.io/es/blog/"}, {"@type": "ListItem", "position": 3, "name": "Cómo se genera un cartón de Tómbola: seis cartones, noventa números", "item": "https://nrazon.github.io/es/blog/como-se-genera-un-carton-de-tombola-seis-cartones-noventa-numeros/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Cuántos números tiene un cartón de Tómbola?", "acceptedAnswer": {"@type": "Answer", "text": "Quince: cinco en cada una de las tres filas, repartidos en nueve columnas."}}, {"@type": "Question", "name": "¿Qué es una serie de seis cartones?", "acceptedAnswer": {"@type": "Answer", "text": "Seis cartones que juntos contienen cada número del 1 al 90 exactamente una vez."}}, {"@type": "Question", "name": "¿Los rivales reaccionan al instante?", "acceptedAnswer": {"@type": "Answer", "text": "No. Marcan al instante, pero esperan un breve tiempo de reacción antes de cantar, que depende de la dificultad elegida."}}, {"@type": "Question", "name": "¿El orden del sorteo es aleatorio?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Los números del 1 al 90 se barajan y sale cada uno una vez."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/tombala-karti-nasil-uretilir-alti-kart-doksan-sayi/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/como-se-genera-un-carton-de-tombola-seis-cartones-noventa-numeros/" hreflang="es" data-lang="es" aria-current="page">ES</a><a href="/pt/blog/como-uma-cartela-de-tombala-e-gerada-seis-cartelas-noventa-numeros/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/es/">Nesim Apps</a> › <a href="/es/blog/">Blog</a></nav>
+    <h1>Cómo se genera un cartón de Tómbola: seis cartones, noventa números</h1>
+    <p class="by">Por Nesim Razon, desarrollador Android independiente · 2026-11-12</p>
+    <p class="lead">Un cartón de Tómbola parece sencillo, pero una serie justa de cartones tiene reglas estrictas. Al hacer Tombalings escribí un generador que crea seis cartones usando cada número del 1 al 90 exactamente una vez. Así funciona, y así se temporiza a los rivales para que una ronda parezca viva.</p>
+    <h2>Las reglas que debe cumplir un cartón</h2>
+    <p>Un cartón de Tómbola tiene 3 filas y 9 columnas con 15 números. Cada fila tiene exactamente 5 números. Cada columna solo admite números de su propio rango: del 1 al 9 en la primera, del 10 al 19 en la segunda, y así hasta el 80 al 90 en la última. Y cada columna tiene entre uno y tres números.</p>
+    <p>Esas reglas solas son fáciles. Lo difícil es una serie de seis cartones: juntos deben contener cada número del 1 al 90 una vez, sin repeticiones y sin huecos.</p>
+    <h2>Por qué las cuentas salen</h2>
+    <p>Mira las columnas. La primera tiene 9 números posibles, las centrales 10 cada una y la última 11. En seis cartones, cada cartón usa cada columna al menos una vez, así que cada cartón empieza con un número por columna. Eso ya gasta 9 de sus 15 números.</p>
+    <p>Lo que queda son números extra: 3 en la primera columna, 4 en cada una de las siete centrales y 5 en la última. Cada cartón necesita exactamente 6 extras para llegar a 15. Los totales cuadran, así que existe solución, pero hay que repartir los extras de modo que ningún cartón tenga más de tres números en una columna.</p>
+    <h2>Primer paso: cuántos números por columna</h2>
+    <p>El generador decide primero, para cada cartón y cada columna, cuántos números lleva: uno, dos o tres. Reparte los extras columna a columna, favoreciendo a los cartones que más los necesitan, con un poco de azar. Si se atasca, descarta el intento y empieza de nuevo. Reintentar es barato, mantiene el código corto y el resultado sin sesgo.</p>
+    <h2>Segundo paso: dónde se colocan</h2>
+    <p>Después elige qué casillas del cartón se rellenan. Cada fila debe acabar con 5 números y cada columna con la cantidad correcta. El generador coloca primero las columnas más cargadas, poniendo cada número en las filas que van más vacías. Cuando todas las filas llegan a 5, la disposición es válida. Si no, prueba otra.</p>
+    <h2>Tercer paso: rellenar con los números</h2>
+    <p>Por último, los números del rango de cada columna se barajan y se reparten entre los seis cartones según las cantidades del primer paso. Dentro de un cartón, los números de una columna se ordenan de menor a mayor, de arriba abajo, como en los cartones impresos. La semilla del generador aleatorio decide todo: la misma semilla produce siempre la misma serie. Eso es muy útil para las pruebas.</p>
+    <h2>Que los rivales parezcan humanos</h2>
+    <p>Los rivales marcan cada número al instante, pero no cantan al instante. Cuando un rival tiene derecho a un premio, el juego espera primero un tiempo de reacción. Cada rival tiene su propia reacción base de entre 0,7 y 2,5 segundos, escalada según la dificultad que elijas (más rápida con rivales espabilados, más lenta con relajados) más un pequeño extra aleatorio. Un rival lleva un cartón o, aproximadamente una de cada tres veces, dos.</p>
+    <p>El canto automático del jugador también espera un breve retraso humano, de entre 0,6 y 0,9 segundos. Sin él, el jugador ganaría todos los empates, y eso resultaría injusto y aburrido.</p>
+    <h2>Probarlo</h2>
+    <p>Como el juego avanza con un paso de tiempo fijo y una semilla, una ronda entera se puede reproducir en una prueba unitaria en milisegundos. Las pruebas comprueban, con muchas semillas, que cada serie tiene exactamente 90 números distintos, que cada cartón tiene 15 números con 5 por fila y que se respetan los rangos de las columnas. Es un buen recordatorio de que hasta las reglas pequeñas merecen comprobaciones automáticas.</p>
+    <aside class="gcta"><img class="ic" src="/tombalings/icon.png" alt="Tombalings icon" width="64" height="64"><div class="tx"><b>Pruébalo gratis: Tombalings</b><span>Gratis en Google Play. Sin cuenta.</span></div><a class="play" href="https://play.google.com/store/apps/details?id=com.tombalings.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dblog%26utm_campaign%3Dtombala_cards"><img src="/badges/google-play-en.svg" alt="Google Play" width="162" height="48"></a><a class="small" href="/es/tombalings/">Sobre Tombalings</a></aside>
+    <section class="faq"><h2>Preguntas frecuentes</h2><details><summary>¿Cuántos números tiene un cartón de Tómbola?</summary><p>Quince: cinco en cada una de las tres filas, repartidos en nueve columnas.</p></details><details><summary>¿Qué es una serie de seis cartones?</summary><p>Seis cartones que juntos contienen cada número del 1 al 90 exactamente una vez.</p></details><details><summary>¿Los rivales reaccionan al instante?</summary><p>No. Marcan al instante, pero esperan un breve tiempo de reacción antes de cantar, que depende de la dificultad elegida.</p></details><details><summary>¿El orden del sorteo es aleatorio?</summary><p>Sí. Los números del 1 al 90 se barajan y sale cada uno una vez.</p></details></section>
+    <section><h2>Más del blog</h2><ul class="glist"><li><a href="/es/blog/como-garantizamos-que-un-mahjong-solitario-tenga-solucion/"><img src="/tilelings/icon.png" alt="" width="48" height="48"><div><b>Cómo garantizamos que un Mahjong Solitario tenga solución</b></div></a></li><li><a href="/es/blog/historia-mahjong-solitario-y-diferencias-con-mahjong/"><img src="/tilelings/icon.png" alt="" width="48" height="48"><div><b>Historia del Mahjong Solitario y su diferencia con el Mahjong</b></div></a></li><li><a href="/es/blog/puzle-diario-igual-para-todos-sin-servidor/"><img src="/logo.svg" alt="" width="48" height="48"><div><b>Cómo dar el mismo puzle diario a todos sin un servidor</b></div></a></li><li><a href="/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/"><img src="/logo.svg" alt="" width="48" height="48"><div><b>Cómo se generan y verifican cientos de niveles de puzle</b></div></a></li><li><a href="/es/blog/historia-del-tres-en-raya-y-sus-variantes/"><img src="/tictactoe/icon.svg" alt="" width="48" height="48"><div><b>Tres en raya: historia de un juego resuelto y sus variantes</b></div></a></li><li><a href="/es/blog/magnitud-e-intensidad-de-un-terremoto/"><img src="/sondepremler/icon.svg" alt="" width="48" height="48"><div><b>Magnitud e intensidad de un terremoto: cuál es la diferencia</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

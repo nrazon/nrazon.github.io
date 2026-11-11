@@ -65,6 +65,12 @@
    "tr": "/tr/rehber/pentomino-bulmacasi-nasil-cozulur/",
    "es": "/es/guias/como-resolver-puzles-de-pentominos/",
    "pt": "/pt/guias/como-resolver-quebra-cabecas-de-pentominos/"
+  },
+  "tombalings": {
+   "en": "/guides/how-to-play-tombala-rules-and-tips/",
+   "tr": "/tr/rehber/tombala-nasil-oynanir-kurallar-ve-ipuclari/",
+   "es": "/es/guias/como-jugar-tombola-reglas-y-consejos/",
+   "pt": "/pt/guias/como-jogar-tombala-regras-e-dicas/"
   }
  },
  "pages": [
@@ -1125,6 +1131,94 @@
    "hash": "32c8932076a368469b6b730e4219de88"
   },
   {
+   "url": "https://nrazon.github.io/guides/how-to-play-tombala-rules-and-tips/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-play-tombala-rules-and-tips/",
+    "tr": "https://nrazon.github.io/tr/rehber/tombala-nasil-oynanir-kurallar-ve-ipuclari/",
+    "es": "https://nrazon.github.io/es/guias/como-jugar-tombola-reglas-y-consejos/",
+    "pt": "https://nrazon.github.io/pt/guias/como-jogar-tombala-regras-e-dicas/"
+   },
+   "default": "en",
+   "hash": "d4dea561be1b157127b5e2731b77035a"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/rehber/tombala-nasil-oynanir-kurallar-ve-ipuclari/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-play-tombala-rules-and-tips/",
+    "tr": "https://nrazon.github.io/tr/rehber/tombala-nasil-oynanir-kurallar-ve-ipuclari/",
+    "es": "https://nrazon.github.io/es/guias/como-jugar-tombola-reglas-y-consejos/",
+    "pt": "https://nrazon.github.io/pt/guias/como-jogar-tombala-regras-e-dicas/"
+   },
+   "default": "en",
+   "hash": "c9e6fe6d3992044ec2b385db69c70f3c"
+  },
+  {
+   "url": "https://nrazon.github.io/es/guias/como-jugar-tombola-reglas-y-consejos/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-play-tombala-rules-and-tips/",
+    "tr": "https://nrazon.github.io/tr/rehber/tombala-nasil-oynanir-kurallar-ve-ipuclari/",
+    "es": "https://nrazon.github.io/es/guias/como-jugar-tombola-reglas-y-consejos/",
+    "pt": "https://nrazon.github.io/pt/guias/como-jogar-tombala-regras-e-dicas/"
+   },
+   "default": "en",
+   "hash": "f3c24b0458145a481f16ba19a482d71d"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/guias/como-jogar-tombala-regras-e-dicas/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-play-tombala-rules-and-tips/",
+    "tr": "https://nrazon.github.io/tr/rehber/tombala-nasil-oynanir-kurallar-ve-ipuclari/",
+    "es": "https://nrazon.github.io/es/guias/como-jugar-tombola-reglas-y-consejos/",
+    "pt": "https://nrazon.github.io/pt/guias/como-jogar-tombala-regras-e-dicas/"
+   },
+   "default": "en",
+   "hash": "1bc975636c235e16e0b7bd7c321784aa"
+  },
+  {
+   "url": "https://nrazon.github.io/guides/how-to-play-75-ball-bingo-patterns-and-tips/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-play-75-ball-bingo-patterns-and-tips/",
+    "tr": "https://nrazon.github.io/tr/rehber/bingo-nasil-oynanir-75-top-desenler-ve-ipuclari/",
+    "es": "https://nrazon.github.io/es/guias/como-jugar-bingo-de-75-bolas-patrones-y-consejos/",
+    "pt": "https://nrazon.github.io/pt/guias/como-jogar-bingo-de-75-bolas-padroes-e-dicas/"
+   },
+   "default": "en",
+   "hash": "2d100bfcf199dd78d5bc6ee64fe68e61"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/rehber/bingo-nasil-oynanir-75-top-desenler-ve-ipuclari/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-play-75-ball-bingo-patterns-and-tips/",
+    "tr": "https://nrazon.github.io/tr/rehber/bingo-nasil-oynanir-75-top-desenler-ve-ipuclari/",
+    "es": "https://nrazon.github.io/es/guias/como-jugar-bingo-de-75-bolas-patrones-y-consejos/",
+    "pt": "https://nrazon.github.io/pt/guias/como-jogar-bingo-de-75-bolas-padroes-e-dicas/"
+   },
+   "default": "en",
+   "hash": "ce53e4d421cf0357c336e19c6ac2c52b"
+  },
+  {
+   "url": "https://nrazon.github.io/es/guias/como-jugar-bingo-de-75-bolas-patrones-y-consejos/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-play-75-ball-bingo-patterns-and-tips/",
+    "tr": "https://nrazon.github.io/tr/rehber/bingo-nasil-oynanir-75-top-desenler-ve-ipuclari/",
+    "es": "https://nrazon.github.io/es/guias/como-jugar-bingo-de-75-bolas-patrones-y-consejos/",
+    "pt": "https://nrazon.github.io/pt/guias/como-jogar-bingo-de-75-bolas-padroes-e-dicas/"
+   },
+   "default": "en",
+   "hash": "af2c1e55909c3f69d39c7c93a62da800"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/guias/como-jogar-bingo-de-75-bolas-padroes-e-dicas/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-play-75-ball-bingo-patterns-and-tips/",
+    "tr": "https://nrazon.github.io/tr/rehber/bingo-nasil-oynanir-75-top-desenler-ve-ipuclari/",
+    "es": "https://nrazon.github.io/es/guias/como-jugar-bingo-de-75-bolas-patrones-y-consejos/",
+    "pt": "https://nrazon.github.io/pt/guias/como-jogar-bingo-de-75-bolas-padroes-e-dicas/"
+   },
+   "default": "en",
+   "hash": "6e6974c89cdddd6b02efbbebb84dc09f"
+  },
+  {
    "url": "https://nrazon.github.io/guides/",
    "loc": {
     "en": "https://nrazon.github.io/guides/",
@@ -1133,7 +1227,7 @@
     "pt": "https://nrazon.github.io/pt/guias/"
    },
    "default": "en",
-   "hash": "cc7ee5000fb8024d6499f487f8a4331e"
+   "hash": "0cd81fd9bc223dd4b8f47aa53be31ee8"
   },
   {
    "url": "https://nrazon.github.io/tr/rehber/",
@@ -1144,7 +1238,7 @@
     "pt": "https://nrazon.github.io/pt/guias/"
    },
    "default": "en",
-   "hash": "39df7a06abd6df77a9d949ab3b38a2fc"
+   "hash": "11a434d4465d507595af2e089f45f703"
   },
   {
    "url": "https://nrazon.github.io/es/guias/",
@@ -1155,7 +1249,7 @@
     "pt": "https://nrazon.github.io/pt/guias/"
    },
    "default": "en",
-   "hash": "d1437f06f2aae18a9c4f42ae125391ff"
+   "hash": "5d82d9664c66a8e294548f1edf0e047f"
   },
   {
    "url": "https://nrazon.github.io/pt/guias/",
@@ -1166,7 +1260,7 @@
     "pt": "https://nrazon.github.io/pt/guias/"
    },
    "default": "en",
-   "hash": "1ddd12033ffe4a62e225d320f149af62"
+   "hash": "85b6bdecaef93d33826310f82b77c24f"
   }
  ],
  "index": {

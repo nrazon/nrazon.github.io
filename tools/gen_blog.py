@@ -16,7 +16,7 @@ T = GG.T
 DIRS = {"en": "blog", "tr": "tr/yazilar", "es": "es/blog", "pt": "pt/blog"}
 # Yayın günü eklenenler (Pentolings yayına çıkınca): "pento_history", "pento_dlx"
 BLOG_MODULES = ["mahjong_solvable", "mahjong_history", "daily_seed", "generated_levels", "ttt_history",
-                "deprem_buyukluk", "deprem_oncesi_sonrasi", "deprem_veri_kaynaklari", "bmi_nedir", "bmi_hatalar", "yas_hesaplama", "artik_yil_dogum_gunu", "pento_history", "pento_dlx",
+                "deprem_buyukluk", "deprem_oncesi_sonrasi", "deprem_veri_kaynaklari", "bmi_nedir", "bmi_hatalar", "yas_hesaplama", "artik_yil_dogum_gunu", "pento_history", "pento_dlx", "tombala_cards",
                 "merkur_retrosu", "burclar_takimyildiz", "ay_evreleri"]  # son 3: yalnız Türkçe (Astrolings)
 
 BT = {

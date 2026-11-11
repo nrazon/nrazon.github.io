@@ -617,6 +617,50 @@
    "hash": "07939e7094407fe7da0c196615582441"
   },
   {
+   "url": "https://nrazon.github.io/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/",
+    "tr": "https://nrazon.github.io/tr/yazilar/tombala-karti-nasil-uretilir-alti-kart-doksan-sayi/",
+    "es": "https://nrazon.github.io/es/blog/como-se-genera-un-carton-de-tombola-seis-cartones-noventa-numeros/",
+    "pt": "https://nrazon.github.io/pt/blog/como-uma-cartela-de-tombala-e-gerada-seis-cartelas-noventa-numeros/"
+   },
+   "default": "en",
+   "hash": "c97fa9517716aa309c9bd94478e9fd25"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/tombala-karti-nasil-uretilir-alti-kart-doksan-sayi/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/",
+    "tr": "https://nrazon.github.io/tr/yazilar/tombala-karti-nasil-uretilir-alti-kart-doksan-sayi/",
+    "es": "https://nrazon.github.io/es/blog/como-se-genera-un-carton-de-tombola-seis-cartones-noventa-numeros/",
+    "pt": "https://nrazon.github.io/pt/blog/como-uma-cartela-de-tombala-e-gerada-seis-cartelas-noventa-numeros/"
+   },
+   "default": "en",
+   "hash": "263cf59a56d17b271889499e929e319d"
+  },
+  {
+   "url": "https://nrazon.github.io/es/blog/como-se-genera-un-carton-de-tombola-seis-cartones-noventa-numeros/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/",
+    "tr": "https://nrazon.github.io/tr/yazilar/tombala-karti-nasil-uretilir-alti-kart-doksan-sayi/",
+    "es": "https://nrazon.github.io/es/blog/como-se-genera-un-carton-de-tombola-seis-cartones-noventa-numeros/",
+    "pt": "https://nrazon.github.io/pt/blog/como-uma-cartela-de-tombala-e-gerada-seis-cartelas-noventa-numeros/"
+   },
+   "default": "en",
+   "hash": "840d8c66a7b4cc02db67744619b89f30"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/blog/como-uma-cartela-de-tombala-e-gerada-seis-cartelas-noventa-numeros/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/",
+    "tr": "https://nrazon.github.io/tr/yazilar/tombala-karti-nasil-uretilir-alti-kart-doksan-sayi/",
+    "es": "https://nrazon.github.io/es/blog/como-se-genera-un-carton-de-tombola-seis-cartones-noventa-numeros/",
+    "pt": "https://nrazon.github.io/pt/blog/como-uma-cartela-de-tombala-e-gerada-seis-cartelas-noventa-numeros/"
+   },
+   "default": "en",
+   "hash": "a588b938bc3137585d5d10fdc44db8f6"
+  },
+  {
    "url": "https://nrazon.github.io/tr/yazilar/merkur-retrosu-nedir-gokyuzunde-gercekte-ne-oluyor/",
    "loc": {
     "tr": "https://nrazon.github.io/tr/yazilar/merkur-retrosu-nedir-gokyuzunde-gercekte-ne-oluyor/"
@@ -649,7 +693,7 @@
     "pt": "https://nrazon.github.io/pt/blog/"
    },
    "default": "en",
-   "hash": "ba26017de1828cb3ab7b14e1b0804ccb"
+   "hash": "1a4016fe3cd42399af19620b16db6fc0"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/",
@@ -660,7 +704,7 @@
     "pt": "https://nrazon.github.io/pt/blog/"
    },
    "default": "en",
-   "hash": "d461847956aa32b218098611de4ad410"
+   "hash": "e258e989eacccc3a70964f44c29d89d5"
   },
   {
    "url": "https://nrazon.github.io/es/blog/",
@@ -671,7 +715,7 @@
     "pt": "https://nrazon.github.io/pt/blog/"
    },
    "default": "en",
-   "hash": "8a4204e6e4b1caea4e9ac8f949094686"
+   "hash": "0650c2dba015edaf845db39afed15cf8"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/",
@@ -682,7 +726,7 @@
     "pt": "https://nrazon.github.io/pt/blog/"
    },
    "default": "en",
-   "hash": "179771f17c725d6f4ddf4fef877aa111"
+   "hash": "e11d1a092244f4af2db84ffa92bdbe5d"
   }
  ],
  "index": {

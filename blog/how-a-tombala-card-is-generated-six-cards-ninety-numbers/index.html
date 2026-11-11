@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How a Tombala Card Is Generated: Six Cards, Ninety Numbers</title>
+<meta name="description" content="Dev notes: how Tombalings builds a Tombala card set where six cards cover 1 to 90 exactly once, and how the rivals are timed to feel human.">
+<link rel="canonical" href="https://nrazon.github.io/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/tombala-karti-nasil-uretilir-alti-kart-doksan-sayi/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/como-se-genera-un-carton-de-tombola-seis-cartones-noventa-numeros/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/como-uma-cartela-de-tombala-e-gerada-seis-cartelas-noventa-numeros/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#C8372A">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="How a Tombala Card Is Generated: Six Cards, Ninety Numbers">
+<meta property="og:description" content="Dev notes: how Tombalings builds a Tombala card set where six cards cover 1 to 90 exactly once, and how the rivals are timed to feel human.">
+<meta property="og:url" content="https://nrazon.github.io/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How a Tombala Card Is Generated: Six Cards, Ninety Numbers">
+<meta name="twitter:description" content="Dev notes: how Tombalings builds a Tombala card set where six cards cover 1 to 90 exactly once, and how the rivals are timed to feel human.">
+<style>:root { --accent:#C8372A; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "How a Tombala Card Is Generated: Six Cards, Ninety Numbers", "description": "Dev notes: how Tombalings builds a Tombala card set where six cards cover 1 to 90 exactly once, and how the rivals are timed to feel human.", "inLanguage": "en", "mainEntityOfPage": "https://nrazon.github.io/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-12", "dateModified": "2026-11-12", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}, "about": {"@type": "SoftwareApplication", "name": "Tombalings", "operatingSystem": "Android", "applicationCategory": "GameApplication", "url": "https://nrazon.github.io/tombalings/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nrazon.github.io/blog/"}, {"@type": "ListItem", "position": 3, "name": "How a Tombala Card Is Generated: Six Cards, Ninety Numbers", "item": "https://nrazon.github.io/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many numbers are on a Tombala card?", "acceptedAnswer": {"@type": "Answer", "text": "Fifteen: five in each of the three rows, spread across nine columns."}}, {"@type": "Question", "name": "What is a strip of six cards?", "acceptedAnswer": {"@type": "Answer", "text": "Six cards that together contain every number from 1 to 90 exactly once."}}, {"@type": "Question", "name": "Do the rivals react instantly?", "acceptedAnswer": {"@type": "Answer", "text": "No. They mark instantly but wait a short reaction time before calling, which depends on the difficulty you choose."}}, {"@type": "Question", "name": "Is the draw order random?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The numbers 1 to 90 are shuffled and drawn once each."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/tombala-karti-nasil-uretilir-alti-kart-doksan-sayi/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/como-se-genera-un-carton-de-tombola-seis-cartones-noventa-numeros/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/como-uma-cartela-de-tombala-e-gerada-seis-cartelas-noventa-numeros/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>How a Tombala Card Is Generated: Six Cards, Ninety Numbers</h1>
+    <p class="by">By Nesim Razon, independent Android developer · 2026-11-12</p>
+    <p class="lead">A Tombala card looks simple, but a fair set of cards has strict rules. While building Tombalings I wrote a generator that makes six cards using every number from 1 to 90 exactly once. Here is how it works, and how the rival players are timed so a round feels alive.</p>
+    <h2>The rules a card must follow</h2>
+    <p>A Tombala card has 3 rows and 9 columns with 15 numbers. Each row holds exactly 5 numbers. Each column holds only numbers from its own range: 1 to 9 in the first column, 10 to 19 in the second, and so on, with 80 to 90 in the last. And every column holds between one and three numbers.</p>
+    <p>Those rules alone are easy. The hard part is a set of six cards: together they must contain every number from 1 to 90 once, no repeats and no gaps.</p>
+    <h2>Why the numbers add up</h2>
+    <p>Look at the columns. The first column has 9 possible numbers, the middle columns have 10 each and the last has 11. Across six cards, every column must be used by every card at least once, so each card starts with one number per column. That already uses 9 numbers of its 15.</p>
+    <p>What is left over are the extra numbers: 3 in the first column, 4 in each of the seven middle columns and 5 in the last. Each card needs exactly 6 extras to reach its 15. The totals match, so a solution exists, but the extras still have to be shared out so that no card gets more than three numbers in one column.</p>
+    <h2>Step one: how many numbers per column</h2>
+    <p>The generator first decides, for every card and every column, how many numbers it holds: one, two or three. It deals the extras column by column, favouring the cards that still need the most, with a little randomness. If it ever gets stuck, it throws the attempt away and starts again. Retrying is cheap, and it keeps the code short and the result unbiased.</p>
+    <h2>Step two: where the numbers sit</h2>
+    <p>Next it chooses which cells in the card are filled. Each row must end with 5 numbers, and each column must have the right count. The generator places the busiest columns first, putting each number into the rows that are emptiest so far. When the rows all reach 5, the card layout is valid. If not, it tries a different arrangement.</p>
+    <h2>Step three: filling in the numbers</h2>
+    <p>Finally, for each column the numbers of that range are shuffled and dealt out to the six cards by the counts chosen in step one. Inside a card the numbers of a column are sorted from small to large, top to bottom, the way printed cards look. The seed of the random generator decides everything, so the same seed always produces the same set. That is useful for testing.</p>
+    <h2>Making the rivals feel human</h2>
+    <p>The rivals mark every drawn number instantly, but they do not call instantly. When a rival qualifies for a prize, the game waits a reaction time first. Each rival gets its own base reaction between about 0.7 and 2.5 seconds, scaled by the difficulty you choose (faster for sharp rivals, slower for relaxed ones) plus a small random extra. A rival also holds one card, or two about a third of the time.</p>
+    <p>The auto-call option for the player waits a short, human-like delay too, between 0.6 and 0.9 seconds. Without it, the player would win every tie, which would feel unfair and boring.</p>
+    <h2>Testing it</h2>
+    <p>Because the game advances with a fixed time step and a seed, a whole round can be replayed in a unit test in milliseconds. The tests check that every strip has exactly 90 distinct numbers, that every card has 15 numbers with 5 per row and that column ranges are respected, over many seeds. It is a good reminder that small rules deserve automatic checks.</p>
+    <aside class="gcta"><img class="ic" src="/tombalings/icon.png" alt="Tombalings icon" width="64" height="64"><div class="tx"><b>Try it free: Tombalings</b><span>Free on Google Play. No account needed.</span></div><a class="play" href="https://play.google.com/store/apps/details?id=com.tombalings.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dblog%26utm_campaign%3Dtombala_cards"><img src="/badges/google-play-en.svg" alt="Google Play" width="162" height="48"></a><a class="small" href="/tombalings/">About Tombalings</a></aside>
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>How many numbers are on a Tombala card?</summary><p>Fifteen: five in each of the three rows, spread across nine columns.</p></details><details><summary>What is a strip of six cards?</summary><p>Six cards that together contain every number from 1 to 90 exactly once.</p></details><details><summary>Do the rivals react instantly?</summary><p>No. They mark instantly but wait a short reaction time before calling, which depends on the difficulty you choose.</p></details><details><summary>Is the draw order random?</summary><p>Yes. The numbers 1 to 90 are shuffled and drawn once each.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/how-we-guarantee-mahjong-solitaire-is-solvable/"><img src="/tilelings/icon.png" alt="" width="48" height="48"><div><b>How We Guarantee a Mahjong Solitaire Board Is Solvable</b></div></a></li><li><a href="/blog/mahjong-solitaire-history-vs-real-mahjong/"><img src="/tilelings/icon.png" alt="" width="48" height="48"><div><b>Mahjong Solitaire History and How It Differs From Mahjong</b></div></a></li><li><a href="/blog/how-daily-puzzles-work-without-a-server/"><img src="/logo.svg" alt="" width="48" height="48"><div><b>How a Daily Puzzle Can Be the Same for Everyone, No Server</b></div></a></li><li><a href="/blog/how-puzzle-levels-are-generated-and-checked/"><img src="/logo.svg" alt="" width="48" height="48"><div><b>How Hundreds of Puzzle Levels Are Generated and Checked</b></div></a></li><li><a href="/blog/tic-tac-toe-history-and-variants/"><img src="/tictactoe/icon.svg" alt="" width="48" height="48"><div><b>Tic-Tac-Toe: A Solved Game, an Early Computer and Its Variants</b></div></a></li><li><a href="/blog/earthquake-magnitude-vs-intensity/"><img src="/sondepremler/icon.svg" alt="" width="48" height="48"><div><b>Earthquake Magnitude vs Intensity: What Is the Difference?</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>
