@@ -9,7 +9,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "deb82dd7c00f6529751e695b225a2f3c",
+  "hash": "5d3bed6ec8a7b702904897f41499024d",
   "slug": ""
  },
  "https://nrazon.github.io/tr/": {
@@ -22,7 +22,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "ae6d0b92b3a2b88054d98da383cfb15a",
+  "hash": "90ca8d86ee15d53456d9011386a9f404",
   "slug": ""
  },
  "https://nrazon.github.io/es/": {
@@ -35,7 +35,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "f9ef087210eeff8c687994f442b030af",
+  "hash": "bd15bc62da5911c4ff49e6a9b0a14142",
   "slug": ""
  },
  "https://nrazon.github.io/pt/": {
@@ -48,7 +48,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "e51f5ea54fce38d46b47f6434cd35860",
+  "hash": "05c83848e7945c5450fc7581f042acba",
   "slug": ""
  },
  "https://nrazon.github.io/agecalculator/": {
@@ -853,7 +853,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "c73571633de902ddcc213b5efc32dd65",
+  "hash": "cd1b56ebe9229a8b467ff067b919acb2",
   "slug": "tilelings"
  },
  "https://nrazon.github.io/tr/tilelings/": {
@@ -866,7 +866,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "de63ecb65a84858974a85faee66c0919",
+  "hash": "47c7ad7618570e74e48afc5f40622dc7",
   "slug": "tilelings"
  },
  "https://nrazon.github.io/es/tilelings/": {
@@ -879,7 +879,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "4b40d0a1e0abe2c2cfa6e465a9f96f1b",
+  "hash": "16fe951653a21e1ca345ee09ab3c6405",
   "slug": "tilelings"
  },
  "https://nrazon.github.io/pt/tilelings/": {
@@ -892,7 +892,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "61bb2795e6d9d24672fd04e44b635cd4",
+  "hash": "47aa8452d93fcb19ebfcfa713f6a1095",
   "slug": "tilelings"
  },
  "https://nrazon.github.io/tombalings/": {

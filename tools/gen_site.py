@@ -628,7 +628,7 @@ APPDEFS = [
     ("pentolings", "Pentolings", "Pentolings", "Pentolings", "icon.png", "#12A594", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2027-01-05"),
     ("nudgelings", "Nudgelings", "Nudgelings", "Nudgelings", "icon.png", "#2FBF8A", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-20"),
     ("grumblings", "Grumblings", "Grumblings", "Grumblings", "icon.png", "#C8553A", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-10"),
-    ("tilelings", "Tilelings", "Tilelings", "Tilelings", "icon.png", "#2E9E73", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-05"),
+    ("tilelings", "Tilelings", "Tilelings", "Tilelings", "icon.png", "#4A5BB0", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-05"),
     ("nuzzlings", "Nuzzlings", "Nuzzlings", "Nuzzlings", "icon.png", "#F4A15B", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-31"),
     ("logiclings", "Logiclings", "Logiclings", "Logiclings", "icon.png", "#2F66AD", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-15"),
     ("beamies", "Beamies", "Beamies", "Beamies", "icon.svg", "#F2C14E", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-03"),

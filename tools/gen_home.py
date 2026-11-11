@@ -263,7 +263,7 @@ CSS = r'''
   @media (min-width:700px) { .hero { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); align-items:center; } .hero .body { padding:24px 28px; } .hero-art { border-radius:24px 0 0 24px; } }
   .hero-art { border-radius:24px 24px 0 0; position:relative; background:linear-gradient(135deg,#0F6B52,#16A07F); color:#fff; padding:22px 18px 22px 26px; display:flex; flex-direction:column; justify-content:center; gap:6px; overflow:hidden; min-height:270px; }
   .hero-art.beamies { background:linear-gradient(135deg,#1A2350,#4B2E8F); }
-  .hero-art.tilelings { background:linear-gradient(135deg,#0F3326,#1E6048); }
+  .hero-art.tilelings { background:linear-gradient(135deg,#1E2650,#3A4A8A); }
   .hero-art .ha-text { display:flex; flex-direction:column; position:relative; z-index:1; }
   .hero-art .ha-title { font-size:clamp(34px,4.6vw,46px); font-weight:900; line-height:1; letter-spacing:-.02em; }
   .hero-art .ha-tag { font-weight:650; font-size:clamp(15px,2.6vw,19px); opacity:.95; margin-top:4px; }
