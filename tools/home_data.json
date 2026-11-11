@@ -1,5 +1,33 @@
 [
  {
+  "slug": "tombalings",
+  "cat": "games",
+  "icon": "tombalings/icon.png",
+  "names": {
+   "tr": "Tombalings",
+   "en": "Tombalings",
+   "es": "Tombalings",
+   "pt": "Tombalings"
+  },
+  "tint": "#C8372A",
+  "pkg": "com.tombalings.nesimapps",
+  "new": "2026-11-26",
+  "desc": {
+   "tr": "Tombala (90 top) ve Bingo (75 top): tatlı rakiplerle sayı yarışı. Gerçek para yok, tamamen ücretsiz oyun.",
+   "en": "Tombala (90 balls) and Bingo (75 balls): a cheerful number race against cute rivals. No real money, free play.",
+   "es": "Tombala (90 bolas) y Bingo (75 bolas): una carrera de números contra rivales simpáticos. Sin dinero real, juego gratis.",
+   "pt": "Tombala (90 bolas) e Bingo (75 bolas): uma corrida de números contra rivais fofos. Sem dinheiro real, jogo grátis."
+  },
+  "status": "live",
+  "popular": false,
+  "desc_live": {
+   "tr": "Tombala (90 top) ve Bingo (75 top): tatlı rakiplerle sayı yarışı. Gerçek para yok, tamamen ücretsiz oyun.",
+   "en": "Tombala (90 balls) and Bingo (75 balls): a cheerful number race against cute rivals. No real money, free play.",
+   "es": "Tombala (90 bolas) y Bingo (75 bolas): una carrera de números contra rivales simpáticos. Sin dinero real, juego gratis.",
+   "pt": "Tombala (90 bolas) e Bingo (75 bolas): uma corrida de números contra rivais fofos. Sem dinheiro real, jogo grátis."
+  }
+ },
+ {
   "slug": "nuzzlings",
   "cat": "games",
   "icon": "nuzzlings/icon.png",

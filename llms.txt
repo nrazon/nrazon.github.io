@@ -4,6 +4,7 @@
 
 ## Games
 
+- [Tombalings](https://nrazon.github.io/tombalings/): Tombala (90 balls) and Bingo (75 balls): a cheerful number race against cute rivals. No real money, free play.
 - [Nuzzlings](https://nrazon.github.io/nuzzlings/): Adopt a kitten, cuddle it, feed it and watch it grow up. Cozy and calm.
 - [Pentolings](https://nrazon.github.io/pentolings/): Fit and Drop: two cute puzzle games in one app. Fill shapes with pieces, pop the colours.
 - [Nudgelings](https://nrazon.github.io/nudgelings/): Slide and Push: two cute puzzle games in one app, 400 levels.
