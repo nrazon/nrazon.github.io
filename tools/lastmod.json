@@ -1,6 +1,6 @@
 {
  "https://nrazon.github.io/": {
-  "hash": "08b0f52f0357064f2f045e6bd49bcb04",
+  "hash": "deb82dd7c00f6529751e695b225a2f3c",
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/agecalculator/": {
@@ -32,11 +32,11 @@
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/cubbles/": {
-  "hash": "e173a04139540e6e942ebbb54a4f719b",
+  "hash": "8812d234eb20a3281d3c048a5c53fd91",
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/es/": {
-  "hash": "a6786887de40546540e26d1444ef9dd8",
+  "hash": "f9ef087210eeff8c687994f442b030af",
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/es/agecalculator/": {
@@ -56,7 +56,7 @@
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/es/cubbles/": {
-  "hash": "4b7470d65ee17347584c7a14ef7c69a3",
+  "hash": "ea73d183d9ee19d07adc5e12722042fc",
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/es/game2048/": {
@@ -104,7 +104,7 @@
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/pt/": {
-  "hash": "3b3f5a2d90d0a02f1795c1727df22c01",
+  "hash": "e51f5ea54fce38d46b47f6434cd35860",
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/pt/agecalculator/": {
@@ -124,7 +124,7 @@
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/pt/cubbles/": {
-  "hash": "2645a1ceb228b8122d0fdd1d64d33c89",
+  "hash": "34c58158e89744e2524a0983ace234da",
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/pt/game2048/": {
@@ -172,7 +172,7 @@
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/tr/": {
-  "hash": "98aa03ef4b685b3fceeeed6ad106c505",
+  "hash": "ae6d0b92b3a2b88054d98da383cfb15a",
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/tr/agecalculator/": {
@@ -204,7 +204,7 @@
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/tr/cubbles/": {
-  "hash": "bdbe7b19cb658b46a85b6a770a031b02",
+  "hash": "68fe8372535d96a2994b0c4a687d4cb9",
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/tr/game2048/": {
@@ -300,16 +300,16 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/es/guias/trucos-puzle-de-bloques/": {
-  "hash": "e6adcd5b8e1fe087206e0a9f51f5e7d9",
-  "date": "2026-11-10"
+  "hash": "82ecfc8d69886d9d68bfe3e81bd2da59",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/guides/": {
   "hash": "0cd81fd9bc223dd4b8f47aa53be31ee8",
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/guides/block-puzzle-tips-and-tricks/": {
-  "hash": "cc634872304f6044f8ac982e4f9b4b23",
-  "date": "2026-11-10"
+  "hash": "5516ac7516cbc72778b561cf704734ad",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/guides/how-to-play-2048-strategy/": {
   "hash": "e44011919b006e27a6fb2e5af6f14c99",
@@ -368,8 +368,8 @@
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/pt/guias/dicas-quebra-cabeca-de-blocos/": {
-  "hash": "f10a2cffa4bcfdf952cf9ec4b4c3d570",
-  "date": "2026-11-10"
+  "hash": "d8bec221d22f43c35ad27722090f33ac",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/pt/guias/jogo-da-velha-estrategia-para-nao-perder/": {
   "hash": "9bf8da022ea51c6fde7578f4dcf8984b",
@@ -388,8 +388,8 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/tr/rehber/blok-bulmaca-ipuclari/": {
-  "hash": "1bb315dbf5bd0e3ab0f1402806d6d257",
-  "date": "2026-11-10"
+  "hash": "310ea8eb8ab9b2b45e25f072ba82069f",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/tr/rehber/klondike-solitaire-nasil-oynanir/": {
   "hash": "59c0a4782b34ae7ccad761fdf99582ca",
@@ -580,16 +580,16 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/es/guias/puzle-de-bloques-combos-y-estrategia-de-puntuacion/": {
-  "hash": "328ce944818685b31c38c9d0246668ec",
-  "date": "2026-11-10"
+  "hash": "7858726ae6ce90fefa1dc27385dbbc4b",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/guides/2048-beyond-4096-8192-common-mistakes/": {
   "hash": "fe6dbf7b5cb3f18289d26eebc5723cd2",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/guides/block-puzzle-combos-and-high-score-strategy/": {
-  "hash": "9d3d4dd09ce3575b2881ac4fe767906a",
-  "date": "2026-11-10"
+  "hash": "32c8e4a65f21bd92db16ae5b5b217556",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/guides/box-pushing-puzzle-strategy-avoid-deadlocks/": {
   "hash": "422432f4b3fa2600a281a73b4a0709ff",
@@ -672,16 +672,16 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/pt/guias/quebra-cabeca-de-blocos-combos-e-estrategia-de-pontuacao/": {
-  "hash": "6eab464826cf7e1d22ee69b10a9b96a0",
-  "date": "2026-11-10"
+  "hash": "89100dfa81f8ca96f980adc352fb57fd",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/tr/rehber/2048-den-sonra-4096-8192-ve-sik-yapilan-hatalar/": {
   "hash": "1a62e1e58ecb43b1d24138311723328a",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/tr/rehber/blok-bulmaca-kombo-ve-yuksek-skor-stratejisi/": {
-  "hash": "7ead4a1bae10ee3f59972a71cdb27520",
-  "date": "2026-11-10"
+  "hash": "082e4dc3642d978a8da413e621919b6a",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/tr/rehber/freecell-nasil-oynanir-strateji/": {
   "hash": "62cab7ef53cebc5173cfa97762fdba32",

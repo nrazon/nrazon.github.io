@@ -9,7 +9,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "08b0f52f0357064f2f045e6bd49bcb04",
+  "hash": "deb82dd7c00f6529751e695b225a2f3c",
   "slug": ""
  },
  "https://nrazon.github.io/tr/": {
@@ -22,7 +22,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "98aa03ef4b685b3fceeeed6ad106c505",
+  "hash": "ae6d0b92b3a2b88054d98da383cfb15a",
   "slug": ""
  },
  "https://nrazon.github.io/es/": {
@@ -35,7 +35,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "a6786887de40546540e26d1444ef9dd8",
+  "hash": "f9ef087210eeff8c687994f442b030af",
   "slug": ""
  },
  "https://nrazon.github.io/pt/": {
@@ -48,7 +48,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "3b3f5a2d90d0a02f1795c1727df22c01",
+  "hash": "e51f5ea54fce38d46b47f6434cd35860",
   "slug": ""
  },
  "https://nrazon.github.io/agecalculator/": {
@@ -333,7 +333,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "e173a04139540e6e942ebbb54a4f719b",
+  "hash": "8812d234eb20a3281d3c048a5c53fd91",
   "slug": "cubbles"
  },
  "https://nrazon.github.io/tr/cubbles/": {
@@ -346,7 +346,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "bdbe7b19cb658b46a85b6a770a031b02",
+  "hash": "68fe8372535d96a2994b0c4a687d4cb9",
   "slug": "cubbles"
  },
  "https://nrazon.github.io/es/cubbles/": {
@@ -359,7 +359,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "4b7470d65ee17347584c7a14ef7c69a3",
+  "hash": "ea73d183d9ee19d07adc5e12722042fc",
   "slug": "cubbles"
  },
  "https://nrazon.github.io/pt/cubbles/": {
@@ -372,7 +372,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "2645a1ceb228b8122d0fdd1d64d33c89",
+  "hash": "34c58158e89744e2524a0983ace234da",
   "slug": "cubbles"
  },
  "https://nrazon.github.io/game2048/": {

@@ -337,7 +337,7 @@ CARDLES = dict(
 )
 
 CUBBLES = dict(
-    slug="cubbles", name="Cubbles", pkg="com.cubbles.nesimapps", icon="cubbles/icon.svg", tint="#7C5CC9", hero=("#2A1F5E", "#6C4BC4"),
+    slug="cubbles", name="Cubbles", pkg="com.cubbles.nesimapps", icon="cubbles/icon.svg", tint="#2F9BFF", hero=("#1D6FC9", "#3AA6F0"),
     accent="#6A45D8", langs=["tr", "en"], shots=6, art=cubes_art, new_until="2026-11-30",
     title={"tr": "Cubbles: Sevimli Blok Bulmaca", "en": "Cubbles: Cute Block Puzzle"},
     tagline={"tr": "Sevimli bloklar, büyük kombolar", "en": "Cute blocks, big combos"},
