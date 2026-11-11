@@ -1,7 +1,16 @@
 {
- "uretim": "2026-11-10T13:28:40Z",
+ "uretim": "2026-11-11T12:43:26Z",
  "surum": 1,
  "apod": [
+  {
+   "tarih": "2026-11-11",
+   "baslik": "NGC 4449: Small Galaxy, Big Impact",
+   "tur": "image",
+   "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-11-ngc-4449-small-galaxy-big-impact/",
+   "ozet_en": "Explanation: Don’t judge a galaxy by its size. Our home galaxy, the Milky Way, is about 100,000 light years across. This huge expanse of space contains hundreds of billions of stars! The smallest galaxies, called dwarf galaxies, are about 1/10th the size of the Milky Way and only contain a few billion stars.",
+   "kredi": "NASA, ESA, A. Aloisi (STScI/ESA), and the Hubble Heritage (STScI/AURA)-ESA/Hubble Collaboration",
+   "nasa_kaynakli": false
+  },
   {
    "tarih": "2026-11-10",
    "baslik": "Saturn Behind the Moon",
@@ -81,15 +90,6 @@
    "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-2-a-long-cloud-on-mars/",
    "ozet_en": "Explanation: What’s causing this unusually long cloud on Mars? Known as the Arsia Mons Elongated Cloud (AMEC) and first recorded by NASA’s Viking Orbiter 2 in 1977, the strange cloud has been imaged in greater detail more recently by ESA’s robotic Mars Express spacecraft. The featured image is from 2018.",
    "kredi": "ESA, DLR, FU Berlin; Processing &amp; License: J. Cowart",
-   "nasa_kaynakli": false
-  },
-  {
-   "tarih": "2026-11-01",
-   "baslik": "Colors of the Moon",
-   "tur": "image",
-   "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-1-colors-of-the-moon/",
-   "ozet_en": "Explanation: What color is the Moon? It depends on the night -- and the time. Outside of the Earth's atmosphere, the dark Moon, which shines by reflected sunlight, appears a magnificently brown-tinged gray.",
-   "kredi": "Marcella Giulia Pace",
    "nasa_kaynakli": false
   }
  ],
@@ -192,51 +192,30 @@
  },
  "asteroitler": {
   "aralik": [
-   "2026-11-10",
-   "2026-11-24"
+   "2026-11-11",
+   "2026-11-25"
   ],
   "liste": [
    {
-    "ad": "(2015 VH65)",
-    "tarih": "2026-Nov-10 00:24",
-    "mesafe_ay": 9.7,
-    "hiz_kms": 8.0,
-    "cap_m": 10
-   },
-   {
-    "ad": "(2026 VT3)",
-    "tarih": "2026-Nov-10 10:04",
-    "mesafe_ay": 4.3,
-    "hiz_kms": 9.8,
-    "cap_m": 13
-   },
-   {
-    "ad": "(2026 VK1)",
-    "tarih": "2026-Nov-10 10:42",
-    "mesafe_ay": 9.6,
-    "hiz_kms": 9.1,
-    "cap_m": 15
-   },
-   {
-    "ad": "(2026 VK5)",
-    "tarih": "2026-Nov-10 15:37",
-    "mesafe_ay": 12.3,
-    "hiz_kms": 9.8,
-    "cap_m": 22
-   },
-   {
-    "ad": "(2012 YD7)",
-    "tarih": "2026-Nov-10 20:05",
-    "mesafe_ay": 18.5,
-    "hiz_kms": 7.5,
-    "cap_m": 49
+    "ad": "(2026 VL8)",
+    "tarih": "2026-Nov-11 03:10",
+    "mesafe_ay": 11.1,
+    "hiz_kms": 14.3,
+    "cap_m": 19
    },
    {
     "ad": "(2026 VN4)",
-    "tarih": "2026-Nov-11 03:52",
+    "tarih": "2026-Nov-11 03:51",
     "mesafe_ay": 8.6,
     "hiz_kms": 3.6,
-    "cap_m": 13
+    "cap_m": 12
+   },
+   {
+    "ad": "(2026 VO8)",
+    "tarih": "2026-Nov-11 05:43",
+    "mesafe_ay": 5.7,
+    "hiz_kms": 15.1,
+    "cap_m": 21
    },
    {
     "ad": "(2023 VF3)",
@@ -253,6 +232,13 @@
     "cap_m": 18
    },
    {
+    "ad": "(2026 VS8)",
+    "tarih": "2026-Nov-11 13:48",
+    "mesafe_ay": 0.8,
+    "hiz_kms": 14.3,
+    "cap_m": 4
+   },
+   {
     "ad": "(2026 VX1)",
     "tarih": "2026-Nov-11 15:19",
     "mesafe_ay": 7.9,
@@ -261,10 +247,24 @@
    },
    {
     "ad": "(2026 VY7)",
-    "tarih": "2026-Nov-12 08:14",
+    "tarih": "2026-Nov-12 08:13",
     "mesafe_ay": 11.7,
     "hiz_kms": 20.0,
-    "cap_m": 49
+    "cap_m": 48
+   },
+   {
+    "ad": "(2026 VK8)",
+    "tarih": "2026-Nov-12 12:47",
+    "mesafe_ay": 7.8,
+    "hiz_kms": 22.7,
+    "cap_m": 33
+   },
+   {
+    "ad": "(2026 VP8)",
+    "tarih": "2026-Nov-13 02:12",
+    "mesafe_ay": 3.0,
+    "hiz_kms": 6.2,
+    "cap_m": 13
    },
    {
     "ad": "(2025 VG5)",
@@ -278,7 +278,7 @@
     "tarih": "2026-Nov-13 05:59",
     "mesafe_ay": 9.8,
     "hiz_kms": 14.2,
-    "cap_m": 38
+    "cap_m": 39
    }
   ],
   "kredi": "NASA/JPL CNEOS"
@@ -295,16 +295,16 @@
    {
     "baslik": "Typhoon Cempaka",
     "tur": "Severe Storms",
-    "tarih": "2026-11-10",
-    "boylam": 139.9,
-    "enlem": 25.4
+    "tarih": "2026-11-11",
+    "boylam": 146.7,
+    "enlem": 27.7
    },
    {
     "baslik": "Tropical Storm Pena",
     "tur": "Severe Storms",
-    "tarih": "2026-11-10",
-    "boylam": -163.3,
-    "enlem": 11.7
+    "tarih": "2026-11-11",
+    "boylam": -165.6,
+    "enlem": 10.5
    },
    {
     "baslik": "Wildfire FOOT CREEK, Johnson, Wyoming",
@@ -396,25 +396,25 @@
  "iss_tle": {
   "OBJECT_NAME": "ISS (ZARYA)",
   "OBJECT_ID": "1998-067A",
-  "EPOCH": "2026-11-10T04:12:02.822688",
-  "MEAN_MOTION": 15.49289712,
-  "ECCENTRICITY": 0.00072923,
+  "EPOCH": "2026-11-11T04:58:11.303328",
+  "MEAN_MOTION": 15.49310717,
+  "ECCENTRICITY": 0.00073162,
   "INCLINATION": 51.6322,
-  "RA_OF_ASC_NODE": 297.6644,
-  "ARG_OF_PERICENTER": 8.9462,
-  "MEAN_ANOMALY": 351.1656,
+  "RA_OF_ASC_NODE": 292.5559,
+  "ARG_OF_PERICENTER": 12.7435,
+  "MEAN_ANOMALY": 347.3737,
   "EPHEMERIS_TYPE": 0,
   "CLASSIFICATION_TYPE": "U",
   "NORAD_CAT_ID": 25544,
   "ELEMENT_SET_NO": 999,
-  "REV_AT_EPOCH": 59438,
-  "BSTAR": 0.0001757453,
-  "MEAN_MOTION_DOT": 9.346e-05,
+  "REV_AT_EPOCH": 59454,
+  "BSTAR": 0.00017362007,
+  "MEAN_MOTION_DOT": 9.235e-05,
   "MEAN_MOTION_DDOT": 0
  },
  "gibs": {
-  "tarih": "2026-11-09",
-  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_NOAA21_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-11-09&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
+  "tarih": "2026-11-10",
+  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_NOAA21_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-11-10&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
   "kredi": "NASA GIBS / Worldview"
  }
 }
