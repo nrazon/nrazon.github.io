@@ -67,6 +67,10 @@
 
 
 
+
+
+
+<figure class="vid" data-l="pt"><button aria-label="Reproduzir o vídeo" class="vidbtn" data-app="tombalings" data-yt="fpVZww6F678" type="button"><img alt="Tombalings video" height="360" loading="lazy" src="/tombalings/shots/pt/video.jpg" width="640"/><span class="pl"><i></i></span><span class="vl">Vídeo de apresentação</span></button></figure>
 <figure data-l="pt"><div class="phone"><img alt="Tombalings screenshot 1" height="700" loading="lazy" src="/tombalings/shots/pt/01.jpg" width="360"/></div></figure>
 <figure data-l="pt"><div class="phone"><img alt="Tombalings screenshot 2" height="700" loading="lazy" src="/tombalings/shots/pt/02.jpg" width="360"/></div></figure>
 <figure data-l="pt"><div class="phone"><img alt="Tombalings screenshot 3" height="700" loading="lazy" src="/tombalings/shots/pt/03.jpg" width="360"/></div></figure>
@@ -107,6 +111,8 @@
 </section>
 <section class="block howto"><h2 class="h">Como jogar</h2><p><a href="/pt/guias/como-jogar-tombala-regras-e-dicas/">Leia o guia: como jogar Tombalings</a></p></section><footer><span data-l="pt">Contato</span>: <a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/tombalings/privacy.html"><span data-l="pt">Política de privacidade</span></a> · <a href="/site-privacy.html"><span data-l="pt">Privacidade do site</span></a></footer>
 </main>
+<dialog aria-label="Video" class="vmodal" id="vmodal"><div class="vframe" id="vframe"></div><button aria-label="Close" class="vclose" type="button">✕</button></dialog>
+<script>(function(){var d=document.getElementById("vmodal");if(!d||!d.showModal)return;var f=document.getElementById("vframe");document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".vidbtn");if(b){f.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+b.getAttribute("data-yt")+'?autoplay=1&rel=0&playsinline=1" title="Video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>';d.showModal();return;}if(e.target===d||(e.target.classList&&e.target.classList.contains("vclose")))d.close();});d.addEventListener("close",function(){f.innerHTML="";});})();</script>
 <script>
   (function () {
     var today = new Date().toISOString().slice(0, 10);
