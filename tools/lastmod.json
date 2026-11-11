@@ -1,6 +1,6 @@
 {
  "https://nrazon.github.io/": {
-  "hash": "bdd6b569f87d5acc95b82b66da2366a6",
+  "hash": "08b0f52f0357064f2f045e6bd49bcb04",
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/agecalculator/": {
@@ -36,7 +36,7 @@
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/es/": {
-  "hash": "fc2f11fd6c4b09c41a82b3900947d008",
+  "hash": "a6786887de40546540e26d1444ef9dd8",
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/es/agecalculator/": {
@@ -64,7 +64,7 @@
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/es/logiclings/": {
-  "hash": "2d6a48db65c880f6ab0176acdc3a6e5d",
+  "hash": "48013742095064d9ebcb6f21530da6d4",
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/es/sliplines/": {
@@ -96,7 +96,7 @@
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/logiclings/": {
-  "hash": "907a4215a9b17eacf580dbabdaf94c21",
+  "hash": "7c7aa8db8d83a8137bb462c13cc21876",
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/medyafobi/": {
@@ -104,7 +104,7 @@
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/pt/": {
-  "hash": "a962af65694bf60237ca90c676b7dd6c",
+  "hash": "3b3f5a2d90d0a02f1795c1727df22c01",
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/pt/agecalculator/": {
@@ -132,7 +132,7 @@
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/pt/logiclings/": {
-  "hash": "5430961b63467f79a2e914f411e76e33",
+  "hash": "177acb444642dee1ada5e1d9dd90d42f",
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/pt/sliplines/": {
@@ -172,7 +172,7 @@
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/tr/": {
-  "hash": "ba426f946d9ef2a7760410b754f2b255",
+  "hash": "98aa03ef4b685b3fceeeed6ad106c505",
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/tr/agecalculator/": {
@@ -216,7 +216,7 @@
   "date": "2026-11-05"
  },
  "https://nrazon.github.io/tr/logiclings/": {
-  "hash": "43b5d8cd2ceb67bc524e5c7c1c1e756f",
+  "hash": "ab7f9c1b18615156d6881ffda77e6463",
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/tr/medyafobi/": {
@@ -292,8 +292,8 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/es/guias/como-resolver-corona-gemelos-camino/": {
-  "hash": "ba6ab44041bb8d39ac6ec9122656b803",
-  "date": "2026-11-10"
+  "hash": "60a7ff724f8d337804a266bad5ba637e",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/es/guias/tres-en-raya-estrategia-para-no-perder/": {
   "hash": "45e05810236fe00a7ea551e9c2628194",
@@ -332,8 +332,8 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/guides/how-to-solve-crown-twin-path-puzzles/": {
-  "hash": "5cbb8f0c975b56807353c41df2659587",
-  "date": "2026-11-10"
+  "hash": "36f5cb01baf6567cc4cd59094d31708a",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/": {
   "hash": "f565d3b859d7965061a426bb51aa6879",
@@ -364,8 +364,8 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/pt/guias/como-resolver-coroa-gemeos-caminho/": {
-  "hash": "8bd3a40f0216396ed3d8021782095936",
-  "date": "2026-11-10"
+  "hash": "87636f556ff6c78ccf6e26f1c1965938",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/pt/guias/dicas-quebra-cabeca-de-blocos/": {
   "hash": "f10a2cffa4bcfdf952cf9ec4b4c3d570",
@@ -404,75 +404,75 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/tr/rehber/tac-ikiz-yol-bulmacalari-nasil-cozulur/": {
-  "hash": "5966bdc46ac2acaf8108f51dd7fd3e2a",
-  "date": "2026-11-10"
+  "hash": "20a2946d5c2eb95ed94571b43b6ffdc7",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/tr/rehber/xox-yenilmez-strateji/": {
   "hash": "a9c5c0eda70c0ee771fea87764755187",
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/es/guias/caras-dormilonas-estrategia-perseguir-las-luces/": {
-  "hash": "25a6a40e20a8ab1282b904d184b6819a",
-  "date": "2026-11-10"
+  "hash": "943d790910dc12562753a7d624885b3e",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/es/guias/saltos-de-ranas-estrategia-solitario-de-fichas/": {
-  "hash": "34ca315221ae2e22f0bf3889d64bf388",
-  "date": "2026-11-10"
+  "hash": "03c636fa0ed362ebc42c154420483e0d",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/guides/frog-hops-peg-solitaire-strategy/": {
-  "hash": "93fb5a411d8d4edfb7e613877c6723bd",
-  "date": "2026-11-10"
+  "hash": "61bb709d917b414f8bae39a9d880405b",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/guides/sleepy-faces-strategy-chase-the-lights/": {
-  "hash": "07f3fc9b3c43ab74304996188e65dbd1",
-  "date": "2026-11-10"
+  "hash": "0de44e05488377fd284f1c3247dfbe3e",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/pt/guias/pulos-de-sapos-estrategia-resta-um/": {
-  "hash": "5fb81dd94c2c7b10917ac49e66b8093c",
-  "date": "2026-11-10"
+  "hash": "0412f76ee3b1d17bfbd8b4836412e33f",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/pt/guias/rostos-sonolentos-estrategia-perseguir-as-luzes/": {
-  "hash": "5159bbda44a0dba57240563de263335e",
-  "date": "2026-11-10"
+  "hash": "b3a95c942db10fd19b5a570ce8c66bf5",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/tr/rehber/kurbaga-ziplatma-stratejisi-peg-solitaire/": {
-  "hash": "442a5c93f67e29bceceaf738f8c8b44b",
-  "date": "2026-11-10"
+  "hash": "a5e21d7f839377515dcd7de9e7ea49c6",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/tr/rehber/uykucu-yuzler-stratejisi-isiklari-kovala/": {
-  "hash": "8e3524426a497bf2dd0281fbad90456b",
-  "date": "2026-11-10"
+  "hash": "e7f25fa652f49875bb56837d6c6d0b99",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/es/guias/como-jugar-grumblings-puzle-de-laberinto/": {
-  "hash": "d39284495bffa4dff6a8349df0382eb2",
-  "date": "2026-11-10"
+  "hash": "d7a9b38915e1f74f388a6a2818781824",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/guides/how-to-play-grumblings-maze-puzzle/": {
-  "hash": "1bf7c634584e102fc2c76dab4aa6ef63",
-  "date": "2026-11-10"
+  "hash": "7390180147db1f443307392b4a9deb28",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/pt/guias/como-jogar-grumblings-quebra-cabeca-de-labirinto/": {
-  "hash": "e4c9e74f9395e1eba92d897e1ec9f9fe",
-  "date": "2026-11-10"
+  "hash": "15832001a1a618056a744164e6894aa1",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/tr/rehber/grumblings-nasil-oynanir-labirent-bulmacasi/": {
-  "hash": "4111c997b9d10dc7b1f42f1879b418e5",
-  "date": "2026-11-10"
+  "hash": "d094c603c4f5f586c3af823e91998995",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/es/grumblings/": {
-  "hash": "3925aeb125f25fe9844cbde4dec2d2eb",
+  "hash": "0bbe711ed87918bb83208712df6dc1c6",
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/grumblings/": {
-  "hash": "a7106d29320642724fcafc4154c1262f",
+  "hash": "500509bc75202f3b9dd4a70c618ae73c",
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/pt/grumblings/": {
-  "hash": "6f64b419e6b8025a58232e46fc501f3d",
+  "hash": "256e7780361968774d3e5bc296a17371",
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/tr/grumblings/": {
-  "hash": "1c74017dd44ab1ff0ef84d973482a242",
+  "hash": "9552e24ba3ea8d5b9cfcba5409cdb3ea",
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/es/nudgelings/": {
@@ -896,84 +896,84 @@
   "date": "2026-11-10"
  },
  "https://nrazon.github.io/blog/pentomino-puzzles-dancing-links-exact-cover/": {
-  "hash": "909f153ea15dae54df8853426ad07a69",
-  "date": "2026-11-10"
+  "hash": "fe89dad0bc90232d69a01959b078cee0",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/blog/pentominoes-history-golomb-twelve-pieces/": {
-  "hash": "339f7737fa4f69e5730d433053fffb95",
-  "date": "2026-11-10"
+  "hash": "b084c13e1f58a2c3574b25378d3cd55a",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/es/blog/historia-de-los-pentominos-golomb-doce-piezas/": {
-  "hash": "3d71759ef47735c6734f332fcf8e3d7f",
-  "date": "2026-11-10"
+  "hash": "aff98474ca32090b509d11d0a0bc770a",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/es/blog/puzles-de-pentominos-dancing-links-cobertura-exacta/": {
-  "hash": "f5231657131fb55d963beaa833a911bb",
-  "date": "2026-11-10"
+  "hash": "8e22ec37a71673aa3530efd8afb29304",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/es/guias/bloques-que-caen-estrategia-explotar-colores/": {
-  "hash": "2979674843b3673708553d5c71e84951",
-  "date": "2026-11-10"
+  "hash": "b809f0b061c8887c7ae7b7ee14b10283",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/es/guias/como-resolver-puzles-de-pentominos/": {
-  "hash": "b3cfafcc1ef308ad8feca07c05b45c7f",
-  "date": "2026-11-10"
+  "hash": "e8ae159e1f018b87c4d7a96f1b6389bf",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/es/pentolings/": {
-  "hash": "2726044edbc394983d4c2c36f5209a30",
+  "hash": "aabf72410c5d37da9605efd5c54f9e9b",
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/guides/falling-blocks-color-pop-strategy/": {
-  "hash": "4e5fc41d00af5cf4ebe8cd8a4128e198",
-  "date": "2026-11-10"
+  "hash": "3f747e11911ff046a9f9623b9bbb40b5",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/guides/how-to-solve-pentomino-puzzles/": {
-  "hash": "0a2c8f0edf03544eae17556bcbef9192",
-  "date": "2026-11-10"
+  "hash": "eca91571b76fedebba3f602c414086c1",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/pentolings/": {
-  "hash": "0db6ddacf49d9ddac7fbef664a956986",
+  "hash": "190515a1302595b1779f4955e27709ea",
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/pt/blog/historia-dos-pentominos-golomb-doze-pecas/": {
-  "hash": "fc95ef257d4718cf991e306c015904b1",
-  "date": "2026-11-10"
+  "hash": "e89d4492311e854ae86d4e29e5f72c1d",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/pt/blog/quebra-cabecas-de-pentominos-dancing-links-cobertura-exata/": {
-  "hash": "07939e7094407fe7da0c196615582441",
-  "date": "2026-11-10"
+  "hash": "e43c6a0b53f1daa2103f5e0f93c56f87",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/pt/guias/blocos-que-caem-estrategia-estourar-cores/": {
-  "hash": "32c8932076a368469b6b730e4219de88",
-  "date": "2026-11-10"
+  "hash": "c49acc74b380c92251e577617048ac01",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/pt/guias/como-resolver-quebra-cabecas-de-pentominos/": {
-  "hash": "59adba4f358ec652c6f952ef082b7e8b",
-  "date": "2026-11-10"
+  "hash": "e8a7d9966a789115012e4ddbab03fbab",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/pt/pentolings/": {
-  "hash": "10ba1ba236dc3181406a753b4f81b710",
+  "hash": "fd8fb0632e8e8e45ea2125d44878b01a",
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/tr/pentolings/": {
-  "hash": "ee9e81ce030e00cc697d089c2a5b926c",
+  "hash": "dee4fb1d3bced9744c7f24ef85bbe977",
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/tr/rehber/dusen-bloklar-renk-patlatma-stratejisi/": {
-  "hash": "a12138709316562f3b6ccb848500e808",
-  "date": "2026-11-10"
+  "hash": "35353b5d512d7b95622df53b54844f9e",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/tr/rehber/pentomino-bulmacasi-nasil-cozulur/": {
-  "hash": "f56845b5f431c5a177b804d5c66644e7",
-  "date": "2026-11-10"
+  "hash": "473e76b9c6993486bd25ee443bcc4b45",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/tr/yazilar/pentomino-bulmacalari-dancing-links-tam-kapsama/": {
-  "hash": "774b020db028bade46e533b828bb461b",
-  "date": "2026-11-10"
+  "hash": "72b943bc9cfb6818b9a45b5836e3eb12",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/tr/yazilar/pentomino-tarihi-golomb-12-parca/": {
-  "hash": "4def01e5735f5506f67220e56555a63a",
-  "date": "2026-11-10"
+  "hash": "ac56fded1324b54281d22e33debb7f84",
+  "date": "2026-11-11"
  },
  "https://nrazon.github.io/astrolings/": {
   "hash": "e58d0ffc5ac9d731ab12b4dd05aed8ac",

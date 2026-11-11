@@ -9,7 +9,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "bdd6b569f87d5acc95b82b66da2366a6",
+  "hash": "08b0f52f0357064f2f045e6bd49bcb04",
   "slug": ""
  },
  "https://nrazon.github.io/tr/": {
@@ -22,7 +22,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "ba426f946d9ef2a7760410b754f2b255",
+  "hash": "98aa03ef4b685b3fceeeed6ad106c505",
   "slug": ""
  },
  "https://nrazon.github.io/es/": {
@@ -35,7 +35,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "fc2f11fd6c4b09c41a82b3900947d008",
+  "hash": "a6786887de40546540e26d1444ef9dd8",
   "slug": ""
  },
  "https://nrazon.github.io/pt/": {
@@ -48,7 +48,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "a962af65694bf60237ca90c676b7dd6c",
+  "hash": "3b3f5a2d90d0a02f1795c1727df22c01",
   "slug": ""
  },
  "https://nrazon.github.io/agecalculator/": {
@@ -437,7 +437,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "a7106d29320642724fcafc4154c1262f",
+  "hash": "500509bc75202f3b9dd4a70c618ae73c",
   "slug": "grumblings"
  },
  "https://nrazon.github.io/tr/grumblings/": {
@@ -450,7 +450,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "1c74017dd44ab1ff0ef84d973482a242",
+  "hash": "9552e24ba3ea8d5b9cfcba5409cdb3ea",
   "slug": "grumblings"
  },
  "https://nrazon.github.io/es/grumblings/": {
@@ -463,7 +463,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "3925aeb125f25fe9844cbde4dec2d2eb",
+  "hash": "0bbe711ed87918bb83208712df6dc1c6",
   "slug": "grumblings"
  },
  "https://nrazon.github.io/pt/grumblings/": {
@@ -476,7 +476,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "6f64b419e6b8025a58232e46fc501f3d",
+  "hash": "256e7780361968774d3e5bc296a17371",
   "slug": "grumblings"
  },
  "https://nrazon.github.io/haftasonum/": {
@@ -499,7 +499,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "907a4215a9b17eacf580dbabdaf94c21",
+  "hash": "7c7aa8db8d83a8137bb462c13cc21876",
   "slug": "logiclings"
  },
  "https://nrazon.github.io/tr/logiclings/": {
@@ -512,7 +512,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "43b5d8cd2ceb67bc524e5c7c1c1e756f",
+  "hash": "ab7f9c1b18615156d6881ffda77e6463",
   "slug": "logiclings"
  },
  "https://nrazon.github.io/es/logiclings/": {
@@ -525,7 +525,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "2d6a48db65c880f6ab0176acdc3a6e5d",
+  "hash": "48013742095064d9ebcb6f21530da6d4",
   "slug": "logiclings"
  },
  "https://nrazon.github.io/pt/logiclings/": {
@@ -538,7 +538,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "5430961b63467f79a2e914f411e76e33",
+  "hash": "177acb444642dee1ada5e1d9dd90d42f",
   "slug": "logiclings"
  },
  "https://nrazon.github.io/medyafobi/": {
@@ -665,7 +665,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "0db6ddacf49d9ddac7fbef664a956986",
+  "hash": "190515a1302595b1779f4955e27709ea",
   "slug": "pentolings"
  },
  "https://nrazon.github.io/tr/pentolings/": {
@@ -678,7 +678,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "ee9e81ce030e00cc697d089c2a5b926c",
+  "hash": "dee4fb1d3bced9744c7f24ef85bbe977",
   "slug": "pentolings"
  },
  "https://nrazon.github.io/es/pentolings/": {
@@ -691,7 +691,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "2726044edbc394983d4c2c36f5209a30",
+  "hash": "aabf72410c5d37da9605efd5c54f9e9b",
   "slug": "pentolings"
  },
  "https://nrazon.github.io/pt/pentolings/": {
@@ -704,7 +704,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "10ba1ba236dc3181406a753b4f81b710",
+  "hash": "fd8fb0632e8e8e45ea2125d44878b01a",
   "slug": "pentolings"
  },
  "https://nrazon.github.io/sansoyunlari/": {

@@ -65,7 +65,7 @@
    "es": "Pentolings",
    "pt": "Pentolings"
   },
-  "tint": "#8E6BFF",
+  "tint": "#12A594",
   "pkg": "com.pentolings.nesimapps",
   "new": "2026-11-24",
   "desc": {
@@ -121,7 +121,7 @@
    "es": "Grumblings",
    "pt": "Grumblings"
   },
-  "tint": "#9B6BFF",
+  "tint": "#C8553A",
   "pkg": "com.grumblings.nesimapps",
   "new": "2026-12-10",
   "desc": {
@@ -177,7 +177,7 @@
    "es": "Logiclings",
    "pt": "Logiclings"
   },
-  "tint": "#E8B64C",
+  "tint": "#2F66AD",
   "pkg": "com.logiclings.nesimapps",
   "new": "2026-11-20",
   "desc": {
