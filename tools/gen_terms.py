@@ -225,6 +225,18 @@ def build(slug, spec):
 </body>
 </html>
 '''
+    if note == "casino":  # Brassline: liderlik tablosu/basarim yok, Play Games yalniz bulut kaydi
+        for x, y in (
+            ("to cheat leaderboards, harm other people or", "to harm other people or"),
+            ("skor tablolarında hile, başkalarına zarar verme ya da", "başkalarına zarar vermek ya da"),
+            ("para hacer trampas en clasificaciones, dañar a otras personas o", "para dañar a otras personas o"),
+            ("para trapacear em placares, prejudicar outras pessoas ou", "para prejudicar outras pessoas ou"),
+            ("Leaderboards, achievements and cloud save use Google Play Games and are optional.", "Cloud save uses Google Play Games and is optional; there are no leaderboards or achievements."),
+            ("Skor tabloları, başarımlar ve bulut kaydı Google Play Games'i kullanır ve isteğe bağlıdır;", "Bulut kaydı Google Play Games'i kullanır ve isteğe bağlıdır (skor tablosu ve başarım yoktur);"),
+            ("Las clasificaciones, los logros y el guardado en la nube usan Google Play Juegos y son opcionales;", "El guardado en la nube usa Google Play Juegos y es opcional (no hay clasificaciones ni logros);"),
+            ("Placares, conquistas e salvamento na nuvem usam o Google Play Games e são opcionais;", "O salvamento na nuvem usa o Google Play Games e é opcional (não há placares nem conquistas);"),
+        ):
+            html = html.replace(x, y)
     io.open(os.path.join(G, slug, "terms.html"), "w", encoding="utf-8", newline="\n").write(html)
     return langs
 
