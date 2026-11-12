@@ -11,12 +11,14 @@ G = r"C:\@Development\PersonalAndroidApps\github-pages"
 BASE = "https://nrazon.github.io"
 # Yayına henüz çıkmamış uygulamaların detay sayfaları: URL'den açılır ama ana sayfa kartı, "Diğer uygulamalarım" listeleri ve sitemap'e GİRMEZ,
 # sayfada noindex var. Uygulama Play'de yayınlanınca slug buradan silinir (ve home_data.json'da status=live yapılır).
-HIDDEN = set()  # yayinda olmayan uygulama onceden buraya eklenir, yayin gunu silinir
+HIDDEN = {"brassline"}  # yayinda olmayan uygulama onceden buraya eklenir, yayin gunu silinir (Brassline: yayin gunu cikar)
+# Capraz tanitim YOK (kullanici karari 10.11.2026): bu uygulama hicbir sayfadaki "Diger oyunlar" listesinde cikmaz, yayinda bile.
+NO_PROMO = {"brassline"}
 # Ana sayfada kartında data-pkg olmayan (henüz "yakında" kartı olan) uygulamaların paket adları.
 VIDEOS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "videos.json"), encoding="utf-8"))
 VIDEO_LABEL = {"tr": "Tanıtım videosu", "en": "Promo video", "es": "Vídeo de presentación", "pt": "Vídeo de apresentação"}
 VIDEO_PLAY = {"tr": "Tanıtım videosunu oynat", "en": "Play promo video", "es": "Reproducir el vídeo", "pt": "Reproduzir o vídeo"}
-PKG_FALLBACK = {"calisan": "com.calisanasistani.nesimapps", "uzaygunlugu": "com.uzaygunlugu.nesimapps", "haftasonum": "com.haftasonum.nesimapps", "beamies": "com.beamies.nesimapps", "logiclings": "com.logiclings.nesimapps", "grumblings": "com.grumblings.nesimapps", "nudgelings": "com.nudgelings.nesimapps", "pentolings": "com.pentolings.nesimapps", "tombalings": "com.tombalings.nesimapps", "astrolings": "com.astrolings.nesimapps", "nuzzlings": "com.nuzzlingscat.nesimapps"}
+PKG_FALLBACK = {"calisan": "com.calisanasistani.nesimapps", "uzaygunlugu": "com.uzaygunlugu.nesimapps", "haftasonum": "com.haftasonum.nesimapps", "beamies": "com.beamies.nesimapps", "logiclings": "com.logiclings.nesimapps", "grumblings": "com.grumblings.nesimapps", "nudgelings": "com.nudgelings.nesimapps", "pentolings": "com.pentolings.nesimapps", "tombalings": "com.tombalings.nesimapps", "astrolings": "com.astrolings.nesimapps", "nuzzlings": "com.nuzzlingscat.nesimapps", "brassline": "com.brassline.nesimapps"}
 REF = "&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"
 
 # ------------------------------------------------------------------ ortak: göz takip betiği
@@ -420,6 +422,10 @@ def page(cfg):
             shots += f'<figure data-l="{l}"><div class="phone"><img src="{f}" alt="{esc(cfg["name"])} screenshot {n}"{wh} loading="lazy"></div></figure>\n'
     langbtn = "".join(f'<button type="button" data-lang="{l}" onclick="setLang(\'{l}\')">{l.upper()}</button>' for l in L)
     more = "".join(f'<a href="{href}"><img src="../{icon}" alt="{esc(name)} icon" width="40" height="40">{name}</a>' for href, name, icon in OTHERS if name != cfg["name"])
+    more_block = "" if cfg["slug"] in NO_PROMO else f'''  <section class="block" aria-labelledby="h-more">
+    <h2 class="h" id="h-more">{multi(SEC['more'], L)}</h2>
+    <div class="more">{more}</div>
+  </section>'''
     faq_block = f'''  <section class="block faq" aria-labelledby="h-faq">
     <h2 class="h" id="h-faq">{multi(SEC['faq'], L)}</h2>
 {faqs}  </section>
@@ -521,10 +527,7 @@ def page(cfg):
   </section>
 
 {faq_block}
-  <section class="block" aria-labelledby="h-more">
-    <h2 class="h" id="h-more">{multi(SEC['more'], L)}</h2>
-    <div class="more">{more}</div>
-  </section>
+{more_block}
 
   <footer>{multi(SEC['contact'], L)}: <a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="privacy.html">{multi(SEC['privacy'], L)}</a> · <a href="/site-privacy.html">{multi(SEC['webprivacy'], L)}</a></footer>
 </main>
@@ -623,6 +626,7 @@ LANDING_CSS += VIDEO_CSS
 
 # slug, klasör, ad(tr), ad(en), simge, tint, ekran görüntüsü kaynakları {dil: klasör}, yeni-rozet
 APPDEFS = [
+    ("brassline", "Brassline", "Brassline", "Brassline", "icon.png", "#C9A45C", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-15"),
     ("astrolings", "Astrolings", "Astrolings", "Astrolings", "icon.png", "#6A5ACD", {"tr": "tr"}, "2026-11-24"),
     ("tombalings", "Tombalings", "Tombalings", "Tombalings", "icon.png", "#C8372A", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-10"),
     ("pentolings", "Pentolings", "Pentolings", "Pentolings", "icon.png", "#12A594", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2027-01-05"),
@@ -752,7 +756,7 @@ def shot_list(folder, srcdir):
     base = os.path.join(MD, folder, "market_assets")
     newer = sorted(glob.glob(os.path.join(base, "screenshots_*", srcdir)))  # örn. screenshots_1.1.0: varsa en yenisi kullanılır
     d = newer[-1] if newer else os.path.join(base, "screenshots", srcdir)
-    return [os.path.join(d, f) for f in sorted(os.listdir(d)) if f.lower().endswith(".png")]
+    return [os.path.join(d, f) for f in sorted(os.listdir(d)) if f.lower().endswith((".png", ".jpg", ".jpeg"))]
 
 
 def build_apps():
@@ -781,6 +785,13 @@ def build_apps():
             cfg["bullets"] = [{l: (bullets[l][i] if i < len(bullets[l]) else bullets[langs[0]][i]) for l in langs} for i in range(n)]
             if any(notes.values()):
                 cfg["note"] = {l: notes[l] for l in langs}
+            if slug == "brassline":  # simule kumar: acik uyari her dilde, sayfanin en gorunur notu
+                cfg["note"] = {
+                    "en": "Brassline is for adults (18+) and for entertainment only. It uses free play chips: no real money, no prizes, no chip sales. Chips have no value and cannot be cashed out. Playing here says nothing about success at real gambling.",
+                    "tr": "Brassline yetişkinler (18+) içindir ve yalnızca eğlence amaçlıdır. Ücretsiz oyun jetonu kullanır: gerçek para yok, ödül yok, jeton satışı yok. Jetonların değeri yoktur, paraya çevrilemez. Burada oynamak gerçek kumarda başarı hakkında hiçbir şey söylemez.",
+                    "es": "Brassline es para adultos (18+) y solo para entretenimiento. Usa fichas de juego gratis: sin dinero real, sin premios, sin venta de fichas. Las fichas no tienen valor ni se pueden canjear. Jugar aquí no dice nada sobre el éxito en juegos de azar reales.",
+                    "pt": "Brassline é para adultos (18+) e apenas para diversão. Usa fichas de jogo grátis: sem dinheiro real, sem prêmios, sem venda de fichas. As fichas não têm valor e não podem ser trocadas. Jogar aqui não diz nada sobre sucesso em jogos de azar reais.",
+                }
             cfg["shotfiles_src"] = {l: shot_list(folder, shotsrc[l]) for l in langs}
         cfg["priv"] = re.findall(r'id="([a-z]{2})"', open(os.path.join(G, slug, "privacy.html"), encoding="utf-8").read())
         cfgs.append(cfg)
@@ -794,7 +805,7 @@ for _c in (CARDLES, CUBBLES):
 NAME_EN = {c["slug"]: c["name"] for c in ALL}
 ICON = {c["slug"]: c["icon"] for c in ALL}
 VISIBLE = [c for c in ALL if c["slug"] not in HIDDEN]
-ORDER = GAME_SLUGS + [c["slug"] for c in VISIBLE if c["slug"] not in GAME_SLUGS]
+ORDER = [sl for sl in GAME_SLUGS + [c["slug"] for c in VISIBLE if c["slug"] not in GAME_SLUGS] if sl not in NO_PROMO]
 OTHERS = [(f"../{sl}/", NAME_EN[sl], ICON[sl]) for sl in ORDER]
 # i18n_split.py için sayfa verisi (dil başına başlık/slogan/giriş): anahtar kelimeli <title>/<meta description> buradan üretilir
 json.dump({c["slug"]: {"name": c["name"], "title": c.get("title", {}), "tagline": c.get("tagline", {}), "intro": c.get("intro", {})} for c in ALL},
