@@ -42,7 +42,7 @@
     <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
     <h1>Catching a Stuck Interstitial Ad on Android With Event Logs</h1>
     <p class="by">By Nesim Razon, independent Android developer · 2026-11-12</p>
-    <p class="tags"><a href="/blog/#ads">#Ads</a><a href="/blog/#android">#Android</a><a href="/blog/#devlog">#Dev notes</a></p>
+    <p class="tags"><a href="/blog/#ads">#Ads</a><a href="/blog/#android">#Android</a><a href="/blog/#devlog">#Dev notes</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
     <p class="lead">A player wrote that after an interstitial ad the game stopped responding to touches. There was no crash in Crashlytics, no ANR, and no way to reproduce it on our own phones. This post describes how we added a small lifecycle log around AdMob full-screen ads, what the data looks like, and what we did with it. It is a debugging story, not a recipe that fits every app.</p>
     <h2>The report that had no stack trace</h2>
     <p>The report came from one user on a Redmi phone running HyperOS and Android 13. At the end of a level a full-screen ad appeared. When it was over, the game looked normal but ignored the player. Touches seemed to land somewhere else: the Play Store panel opened by itself, and the button for the next level did nothing. The player said it had happened once before with the same kind of ad.</p>

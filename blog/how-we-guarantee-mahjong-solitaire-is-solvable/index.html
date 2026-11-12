@@ -42,7 +42,7 @@
     <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
     <h1>How We Guarantee a Mahjong Solitaire Board Is Solvable</h1>
     <p class="by">By Nesim Razon, independent Android developer · 2026-11-10</p>
-    <p class="tags"><a href="/blog/#algorithms">#Algorithms</a><a href="/blog/#generation">#Level generation</a><a href="/blog/#game-design">#Game design</a></p>
+    <p class="tags"><a href="/blog/#algorithms">#Algorithms</a><a href="/blog/#generation">#Level generation</a><a href="/blog/#game-design">#Game design</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
     <p class="lead">A Mahjong Solitaire board that cannot be finished is a small betrayal. You spend ten minutes thinking, and then learn that nothing you did could have worked. In Tilelings every deal has a solution, and we do not hope for it: we build it in. This post explains the method in plain language, including where the guarantee stops.</p>
     <h2>The problem with random deals</h2>
     <p>The obvious way to make a board is to take the tiles, shuffle them and lay them on the layout. It is quick, and it is what many simple games do. The trouble is that Mahjong Solitaire is a game of blocking. Tiles sit on top of each other and beside each other, and a tile can only leave when it is free. If two identical tiles end up in the wrong places, for example one directly on top of the other, neither can ever be removed. A random deal can contain such traps without anyone noticing.</p>

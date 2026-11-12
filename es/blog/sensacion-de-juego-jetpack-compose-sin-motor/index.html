@@ -42,7 +42,7 @@
     <nav class="crumbs" aria-label="breadcrumb"><a href="/es/">Nesim Apps</a> › <a href="/es/blog/">Blog</a></nav>
     <h1>Sensación de juego en Jetpack Compose sin motor de juego</h1>
     <p class="by">Por Nesim Razon, desarrollador Android independiente · 2026-11-12</p>
-    <p class="tags"><a href="/es/blog/#compose">#Jetpack Compose</a><a href="/es/blog/#game-design">#Diseño de juegos</a><a href="/es/blog/#android">#Android</a></p>
+    <p class="tags"><a href="/es/blog/#compose">#Jetpack Compose</a><a href="/es/blog/#game-design">#Diseño de juegos</a><a href="/es/blog/#android">#Android</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
     <p class="lead">Cubbles es un puzle de colocar bloques con caras simpáticas, y casi todo su encanto es respuesta al jugador: una pieza que se asienta con un rebote, una fila que se deshace en ola, un sonido y una vibración que crecen con tu racha. Nada de eso necesita un motor de juego. Esta entrada explica cómo se hace con Jetpack Compose a secas, qué números se usan, dónde están los atajos y cómo otros dos juegos nuestros resuelven el mismo problema de otra manera.</p>
     <h2>Por qué un puzle no necesita motor</h2>
     <p>Un tablero de 8 por 8, tres piezas en una bandeja y un gesto de arrastre no necesitan física, un grafo de escena ni un marco de bucle de juego. Necesitan un reloj y una forma de dibujar. Compose da las dos cosas: un Canvas donde pintar y una llamada por fotograma de la que leer el tiempo. Todo lo que sigue se apoya en esas dos piezas.</p>

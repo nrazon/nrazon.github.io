@@ -42,7 +42,7 @@
     <nav class="crumbs" aria-label="breadcrumb"><a href="/tr/">Nesim Apps</a> › <a href="/tr/yazilar/">Yazılar</a></nav>
     <h1>Oyun Motoru Olmadan Jetpack Compose ile Oyun Hissi</h1>
     <p class="by">Nesim Razon, bağımsız Android geliştiricisi · 2026-11-12</p>
-    <p class="tags"><a href="/tr/yazilar/#compose">#Jetpack Compose</a><a href="/tr/yazilar/#game-design">#Oyun tasarımı</a><a href="/tr/yazilar/#android">#Android</a></p>
+    <p class="tags"><a href="/tr/yazilar/#compose">#Jetpack Compose</a><a href="/tr/yazilar/#game-design">#Oyun tasarımı</a><a href="/tr/yazilar/#android">#Android</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
     <p class="lead">Cubbles, blokların yüzü olan bir blok yerleştirme bulmacası ve cazibesinin neredeyse tamamı geri bildirimden geliyor: yaylanarak oturan bir parça, dalga gibi eriyen bir satır, serinle birlikte büyüyen ses ve titreşim. Bunların hiçbiri oyun motoru istemiyor. Bu yazı işin düz Jetpack Compose ile nasıl yapıldığını, sayıları, kestirme yolları ve başka iki oyunumuzun aynı sorunu nasıl farklı çözdüğünü anlatıyor.</p>
     <h2>Bir bulmaca neden motor istemez</h2>
     <p>8&#x27;e 8&#x27;lik bir tahta, tepsideki üç parça ve bir sürükleme hareketi fizik motoru, sahne ağacı ya da oyun döngüsü kütüphanesi istemez. İstediği şey bir saat ve çizim yeteneğidir. Compose ikisini de verir: üzerine boyayacağın bir Canvas ve zamanı okuyacağın bir kare geri çağrısı. Aşağıdakilerin hepsi bu ikisinin üstünde duruyor.</p>

@@ -42,7 +42,7 @@
     <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
     <h1>Game Feel in Jetpack Compose Without a Game Engine</h1>
     <p class="by">By Nesim Razon, independent Android developer · 2026-11-12</p>
-    <p class="tags"><a href="/blog/#compose">#Jetpack Compose</a><a href="/blog/#game-design">#Game design</a><a href="/blog/#android">#Android</a></p>
+    <p class="tags"><a href="/blog/#compose">#Jetpack Compose</a><a href="/blog/#game-design">#Game design</a><a href="/blog/#android">#Android</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
     <p class="lead">Cubbles is a block-placing puzzle with cute faces on the blocks, and almost all of its charm is feedback: a piece that settles with a bounce, a row that melts away in a wave, a sound and a buzz that grow with your streak. None of it needs a game engine. This post walks through how it is done in plain Jetpack Compose, what the numbers are, where the shortcuts are, and how two other games of ours solve the same problem differently.</p>
     <h2>Why a puzzle does not need an engine</h2>
     <p>An 8 by 8 board, three pieces in a tray and a drag gesture do not need physics, a scene graph or a game loop framework. What they need is a clock and a way to draw. Compose gives you both: a Canvas to paint on, and a frame callback to read time from. Everything below sits on those two things.</p>

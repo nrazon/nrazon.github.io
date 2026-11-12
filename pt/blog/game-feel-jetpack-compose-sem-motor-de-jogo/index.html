@@ -42,7 +42,7 @@
     <nav class="crumbs" aria-label="breadcrumb"><a href="/pt/">Nesim Apps</a> › <a href="/pt/blog/">Blog</a></nav>
     <h1>Game feel no Jetpack Compose sem motor de jogo</h1>
     <p class="by">Por Nesim Razon, desenvolvedor Android independente · 2026-11-12</p>
-    <p class="tags"><a href="/pt/blog/#compose">#Jetpack Compose</a><a href="/pt/blog/#game-design">#Design de jogos</a><a href="/pt/blog/#android">#Android</a></p>
+    <p class="tags"><a href="/pt/blog/#compose">#Jetpack Compose</a><a href="/pt/blog/#game-design">#Design de jogos</a><a href="/pt/blog/#android">#Android</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
     <p class="lead">O Cubbles é um quebra-cabeça de encaixar blocos com carinhas simpáticas, e quase todo o seu charme é resposta ao jogador: uma peça que assenta com um quique, uma linha que derrete em onda, um som e uma vibração que crescem com a sua sequência. Nada disso precisa de um motor de jogo. Este texto mostra como se faz com Jetpack Compose puro, quais são os números, onde estão os atalhos e como outros dois jogos nossos resolvem o mesmo problema de outro jeito.</p>
     <h2>Por que um quebra-cabeça não precisa de motor</h2>
     <p>Um tabuleiro de 8 por 8, três peças numa bandeja e um gesto de arrastar não precisam de física, de grafo de cena nem de um framework de laço de jogo. Precisam de um relógio e de uma forma de desenhar. O Compose oferece as duas coisas: um Canvas para pintar e uma chamada por quadro de onde ler o tempo. Tudo o que vem a seguir se apoia nessas duas peças.</p>

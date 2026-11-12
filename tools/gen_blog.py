@@ -147,7 +147,7 @@ def main():
                 more = ('<section><h2>' + esc(b["more"]) + '</h2><ul class="glist">' + "".join(
                     f'<li><a href="/{DIRS[lang]}/{o[lang]["slug"]}/"><img src="/{icon_of(o)}" alt="{alt_of(o)}" width="48" height="48"><div><b>{esc(o[lang]["title"])}</b></div></a></li>' for o in others) + "</ul></section>")
             body = (f'  <article class="guide">\n    <nav class="crumbs" aria-label="breadcrumb"><a href="{home_url(lang)}">{esc(t["home"])}</a> › <a href="{index_urls[lang]}">{esc(b["crumb"])}</a></nav>\n'
-                    f'    <h1>{esc(c["title"])}</h1>\n    <p class="by">{esc(t["by"])} · {p["date"]}</p>\n    {tag_links(ptags, lang, index_urls[lang]) if ptags else ""}\n    <p class="lead">{esc(c["intro"])}</p>\n    ' + "\n    ".join(sec) + f"\n    {cta}\n    {faqh}\n    {more}\n  </article>")
+                    f'    <h1>{esc(c["title"])}</h1>\n    <p class="by">{esc(t["by"])} · {p["date"]}</p>\n    {(tag_links(ptags, lang, index_urls[lang]) + TAG_CSS) if ptags else ""}\n    <p class="lead">{esc(c["intro"])}</p>\n    ' + "\n    ".join(sec) + f"\n    {cta}\n    {faqh}\n    {more}\n  </article>")
             out = head(lang, c["title"], c["desc"], canon, alternates, og_image, ld, accent) + page_shell(lang, alternates, body)
             write(f"{DIRS[lang]}/{c['slug']}/index.html", out)
             pages.append({"url": canon, "loc": alternates, "default": "en" if "en" in alternates else plangs[0], "hash": hashlib.md5(out.encode("utf-8")).hexdigest()})
