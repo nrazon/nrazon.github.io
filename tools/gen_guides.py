@@ -222,7 +222,7 @@ def main():
                    f'<a class="small" href="{app_url(g["app"], lang)}">{esc(t["about"].format(name=name))}</a></aside>')
             faq = '<section class="faq"><h2>' + esc(t["faq"]) + "</h2>" + "".join(f"<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>" for q, a in c["faq"]) + "</section>"
             more = ('<section><h2>' + esc(t["more"]) + '</h2><ul class="glist">' + "".join(
-                f'<li><a href="/{DIRS[lang]}/{o[lang]["slug"]}/"><img src="/{home[o["app"]]["icon"]}" alt="" width="48" height="48"><div><b>{esc(o[lang]["title"])}</b></div></a></li>' for o in others) + "</ul></section>")
+                f'<li><a href="/{DIRS[lang]}/{o[lang]["slug"]}/"><img src="/{home[o["app"]]["icon"]}" alt="{esc(home[o["app"]]["names"]["en"] + " icon")}" width="48" height="48"><div><b>{esc(o[lang]["title"])}</b></div></a></li>' for o in others) + "</ul></section>")
             body = (f'  <article class="guide">\n    <nav class="crumbs" aria-label="breadcrumb"><a href="{home_url(lang)}">{esc(t["home"])}</a> › <a href="{index_urls[lang]}">{esc(t["crumb"])}</a></nav>\n'
                     f'    <h1>{esc(c["title"])}</h1>\n    <p class="by">{esc(t["by"])}</p>\n    <p class="lead">{esc(c["intro"])}</p>\n    ' + "\n    ".join(sec) + f"\n    {cta}\n    {faq}\n    {more}\n  </article>")
             out = head(lang, c["title"], c["desc"], canon, alternates, og_image, ld, accent) + page_shell(lang, alternates, body)
@@ -236,7 +236,7 @@ def main():
         t = T[lang]
         canon = alternates[lang]
         items = "".join(
-            f'<li><a href="/{DIRS[lang]}/{g[lang]["slug"]}/"><img src="/{home[g["app"]]["icon"]}" alt="" width="48" height="48"><div><b>{esc(g[lang]["title"])}</b><span>{esc(g[lang]["desc"])}</span></div></a></li>' for g in guides)
+            f'<li><a href="/{DIRS[lang]}/{g[lang]["slug"]}/"><img src="/{home[g["app"]]["icon"]}" alt="{esc(home[g["app"]]["names"]["en"] + " icon")}" width="48" height="48"><div><b>{esc(g[lang]["title"])}</b><span>{esc(g[lang]["desc"])}</span></div></a></li>' for g in guides)
         list_ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": t["idx_h1"], "inLanguage": lang, "url": canon, "description": t["idx_desc"],
                    "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": url(lang, g[lang]["slug"]), "name": g[lang]["title"]} for i, g in enumerate(guides)]}}
         body = (f'  <article class="guide">\n    <nav class="crumbs" aria-label="breadcrumb"><a href="{home_url(lang)}">{esc(t["home"])}</a> › {esc(t["crumb"])}</nav>\n'

@@ -59,6 +59,9 @@ def main():
     def icon_of(q):
         return home[q["app"]]["icon"] if q.get("app") else "logo.svg"
 
+    def alt_of(q):
+        return esc(home[q["app"]]["names"]["en"] + " icon") if q.get("app") else "Nesim Apps"
+
     for p in posts:
         app = home.get(p.get("app")) if p.get("app") else None
         accent = app.get("tint", "#7FB2FF") if app else "#7FB2FF"
@@ -107,7 +110,7 @@ def main():
             more = ""
             if others:
                 more = ('<section><h2>' + esc(b["more"]) + '</h2><ul class="glist">' + "".join(
-                    f'<li><a href="/{DIRS[lang]}/{o[lang]["slug"]}/"><img src="/{icon_of(o)}" alt="" width="48" height="48"><div><b>{esc(o[lang]["title"])}</b></div></a></li>' for o in others) + "</ul></section>")
+                    f'<li><a href="/{DIRS[lang]}/{o[lang]["slug"]}/"><img src="/{icon_of(o)}" alt="{alt_of(o)}" width="48" height="48"><div><b>{esc(o[lang]["title"])}</b></div></a></li>' for o in others) + "</ul></section>")
             body = (f'  <article class="guide">\n    <nav class="crumbs" aria-label="breadcrumb"><a href="{home_url(lang)}">{esc(t["home"])}</a> › <a href="{index_urls[lang]}">{esc(b["crumb"])}</a></nav>\n'
                     f'    <h1>{esc(c["title"])}</h1>\n    <p class="by">{esc(t["by"])} · {p["date"]}</p>\n    <p class="lead">{esc(c["intro"])}</p>\n    ' + "\n    ".join(sec) + f"\n    {cta}\n    {faqh}\n    {more}\n  </article>")
             out = head(lang, c["title"], c["desc"], canon, alternates, og_image, ld, accent) + page_shell(lang, alternates, body)
@@ -119,7 +122,7 @@ def main():
         t, b = T[lang], BT[lang]
         canon = alternates[lang]
         items = "".join(
-            f'<li><a href="/{DIRS[lang]}/{q[lang]["slug"]}/"><img src="/{icon_of(q)}" alt="" width="48" height="48"><div><b>{esc(q[lang]["title"])}</b><span>{esc(q[lang]["desc"])}</span></div></a></li>' for q in posts if lang in q)
+            f'<li><a href="/{DIRS[lang]}/{q[lang]["slug"]}/"><img src="/{icon_of(q)}" alt="{alt_of(q)}" width="48" height="48"><div><b>{esc(q[lang]["title"])}</b><span>{esc(q[lang]["desc"])}</span></div></a></li>' for q in posts if lang in q)
         list_ld = {"@context": "https://schema.org", "@type": "Blog", "name": b["idx_h1"], "inLanguage": lang, "url": canon, "description": b["idx_desc"],
                    "blogPost": [{"@type": "BlogPosting", "headline": q[lang]["title"], "url": url(lang, q[lang]["slug"]), "datePublished": q["date"]} for q in posts if lang in q]}
         body = (f'  <article class="guide">\n    <nav class="crumbs" aria-label="breadcrumb"><a href="{home_url(lang)}">{esc(t["home"])}</a> › {esc(b["crumb"])}</nav>\n'

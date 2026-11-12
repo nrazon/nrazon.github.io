@@ -232,5 +232,5 @@ def build(slug, spec):
 if __name__ == "__main__":
     for slug, spec in APPS.items():
         print(slug, build(slug, spec))
-        import subprocess as _sp
-        _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "seo_fix.py")])
+    import subprocess as _sp
+    _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "seo_fix.py")])
