@@ -508,43 +508,43 @@
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/blog/": {
-  "hash": "dfd6dcb53d83e6c71c5db2f052002d68",
+  "hash": "ac944966cd379870f8590ef2b4720a8a",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/": {
-  "hash": "f419343bfb0c5f5da420f94dbb9745a7",
+  "hash": "b056db3cb73a9d2aa65f921c32cdd4cb",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/": {
-  "hash": "623f5d1f9e8b1691e3f3ac039676ca51",
+  "hash": "521f1e89d4ceca2abe40dcd591320fa2",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/blog/how-we-guarantee-mahjong-solitaire-is-solvable/": {
-  "hash": "cf01d991058e894b5994e6391c997df4",
+  "hash": "dfd5a88a091397df90f30a8dbe13f0a3",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/blog/mahjong-solitaire-history-vs-real-mahjong/": {
-  "hash": "9d26d92bfea8cf286a4965cb63bf249f",
+  "hash": "a0ccb03b7669fff7feffef2f01e50ce9",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/blog/": {
-  "hash": "2826eb7042c3d4ff80eee49410335065",
+  "hash": "b344d1e754f69b740cee936c4209548a",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/blog/como-garantizamos-que-un-mahjong-solitario-tenga-solucion/": {
-  "hash": "afe2d0f3ad802aefdcffcd3d90dc7630",
+  "hash": "4fb7b89b5b1d54a16345e3f22423c7f3",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/": {
-  "hash": "b62084a0fdef34a5e1c94320242d8a12",
+  "hash": "a3e833a85f7ea0d28fdc0daea8c7987d",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/blog/historia-mahjong-solitario-y-diferencias-con-mahjong/": {
-  "hash": "4e23f73e470c1180270c9561836d4cef",
+  "hash": "f92a85d6cc3672f7fcf29d3aa32dd8b4",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/": {
-  "hash": "cde032155410f12be8d3a9a2ea7f5463",
+  "hash": "ec20661e5d4a16d39d6fa4d628bcf06a",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/guias/2048-despues-4096-8192-errores-comunes/": {
@@ -620,23 +620,23 @@
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/pt/blog/": {
-  "hash": "ca835ebe78958af09081495f7ba3c784",
+  "hash": "c1af022e3b2a157b54c0654c2e3a7108",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/": {
-  "hash": "8ec650be157e3810f0b42e82da55be14",
+  "hash": "2fa032d4f43bd55c05ad9f8def4b66f4",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/": {
-  "hash": "9b74fa589d457e63dabd3fd64010ab13",
+  "hash": "4746ec988f01b8fc6b95da521b788b7a",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/": {
-  "hash": "89a847014dd963e4d035cd9a4c43327e",
+  "hash": "da0e74319e40dd98aeea4e9e014e2d78",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/": {
-  "hash": "af42dc63cffd067eb1f69b88a62d9a10",
+  "hash": "04bbc14dc7f9d20086774d0cbe342bc5",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/pt/guias/2048-depois-4096-8192-erros-comuns/": {
@@ -712,23 +712,23 @@
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/tr/yazilar/": {
-  "hash": "c23f4d7a1daaae042e9d191534d84392",
+  "hash": "52b148cb7ecb7cedef2aedf8b5652f61",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/": {
-  "hash": "8a2254d085d474583755cb4e94e80106",
+  "hash": "a61e4915795f130474c29a96786e927b",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tahtasi-cozulebilir-nasil-garanti-ederiz/": {
-  "hash": "b8468b8102882e89fea5cb3151a8c6d2",
+  "hash": "b2883eae959077ae3a47f57817838ebb",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tarihi-ve-klasik-mahjong-farki/": {
-  "hash": "ca0c48e9823e9b3df01e742fe1cf7dd9",
+  "hash": "5ca38aa1da99dc845234b052e11eb3a8",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/": {
-  "hash": "6c9298da7d4a72cccd53ab754c1ab71f",
+  "hash": "53fd0b2dc5c8cdaddb47aa11acf83f4b",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/guias/como-jugar-conectar-fichas-puzle/": {
@@ -736,67 +736,67 @@
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/blog/bmi-common-mistakes-and-limits/": {
-  "hash": "2e494b94b31797c72122267e4c4634ba",
+  "hash": "ca7e4da0a55a46723deeb1e1ca2c14ef",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/blog/earthquake-magnitude-vs-intensity/": {
-  "hash": "a7e415326db1b85b0f525043272a1aba",
+  "hash": "6536924567c1bb46a5182f3036fe3fed",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/blog/earthquake-preparedness-what-to-do/": {
-  "hash": "0eb9e63dd93ff87b122a0886062faaf2",
+  "hash": "8096e613b676fc93f18d1a05a3a12c66",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/blog/how-to-calculate-exact-age-years-months-days/": {
-  "hash": "8053819378efa755234748b0cacfdda7",
+  "hash": "be1d99fa9a49cba64aa66489bfd37648",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/blog/leap-day-birthday-how-to-count-age/": {
-  "hash": "c19942ad171ea523fd0c4f30647a0b74",
+  "hash": "f6af81bfb3f4aade3d17573670f4268d",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/blog/tic-tac-toe-history-and-variants/": {
-  "hash": "175e167eee06f67bcd7ba363b3a69e48",
+  "hash": "e04cbfdcdb5665c09c3a54fde5498cbf",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/blog/what-is-bmi-how-to-calculate-and-read-it/": {
-  "hash": "b4ea003fd4bc19389c3df8c4fd0c7d49",
+  "hash": "fbf3cbd6da18bc7457a0a370ad1c9daf",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/blog/where-earthquake-data-comes-from/": {
-  "hash": "c2ec70b0aa02009c51af89337ec882b5",
+  "hash": "d6a1cbd729a7e28773538a54fcca8b18",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/blog/como-calcular-la-edad-exacta-anos-meses-dias/": {
-  "hash": "833dfd80693a1e282d39209875b9172c",
+  "hash": "3ed2d502443a1a5131f5729ebb6266ec",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/blog/cumpleanos-29-de-febrero-como-contar-la-edad/": {
-  "hash": "95413dcb00c9bebe278a88de19a6546f",
+  "hash": "967cfda1309d4ad2a50fd2229ca99ccc",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/blog/de-donde-vienen-los-datos-de-terremotos/": {
-  "hash": "55d2a20bdba8664223e1bc8686617660",
+  "hash": "558cdf5022e4964019fe15da1f2b96e1",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/blog/errores-comunes-y-limites-del-imc/": {
-  "hash": "d4119115d66d0200756d806cd7c044f2",
+  "hash": "673a08b55cfc7830f9b323a0e5428fab",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/blog/historia-del-tres-en-raya-y-sus-variantes/": {
-  "hash": "b1a56137b5ed872f8ccd26a35223dbf0",
+  "hash": "0977b2fcfbbd19c6701d7064ecea4fef",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/blog/magnitud-e-intensidad-de-un-terremoto/": {
-  "hash": "7be7db83a74de919cf60f912e9188fc4",
+  "hash": "9055b3a58a2a2238befbb098efbc527d",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/blog/que-es-el-imc-como-se-calcula-y-se-interpreta/": {
-  "hash": "19d2abf4c892ce7bd0dc21cb6485e0ed",
+  "hash": "3777b1d30c1185642150508c8972e371",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/blog/terremoto-que-hacer-antes-durante-despues/": {
-  "hash": "a49eac510aef8978ccf796343a6364b3",
+  "hash": "96f3eb85d698460cdc4b6008f636a17b",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/guias/fichas-de-mahjong-y-sus-significados/": {
@@ -816,35 +816,35 @@
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/pt/blog/aniversario-29-de-fevereiro-como-contar-a-idade/": {
-  "hash": "e631ec9bb9a633ed4444feb0c7c811e7",
+  "hash": "9d3b5f14302304b34b58bf562c2d88ac",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/pt/blog/como-calcular-idade-exata-anos-meses-dias/": {
-  "hash": "3f57c0d7c7ca6f1e93e4d0e467bca6ab",
+  "hash": "61bb9b512647c9301315005a85a6191a",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/pt/blog/de-onde-vem-os-dados-de-terremotos/": {
-  "hash": "4cdc30f1fe67ddcad1db51ea7905c704",
+  "hash": "6ec0cdb864523d33044b1cead0f0bb2a",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/pt/blog/erros-comuns-e-limites-do-imc/": {
-  "hash": "b4bcd33cf26c83109a3b398a984a3dd5",
+  "hash": "c06c2c25b04527675eeca1d037bfcbe2",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/pt/blog/historia-do-jogo-da-velha-e-variantes/": {
-  "hash": "bc70d93b31d413e091e5e73fa170a999",
+  "hash": "3afba47cd037f45780c402d3256deb12",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/pt/blog/magnitude-e-intensidade-de-um-terremoto/": {
-  "hash": "d60432570edcc1384c2c2f47b4bcc39e",
+  "hash": "e03ce13dcf091ec52175024fcce96b65",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/pt/blog/o-que-e-imc-como-calcular-e-interpretar/": {
-  "hash": "7d033b55a1bd2d76245366b7e9e35b8e",
+  "hash": "1798492e322ce89ad0497a0a8579e821",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/pt/blog/terremoto-o-que-fazer-antes-durante-depois/": {
-  "hash": "14762785d7685a8580ace2888789b682",
+  "hash": "010e3da6df576e254274a95e7a24a83b",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/pt/guias/pecas-de-mahjong-e-seus-significados/": {
@@ -864,51 +864,51 @@
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/tr/yazilar/29-subat-dogum-gunu-yas-nasil-sayilir/": {
-  "hash": "80dc17b8e685bc5a9ee6caca85534f28",
+  "hash": "2b51cd5d18053696009395da61388d0c",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/tr/yazilar/bmi-nedir-nasil-hesaplanir-yorumlanir/": {
-  "hash": "46e6cb03e4640a72c275dac59118599e",
+  "hash": "9dfe6f44e68bc1faed0d88c555bfcf8e",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/tr/yazilar/bmi-yanilgilari-ve-sinirlari/": {
-  "hash": "7789574b9c706e0c9a4958726d20a391",
+  "hash": "8d3467532da9c5fa10b1addaa17954e9",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/tr/yazilar/deprem-buyuklugu-ve-siddeti-arasindaki-fark/": {
-  "hash": "8b138dadbf3d53475bad3702b398fb35",
+  "hash": "6fef1bde30dc8709974a3565164cbf9f",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/tr/yazilar/deprem-oncesi-sirasinda-sonrasinda-ne-yapilir/": {
-  "hash": "5861b6a4101f2ab71aa1d6af6b902d2e",
+  "hash": "516d27f382d7c3d2f611d7d731f8bb33",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/tr/yazilar/son-deprem-verileri-nereden-geliyor/": {
-  "hash": "a48b93bcf0ebe165f4d78735ffcf2e62",
+  "hash": "a78cb8c4a48d3bee43d4ed533fadb110",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/tr/yazilar/xox-tarihi-ve-cesitleri/": {
-  "hash": "f639da418d3dd835c72de2f1f65375a3",
+  "hash": "6343106c29104afb0d1ab139d9baf9ab",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/tr/yazilar/yas-hesaplama-yil-ay-gun-nasil-hesaplanir/": {
-  "hash": "66687592d9167ccf394cd6bf9da3944e",
+  "hash": "1f5e64d0d41e68420e5bc59b98e3cf0c",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/blog/pentomino-puzzles-dancing-links-exact-cover/": {
-  "hash": "f18dc7decfb7afbf409144e110f12723",
+  "hash": "84568a08a0f43d6a8f0511c77f841bbe",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/blog/pentominoes-history-golomb-twelve-pieces/": {
-  "hash": "84a722171874e048f317a8dd5e27b85a",
+  "hash": "39da3d2bcd637214773e27311f4ac9ec",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/blog/historia-de-los-pentominos-golomb-doce-piezas/": {
-  "hash": "1546e558c97d7a7dc1b4476eab2d713d",
+  "hash": "2c8ff29e7a8a0fffe2dededffac130ec",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/blog/puzles-de-pentominos-dancing-links-cobertura-exacta/": {
-  "hash": "0fef99d607c3ed2fccb2be4f09bd69d7",
+  "hash": "aecf404dbf9ff36770e406a52c01bfab",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/guias/bloques-que-caen-estrategia-explotar-colores/": {
@@ -936,11 +936,11 @@
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/pt/blog/historia-dos-pentominos-golomb-doze-pecas/": {
-  "hash": "13caa47cc073ae7073d95847a3d1b5b2",
+  "hash": "d55fce125fcae0ac3ec82436a52c92ba",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/pt/blog/quebra-cabecas-de-pentominos-dancing-links-cobertura-exata/": {
-  "hash": "b13ee316ee65ffc0c4e42072f74264c6",
+  "hash": "7ab9faa1a37e046463e45cd159ae33de",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/pt/guias/blocos-que-caem-estrategia-estourar-cores/": {
@@ -968,11 +968,11 @@
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/tr/yazilar/pentomino-bulmacalari-dancing-links-tam-kapsama/": {
-  "hash": "fcddb67dd68d44b44124f28585b7fd99",
+  "hash": "62a0ea208dd02eba7d051a87ce1ed2c1",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/tr/yazilar/pentomino-tarihi-golomb-12-parca/": {
-  "hash": "59b0747846518aa8377f8e44520c8d0f",
+  "hash": "99884ce1857d7a6de1cb95866460b68b",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/astrolings/": {
@@ -980,15 +980,15 @@
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/tr/yazilar/ay-evreleri-neden-29-5-gunde-doner-yeniay-dolunay/": {
-  "hash": "6126ee74e953dd9ee66b38fe05e8b039",
+  "hash": "38c60030859267e2303ac5ca834fa3f4",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/tr/yazilar/burclar-takimyildizlardan-neden-kaydi-13-burc-yilanci/": {
-  "hash": "c3df283ea639f39ce4b0cdb1b5077895",
+  "hash": "43e247d24810686bd58e3772de0be385",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/tr/yazilar/merkur-retrosu-nedir-gokyuzunde-gercekte-ne-oluyor/": {
-  "hash": "18a19ea077d6904f3455cda76eb8e9ee",
+  "hash": "5b289a159882c3a931927a6e8eec98cf",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/tombalings/": {
@@ -1008,11 +1008,11 @@
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/": {
-  "hash": "bc39478a61921412720105476589d35e",
+  "hash": "bce82ecff1875eacf23f32b16229dc7e",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/blog/como-se-genera-un-carton-de-tombola-seis-cartones-noventa-numeros/": {
-  "hash": "07f8f75a51faef04eca033e4d8d18837",
+  "hash": "68f044bfab5ad2974d1df1b27069ed71",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/guias/como-jugar-bingo-de-75-bolas-patrones-y-consejos/": {
@@ -1032,7 +1032,7 @@
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/pt/blog/como-uma-cartela-de-tombala-e-gerada-seis-cartelas-noventa-numeros/": {
-  "hash": "a4a34dd31a5226e279f18c8f8c22cae1",
+  "hash": "60f30ec4624cb04622b0d9f4ad25a049",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/pt/guias/como-jogar-bingo-de-75-bolas-padroes-e-dicas/": {
@@ -1052,7 +1052,55 @@
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/tr/yazilar/tombala-karti-nasil-uretilir-alti-kart-doksan-sayi/": {
-  "hash": "4d2b9e59d8040d379f8792463f3b401b",
+  "hash": "af39673579a85c2c056d60aff820ce63",
+  "date": "2026-11-12"
+ },
+ "https://nrazon.github.io/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/": {
+  "hash": "ff87067bd04422c8662281476f0712da",
+  "date": "2026-11-12"
+ },
+ "https://nrazon.github.io/blog/game-feel-jetpack-compose-without-game-engine/": {
+  "hash": "95aab55bd08e9d1dcdd405a98b833fac",
+  "date": "2026-11-12"
+ },
+ "https://nrazon.github.io/blog/keeping-two-dozen-android-apps-maintainable-solo/": {
+  "hash": "ca6a9ab7a9107e68943e00c1fe14c18a",
+  "date": "2026-11-12"
+ },
+ "https://nrazon.github.io/es/blog/detectar-anuncio-intersticial-bloqueado-android-eventos/": {
+  "hash": "c8f549d0d7e9c90a8f0184bb449d6b5a",
+  "date": "2026-11-12"
+ },
+ "https://nrazon.github.io/es/blog/mantener-dos-docenas-de-apps-android-siendo-un-solo-desarrollador/": {
+  "hash": "71cc1e1eaeae7610f1c8a50d456e27aa",
+  "date": "2026-11-12"
+ },
+ "https://nrazon.github.io/es/blog/sensacion-de-juego-jetpack-compose-sin-motor/": {
+  "hash": "2de9a3d4a827a0f7bf8d2e2fb17a351b",
+  "date": "2026-11-12"
+ },
+ "https://nrazon.github.io/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/": {
+  "hash": "46452e759661ec9fa3b6540d6b410bfe",
+  "date": "2026-11-12"
+ },
+ "https://nrazon.github.io/pt/blog/game-feel-jetpack-compose-sem-motor-de-jogo/": {
+  "hash": "de80700a55fe711a39efe1453431409a",
+  "date": "2026-11-12"
+ },
+ "https://nrazon.github.io/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/": {
+  "hash": "802e57e63115ebb0707578d3c5b3e60b",
+  "date": "2026-11-12"
+ },
+ "https://nrazon.github.io/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/": {
+  "hash": "146e1ab1c4fa9ac6016b2973cd0bd4d5",
+  "date": "2026-11-12"
+ },
+ "https://nrazon.github.io/tr/yazilar/oyun-motoru-olmadan-jetpack-compose-oyun-hissi/": {
+  "hash": "4254f2e9a6a25d24d424f2c1c208897b",
+  "date": "2026-11-12"
+ },
+ "https://nrazon.github.io/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/": {
+  "hash": "910585c74f7ac77e222b1e1310d950d4",
   "date": "2026-11-12"
  }
 }

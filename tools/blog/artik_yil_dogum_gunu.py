@@ -1,5 +1,5 @@
 # Yazı: 29 Şubat doğumlular ve artık yıl
-POST = {
+POST = {"tags": ["tools"],
     "id": "leap-day-birthday-age", "app": "agecalculator", "date": "2026-11-10",
     "en": {
         "slug": "leap-day-birthday-how-to-count-age",

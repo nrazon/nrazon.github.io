@@ -1,5 +1,5 @@
 # Blog: gelistirici yazisi - pentomino bolumleri Dancing Links ile nasil cozulur/uretilir
-POST = {
+POST = {"tags": ["algorithms", "generation"],
     "id": "pentomino-dlx",
     "app": "pentolings",
     "date": "2026-11-10",

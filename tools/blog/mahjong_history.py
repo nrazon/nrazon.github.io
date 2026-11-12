@@ -1,5 +1,6 @@
 # Yazı: Mahjong Solitaire'in kısa tarihi ve klasik Mahjong'dan farkı (Tilelings). Yalnızca kesin bilinen tarihler.
 POST = {
+    "tags": ["history", "game-design"],
     "id": "mahjong-history", "app": "tilelings", "date": "2026-11-10",
     "en": {
         "slug": "mahjong-solitaire-history-vs-real-mahjong",

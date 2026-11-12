@@ -1,5 +1,5 @@
 # Blog: pentomino nedir, 12 parcanin hikayesi
-POST = {
+POST = {"tags": ["history", "game-design"],
     "id": "pentomino-history",
     "app": "pentolings",
     "date": "2026-11-10",

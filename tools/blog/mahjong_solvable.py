@@ -1,5 +1,6 @@
 # Yazı: Bir Mahjong Solitaire tahtasının çözülebilir olduğunu nasıl garanti ederiz (Tilelings, tersine kurma)
 POST = {
+    "tags": ["algorithms", "generation", "game-design"],
     "id": "mahjong-solvable", "app": "tilelings", "date": "2026-11-10",
     "en": {
         "slug": "how-we-guarantee-mahjong-solitaire-is-solvable",

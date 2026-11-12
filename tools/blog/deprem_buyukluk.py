@@ -1,5 +1,5 @@
 # Blog: deprem buyuklugu ile siddeti farki
-POST = {'id': 'earthquake-magnitude-vs-intensity',
+POST = {"tags": ["earthquake"],'id': 'earthquake-magnitude-vs-intensity',
  'app': 'sondepremler',
  'date': '2026-11-10',
  'en': {'slug': 'earthquake-magnitude-vs-intensity',

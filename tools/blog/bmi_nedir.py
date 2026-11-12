@@ -1,5 +1,5 @@
 # Yazı: BMI nedir, nasıl hesaplanır ve yorumlanır
-POST = {
+POST = {"tags": ["health"],
     "id": "what-is-bmi-how-to-read-it", "app": "bmicalculator", "date": "2026-11-10",
     "en": {
         "slug": "what-is-bmi-how-to-calculate-and-read-it",

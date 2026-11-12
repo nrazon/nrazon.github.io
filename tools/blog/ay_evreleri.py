@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # Yalnız Türkçe yazı (Astrolings Türkçe bir uygulama): 4 dilli değil, yalnız "tr" anahtarı var.
-POST = {
+POST = {"tags": ["astronomy"],
     "id": "ay-evreleri",
     "app": "astrolings",
     "date": "2026-11-10",

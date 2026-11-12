@@ -1,5 +1,5 @@
 # Blog: son deprem verileri nereden geliyor (uygulamanin gercek kaynaklari: AFAD apiv2 + Kandilli sondepremler.asp)
-POST = {'id': 'where-earthquake-data-comes-from',
+POST = {"tags": ["earthquake"],'id': 'where-earthquake-data-comes-from',
  'app': 'sondepremler',
  'date': '2026-11-10',
  'en': {'slug': 'where-earthquake-data-comes-from',

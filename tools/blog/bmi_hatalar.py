@@ -1,5 +1,5 @@
 # Yazı: BMI yanılgıları ve sınırları
-POST = {
+POST = {"tags": ["health"],
     "id": "bmi-common-mistakes-limits", "app": "bmicalculator", "date": "2026-11-10",
     "en": {
         "slug": "bmi-common-mistakes-and-limits",

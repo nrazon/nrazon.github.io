@@ -17,7 +17,8 @@ DIRS = {"en": "blog", "tr": "tr/yazilar", "es": "es/blog", "pt": "pt/blog"}
 # Yayın günü eklenenler (Pentolings yayına çıkınca): "pento_history", "pento_dlx"
 BLOG_MODULES = ["mahjong_solvable", "mahjong_history", "daily_seed", "generated_levels", "ttt_history",
                 "deprem_buyukluk", "deprem_oncesi_sonrasi", "deprem_veri_kaynaklari", "bmi_nedir", "bmi_hatalar", "yas_hesaplama", "artik_yil_dogum_gunu", "pento_history", "pento_dlx", "tombala_cards",
-                "merkur_retrosu", "burclar_takimyildiz", "ay_evreleri"]  # son 3: yalnız Türkçe (Astrolings)
+                "merkur_retrosu", "burclar_takimyildiz", "ay_evreleri",
+                "solo_dev_portfolio", "ad_lifecycle_events", "compose_juice"]  # 3 yazı (12.11.2026); son 3 yalnız Türkçe: merkur_retrosu, burclar_takimyildiz, ay_evreleri: yalnız Türkçe (Astrolings)
 
 BT = {
     "en": {"idx_title": "Blog: puzzle design, game history and dev notes", "idx_h1": "Blog", "idx_desc": "Notes from an independent Android developer: how puzzles are generated and checked, the history of classic puzzle games and behind-the-scenes dev stories.",
@@ -29,6 +30,35 @@ BT = {
     "pt": {"idx_title": "Blog: design de quebra-cabeças, história dos jogos e notas de desenvolvimento", "idx_h1": "Blog", "idx_desc": "Notas de um desenvolvedor Android independente: como os quebra-cabeças são gerados e verificados, a história dos jogos clássicos e bastidores do desenvolvimento.",
            "idx_intro": "Notas dos bastidores: como nossos jogos de quebra-cabeça são feitos, de onde vêm os quebra-cabeças clássicos e o que aprendemos ao criá-los.", "crumb": "Blog", "more": "Mais do blog", "read": "Ler"},
 }
+
+
+# Etiketler (hashtag): yazı modülündeki "tags" anahtarları (en çok 3). Yeni etiket = buraya 4 dilli etiket ekle.
+# Dizin sayfasında etiket düğmeleri (JS ile süzer, adres #etiket), yazı sayfasında etiket bağlantıları ve JSON-LD keywords.
+TAGLABEL = {
+    "algorithms": {"en": "Algorithms", "tr": "Algoritmalar", "es": "Algoritmos", "pt": "Algoritmos"},
+    "generation": {"en": "Level generation", "tr": "Bölüm üretimi", "es": "Generación de niveles", "pt": "Geração de níveis"},
+    "android": {"en": "Android", "tr": "Android", "es": "Android", "pt": "Android"},
+    "compose": {"en": "Jetpack Compose", "tr": "Jetpack Compose", "es": "Jetpack Compose", "pt": "Jetpack Compose"},
+    "game-design": {"en": "Game design", "tr": "Oyun tasarımı", "es": "Diseño de juegos", "pt": "Design de jogos"},
+    "history": {"en": "History", "tr": "Tarih", "es": "Historia", "pt": "História"},
+    "health": {"en": "Health", "tr": "Sağlık", "es": "Salud", "pt": "Saúde"},
+    "earthquake": {"en": "Earthquakes", "tr": "Depremler", "es": "Terremotos", "pt": "Terremotos"},
+    "astronomy": {"en": "Astronomy", "tr": "Astronomi", "es": "Astronomía", "pt": "Astronomia"},
+    "devlog": {"en": "Dev notes", "tr": "Geliştirici notları", "es": "Notas de desarrollo", "pt": "Notas de desenvolvimento"},
+    "ads": {"en": "Ads", "tr": "Reklamlar", "es": "Anuncios", "pt": "Anúncios"},
+    "tools": {"en": "Tools and calculators", "tr": "Araçlar ve hesaplayıcılar", "es": "Herramientas y calculadoras", "pt": "Ferramentas e calculadoras"},
+}
+TAGS_ALL = {"en": "All", "tr": "Tümü", "es": "Todas", "pt": "Todas"}
+TAG_CSS = ('<style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;'
+           'border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>')
+TAG_JS = ('<script>(function(){var l=document.querySelectorAll(".glist li[data-tags]"),a=document.querySelectorAll(".tags a");'
+          'function f(){var h=decodeURIComponent(location.hash.slice(1));for(var i=0;i<l.length;i++){l[i].style.display=(!h||(" "+l[i].dataset.tags+" ").indexOf(" "+h+" ")>-1)?"":"none"}'
+          'for(var j=0;j<a.length;j++){a[j].classList.toggle("on",(a[j].dataset.tag||"")===h)}}'
+          'window.addEventListener("hashchange",f);f()})()</script>')
+
+
+def tag_links(tags, lang, index_url):
+    return '<p class="tags">' + "".join(f'<a href="{index_url}#{tg}">#{esc(TAGLABEL[tg][lang])}</a>' for tg in tags) + "</p>"
 
 
 def url(lang, slug=""):
@@ -76,6 +106,11 @@ def main():
                    "datePublished": p["date"], "dateModified": p["date"],
                    "author": {"@type": "Person", "name": "Nesim Razon", "url": BASE + "/", "sameAs": GG.SOCIAL},
                    "publisher": {"@type": "Person", "name": "Nesim Razon", "url": BASE + "/"}}
+            ptags = p.get("tags", [])
+            for tg in ptags:
+                assert tg in TAGLABEL, f"{p['id']}: bilinmeyen etiket {tg}"
+            if ptags:
+                art["keywords"] = ", ".join(TAGLABEL[tg][lang] for tg in ptags)
             if app:
                 art["about"] = {"@type": "SoftwareApplication", "name": app["names"]["en"], "operatingSystem": "Android", "applicationCategory": "GameApplication", "url": BASE + app_url(p["app"], lang)}
             crumbs = {"@type": "BreadcrumbList", "itemListElement": [
@@ -112,7 +147,7 @@ def main():
                 more = ('<section><h2>' + esc(b["more"]) + '</h2><ul class="glist">' + "".join(
                     f'<li><a href="/{DIRS[lang]}/{o[lang]["slug"]}/"><img src="/{icon_of(o)}" alt="{alt_of(o)}" width="48" height="48"><div><b>{esc(o[lang]["title"])}</b></div></a></li>' for o in others) + "</ul></section>")
             body = (f'  <article class="guide">\n    <nav class="crumbs" aria-label="breadcrumb"><a href="{home_url(lang)}">{esc(t["home"])}</a> › <a href="{index_urls[lang]}">{esc(b["crumb"])}</a></nav>\n'
-                    f'    <h1>{esc(c["title"])}</h1>\n    <p class="by">{esc(t["by"])} · {p["date"]}</p>\n    <p class="lead">{esc(c["intro"])}</p>\n    ' + "\n    ".join(sec) + f"\n    {cta}\n    {faqh}\n    {more}\n  </article>")
+                    f'    <h1>{esc(c["title"])}</h1>\n    <p class="by">{esc(t["by"])} · {p["date"]}</p>\n    {tag_links(ptags, lang, index_urls[lang]) if ptags else ""}\n    <p class="lead">{esc(c["intro"])}</p>\n    ' + "\n    ".join(sec) + f"\n    {cta}\n    {faqh}\n    {more}\n  </article>")
             out = head(lang, c["title"], c["desc"], canon, alternates, og_image, ld, accent) + page_shell(lang, alternates, body)
             write(f"{DIRS[lang]}/{c['slug']}/index.html", out)
             pages.append({"url": canon, "loc": alternates, "default": "en" if "en" in alternates else plangs[0], "hash": hashlib.md5(out.encode("utf-8")).hexdigest()})
@@ -121,12 +156,15 @@ def main():
     for lang in LANGS:
         t, b = T[lang], BT[lang]
         canon = alternates[lang]
+        used = [tg for tg in TAGLABEL if any(tg in q.get("tags", []) for q in posts if lang in q)]
+        chips = ('<p class="tags"><a href="#" data-tag="">' + esc(TAGS_ALL[lang]) + "</a>" + "".join(
+            f'<a href="#{tg}" data-tag="{tg}">#{esc(TAGLABEL[tg][lang])}</a>' for tg in used) + "</p>" + TAG_CSS) if used else ""
         items = "".join(
-            f'<li><a href="/{DIRS[lang]}/{q[lang]["slug"]}/"><img src="/{icon_of(q)}" alt="{alt_of(q)}" width="48" height="48"><div><b>{esc(q[lang]["title"])}</b><span>{esc(q[lang]["desc"])}</span></div></a></li>' for q in posts if lang in q)
+            f'<li data-tags="{" ".join(q.get("tags", []))}"><a href="/{DIRS[lang]}/{q[lang]["slug"]}/"><img src="/{icon_of(q)}" alt="{alt_of(q)}" width="48" height="48"><div><b>{esc(q[lang]["title"])}</b><span>{esc(q[lang]["desc"])}</span></div></a></li>' for q in posts if lang in q)
         list_ld = {"@context": "https://schema.org", "@type": "Blog", "name": b["idx_h1"], "inLanguage": lang, "url": canon, "description": b["idx_desc"],
                    "blogPost": [{"@type": "BlogPosting", "headline": q[lang]["title"], "url": url(lang, q[lang]["slug"]), "datePublished": q["date"]} for q in posts if lang in q]}
         body = (f'  <article class="guide">\n    <nav class="crumbs" aria-label="breadcrumb"><a href="{home_url(lang)}">{esc(t["home"])}</a> › {esc(b["crumb"])}</nav>\n'
-                f'    <h1>{esc(b["idx_h1"])}</h1>\n    <p class="lead">{esc(b["idx_intro"])}</p>\n    <ul class="glist">{items}</ul>\n  </article>')
+                f'    <h1>{esc(b["idx_h1"])}</h1>\n    <p class="lead">{esc(b["idx_intro"])}</p>\n    {chips}\n    <ul class="glist">{items}</ul>\n  </article>' + (TAG_JS if used else ""))
         out = head(lang, b["idx_title"], b["idx_desc"], canon, alternates, f"{BASE}/og-v3.png", list_ld, "#7FB2FF").replace('content="article"', 'content="website"') + page_shell(lang, alternates, body)
         write(f"{DIRS[lang]}/index.html", out)
         pages.append({"url": canon, "loc": alternates, "default": "en", "hash": hashlib.md5(out.encode("utf-8")).hexdigest()})

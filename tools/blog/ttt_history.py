@@ -1,5 +1,6 @@
 # Blog: XOX / Tic-Tac-Toe tarihi ve cesitleri (yalniz kesin bilgiler)
 POST = {
+    "tags": ["history", "algorithms"],
     "id": "tic-tac-toe-history-variants",
     "app": "tictactoe",
     "date": "2026-11-10",

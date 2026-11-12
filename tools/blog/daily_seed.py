@@ -1,5 +1,6 @@
 # Yazı: herkes için aynı günlük bulmaca (sunucusuz, tohumdan)
 POST = {
+    "tags": ["algorithms", "devlog"],
     "id": "daily-puzzle-same-for-everyone", "app": None, "date": "2026-11-10",
     "en": {
         "slug": "how-daily-puzzles-work-without-a-server",

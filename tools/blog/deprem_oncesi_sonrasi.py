@@ -1,5 +1,5 @@
 # Blog: deprem oncesi hazirlik, sirasinda ve sonrasinda ne yapilir (AFAD rehberlerine dayali; 10.11.2026 AFAD sayfa metniyle karsilastirilip duzeltildi)
-POST = {'id': 'earthquake-preparedness-what-to-do',
+POST = {"tags": ["earthquake"],'id': 'earthquake-preparedness-what-to-do',
  'app': 'sondepremler',
  'date': '2026-11-10',
  'en': {'slug': 'earthquake-preparedness-what-to-do',

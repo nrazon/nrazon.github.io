@@ -1,5 +1,5 @@
 # Blog: Tombala kartları nasıl üretilir (geliştirici notu, Tombalings kodundan doğrulandı)
-POST = {
+POST = {"tags": ["generation", "game-design"],
     "id": "tombala_cards", "app": "tombalings", "date": "2026-11-12",
     "en": {
         "slug": "how-a-tombala-card-is-generated-six-cards-ninety-numbers",

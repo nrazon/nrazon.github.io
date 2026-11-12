@@ -64,6 +64,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/bmi-common-mistakes-and-limits/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/detectar-anuncio-intersticial-bloqueado-android-eventos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/blog/earthquake-magnitude-vs-intensity/</loc>
     <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/earthquake-magnitude-vs-intensity/"/>
@@ -80,6 +89,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/terremoto-que-hacer-antes-durante-despues/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/terremoto-o-que-fazer-antes-durante-depois/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/earthquake-preparedness-what-to-do/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/blog/game-feel-jetpack-compose-without-game-engine/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/game-feel-jetpack-compose-without-game-engine/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/oyun-motoru-olmadan-jetpack-compose-oyun-hissi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/sensacion-de-juego-jetpack-compose-sin-motor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/game-feel-jetpack-compose-sem-motor-de-jogo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/game-feel-jetpack-compose-without-game-engine/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/</loc>
@@ -125,6 +143,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/como-garantizamos-que-un-mahjong-solitario-tenga-solucion/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-we-guarantee-mahjong-solitaire-is-solvable/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/blog/keeping-two-dozen-android-apps-maintainable-solo/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/keeping-two-dozen-android-apps-maintainable-solo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/mantener-dos-docenas-de-apps-android-siendo-un-solo-desarrollador/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/keeping-two-dozen-android-apps-maintainable-solo/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/blog/leap-day-birthday-how-to-count-age/</loc>
@@ -311,6 +338,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/where-earthquake-data-comes-from/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/es/blog/detectar-anuncio-intersticial-bloqueado-android-eventos/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/detectar-anuncio-intersticial-bloqueado-android-eventos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/es/blog/errores-comunes-y-limites-del-imc/</loc>
     <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/bmi-common-mistakes-and-limits/"/>
@@ -356,6 +392,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/earthquake-magnitude-vs-intensity/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/es/blog/mantener-dos-docenas-de-apps-android-siendo-un-solo-desarrollador/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/keeping-two-dozen-android-apps-maintainable-solo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/mantener-dos-docenas-de-apps-android-siendo-un-solo-desarrollador/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/keeping-two-dozen-android-apps-maintainable-solo/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/</loc>
     <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/"/>
@@ -381,6 +426,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/que-es-el-imc-como-se-calcula-y-se-interpreta/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/o-que-e-imc-como-calcular-e-interpretar/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/what-is-bmi-how-to-calculate-and-read-it/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/blog/sensacion-de-juego-jetpack-compose-sin-motor/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/game-feel-jetpack-compose-without-game-engine/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/oyun-motoru-olmadan-jetpack-compose-oyun-hissi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/sensacion-de-juego-jetpack-compose-sin-motor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/game-feel-jetpack-compose-sem-motor-de-jogo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/game-feel-jetpack-compose-without-game-engine/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/es/blog/terremoto-que-hacer-antes-durante-despues/</loc>
@@ -1163,6 +1217,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/where-earthquake-data-comes-from/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/detectar-anuncio-intersticial-bloqueado-android-eventos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/pt/blog/erros-comuns-e-limites-do-imc/</loc>
     <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/bmi-common-mistakes-and-limits/"/>
@@ -1170,6 +1233,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/errores-comunes-y-limites-del-imc/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/erros-comuns-e-limites-do-imc/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/bmi-common-mistakes-and-limits/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/blog/game-feel-jetpack-compose-sem-motor-de-jogo/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/game-feel-jetpack-compose-without-game-engine/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/oyun-motoru-olmadan-jetpack-compose-oyun-hissi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/sensacion-de-juego-jetpack-compose-sin-motor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/game-feel-jetpack-compose-sem-motor-de-jogo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/game-feel-jetpack-compose-without-game-engine/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/blog/historia-do-jogo-da-velha-e-variantes/</loc>
@@ -1206,6 +1278,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/magnitud-e-intensidad-de-un-terremoto/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/magnitude-e-intensidade-de-um-terremoto/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/earthquake-magnitude-vs-intensity/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/keeping-two-dozen-android-apps-maintainable-solo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/mantener-dos-docenas-de-apps-android-siendo-un-solo-desarrollador/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/keeping-two-dozen-android-apps-maintainable-solo/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/blog/o-que-e-imc-como-calcular-e-interpretar/</loc>
@@ -2088,6 +2169,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/leap-day-birthday-how-to-count-age/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/detectar-anuncio-intersticial-bloqueado-android-eventos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/tr/yazilar/ay-evreleri-neden-29-5-gunde-doner-yeniay-dolunay/</loc>
     <lastmod>2026-11-12</lastmod>
   </url>
@@ -2163,6 +2253,15 @@
     <lastmod>2026-11-12</lastmod>
   </url>
   <url>
+    <loc>https://nrazon.github.io/tr/yazilar/oyun-motoru-olmadan-jetpack-compose-oyun-hissi/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/game-feel-jetpack-compose-without-game-engine/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/oyun-motoru-olmadan-jetpack-compose-oyun-hissi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/sensacion-de-juego-jetpack-compose-sin-motor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/game-feel-jetpack-compose-sem-motor-de-jogo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/game-feel-jetpack-compose-without-game-engine/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/tr/yazilar/pentomino-bulmacalari-dancing-links-tam-kapsama/</loc>
     <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/pentomino-puzzles-dancing-links-exact-cover/"/>
@@ -2197,6 +2296,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/keeping-two-dozen-android-apps-maintainable-solo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/mantener-dos-docenas-de-apps-android-siendo-un-solo-desarrollador/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/keeping-two-dozen-android-apps-maintainable-solo/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/yazilar/tombala-karti-nasil-uretilir-alti-kart-doksan-sayi/</loc>

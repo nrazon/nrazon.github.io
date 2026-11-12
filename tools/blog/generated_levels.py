@@ -1,5 +1,6 @@
 # Yazı: bölümler elle çizilmeden nasıl üretilir ve çözülebilirlik nasıl doğrulanır
 POST = {
+    "tags": ["generation", "algorithms"],
     "id": "how-puzzle-levels-are-generated", "app": None, "date": "2026-11-10",
     "en": {
         "slug": "how-puzzle-levels-are-generated-and-checked",

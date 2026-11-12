@@ -1,5 +1,5 @@
 # Yazı: yaş yıl/ay/gün olarak nasıl hesaplanır
-POST = {
+POST = {"tags": ["tools"],
     "id": "how-to-calculate-age-exact", "app": "agecalculator", "date": "2026-11-10",
     "en": {
         "slug": "how-to-calculate-exact-age-years-months-days",
