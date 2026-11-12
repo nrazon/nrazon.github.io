@@ -22,6 +22,7 @@ APPS = {
     "nudgelings": ("Nudgelings", "game", True, True, True, None),
     "pentolings": ("Pentolings", "game", True, True, True, None),
     "tombalings": ("Tombalings", "game", True, True, True, None),
+    "brassline": ("Brassline", "game", True, False, True, "casino"),
     "astrolings": ("Astrolings", "app", True, True, False, "astro"),
     "nuzzlings": ("Nuzzlings", "game", False, True, True, "pet"),
     "sansoyunlari": ("Şans Oyunları", "app", True, False, False, "lottery"),
@@ -79,6 +80,11 @@ PGS = ({"en": "Google Play Games", "tr": "Google Play Games", "es": "Google Play
         "pt": "Placares, conquistas e salvamento na nuvem usam o Google Play Games e são opcionais; seguem os termos do próprio Google. O progresso salvo na nuvem depende do serviço do Google e não posso garantir que esteja sempre disponível ou possa ser restaurado."})
 
 NOTES = {
+    "casino": ({"en": "Play chips only, adults only", "tr": "Yalnız oyun jetonu, yalnız yetişkinler", "es": "Solo fichas de juego, solo adultos", "pt": "Só fichas de jogo, só adultos"},
+               {"en": "The app is a simulation of blackjack, roulette and poker for adults (18+) and for entertainment only. It uses play chips that are free, cannot be bought, have no monetary value and cannot be exchanged for money, prizes or anything else. The app is not a gambling service and does not offer or promote real-money gambling. Success in the app does not imply success at real gambling. If gambling causes you problems, please seek help from a local support service.",
+                "tr": "Uygulama, yetişkinler (18+) için ve yalnızca eğlence amacıyla hazırlanmış bir blackjack, rulet ve poker simülasyonudur. Ücretsiz, satın alınamayan, parasal değeri olmayan ve para, ödül ya da başka bir şeyle değiştirilemeyen oyun jetonları kullanır. Uygulama bir kumar hizmeti değildir; gerçek parayla kumar sunmaz ve tanıtmaz. Uygulamadaki başarı gerçek kumarda başarı anlamına gelmez. Kumar sizin için sorun oluyorsa lütfen yerel bir destek hizmetinden yardım alın.",
+                "es": "La aplicación es una simulación de blackjack, ruleta y póquer para adultos (18+) y solo para entretenimiento. Usa fichas de juego gratuitas que no se pueden comprar, no tienen valor monetario y no se pueden cambiar por dinero, premios ni ninguna otra cosa. La aplicación no es un servicio de juego y no ofrece ni promueve juegos de azar con dinero real. El éxito en la aplicación no implica éxito en el juego real. Si el juego te causa problemas, busca ayuda en un servicio de apoyo local.",
+                "pt": "O aplicativo é uma simulação de blackjack, roleta e pôquer para adultos (18+) e apenas para diversão. Usa fichas de jogo gratuitas que não podem ser compradas, não têm valor monetário e não podem ser trocadas por dinheiro, prêmios ou qualquer outra coisa. O aplicativo não é um serviço de apostas e não oferece nem promove jogos de azar com dinheiro real. O sucesso no aplicativo não implica sucesso em jogos de azar reais. Se o jogo lhe causa problemas, procure ajuda em um serviço de apoio local."}),
     "astro": ({"en": "Entertainment only", "tr": "Yalnızca eğlence amaçlı", "es": "Solo entretenimiento", "pt": "Apenas entretenimento"},
               {"en": "The readings, ratings and texts in the app are written for entertainment. They are not predictions, are not scientifically proven and are not medical, financial, legal or any other professional advice. Please do not base important decisions on them.",
                "tr": "Uygulamadaki yorumlar, puanlar ve metinler eğlence amacıyla yazılmıştır. Öngörü değildir, bilimsel olarak kanıtlanmış değildir; tıbbi, mali, hukuki ya da başka bir profesyonel tavsiye de değildir. Lütfen önemli kararlarını bunlara dayandırma.",
