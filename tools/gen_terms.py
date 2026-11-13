@@ -5,7 +5,7 @@ Calisan/Hafta Sonum/Uzay Gunlugu'nde sartlar zaten privacy.html#kosullar icinde:
 import io, os, re, sys
 
 G = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATE = {"en": "4 November 2026", "tr": "4 Kasım 2026", "es": "4 de noviembre de 2026", "pt": "4 de novembro de 2026"}
+DATE = {"en": "4 November 2026", "tr": "4 Kasım 2026", "es": "4 de noviembre de 2026", "pt": "4 de novembro de 2026"}  # Pulselings: gen_terms 13.11.2026
 MAIL = "nesim.razon@gmail.com"
 
 # slug: (ad, tur, reklam, uygulama ici satin alma, play games, ozel not anahtari)
@@ -30,6 +30,7 @@ APPS = {
     "whereami": ("Where Am I?", "app", True, False, False, "location"),
     "agecalculator": ("Age Calculator", "app", True, False, False, None),
     "bmicalculator": ("BMI Calculator", "app", True, False, False, "health"),
+    "pulselings": ("Pulselings", "app", True, False, False, "pulse"),
     "anthemturkey": ("National Anthem of Turkey", "app", True, False, False, "media"),
     "anthemcanada": ("National Anthem of Canada", "app", True, False, False, "media"),
     "turksail": ("TurkSail", "app", False, False, False, "rss"),
@@ -105,6 +106,11 @@ NOTES = {
                   "tr": "Konum ve adres sonuçları cihazınıza, sinyale ve Google hizmetlerine bağlıdır; hatalı olabilir. Uygulamaya navigasyon için ya da acil durumda güvenmeyin.",
                   "es": "Los resultados de ubicación y dirección dependen de tu dispositivo, la señal y los servicios de Google y pueden ser inexactos. No dependas de la aplicación para navegar ni en una emergencia.",
                   "pt": "Os resultados de localização e endereço dependem do seu dispositivo, do sinal e dos serviços do Google e podem ser imprecisos. Não dependa do aplicativo para navegação ou em emergências."}),
+    "pulse": ({"en": "Not a medical device", "tr": "Tıbbi cihaz değildir", "es": "No es un dispositivo médico", "pt": "Não é um dispositivo médico"},
+              {"en": "Pulselings estimates your pulse from your fingertip with the camera and flash. Results are estimates for general wellness, not medical measurements, and can be inaccurate (for example because of movement, finger placement, light or your phone). The app is not a medical device and does not diagnose, treat, cure or prevent any condition. Do not use it for medical decisions or in an emergency; talk to a healthcare professional about your health. If the flash feels hot, lift your finger and stop measuring.",
+               "tr": "Pulselings, kamera ve flaşla parmak ucundan nabzını tahmin eder. Sonuçlar genel sağlıklı yaşam için tahminlerdir, tıbbi ölçüm değildir ve hatalı olabilir (örneğin hareket, parmak yerleşimi, ışık ya da telefonun nedeniyle). Uygulama bir tıbbi cihaz değildir; hiçbir durumu teşhis etmez, tedavi etmez, iyileştirmez ve önlemez. Tıbbi kararlar için ya da acil durumda kullanma; sağlığınla ilgili bir sağlık uzmanına danış. Flaş ısınırsa parmağını kaldır ve ölçümü bırak.",
+               "es": "Pulselings estima tu pulso desde la yema del dedo con la cámara y el flash. Los resultados son estimaciones para el bienestar general, no mediciones médicas, y pueden ser inexactos (por ejemplo, por el movimiento, la posición del dedo, la luz o tu teléfono). La app no es un dispositivo médico y no diagnostica, trata, cura ni previene ninguna afección. No la uses para decisiones médicas ni en una emergencia; consulta a un profesional de la salud sobre tu salud. Si el flash se calienta, levanta el dedo y deja de medir.",
+               "pt": "O Pulselings estima sua pulsação a partir da ponta do dedo com a câmera e o flash. Os resultados são estimativas para o bem-estar geral, não medições médicas, e podem ser imprecisos (por exemplo, por movimento, posição do dedo, luz ou pelo seu celular). O app não é um dispositivo médico e não diagnostica, trata, cura nem previne nenhuma condição. Não o use para decisões médicas nem em emergências; fale com um profissional de saúde sobre a sua saúde. Se o flash esquentar, levante o dedo e pare de medir."}),
     "health": ({"en": "Not medical advice", "tr": "Tıbbi tavsiye değildir", "es": "No es consejo médico", "pt": "Não é aconselhamento médico"},
                {"en": "BMI and related results are general information only and are not medical advice, a diagnosis or a treatment recommendation. Talk to a doctor or dietitian about your health.",
                 "tr": "VKİ ve ilgili sonuçlar yalnızca genel bilgidir; tıbbi tavsiye, teşhis ya da tedavi önerisi değildir. Sağlığınızla ilgili olarak bir doktora veya diyetisyene danışın.",
