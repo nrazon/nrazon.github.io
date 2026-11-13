@@ -272,6 +272,22 @@
    "pt"
   ]
  },
+ "pulselings": {
+  "langs": [
+   "en",
+   "tr",
+   "es",
+   "pt"
+  ],
+  "default": "en",
+  "cat": "apps",
+  "priv": [
+   "en",
+   "tr",
+   "es",
+   "pt"
+  ]
+ },
  "sansoyunlari": {
   "langs": [
    "tr"
