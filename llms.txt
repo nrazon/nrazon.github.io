@@ -26,7 +26,7 @@
 - [Astrolings](https://nrazon.github.io/astrolings/): Your zodiac sign's daily companion: daily readings, a Moon calendar, sign compatibility and 12 cute zodiac creatures (Turkish only).
 - [Uzay Günlüğü](https://nrazon.github.io/uzaygunlugu/): A new space card every day, Turkey from space, the spinning Earth and the live position of the ISS, built on NASA's public data (Turkish only).
 - [Şans Oyunları](https://nrazon.github.io/sansoyunlari/): Results of the Turkish lotteries (Sayısal Loto, Süper Loto, Şans Topu, On Numara, Milli Piyango), random tickets and ticket checking.
-- [Where Am I?](https://nrazon.github.io/whereami/): See where you are on the map with your address and coordinates; copy or share them.
+- [Where Am I?](https://nrazon.github.io/whereami/): See where you are on the map with your address and coordinates; explore places and photos nearby.
 - [Age Calculator](https://nrazon.github.io/agecalculator/): Calculate exact age and the time between dates, and keep a list of birthdays and anniversaries.
 - [Son Depremler](https://nrazon.github.io/sondepremler/): Recent earthquakes in and around Turkey from AFAD and Kandilli, with a map and statistics.
 - [BMI Calculator](https://nrazon.github.io/bmicalculator/): Calculate your BMI with WHO categories and see the healthy weight range for your height.

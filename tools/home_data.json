@@ -515,10 +515,10 @@
   "pkg": "com.whereami.nesimapps",
   "new": null,
   "desc": {
-   "tr": "Haritada nerede olduğunu, açık adresini ve koordinatlarını gör; kopyala ya da paylaş.",
-   "en": "See where you are on the map with your address and coordinates; copy or share them.",
-   "es": "Mira dónde estás en el mapa con tu dirección y coordenadas; cópialas o compártelas.",
-   "pt": "Veja onde você está no mapa com seu endereço e coordenadas; copie ou compartilhe."
+   "tr": "Haritada nerede olduğunu, açık adresini ve koordinatlarını gör; yakınındaki yerleri ve fotoğrafları keşfet.",
+   "en": "See where you are on the map with your address and coordinates; explore places and photos nearby.",
+   "es": "Mira dónde estás en el mapa con tu dirección y coordenadas; descubre lugares y fotos cercanos.",
+   "pt": "Veja onde você está no mapa com seu endereço e coordenadas; descubra lugares e fotos por perto."
   },
   "status": "live",
   "popular": false

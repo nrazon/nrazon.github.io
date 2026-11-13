@@ -9,7 +9,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "b6a99062555ad16895761ed3a99a4be5",
+  "hash": "b2d8b21a4b87d6203d1b21e10fb0b36e",
   "slug": ""
  },
  "https://nrazon.github.io/tr/": {
@@ -22,7 +22,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "de62d7d3b727c2099c46a44bbae5e37d",
+  "hash": "90b6afbe4436f33b73071c0ffd31932a",
   "slug": ""
  },
  "https://nrazon.github.io/es/": {
@@ -35,7 +35,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "5e9dcb3c587566b3567b5f790a1d1bed",
+  "hash": "6e203632a7d675fa3221ae83d8259a4a",
   "slug": ""
  },
  "https://nrazon.github.io/pt/": {
@@ -48,7 +48,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "4c938c14b7c820ce1927c2c1e354bf7c",
+  "hash": "622d7a206ded4d2f5bcde5e227d7fc3c",
   "slug": ""
  },
  "https://nrazon.github.io/agecalculator/": {
@@ -1029,7 +1029,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "39959af5c1014e9e7a46de430419a0ee",
+  "hash": "93ac1e0f85e219d7406728e98ea44e45",
   "slug": "whereami"
  },
  "https://nrazon.github.io/tr/whereami/": {
@@ -1042,7 +1042,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "37be4d4bc0c399c1cd8126dbaa05405a",
+  "hash": "83be439c9190ef9fc617be57aad31e29",
   "slug": "whereami"
  },
  "https://nrazon.github.io/es/whereami/": {
@@ -1055,7 +1055,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "8a202a891d56d1d74d039151944af8e7",
+  "hash": "edc8d554ddd7c09fb34da5e221fd1840",
   "slug": "whereami"
  },
  "https://nrazon.github.io/pt/whereami/": {
@@ -1068,7 +1068,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "6ef5e2a8d02c8141195d050bf61182ff",
+  "hash": "31d496b3be22fef8c13352e0d023f2aa",
   "slug": "whereami"
  }
 }
