@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://nrazon.github.io/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/"/>
@@ -226,6 +226,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/bmicalculator/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/brassline/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/brassline/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/brassline/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/brassline/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/brassline/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/brassline/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/calisan/</loc>
     <lastmod>2026-11-11</lastmod>
   </url>
@@ -249,7 +258,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/es/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/"/>
@@ -453,6 +462,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/bmicalculator/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/bmicalculator/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/bmicalculator/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/brassline/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/brassline/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/brassline/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/brassline/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/brassline/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/brassline/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/es/cardles/</loc>
@@ -1128,7 +1146,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/"/>
@@ -1332,6 +1350,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/bmicalculator/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/bmicalculator/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/bmicalculator/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/brassline/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/brassline/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/brassline/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/brassline/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/brassline/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/brassline/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/cardles/</loc>
@@ -1742,7 +1769,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/"/>
@@ -1782,6 +1809,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/bmicalculator/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/bmicalculator/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/bmicalculator/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/brassline/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/brassline/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/brassline/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/brassline/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/brassline/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/brassline/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/cardles/</loc>

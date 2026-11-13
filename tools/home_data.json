@@ -648,5 +648,33 @@
   },
   "status": "live",
   "popular": false
+ },
+ {
+  "slug": "brassline",
+  "cat": "games",
+  "icon": "brassline/icon.png",
+  "names": {
+   "tr": "Brassline",
+   "en": "Brassline",
+   "es": "Brassline",
+   "pt": "Brassline"
+  },
+  "tint": "#C9A45C",
+  "pkg": "com.brassline.nesimapps",
+  "new": "2026-12-15",
+  "desc": {
+   "tr": "Blackjack, Avrupa ruleti ve Texas Hold'em, oyun jetonuyla. 18+, gerçek para yok, yalnızca eğlence için.",
+   "en": "Blackjack, European roulette and Texas Hold'em with play chips. 18+, no real money, entertainment only.",
+   "es": "Blackjack, ruleta europea y Texas Hold'em con fichas de juego. +18, sin dinero real, solo entretenimiento.",
+   "pt": "Blackjack, roleta europeia e Texas Hold'em com fichas de jogo. 18+, sem dinheiro real, só para diversão."
+  },
+  "status": "live",
+  "popular": false,
+  "desc_live": {
+   "tr": "Blackjack, Avrupa ruleti ve Texas Hold'em, oyun jetonuyla. 18+, gerçek para yok, yalnızca eğlence için.",
+   "en": "Blackjack, European roulette and Texas Hold'em with play chips. 18+, no real money, entertainment only.",
+   "es": "Blackjack, ruleta europea y Texas Hold'em con fichas de juego. +18, sin dinero real, solo entretenimiento.",
+   "pt": "Blackjack, roleta europeia e Texas Hold'em com fichas de jogo. 18+, sem dinheiro real, só para diversão."
+  }
  }
 ]

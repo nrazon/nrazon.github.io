@@ -1,7 +1,7 @@
 {
  "https://nrazon.github.io/": {
-  "hash": "5d3bed6ec8a7b702904897f41499024d",
-  "date": "2026-11-11"
+  "hash": "c62d5a02ecb3a59673696a09c9872e97",
+  "date": "2026-11-13"
  },
  "https://nrazon.github.io/agecalculator/": {
   "hash": "24d51869337c73b84113cd0febe24518",
@@ -36,8 +36,8 @@
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/es/": {
-  "hash": "bd15bc62da5911c4ff49e6a9b0a14142",
-  "date": "2026-11-11"
+  "hash": "dedca1ead9c89e5a03815c32d88de7c3",
+  "date": "2026-11-13"
  },
  "https://nrazon.github.io/es/agecalculator/": {
   "hash": "79a6b83f7b962f893206ed0554f6e487",
@@ -104,8 +104,8 @@
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/pt/": {
-  "hash": "05c83848e7945c5450fc7581f042acba",
-  "date": "2026-11-11"
+  "hash": "62f523dcf888ea265db09eee1c5d4406",
+  "date": "2026-11-13"
  },
  "https://nrazon.github.io/pt/agecalculator/": {
   "hash": "0e88708945f8fcfa03cead129381b4ac",
@@ -172,8 +172,8 @@
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/tr/": {
-  "hash": "90ca8d86ee15d53456d9011386a9f404",
-  "date": "2026-11-11"
+  "hash": "de70e97769618e8f40e6b8fbcaa10046",
+  "date": "2026-11-13"
  },
  "https://nrazon.github.io/tr/agecalculator/": {
   "hash": "28616c9c8ab3b75a6b91a84a5d3cb3bd",
@@ -1102,5 +1102,21 @@
  "https://nrazon.github.io/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/": {
   "hash": "51010148dae9d251a211aee179751d51",
   "date": "2026-11-12"
+ },
+ "https://nrazon.github.io/brassline/": {
+  "hash": "b517502a4f9d7e0dc3eaee3b878be16a",
+  "date": "2026-11-13"
+ },
+ "https://nrazon.github.io/es/brassline/": {
+  "hash": "9b14944b01e6c45f0a6355a70bf73d9b",
+  "date": "2026-11-13"
+ },
+ "https://nrazon.github.io/pt/brassline/": {
+  "hash": "b3c14b4ad1a210b0ec27ec3233f0f107",
+  "date": "2026-11-13"
+ },
+ "https://nrazon.github.io/tr/brassline/": {
+  "hash": "eb26a3568ca6317520e244c3b1b310b2",
+  "date": "2026-11-13"
  }
 }

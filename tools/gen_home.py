@@ -14,6 +14,7 @@ import sys
 G = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LANGS = ("tr", "en", "es", "pt")
 DATA = json.load(open(os.path.join(G, "tools", "home_data.json"), encoding="utf-8"))
+NO_CARD = {"brassline"}  # ana sayfada kart yok (kullanıcı kararı bekliyor: istenirse buradan sil)
 for _a in DATA:  # yayına çıkınca (status: live) 'çok yakında' içermeyen metin kullanılır
     if _a.get("status") == "live" and _a.get("desc_live"):
         _a["desc"] = _a["desc_live"]
@@ -393,7 +394,7 @@ JS = r'''
 
 def build(preview):
     by = {a["slug"]: a for a in DATA}
-    live = [a for a in DATA if a["status"] == "live"]
+    live = [a for a in DATA if a["status"] == "live" and a["slug"] not in NO_CARD]
     soon = [a for a in DATA if a["status"] == "soon"]
     games = [a for a in live if a["cat"] == "games" and a["slug"] not in (HERO_SLUG, "sliplines", "cubbles")]
     apps = [a for a in live if a["cat"] == "apps"]
@@ -536,7 +537,7 @@ if __name__ == "__main__":
     out = os.path.join(G, "index.html" if yayin else "yeni.html")
     page = build(preview=not yayin)
     # GEO/AEO: yapilandirilmis veri (JSON-LD) + llms.txt (5.11.2026)
-    live = [a for a in DATA if a.get("status") == "live"]
+    live = [a for a in DATA if a.get("status") == "live" and a["slug"] not in NO_CARD]
     def nm_(a): return a["names"].get("en") or next(iter(a["names"].values()))
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "WebSite", "@id": "https://nrazon.github.io/#site", "name": "Nesim Apps", "url": "https://nrazon.github.io/",

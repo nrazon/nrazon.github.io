@@ -11,9 +11,10 @@ G = r"C:\@Development\PersonalAndroidApps\github-pages"
 BASE = "https://nrazon.github.io"
 # Yayına henüz çıkmamış uygulamaların detay sayfaları: URL'den açılır ama ana sayfa kartı, "Diğer uygulamalarım" listeleri ve sitemap'e GİRMEZ,
 # sayfada noindex var. Uygulama Play'de yayınlanınca slug buradan silinir (ve home_data.json'da status=live yapılır).
-HIDDEN = {"brassline"}  # yayinda olmayan uygulama onceden buraya eklenir, yayin gunu silinir (Brassline: yayin gunu cikar)
+HIDDEN = set()  # yayinda olmayan uygulama onceden buraya eklenir, yayin gunu silinir (Brassline 13.11.2026 yayinda: cikarildi)
 # Capraz tanitim YOK (kullanici karari 10.11.2026): bu uygulama hicbir sayfadaki "Diger oyunlar" listesinde cikmaz, yayinda bile.
 NO_PROMO = {"brassline"}
+NO_CARD = {"brassline"}  # ana sayfada karti yok (home_data cat: other); kart karari kullanicida, istenirse cat games yap ve buradan sil
 # Ana sayfada kartında data-pkg olmayan (henüz "yakında" kartı olan) uygulamaların paket adları.
 VIDEOS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "videos.json"), encoding="utf-8"))
 VIDEO_LABEL = {"tr": "Tanıtım videosu", "en": "Promo video", "es": "Vídeo de presentación", "pt": "Vídeo de apresentação"}
@@ -932,7 +933,7 @@ _ip = os.path.join(G, "index.html")
 _s = open(_ip, encoding="utf-8").read()
 for _c in APPCFGS:
     _sl = _c["slug"]
-    if _sl in HIDDEN or f'href="{_sl}/"' in _s:
+    if _sl in HIDDEN or _sl in NO_CARD or f'href="{_sl}/"' in _s:
         continue
     _a = f'<a class="small" href="{_sl}/privacy.html#tr" lang="tr">'
     assert _s.count(_a) >= 1, _sl
