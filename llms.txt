@@ -5,6 +5,7 @@
 ## Games
 
 - [Tombalings](https://nrazon.github.io/tombalings/): Tombala (90 balls) and Bingo (75 balls): a cheerful number race against cute rivals. No real money, free play.
+- [Brassline](https://nrazon.github.io/brassline/): Blackjack, European roulette and Texas Hold'em with play chips. 18+, no real money, entertainment only.
 - [Nuzzlings](https://nrazon.github.io/nuzzlings/): Adopt a kitten, cuddle it, feed it and watch it grow up. Cozy and calm.
 - [Pentolings](https://nrazon.github.io/pentolings/): Fit and Drop: two cute puzzle games in one app. Fill shapes with pieces, pop the colours.
 - [Nudgelings](https://nrazon.github.io/nudgelings/): Slide and Push: two cute puzzle games in one app, 400 levels.
@@ -17,7 +18,6 @@
 - [Sliplines](https://nrazon.github.io/sliplines/): An arrow puzzle game: slide the arrows out in the right order and clear the board. Hundreds of levels, a Daily Puzzle with a global leaderboard, and badges to collect.
 - [2048](https://nrazon.github.io/game2048/): The classic number puzzle: swipe, merge matching numbers and reach the 2048 tile.
 - [Tic-Tac-Toe](https://nrazon.github.io/tictactoe/): Classic Tic-Tac-Toe against the computer: Easy, Medium or Hard. On Hard it never loses.
-- [Brassline](https://nrazon.github.io/brassline/): Blackjack, European roulette and Texas Hold'em with play chips. 18+, no real money, entertainment only.
 
 ## Apps
 
