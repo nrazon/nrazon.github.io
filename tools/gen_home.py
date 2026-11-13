@@ -14,7 +14,7 @@ import sys
 G = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LANGS = ("tr", "en", "es", "pt")
 DATA = json.load(open(os.path.join(G, "tools", "home_data.json"), encoding="utf-8"))
-NO_CARD = {"brassline"}  # ana sayfada kart yok (kullanıcı kararı bekliyor: istenirse buradan sil)
+NO_CARD = set()  # ana sayfada karti olmayan slug kumesi (Brassline 13.11.2026: kart acildi)
 for _a in DATA:  # yayına çıkınca (status: live) 'çok yakında' içermeyen metin kullanılır
     if _a.get("status") == "live" and _a.get("desc_live"):
         _a["desc"] = _a["desc_live"]

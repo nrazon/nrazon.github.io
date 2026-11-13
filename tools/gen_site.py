@@ -14,7 +14,7 @@ BASE = "https://nrazon.github.io"
 HIDDEN = set()  # yayinda olmayan uygulama onceden buraya eklenir, yayin gunu silinir (Brassline 13.11.2026 yayinda: cikarildi)
 # Capraz tanitim YOK (kullanici karari 10.11.2026): bu uygulama hicbir sayfadaki "Diger oyunlar" listesinde cikmaz, yayinda bile.
 NO_PROMO = {"brassline"}
-NO_CARD = {"brassline"}  # ana sayfada karti yok (home_data cat: other); kart karari kullanicida, istenirse cat games yap ve buradan sil
+NO_CARD = set()  # ana sayfada karti olmayan slug kumesi (Brassline 13.11.2026: kart acildi)
 # Ana sayfada kartında data-pkg olmayan (henüz "yakında" kartı olan) uygulamaların paket adları.
 VIDEOS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "videos.json"), encoding="utf-8"))
 VIDEO_LABEL = {"tr": "Tanıtım videosu", "en": "Promo video", "es": "Vídeo de presentación", "pt": "Vídeo de apresentação"}
