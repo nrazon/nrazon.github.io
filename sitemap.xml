@@ -263,7 +263,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/brassline/</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/brassline/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/brassline/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/brassline/"/>
@@ -537,7 +537,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/es/brassline/</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/brassline/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/brassline/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/brassline/"/>
@@ -582,7 +582,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/es/guias/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/"/>
@@ -644,8 +644,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-75-ball-bingo-patterns-and-tips/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/es/guias/como-jugar-brassline-blackjack-ruleta-texas-holdem/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-brassline-blackjack-roulette-texas-holdem/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/brassline-nasil-oynanir-blackjack-rulet-texas-holdem/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-brassline-blackjack-ruleta-texas-holdem/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-brassline-blackjack-roleta-texas-holdem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-brassline-blackjack-roulette-texas-holdem/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/es/guias/como-jugar-conectar-fichas-puzle/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/tile-connect-puzzle-how-to-play/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/tas-baglama-bulmacasi-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-conectar-fichas-puzle/"/>
@@ -672,7 +681,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/es/guias/como-jugar-mahjong-solitario/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-mahjong-solitaire/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/mahjong-solitaire-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-mahjong-solitario/"/>
@@ -714,6 +723,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-solitario-tripeaks/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-paciencia-tripeaks/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-tripeaks-solitaire/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/guias/como-jugar-tile-match-estrategia-del-rack/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-tile-match-rack-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/tas-eslestirme-nasil-oynanir-raf-stratejisi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-tile-match-estrategia-del-rack/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-tile-match-estrategia-do-rack/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-tile-match-rack-strategy/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/es/guias/como-jugar-tombola-reglas-y-consejos/</loc>
@@ -762,7 +780,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/es/guias/fichas-de-mahjong-y-sus-significados/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/mahjong-tiles-and-their-meanings-guide/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/mahjong-taslari-ve-anlamlari/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/fichas-de-mahjong-y-sus-significados/"/>
@@ -770,8 +788,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/mahjong-tiles-and-their-meanings-guide/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/es/guias/guia-cuidado-gato-virtual-nuzzlings/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/virtual-cat-care-guide-nuzzlings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/nuzzlings-sanal-kedi-bakim-rehberi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/guia-cuidado-gato-virtual-nuzzlings/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/guia-cuidar-de-gato-virtual-nuzzlings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/virtual-cat-care-guide-nuzzlings/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/es/guias/mahjong-solitario-atascado-que-ficha-quitar-primero/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/mahjong-solitaire-stuck-which-tile-first/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/mahjong-solitaire-takildim-hangi-tasi-once-almali/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/mahjong-solitario-atascado-que-ficha-quitar-primero/"/>
@@ -843,7 +870,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/es/nuzzlings/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/nuzzlings/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/nuzzlings/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/nuzzlings/"/>
@@ -931,7 +958,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/guides/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/"/>
@@ -1029,6 +1056,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-beamies/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/guides/how-to-play-brassline-blackjack-roulette-texas-holdem/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-brassline-blackjack-roulette-texas-holdem/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/brassline-nasil-oynanir-blackjack-rulet-texas-holdem/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-brassline-blackjack-ruleta-texas-holdem/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-brassline-blackjack-roleta-texas-holdem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-brassline-blackjack-roulette-texas-holdem/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/guides/how-to-play-freecell-strategy/</loc>
     <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-freecell-strategy/"/>
@@ -1057,7 +1093,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/guides/how-to-play-mahjong-solitaire/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-mahjong-solitaire/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/mahjong-solitaire-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-mahjong-solitario/"/>
@@ -1072,6 +1108,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-solitario-spider/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-paciencia-spider/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-spider-solitaire/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/guides/how-to-play-tile-match-rack-strategy/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-tile-match-rack-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/tas-eslestirme-nasil-oynanir-raf-stratejisi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-tile-match-estrategia-del-rack/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-tile-match-estrategia-do-rack/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-tile-match-rack-strategy/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/guides/how-to-play-tombala-rules-and-tips/</loc>
@@ -1120,7 +1165,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/guides/mahjong-solitaire-stuck-which-tile-first/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/mahjong-solitaire-stuck-which-tile-first/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/mahjong-solitaire-takildim-hangi-tasi-once-almali/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/mahjong-solitario-atascado-que-ficha-quitar-primero/"/>
@@ -1129,7 +1174,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/guides/mahjong-tiles-and-their-meanings-guide/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/mahjong-tiles-and-their-meanings-guide/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/mahjong-taslari-ve-anlamlari/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/fichas-de-mahjong-y-sus-significados/"/>
@@ -1156,12 +1201,21 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/guides/tile-connect-puzzle-how-to-play/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/tile-connect-puzzle-how-to-play/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/tas-baglama-bulmacasi-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-conectar-fichas-puzle/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-conectar-pecas-quebra-cabeca/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/tile-connect-puzzle-how-to-play/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/guides/virtual-cat-care-guide-nuzzlings/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/virtual-cat-care-guide-nuzzlings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/nuzzlings-sanal-kedi-bakim-rehberi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/guia-cuidado-gato-virtual-nuzzlings/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/guia-cuidar-de-gato-virtual-nuzzlings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/virtual-cat-care-guide-nuzzlings/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/guides/which-solitaire-should-you-play-klondike-spider-freecell-tripeaks/</loc>
@@ -1200,7 +1254,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/nuzzlings/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/nuzzlings/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/nuzzlings/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/nuzzlings/"/>
@@ -1461,7 +1515,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/brassline/</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/brassline/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/brassline/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/brassline/"/>
@@ -1506,7 +1560,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/guias/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/"/>
@@ -1559,8 +1613,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-75-ball-bingo-patterns-and-tips/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/pt/guias/como-jogar-brassline-blackjack-roleta-texas-holdem/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-brassline-blackjack-roulette-texas-holdem/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/brassline-nasil-oynanir-blackjack-rulet-texas-holdem/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-brassline-blackjack-ruleta-texas-holdem/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-brassline-blackjack-roleta-texas-holdem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-brassline-blackjack-roulette-texas-holdem/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/pt/guias/como-jogar-conectar-pecas-quebra-cabeca/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/tile-connect-puzzle-how-to-play/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/tas-baglama-bulmacasi-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-conectar-fichas-puzle/"/>
@@ -1587,7 +1650,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/guias/como-jogar-mahjong-paciencia/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-mahjong-solitaire/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/mahjong-solitaire-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-mahjong-solitario/"/>
@@ -1629,6 +1692,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-puzle-de-flechas/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-quebra-cabeca-de-setas/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-arrow-puzzle/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/guias/como-jogar-tile-match-estrategia-do-rack/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-tile-match-rack-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/tas-eslestirme-nasil-oynanir-raf-stratejisi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-tile-match-estrategia-del-rack/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-tile-match-estrategia-do-rack/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-tile-match-rack-strategy/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/guias/como-jogar-tombala-regras-e-dicas/</loc>
@@ -1685,6 +1757,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/box-pushing-puzzle-strategy-avoid-deadlocks/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/pt/guias/guia-cuidar-de-gato-virtual-nuzzlings/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/virtual-cat-care-guide-nuzzlings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/nuzzlings-sanal-kedi-bakim-rehberi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/guia-cuidado-gato-virtual-nuzzlings/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/guia-cuidar-de-gato-virtual-nuzzlings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/virtual-cat-care-guide-nuzzlings/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/pt/guias/jogo-da-velha-estrategia-para-nao-perder/</loc>
     <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/tic-tac-toe-strategy-never-lose/"/>
@@ -1695,7 +1776,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/guias/mahjong-paciencia-travado-qual-peca-tirar-primeiro/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/mahjong-solitaire-stuck-which-tile-first/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/mahjong-solitaire-takildim-hangi-tasi-once-almali/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/mahjong-solitario-atascado-que-ficha-quitar-primero/"/>
@@ -1704,7 +1785,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/guias/pecas-de-mahjong-e-seus-significados/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/mahjong-tiles-and-their-meanings-guide/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/mahjong-taslari-ve-anlamlari/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/fichas-de-mahjong-y-sus-significados/"/>
@@ -1767,7 +1848,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/nuzzlings/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/nuzzlings/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/nuzzlings/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/nuzzlings/"/>
@@ -1920,7 +2001,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/brassline/</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/brassline/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/brassline/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/brassline/"/>
@@ -1983,7 +2064,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/nuzzlings/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/nuzzlings/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/nuzzlings/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/nuzzlings/"/>
@@ -2001,7 +2082,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/rehber/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/"/>
@@ -2061,6 +2142,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/puzle-de-bloques-combos-y-estrategia-de-puntuacion/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/quebra-cabeca-de-blocos-combos-e-estrategia-de-pontuacao/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/block-puzzle-combos-and-high-score-strategy/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/rehber/brassline-nasil-oynanir-blackjack-rulet-texas-holdem/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-brassline-blackjack-roulette-texas-holdem/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/brassline-nasil-oynanir-blackjack-rulet-texas-holdem/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-brassline-blackjack-ruleta-texas-holdem/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-brassline-blackjack-roleta-texas-holdem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-brassline-blackjack-roulette-texas-holdem/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/rehber/dusen-bloklar-renk-patlatma-stratejisi/</loc>
@@ -2136,7 +2226,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/rehber/mahjong-solitaire-nasil-oynanir/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-mahjong-solitaire/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/mahjong-solitaire-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-mahjong-solitario/"/>
@@ -2145,7 +2235,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/rehber/mahjong-solitaire-takildim-hangi-tasi-once-almali/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/mahjong-solitaire-stuck-which-tile-first/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/mahjong-solitaire-takildim-hangi-tasi-once-almali/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/mahjong-solitario-atascado-que-ficha-quitar-primero/"/>
@@ -2154,12 +2244,21 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/rehber/mahjong-taslari-ve-anlamlari/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/mahjong-tiles-and-their-meanings-guide/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/mahjong-taslari-ve-anlamlari/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/fichas-de-mahjong-y-sus-significados/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/pecas-de-mahjong-e-seus-significados/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/mahjong-tiles-and-their-meanings-guide/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/rehber/nuzzlings-sanal-kedi-bakim-rehberi/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/virtual-cat-care-guide-nuzzlings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/nuzzlings-sanal-kedi-bakim-rehberi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/guia-cuidado-gato-virtual-nuzzlings/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/guia-cuidar-de-gato-virtual-nuzzlings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/virtual-cat-care-guide-nuzzlings/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/rehber/ok-bulmacasi-nasil-oynanir/</loc>
@@ -2199,12 +2298,21 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/rehber/tas-baglama-bulmacasi-nasil-oynanir/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/tile-connect-puzzle-how-to-play/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/tas-baglama-bulmacasi-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-conectar-fichas-puzle/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-conectar-pecas-quebra-cabeca/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/tile-connect-puzzle-how-to-play/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/rehber/tas-eslestirme-nasil-oynanir-raf-stratejisi/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/guides/how-to-play-tile-match-rack-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/rehber/tas-eslestirme-nasil-oynanir-raf-stratejisi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/guias/como-jugar-tile-match-estrategia-del-rack/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/guias/como-jogar-tile-match-estrategia-do-rack/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/guides/how-to-play-tile-match-rack-strategy/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/rehber/tombala-nasil-oynanir-kurallar-ve-ipuclari/</loc>

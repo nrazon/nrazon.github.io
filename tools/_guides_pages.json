@@ -71,6 +71,18 @@
    "tr": "/tr/rehber/tombala-nasil-oynanir-kurallar-ve-ipuclari/",
    "es": "/es/guias/como-jugar-tombola-reglas-y-consejos/",
    "pt": "/pt/guias/como-jogar-tombala-regras-e-dicas/"
+  },
+  "nuzzlings": {
+   "en": "/guides/virtual-cat-care-guide-nuzzlings/",
+   "tr": "/tr/rehber/nuzzlings-sanal-kedi-bakim-rehberi/",
+   "es": "/es/guias/guia-cuidado-gato-virtual-nuzzlings/",
+   "pt": "/pt/guias/guia-cuidar-de-gato-virtual-nuzzlings/"
+  },
+  "brassline": {
+   "en": "/guides/how-to-play-brassline-blackjack-roulette-texas-holdem/",
+   "tr": "/tr/rehber/brassline-nasil-oynanir-blackjack-rulet-texas-holdem/",
+   "es": "/es/guias/como-jugar-brassline-blackjack-ruleta-texas-holdem/",
+   "pt": "/pt/guias/como-jogar-brassline-blackjack-roleta-texas-holdem/"
   }
  },
  "pages": [
@@ -83,7 +95,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-mahjong-paciencia/"
    },
    "default": "en",
-   "hash": "42e776cd76f1abd5a81400737b08cebc"
+   "hash": "6558611736a8af558a73623e1e37c402"
   },
   {
    "url": "https://nrazon.github.io/tr/rehber/mahjong-solitaire-nasil-oynanir/",
@@ -94,7 +106,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-mahjong-paciencia/"
    },
    "default": "en",
-   "hash": "e181f85aa1d561556b8be5a0e0438b06"
+   "hash": "2619ba806226e2fec88027d8a47643b2"
   },
   {
    "url": "https://nrazon.github.io/es/guias/como-jugar-mahjong-solitario/",
@@ -105,7 +117,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-mahjong-paciencia/"
    },
    "default": "en",
-   "hash": "9596956a47438d07fcd3587471e14d0b"
+   "hash": "6b435a51b181ea213a18d96a04440b4f"
   },
   {
    "url": "https://nrazon.github.io/pt/guias/como-jogar-mahjong-paciencia/",
@@ -116,7 +128,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-mahjong-paciencia/"
    },
    "default": "en",
-   "hash": "88080e8dc1fc250d2c033fe83504bb77"
+   "hash": "2b10b400d995705a3d272e10e740659b"
   },
   {
    "url": "https://nrazon.github.io/guides/how-to-play-klondike-solitaire/",
@@ -699,7 +711,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-conectar-pecas-quebra-cabeca/"
    },
    "default": "en",
-   "hash": "c1c59c6f19ad2e59612b07d1c7ea8dd0"
+   "hash": "9444fa268af7234a350c67a95b2c61c8"
   },
   {
    "url": "https://nrazon.github.io/tr/rehber/tas-baglama-bulmacasi-nasil-oynanir/",
@@ -710,7 +722,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-conectar-pecas-quebra-cabeca/"
    },
    "default": "en",
-   "hash": "88f51a403b61d8347a36ec95acafc555"
+   "hash": "6ade81f86f8ce1d9a2c2f0062e266667"
   },
   {
    "url": "https://nrazon.github.io/es/guias/como-jugar-conectar-fichas-puzle/",
@@ -721,7 +733,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-conectar-pecas-quebra-cabeca/"
    },
    "default": "en",
-   "hash": "f27deedfa935413c10157d3aecb86041"
+   "hash": "34055fa6e3d9d9ba93bf30a0de05452d"
   },
   {
    "url": "https://nrazon.github.io/pt/guias/como-jogar-conectar-pecas-quebra-cabeca/",
@@ -732,7 +744,7 @@
     "pt": "https://nrazon.github.io/pt/guias/como-jogar-conectar-pecas-quebra-cabeca/"
    },
    "default": "en",
-   "hash": "871d98185eb09ec66dbd247b1502fd52"
+   "hash": "311e8fac349bd26c39937e00b536d3f5"
   },
   {
    "url": "https://nrazon.github.io/guides/mahjong-solitaire-stuck-which-tile-first/",
@@ -743,7 +755,7 @@
     "pt": "https://nrazon.github.io/pt/guias/mahjong-paciencia-travado-qual-peca-tirar-primeiro/"
    },
    "default": "en",
-   "hash": "2da1fc845124734df2b6dd4ff0c21fa5"
+   "hash": "dc4dc1d7e605e6645d669fd7b37ab129"
   },
   {
    "url": "https://nrazon.github.io/tr/rehber/mahjong-solitaire-takildim-hangi-tasi-once-almali/",
@@ -754,7 +766,7 @@
     "pt": "https://nrazon.github.io/pt/guias/mahjong-paciencia-travado-qual-peca-tirar-primeiro/"
    },
    "default": "en",
-   "hash": "0341273b17b1dbb0c35800b5e803953d"
+   "hash": "856e7ee40673f42566d1e05a5cd42752"
   },
   {
    "url": "https://nrazon.github.io/es/guias/mahjong-solitario-atascado-que-ficha-quitar-primero/",
@@ -765,7 +777,7 @@
     "pt": "https://nrazon.github.io/pt/guias/mahjong-paciencia-travado-qual-peca-tirar-primeiro/"
    },
    "default": "en",
-   "hash": "57abed647623c6811b177bf1f60e8692"
+   "hash": "5b043f4f142148bc9ffb4e8231ba7059"
   },
   {
    "url": "https://nrazon.github.io/pt/guias/mahjong-paciencia-travado-qual-peca-tirar-primeiro/",
@@ -776,7 +788,7 @@
     "pt": "https://nrazon.github.io/pt/guias/mahjong-paciencia-travado-qual-peca-tirar-primeiro/"
    },
    "default": "en",
-   "hash": "79c407940217a819ce5fa09a6029f5ea"
+   "hash": "6050095b121d0a3ce375aaeb6c93cd1c"
   },
   {
    "url": "https://nrazon.github.io/guides/how-to-solve-sliding-parking-puzzles/",
@@ -963,7 +975,7 @@
     "pt": "https://nrazon.github.io/pt/guias/pecas-de-mahjong-e-seus-significados/"
    },
    "default": "en",
-   "hash": "a34331c502754421cc47136e95a2d616"
+   "hash": "db075e0f65318f8b5a32ad06c944a531"
   },
   {
    "url": "https://nrazon.github.io/tr/rehber/mahjong-taslari-ve-anlamlari/",
@@ -974,7 +986,7 @@
     "pt": "https://nrazon.github.io/pt/guias/pecas-de-mahjong-e-seus-significados/"
    },
    "default": "en",
-   "hash": "a1b8f7cb5e4848b9b7b9d2f915dac338"
+   "hash": "5c6c696f00ffd5d47af9b2b4e4d39998"
   },
   {
    "url": "https://nrazon.github.io/es/guias/fichas-de-mahjong-y-sus-significados/",
@@ -985,7 +997,7 @@
     "pt": "https://nrazon.github.io/pt/guias/pecas-de-mahjong-e-seus-significados/"
    },
    "default": "en",
-   "hash": "bda8df133d5055b2bea655f212c5b7d8"
+   "hash": "67cd9ba8fc7181b0ec1ec1fa0f39a7b5"
   },
   {
    "url": "https://nrazon.github.io/pt/guias/pecas-de-mahjong-e-seus-significados/",
@@ -996,7 +1008,7 @@
     "pt": "https://nrazon.github.io/pt/guias/pecas-de-mahjong-e-seus-significados/"
    },
    "default": "en",
-   "hash": "e1f504a47ffeebd2bec0720814d7bffa"
+   "hash": "a870ee0f6facc365ef32fd98b1cdbe16"
   },
   {
    "url": "https://nrazon.github.io/guides/which-solitaire-should-you-play-klondike-spider-freecell-tripeaks/",
@@ -1219,6 +1231,138 @@
    "hash": "4c229190a41eb4a80bae05f9a32c51db"
   },
   {
+   "url": "https://nrazon.github.io/guides/how-to-play-tile-match-rack-strategy/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-play-tile-match-rack-strategy/",
+    "tr": "https://nrazon.github.io/tr/rehber/tas-eslestirme-nasil-oynanir-raf-stratejisi/",
+    "es": "https://nrazon.github.io/es/guias/como-jugar-tile-match-estrategia-del-rack/",
+    "pt": "https://nrazon.github.io/pt/guias/como-jogar-tile-match-estrategia-do-rack/"
+   },
+   "default": "en",
+   "hash": "b04a87b464b591e6e6c2f106424ada23"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/rehber/tas-eslestirme-nasil-oynanir-raf-stratejisi/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-play-tile-match-rack-strategy/",
+    "tr": "https://nrazon.github.io/tr/rehber/tas-eslestirme-nasil-oynanir-raf-stratejisi/",
+    "es": "https://nrazon.github.io/es/guias/como-jugar-tile-match-estrategia-del-rack/",
+    "pt": "https://nrazon.github.io/pt/guias/como-jogar-tile-match-estrategia-do-rack/"
+   },
+   "default": "en",
+   "hash": "b389562a78f41683ba3ffcda7ceddf7f"
+  },
+  {
+   "url": "https://nrazon.github.io/es/guias/como-jugar-tile-match-estrategia-del-rack/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-play-tile-match-rack-strategy/",
+    "tr": "https://nrazon.github.io/tr/rehber/tas-eslestirme-nasil-oynanir-raf-stratejisi/",
+    "es": "https://nrazon.github.io/es/guias/como-jugar-tile-match-estrategia-del-rack/",
+    "pt": "https://nrazon.github.io/pt/guias/como-jogar-tile-match-estrategia-do-rack/"
+   },
+   "default": "en",
+   "hash": "922666b59929e95b31c9196acdd24edf"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/guias/como-jogar-tile-match-estrategia-do-rack/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-play-tile-match-rack-strategy/",
+    "tr": "https://nrazon.github.io/tr/rehber/tas-eslestirme-nasil-oynanir-raf-stratejisi/",
+    "es": "https://nrazon.github.io/es/guias/como-jugar-tile-match-estrategia-del-rack/",
+    "pt": "https://nrazon.github.io/pt/guias/como-jogar-tile-match-estrategia-do-rack/"
+   },
+   "default": "en",
+   "hash": "50def16040e65342d3fa257cc761d782"
+  },
+  {
+   "url": "https://nrazon.github.io/guides/virtual-cat-care-guide-nuzzlings/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/virtual-cat-care-guide-nuzzlings/",
+    "tr": "https://nrazon.github.io/tr/rehber/nuzzlings-sanal-kedi-bakim-rehberi/",
+    "es": "https://nrazon.github.io/es/guias/guia-cuidado-gato-virtual-nuzzlings/",
+    "pt": "https://nrazon.github.io/pt/guias/guia-cuidar-de-gato-virtual-nuzzlings/"
+   },
+   "default": "en",
+   "hash": "43e3fd0ff4ef902ef02057c9190cef3e"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/rehber/nuzzlings-sanal-kedi-bakim-rehberi/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/virtual-cat-care-guide-nuzzlings/",
+    "tr": "https://nrazon.github.io/tr/rehber/nuzzlings-sanal-kedi-bakim-rehberi/",
+    "es": "https://nrazon.github.io/es/guias/guia-cuidado-gato-virtual-nuzzlings/",
+    "pt": "https://nrazon.github.io/pt/guias/guia-cuidar-de-gato-virtual-nuzzlings/"
+   },
+   "default": "en",
+   "hash": "3018cb830800f550353283635fe44400"
+  },
+  {
+   "url": "https://nrazon.github.io/es/guias/guia-cuidado-gato-virtual-nuzzlings/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/virtual-cat-care-guide-nuzzlings/",
+    "tr": "https://nrazon.github.io/tr/rehber/nuzzlings-sanal-kedi-bakim-rehberi/",
+    "es": "https://nrazon.github.io/es/guias/guia-cuidado-gato-virtual-nuzzlings/",
+    "pt": "https://nrazon.github.io/pt/guias/guia-cuidar-de-gato-virtual-nuzzlings/"
+   },
+   "default": "en",
+   "hash": "a382c3b7a287045cb0f6195e5b1fda14"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/guias/guia-cuidar-de-gato-virtual-nuzzlings/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/virtual-cat-care-guide-nuzzlings/",
+    "tr": "https://nrazon.github.io/tr/rehber/nuzzlings-sanal-kedi-bakim-rehberi/",
+    "es": "https://nrazon.github.io/es/guias/guia-cuidado-gato-virtual-nuzzlings/",
+    "pt": "https://nrazon.github.io/pt/guias/guia-cuidar-de-gato-virtual-nuzzlings/"
+   },
+   "default": "en",
+   "hash": "6471c81049ee5b435ab56a95f6e4f516"
+  },
+  {
+   "url": "https://nrazon.github.io/guides/how-to-play-brassline-blackjack-roulette-texas-holdem/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-play-brassline-blackjack-roulette-texas-holdem/",
+    "tr": "https://nrazon.github.io/tr/rehber/brassline-nasil-oynanir-blackjack-rulet-texas-holdem/",
+    "es": "https://nrazon.github.io/es/guias/como-jugar-brassline-blackjack-ruleta-texas-holdem/",
+    "pt": "https://nrazon.github.io/pt/guias/como-jogar-brassline-blackjack-roleta-texas-holdem/"
+   },
+   "default": "en",
+   "hash": "c6efe1fd7dcfb3d75609e0db8035a2df"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/rehber/brassline-nasil-oynanir-blackjack-rulet-texas-holdem/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-play-brassline-blackjack-roulette-texas-holdem/",
+    "tr": "https://nrazon.github.io/tr/rehber/brassline-nasil-oynanir-blackjack-rulet-texas-holdem/",
+    "es": "https://nrazon.github.io/es/guias/como-jugar-brassline-blackjack-ruleta-texas-holdem/",
+    "pt": "https://nrazon.github.io/pt/guias/como-jogar-brassline-blackjack-roleta-texas-holdem/"
+   },
+   "default": "en",
+   "hash": "7e8d37fe211a0c76aa57ff848303a879"
+  },
+  {
+   "url": "https://nrazon.github.io/es/guias/como-jugar-brassline-blackjack-ruleta-texas-holdem/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-play-brassline-blackjack-roulette-texas-holdem/",
+    "tr": "https://nrazon.github.io/tr/rehber/brassline-nasil-oynanir-blackjack-rulet-texas-holdem/",
+    "es": "https://nrazon.github.io/es/guias/como-jugar-brassline-blackjack-ruleta-texas-holdem/",
+    "pt": "https://nrazon.github.io/pt/guias/como-jogar-brassline-blackjack-roleta-texas-holdem/"
+   },
+   "default": "en",
+   "hash": "c2388a226b191cf9fcc3d2fd6d7e4343"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/guias/como-jogar-brassline-blackjack-roleta-texas-holdem/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-play-brassline-blackjack-roulette-texas-holdem/",
+    "tr": "https://nrazon.github.io/tr/rehber/brassline-nasil-oynanir-blackjack-rulet-texas-holdem/",
+    "es": "https://nrazon.github.io/es/guias/como-jugar-brassline-blackjack-ruleta-texas-holdem/",
+    "pt": "https://nrazon.github.io/pt/guias/como-jogar-brassline-blackjack-roleta-texas-holdem/"
+   },
+   "default": "en",
+   "hash": "ba5e7b84165e5ac8af927d2d98f5f94e"
+  },
+  {
    "url": "https://nrazon.github.io/guides/",
    "loc": {
     "en": "https://nrazon.github.io/guides/",
@@ -1227,7 +1371,7 @@
     "pt": "https://nrazon.github.io/pt/guias/"
    },
    "default": "en",
-   "hash": "63adca2d1ea78cd45a261293e82683f7"
+   "hash": "80fec7c51a7375fd8824e5a6d6c8f3db"
   },
   {
    "url": "https://nrazon.github.io/tr/rehber/",
@@ -1238,7 +1382,7 @@
     "pt": "https://nrazon.github.io/pt/guias/"
    },
    "default": "en",
-   "hash": "41b8434ac29ce4a340bbbe5d01f0f02f"
+   "hash": "11ebb77a0ea7d0841d3ce02c1e3db0f7"
   },
   {
    "url": "https://nrazon.github.io/es/guias/",
@@ -1249,7 +1393,7 @@
     "pt": "https://nrazon.github.io/pt/guias/"
    },
    "default": "en",
-   "hash": "40b64396603fe2d21b4bd9ad421d0a93"
+   "hash": "231154e230076f4a58c5a496daf99459"
   },
   {
    "url": "https://nrazon.github.io/pt/guias/",
@@ -1260,7 +1404,7 @@
     "pt": "https://nrazon.github.io/pt/guias/"
    },
    "default": "en",
-   "hash": "ca055164f57a37b15561e29b592c611c"
+   "hash": "38a10f75902bfb13b91767643996e2e2"
   }
  ],
  "index": {

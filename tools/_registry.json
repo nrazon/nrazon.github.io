@@ -271,7 +271,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "b517502a4f9d7e0dc3eaee3b878be16a",
+  "hash": "accfd5cd5fb0d93ba076ba4293b6a35e",
   "slug": "brassline"
  },
  "https://nrazon.github.io/tr/brassline/": {
@@ -284,7 +284,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "eb26a3568ca6317520e244c3b1b310b2",
+  "hash": "3746516573afe9a71a858bb68daed0c8",
   "slug": "brassline"
  },
  "https://nrazon.github.io/es/brassline/": {
@@ -297,7 +297,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "9b14944b01e6c45f0a6355a70bf73d9b",
+  "hash": "8e3f9e632014864521d5c9b49cfa7908",
   "slug": "brassline"
  },
  "https://nrazon.github.io/pt/brassline/": {
@@ -310,7 +310,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "b3c14b4ad1a210b0ec27ec3233f0f107",
+  "hash": "e7513c820007352afb0db5ffd9087fd4",
   "slug": "brassline"
  },
  "https://nrazon.github.io/calisan/": {
@@ -665,7 +665,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "39768e22c606867a3b874eedf4e51400",
+  "hash": "e8f3628b846035f778e9ed0780ebbf01",
   "slug": "nuzzlings"
  },
  "https://nrazon.github.io/tr/nuzzlings/": {
@@ -678,7 +678,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "3d4a4e9bdbb0ac1ba384039631ec9451",
+  "hash": "392eeaacfabef3a04bd506a5c0962d5b",
   "slug": "nuzzlings"
  },
  "https://nrazon.github.io/es/nuzzlings/": {
@@ -691,7 +691,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "9553bbf79084c6500a22acdc40b52c2c",
+  "hash": "d07533b8f94f1ac85f3e04a5367a2056",
   "slug": "nuzzlings"
  },
  "https://nrazon.github.io/pt/nuzzlings/": {
@@ -704,7 +704,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "cfabd162a69cc137dacab5f2ad2fbb70",
+  "hash": "86ae5bda2641db4362aff5192f139ef8",
   "slug": "nuzzlings"
  },
  "https://nrazon.github.io/pentolings/": {
