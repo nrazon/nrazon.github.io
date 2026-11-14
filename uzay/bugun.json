@@ -1,7 +1,16 @@
 {
- "uretim": "2026-11-13T13:07:18Z",
+ "uretim": "2026-11-14T12:12:04Z",
  "surum": 1,
  "apod": [
+  {
+   "tarih": "2026-11-14",
+   "baslik": "Apollo 12 and Surveyor 3",
+   "tur": "image",
+   "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-14-apollo-12-and-surveyor-3/",
+   "ozet_en": "Explanation: Put on your red/blue glasses and gaze across the western Ocean of Storms on the surface of the Moon. The 3D anaglyph shows Apollo 12 astronaut Pete Conrad visiting the Surveyor 3 spacecraft in November of 1969.",
+   "kredi": "Apollo 12, Alan Bean - Stereo Image Copyright: Kevin Frank",
+   "nasa_kaynakli": false
+  },
   {
    "tarih": "2026-11-13",
    "baslik": "NGC 206 and the Star Clouds of Andromeda",
@@ -81,15 +90,6 @@
    "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-5-enceladus-in-silhouette/",
    "ozet_en": "Explanation: One of our Solar System's most tantalizing worlds, Enceladus is backlit by the Sun in this Cassini spacecraft image from November 1, 2009. The dramatic illumination reveals the plumes that continuously spew into space from the south pole of Saturn's 500 kilometer diameter moon.",
    "kredi": "Cassini Imaging Team, SSI, JPL, ESA, NASA",
-   "nasa_kaynakli": false
-  },
-  {
-   "tarih": "2026-11-04",
-   "baslik": "The Not-So-Hidden Galaxy, IC 342",
-   "tur": "image",
-   "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-4-the-not-so-hidden-galaxy-ic-342/",
-   "ozet_en": "Explanation: “I see” IC 342, the Hidden Galaxy! Today’s image peers through the plane of the Milky Way, through all its gas, dust and stars, to unveil this spiral galaxy. IC 342 (or Caldwell 5) is one of the brightest members of the IC 342/Maffei group of galaxies.",
-   "kredi": "Artem Mironov",
    "nasa_kaynakli": false
   }
  ],
@@ -185,58 +185,16 @@
  },
  "asteroitler": {
   "aralik": [
-   "2026-11-13",
-   "2026-11-27"
+   "2026-11-14",
+   "2026-11-28"
   ],
   "liste": [
    {
-    "ad": "(2026 VP8)",
-    "tarih": "2026-Nov-13 02:12",
-    "mesafe_ay": 2.9,
-    "hiz_kms": 6.2,
-    "cap_m": 12
-   },
-   {
-    "ad": "(2025 VG5)",
-    "tarih": "2026-Nov-13 03:15",
-    "mesafe_ay": 18.1,
-    "hiz_kms": 4.9,
-    "cap_m": 16
-   },
-   {
-    "ad": "(2026 VO1)",
-    "tarih": "2026-Nov-13 05:59",
-    "mesafe_ay": 9.8,
-    "hiz_kms": 14.2,
-    "cap_m": 40
-   },
-   {
-    "ad": "(2026 VT12)",
-    "tarih": "2026-Nov-13 07:59",
-    "mesafe_ay": 6.4,
-    "hiz_kms": 20.2,
-    "cap_m": 31
-   },
-   {
-    "ad": "(2026 VV5)",
-    "tarih": "2026-Nov-13 09:11",
-    "mesafe_ay": 15.2,
-    "hiz_kms": 13.0,
-    "cap_m": 50
-   },
-   {
-    "ad": "(2026 VB8)",
-    "tarih": "2026-Nov-13 15:57",
-    "mesafe_ay": 14.3,
-    "hiz_kms": 7.4,
-    "cap_m": 14
-   },
-   {
-    "ad": "(2026 VO11)",
-    "tarih": "2026-Nov-13 16:03",
-    "mesafe_ay": 9.6,
-    "hiz_kms": 10.2,
-    "cap_m": 25
+    "ad": "(2026 VV15)",
+    "tarih": "2026-Nov-14 07:16",
+    "mesafe_ay": 4.1,
+    "hiz_kms": 15.0,
+    "cap_m": 22
    },
    {
     "ad": "(2026 VS11)",
@@ -261,10 +219,17 @@
    },
    {
     "ad": "(2026 VK13)",
-    "tarih": "2026-Nov-15 19:58",
+    "tarih": "2026-Nov-15 19:57",
     "mesafe_ay": 8.0,
     "hiz_kms": 8.6,
-    "cap_m": 17
+    "cap_m": 18
+   },
+   {
+    "ad": "(2026 VW15)",
+    "tarih": "2026-Nov-16 05:26",
+    "mesafe_ay": 5.1,
+    "hiz_kms": 6.1,
+    "cap_m": 13
    },
    {
     "ad": "(2026 VM3)",
@@ -272,6 +237,41 @@
     "mesafe_ay": 8.1,
     "hiz_kms": 3.7,
     "cap_m": 12
+   },
+   {
+    "ad": "(2026 VJ13)",
+    "tarih": "2026-Nov-17 05:38",
+    "mesafe_ay": 3.5,
+    "hiz_kms": 10.4,
+    "cap_m": 13
+   },
+   {
+    "ad": "(2023 VE6)",
+    "tarih": "2026-Nov-17 06:46",
+    "mesafe_ay": 18.3,
+    "hiz_kms": 10.1,
+    "cap_m": 13
+   },
+   {
+    "ad": "(2026 VB13)",
+    "tarih": "2026-Nov-17 11:45",
+    "mesafe_ay": 9.9,
+    "hiz_kms": 20.5,
+    "cap_m": 31
+   },
+   {
+    "ad": "(2022 VB2)",
+    "tarih": "2026-Nov-17 15:34",
+    "mesafe_ay": 7.7,
+    "hiz_kms": 9.0,
+    "cap_m": 33
+   },
+   {
+    "ad": "(2012 VF46)",
+    "tarih": "2026-Nov-18 06:49",
+    "mesafe_ay": 16.5,
+    "hiz_kms": 11.2,
+    "cap_m": 68
    }
   ],
   "kredi": "NASA/JPL CNEOS"
@@ -298,13 +298,6 @@
     "tarih": "2026-11-09",
     "boylam": -83.259363,
     "enlem": 33.747313
-   },
-   {
-    "baslik": "Tropical Cyclone 03S",
-    "tur": "Severe Storms",
-    "tarih": "2026-11-08",
-    "boylam": 50.5,
-    "enlem": -11.3
    },
    {
     "baslik": "Typhoon Cempaka",
@@ -382,6 +375,13 @@
     "tarih": "2026-10-28",
     "boylam": -89.097783,
     "enlem": 31.085833
+   },
+   {
+    "baslik": "Prescribed Fire 3R RX - DRUMMOND MP, Stevens, Washington",
+    "tur": "Wildfires",
+    "tarih": "2026-10-28",
+    "boylam": -117.533129,
+    "enlem": 48.402056
    }
   ],
   "kredi": "NASA EONET"
@@ -389,25 +389,25 @@
  "iss_tle": {
   "OBJECT_NAME": "ISS (ZARYA)",
   "OBJECT_ID": "1998-067A",
-  "EPOCH": "2026-11-13T04:57:32.119200",
-  "MEAN_MOTION": 15.4934692,
-  "ECCENTRICITY": 0.00073498,
-  "INCLINATION": 51.6325,
-  "RA_OF_ASC_NODE": 282.6584,
-  "ARG_OF_PERICENTER": 20.2588,
-  "MEAN_ANOMALY": 339.869,
+  "EPOCH": "2026-11-13T21:59:13.395264",
+  "MEAN_MOTION": 15.49359724,
+  "ECCENTRICITY": 0.0007382,
+  "INCLINATION": 51.6324,
+  "RA_OF_ASC_NODE": 279.1461,
+  "ARG_OF_PERICENTER": 22.6178,
+  "MEAN_ANOMALY": 337.5134,
   "EPHEMERIS_TYPE": 0,
   "CLASSIFICATION_TYPE": "U",
   "NORAD_CAT_ID": 25544,
   "ELEMENT_SET_NO": 999,
-  "REV_AT_EPOCH": 59485,
-  "BSTAR": 0.00016131939,
-  "MEAN_MOTION_DOT": 8.559e-05,
+  "REV_AT_EPOCH": 59496,
+  "BSTAR": 0.0001632,
+  "MEAN_MOTION_DOT": 8.668e-05,
   "MEAN_MOTION_DDOT": 0
  },
  "gibs": {
-  "tarih": "2026-11-12",
-  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_NOAA21_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-11-12&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
+  "tarih": "2026-11-13",
+  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_NOAA21_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-11-13&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
   "kredi": "NASA GIBS / Worldview"
  }
 }
