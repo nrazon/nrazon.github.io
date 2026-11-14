@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Serverless Remote List for &quot;More Games&quot; | Nesim Apps</title>
+<meta name="description" content="Dev notes: how a cross-promotion list for a dozen Android games moved from the app code to one JSON file on GitHub Pages, with a cache, an offline fallback…">
+<link rel="canonical" href="https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="A Serverless Remote List for &quot;More Games&quot;: One JSON File on GitHub Pages">
+<meta property="og:description" content="Dev notes: how a cross-promotion list for a dozen Android games moved from the app code to one JSON file on GitHub Pages, with a cache, an offline fallback…">
+<meta property="og:url" content="https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A Serverless Remote List for &quot;More Games&quot;: One JSON File on GitHub Pages">
+<meta name="twitter:description" content="Dev notes: how a cross-promotion list for a dozen Android games moved from the app code to one JSON file on GitHub Pages, with a cache, an offline fallback…">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "A Serverless Remote List for \"More Games\": One JSON File on GitHub Pages", "description": "Dev notes: how a cross-promotion list for a dozen Android games moved from the app code to one JSON file on GitHub Pages, with a cache, an offline fallback and strict checks, so a new game needs no updates to the others.", "inLanguage": "en", "mainEntityOfPage": "https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-14", "dateModified": "2026-11-14", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}, "keywords": "Dev notes, Android"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nrazon.github.io/blog/"}, {"@type": "ListItem", "position": 3, "name": "A Serverless Remote List for \"More Games\": One JSON File on GitHub Pages", "item": "https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does adding a new game require updating the old apps?", "acceptedAnswer": {"@type": "Answer", "text": "No. The apps read the list from a JSON file online, so adding a line to the file and publishing it is enough."}}, {"@type": "Question", "name": "What happens when the phone is offline?", "acceptedAnswer": {"@type": "Answer", "text": "The app uses the last saved copy, or a copy bundled inside the app if it has never downloaded the list."}}, {"@type": "Question", "name": "How often does the app refresh the list?", "acceptedAnswer": {"@type": "Answer", "text": "At most once every 48 hours, in a background thread."}}, {"@type": "Question", "name": "Can the list be abused to open something harmful?", "acceptedAnswer": {"@type": "Answer", "text": "It can only open store pages, and downloads, sizes, keys and package names are all checked before they are used."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>A Serverless Remote List for &quot;More Games&quot;: One JSON File on GitHub Pages</h1>
+    <p class="by">By Nesim Razon, independent Android developer · 2026-11-14</p>
+    <p class="tags"><a href="/blog/#devlog">#Dev notes</a><a href="/blog/#android">#Android</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Each of my games has a &quot;More games&quot; window that promotes the others. For a while that list was baked into every app, which meant that releasing a new game forced an update of all the old ones. I replaced it with a single JSON file on GitHub Pages. Here is how it works and which limits keep it safe.</p>
+    <h2>The problem with a list inside the app</h2>
+    <p>A list built into the app is easy to write and painful to maintain. Every new game meant new code, new icons and a new release for each older game, and each of those releases goes through review. With about a dozen games, the promotion window was the slowest part of every launch.</p>
+    <h2>One file on GitHub Pages</h2>
+    <p>The list is now a static file next to my website, plus one small icon per game. Each entry has a short key, the game name, the Android package name, an icon path and one description per language. The apps read the descriptions in the phone&#x27;s language and fall back to English.</p>
+    <p>A small script builds the file. It holds one line per game, resizes each icon to a fixed small size and writes everything. Adding a game means adding a line, running the script and pushing. None of the older apps needs a release for that.</p>
+    <h2>How the app uses it</h2>
+    <p>At most once every 48 hours the app downloads the list in a background thread and stores it on the phone. The window always reads the stored copy. If the phone has never been online, or the file is damaged, the app falls back to a copy of the list and the icons that ship inside the app itself.</p>
+    <p>An entry whose icon is not available is skipped instead of showing a grey square, and the game never lists itself.</p>
+    <h2>Checks that keep it safe</h2>
+    <p>The list can only open a store page, but I still treat it as untrusted input.</p>
+    <ul><li>Downloads are accepted only over https and only from my own site.</li><li>The list may not be larger than 64 KB and an icon may not be larger than 256 KB.</li><li>At most 40 entries are read.</li><li>Each key and each package name must match a strict pattern before it is used.</li><li>A damaged file never replaces a working one: parsing errors fall back to the bundled copy.</li></ul>
+    <h2>Writing in the right order</h2>
+    <p>The app first downloads and saves the icons, and only then saves the list file. That way the stored list never points to an icon that is missing. When the new list is saved, a small counter changes so that an open window refreshes itself, which fixed the case where the very first opening showed an empty window.</p>
+    <h2>What I would still change</h2>
+    <p>A new game appears after the next refresh, which can take up to two days plus the next time the window is opened, so it is not instant. The list has no usage counting of its own; clicks are counted by the apps. And everything depends on one host, which is why the bundled fallback matters.</p>
+    
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Does adding a new game require updating the old apps?</summary><p>No. The apps read the list from a JSON file online, so adding a line to the file and publishing it is enough.</p></details><details><summary>What happens when the phone is offline?</summary><p>The app uses the last saved copy, or a copy bundled inside the app if it has never downloaded the list.</p></details><details><summary>How often does the app refresh the list?</summary><p>At most once every 48 hours, in a background thread.</p></details><details><summary>Can the list be abused to open something harmful?</summary><p>It can only open store pages, and downloads, sizes, keys and package names are all checked before they are used.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/how-daily-puzzles-work-without-a-server/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>How a Daily Puzzle Can Be the Same for Everyone, No Server</b></div></a></li><li><a href="/blog/how-puzzle-levels-are-generated-and-checked/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>How Hundreds of Puzzle Levels Are Generated and Checked</b></div></a></li><li><a href="/blog/keeping-two-dozen-android-apps-maintainable-solo/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Keeping Two Dozen Android Apps Maintainable as a Solo Dev</b></div></a></li><li><a href="/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Catching a Stuck Interstitial Ad on Android With Event Logs</b></div></a></li><li><a href="/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Shipping an iPhone App Without a Mac: Kotlin Multiplatform, a Cloud Mac and TestFlight</b></div></a></li><li><a href="/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Moving an Android App to Kotlin Multiplatform With AGP 9: Seven Traps</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

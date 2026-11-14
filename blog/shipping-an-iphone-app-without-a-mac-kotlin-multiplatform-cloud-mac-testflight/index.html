@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shipping an iPhone App Without a Mac | Nesim Apps</title>
+<meta name="description" content="Dev notes: how I took a Kotlin and Compose Android game to TestFlight and App Store review from a Windows laptop, using Kotlin Multiplatform, a macOS runner…">
+<link rel="canonical" href="https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Shipping an iPhone App Without a Mac: Kotlin Multiplatform, a Cloud Mac and TestFlight">
+<meta property="og:description" content="Dev notes: how I took a Kotlin and Compose Android game to TestFlight and App Store review from a Windows laptop, using Kotlin Multiplatform, a macOS runner…">
+<meta property="og:url" content="https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Shipping an iPhone App Without a Mac: Kotlin Multiplatform, a Cloud Mac and TestFlight">
+<meta name="twitter:description" content="Dev notes: how I took a Kotlin and Compose Android game to TestFlight and App Store review from a Windows laptop, using Kotlin Multiplatform, a macOS runner…">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Shipping an iPhone App Without a Mac: Kotlin Multiplatform, a Cloud Mac and TestFlight", "description": "Dev notes: how I took a Kotlin and Compose Android game to TestFlight and App Store review from a Windows laptop, using Kotlin Multiplatform, a macOS runner on GitHub Actions and an App Store Connect API key.", "inLanguage": "en", "mainEntityOfPage": "https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-14", "dateModified": "2026-11-14", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}, "keywords": "Dev notes, iOS"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nrazon.github.io/blog/"}, {"@type": "ListItem", "position": 3, "name": "Shipping an iPhone App Without a Mac: Kotlin Multiplatform, a Cloud Mac and TestFlight", "item": "https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do I need a Mac to publish an app on the App Store?", "acceptedAnswer": {"@type": "Answer", "text": "Not on your desk. You need a Mac build machine, but a cloud runner such as a GitHub Actions macOS runner does that job. You still need an Apple Developer membership."}}, {"@type": "Question", "name": "Can Windows compile Kotlin code for iOS?", "acceptedAnswer": {"@type": "Answer", "text": "Yes for the Kotlin part: the iOS targets compile on Windows. Linking the framework, building the Swift app and signing need macOS."}}, {"@type": "Question", "name": "How is the app signed without a Mac?", "acceptedAnswer": {"@type": "Answer", "text": "With an App Store Connect API key stored as a secret. Xcode on the cloud runner uses it for cloud-managed signing and uploads straight to TestFlight."}}, {"@type": "Question", "name": "How long does a cloud build take?", "acceptedAnswer": {"@type": "Answer", "text": "A TestFlight run took about six minutes in my setup, a bit more on the first run when nothing was cached."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>Shipping an iPhone App Without a Mac: Kotlin Multiplatform, a Cloud Mac and TestFlight</h1>
+    <p class="by">By Nesim Razon, independent Android developer · 2026-11-14</p>
+    <p class="tags"><a href="/blog/#devlog">#Dev notes</a><a href="/blog/#ios">#iOS</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">I develop on Windows and I do not own a Mac, but I wanted my small Android game 2048 on the App Store. It turns out you do not need a Mac on your desk, only one in the cloud for a few minutes per build. Here is the pipeline that took a build from my laptop to TestFlight and into App Store review within a day, and the traps I hit on the way.</p>
+    <h2>The shape of the project</h2>
+    <p>The game was already written in Kotlin with Jetpack Compose, so I moved it to Kotlin Multiplatform with Compose Multiplatform. A shared module now holds the game rules, the screens, the saved game, the texts and the font. The Android app is a thin shell around it, and a small Swift app is the iOS shell.</p>
+    <p>Everything that differs between platforms sits behind one small interface: banner ads, the leaderboard, the rating prompt, sharing. Android implements it with the SDKs it already used. On iOS the Swift side implements it with the Google Mobile Ads SDK and Game Center. One more detail: with Android Gradle Plugin 9 the Android application plugin and the Kotlin Multiplatform plugin can no longer share a module, so the shared code lives in its own library module.</p>
+    <h2>What Windows can and cannot do</h2>
+    <p>Kotlin compiles iOS code on Windows. Tasks such as the iOS simulator compile run locally and report Kotlin errors, so most of the shared code and the iOS-specific Kotlin could be checked at my desk. What Windows cannot do is link the iOS framework, build the Swift app or sign anything. That part needs macOS.</p>
+    <p>The practical effect is that I never wait for a Mac to find a Kotlin mistake, but a Swift mistake costs one CI run, because I write the Swift side without a compiler at hand. I kept the Swift code small for exactly that reason.</p>
+    <h2>No Xcode project file in the repository</h2>
+    <p>Without Xcode there is no project file to edit by hand, so I describe the app in a short YAML file and let XcodeGen create the project on the build machine. The YAML holds the bundle identifier, the Info.plist values, the Game Center entitlement, the Swift packages for ads and a pre-build script that asks Gradle to build and embed the shared framework.</p>
+    <p>A broken YAML file costs a build start. Mine broke once, when a long list lost a line break and the job failed within seconds, so now I parse the file locally with a small script before every push.</p>
+    <h2>The cloud Mac</h2>
+    <p>The build runs on a GitHub Actions macOS runner. The job checks out the code, sets up Java and the Gradle cache, installs XcodeGen with Homebrew, generates the project and runs xcodebuild. On the runner I used, the installed Xcode was a recent 26.x release, which matters because uploads to App Store Connect require a current SDK.</p>
+    <p>A push to the iOS branch always runs a quick unsigned simulator build. A commit message containing the word testflight switches to the other job instead, which archives, signs and uploads. That way a normal push stays cheap and I decide when a build goes to Apple.</p>
+    <h2>Signing without a Mac</h2>
+    <p>You still need an Apple Developer membership, but you do not need a Keychain on a Mac. In App Store Connect you create an API key and keep the key file, the key ID and the issuer ID as repository secrets. xcodebuild accepts them as arguments together with the flag that allows provisioning updates, and Apple then creates and manages the certificates and profiles in the cloud.</p>
+    <p>The export step uses an options file with the method set to app-store-connect and the destination set to upload, so the same command that exports the archive also uploads it to TestFlight.</p>
+    <p>The one real trap was the role of the key. A key with the App Manager role let the archive step succeed, but the export failed with a cloud signing permission error. A new key with the Admin role fixed it.</p>
+    <h2>What it costs</h2>
+    <p>On a free GitHub plan the included usage is measured in dollars. At the time of writing a macOS runner minute costs about ten times a Linux minute. My first full day of experiments used 54 macOS minutes, a little over three dollars of included credit, and a single TestFlight run takes around six minutes.</p>
+    <p>Two habits keep it cheap: run the simulator build only when I did not ask for an upload, and check files locally before pushing. If the included credit ever runs out, the runs simply stop, so there is no surprise bill on a plan without a payment method.</p>
+    <h2>Small traps worth knowing</h2>
+    <ul><li>The Gradle wrapper script lost its executable bit when committed from Windows, so the first iOS build failed with permission denied. One git command fixes it for good.</li><li>Compose Multiplatform has no Intel simulator target any more, so the build is limited to the arm64 simulator and real devices.</li><li>A command line tool that logs you in to GitHub can also replace the Git credential Windows stored, which showed up as a 403 on the next push until I removed the stored credential.</li></ul>
+    <h2>Testing on a real phone</h2>
+    <p>The build runs on an iPhone 7 on iOS 15.8 through TestFlight. Setting the deployment target to iOS 15 was enough for that, and an old phone is a useful low-end test device. After a few rounds the game played the same as on Android, with ads and leaderboard working through the Swift side.</p>
+    
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Do I need a Mac to publish an app on the App Store?</summary><p>Not on your desk. You need a Mac build machine, but a cloud runner such as a GitHub Actions macOS runner does that job. You still need an Apple Developer membership.</p></details><details><summary>Can Windows compile Kotlin code for iOS?</summary><p>Yes for the Kotlin part: the iOS targets compile on Windows. Linking the framework, building the Swift app and signing need macOS.</p></details><details><summary>How is the app signed without a Mac?</summary><p>With an App Store Connect API key stored as a secret. Xcode on the cloud runner uses it for cloud-managed signing and uploads straight to TestFlight.</p></details><details><summary>How long does a cloud build take?</summary><p>A TestFlight run took about six minutes in my setup, a bit more on the first run when nothing was cached.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/how-daily-puzzles-work-without-a-server/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>How a Daily Puzzle Can Be the Same for Everyone, No Server</b></div></a></li><li><a href="/blog/how-puzzle-levels-are-generated-and-checked/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>How Hundreds of Puzzle Levels Are Generated and Checked</b></div></a></li><li><a href="/blog/keeping-two-dozen-android-apps-maintainable-solo/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Keeping Two Dozen Android Apps Maintainable as a Solo Dev</b></div></a></li><li><a href="/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Catching a Stuck Interstitial Ad on Android With Event Logs</b></div></a></li><li><a href="/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Moving an Android App to Kotlin Multiplatform With AGP 9: Seven Traps</b></div></a></li><li><a href="/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Debugging an iPhone From Windows Over USB: Screenshots and Logs With Python</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

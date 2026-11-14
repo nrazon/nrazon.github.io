@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bir Android Uygulamasını AGP 9 ile Kotlin Multiplatform&#x27;a Taşımak</title>
+<meta name="description" content="Geliştirici notu: bir Compose Android oyununu Android Gradle Plugin 9 ile ortak bir Kotlin Multiplatform modülüne taşırken bozulan ya da sessizleşen yedi şey…">
+<link rel="canonical" href="https://nrazon.github.io/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Bir Android Uygulamasını AGP 9 ile Kotlin Multiplatform&#x27;a Taşımak: Yedi Tuzak">
+<meta property="og:description" content="Geliştirici notu: bir Compose Android oyununu Android Gradle Plugin 9 ile ortak bir Kotlin Multiplatform modülüne taşırken bozulan ya da sessizleşen yedi şey…">
+<meta property="og:url" content="https://nrazon.github.io/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bir Android Uygulamasını AGP 9 ile Kotlin Multiplatform&#x27;a Taşımak: Yedi Tuzak">
+<meta name="twitter:description" content="Geliştirici notu: bir Compose Android oyununu Android Gradle Plugin 9 ile ortak bir Kotlin Multiplatform modülüne taşırken bozulan ya da sessizleşen yedi şey…">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Bir Android Uygulamasını AGP 9 ile Kotlin Multiplatform'a Taşımak: Yedi Tuzak", "description": "Geliştirici notu: bir Compose Android oyununu Android Gradle Plugin 9 ile ortak bir Kotlin Multiplatform modülüne taşırken bozulan ya da sessizleşen yedi şey ve birini bir ekran görüntüsü karşılaştırmasının nasıl yakaladığı.", "inLanguage": "tr", "mainEntityOfPage": "https://nrazon.github.io/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-14", "dateModified": "2026-11-14", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}, "keywords": "Geliştirici notları, Android, Jetpack Compose"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/tr/"}, {"@type": "ListItem", "position": 2, "name": "Yazılar", "item": "https://nrazon.github.io/tr/yazilar/"}, {"@type": "ListItem", "position": 3, "name": "Bir Android Uygulamasını AGP 9 ile Kotlin Multiplatform'a Taşımak: Yedi Tuzak", "item": "https://nrazon.github.io/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "AGP 9 ile Android uygulama eklentisi ve Kotlin Multiplatform tek modülde kullanılabilir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Ortak kodu, çok platformlu Android kütüphane eklentisini kullanan bir kütüphane modülüne koy; uygulama modülü ayrı kalsın."}}, {"@type": "Question", "name": "Geçişten sonra ortak birim testlerim neden çalışmadı?", "acceptedAnswer": {"@type": "Answer", "text": "Yeni eklentide Android host testi varsayılan olarak açık değil. Modülün Android bölümünde aç ve test sayısının beklediğin kadar olduğunu kontrol et."}}, {"@type": "Question", "name": "Compose Resources kesme işaretinden önceki ters eğik çizgiyi çözer mi?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Ortak metin dosyalarında Android tarzı kaçış yerine düz kesme işareti kullan."}}, {"@type": "Question", "name": "Compose Multiplatform ile Intel iOS simülatörü hâlâ çalışıyor mu?", "acceptedAnswer": {"@type": "Answer", "text": "Benim derlememde kütüphaneler o hedef için çözülmedi; ben onu çıkardım, arm64 simülatörünü ve gerçek cihazları tuttum."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/" hreflang="tr" data-lang="tr" aria-current="page">TR</a><a href="/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/tr/">Nesim Apps</a> › <a href="/tr/yazilar/">Yazılar</a></nav>
+    <h1>Bir Android Uygulamasını AGP 9 ile Kotlin Multiplatform&#x27;a Taşımak: Yedi Tuzak</h1>
+    <p class="by">Nesim Razon, bağımsız Android geliştiricisi · 2026-11-14</p>
+    <p class="tags"><a href="/tr/yazilar/#devlog">#Geliştirici notları</a><a href="/tr/yazilar/#android">#Android</a><a href="/tr/yazilar/#compose">#Jetpack Compose</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Küçük bir Compose oyununu iPhone&#x27;da da çalışsın diye Kotlin Multiplatform&#x27;a taşıdım. Kotlin kısmı kolaydı, derleme düzeni değildi. Android Gradle Plugin 9 ve Compose Multiplatform ile karşılaştığım yedi tuzak, karşılaştığım sırayla, ve başka hiçbir şeyin değişmediğini söyleyen kontroller.</p>
+    <h2>1. Uygulama eklentisi ve çok platformlu eklenti artık aynı modülde durmuyor</h2>
+    <p>Android Gradle Plugin 9 ile Kotlin Multiplatform eklentisi, Android uygulama eklentisini de kullanan bir modüle uygulanamıyor. Ortak kodun, çok platformlu yeni Android kütüphane eklentisini kullanan kendi kütüphane modülüne ihtiyacı var. Uygulama modülü normal bir Android uygulaması olarak kalıyor ve ona bağlanıyor. Kotlin geçiş kılavuzu ayrıca yeni bir Gradle, 9.1 ya da üstü istiyor.</p>
+    <h2>2. Sessizce çalışmayı bırakan birim testleri</h2>
+    <p>Oyun kurallarını ve on birim testini ortak modüle taşıdım, derlemeyi çalıştırdım ve yeşil sonuç aldım. Sonra günlüğe baktım: ortak modülün Android test görevi çalıştıracak bir şey olmadığını söylüyordu. Yeni eklentide Android host testi, siz açana kadar kapalı.</p>
+    <p>Modülün Android bölümünde bir host testi tanımlamak sorunu çözdü ve sonuç dosyasında on test çalışmış, hiçbiri düşmemişti. Ders: geçişten sonra yalnızca yeşile bakma, testleri say.</p>
+    <h2>3. Compose Resources için Android kaynakları açık olmalı</h2>
+    <p>Metinler ve yazı tipleri ortak modüle Compose Resources olarak taşındı. Ekran görüntüsü testlerim, derlenmiş bir metin dosyasını işaret eden eksik kaynak hatasıyla düştü. Testlere bir önizleme yapılandırması çağrısı eklemek işe yaramadı. Çözen şey, ortak modülün Android bölümünde Android kaynaklarını açmak ve host testi için de Android kaynaklarını dahil etmekti.</p>
+    <h2>4. Taşımadan sağ çıkan bir ters eğik çizgi</h2>
+    <p>Android metin dosyaları kesme işaretini ters eğik çizgiyle kaçırır. Compose Resources bunu çözmüyor; bu yüzden Türkçe istatistik penceresi 2048&#x27;e yerine 2048\&#x27;e gösterdi. Çözüm, kopyalanan metinlerde düz kesme işareti kullanmak.</p>
+    <p>Bunu yalnızca aşağıdaki sonraki kontrol sayesinde buldum. Hiçbir şey çökmedi, hiçbir test düşmedi, metin sadece biraz yanlıştı.</p>
+    <h2>5. Kotlin/Native&#x27;in kabul etmediği test adları</h2>
+    <p>Bir testin ters tırnaklı adında virgül vardı, Android&#x27;de zararsız bir şey. iOS test hedefi derlenirken adın geçersiz karakter içerdiği mesajıyla durdu. Adı virgülsüz yazmak çözdü.</p>
+    <h2>6. Ortadan kalkan bir simülatör hedefi</h2>
+    <p>Hem Apple silicon hem Intel Mac&#x27;ler için iOS simülatör hedeflerini listelemiştim. Derleme bağımlılık çözümleme hatası verdi: Compose Multiplatform kütüphaneleri Intel simülatör hedefi için yayınlanmamıştı. O hedefi çıkardım; derleme arm64 simülatörünü ve gerçek cihazları kapsıyor.</p>
+    <h2>7. Dosya başına tek DataStore</h2>
+    <p>Eski Android kodu süreç başına tek DataStore üreten bir temsilci kullanıyordu. Ortak kodda depoyu kendim oluşturup içeri veriyorum; aynı dosya üzerinde açık iki depo uygulamayı çökertir. Bu yüzden Android&#x27;de küçük bir tutucu nesnenin arkasında tek örnek tutuyorum ve eski temsilcinin kullandığı dosyayı gösteriyorum; böylece mevcut kayıtlı oyunlar okunabilir kalıyor.</p>
+    <h2>Başka hiçbir şeyin değişmediğini nasıl kontrol ettim</h2>
+    <p>Mağaza görsellerini üreten ekran görüntüsü testleri regresyon takımım oldu. Geçişten sonra on altı mağaza görselinin hepsini yeniden ürettim ve git&#x27;in değişmiş diye bildirdiğine baktım. On beşi commit edilmiş dosyalarla birebir aynıydı; farklı olan, yukarıdaki kesme işareti hatasıydı.</p>
+    <p>Kayıtlı veri için eski koddan derlemeyi kurdum, birkaç hamle oynadım, sonra yeni derlemeyi kaldırmadan üstüne kurdum. Uygulamayı tamamen yeniden başlatınca tahta, skor ve rekor aynıydı. Veri dosyası yolu ve anahtarlar değişmediği için bu kontrol ucuz ve her sürümden önce yapmaya değer.</p>
+    
+    <section class="faq"><h2>Sık sorulan sorular</h2><details><summary>AGP 9 ile Android uygulama eklentisi ve Kotlin Multiplatform tek modülde kullanılabilir mi?</summary><p>Hayır. Ortak kodu, çok platformlu Android kütüphane eklentisini kullanan bir kütüphane modülüne koy; uygulama modülü ayrı kalsın.</p></details><details><summary>Geçişten sonra ortak birim testlerim neden çalışmadı?</summary><p>Yeni eklentide Android host testi varsayılan olarak açık değil. Modülün Android bölümünde aç ve test sayısının beklediğin kadar olduğunu kontrol et.</p></details><details><summary>Compose Resources kesme işaretinden önceki ters eğik çizgiyi çözer mi?</summary><p>Hayır. Ortak metin dosyalarında Android tarzı kaçış yerine düz kesme işareti kullan.</p></details><details><summary>Compose Multiplatform ile Intel iOS simülatörü hâlâ çalışıyor mu?</summary><p>Benim derlememde kütüphaneler o hedef için çözülmedi; ben onu çıkardım, arm64 simülatörünü ve gerçek cihazları tuttum.</p></details></section>
+    <section><h2>Diğer yazılar</h2><ul class="glist"><li><a href="/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Sunucu Olmadan Herkese Aynı Günlük Bulmaca Nasıl Verilir?</b></div></a></li><li><a href="/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Yüzlerce Bulmaca Bölümü Nasıl Üretilir ve Doğrulanır?</b></div></a></li><li><a href="/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Tek Geliştirici, Yaklaşık İki Düzine Android Uygulaması</b></div></a></li><li><a href="/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Android&#x27;de Takılan Geçiş Reklamını Olay Kayıtlarıyla Yakalamak</b></div></a></li><li><a href="/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Mac Olmadan iPhone Uygulaması Yayınlamak: Kotlin Multiplatform, Bulut Mac ve TestFlight</b></div></a></li><li><a href="/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>iPhone&#x27;u Windows&#x27;tan USB ile Ayıklamak: Python ile Ekran Görüntüsü ve Günlük</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

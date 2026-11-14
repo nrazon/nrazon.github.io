@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Una lista remota sin servidor para «Más juegos»</title>
+<meta name="description" content="Notas de desarrollo: cómo la lista de promoción cruzada de una docena de juegos Android pasó del código de la app a un único archivo JSON en GitHub Pages…">
+<link rel="canonical" href="https://nrazon.github.io/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Una lista remota sin servidor para «Más juegos»: un archivo JSON en GitHub Pages">
+<meta property="og:description" content="Notas de desarrollo: cómo la lista de promoción cruzada de una docena de juegos Android pasó del código de la app a un único archivo JSON en GitHub Pages…">
+<meta property="og:url" content="https://nrazon.github.io/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Una lista remota sin servidor para «Más juegos»: un archivo JSON en GitHub Pages">
+<meta name="twitter:description" content="Notas de desarrollo: cómo la lista de promoción cruzada de una docena de juegos Android pasó del código de la app a un único archivo JSON en GitHub Pages…">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Una lista remota sin servidor para «Más juegos»: un archivo JSON en GitHub Pages", "description": "Notas de desarrollo: cómo la lista de promoción cruzada de una docena de juegos Android pasó del código de la app a un único archivo JSON en GitHub Pages, con caché, copia sin conexión y comprobaciones estrictas, de modo que un juego nuevo no exige actualizar los demás.", "inLanguage": "es", "mainEntityOfPage": "https://nrazon.github.io/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-14", "dateModified": "2026-11-14", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}, "keywords": "Notas de desarrollo, Android"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/es/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nrazon.github.io/es/blog/"}, {"@type": "ListItem", "position": 3, "name": "Una lista remota sin servidor para «Más juegos»: un archivo JSON en GitHub Pages", "item": "https://nrazon.github.io/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Añadir un juego nuevo exige actualizar las apps antiguas?", "acceptedAnswer": {"@type": "Answer", "text": "No. Las apps leen la lista de un archivo JSON en línea, así que basta añadir una línea al archivo y publicarlo."}}, {"@type": "Question", "name": "¿Qué pasa cuando el teléfono está sin conexión?", "acceptedAnswer": {"@type": "Answer", "text": "La app usa la última copia guardada, o una copia incluida en la app si nunca ha descargado la lista."}}, {"@type": "Question", "name": "¿Con qué frecuencia actualiza la app la lista?", "acceptedAnswer": {"@type": "Answer", "text": "Como máximo una vez cada 48 horas, en un hilo en segundo plano."}}, {"@type": "Question", "name": "¿Se puede abusar de la lista para abrir algo dañino?", "acceptedAnswer": {"@type": "Answer", "text": "Solo puede abrir páginas de tienda, y las descargas, los tamaños, las claves y los nombres de paquete se comprueban antes de usarse."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/" hreflang="es" data-lang="es" aria-current="page">ES</a><a href="/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/es/">Nesim Apps</a> › <a href="/es/blog/">Blog</a></nav>
+    <h1>Una lista remota sin servidor para «Más juegos»: un archivo JSON en GitHub Pages</h1>
+    <p class="by">Por Nesim Razon, desarrollador Android independiente · 2026-11-14</p>
+    <p class="tags"><a href="/es/blog/#devlog">#Notas de desarrollo</a><a href="/es/blog/#android">#Android</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Cada uno de mis juegos tiene una ventana «Más juegos» que promociona a los demás. Durante un tiempo esa lista estaba metida en cada app, lo que significaba que publicar un juego nuevo obligaba a actualizar todos los antiguos. La sustituí por un único archivo JSON en GitHub Pages. Así funciona y estos son los límites que lo mantienen seguro.</p>
+    <h2>El problema de una lista dentro de la app</h2>
+    <p>Una lista incorporada en la app es fácil de escribir y dolorosa de mantener. Cada juego nuevo significaba código nuevo, iconos nuevos y una versión nueva de cada juego antiguo, y cada una de esas versiones pasa por revisión. Con una docena de juegos, la ventana de promoción era la parte más lenta de cada lanzamiento.</p>
+    <h2>Un archivo en GitHub Pages</h2>
+    <p>La lista es ahora un archivo estático junto a mi web, más un pequeño icono por juego. Cada entrada tiene una clave corta, el nombre del juego, el nombre de paquete de Android, una ruta de icono y una descripción por idioma. Las apps leen la descripción en el idioma del teléfono y recurren al inglés si falta.</p>
+    <p>Un pequeño script construye el archivo. Tiene una línea por juego, redimensiona cada icono a un tamaño pequeño fijo y escribe todo. Añadir un juego es añadir una línea, ejecutar el script y enviar. Ninguna de las apps antiguas necesita una versión para eso.</p>
+    <h2>Cómo la usa la app</h2>
+    <p>Como máximo una vez cada 48 horas, la app descarga la lista en un hilo en segundo plano y la guarda en el teléfono. La ventana lee siempre la copia guardada. Si el teléfono nunca ha estado en línea, o el archivo está dañado, la app recurre a una copia de la lista y de los iconos que viene dentro de la propia app.</p>
+    <p>Una entrada cuyo icono no está disponible se omite en lugar de mostrar un cuadrado gris, y el juego nunca se lista a sí mismo.</p>
+    <h2>Comprobaciones que lo mantienen seguro</h2>
+    <p>La lista solo puede abrir una página de tienda, pero aun así la trato como entrada no fiable.</p>
+    <ul><li>Las descargas solo se aceptan por https y solo desde mi propio sitio.</li><li>La lista no puede pesar más de 64 KB ni un icono más de 256 KB.</li><li>Se leen como máximo 40 entradas.</li><li>Cada clave y cada nombre de paquete deben cumplir un patrón estricto antes de usarse.</li><li>Un archivo dañado nunca reemplaza a uno que funciona: los errores de análisis recurren a la copia incluida.</li></ul>
+    <h2>Escribir en el orden correcto</h2>
+    <p>La app descarga y guarda primero los iconos y solo después guarda el archivo de la lista. Así la lista guardada nunca apunta a un icono que falta. Al guardarse la lista nueva cambia un pequeño contador para que una ventana abierta se actualice sola, lo que arregló el caso en que la primera apertura mostraba una ventana vacía.</p>
+    <h2>Qué seguiría cambiando</h2>
+    <p>Un juego nuevo aparece tras la siguiente actualización, que puede tardar hasta dos días más la próxima vez que se abra la ventana, así que no es instantáneo. La lista no cuenta usos por sí misma; los clics los cuentan las apps. Y todo depende de un único servidor, por eso importa la copia incluida.</p>
+    
+    <section class="faq"><h2>Preguntas frecuentes</h2><details><summary>¿Añadir un juego nuevo exige actualizar las apps antiguas?</summary><p>No. Las apps leen la lista de un archivo JSON en línea, así que basta añadir una línea al archivo y publicarlo.</p></details><details><summary>¿Qué pasa cuando el teléfono está sin conexión?</summary><p>La app usa la última copia guardada, o una copia incluida en la app si nunca ha descargado la lista.</p></details><details><summary>¿Con qué frecuencia actualiza la app la lista?</summary><p>Como máximo una vez cada 48 horas, en un hilo en segundo plano.</p></details><details><summary>¿Se puede abusar de la lista para abrir algo dañino?</summary><p>Solo puede abrir páginas de tienda, y las descargas, los tamaños, las claves y los nombres de paquete se comprueban antes de usarse.</p></details></section>
+    <section><h2>Más del blog</h2><ul class="glist"><li><a href="/es/blog/puzle-diario-igual-para-todos-sin-servidor/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Cómo dar el mismo puzle diario a todos sin un servidor</b></div></a></li><li><a href="/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Cómo se generan y verifican cientos de niveles de puzle</b></div></a></li><li><a href="/es/blog/mantener-dos-docenas-de-apps-android-siendo-un-solo-desarrollador/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Dos docenas de apps Android mantenidas por un solo dev</b></div></a></li><li><a href="/es/blog/detectar-anuncio-intersticial-bloqueado-android-eventos/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Detectar un anuncio intersticial bloqueado en Android con eventos</b></div></a></li><li><a href="/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Publicar una app de iPhone sin Mac: Kotlin Multiplatform, un Mac en la nube y TestFlight</b></div></a></li><li><a href="/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Migrar una app Android a Kotlin Multiplatform con AGP 9: siete trampas</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

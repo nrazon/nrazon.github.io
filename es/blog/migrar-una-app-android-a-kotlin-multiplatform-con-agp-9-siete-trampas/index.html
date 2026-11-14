@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Migrar una app Android a Kotlin Multiplatform con AGP 9</title>
+<meta name="description" content="Notas de desarrollo: siete cosas que se rompieron o se quedaron en silencio al pasar un juego Android con Compose a un módulo compartido de Kotlin…">
+<link rel="canonical" href="https://nrazon.github.io/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Migrar una app Android a Kotlin Multiplatform con AGP 9: siete trampas">
+<meta property="og:description" content="Notas de desarrollo: siete cosas que se rompieron o se quedaron en silencio al pasar un juego Android con Compose a un módulo compartido de Kotlin…">
+<meta property="og:url" content="https://nrazon.github.io/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Migrar una app Android a Kotlin Multiplatform con AGP 9: siete trampas">
+<meta name="twitter:description" content="Notas de desarrollo: siete cosas que se rompieron o se quedaron en silencio al pasar un juego Android con Compose a un módulo compartido de Kotlin…">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Migrar una app Android a Kotlin Multiplatform con AGP 9: siete trampas", "description": "Notas de desarrollo: siete cosas que se rompieron o se quedaron en silencio al pasar un juego Android con Compose a un módulo compartido de Kotlin Multiplatform con Android Gradle Plugin 9, y cómo una comparación de capturas detectó una.", "inLanguage": "es", "mainEntityOfPage": "https://nrazon.github.io/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-14", "dateModified": "2026-11-14", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}, "keywords": "Notas de desarrollo, Android, Jetpack Compose"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/es/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nrazon.github.io/es/blog/"}, {"@type": "ListItem", "position": 3, "name": "Migrar una app Android a Kotlin Multiplatform con AGP 9: siete trampas", "item": "https://nrazon.github.io/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Puedo usar el plugin de aplicación Android y Kotlin Multiplatform en un módulo con AGP 9?", "acceptedAnswer": {"@type": "Answer", "text": "No. Pon el código compartido en un módulo de biblioteca con el plugin de biblioteca Android para multiplataforma y deja el módulo de aplicación aparte."}}, {"@type": "Question", "name": "¿Por qué no se ejecutaron mis pruebas unitarias compartidas tras la migración?", "acceptedAnswer": {"@type": "Answer", "text": "La prueba de host de Android no está activada por defecto con el plugin nuevo. Actívala en el bloque Android del módulo y comprueba que el número de pruebas es el esperado."}}, {"@type": "Question", "name": "¿Compose Resources interpreta la barra invertida antes de un apóstrofo?", "acceptedAnswer": {"@type": "Answer", "text": "No. Usa un apóstrofo normal en los archivos de textos compartidos en lugar del escape al estilo Android."}}, {"@type": "Question", "name": "¿Sigue funcionando el simulador de iOS para Intel con Compose Multiplatform?", "acceptedAnswer": {"@type": "Answer", "text": "En mi compilación las bibliotecas no se resolvieron para ese destino, así que lo quité y dejé el simulador arm64 y los dispositivos reales."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/" hreflang="es" data-lang="es" aria-current="page">ES</a><a href="/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/es/">Nesim Apps</a> › <a href="/es/blog/">Blog</a></nav>
+    <h1>Migrar una app Android a Kotlin Multiplatform con AGP 9: siete trampas</h1>
+    <p class="by">Por Nesim Razon, desarrollador Android independiente · 2026-11-14</p>
+    <p class="tags"><a href="/es/blog/#devlog">#Notas de desarrollo</a><a href="/es/blog/#android">#Android</a><a href="/es/blog/#compose">#Jetpack Compose</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Pasé un pequeño juego en Compose a Kotlin Multiplatform para que también funcione en iPhone. La parte de Kotlin fue fácil, la configuración de la compilación no. Estas son las siete trampas que encontré con Android Gradle Plugin 9 y Compose Multiplatform, en el orden en que las encontré, y las comprobaciones que me dijeron que nada más había cambiado.</p>
+    <h2>1. El plugin de aplicación y el multiplataforma ya no comparten módulo</h2>
+    <p>Con Android Gradle Plugin 9, el plugin de Kotlin Multiplatform no se puede aplicar a un módulo que también usa el plugin de aplicación Android. El código compartido necesita su propio módulo de biblioteca con el nuevo plugin de biblioteca Android para multiplataforma. El módulo de la app sigue siendo una aplicación Android normal y depende de él. La guía de migración de Kotlin pide además un Gradle reciente, 9.1 o superior.</p>
+    <h2>2. Pruebas unitarias que dejan de ejecutarse en silencio</h2>
+    <p>Pasé las reglas del juego y sus diez pruebas unitarias al módulo compartido, ejecuté la compilación y obtuve un resultado verde. Después miré el registro: la tarea de pruebas Android del módulo compartido decía que no había nada que ejecutar. Con el plugin nuevo, la prueba de host de Android está desactivada hasta que la activas.</p>
+    <p>Declarar una prueba de host en la parte Android del módulo lo arregló, y el archivo de resultados mostró diez pruebas ejecutadas y ninguna fallida. La lección: tras una migración, cuenta las pruebas, no te fíes solo del verde.</p>
+    <h2>3. Compose Resources necesita los recursos de Android activados</h2>
+    <p>Los textos y las fuentes pasaron al módulo compartido como Compose Resources. Mis pruebas de capturas fallaron entonces con un error de recurso ausente que apuntaba a un archivo de textos compilado. Añadir una llamada de configuración de vista previa en las pruebas no ayudó. Lo que lo arregló fue activar los recursos de Android en el bloque Android del módulo compartido, junto con incluir los recursos de Android en la prueba de host.</p>
+    <h2>4. Una barra invertida que sobrevivió a la migración</h2>
+    <p>Los archivos de textos de Android escapan el apóstrofo con una barra invertida. Compose Resources no la interpreta, así que el diálogo de estadísticas en turco mostraba 2048\&#x27;e en lugar de 2048&#x27;e. La solución es usar un apóstrofo normal en los textos copiados.</p>
+    <p>Solo lo encontré gracias a la siguiente comprobación. Nada se cerró y ninguna prueba falló; el texto simplemente estaba un poco mal.</p>
+    <h2>5. Nombres de prueba que Kotlin/Native no acepta</h2>
+    <p>Una prueba tenía una coma en su nombre entre acentos graves, algo inofensivo en Android. Al compilar el destino de pruebas de iOS, se detuvo con un mensaje de que el nombre contiene caracteres no permitidos. Reescribir el nombre sin la coma lo arregló.</p>
+    <h2>6. Un destino de simulador que ya no existe</h2>
+    <p>Había listado los destinos de simulador de iOS para Macs Apple silicon e Intel. La compilación informó de un fallo de resolución de dependencias: las bibliotecas de Compose Multiplatform no estaban publicadas para el destino de simulador Intel. Quité ese destino, así que la compilación cubre el simulador arm64 y los dispositivos reales.</p>
+    <h2>7. Un DataStore por archivo</h2>
+    <p>El código Android antiguo usaba un delegado que creaba un DataStore por proceso. En el código compartido creo yo el almacén y lo paso; dos almacenes abiertos sobre el mismo archivo hacen que la app se cierre. Por eso mantengo una única instancia detrás de un pequeño objeto contenedor en Android, apuntando al mismo archivo que usaba el delegado antiguo, de modo que las partidas guardadas existentes siguen siendo legibles.</p>
+    <h2>Cómo comprobé que nada más había cambiado</h2>
+    <p>Las pruebas de capturas que generan las imágenes de la tienda se convirtieron en mi batería de regresión. Tras la migración regeneré las dieciséis imágenes de la tienda y miré qué marcaba git como modificado. Quince eran idénticas a los archivos confirmados, y la que difería era el fallo del apóstrofo de arriba.</p>
+    <p>Para los datos guardados instalé la compilación del código antiguo, jugué unos movimientos y luego instalé la nueva encima sin desinstalar. Tras reiniciar la app por completo, el tablero, la puntuación y el récord eran los mismos. Como la ruta del archivo de datos y las claves no cambian, esa comprobación es barata y vale la pena antes de cualquier versión.</p>
+    
+    <section class="faq"><h2>Preguntas frecuentes</h2><details><summary>¿Puedo usar el plugin de aplicación Android y Kotlin Multiplatform en un módulo con AGP 9?</summary><p>No. Pon el código compartido en un módulo de biblioteca con el plugin de biblioteca Android para multiplataforma y deja el módulo de aplicación aparte.</p></details><details><summary>¿Por qué no se ejecutaron mis pruebas unitarias compartidas tras la migración?</summary><p>La prueba de host de Android no está activada por defecto con el plugin nuevo. Actívala en el bloque Android del módulo y comprueba que el número de pruebas es el esperado.</p></details><details><summary>¿Compose Resources interpreta la barra invertida antes de un apóstrofo?</summary><p>No. Usa un apóstrofo normal en los archivos de textos compartidos en lugar del escape al estilo Android.</p></details><details><summary>¿Sigue funcionando el simulador de iOS para Intel con Compose Multiplatform?</summary><p>En mi compilación las bibliotecas no se resolvieron para ese destino, así que lo quité y dejé el simulador arm64 y los dispositivos reales.</p></details></section>
+    <section><h2>Más del blog</h2><ul class="glist"><li><a href="/es/blog/puzle-diario-igual-para-todos-sin-servidor/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Cómo dar el mismo puzle diario a todos sin un servidor</b></div></a></li><li><a href="/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Cómo se generan y verifican cientos de niveles de puzle</b></div></a></li><li><a href="/es/blog/mantener-dos-docenas-de-apps-android-siendo-un-solo-desarrollador/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Dos docenas de apps Android mantenidas por un solo dev</b></div></a></li><li><a href="/es/blog/detectar-anuncio-intersticial-bloqueado-android-eventos/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Detectar un anuncio intersticial bloqueado en Android con eventos</b></div></a></li><li><a href="/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Publicar una app de iPhone sin Mac: Kotlin Multiplatform, un Mac en la nube y TestFlight</b></div></a></li><li><a href="/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Depurar un iPhone desde Windows por USB: capturas y registros con Python</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

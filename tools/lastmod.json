@@ -508,16 +508,16 @@
   "date": "2026-11-11"
  },
  "https://nrazon.github.io/blog/": {
-  "hash": "ac944966cd379870f8590ef2b4720a8a",
-  "date": "2026-11-12"
+  "hash": "c7c7944bbc015ed8f59ff45f361359e6",
+  "date": "2026-11-14"
  },
  "https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/": {
-  "hash": "e5160e699561692ca6ce0d6682af6999",
-  "date": "2026-11-12"
+  "hash": "283d8a49ec374fb4df595c94228aff85",
+  "date": "2026-11-14"
  },
  "https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/": {
-  "hash": "f433c4b5d94a93e55203bc296705ca98",
-  "date": "2026-11-12"
+  "hash": "bc46e50431a1cfa711e2068b49c0297b",
+  "date": "2026-11-14"
  },
  "https://nrazon.github.io/blog/how-we-guarantee-mahjong-solitaire-is-solvable/": {
   "hash": "79da1e1cd17e02d7463f14ac159c0832",
@@ -528,24 +528,24 @@
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/blog/": {
-  "hash": "b344d1e754f69b740cee936c4209548a",
-  "date": "2026-11-12"
+  "hash": "6fcf1e9765bed6f63c4aed98a344604a",
+  "date": "2026-11-14"
  },
  "https://nrazon.github.io/es/blog/como-garantizamos-que-un-mahjong-solitario-tenga-solucion/": {
   "hash": "4065b7294156d63a18a13b7d28f4def8",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/": {
-  "hash": "3712d339ae9109f52ab708ffe9ab5b9a",
-  "date": "2026-11-12"
+  "hash": "905b57e5c535aa32925d8debdbe7024f",
+  "date": "2026-11-14"
  },
  "https://nrazon.github.io/es/blog/historia-mahjong-solitario-y-diferencias-con-mahjong/": {
   "hash": "922a641f7a60f827aca40b64bd08042c",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/": {
-  "hash": "3886717d8db2a62c708c34230dba02ab",
-  "date": "2026-11-12"
+  "hash": "768c4be579967bd97c1e763a2ee26620",
+  "date": "2026-11-14"
  },
  "https://nrazon.github.io/es/guias/2048-despues-4096-8192-errores-comunes/": {
   "hash": "1dd16acad4a1efb592303e2394f28a66",
@@ -620,12 +620,12 @@
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/pt/blog/": {
-  "hash": "c1af022e3b2a157b54c0654c2e3a7108",
-  "date": "2026-11-12"
+  "hash": "bc4666fd35988e748732200c9ec732ed",
+  "date": "2026-11-14"
  },
  "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/": {
-  "hash": "4c5430f8357a8a898dede379cfe16ce8",
-  "date": "2026-11-12"
+  "hash": "1a7f25c18de1e2e60c6ed6376af7f2a7",
+  "date": "2026-11-14"
  },
  "https://nrazon.github.io/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/": {
   "hash": "41eecc77925f3912ab9d1e9ce769d465",
@@ -636,8 +636,8 @@
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/": {
-  "hash": "1eadf3ee7a2378a018c1fab30564da69",
-  "date": "2026-11-12"
+  "hash": "b5c3227b58654370a3090ce5fc30144e",
+  "date": "2026-11-14"
  },
  "https://nrazon.github.io/pt/guias/2048-depois-4096-8192-erros-comuns/": {
   "hash": "8c683cf55bc6565cca4014c3c6a54458",
@@ -712,12 +712,12 @@
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/tr/yazilar/": {
-  "hash": "52b148cb7ecb7cedef2aedf8b5652f61",
-  "date": "2026-11-12"
+  "hash": "4d1c9f39f7eac320d873f4c4523c6210",
+  "date": "2026-11-14"
  },
  "https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/": {
-  "hash": "76713b0a1c5599189abb5c453e875b8f",
-  "date": "2026-11-12"
+  "hash": "7a18dcf418c87f94ae583c62f4eb6680",
+  "date": "2026-11-14"
  },
  "https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tahtasi-cozulebilir-nasil-garanti-ederiz/": {
   "hash": "b60672bdc5492be45d8e512112038d42",
@@ -728,8 +728,8 @@
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/": {
-  "hash": "77f9bc2778c2d3a60879a361f7d3a90e",
-  "date": "2026-11-12"
+  "hash": "ac131a7de6cd01f48dfc10dd5c829ed4",
+  "date": "2026-11-14"
  },
  "https://nrazon.github.io/es/guias/como-jugar-conectar-fichas-puzle/": {
   "hash": "f27deedfa935413c10157d3aecb86041",
@@ -1056,52 +1056,52 @@
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/": {
-  "hash": "ebc8c282b92fa99cb3fe6a788c841514",
-  "date": "2026-11-12"
+  "hash": "b8d562b2a92ba6b817c9286fcaf307f1",
+  "date": "2026-11-14"
  },
  "https://nrazon.github.io/blog/game-feel-jetpack-compose-without-game-engine/": {
   "hash": "fa1e811556066ed0017522f6bafd534a",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/blog/keeping-two-dozen-android-apps-maintainable-solo/": {
-  "hash": "1c89036400fad65e71156addb4ec9297",
-  "date": "2026-11-12"
+  "hash": "f7b6e0c26c567fcc038609dd363e9266",
+  "date": "2026-11-14"
  },
  "https://nrazon.github.io/es/blog/detectar-anuncio-intersticial-bloqueado-android-eventos/": {
-  "hash": "175c1d30102232e1730f92ba20d32aaa",
-  "date": "2026-11-12"
+  "hash": "2d639bbba2a7dbc6a2f34987f47cdb99",
+  "date": "2026-11-14"
  },
  "https://nrazon.github.io/es/blog/mantener-dos-docenas-de-apps-android-siendo-un-solo-desarrollador/": {
-  "hash": "fe0c3080651fff73e758b51aa39bcf46",
-  "date": "2026-11-12"
+  "hash": "90159c0f4c6037a1020be17ca0dcad51",
+  "date": "2026-11-14"
  },
  "https://nrazon.github.io/es/blog/sensacion-de-juego-jetpack-compose-sin-motor/": {
   "hash": "5c60407e5a980c3425a76e7573a19e32",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/": {
-  "hash": "c84cbb4f33d931d62490aa9737c32b56",
-  "date": "2026-11-12"
+  "hash": "ea053dffd6548afac52992bbed69380f",
+  "date": "2026-11-14"
  },
  "https://nrazon.github.io/pt/blog/game-feel-jetpack-compose-sem-motor-de-jogo/": {
   "hash": "25a7a7f615dce85a28917398b6500a7e",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/": {
-  "hash": "b490f78a4fc0ca5598c19f74fde4304e",
-  "date": "2026-11-12"
+  "hash": "722396bfe8f6ccd4b755d873d2ac507c",
+  "date": "2026-11-14"
  },
  "https://nrazon.github.io/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/": {
-  "hash": "916d1c27c7bbf9d4ae2b645e45a75852",
-  "date": "2026-11-12"
+  "hash": "ee1c862eebf07714fd07d956f8912b82",
+  "date": "2026-11-14"
  },
  "https://nrazon.github.io/tr/yazilar/oyun-motoru-olmadan-jetpack-compose-oyun-hissi/": {
   "hash": "22ab081c4d5ea1a4f2e7eb3f5c689ee4",
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/": {
-  "hash": "51010148dae9d251a211aee179751d51",
-  "date": "2026-11-12"
+  "hash": "8c003ec565d4287ae761a4a913b597d9",
+  "date": "2026-11-14"
  },
  "https://nrazon.github.io/brassline/": {
   "hash": "b517502a4f9d7e0dc3eaee3b878be16a",
@@ -1118,5 +1118,69 @@
  "https://nrazon.github.io/tr/brassline/": {
   "hash": "eb26a3568ca6317520e244c3b1b310b2",
   "date": "2026-11-13"
+ },
+ "https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/": {
+  "hash": "97ca1f5d870e39b925d920617d9dbabe",
+  "date": "2026-11-14"
+ },
+ "https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/": {
+  "hash": "3c032daf254c413fd305ed20a3b99af5",
+  "date": "2026-11-14"
+ },
+ "https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/": {
+  "hash": "5fafd3028c2854903abba993a0be6caf",
+  "date": "2026-11-14"
+ },
+ "https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/": {
+  "hash": "e296cfa25770b912ff4b07528444bcc9",
+  "date": "2026-11-14"
+ },
+ "https://nrazon.github.io/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/": {
+  "hash": "7b89051c2a18038aae9e47aeef3477a6",
+  "date": "2026-11-14"
+ },
+ "https://nrazon.github.io/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/": {
+  "hash": "6782865aadde8859babcc2d088bbc72c",
+  "date": "2026-11-14"
+ },
+ "https://nrazon.github.io/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/": {
+  "hash": "96e69dcb1e4d83aad6e02012c8777770",
+  "date": "2026-11-14"
+ },
+ "https://nrazon.github.io/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/": {
+  "hash": "8fe5ba112e023bb2661392e7c0bf613a",
+  "date": "2026-11-14"
+ },
+ "https://nrazon.github.io/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/": {
+  "hash": "8d1da829e4a80464a01097fd1a95b206",
+  "date": "2026-11-14"
+ },
+ "https://nrazon.github.io/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/": {
+  "hash": "aabcc496ae696fe659644a0def0d4f26",
+  "date": "2026-11-14"
+ },
+ "https://nrazon.github.io/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/": {
+  "hash": "cbc7acd6a800d8b5574afa53f6746b32",
+  "date": "2026-11-14"
+ },
+ "https://nrazon.github.io/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/": {
+  "hash": "65e961bf5b6762394cdf3f668c3e8f74",
+  "date": "2026-11-14"
+ },
+ "https://nrazon.github.io/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/": {
+  "hash": "9c16115fc8bc4f24326c45fea5cdaac9",
+  "date": "2026-11-14"
+ },
+ "https://nrazon.github.io/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/": {
+  "hash": "d6daefd6148ca297fb1ee300d44b6e18",
+  "date": "2026-11-14"
+ },
+ "https://nrazon.github.io/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/": {
+  "hash": "a3ff5e9ec9b663696fb476e74574069c",
+  "date": "2026-11-14"
+ },
+ "https://nrazon.github.io/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/": {
+  "hash": "7d5acd2c743d8747da5774d7efa403f2",
+  "date": "2026-11-14"
  }
 }

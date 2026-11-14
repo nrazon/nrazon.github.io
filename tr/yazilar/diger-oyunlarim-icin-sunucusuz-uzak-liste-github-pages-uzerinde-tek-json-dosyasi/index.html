@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>&quot;Diğer Oyunlarım&quot; İçin Sunucusuz Uzak Liste | Nesim Apps</title>
+<meta name="description" content="Geliştirici notu: bir düzine Android oyununun çapraz tanıtım listesi uygulama kodundan GitHub Pages&#x27;teki tek bir JSON dosyasına nasıl taşındı; önbellek…">
+<link rel="canonical" href="https://nrazon.github.io/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="&quot;Diğer Oyunlarım&quot; İçin Sunucusuz Uzak Liste: GitHub Pages&#x27;te Tek JSON Dosyası">
+<meta property="og:description" content="Geliştirici notu: bir düzine Android oyununun çapraz tanıtım listesi uygulama kodundan GitHub Pages&#x27;teki tek bir JSON dosyasına nasıl taşındı; önbellek…">
+<meta property="og:url" content="https://nrazon.github.io/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="&quot;Diğer Oyunlarım&quot; İçin Sunucusuz Uzak Liste: GitHub Pages&#x27;te Tek JSON Dosyası">
+<meta name="twitter:description" content="Geliştirici notu: bir düzine Android oyununun çapraz tanıtım listesi uygulama kodundan GitHub Pages&#x27;teki tek bir JSON dosyasına nasıl taşındı; önbellek…">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "\"Diğer Oyunlarım\" İçin Sunucusuz Uzak Liste: GitHub Pages'te Tek JSON Dosyası", "description": "Geliştirici notu: bir düzine Android oyununun çapraz tanıtım listesi uygulama kodundan GitHub Pages'teki tek bir JSON dosyasına nasıl taşındı; önbellek, çevrimdışı yedek ve sıkı kontrollerle, yeni bir oyun için diğerlerine sürüm gerekmiyor.", "inLanguage": "tr", "mainEntityOfPage": "https://nrazon.github.io/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-14", "dateModified": "2026-11-14", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}, "keywords": "Geliştirici notları, Android"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/tr/"}, {"@type": "ListItem", "position": 2, "name": "Yazılar", "item": "https://nrazon.github.io/tr/yazilar/"}, {"@type": "ListItem", "position": 3, "name": "\"Diğer Oyunlarım\" İçin Sunucusuz Uzak Liste: GitHub Pages'te Tek JSON Dosyası", "item": "https://nrazon.github.io/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Yeni bir oyun eklemek eski uygulamaların güncellenmesini gerektirir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Uygulamalar listeyi çevrimiçi bir JSON dosyasından okuyor; dosyaya bir satır ekleyip yayınlamak yeterli."}}, {"@type": "Question", "name": "Telefon çevrimdışıyken ne olur?", "acceptedAnswer": {"@type": "Answer", "text": "Uygulama son kaydedilmiş kopyayı kullanır; listeyi hiç indirmediyse uygulamanın içinde gelen kopyayı."}}, {"@type": "Question", "name": "Uygulama listeyi ne sıklıkla yeniliyor?", "acceptedAnswer": {"@type": "Answer", "text": "En fazla 48 saatte bir, arka plan iş parçacığında."}}, {"@type": "Question", "name": "Liste zararlı bir şeyi açmak için kötüye kullanılabilir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Yalnızca mağaza sayfalarını açabilir ve indirmeler, boyutlar, anahtarlar ve paket adları kullanılmadan önce kontrol edilir."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/" hreflang="tr" data-lang="tr" aria-current="page">TR</a><a href="/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/tr/">Nesim Apps</a> › <a href="/tr/yazilar/">Yazılar</a></nav>
+    <h1>&quot;Diğer Oyunlarım&quot; İçin Sunucusuz Uzak Liste: GitHub Pages&#x27;te Tek JSON Dosyası</h1>
+    <p class="by">Nesim Razon, bağımsız Android geliştiricisi · 2026-11-14</p>
+    <p class="tags"><a href="/tr/yazilar/#devlog">#Geliştirici notları</a><a href="/tr/yazilar/#android">#Android</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Oyunlarımın her birinde diğerlerini tanıtan bir &quot;Diğer oyunlarım&quot; penceresi var. Bir süre bu liste her uygulamanın içine gömülüydü; yani yeni bir oyun çıkarmak, eskilerin hepsine güncelleme çıkarmayı zorunlu kılıyordu. Onu GitHub Pages&#x27;teki tek bir JSON dosyasıyla değiştirdim. İşte nasıl çalıştığı ve onu güvenli tutan sınırlar.</p>
+    <h2>Uygulamanın içindeki listenin sorunu</h2>
+    <p>Uygulamaya gömülü bir liste yazması kolay, bakımı zor bir şeydir. Her yeni oyun yeni kod, yeni ikonlar ve her eski oyun için yeni bir sürüm demekti; o sürümlerin her biri incelemeden geçer. Yaklaşık bir düzine oyunla, tanıtım penceresi her çıkışın en yavaş parçasıydı.</p>
+    <h2>GitHub Pages&#x27;te tek dosya</h2>
+    <p>Liste artık web sitemin yanında duran statik bir dosya ve oyun başına küçük bir ikon. Her kayıtta kısa bir anahtar, oyun adı, Android paket adı, bir ikon yolu ve dil başına bir açıklama var. Uygulamalar açıklamayı telefonun dilinde okuyor, olmazsa İngilizceye düşüyor.</p>
+    <p>Küçük bir betik dosyayı üretiyor. Oyun başına bir satır tutuyor, her ikonu sabit küçük bir boyuta getiriyor ve her şeyi yazıyor. Oyun eklemek bir satır eklemek, betiği çalıştırmak ve göndermek demek. Bunun için eski uygulamaların hiçbirine sürüm gerekmiyor.</p>
+    <h2>Uygulama bunu nasıl kullanıyor</h2>
+    <p>Uygulama en fazla 48 saatte bir listeyi arka plan iş parçacığında indirip telefona kaydediyor. Pencere her zaman kayıtlı kopyayı okuyor. Telefon hiç çevrimiçi olmadıysa ya da dosya bozuksa uygulama, uygulamanın içinde gelen liste kopyasına ve ikonlara düşüyor.</p>
+    <p>İkonu bulunmayan bir kayıt, gri bir kare göstermek yerine atlanıyor ve oyun kendini hiç listelemiyor.</p>
+    <h2>Güvenli tutan kontroller</h2>
+    <p>Liste yalnızca bir mağaza sayfası açabilir, yine de onu güvenilmez girdi sayıyorum.</p>
+    <ul><li>İndirmeler yalnızca https üzerinden ve yalnızca kendi sitemden kabul edilir.</li><li>Liste 64 KB&#x27;tan, bir ikon 256 KB&#x27;tan büyük olamaz.</li><li>En fazla 40 kayıt okunur.</li><li>Her anahtar ve her paket adı kullanılmadan önce sıkı bir kalıba uymalıdır.</li><li>Bozuk bir dosya çalışan birinin yerini asla almaz: ayrıştırma hataları gömülü kopyaya düşer.</li></ul>
+    <h2>Doğru sırayla yazmak</h2>
+    <p>Uygulama önce ikonları indirip kaydediyor, liste dosyasını ancak ondan sonra kaydediyor. Böylece kayıtlı liste hiçbir zaman eksik bir ikonu göstermiyor. Yeni liste kaydedilince küçük bir sayaç değişiyor ve açık bir pencere kendini yeniliyor; bu, ilk açılışın boş pencere göstermesi durumunu düzeltti.</p>
+    <h2>Yine de değiştirmek isteyeceklerim</h2>
+    <p>Yeni bir oyun bir sonraki yenilemeden sonra görünüyor; bu iki güne kadar ve pencerenin bir sonraki açılışına kadar sürebilir, yani anlık değil. Listenin kendine ait bir kullanım sayımı yok; tıklamaları uygulamalar sayıyor. Ve her şey tek bir sunucuya bağlı, gömülü yedeğin önemi de bu yüzden.</p>
+    
+    <section class="faq"><h2>Sık sorulan sorular</h2><details><summary>Yeni bir oyun eklemek eski uygulamaların güncellenmesini gerektirir mi?</summary><p>Hayır. Uygulamalar listeyi çevrimiçi bir JSON dosyasından okuyor; dosyaya bir satır ekleyip yayınlamak yeterli.</p></details><details><summary>Telefon çevrimdışıyken ne olur?</summary><p>Uygulama son kaydedilmiş kopyayı kullanır; listeyi hiç indirmediyse uygulamanın içinde gelen kopyayı.</p></details><details><summary>Uygulama listeyi ne sıklıkla yeniliyor?</summary><p>En fazla 48 saatte bir, arka plan iş parçacığında.</p></details><details><summary>Liste zararlı bir şeyi açmak için kötüye kullanılabilir mi?</summary><p>Yalnızca mağaza sayfalarını açabilir ve indirmeler, boyutlar, anahtarlar ve paket adları kullanılmadan önce kontrol edilir.</p></details></section>
+    <section><h2>Diğer yazılar</h2><ul class="glist"><li><a href="/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Sunucu Olmadan Herkese Aynı Günlük Bulmaca Nasıl Verilir?</b></div></a></li><li><a href="/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Yüzlerce Bulmaca Bölümü Nasıl Üretilir ve Doğrulanır?</b></div></a></li><li><a href="/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Tek Geliştirici, Yaklaşık İki Düzine Android Uygulaması</b></div></a></li><li><a href="/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Android&#x27;de Takılan Geçiş Reklamını Olay Kayıtlarıyla Yakalamak</b></div></a></li><li><a href="/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Mac Olmadan iPhone Uygulaması Yayınlamak: Kotlin Multiplatform, Bulut Mac ve TestFlight</b></div></a></li><li><a href="/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Bir Android Uygulamasını AGP 9 ile Kotlin Multiplatform&#x27;a Taşımak: Yedi Tuzak</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

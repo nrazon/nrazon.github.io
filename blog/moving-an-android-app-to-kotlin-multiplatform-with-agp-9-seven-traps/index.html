@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moving an Android App to Kotlin Multiplatform With AGP 9</title>
+<meta name="description" content="Dev notes: seven things that broke or went quiet when I moved a Compose Android game to a shared Kotlin Multiplatform module with Android Gradle Plugin 9…">
+<link rel="canonical" href="https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Moving an Android App to Kotlin Multiplatform With AGP 9: Seven Traps">
+<meta property="og:description" content="Dev notes: seven things that broke or went quiet when I moved a Compose Android game to a shared Kotlin Multiplatform module with Android Gradle Plugin 9…">
+<meta property="og:url" content="https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Moving an Android App to Kotlin Multiplatform With AGP 9: Seven Traps">
+<meta name="twitter:description" content="Dev notes: seven things that broke or went quiet when I moved a Compose Android game to a shared Kotlin Multiplatform module with Android Gradle Plugin 9…">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Moving an Android App to Kotlin Multiplatform With AGP 9: Seven Traps", "description": "Dev notes: seven things that broke or went quiet when I moved a Compose Android game to a shared Kotlin Multiplatform module with Android Gradle Plugin 9, and how a screenshot comparison caught one of them.", "inLanguage": "en", "mainEntityOfPage": "https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-14", "dateModified": "2026-11-14", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}, "keywords": "Dev notes, Android, Jetpack Compose"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nrazon.github.io/blog/"}, {"@type": "ListItem", "position": 3, "name": "Moving an Android App to Kotlin Multiplatform With AGP 9: Seven Traps", "item": "https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can I use the Android application plugin and Kotlin Multiplatform in one module with AGP 9?", "acceptedAnswer": {"@type": "Answer", "text": "No. Put the shared code in a library module that uses the Android library plugin for multiplatform, and keep the application module separate."}}, {"@type": "Question", "name": "Why did my shared unit tests not run after the migration?", "acceptedAnswer": {"@type": "Answer", "text": "The Android host test is not enabled by default with the new plugin. Enable it in the module's Android block and check that the test count is what you expect."}}, {"@type": "Question", "name": "Do Compose Resources unescape a backslash before an apostrophe?", "acceptedAnswer": {"@type": "Answer", "text": "No. Use a plain apostrophe in the shared strings files instead of the Android-style escape."}}, {"@type": "Question", "name": "Does the Intel iOS simulator still work with Compose Multiplatform?", "acceptedAnswer": {"@type": "Answer", "text": "In my build the libraries were not resolved for that target, so I dropped it and kept the arm64 simulator and real devices."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>Moving an Android App to Kotlin Multiplatform With AGP 9: Seven Traps</h1>
+    <p class="by">By Nesim Razon, independent Android developer · 2026-11-14</p>
+    <p class="tags"><a href="/blog/#devlog">#Dev notes</a><a href="/blog/#android">#Android</a><a href="/blog/#compose">#Jetpack Compose</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">I moved a small Compose game to Kotlin Multiplatform so it could also run on iPhone. The Kotlin part was easy, the build setup was not. These are the seven traps I hit with Android Gradle Plugin 9 and Compose Multiplatform, in the order I hit them, and the checks that told me nothing else had changed.</p>
+    <h2>1. The application plugin and the multiplatform plugin no longer share a module</h2>
+    <p>With Android Gradle Plugin 9 the Kotlin Multiplatform plugin cannot be applied to a module that also uses the Android application plugin. The shared code needs its own library module that uses the new Android library plugin for multiplatform. The app module stays a normal Android application and depends on it. The Kotlin migration guide also asks for a recent Gradle, 9.1 or newer.</p>
+    <h2>2. Unit tests that quietly stop running</h2>
+    <p>I moved the game rules and their ten unit tests into the shared module, ran the build and got a green result. Then I looked at the log: the Android test task of the shared module said there was nothing to run. With the new plugin the Android host test is off until you switch it on.</p>
+    <p>Declaring a host test in the Android part of the module fixed it, and the results file then showed ten tests run and none failed. The lesson is to count tests after a migration, not just to look for green.</p>
+    <h2>3. Compose Resources need Android resources enabled</h2>
+    <p>Texts and fonts moved into the shared module as Compose Resources. My screenshot tests then failed with a missing resource error that pointed at a compiled strings file. Adding a preview configuration call in the tests did not help. What fixed it was enabling Android resources in the shared module&#x27;s Android block, together with including Android resources for the host test.</p>
+    <h2>4. A backslash that survived the move</h2>
+    <p>Android string files escape an apostrophe with a backslash. Compose Resources do not unescape it, so the Turkish statistics dialog showed 2048\&#x27;e instead of 2048&#x27;e. The fix is to use a plain apostrophe in the copied strings.</p>
+    <p>I found this only because of the next check below. Nothing crashed and nothing failed, the text was just slightly wrong.</p>
+    <h2>5. Test names Kotlin/Native will not accept</h2>
+    <p>One test had a comma in its backtick name, a harmless thing on Android. When the iOS test target compiled, it stopped with a message that the name contains illegal characters. Rewriting the name without the comma fixed it.</p>
+    <h2>6. A simulator target that is gone</h2>
+    <p>I had listed the iOS simulator targets for both Apple silicon and Intel Macs. The build then reported a dependency resolution failure: the Compose Multiplatform libraries were not published for the Intel simulator target. I removed that target, so the build covers the arm64 simulator and real devices.</p>
+    <h2>7. One DataStore per file</h2>
+    <p>The old Android code used a delegate that created one DataStore per process. In shared code I create the store myself and pass it in, and two stores open on the same file crash the app. So I keep a single instance behind a small holder object on Android, pointing at the same file the old delegate used, so existing saved games stay readable.</p>
+    <h2>How I checked that nothing else changed</h2>
+    <p>The screenshot tests that generate the store images became my regression suite. After the migration I regenerated all sixteen store images and looked at what git reported as modified. Fifteen were identical to the committed files, and the one that differed was the apostrophe bug above.</p>
+    <p>For saved data I installed the build from the old code, played a few moves, then installed the new build over it without uninstalling. After a full app restart the board, score and best score were the same. Because the data file path and keys are unchanged, that check is cheap and worth doing before any release.</p>
+    
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Can I use the Android application plugin and Kotlin Multiplatform in one module with AGP 9?</summary><p>No. Put the shared code in a library module that uses the Android library plugin for multiplatform, and keep the application module separate.</p></details><details><summary>Why did my shared unit tests not run after the migration?</summary><p>The Android host test is not enabled by default with the new plugin. Enable it in the module&#x27;s Android block and check that the test count is what you expect.</p></details><details><summary>Do Compose Resources unescape a backslash before an apostrophe?</summary><p>No. Use a plain apostrophe in the shared strings files instead of the Android-style escape.</p></details><details><summary>Does the Intel iOS simulator still work with Compose Multiplatform?</summary><p>In my build the libraries were not resolved for that target, so I dropped it and kept the arm64 simulator and real devices.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/how-daily-puzzles-work-without-a-server/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>How a Daily Puzzle Can Be the Same for Everyone, No Server</b></div></a></li><li><a href="/blog/how-puzzle-levels-are-generated-and-checked/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>How Hundreds of Puzzle Levels Are Generated and Checked</b></div></a></li><li><a href="/blog/keeping-two-dozen-android-apps-maintainable-solo/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Keeping Two Dozen Android Apps Maintainable as a Solo Dev</b></div></a></li><li><a href="/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Catching a Stuck Interstitial Ad on Android With Event Logs</b></div></a></li><li><a href="/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Shipping an iPhone App Without a Mac: Kotlin Multiplatform, a Cloud Mac and TestFlight</b></div></a></li><li><a href="/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Debugging an iPhone From Windows Over USB: Screenshots and Logs With Python</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

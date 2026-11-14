@@ -97,7 +97,7 @@
     "pt": "https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"
    },
    "default": "en",
-   "hash": "e5160e699561692ca6ce0d6682af6999"
+   "hash": "283d8a49ec374fb4df595c94228aff85"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/",
@@ -108,7 +108,7 @@
     "pt": "https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"
    },
    "default": "en",
-   "hash": "77f9bc2778c2d3a60879a361f7d3a90e"
+   "hash": "ac131a7de6cd01f48dfc10dd5c829ed4"
   },
   {
    "url": "https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/",
@@ -119,7 +119,7 @@
     "pt": "https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"
    },
    "default": "en",
-   "hash": "3886717d8db2a62c708c34230dba02ab"
+   "hash": "768c4be579967bd97c1e763a2ee26620"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/",
@@ -130,7 +130,7 @@
     "pt": "https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"
    },
    "default": "en",
-   "hash": "1eadf3ee7a2378a018c1fab30564da69"
+   "hash": "b5c3227b58654370a3090ce5fc30144e"
   },
   {
    "url": "https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/",
@@ -141,7 +141,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"
    },
    "default": "en",
-   "hash": "f433c4b5d94a93e55203bc296705ca98"
+   "hash": "bc46e50431a1cfa711e2068b49c0297b"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/",
@@ -152,7 +152,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"
    },
    "default": "en",
-   "hash": "76713b0a1c5599189abb5c453e875b8f"
+   "hash": "7a18dcf418c87f94ae583c62f4eb6680"
   },
   {
    "url": "https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/",
@@ -163,7 +163,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"
    },
    "default": "en",
-   "hash": "3712d339ae9109f52ab708ffe9ab5b9a"
+   "hash": "905b57e5c535aa32925d8debdbe7024f"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/",
@@ -174,7 +174,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"
    },
    "default": "en",
-   "hash": "4c5430f8357a8a898dede379cfe16ce8"
+   "hash": "1a7f25c18de1e2e60c6ed6376af7f2a7"
   },
   {
    "url": "https://nrazon.github.io/blog/tic-tac-toe-history-and-variants/",
@@ -693,7 +693,7 @@
     "pt": "https://nrazon.github.io/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/"
    },
    "default": "en",
-   "hash": "1c89036400fad65e71156addb4ec9297"
+   "hash": "f7b6e0c26c567fcc038609dd363e9266"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/",
@@ -704,7 +704,7 @@
     "pt": "https://nrazon.github.io/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/"
    },
    "default": "en",
-   "hash": "51010148dae9d251a211aee179751d51"
+   "hash": "8c003ec565d4287ae761a4a913b597d9"
   },
   {
    "url": "https://nrazon.github.io/es/blog/mantener-dos-docenas-de-apps-android-siendo-un-solo-desarrollador/",
@@ -715,7 +715,7 @@
     "pt": "https://nrazon.github.io/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/"
    },
    "default": "en",
-   "hash": "fe0c3080651fff73e758b51aa39bcf46"
+   "hash": "90159c0f4c6037a1020be17ca0dcad51"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/",
@@ -726,7 +726,7 @@
     "pt": "https://nrazon.github.io/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/"
    },
    "default": "en",
-   "hash": "b490f78a4fc0ca5598c19f74fde4304e"
+   "hash": "722396bfe8f6ccd4b755d873d2ac507c"
   },
   {
    "url": "https://nrazon.github.io/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/",
@@ -737,7 +737,7 @@
     "pt": "https://nrazon.github.io/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/"
    },
    "default": "en",
-   "hash": "ebc8c282b92fa99cb3fe6a788c841514"
+   "hash": "b8d562b2a92ba6b817c9286fcaf307f1"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/",
@@ -748,7 +748,7 @@
     "pt": "https://nrazon.github.io/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/"
    },
    "default": "en",
-   "hash": "916d1c27c7bbf9d4ae2b645e45a75852"
+   "hash": "ee1c862eebf07714fd07d956f8912b82"
   },
   {
    "url": "https://nrazon.github.io/es/blog/detectar-anuncio-intersticial-bloqueado-android-eventos/",
@@ -759,7 +759,7 @@
     "pt": "https://nrazon.github.io/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/"
    },
    "default": "en",
-   "hash": "175c1d30102232e1730f92ba20d32aaa"
+   "hash": "2d639bbba2a7dbc6a2f34987f47cdb99"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/",
@@ -770,7 +770,7 @@
     "pt": "https://nrazon.github.io/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/"
    },
    "default": "en",
-   "hash": "c84cbb4f33d931d62490aa9737c32b56"
+   "hash": "ea053dffd6548afac52992bbed69380f"
   },
   {
    "url": "https://nrazon.github.io/blog/game-feel-jetpack-compose-without-game-engine/",
@@ -817,6 +817,182 @@
    "hash": "25a7a7f615dce85a28917398b6500a7e"
   },
   {
+   "url": "https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/",
+    "tr": "https://nrazon.github.io/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/",
+    "es": "https://nrazon.github.io/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/",
+    "pt": "https://nrazon.github.io/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/"
+   },
+   "default": "en",
+   "hash": "e296cfa25770b912ff4b07528444bcc9"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/",
+    "tr": "https://nrazon.github.io/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/",
+    "es": "https://nrazon.github.io/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/",
+    "pt": "https://nrazon.github.io/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/"
+   },
+   "default": "en",
+   "hash": "7d5acd2c743d8747da5774d7efa403f2"
+  },
+  {
+   "url": "https://nrazon.github.io/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/",
+    "tr": "https://nrazon.github.io/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/",
+    "es": "https://nrazon.github.io/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/",
+    "pt": "https://nrazon.github.io/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/"
+   },
+   "default": "en",
+   "hash": "8fe5ba112e023bb2661392e7c0bf613a"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/",
+    "tr": "https://nrazon.github.io/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/",
+    "es": "https://nrazon.github.io/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/",
+    "pt": "https://nrazon.github.io/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/"
+   },
+   "default": "en",
+   "hash": "65e961bf5b6762394cdf3f668c3e8f74"
+  },
+  {
+   "url": "https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/",
+    "tr": "https://nrazon.github.io/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/",
+    "es": "https://nrazon.github.io/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/",
+    "pt": "https://nrazon.github.io/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/"
+   },
+   "default": "en",
+   "hash": "3c032daf254c413fd305ed20a3b99af5"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/",
+    "tr": "https://nrazon.github.io/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/",
+    "es": "https://nrazon.github.io/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/",
+    "pt": "https://nrazon.github.io/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/"
+   },
+   "default": "en",
+   "hash": "9c16115fc8bc4f24326c45fea5cdaac9"
+  },
+  {
+   "url": "https://nrazon.github.io/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/",
+    "tr": "https://nrazon.github.io/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/",
+    "es": "https://nrazon.github.io/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/",
+    "pt": "https://nrazon.github.io/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/"
+   },
+   "default": "en",
+   "hash": "96e69dcb1e4d83aad6e02012c8777770"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/",
+    "tr": "https://nrazon.github.io/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/",
+    "es": "https://nrazon.github.io/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/",
+    "pt": "https://nrazon.github.io/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/"
+   },
+   "default": "en",
+   "hash": "cbc7acd6a800d8b5574afa53f6746b32"
+  },
+  {
+   "url": "https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/",
+    "tr": "https://nrazon.github.io/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/",
+    "es": "https://nrazon.github.io/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/",
+    "pt": "https://nrazon.github.io/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/"
+   },
+   "default": "en",
+   "hash": "97ca1f5d870e39b925d920617d9dbabe"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/",
+    "tr": "https://nrazon.github.io/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/",
+    "es": "https://nrazon.github.io/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/",
+    "pt": "https://nrazon.github.io/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/"
+   },
+   "default": "en",
+   "hash": "a3ff5e9ec9b663696fb476e74574069c"
+  },
+  {
+   "url": "https://nrazon.github.io/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/",
+    "tr": "https://nrazon.github.io/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/",
+    "es": "https://nrazon.github.io/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/",
+    "pt": "https://nrazon.github.io/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/"
+   },
+   "default": "en",
+   "hash": "7b89051c2a18038aae9e47aeef3477a6"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/",
+    "tr": "https://nrazon.github.io/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/",
+    "es": "https://nrazon.github.io/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/",
+    "pt": "https://nrazon.github.io/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/"
+   },
+   "default": "en",
+   "hash": "8d1da829e4a80464a01097fd1a95b206"
+  },
+  {
+   "url": "https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/",
+    "tr": "https://nrazon.github.io/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/",
+    "es": "https://nrazon.github.io/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/",
+    "pt": "https://nrazon.github.io/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/"
+   },
+   "default": "en",
+   "hash": "5fafd3028c2854903abba993a0be6caf"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/",
+    "tr": "https://nrazon.github.io/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/",
+    "es": "https://nrazon.github.io/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/",
+    "pt": "https://nrazon.github.io/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/"
+   },
+   "default": "en",
+   "hash": "d6daefd6148ca297fb1ee300d44b6e18"
+  },
+  {
+   "url": "https://nrazon.github.io/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/",
+    "tr": "https://nrazon.github.io/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/",
+    "es": "https://nrazon.github.io/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/",
+    "pt": "https://nrazon.github.io/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/"
+   },
+   "default": "en",
+   "hash": "6782865aadde8859babcc2d088bbc72c"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/",
+    "tr": "https://nrazon.github.io/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/",
+    "es": "https://nrazon.github.io/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/",
+    "pt": "https://nrazon.github.io/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/"
+   },
+   "default": "en",
+   "hash": "aabcc496ae696fe659644a0def0d4f26"
+  },
+  {
    "url": "https://nrazon.github.io/blog/",
    "loc": {
     "en": "https://nrazon.github.io/blog/",
@@ -825,7 +1001,7 @@
     "pt": "https://nrazon.github.io/pt/blog/"
    },
    "default": "en",
-   "hash": "ac944966cd379870f8590ef2b4720a8a"
+   "hash": "c7c7944bbc015ed8f59ff45f361359e6"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/",
@@ -836,7 +1012,7 @@
     "pt": "https://nrazon.github.io/pt/blog/"
    },
    "default": "en",
-   "hash": "52b148cb7ecb7cedef2aedf8b5652f61"
+   "hash": "4d1c9f39f7eac320d873f4c4523c6210"
   },
   {
    "url": "https://nrazon.github.io/es/blog/",
@@ -847,7 +1023,7 @@
     "pt": "https://nrazon.github.io/pt/blog/"
    },
    "default": "en",
-   "hash": "b344d1e754f69b740cee936c4209548a"
+   "hash": "6fcf1e9765bed6f63c4aed98a344604a"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/",
@@ -858,7 +1034,7 @@
     "pt": "https://nrazon.github.io/pt/blog/"
    },
    "default": "en",
-   "hash": "c1af022e3b2a157b54c0654c2e3a7108"
+   "hash": "bc4666fd35988e748732200c9ec732ed"
   }
  ],
  "index": {

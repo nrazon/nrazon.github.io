@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt" data-lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Depurar um iPhone no Windows por USB | Nesim Apps</title>
+<meta name="description" content="Notas de desenvolvimento: como tiro capturas de tela, abro um app e leio seu log em um iPhone 7 a partir de um notebook com Windows com o app Apple Devices e…">
+<link rel="canonical" href="https://nrazon.github.io/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Depurar um iPhone no Windows por USB: capturas de tela e logs com Python">
+<meta property="og:description" content="Notas de desenvolvimento: como tiro capturas de tela, abro um app e leio seu log em um iPhone 7 a partir de um notebook com Windows com o app Apple Devices e…">
+<meta property="og:url" content="https://nrazon.github.io/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Depurar um iPhone no Windows por USB: capturas de tela e logs com Python">
+<meta name="twitter:description" content="Notas de desenvolvimento: como tiro capturas de tela, abro um app e leio seu log em um iPhone 7 a partir de um notebook com Windows com o app Apple Devices e…">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Depurar um iPhone no Windows por USB: capturas de tela e logs com Python", "description": "Notas de desenvolvimento: como tiro capturas de tela, abro um app e leio seu log em um iPhone 7 a partir de um notebook com Windows com o app Apple Devices e a ferramenta Python pymobiledevice3, com um exemplo real de por que um banner de anúncios estava vazio.", "inLanguage": "pt", "mainEntityOfPage": "https://nrazon.github.io/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-14", "dateModified": "2026-11-14", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}, "keywords": "Notas de desenvolvimento, iOS"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/pt/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nrazon.github.io/pt/blog/"}, {"@type": "ListItem", "position": 3, "name": "Depurar um iPhone no Windows por USB: capturas de tela e logs com Python", "item": "https://nrazon.github.io/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Posso tirar capturas de tela de um iPhone no Windows?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Com o driver Apple Devices e a ferramenta pymobiledevice3 você monta uma vez a imagem de disco de desenvolvedor e depois salva capturas pela linha de comando."}}, {"@type": "Question", "name": "Preciso de um Mac ou do Xcode para isso?", "acceptedAnswer": {"@type": "Answer", "text": "Não. O driver vem do app Apple Devices e a ferramenta é um pacote Python, então um notebook com Windows basta."}}, {"@type": "Question", "name": "Por que a ferramenta diz que não consegue conectar ao usbmux?", "acceptedAnswer": {"@type": "Answer", "text": "O driver USB da Apple ainda não estava em execução. Abra o app Apple Devices uma vez com o celular conectado e confiável e tente de novo."}}, {"@type": "Question", "name": "Como leio apenas o log do meu próprio app?", "acceptedAnswer": {"@type": "Answer", "text": "Use syslog live com a opção de nome do processo, escreva a saída em um arquivo e procure suas mensagens marcadas."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/" hreflang="pt" data-lang="pt" aria-current="page">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/pt/">Nesim Apps</a> › <a href="/pt/blog/">Blog</a></nav>
+    <h1>Depurar um iPhone no Windows por USB: capturas de tela e logs com Python</h1>
+    <p class="by">Por Nesim Razon, desenvolvedor Android independente · 2026-11-14</p>
+    <p class="tags"><a href="/pt/blog/#devlog">#Notas de desenvolvimento</a><a href="/pt/blog/#ios">#iOS</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">No Android, o adb facilita tirar uma captura de tela ou ler um log de um celular na sua mesa. Eu não esperava nada assim para um iPhone no Windows, mas existe um caminho: o pacote de drivers da própria Apple e uma ferramenta Python de código aberto. Esta é a configuração que funcionou em um iPhone 7 com iOS 15.8, as armadilhas na ordem em que as encontrei e um erro real que resolvi com ela.</p>
+    <h2>O que você precisa</h2>
+    <ul><li>O app Apple Devices da Microsoft Store. Ele traz o driver USB para iPhones e o winget pode instalá-lo.</li><li>Python 3 e o pacote pymobiledevice3.</li><li>Um celular com cabo, a tela desbloqueada e o aviso de confiança aceito no celular.</li></ul>
+    <h2>A ordem da instalação importa</h2>
+    <p>Depois de instalar o Apple Devices, o iPhone ainda aparecia no Gerenciador de Dispositivos com status de erro, e a ferramenta respondia que não conseguia conectar ao socket do usbmux. A solução foi abrir o app Apple Devices uma vez, com o celular conectado e desbloqueado, aceitar o aviso de confiança e deixá-lo terminar a instalação dos drivers. Só então o celular foi listado corretamente.</p>
+    <h2>A armadilha do Python</h2>
+    <p>Na minha máquina o primeiro python do caminho era um velho Python 2.7, então o comando pip simples não instalou nada útil. No Windows o lançador py escolhe o certo: instale com py -3 -m pip install pymobiledevice3 e sempre execute a ferramenta como py -3 -m pymobiledevice3, porque o executável que ela cria não está no caminho.</p>
+    <h2>Quatro comandos que uso o tempo todo</h2>
+    <ul><li>usbmux list mostra o celular conectado com seu modelo e versão do iOS.</li><li>mounter auto-mount baixa e monta uma vez a imagem de disco de desenvolvedor. No iOS 15 não precisei ativar nenhum Modo de Desenvolvedor.</li><li>developer dvt launch seguido do identificador do pacote inicia o app.</li><li>developer screenshot seguido de um nome de arquivo salva o que a tela mostra naquele momento.</li></ul>
+    <h2>Ler o log sem se afogar</h2>
+    <p>syslog live imprime tudo o que o celular registra, que é muita coisa. Filtrar pelo nome do processo deixa só o seu app. Mesmo assim meu app gerou mais de um megabyte de log em trinta segundos, então escrevo a saída em um arquivo e procuro depois em vez de ver rolar.</p>
+    <p>Suas próprias mensagens são as mais fáceis de achar. No Swift uma chamada a NSLog aparece neste log, então marco minhas linhas com o nome do app e procuro essa marca.</p>
+    <h2>Um exemplo real: por que o banner estava vazio?</h2>
+    <p>Meu jogo não mostrava o banner de anúncios depois que troquei a unidade de anúncios de demonstração do Google pela real. O celular não mostrava nenhum erro visível. Adicionei um pequeno delegado à visualização do banner que escreve com NSLog o resultado do pedido de anúncio, compilei, instalei pelo TestFlight e li o log por USB.</p>
+    <p>A resposta foi uma só linha: não há anúncio para mostrar. Isso significa que o servidor de anúncios não tinha com o que preencher, o que é normal para uma unidade de anúncios novinha em um app que ainda não está na loja. Sem o log eu teria continuado procurando um erro no meu código.</p>
+    <h2>Limites e privacidade</h2>
+    <p>Uma captura de tela pega o que estiver na tela e um log sem filtro contém linhas de outros apps. Se o celular é compartilhado, como o meu com outro projeto, primeiro abro só o meu app e filtro o log pelo nome do processo. A ferramenta funciona sobre a confiança que você dá ao computador, então aceite o aviso de confiança apenas em máquinas suas.</p>
+    
+    <section class="faq"><h2>Perguntas frequentes</h2><details><summary>Posso tirar capturas de tela de um iPhone no Windows?</summary><p>Sim. Com o driver Apple Devices e a ferramenta pymobiledevice3 você monta uma vez a imagem de disco de desenvolvedor e depois salva capturas pela linha de comando.</p></details><details><summary>Preciso de um Mac ou do Xcode para isso?</summary><p>Não. O driver vem do app Apple Devices e a ferramenta é um pacote Python, então um notebook com Windows basta.</p></details><details><summary>Por que a ferramenta diz que não consegue conectar ao usbmux?</summary><p>O driver USB da Apple ainda não estava em execução. Abra o app Apple Devices uma vez com o celular conectado e confiável e tente de novo.</p></details><details><summary>Como leio apenas o log do meu próprio app?</summary><p>Use syslog live com a opção de nome do processo, escreva a saída em um arquivo e procure suas mensagens marcadas.</p></details></section>
+    <section><h2>Mais do blog</h2><ul class="glist"><li><a href="/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Como dar o mesmo quebra-cabeça diário a todos sem servidor</b></div></a></li><li><a href="/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Como centenas de fases de quebra-cabeça são geradas e verificadas</b></div></a></li><li><a href="/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Duas dúzias de apps Android mantidas por um só dev</b></div></a></li><li><a href="/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Detectar um anúncio intersticial travado no Android com eventos</b></div></a></li><li><a href="/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Publicar um app de iPhone sem Mac: Kotlin Multiplatform, um Mac na nuvem e TestFlight</b></div></a></li><li><a href="/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Migrar um app Android para Kotlin Multiplatform com AGP 9: sete armadilhas</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

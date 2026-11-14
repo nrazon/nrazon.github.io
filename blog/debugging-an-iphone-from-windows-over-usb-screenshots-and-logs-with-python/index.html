@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Debugging an iPhone From Windows Over USB | Nesim Apps</title>
+<meta name="description" content="Dev notes: how I take screenshots, launch an app and read its log on an iPhone 7 from a Windows laptop with the Apple Devices app and the pymobiledevice3…">
+<link rel="canonical" href="https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Debugging an iPhone From Windows Over USB: Screenshots and Logs With Python">
+<meta property="og:description" content="Dev notes: how I take screenshots, launch an app and read its log on an iPhone 7 from a Windows laptop with the Apple Devices app and the pymobiledevice3…">
+<meta property="og:url" content="https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Debugging an iPhone From Windows Over USB: Screenshots and Logs With Python">
+<meta name="twitter:description" content="Dev notes: how I take screenshots, launch an app and read its log on an iPhone 7 from a Windows laptop with the Apple Devices app and the pymobiledevice3…">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Debugging an iPhone From Windows Over USB: Screenshots and Logs With Python", "description": "Dev notes: how I take screenshots, launch an app and read its log on an iPhone 7 from a Windows laptop with the Apple Devices app and the pymobiledevice3 Python tool, plus a real example of finding out why an ad banner was empty.", "inLanguage": "en", "mainEntityOfPage": "https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-14", "dateModified": "2026-11-14", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}, "keywords": "Dev notes, iOS"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nrazon.github.io/blog/"}, {"@type": "ListItem", "position": 3, "name": "Debugging an iPhone From Windows Over USB: Screenshots and Logs With Python", "item": "https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can I take screenshots from an iPhone on Windows?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. With the Apple Devices driver and the pymobiledevice3 tool you can mount the developer disk image once and then save screenshots from the command line."}}, {"@type": "Question", "name": "Do I need a Mac or Xcode for this?", "acceptedAnswer": {"@type": "Answer", "text": "No. The driver comes from the Apple Devices app and the tool is a Python package, so a Windows laptop is enough."}}, {"@type": "Question", "name": "Why does the tool say it cannot connect to usbmux?", "acceptedAnswer": {"@type": "Answer", "text": "The Apple USB driver was not running yet. Open the Apple Devices app once with the phone connected and trusted, then try again."}}, {"@type": "Question", "name": "How do I read only my own app's log?", "acceptedAnswer": {"@type": "Answer", "text": "Use syslog live with the process name option, write the output to a file and search it for your own tagged messages."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>Debugging an iPhone From Windows Over USB: Screenshots and Logs With Python</h1>
+    <p class="by">By Nesim Razon, independent Android developer · 2026-11-14</p>
+    <p class="tags"><a href="/blog/#devlog">#Dev notes</a><a href="/blog/#ios">#iOS</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">On Android, adb makes it easy to take a screenshot or read a log from a phone on your desk. I expected nothing like it for an iPhone on Windows, but there is a way: Apple&#x27;s own driver package plus an open source Python tool. Here is the setup that worked on an iPhone 7 running iOS 15.8, the traps in the order I hit them, and a real bug I solved with it.</p>
+    <h2>What you need</h2>
+    <ul><li>The Apple Devices app from the Microsoft Store. It brings the USB driver for iPhones, and winget can install it.</li><li>Python 3 and the pymobiledevice3 package.</li><li>A phone with a cable, the screen unlocked, and the Trust prompt accepted on the phone.</li></ul>
+    <h2>Install order matters</h2>
+    <p>After installing Apple Devices, the iPhone still showed up in Device Manager with an error status, and the tool answered that it could not connect to the usbmux socket. The fix was to open the Apple Devices app once with the phone connected and unlocked, accept the Trust prompt, and let it finish installing the drivers. Only then did the phone list correctly.</p>
+    <h2>The Python trap</h2>
+    <p>On my machine the first python on the path was an old Python 2.7, so the plain pip command installed nothing useful. On Windows the py launcher picks the right one: install with py -3 -m pip install pymobiledevice3 and always run the tool as py -3 -m pymobiledevice3, because the executable it creates is not on the path.</p>
+    <h2>Four commands I use all the time</h2>
+    <ul><li>usbmux list shows the connected phone with its model and iOS version.</li><li>mounter auto-mount downloads and mounts the developer disk image once. On iOS 15 I did not have to turn on any Developer Mode.</li><li>developer dvt launch followed by the bundle identifier starts the app.</li><li>developer screenshot followed by a file name saves what the screen shows right now.</li></ul>
+    <h2>Reading the log without drowning</h2>
+    <p>syslog live prints everything the phone logs, which is far too much. Filtering by process name keeps only your app. Even then my app produced more than a megabyte of log in thirty seconds, so I write the output to a file and search it afterwards instead of watching it scroll.</p>
+    <p>Your own messages are the easiest to find. In Swift a call to NSLog shows up in this log, so I tag my lines with the app name and search for that tag.</p>
+    <h2>A real example: why was the banner empty?</h2>
+    <p>My game showed no ad banner after I switched from Google&#x27;s demo ad unit to the real one. The phone gave no visible error. I added a small delegate to the banner view that writes the result of the ad request with NSLog, built it, installed it through TestFlight and read the log over USB.</p>
+    <p>The answer was one line: no ad to show. That means the ad server had nothing to fill with, which is normal for a brand new ad unit in an app that is not on the store yet. Without the log I would have kept looking for a bug in my code.</p>
+    <h2>Limits and privacy</h2>
+    <p>A screenshot captures whatever is on the screen, and an unfiltered log contains lines from other apps. If the phone is shared, as mine is with another project, I only launch my own app first and filter the log by its process name. The tool works over the trust you give the computer, so only accept the Trust prompt on machines you own.</p>
+    
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Can I take screenshots from an iPhone on Windows?</summary><p>Yes. With the Apple Devices driver and the pymobiledevice3 tool you can mount the developer disk image once and then save screenshots from the command line.</p></details><details><summary>Do I need a Mac or Xcode for this?</summary><p>No. The driver comes from the Apple Devices app and the tool is a Python package, so a Windows laptop is enough.</p></details><details><summary>Why does the tool say it cannot connect to usbmux?</summary><p>The Apple USB driver was not running yet. Open the Apple Devices app once with the phone connected and trusted, then try again.</p></details><details><summary>How do I read only my own app&#x27;s log?</summary><p>Use syslog live with the process name option, write the output to a file and search it for your own tagged messages.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/how-daily-puzzles-work-without-a-server/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>How a Daily Puzzle Can Be the Same for Everyone, No Server</b></div></a></li><li><a href="/blog/how-puzzle-levels-are-generated-and-checked/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>How Hundreds of Puzzle Levels Are Generated and Checked</b></div></a></li><li><a href="/blog/keeping-two-dozen-android-apps-maintainable-solo/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Keeping Two Dozen Android Apps Maintainable as a Solo Dev</b></div></a></li><li><a href="/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Catching a Stuck Interstitial Ad on Android With Event Logs</b></div></a></li><li><a href="/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Shipping an iPhone App Without a Mac: Kotlin Multiplatform, a Cloud Mac and TestFlight</b></div></a></li><li><a href="/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Moving an Android App to Kotlin Multiplatform With AGP 9: Seven Traps</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

@@ -47,7 +47,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/blog/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/"/>
@@ -65,12 +65,21 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/detectar-anuncio-intersticial-bloqueado-android-eventos/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/blog/earthquake-magnitude-vs-intensity/</loc>
@@ -110,7 +119,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/"/>
@@ -119,7 +128,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/"/>
@@ -146,7 +155,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/blog/keeping-two-dozen-android-apps-maintainable-solo/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/keeping-two-dozen-android-apps-maintainable-solo/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/mantener-dos-docenas-de-apps-android-siendo-un-solo-desarrollador/"/>
@@ -172,6 +181,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/mahjong-solitaire-history-vs-real-mahjong/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/blog/pentomino-puzzles-dancing-links-exact-cover/</loc>
     <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/pentomino-puzzles-dancing-links-exact-cover/"/>
@@ -188,6 +206,24 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/historia-de-los-pentominos-golomb-doce-piezas/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/historia-dos-pentominos-golomb-doze-pecas/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/pentominoes-history-golomb-twelve-pieces/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/blog/tic-tac-toe-history-and-variants/</loc>
@@ -285,7 +321,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/es/blog/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/"/>
@@ -321,7 +357,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/"/>
@@ -347,8 +383,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/where-earthquake-data-comes-from/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/es/blog/detectar-anuncio-intersticial-bloqueado-android-eventos/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/detectar-anuncio-intersticial-bloqueado-android-eventos/"/>
@@ -392,6 +437,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/mahjong-solitaire-history-vs-real-mahjong/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/es/blog/magnitud-e-intensidad-de-un-terremoto/</loc>
     <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/earthquake-magnitude-vs-intensity/"/>
@@ -402,7 +456,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/es/blog/mantener-dos-docenas-de-apps-android-siendo-un-solo-desarrollador/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/keeping-two-dozen-android-apps-maintainable-solo/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/mantener-dos-docenas-de-apps-android-siendo-un-solo-desarrollador/"/>
@@ -410,8 +464,26 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/keeping-two-dozen-android-apps-maintainable-solo/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/"/>
@@ -1173,7 +1245,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/blog/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/"/>
@@ -1200,7 +1272,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/"/>
@@ -1235,8 +1307,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/where-earthquake-data-comes-from/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/detectar-anuncio-intersticial-bloqueado-android-eventos/"/>
@@ -1289,6 +1370,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/mahjong-solitaire-history-vs-real-mahjong/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/pt/blog/magnitude-e-intensidade-de-um-terremoto/</loc>
     <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/earthquake-magnitude-vs-intensity/"/>
@@ -1299,12 +1389,21 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/keeping-two-dozen-android-apps-maintainable-solo/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/mantener-dos-docenas-de-apps-android-siendo-un-solo-desarrollador/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/keeping-two-dozen-android-apps-maintainable-solo/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/blog/o-que-e-imc-como-calcular-e-interpretar/</loc>
@@ -1316,8 +1415,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/what-is-bmi-how-to-calculate-and-read-it/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/"/>
@@ -2188,7 +2296,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/yazilar/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/"/>
@@ -2206,12 +2314,21 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/detectar-anuncio-intersticial-bloqueado-android-eventos/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/yazilar/ay-evreleri-neden-29-5-gunde-doner-yeniay-dolunay/</loc>
@@ -2237,7 +2354,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/"/>
@@ -2265,6 +2382,33 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/terremoto-que-hacer-antes-durante-despues/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/terremoto-o-que-fazer-antes-durante-depois/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/earthquake-preparedness-what-to-do/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tahtasi-cozulebilir-nasil-garanti-ederiz/</loc>
@@ -2326,7 +2470,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/"/>
@@ -2335,7 +2479,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/keeping-two-dozen-android-apps-maintainable-solo/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/mantener-dos-docenas-de-apps-android-siendo-un-solo-desarrollador/"/>

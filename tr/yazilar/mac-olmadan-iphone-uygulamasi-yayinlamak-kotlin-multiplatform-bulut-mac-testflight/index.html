@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mac Olmadan iPhone Uygulaması Yayınlamak | Nesim Apps</title>
+<meta name="description" content="Geliştirici notu: Kotlin ve Compose ile yazılmış bir Android oyununu Windows dizüstünden TestFlight&#x27;a ve App Store incelemesine nasıl taşıdım: Kotlin…">
+<link rel="canonical" href="https://nrazon.github.io/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Mac Olmadan iPhone Uygulaması Yayınlamak: Kotlin Multiplatform, Bulut Mac ve TestFlight">
+<meta property="og:description" content="Geliştirici notu: Kotlin ve Compose ile yazılmış bir Android oyununu Windows dizüstünden TestFlight&#x27;a ve App Store incelemesine nasıl taşıdım: Kotlin…">
+<meta property="og:url" content="https://nrazon.github.io/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mac Olmadan iPhone Uygulaması Yayınlamak: Kotlin Multiplatform, Bulut Mac ve TestFlight">
+<meta name="twitter:description" content="Geliştirici notu: Kotlin ve Compose ile yazılmış bir Android oyununu Windows dizüstünden TestFlight&#x27;a ve App Store incelemesine nasıl taşıdım: Kotlin…">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Mac Olmadan iPhone Uygulaması Yayınlamak: Kotlin Multiplatform, Bulut Mac ve TestFlight", "description": "Geliştirici notu: Kotlin ve Compose ile yazılmış bir Android oyununu Windows dizüstünden TestFlight'a ve App Store incelemesine nasıl taşıdım: Kotlin Multiplatform, GitHub Actions macOS makinesi ve App Store Connect API anahtarı.", "inLanguage": "tr", "mainEntityOfPage": "https://nrazon.github.io/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-14", "dateModified": "2026-11-14", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}, "keywords": "Geliştirici notları, iOS"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/tr/"}, {"@type": "ListItem", "position": 2, "name": "Yazılar", "item": "https://nrazon.github.io/tr/yazilar/"}, {"@type": "ListItem", "position": 3, "name": "Mac Olmadan iPhone Uygulaması Yayınlamak: Kotlin Multiplatform, Bulut Mac ve TestFlight", "item": "https://nrazon.github.io/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "App Store'da uygulama yayınlamak için Mac gerekir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Masanda gerekmez. Bir Mac derleme makinesi lazım ama GitHub Actions macOS makinesi gibi bir bulut makinesi bu işi görür. Yine de bir Apple Developer üyeliği gerekir."}}, {"@type": "Question", "name": "Windows, iOS için Kotlin kodunu derleyebilir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Kotlin kısmı için evet: iOS hedefleri Windows'ta derlenir. Framework'ü bağlamak, Swift uygulamasını derlemek ve imzalamak macOS ister."}}, {"@type": "Question", "name": "Mac olmadan uygulama nasıl imzalanıyor?", "acceptedAnswer": {"@type": "Answer", "text": "Gizli değişken olarak saklanan bir App Store Connect API anahtarıyla. Bulut makinesindeki Xcode bunu bulutta yönetilen imzalama için kullanır ve doğrudan TestFlight'a yükler."}}, {"@type": "Question", "name": "Bir bulut derlemesi ne kadar sürüyor?", "acceptedAnswer": {"@type": "Answer", "text": "Benim düzenimde bir TestFlight turu yaklaşık altı dakika sürdü; hiçbir şeyin önbellekte olmadığı ilk turda biraz daha fazla."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/" hreflang="tr" data-lang="tr" aria-current="page">TR</a><a href="/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/tr/">Nesim Apps</a> › <a href="/tr/yazilar/">Yazılar</a></nav>
+    <h1>Mac Olmadan iPhone Uygulaması Yayınlamak: Kotlin Multiplatform, Bulut Mac ve TestFlight</h1>
+    <p class="by">Nesim Razon, bağımsız Android geliştiricisi · 2026-11-14</p>
+    <p class="tags"><a href="/tr/yazilar/#devlog">#Geliştirici notları</a><a href="/tr/yazilar/#ios">#iOS</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Windows&#x27;ta geliştirme yapıyorum ve Mac&#x27;im yok, ama küçük Android oyunum 2048&#x27;in App Store&#x27;da da olmasını istedim. Meğer masanda Mac olmasına gerek yokmuş; her derleme için birkaç dakikalığına bulutta bir Mac yeterli. İşte bir derlemeyi dizüstümden TestFlight&#x27;a ve bir gün içinde App Store incelemesine götüren hat ve yolda yediğim tuzaklar.</p>
+    <h2>Projenin şekli</h2>
+    <p>Oyun zaten Kotlin ve Jetpack Compose ile yazılmıştı, ben de onu Kotlin Multiplatform ve Compose Multiplatform&#x27;a taşıdım. Ortak bir modülde artık oyun kuralları, ekranlar, kayıtlı oyun, metinler ve yazı tipi duruyor. Android uygulaması bunun etrafında ince bir kabuk, küçük bir Swift uygulaması da iOS kabuğu.</p>
+    <p>Platformlar arasında farklı olan her şey tek bir küçük arayüzün arkasında: banner reklam, liderlik tablosu, puan isteme penceresi, paylaşma. Android bunu zaten kullandığı SDK&#x27;larla uyguluyor. iOS&#x27;ta Swift tarafı Google Mobile Ads SDK&#x27;sı ve Game Center ile uyguluyor. Bir ayrıntı daha: Android Gradle Plugin 9 ile Android uygulama eklentisi ve Kotlin Multiplatform eklentisi artık aynı modülde duramıyor, bu yüzden ortak kod kendi kütüphane modülünde.</p>
+    <h2>Windows ne yapabilir, ne yapamaz</h2>
+    <p>Kotlin, iOS kodunu Windows&#x27;ta derler. iOS simülatör derlemesi gibi görevler yerelde çalışır ve Kotlin hatalarını bildirir; yani ortak kodun ve iOS&#x27;a özel Kotlin&#x27;in çoğunu masamda kontrol edebildim. Windows&#x27;un yapamadığı şey iOS framework&#x27;ünü bağlamak, Swift uygulamasını derlemek ve imzalamak. Bu kısım macOS ister.</p>
+    <p>Pratik sonucu: Kotlin hatasını görmek için hiç Mac beklemiyorum, ama Swift hatası bir CI turuna mal oluyor, çünkü Swift tarafını elimde derleyici olmadan yazıyorum. Swift kodunu tam bu yüzden küçük tuttum.</p>
+    <h2>Depoda Xcode proje dosyası yok</h2>
+    <p>Xcode olmayınca elle düzenlenecek proje dosyası da yok; uygulamayı kısa bir YAML dosyasıyla anlatıyorum ve XcodeGen projeyi derleme makinesinde üretiyor. YAML&#x27;da paket kimliği, Info.plist değerleri, Game Center yetkisi, reklam için Swift paketleri ve Gradle&#x27;a ortak framework&#x27;ü derletip gömdüren bir ön derleme betiği var.</p>
+    <p>Bozuk bir YAML dosyası bir derleme başlangıcına mal olur. Benimki bir kez bozuldu: uzun bir listenin satır sonu kaybolmuştu ve iş saniyeler içinde düştü; artık her göndermeden önce dosyayı yerelde küçük bir betikle ayrıştırıyorum.</p>
+    <h2>Bulut Mac</h2>
+    <p>Derleme bir GitHub Actions macOS makinesinde çalışıyor. İş, kodu çeker, Java ve Gradle önbelleğini kurar, XcodeGen&#x27;i Homebrew ile yükler, projeyi üretir ve xcodebuild&#x27;i çalıştırır. Kullandığım makinede kurulu Xcode yeni bir 26.x sürümüydü; bu önemli, çünkü App Store Connect&#x27;e yükleme güncel bir SDK ister.</p>
+    <p>iOS dalına her gönderim hızlı, imzasız bir simülatör derlemesi çalıştırır. Mesajında testflight sözcüğü geçen bir commit ise onun yerine diğer işi çalıştırır: arşivler, imzalar, yükler. Böylece normal bir gönderim ucuz kalıyor ve bir derlemenin Apple&#x27;a ne zaman gideceğine ben karar veriyorum.</p>
+    <h2>Mac olmadan imzalamak</h2>
+    <p>Yine de bir Apple Developer üyeliği lazım, ama bir Mac&#x27;te anahtar zincirine gerek yok. App Store Connect&#x27;te bir API anahtarı oluşturup anahtar dosyasını, anahtar kimliğini ve yayıncı kimliğini depo gizli değişkenleri olarak saklıyorsun. xcodebuild bunları, hazırlık güncellemelerine izin veren bayrakla birlikte argüman olarak kabul ediyor; sertifikaları ve profilleri Apple bulutta oluşturup yönetiyor.</p>
+    <p>Dışa aktarma adımı, yöntemi app-store-connect, hedefi upload olan bir seçenek dosyası kullanır; yani arşivi dışa aktaran komut onu aynı anda TestFlight&#x27;a yükler.</p>
+    <p>Asıl tuzak anahtarın rolüydü. App Manager rolündeki anahtarla arşiv adımı geçti ama dışa aktarma bir bulut imzalama izin hatasıyla düştü. Admin rolünde yeni bir anahtar sorunu çözdü.</p>
+    <h2>Ne kadara mal oluyor</h2>
+    <p>Ücretsiz GitHub planında dahil kullanım dolar cinsinden ölçülür. Yazdığım sırada bir macOS dakikası bir Linux dakikasının yaklaşık on katı. Deneylerin ilk tam günü 54 macOS dakikası, yani dahil kredinin üç doların biraz üstünü kullandı; tek bir TestFlight turu yaklaşık altı dakika sürüyor.</p>
+    <p>İki alışkanlık maliyeti düşük tutuyor: simülatör derlemesini yalnızca yükleme istemediğimde çalıştırmak ve göndermeden önce dosyaları yerelde kontrol etmek. Dahil kredi biterse çalıştırmalar sadece durur; ödeme yöntemi bağlı olmayan bir planda sürpriz fatura çıkmaz.</p>
+    <h2>Bilmeye değer küçük tuzaklar</h2>
+    <ul><li>Gradle sarmalayıcı betiği Windows&#x27;tan commit edilince çalıştırma iznini kaybetti, bu yüzden ilk iOS derlemesi izin reddiyle düştü. Tek bir git komutu bunu kalıcı çözer.</li><li>Compose Multiplatform&#x27;un artık Intel simülatör hedefi yok; derleme arm64 simülatörü ve gerçek cihazlarla sınırlı.</li><li>GitHub&#x27;a giriş yaptıran bir komut satırı aracı Windows&#x27;un sakladığı Git kimlik bilgisini de değiştirebiliyor; saklı kimliği silene kadar sonraki gönderimde 403 olarak karşıma çıktı.</li></ul>
+    <h2>Gerçek telefonda denemek</h2>
+    <p>Derleme TestFlight üzerinden iOS 15.8 çalıştıran bir iPhone 7&#x27;de çalışıyor. Bunun için dağıtım hedefini iOS 15 yapmak yetti; eski bir telefon işe yarar bir düşük seviye test cihazı. Birkaç turdan sonra oyun Android&#x27;dekiyle aynı oynadı; reklamlar ve liderlik tablosu Swift tarafından çalışıyor.</p>
+    
+    <section class="faq"><h2>Sık sorulan sorular</h2><details><summary>App Store&#x27;da uygulama yayınlamak için Mac gerekir mi?</summary><p>Masanda gerekmez. Bir Mac derleme makinesi lazım ama GitHub Actions macOS makinesi gibi bir bulut makinesi bu işi görür. Yine de bir Apple Developer üyeliği gerekir.</p></details><details><summary>Windows, iOS için Kotlin kodunu derleyebilir mi?</summary><p>Kotlin kısmı için evet: iOS hedefleri Windows&#x27;ta derlenir. Framework&#x27;ü bağlamak, Swift uygulamasını derlemek ve imzalamak macOS ister.</p></details><details><summary>Mac olmadan uygulama nasıl imzalanıyor?</summary><p>Gizli değişken olarak saklanan bir App Store Connect API anahtarıyla. Bulut makinesindeki Xcode bunu bulutta yönetilen imzalama için kullanır ve doğrudan TestFlight&#x27;a yükler.</p></details><details><summary>Bir bulut derlemesi ne kadar sürüyor?</summary><p>Benim düzenimde bir TestFlight turu yaklaşık altı dakika sürdü; hiçbir şeyin önbellekte olmadığı ilk turda biraz daha fazla.</p></details></section>
+    <section><h2>Diğer yazılar</h2><ul class="glist"><li><a href="/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Sunucu Olmadan Herkese Aynı Günlük Bulmaca Nasıl Verilir?</b></div></a></li><li><a href="/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Yüzlerce Bulmaca Bölümü Nasıl Üretilir ve Doğrulanır?</b></div></a></li><li><a href="/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Tek Geliştirici, Yaklaşık İki Düzine Android Uygulaması</b></div></a></li><li><a href="/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Android&#x27;de Takılan Geçiş Reklamını Olay Kayıtlarıyla Yakalamak</b></div></a></li><li><a href="/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Bir Android Uygulamasını AGP 9 ile Kotlin Multiplatform&#x27;a Taşımak: Yedi Tuzak</b></div></a></li><li><a href="/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>iPhone&#x27;u Windows&#x27;tan USB ile Ayıklamak: Python ile Ekran Görüntüsü ve Günlük</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

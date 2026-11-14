@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iPhone&#x27;u Windows&#x27;tan USB ile Ayıklamak | Nesim Apps</title>
+<meta name="description" content="Geliştirici notu: Apple Devices uygulaması ve pymobiledevice3 Python aracıyla Windows dizüstünden bir iPhone 7&#x27;de ekran görüntüsü almak, uygulamayı başlatmak…">
+<link rel="canonical" href="https://nrazon.github.io/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="iPhone&#x27;u Windows&#x27;tan USB ile Ayıklamak: Python ile Ekran Görüntüsü ve Günlük">
+<meta property="og:description" content="Geliştirici notu: Apple Devices uygulaması ve pymobiledevice3 Python aracıyla Windows dizüstünden bir iPhone 7&#x27;de ekran görüntüsü almak, uygulamayı başlatmak…">
+<meta property="og:url" content="https://nrazon.github.io/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="iPhone&#x27;u Windows&#x27;tan USB ile Ayıklamak: Python ile Ekran Görüntüsü ve Günlük">
+<meta name="twitter:description" content="Geliştirici notu: Apple Devices uygulaması ve pymobiledevice3 Python aracıyla Windows dizüstünden bir iPhone 7&#x27;de ekran görüntüsü almak, uygulamayı başlatmak…">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "iPhone'u Windows'tan USB ile Ayıklamak: Python ile Ekran Görüntüsü ve Günlük", "description": "Geliştirici notu: Apple Devices uygulaması ve pymobiledevice3 Python aracıyla Windows dizüstünden bir iPhone 7'de ekran görüntüsü almak, uygulamayı başlatmak ve günlüğünü okumak; bir reklam banner'ının neden boş olduğunu bulmanın gerçek örneğiyle.", "inLanguage": "tr", "mainEntityOfPage": "https://nrazon.github.io/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-14", "dateModified": "2026-11-14", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}, "keywords": "Geliştirici notları, iOS"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/tr/"}, {"@type": "ListItem", "position": 2, "name": "Yazılar", "item": "https://nrazon.github.io/tr/yazilar/"}, {"@type": "ListItem", "position": 3, "name": "iPhone'u Windows'tan USB ile Ayıklamak: Python ile Ekran Görüntüsü ve Günlük", "item": "https://nrazon.github.io/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Windows'ta bir iPhone'dan ekran görüntüsü alabilir miyim?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. Apple Devices sürücüsü ve pymobiledevice3 aracıyla geliştirici disk imajını bir kez bağlayıp sonra komut satırından ekran görüntüsü kaydedebilirsin."}}, {"@type": "Question", "name": "Bunun için Mac ya da Xcode gerekir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Sürücü Apple Devices uygulamasından, araç bir Python paketi; Windows dizüstü yeterli."}}, {"@type": "Question", "name": "Araç neden usbmux'a bağlanamadığını söylüyor?", "acceptedAnswer": {"@type": "Answer", "text": "Apple USB sürücüsü henüz çalışmıyordu. Telefon bağlı ve güvenilir iken Apple Devices uygulamasını bir kez aç, sonra tekrar dene."}}, {"@type": "Question", "name": "Yalnızca kendi uygulamamın günlüğünü nasıl okurum?", "acceptedAnswer": {"@type": "Answer", "text": "syslog live'ı süreç adı seçeneğiyle kullan, çıktıyı bir dosyaya yaz ve kendi etiketlediğin mesajları ara."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/" hreflang="tr" data-lang="tr" aria-current="page">TR</a><a href="/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/tr/">Nesim Apps</a> › <a href="/tr/yazilar/">Yazılar</a></nav>
+    <h1>iPhone&#x27;u Windows&#x27;tan USB ile Ayıklamak: Python ile Ekran Görüntüsü ve Günlük</h1>
+    <p class="by">Nesim Razon, bağımsız Android geliştiricisi · 2026-11-14</p>
+    <p class="tags"><a href="/tr/yazilar/#devlog">#Geliştirici notları</a><a href="/tr/yazilar/#ios">#iOS</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Android&#x27;de adb, masandaki bir telefondan ekran görüntüsü almayı ya da günlük okumayı kolaylaştırır. Windows&#x27;ta bir iPhone için buna benzer bir şey beklemiyordum ama bir yolu var: Apple&#x27;ın kendi sürücü paketi ve açık kaynaklı bir Python aracı. İşte iOS 15.8 çalıştıran bir iPhone 7&#x27;de işe yarayan kurulum, tuzaklar karşılaştığım sırayla ve onunla çözdüğüm gerçek bir hata.</p>
+    <h2>Ne lazım</h2>
+    <ul><li>Microsoft Store&#x27;dan Apple Devices uygulaması. iPhone&#x27;lar için USB sürücüsünü getirir ve winget ile kurulabilir.</li><li>Python 3 ve pymobiledevice3 paketi.</li><li>Kablolu bir telefon, kilidi açık ekran ve telefonda kabul edilmiş Güven (Trust) isteği.</li></ul>
+    <h2>Kurulum sırası önemli</h2>
+    <p>Apple Devices kurulduktan sonra iPhone Aygıt Yöneticisi&#x27;nde hâlâ hata durumuyla görünüyordu ve araç usbmux soketine bağlanamadığını söylüyordu. Çözüm, telefon bağlı ve kilidi açıkken Apple Devices uygulamasını bir kez açmak, Güven isteğini kabul etmek ve sürücü kurulumunu bitirmesini beklemekti. Telefon ancak ondan sonra doğru listelendi.</p>
+    <h2>Python tuzağı</h2>
+    <p>Benim makinemde yoldaki ilk python eski bir Python 2.7&#x27;ydi; bu yüzden düz pip komutu işe yarar bir şey kurmadı. Windows&#x27;ta py başlatıcısı doğrusunu seçer: py -3 -m pip install pymobiledevice3 ile kur ve aracı her zaman py -3 -m pymobiledevice3 olarak çalıştır, çünkü oluşturduğu çalıştırılabilir dosya yolda değil.</p>
+    <h2>Sürekli kullandığım dört komut</h2>
+    <ul><li>usbmux list, bağlı telefonu modeli ve iOS sürümüyle gösterir.</li><li>mounter auto-mount, geliştirici disk imajını bir kez indirir ve bağlar. iOS 15&#x27;te herhangi bir Geliştirici Modu açmam gerekmedi.</li><li>developer dvt launch ve ardından paket kimliği, uygulamayı başlatır.</li><li>developer screenshot ve ardından bir dosya adı, ekranın o an gösterdiğini kaydeder.</li></ul>
+    <h2>Boğulmadan günlük okumak</h2>
+    <p>syslog live, telefonun günlüğe yazdığı her şeyi basar; bu fazlasıyla çok. Süreç adına göre süzmek yalnızca uygulamanı bırakır. Yine de uygulamam otuz saniyede bir megabaytın üstünde günlük üretti; bu yüzden çıktıyı bir dosyaya yazıp akmasını izlemek yerine sonradan arıyorum.</p>
+    <p>En kolay bulunanlar kendi mesajların. Swift&#x27;te bir NSLog çağrısı bu günlükte görünür; ben satırlarımı uygulama adıyla etiketliyorum ve o etiketi arıyorum.</p>
+    <h2>Gerçek bir örnek: banner neden boştu?</h2>
+    <p>Oyunum, Google&#x27;ın demo reklam biriminden gerçeğine geçince reklam banner&#x27;ı göstermedi. Telefon görünür bir hata vermedi. Banner görünümüne, reklam isteğinin sonucunu NSLog ile yazan küçük bir temsilci ekledim, derledim, TestFlight ile kurdum ve günlüğü USB&#x27;den okudum.</p>
+    <p>Cevap tek satırdı: gösterilecek reklam yok. Bu, reklam sunucusunun dolduracak bir şeyi olmadığı anlamına gelir; henüz mağazada olmayan bir uygulamada yepyeni bir reklam birimi için normaldir. Günlük olmasa kodumda hata aramaya devam ederdim.</p>
+    <h2>Sınırlar ve gizlilik</h2>
+    <p>Ekran görüntüsü ekranda ne varsa onu yakalar ve süzülmemiş bir günlük başka uygulamaların satırlarını içerir. Telefon paylaşılıyorsa, benimki başka bir projeyle ortak, önce yalnızca kendi uygulamamı başlatıyorum ve günlüğü süreç adına göre süzüyorum. Araç, bilgisayara verdiğin güven üzerinden çalışır; Güven isteğini yalnızca sahip olduğun makinelerde kabul et.</p>
+    
+    <section class="faq"><h2>Sık sorulan sorular</h2><details><summary>Windows&#x27;ta bir iPhone&#x27;dan ekran görüntüsü alabilir miyim?</summary><p>Evet. Apple Devices sürücüsü ve pymobiledevice3 aracıyla geliştirici disk imajını bir kez bağlayıp sonra komut satırından ekran görüntüsü kaydedebilirsin.</p></details><details><summary>Bunun için Mac ya da Xcode gerekir mi?</summary><p>Hayır. Sürücü Apple Devices uygulamasından, araç bir Python paketi; Windows dizüstü yeterli.</p></details><details><summary>Araç neden usbmux&#x27;a bağlanamadığını söylüyor?</summary><p>Apple USB sürücüsü henüz çalışmıyordu. Telefon bağlı ve güvenilir iken Apple Devices uygulamasını bir kez aç, sonra tekrar dene.</p></details><details><summary>Yalnızca kendi uygulamamın günlüğünü nasıl okurum?</summary><p>syslog live&#x27;ı süreç adı seçeneğiyle kullan, çıktıyı bir dosyaya yaz ve kendi etiketlediğin mesajları ara.</p></details></section>
+    <section><h2>Diğer yazılar</h2><ul class="glist"><li><a href="/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Sunucu Olmadan Herkese Aynı Günlük Bulmaca Nasıl Verilir?</b></div></a></li><li><a href="/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Yüzlerce Bulmaca Bölümü Nasıl Üretilir ve Doğrulanır?</b></div></a></li><li><a href="/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Tek Geliştirici, Yaklaşık İki Düzine Android Uygulaması</b></div></a></li><li><a href="/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Android&#x27;de Takılan Geçiş Reklamını Olay Kayıtlarıyla Yakalamak</b></div></a></li><li><a href="/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Mac Olmadan iPhone Uygulaması Yayınlamak: Kotlin Multiplatform, Bulut Mac ve TestFlight</b></div></a></li><li><a href="/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Bir Android Uygulamasını AGP 9 ile Kotlin Multiplatform&#x27;a Taşımak: Yedi Tuzak</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>
