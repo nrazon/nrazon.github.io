@@ -28,6 +28,13 @@ def esc(s):
     return H.escape(s, quote=True)
 
 
+def more_about(name):
+    """'Daha fazla' baglantisi: ekran okuyucu/Lighthouse icin gorunmez ama anlamli ek metin ("Learn more about Sliplines")."""
+    d = {"tr": f'Daha fazla<span class="vh">: {name}</span>', "en": f'Learn more<span class="vh"> about {name}</span>',
+         "es": f'Más información<span class="vh"> sobre {name}</span>', "pt": f'Saiba mais<span class="vh"> sobre {name}</span>'}
+    return L(d, "b")
+
+
 def L(d, tag="span", cls=""):
     """4 dilli metin: her dil kendi lang etiketli öğesinde (CSS yalnız seçili dili gösterir)."""
     c = f' class="{cls}"' if cls else ""
@@ -212,7 +219,7 @@ def show_card(a):
         <h3><a class="stretch" href="{s}/">{esc(a["names"]["en"])}</a>{badge_new(a["new"])}</h3>
         <p class="stag">{L(SHOW_TAG[s])}</p>
         {L(desc, "p", "sdesc")}
-        <div class="links">{badge(pk)}{badge_ios(s)}{qr_html(s)}<a class="small" href="{s}/">{L(T["more"], "b")}</a></div>
+        <div class="links">{badge(pk)}{badge_ios(s)}{qr_html(s)}<a class="small" href="{s}/">{more_about(esc(a["names"]["en"]))}</a></div>
       </div>
       <div class="shots" aria-hidden="true">{shot_imgs(s, picks)}</div>
     </article>'''
@@ -346,6 +353,7 @@ CSS = r'''
   .links { display:flex; flex-wrap:wrap; gap:8px 14px; align-items:center; }
   .play img { height:44px; width:auto; display:block; }
   .small { color:var(--link); font-size:14px; }
+  .vh { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
 
   /* QR ile yükle: yalnız fare olan geniş ekranlarda (masaüstü); telefonda Play rozeti yeterli */
   .qr { display:none; position:relative; z-index:2; }
@@ -450,7 +458,7 @@ def build(preview):
       <span class="tag" data-new-until="{hero_app["new"]}">{L(T["newgame"])}</span>
       {L(TILELINGS, "p")}
       {chips}
-      <div class="links">{badge("com.tilelings.nesimapps")}{qr_html("tilelings")}<a class="small" href="tilelings/">{L(T["more"], "b")}</a></div>
+      <div class="links">{badge("com.tilelings.nesimapps")}{qr_html("tilelings")}<a class="small" href="tilelings/">{more_about("Tilelings")}</a></div>
     </div>
   </section>'''
     return f'''<!doctype html>
