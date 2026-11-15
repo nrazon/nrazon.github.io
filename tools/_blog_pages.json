@@ -9,7 +9,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/"
    },
    "default": "en",
-   "hash": "79da1e1cd17e02d7463f14ac159c0832"
+   "hash": "811286e49d5d18f4cbca8ada0cc89695"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tahtasi-cozulebilir-nasil-garanti-ederiz/",
@@ -20,7 +20,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/"
    },
    "default": "en",
-   "hash": "b60672bdc5492be45d8e512112038d42"
+   "hash": "021402cd0a1ca7f261e5fab9074b033d"
   },
   {
    "url": "https://nrazon.github.io/es/blog/como-garantizamos-que-un-mahjong-solitario-tenga-solucion/",
@@ -31,7 +31,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/"
    },
    "default": "en",
-   "hash": "4065b7294156d63a18a13b7d28f4def8"
+   "hash": "a0f7467b322e7d9ffbdc0a0fc2e34b52"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/",
@@ -42,7 +42,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/"
    },
    "default": "en",
-   "hash": "41eecc77925f3912ab9d1e9ce769d465"
+   "hash": "b1f0e2a88c65b1b5d7fe6f78c250ca2c"
   },
   {
    "url": "https://nrazon.github.io/blog/mahjong-solitaire-history-vs-real-mahjong/",
@@ -53,7 +53,7 @@
     "pt": "https://nrazon.github.io/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/"
    },
    "default": "en",
-   "hash": "1de63e628f50f79f34fd273fc8e18239"
+   "hash": "77de5ddb1df9da411fb97e6bf7c92baf"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/mahjong-solitaire-tarihi-ve-klasik-mahjong-farki/",
@@ -64,7 +64,7 @@
     "pt": "https://nrazon.github.io/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/"
    },
    "default": "en",
-   "hash": "be831d8c03ee495a8dee7a94a0351254"
+   "hash": "59ef440267c5e81272f5ded0d501213d"
   },
   {
    "url": "https://nrazon.github.io/es/blog/historia-mahjong-solitario-y-diferencias-con-mahjong/",
@@ -75,7 +75,7 @@
     "pt": "https://nrazon.github.io/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/"
    },
    "default": "en",
-   "hash": "922a641f7a60f827aca40b64bd08042c"
+   "hash": "bb36671259c8658f32d16c1339667da7"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/",
@@ -86,7 +86,7 @@
     "pt": "https://nrazon.github.io/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/"
    },
    "default": "en",
-   "hash": "48b4bbb74e5813128fd5132b88699682"
+   "hash": "c3c28af1f42c4b3be7db4a4a0861960f"
   },
   {
    "url": "https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/",
@@ -97,7 +97,7 @@
     "pt": "https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"
    },
    "default": "en",
-   "hash": "283d8a49ec374fb4df595c94228aff85"
+   "hash": "b2cd13d2bed27c84578ed9f34ca7839f"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/",
@@ -108,7 +108,7 @@
     "pt": "https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"
    },
    "default": "en",
-   "hash": "ac131a7de6cd01f48dfc10dd5c829ed4"
+   "hash": "aaf22b6a427e5e6a00a8fc0ad2a5e811"
   },
   {
    "url": "https://nrazon.github.io/es/blog/puzle-diario-igual-para-todos-sin-servidor/",
@@ -119,7 +119,7 @@
     "pt": "https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"
    },
    "default": "en",
-   "hash": "768c4be579967bd97c1e763a2ee26620"
+   "hash": "3368b26922d49f1af95c568f9ecff0ac"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/",
@@ -130,7 +130,7 @@
     "pt": "https://nrazon.github.io/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"
    },
    "default": "en",
-   "hash": "b5c3227b58654370a3090ce5fc30144e"
+   "hash": "ad35ce0ae250da03e663c01fee80fac0"
   },
   {
    "url": "https://nrazon.github.io/blog/how-puzzle-levels-are-generated-and-checked/",
@@ -141,7 +141,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"
    },
    "default": "en",
-   "hash": "bc46e50431a1cfa711e2068b49c0297b"
+   "hash": "bc62f814f67e81a7f932c13b77953f1b"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/",
@@ -152,7 +152,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"
    },
    "default": "en",
-   "hash": "7a18dcf418c87f94ae583c62f4eb6680"
+   "hash": "b23e5cb687432f1fc96ccf3ff201fd03"
   },
   {
    "url": "https://nrazon.github.io/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/",
@@ -163,7 +163,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"
    },
    "default": "en",
-   "hash": "905b57e5c535aa32925d8debdbe7024f"
+   "hash": "210c81c4396c9ff576c51f36573cd32f"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/",
@@ -174,7 +174,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"
    },
    "default": "en",
-   "hash": "1a7f25c18de1e2e60c6ed6376af7f2a7"
+   "hash": "29e5d3d5057e0b4e2ac14167d7e75399"
   },
   {
    "url": "https://nrazon.github.io/blog/tic-tac-toe-history-and-variants/",
@@ -185,7 +185,7 @@
     "pt": "https://nrazon.github.io/pt/blog/historia-do-jogo-da-velha-e-variantes/"
    },
    "default": "en",
-   "hash": "d5dfcb72e27ffa011a558b903dd57c73"
+   "hash": "f687318acfb6a7c8b97dac5446ed47b5"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/xox-tarihi-ve-cesitleri/",
@@ -196,7 +196,7 @@
     "pt": "https://nrazon.github.io/pt/blog/historia-do-jogo-da-velha-e-variantes/"
    },
    "default": "en",
-   "hash": "25baa353155085fdae8f9719afec1059"
+   "hash": "9785d613f69403a332b7b435ec49a6df"
   },
   {
    "url": "https://nrazon.github.io/es/blog/historia-del-tres-en-raya-y-sus-variantes/",
@@ -207,7 +207,7 @@
     "pt": "https://nrazon.github.io/pt/blog/historia-do-jogo-da-velha-e-variantes/"
    },
    "default": "en",
-   "hash": "a7b0034b3246d538fbb0eae65cf92282"
+   "hash": "f59133e4968a8f537a3af63084797172"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/historia-do-jogo-da-velha-e-variantes/",
@@ -218,7 +218,7 @@
     "pt": "https://nrazon.github.io/pt/blog/historia-do-jogo-da-velha-e-variantes/"
    },
    "default": "en",
-   "hash": "c340a64cd7ff4d2ad4954d859fc3901d"
+   "hash": "976875c5f01fb78fe4113792cde21fe2"
   },
   {
    "url": "https://nrazon.github.io/blog/earthquake-magnitude-vs-intensity/",
@@ -229,7 +229,7 @@
     "pt": "https://nrazon.github.io/pt/blog/magnitude-e-intensidade-de-um-terremoto/"
    },
    "default": "en",
-   "hash": "b7fd4ee976293135f7215d722efc8c1d"
+   "hash": "2d0ca7c2b07bf4c9bb5fac73ad6d1163"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/deprem-buyuklugu-ve-siddeti-arasindaki-fark/",
@@ -240,7 +240,7 @@
     "pt": "https://nrazon.github.io/pt/blog/magnitude-e-intensidade-de-um-terremoto/"
    },
    "default": "en",
-   "hash": "25cef6408bc2b850fc8a089ebb5141e5"
+   "hash": "7f459ccc21f22834d262c8a07bfef036"
   },
   {
    "url": "https://nrazon.github.io/es/blog/magnitud-e-intensidad-de-un-terremoto/",
@@ -251,7 +251,7 @@
     "pt": "https://nrazon.github.io/pt/blog/magnitude-e-intensidade-de-um-terremoto/"
    },
    "default": "en",
-   "hash": "e4190de93b0bd2f9d84393ea05f4bc98"
+   "hash": "914930a1867c37ce411ea43467848303"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/magnitude-e-intensidade-de-um-terremoto/",
@@ -262,7 +262,7 @@
     "pt": "https://nrazon.github.io/pt/blog/magnitude-e-intensidade-de-um-terremoto/"
    },
    "default": "en",
-   "hash": "881b135c1320f31130f8bb6cadb5e3bb"
+   "hash": "43f3f476464d0b601fb72ed76c8af4a1"
   },
   {
    "url": "https://nrazon.github.io/blog/earthquake-preparedness-what-to-do/",
@@ -273,7 +273,7 @@
     "pt": "https://nrazon.github.io/pt/blog/terremoto-o-que-fazer-antes-durante-depois/"
    },
    "default": "en",
-   "hash": "78271a4e2fafc59861e511ca5238de4e"
+   "hash": "d8e6fbeed664c249dc223a5c39b3e923"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/deprem-oncesi-sirasinda-sonrasinda-ne-yapilir/",
@@ -284,7 +284,7 @@
     "pt": "https://nrazon.github.io/pt/blog/terremoto-o-que-fazer-antes-durante-depois/"
    },
    "default": "en",
-   "hash": "7c541f39aa6bfd58c97de8760ec3ca9a"
+   "hash": "f8aa9a45bc4071534ba1b91c2e1747f5"
   },
   {
    "url": "https://nrazon.github.io/es/blog/terremoto-que-hacer-antes-durante-despues/",
@@ -295,7 +295,7 @@
     "pt": "https://nrazon.github.io/pt/blog/terremoto-o-que-fazer-antes-durante-depois/"
    },
    "default": "en",
-   "hash": "03f6187f22cc77d430be1f2a1fc24ec0"
+   "hash": "18b37aec48e8e5b4b2ca35ff4776a84b"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/terremoto-o-que-fazer-antes-durante-depois/",
@@ -306,7 +306,7 @@
     "pt": "https://nrazon.github.io/pt/blog/terremoto-o-que-fazer-antes-durante-depois/"
    },
    "default": "en",
-   "hash": "84f5283f09e31ee714f5329923f5d8bc"
+   "hash": "7a4a7a3d33584464e4b0012bf8d94efb"
   },
   {
    "url": "https://nrazon.github.io/blog/where-earthquake-data-comes-from/",
@@ -317,7 +317,7 @@
     "pt": "https://nrazon.github.io/pt/blog/de-onde-vem-os-dados-de-terremotos/"
    },
    "default": "en",
-   "hash": "3b9ca137e4a53d818425a9e2d4575409"
+   "hash": "a2325483a8de9c96ef2864924a63064e"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/son-deprem-verileri-nereden-geliyor/",
@@ -328,7 +328,7 @@
     "pt": "https://nrazon.github.io/pt/blog/de-onde-vem-os-dados-de-terremotos/"
    },
    "default": "en",
-   "hash": "d7eee40ae1e6e02a95efff280ca4e537"
+   "hash": "7493f833e31f36b1724ad59bf2c73706"
   },
   {
    "url": "https://nrazon.github.io/es/blog/de-donde-vienen-los-datos-de-terremotos/",
@@ -339,7 +339,7 @@
     "pt": "https://nrazon.github.io/pt/blog/de-onde-vem-os-dados-de-terremotos/"
    },
    "default": "en",
-   "hash": "7fc6c9973707eba16726903b02dd9c44"
+   "hash": "17c0c7fc976f489475fca5598048bbce"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/de-onde-vem-os-dados-de-terremotos/",
@@ -350,7 +350,7 @@
     "pt": "https://nrazon.github.io/pt/blog/de-onde-vem-os-dados-de-terremotos/"
    },
    "default": "en",
-   "hash": "9d5ca29eef1233f17e16f213a424cc7f"
+   "hash": "7acc2d265899b70cbb3682f864da8488"
   },
   {
    "url": "https://nrazon.github.io/blog/what-is-bmi-how-to-calculate-and-read-it/",
@@ -361,7 +361,7 @@
     "pt": "https://nrazon.github.io/pt/blog/o-que-e-imc-como-calcular-e-interpretar/"
    },
    "default": "en",
-   "hash": "08cd6d5ed97546956fb18fc47deab0b4"
+   "hash": "b04ea7de15cacd822b4c6b73e5eb39e1"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/bmi-nedir-nasil-hesaplanir-yorumlanir/",
@@ -372,7 +372,7 @@
     "pt": "https://nrazon.github.io/pt/blog/o-que-e-imc-como-calcular-e-interpretar/"
    },
    "default": "en",
-   "hash": "6094eda994bc2b6a9f3a9667ac4c6652"
+   "hash": "c0feefbbd23c97155e3515c689220e6d"
   },
   {
    "url": "https://nrazon.github.io/es/blog/que-es-el-imc-como-se-calcula-y-se-interpreta/",
@@ -383,7 +383,7 @@
     "pt": "https://nrazon.github.io/pt/blog/o-que-e-imc-como-calcular-e-interpretar/"
    },
    "default": "en",
-   "hash": "0f24ccff988a810aafc11bdae5fd3816"
+   "hash": "01d55b866a2eceda99a656f23fae73d9"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/o-que-e-imc-como-calcular-e-interpretar/",
@@ -394,7 +394,7 @@
     "pt": "https://nrazon.github.io/pt/blog/o-que-e-imc-como-calcular-e-interpretar/"
    },
    "default": "en",
-   "hash": "4adad661a40f9a97c20254b6a88957e3"
+   "hash": "1456576e1a26b227c2cd2a5916ff2b21"
   },
   {
    "url": "https://nrazon.github.io/blog/bmi-common-mistakes-and-limits/",
@@ -405,7 +405,7 @@
     "pt": "https://nrazon.github.io/pt/blog/erros-comuns-e-limites-do-imc/"
    },
    "default": "en",
-   "hash": "044b37f648b4f0f88f10d221138be0a2"
+   "hash": "9590b0d23a77bdf4991e8f3e1e76ddfc"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/bmi-yanilgilari-ve-sinirlari/",
@@ -416,7 +416,7 @@
     "pt": "https://nrazon.github.io/pt/blog/erros-comuns-e-limites-do-imc/"
    },
    "default": "en",
-   "hash": "91a3a318251cfd98648f4928fbddf763"
+   "hash": "1a1d8bbd07ca1aae66089d23b9049fe9"
   },
   {
    "url": "https://nrazon.github.io/es/blog/errores-comunes-y-limites-del-imc/",
@@ -427,7 +427,7 @@
     "pt": "https://nrazon.github.io/pt/blog/erros-comuns-e-limites-do-imc/"
    },
    "default": "en",
-   "hash": "f5ee7273fb85cafbd8f7d412615f245e"
+   "hash": "a9622aa4fc46baf73a425da2e86a9385"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/erros-comuns-e-limites-do-imc/",
@@ -438,7 +438,7 @@
     "pt": "https://nrazon.github.io/pt/blog/erros-comuns-e-limites-do-imc/"
    },
    "default": "en",
-   "hash": "515c44b858f7d924ddb2227fedb631bf"
+   "hash": "798f48133af854f6764c103fa8cf85cc"
   },
   {
    "url": "https://nrazon.github.io/blog/how-to-calculate-exact-age-years-months-days/",
@@ -449,7 +449,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-calcular-idade-exata-anos-meses-dias/"
    },
    "default": "en",
-   "hash": "dc2bd1a06bf7e9c1cb894e728b4ae18f"
+   "hash": "4964101e64b0c8774c51b65c00bfd1db"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/yas-hesaplama-yil-ay-gun-nasil-hesaplanir/",
@@ -460,7 +460,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-calcular-idade-exata-anos-meses-dias/"
    },
    "default": "en",
-   "hash": "c9ec00ce63cf92f4259d5f5447c7ccd9"
+   "hash": "958d162cba65e19f92002357ddeed50d"
   },
   {
    "url": "https://nrazon.github.io/es/blog/como-calcular-la-edad-exacta-anos-meses-dias/",
@@ -471,7 +471,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-calcular-idade-exata-anos-meses-dias/"
    },
    "default": "en",
-   "hash": "e5ed9dd73968643970097720a1f9d370"
+   "hash": "df5f0a0bd3aae8cf963cfc6889021dd5"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/como-calcular-idade-exata-anos-meses-dias/",
@@ -482,7 +482,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-calcular-idade-exata-anos-meses-dias/"
    },
    "default": "en",
-   "hash": "14113697a8111e23cee465aff725ad6a"
+   "hash": "76dd6833717da292f5d5099a84e06833"
   },
   {
    "url": "https://nrazon.github.io/blog/leap-day-birthday-how-to-count-age/",
@@ -493,7 +493,7 @@
     "pt": "https://nrazon.github.io/pt/blog/aniversario-29-de-fevereiro-como-contar-a-idade/"
    },
    "default": "en",
-   "hash": "5256451eef78fa0fb6ed16d955ca22c6"
+   "hash": "b13ad691e921f02581e4752786becdad"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/29-subat-dogum-gunu-yas-nasil-sayilir/",
@@ -504,7 +504,7 @@
     "pt": "https://nrazon.github.io/pt/blog/aniversario-29-de-fevereiro-como-contar-a-idade/"
    },
    "default": "en",
-   "hash": "b7971dc7bc827ecda0be784529d3d6d9"
+   "hash": "f62f7c67d8a621a32b14750df9cf5902"
   },
   {
    "url": "https://nrazon.github.io/es/blog/cumpleanos-29-de-febrero-como-contar-la-edad/",
@@ -515,7 +515,7 @@
     "pt": "https://nrazon.github.io/pt/blog/aniversario-29-de-fevereiro-como-contar-a-idade/"
    },
    "default": "en",
-   "hash": "8ac18ec903762a5d257beb70cdf4b4df"
+   "hash": "c8adac658af299603da20a697a3466de"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/aniversario-29-de-fevereiro-como-contar-a-idade/",
@@ -526,7 +526,7 @@
     "pt": "https://nrazon.github.io/pt/blog/aniversario-29-de-fevereiro-como-contar-a-idade/"
    },
    "default": "en",
-   "hash": "fc7be21fda1a051bc264d76c08c2df97"
+   "hash": "38acfffeceaa0ec883a9e00149d8dc5e"
   },
   {
    "url": "https://nrazon.github.io/blog/pentominoes-history-golomb-twelve-pieces/",
@@ -537,7 +537,7 @@
     "pt": "https://nrazon.github.io/pt/blog/historia-dos-pentominos-golomb-doze-pecas/"
    },
    "default": "en",
-   "hash": "e69a034e80b5b4db81533e5b898577ab"
+   "hash": "9866babd7533c096597c3634e6ea7e4b"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/pentomino-tarihi-golomb-12-parca/",
@@ -548,7 +548,7 @@
     "pt": "https://nrazon.github.io/pt/blog/historia-dos-pentominos-golomb-doze-pecas/"
    },
    "default": "en",
-   "hash": "32e0bbbc6c745d8a3c1f904aba8e9ee2"
+   "hash": "bfc8427b0c4dc003b0dfb3c4e4ccbfc4"
   },
   {
    "url": "https://nrazon.github.io/es/blog/historia-de-los-pentominos-golomb-doce-piezas/",
@@ -559,7 +559,7 @@
     "pt": "https://nrazon.github.io/pt/blog/historia-dos-pentominos-golomb-doze-pecas/"
    },
    "default": "en",
-   "hash": "6ac9cc0f05553e8241ef0646b4ddaae5"
+   "hash": "deccea18a65a87883166b3c9eb5857ae"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/historia-dos-pentominos-golomb-doze-pecas/",
@@ -570,7 +570,7 @@
     "pt": "https://nrazon.github.io/pt/blog/historia-dos-pentominos-golomb-doze-pecas/"
    },
    "default": "en",
-   "hash": "b330fce0c44437d868f1fd51dca5e2be"
+   "hash": "f1cabdfb8672621e29ac0b0f1582dbf9"
   },
   {
    "url": "https://nrazon.github.io/blog/pentomino-puzzles-dancing-links-exact-cover/",
@@ -581,7 +581,7 @@
     "pt": "https://nrazon.github.io/pt/blog/quebra-cabecas-de-pentominos-dancing-links-cobertura-exata/"
    },
    "default": "en",
-   "hash": "943a4228146ebe78083ccc5ddc8f4bf0"
+   "hash": "56b1d04c8f804f1d654543057be6798d"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/pentomino-bulmacalari-dancing-links-tam-kapsama/",
@@ -592,7 +592,7 @@
     "pt": "https://nrazon.github.io/pt/blog/quebra-cabecas-de-pentominos-dancing-links-cobertura-exata/"
    },
    "default": "en",
-   "hash": "c58766e2ef1a549bf381c22619fbad8a"
+   "hash": "aae23ae6b402bb96b509e7670e4443dc"
   },
   {
    "url": "https://nrazon.github.io/es/blog/puzles-de-pentominos-dancing-links-cobertura-exacta/",
@@ -603,7 +603,7 @@
     "pt": "https://nrazon.github.io/pt/blog/quebra-cabecas-de-pentominos-dancing-links-cobertura-exata/"
    },
    "default": "en",
-   "hash": "ffcea3baef765b2cd0bc794123abe83f"
+   "hash": "6b744f822d7c92c517b7ac491003d251"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/quebra-cabecas-de-pentominos-dancing-links-cobertura-exata/",
@@ -614,7 +614,7 @@
     "pt": "https://nrazon.github.io/pt/blog/quebra-cabecas-de-pentominos-dancing-links-cobertura-exata/"
    },
    "default": "en",
-   "hash": "333ba56baf666fe7f418f6dd2bf84851"
+   "hash": "9d27778aa89774c1b287c45252a97648"
   },
   {
    "url": "https://nrazon.github.io/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/",
@@ -625,7 +625,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-uma-cartela-de-tombala-e-gerada-seis-cartelas-noventa-numeros/"
    },
    "default": "en",
-   "hash": "ba4153072470a8f116efcce03a48a36c"
+   "hash": "efa75cd8ea3edbb982c39848ad142bb2"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/tombala-karti-nasil-uretilir-alti-kart-doksan-sayi/",
@@ -636,7 +636,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-uma-cartela-de-tombala-e-gerada-seis-cartelas-noventa-numeros/"
    },
    "default": "en",
-   "hash": "43d3385ec8ac6f73d5cfb2c1dec77bab"
+   "hash": "8ac8411cd1af0293ea0d588fca6838a3"
   },
   {
    "url": "https://nrazon.github.io/es/blog/como-se-genera-un-carton-de-tombola-seis-cartones-noventa-numeros/",
@@ -647,7 +647,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-uma-cartela-de-tombala-e-gerada-seis-cartelas-noventa-numeros/"
    },
    "default": "en",
-   "hash": "b6f1590969673300a5c319f4704dc12b"
+   "hash": "e350108c8f6c5d685381ae99f4728e9b"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/como-uma-cartela-de-tombala-e-gerada-seis-cartelas-noventa-numeros/",
@@ -658,7 +658,7 @@
     "pt": "https://nrazon.github.io/pt/blog/como-uma-cartela-de-tombala-e-gerada-seis-cartelas-noventa-numeros/"
    },
    "default": "en",
-   "hash": "ee1f85eb25b63f866fb1406c726670c7"
+   "hash": "75163430cdf0ad2003a0c190c5cfdf2e"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/merkur-retrosu-nedir-gokyuzunde-gercekte-ne-oluyor/",
@@ -666,7 +666,7 @@
     "tr": "https://nrazon.github.io/tr/yazilar/merkur-retrosu-nedir-gokyuzunde-gercekte-ne-oluyor/"
    },
    "default": "tr",
-   "hash": "c92f479a2f3c0450d6b1aa3aea304055"
+   "hash": "ce0a037a7179e728617d23d063eb39c4"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/burclar-takimyildizlardan-neden-kaydi-13-burc-yilanci/",
@@ -674,7 +674,7 @@
     "tr": "https://nrazon.github.io/tr/yazilar/burclar-takimyildizlardan-neden-kaydi-13-burc-yilanci/"
    },
    "default": "tr",
-   "hash": "6e48c94a2b3c4b826735bb1517dd0c4f"
+   "hash": "0a699bc060c4385dd0ac817e12773c97"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/ay-evreleri-neden-29-5-gunde-doner-yeniay-dolunay/",
@@ -682,7 +682,7 @@
     "tr": "https://nrazon.github.io/tr/yazilar/ay-evreleri-neden-29-5-gunde-doner-yeniay-dolunay/"
    },
    "default": "tr",
-   "hash": "a8608569c8e4442534ca4d964d6f08b9"
+   "hash": "2458f7892fd27d117bf47439d876feb2"
   },
   {
    "url": "https://nrazon.github.io/blog/keeping-two-dozen-android-apps-maintainable-solo/",
@@ -693,7 +693,7 @@
     "pt": "https://nrazon.github.io/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/"
    },
    "default": "en",
-   "hash": "f7b6e0c26c567fcc038609dd363e9266"
+   "hash": "0adc31eab1dca56aacdee7521defd38a"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/",
@@ -704,7 +704,7 @@
     "pt": "https://nrazon.github.io/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/"
    },
    "default": "en",
-   "hash": "8c003ec565d4287ae761a4a913b597d9"
+   "hash": "99ace39effd0dbf86517d208eb3cd6e5"
   },
   {
    "url": "https://nrazon.github.io/es/blog/mantener-dos-docenas-de-apps-android-siendo-un-solo-desarrollador/",
@@ -715,7 +715,7 @@
     "pt": "https://nrazon.github.io/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/"
    },
    "default": "en",
-   "hash": "90159c0f4c6037a1020be17ca0dcad51"
+   "hash": "c59029ce9078e1df62567e14099725e0"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/",
@@ -726,7 +726,7 @@
     "pt": "https://nrazon.github.io/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/"
    },
    "default": "en",
-   "hash": "722396bfe8f6ccd4b755d873d2ac507c"
+   "hash": "addb94e5cfdff0f23e1915fe579e014a"
   },
   {
    "url": "https://nrazon.github.io/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/",
@@ -737,7 +737,7 @@
     "pt": "https://nrazon.github.io/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/"
    },
    "default": "en",
-   "hash": "b8d562b2a92ba6b817c9286fcaf307f1"
+   "hash": "f8694117a2b8abda14dce6aa2922bdf4"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/",
@@ -748,7 +748,7 @@
     "pt": "https://nrazon.github.io/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/"
    },
    "default": "en",
-   "hash": "ee1c862eebf07714fd07d956f8912b82"
+   "hash": "1436d7d9ceb839953660f20e82302ad0"
   },
   {
    "url": "https://nrazon.github.io/es/blog/detectar-anuncio-intersticial-bloqueado-android-eventos/",
@@ -759,7 +759,7 @@
     "pt": "https://nrazon.github.io/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/"
    },
    "default": "en",
-   "hash": "2d639bbba2a7dbc6a2f34987f47cdb99"
+   "hash": "86bbe6d7a8eee3f23d47f4457fd4398d"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/",
@@ -770,7 +770,7 @@
     "pt": "https://nrazon.github.io/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/"
    },
    "default": "en",
-   "hash": "ea053dffd6548afac52992bbed69380f"
+   "hash": "b1d31a2281b0446554c384aaeff73b44"
   },
   {
    "url": "https://nrazon.github.io/blog/game-feel-jetpack-compose-without-game-engine/",
@@ -781,7 +781,7 @@
     "pt": "https://nrazon.github.io/pt/blog/game-feel-jetpack-compose-sem-motor-de-jogo/"
    },
    "default": "en",
-   "hash": "fa1e811556066ed0017522f6bafd534a"
+   "hash": "f65c78cf1af441e78a569c82f81251e2"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/oyun-motoru-olmadan-jetpack-compose-oyun-hissi/",
@@ -792,7 +792,7 @@
     "pt": "https://nrazon.github.io/pt/blog/game-feel-jetpack-compose-sem-motor-de-jogo/"
    },
    "default": "en",
-   "hash": "22ab081c4d5ea1a4f2e7eb3f5c689ee4"
+   "hash": "c8a37eebdf94c777ac80f2a9127c1923"
   },
   {
    "url": "https://nrazon.github.io/es/blog/sensacion-de-juego-jetpack-compose-sin-motor/",
@@ -803,7 +803,7 @@
     "pt": "https://nrazon.github.io/pt/blog/game-feel-jetpack-compose-sem-motor-de-jogo/"
    },
    "default": "en",
-   "hash": "5c60407e5a980c3425a76e7573a19e32"
+   "hash": "e4a2671e5745515b7851f291b857d083"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/game-feel-jetpack-compose-sem-motor-de-jogo/",
@@ -814,7 +814,7 @@
     "pt": "https://nrazon.github.io/pt/blog/game-feel-jetpack-compose-sem-motor-de-jogo/"
    },
    "default": "en",
-   "hash": "25a7a7f615dce85a28917398b6500a7e"
+   "hash": "fdbadc89927abbf3f36f1b99c9af8be1"
   },
   {
    "url": "https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/",
@@ -825,7 +825,7 @@
     "pt": "https://nrazon.github.io/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/"
    },
    "default": "en",
-   "hash": "e296cfa25770b912ff4b07528444bcc9"
+   "hash": "59658ef723f829b8470570a7d93633a9"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/",
@@ -836,7 +836,7 @@
     "pt": "https://nrazon.github.io/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/"
    },
    "default": "en",
-   "hash": "7d5acd2c743d8747da5774d7efa403f2"
+   "hash": "dee14d90c3721e533e6efc91b5acb440"
   },
   {
    "url": "https://nrazon.github.io/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/",
@@ -847,7 +847,7 @@
     "pt": "https://nrazon.github.io/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/"
    },
    "default": "en",
-   "hash": "8fe5ba112e023bb2661392e7c0bf613a"
+   "hash": "5b72d438fa400ed948259074086a743f"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/",
@@ -858,7 +858,7 @@
     "pt": "https://nrazon.github.io/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/"
    },
    "default": "en",
-   "hash": "65e961bf5b6762394cdf3f668c3e8f74"
+   "hash": "33337eb8abb5b9a0aac670943ba1b956"
   },
   {
    "url": "https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/",
@@ -869,7 +869,7 @@
     "pt": "https://nrazon.github.io/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/"
    },
    "default": "en",
-   "hash": "3c032daf254c413fd305ed20a3b99af5"
+   "hash": "9caedefdd4a055676771f9901a354283"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/",
@@ -880,7 +880,7 @@
     "pt": "https://nrazon.github.io/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/"
    },
    "default": "en",
-   "hash": "9c16115fc8bc4f24326c45fea5cdaac9"
+   "hash": "7da6ddd5d35b7f7ab432dac08cd1df06"
   },
   {
    "url": "https://nrazon.github.io/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/",
@@ -891,7 +891,7 @@
     "pt": "https://nrazon.github.io/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/"
    },
    "default": "en",
-   "hash": "96e69dcb1e4d83aad6e02012c8777770"
+   "hash": "1b799efef7ea503c9f734afc663af530"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/",
@@ -902,7 +902,7 @@
     "pt": "https://nrazon.github.io/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/"
    },
    "default": "en",
-   "hash": "cbc7acd6a800d8b5574afa53f6746b32"
+   "hash": "a48e190d2198f6b50953365e7f2c2aca"
   },
   {
    "url": "https://nrazon.github.io/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/",
@@ -913,7 +913,7 @@
     "pt": "https://nrazon.github.io/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/"
    },
    "default": "en",
-   "hash": "97ca1f5d870e39b925d920617d9dbabe"
+   "hash": "8bad6b1114e60e00a7ddedde1a8d25b2"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/",
@@ -924,7 +924,7 @@
     "pt": "https://nrazon.github.io/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/"
    },
    "default": "en",
-   "hash": "a3ff5e9ec9b663696fb476e74574069c"
+   "hash": "c3a01520911c2aabbb6d3fc9a1c03578"
   },
   {
    "url": "https://nrazon.github.io/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/",
@@ -935,7 +935,7 @@
     "pt": "https://nrazon.github.io/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/"
    },
    "default": "en",
-   "hash": "7b89051c2a18038aae9e47aeef3477a6"
+   "hash": "325c43004774f02bfb235e2e44cf8f67"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/",
@@ -946,7 +946,7 @@
     "pt": "https://nrazon.github.io/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/"
    },
    "default": "en",
-   "hash": "8d1da829e4a80464a01097fd1a95b206"
+   "hash": "2ddde60129b4271a554bab22e242939f"
   },
   {
    "url": "https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/",
@@ -957,7 +957,7 @@
     "pt": "https://nrazon.github.io/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/"
    },
    "default": "en",
-   "hash": "5fafd3028c2854903abba993a0be6caf"
+   "hash": "46b4bb648d4e6726a917d0a8b800ba50"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/",
@@ -968,7 +968,7 @@
     "pt": "https://nrazon.github.io/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/"
    },
    "default": "en",
-   "hash": "d6daefd6148ca297fb1ee300d44b6e18"
+   "hash": "e8ba5e4605c878e8169c633e2ed6f269"
   },
   {
    "url": "https://nrazon.github.io/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/",
@@ -979,7 +979,7 @@
     "pt": "https://nrazon.github.io/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/"
    },
    "default": "en",
-   "hash": "6782865aadde8859babcc2d088bbc72c"
+   "hash": "9041f26a7dd0de2c42842e6aed117444"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/",
@@ -990,7 +990,7 @@
     "pt": "https://nrazon.github.io/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/"
    },
    "default": "en",
-   "hash": "aabcc496ae696fe659644a0def0d4f26"
+   "hash": "e4fd40579f2df881022dcc1f419b5b57"
   },
   {
    "url": "https://nrazon.github.io/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/",
@@ -1001,7 +1001,7 @@
     "pt": "https://nrazon.github.io/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/"
    },
    "default": "en",
-   "hash": "17b672452e1a19984c101c94d6445104"
+   "hash": "a4e7051eaa665ad7e930186a8812fd83"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/",
@@ -1012,7 +1012,7 @@
     "pt": "https://nrazon.github.io/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/"
    },
    "default": "en",
-   "hash": "74cdbd6521dec8d3f787f272d79f1a81"
+   "hash": "97785cb05098a6cae78f0a7a3a97295e"
   },
   {
    "url": "https://nrazon.github.io/es/blog/reescribir-para-kotlin-multiplatform-sin-cambiar-el-comportamiento-el-codigo-antiguo-como-oraculo-de-pruebas/",
@@ -1023,7 +1023,7 @@
     "pt": "https://nrazon.github.io/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/"
    },
    "default": "en",
-   "hash": "f9ed35a66c41d669d04fd73aad7adff7"
+   "hash": "601fe5ebf2de621393e706ac0536033f"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/",
@@ -1034,7 +1034,7 @@
     "pt": "https://nrazon.github.io/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/"
    },
    "default": "en",
-   "hash": "97e18894e50ae528bf4b7d4741e0e58d"
+   "hash": "54312f300a2efdf580ef06b528728198"
   },
   {
    "url": "https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/",
@@ -1045,7 +1045,7 @@
     "pt": "https://nrazon.github.io/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/"
    },
    "default": "en",
-   "hash": "7a5f27dda83a12053f5f2a2e365f5808"
+   "hash": "a7f3f9104c63cf5294544d0db3a326d9"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/",
@@ -1056,7 +1056,7 @@
     "pt": "https://nrazon.github.io/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/"
    },
    "default": "en",
-   "hash": "ebf0b5b484a6555179e0ec371a46a83f"
+   "hash": "2ea4380e90180f705dd025e50c0d4996"
   },
   {
    "url": "https://nrazon.github.io/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/",
@@ -1067,7 +1067,7 @@
     "pt": "https://nrazon.github.io/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/"
    },
    "default": "en",
-   "hash": "f0e79dab2eccc428ca0559496486e27b"
+   "hash": "3e65625fc368a8147fa333fd71eb3a50"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/",
@@ -1078,7 +1078,7 @@
     "pt": "https://nrazon.github.io/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/"
    },
    "default": "en",
-   "hash": "70b8daaa570e9207c6b420eb750ed1e3"
+   "hash": "3c68912a85ebb811972fc347ac87e4b4"
   },
   {
    "url": "https://nrazon.github.io/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/",
@@ -1089,7 +1089,7 @@
     "pt": "https://nrazon.github.io/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/"
    },
    "default": "en",
-   "hash": "753d4988a2a314f153d365562ca3db81"
+   "hash": "0960559d7ff5b99b256eea1abe8214b1"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/telefonsuz-app-store-ekran-goruntuleri-robolectric-sahte-gorsel-yukleyici-ve-basliksiz-tarayici/",
@@ -1100,7 +1100,7 @@
     "pt": "https://nrazon.github.io/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/"
    },
    "default": "en",
-   "hash": "4fa7a26174aad36c2620fd1e0c1c8697"
+   "hash": "0cf4a8fd1dce1f0ff60d183a65a095d8"
   },
   {
    "url": "https://nrazon.github.io/es/blog/capturas-de-app-store-sin-telefono-robolectric-un-cargador-de-imagenes-falso-y-un-navegador-sin-interfaz/",
@@ -1111,7 +1111,7 @@
     "pt": "https://nrazon.github.io/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/"
    },
    "default": "en",
-   "hash": "cb3dc4ef74ba04db3dede23aab25ea63"
+   "hash": "5d3d31bbb96925bdcf06b083804a923f"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/",
@@ -1122,7 +1122,7 @@
     "pt": "https://nrazon.github.io/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/"
    },
    "default": "en",
-   "hash": "48d2d4b85330297a1d3bce02f8b565e0"
+   "hash": "46b526e0c7f7c35f54ef8297b5966ae5"
   },
   {
    "url": "https://nrazon.github.io/blog/app-store-review-guideline-2-1-information-needed-what-i-sent/",
@@ -1133,7 +1133,7 @@
     "pt": "https://nrazon.github.io/pt/blog/diretriz-2-1-da-app-store-informacao-necessaria-o-que-enviei/"
    },
    "default": "en",
-   "hash": "3a63ec45b34997d40e31cc173e22424d"
+   "hash": "f81bc448150cd121823551fa6f7ff0e4"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/app-store-inceleme-kurali-2-1-bilgi-gerekli-ne-gonderdim/",
@@ -1144,7 +1144,7 @@
     "pt": "https://nrazon.github.io/pt/blog/diretriz-2-1-da-app-store-informacao-necessaria-o-que-enviei/"
    },
    "default": "en",
-   "hash": "0da6dac5c71c6639e844162e57eb1393"
+   "hash": "36d743f1273a953ee561675ef3b67d2d"
   },
   {
    "url": "https://nrazon.github.io/es/blog/guia-2-1-de-app-store-informacion-necesaria-lo-que-envie/",
@@ -1155,7 +1155,7 @@
     "pt": "https://nrazon.github.io/pt/blog/diretriz-2-1-da-app-store-informacao-necessaria-o-que-enviei/"
    },
    "default": "en",
-   "hash": "168fed7c600e2fb9adeff25e00520766"
+   "hash": "8eed35c14a7310a043684d4fd549baa9"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/diretriz-2-1-da-app-store-informacao-necessaria-o-que-enviei/",
@@ -1166,7 +1166,7 @@
     "pt": "https://nrazon.github.io/pt/blog/diretriz-2-1-da-app-store-informacao-necessaria-o-que-enviei/"
    },
    "default": "en",
-   "hash": "785859b983bfd45b35f83b3d55c602f1"
+   "hash": "5f0bd1540a14dac1faf3f78520e7f45f"
   },
   {
    "url": "https://nrazon.github.io/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/",
@@ -1177,7 +1177,7 @@
     "pt": "https://nrazon.github.io/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/"
    },
    "default": "en",
-   "hash": "5db4bd02b2afb8805f6f46f7965ceabf"
+   "hash": "218b01f00f0c95b8741cd7ef602fe701"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/app-store-baglantim-neden-404-verdi-ve-sayfa-2018-ekran-goruntulerini-gosterdi/",
@@ -1188,7 +1188,7 @@
     "pt": "https://nrazon.github.io/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/"
    },
    "default": "en",
-   "hash": "75460f5364b4583a5c29a34778a376f5"
+   "hash": "c0550dc3fab63d52a205cf72240ff4b0"
   },
   {
    "url": "https://nrazon.github.io/es/blog/por-que-mi-enlace-de-la-app-store-dio-404-y-la-pagina-mostraba-capturas-de-2018/",
@@ -1199,7 +1199,7 @@
     "pt": "https://nrazon.github.io/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/"
    },
    "default": "en",
-   "hash": "285b8c280d24e59883f06fa4fe22e031"
+   "hash": "0476b166ee4510146f94877003035304"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/",
@@ -1210,7 +1210,7 @@
     "pt": "https://nrazon.github.io/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/"
    },
    "default": "en",
-   "hash": "522f68d3b8a78e1133ce442349d6fa8f"
+   "hash": "47e98ba19e7c179968c590c0c5ce1a00"
   },
   {
    "url": "https://nrazon.github.io/blog/",
@@ -1221,7 +1221,7 @@
     "pt": "https://nrazon.github.io/pt/blog/"
    },
    "default": "en",
-   "hash": "d8cfeb40f96bae2c708840f4acf74bc6"
+   "hash": "196bb501559dda01389c2cd7396d52c8"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/",
@@ -1232,7 +1232,7 @@
     "pt": "https://nrazon.github.io/pt/blog/"
    },
    "default": "en",
-   "hash": "0701529b116bfa3be317ff352c00d768"
+   "hash": "427e549c8fa712745a5591725572600d"
   },
   {
    "url": "https://nrazon.github.io/es/blog/",
@@ -1243,7 +1243,7 @@
     "pt": "https://nrazon.github.io/pt/blog/"
    },
    "default": "en",
-   "hash": "0a87ba87e448b033357385253703cba4"
+   "hash": "69417e5e12bcb2c24e0c25babd45c4c2"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/",
@@ -1254,7 +1254,7 @@
     "pt": "https://nrazon.github.io/pt/blog/"
    },
    "default": "en",
-   "hash": "d42665f965fdeedba231fa08233b84d1"
+   "hash": "8d56f17a85f2ecdf20c9bba229c3b870"
   }
  ],
  "index": {

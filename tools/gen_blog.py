@@ -144,7 +144,7 @@ def main():
                        f'<a class="play" href="{esc(play)}"><img src="/badges/google-play-{badge}.svg" alt="Google Play" width="162" height="48"></a>'
                        f'<a class="small" href="{app_url(p["app"], lang)}">{esc(t["about"].format(name=name))}</a></aside>')
             faqh = ('<section class="faq"><h2>' + esc(t["faq"]) + "</h2>" + "".join(f"<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>" for q, a in faq) + "</section>") if faq else ""
-            others = sorted([x for x in posts if x["id"] != p["id"] and lang in x], key=lambda x: (x.get("app") != p.get("app")))[:6]  # aynı uygulamanınkiler önde, en çok 6
+            others = sorted([x for x in posts if x["id"] != p["id"] and lang in x], key=lambda x: (x.get("app") != p.get("app"), -posts.index(x)))[:6]  # aynı uygulamanınkiler önde, en çok 6
             more = ""
             if others:
                 more = ('<section><h2>' + esc(b["more"]) + '</h2><ul class="glist">' + "".join(
@@ -156,6 +156,7 @@ def main():
             pages.append({"url": canon, "loc": alternates, "default": "en" if "en" in alternates else plangs[0], "hash": hashlib.md5(out.encode("utf-8")).hexdigest()})
 
     alternates = {l: url(l) for l in LANGS}
+    newest_first = sorted(posts, key=lambda q: (q["date"], posts.index(q)), reverse=True)  # blog dizini: en yeni yazi en üstte (16.11.2026)
     for lang in LANGS:
         t, b = T[lang], BT[lang]
         canon = alternates[lang]
@@ -163,9 +164,9 @@ def main():
         chips = ('<p class="tags"><a href="#" data-tag="">' + esc(TAGS_ALL[lang]) + "</a>" + "".join(
             f'<a href="#{tg}" data-tag="{tg}">#{esc(TAGLABEL[tg][lang])}</a>' for tg in used) + "</p>" + TAG_CSS) if used else ""
         items = "".join(
-            f'<li data-tags="{" ".join(q.get("tags", []))}"><a href="/{DIRS[lang]}/{q[lang]["slug"]}/"><img src="/{icon_of(q)}" alt="{alt_of(q)}" width="48" height="48"><div><b>{esc(q[lang]["title"])}</b><span>{esc(q[lang]["desc"])}</span></div></a></li>' for q in posts if lang in q)
+            f'<li data-tags="{" ".join(q.get("tags", []))}"><a href="/{DIRS[lang]}/{q[lang]["slug"]}/"><img src="/{icon_of(q)}" alt="{alt_of(q)}" width="48" height="48"><div><b>{esc(q[lang]["title"])}</b><span>{esc(q[lang]["desc"])}</span></div></a></li>' for q in newest_first if lang in q)
         list_ld = {"@context": "https://schema.org", "@type": "Blog", "name": b["idx_h1"], "inLanguage": lang, "url": canon, "description": b["idx_desc"],
-                   "blogPost": [{"@type": "BlogPosting", "headline": q[lang]["title"], "url": url(lang, q[lang]["slug"]), "datePublished": q["date"]} for q in posts if lang in q]}
+                   "blogPost": [{"@type": "BlogPosting", "headline": q[lang]["title"], "url": url(lang, q[lang]["slug"]), "datePublished": q["date"]} for q in newest_first if lang in q]}
         body = (f'  <article class="guide">\n    <nav class="crumbs" aria-label="breadcrumb"><a href="{home_url(lang)}">{esc(t["home"])}</a> › {esc(b["crumb"])}</nav>\n'
                 f'    <h1>{esc(b["idx_h1"])}</h1>\n    <p class="lead">{esc(b["idx_intro"])}</p>\n    {chips}\n    <ul class="glist">{items}</ul>\n  </article>' + (TAG_JS if used else ""))
         out = head(lang, b["idx_title"], b["idx_desc"], canon, alternates, f"{BASE}/og-v3.png", list_ld, "#7FB2FF").replace('content="article"', 'content="website"') + page_shell(lang, alternates, body)
