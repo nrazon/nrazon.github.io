@@ -83,6 +83,18 @@
    "tr": "/tr/rehber/brassline-nasil-oynanir-blackjack-rulet-texas-holdem/",
    "es": "/es/guias/como-jugar-brassline-blackjack-ruleta-texas-holdem/",
    "pt": "/pt/guias/como-jogar-brassline-blackjack-roleta-texas-holdem/"
+  },
+  "sondepremler": {
+   "en": "/guides/how-to-read-the-afad-and-kandilli-earthquake-lists/",
+   "tr": "/tr/rehber/afad-ve-kandilli-deprem-listesi-nasil-okunur/",
+   "es": "/es/guias/como-leer-las-listas-de-terremotos-de-afad-y-kandilli/",
+   "pt": "/pt/guias/como-ler-as-listas-de-terremotos-da-afad-e-do-kandilli/"
+  },
+  "uzaygunlugu": {
+   "en": "/guides/what-the-earth-turkey-and-iss-screens-show-in-uzay-gunlugu/",
+   "tr": "/tr/rehber/uzay-gunlugu-turkiye-dunya-ve-iss-ekranlari-ne-gosteriyor/",
+   "es": "/es/guias/que-muestran-las-pantallas-de-turquia-tierra-e-iss-en-uzay-gunlugu/",
+   "pt": "/pt/guias/o-que-mostram-as-telas-turquia-terra-e-iss-no-uzay-gunlugu/"
   }
  },
  "pages": [
@@ -1363,6 +1375,94 @@
    "hash": "ba5e7b84165e5ac8af927d2d98f5f94e"
   },
   {
+   "url": "https://nrazon.github.io/guides/how-to-read-the-afad-and-kandilli-earthquake-lists/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-read-the-afad-and-kandilli-earthquake-lists/",
+    "tr": "https://nrazon.github.io/tr/rehber/afad-ve-kandilli-deprem-listesi-nasil-okunur/",
+    "es": "https://nrazon.github.io/es/guias/como-leer-las-listas-de-terremotos-de-afad-y-kandilli/",
+    "pt": "https://nrazon.github.io/pt/guias/como-ler-as-listas-de-terremotos-da-afad-e-do-kandilli/"
+   },
+   "default": "en",
+   "hash": "6f20b5b133c1a210e1d866ce5b78d7c2"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/rehber/afad-ve-kandilli-deprem-listesi-nasil-okunur/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-read-the-afad-and-kandilli-earthquake-lists/",
+    "tr": "https://nrazon.github.io/tr/rehber/afad-ve-kandilli-deprem-listesi-nasil-okunur/",
+    "es": "https://nrazon.github.io/es/guias/como-leer-las-listas-de-terremotos-de-afad-y-kandilli/",
+    "pt": "https://nrazon.github.io/pt/guias/como-ler-as-listas-de-terremotos-da-afad-e-do-kandilli/"
+   },
+   "default": "en",
+   "hash": "e7585a4f6f48be3ab0941aa70b3c8b1d"
+  },
+  {
+   "url": "https://nrazon.github.io/es/guias/como-leer-las-listas-de-terremotos-de-afad-y-kandilli/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-read-the-afad-and-kandilli-earthquake-lists/",
+    "tr": "https://nrazon.github.io/tr/rehber/afad-ve-kandilli-deprem-listesi-nasil-okunur/",
+    "es": "https://nrazon.github.io/es/guias/como-leer-las-listas-de-terremotos-de-afad-y-kandilli/",
+    "pt": "https://nrazon.github.io/pt/guias/como-ler-as-listas-de-terremotos-da-afad-e-do-kandilli/"
+   },
+   "default": "en",
+   "hash": "95bfb5105e968d4d59cdef3fe00d0c78"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/guias/como-ler-as-listas-de-terremotos-da-afad-e-do-kandilli/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/how-to-read-the-afad-and-kandilli-earthquake-lists/",
+    "tr": "https://nrazon.github.io/tr/rehber/afad-ve-kandilli-deprem-listesi-nasil-okunur/",
+    "es": "https://nrazon.github.io/es/guias/como-leer-las-listas-de-terremotos-de-afad-y-kandilli/",
+    "pt": "https://nrazon.github.io/pt/guias/como-ler-as-listas-de-terremotos-da-afad-e-do-kandilli/"
+   },
+   "default": "en",
+   "hash": "dcdd709e44052ef905123295a75fbc2e"
+  },
+  {
+   "url": "https://nrazon.github.io/guides/what-the-earth-turkey-and-iss-screens-show-in-uzay-gunlugu/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/what-the-earth-turkey-and-iss-screens-show-in-uzay-gunlugu/",
+    "tr": "https://nrazon.github.io/tr/rehber/uzay-gunlugu-turkiye-dunya-ve-iss-ekranlari-ne-gosteriyor/",
+    "es": "https://nrazon.github.io/es/guias/que-muestran-las-pantallas-de-turquia-tierra-e-iss-en-uzay-gunlugu/",
+    "pt": "https://nrazon.github.io/pt/guias/o-que-mostram-as-telas-turquia-terra-e-iss-no-uzay-gunlugu/"
+   },
+   "default": "en",
+   "hash": "5d24f9c9d4a3438672c3dfcb823ea36b"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/rehber/uzay-gunlugu-turkiye-dunya-ve-iss-ekranlari-ne-gosteriyor/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/what-the-earth-turkey-and-iss-screens-show-in-uzay-gunlugu/",
+    "tr": "https://nrazon.github.io/tr/rehber/uzay-gunlugu-turkiye-dunya-ve-iss-ekranlari-ne-gosteriyor/",
+    "es": "https://nrazon.github.io/es/guias/que-muestran-las-pantallas-de-turquia-tierra-e-iss-en-uzay-gunlugu/",
+    "pt": "https://nrazon.github.io/pt/guias/o-que-mostram-as-telas-turquia-terra-e-iss-no-uzay-gunlugu/"
+   },
+   "default": "en",
+   "hash": "6053ead561adc6c43dc754b9f8c4c1cc"
+  },
+  {
+   "url": "https://nrazon.github.io/es/guias/que-muestran-las-pantallas-de-turquia-tierra-e-iss-en-uzay-gunlugu/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/what-the-earth-turkey-and-iss-screens-show-in-uzay-gunlugu/",
+    "tr": "https://nrazon.github.io/tr/rehber/uzay-gunlugu-turkiye-dunya-ve-iss-ekranlari-ne-gosteriyor/",
+    "es": "https://nrazon.github.io/es/guias/que-muestran-las-pantallas-de-turquia-tierra-e-iss-en-uzay-gunlugu/",
+    "pt": "https://nrazon.github.io/pt/guias/o-que-mostram-as-telas-turquia-terra-e-iss-no-uzay-gunlugu/"
+   },
+   "default": "en",
+   "hash": "7442bd1a54acf2395cefdb7466ba2f6a"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/guias/o-que-mostram-as-telas-turquia-terra-e-iss-no-uzay-gunlugu/",
+   "loc": {
+    "en": "https://nrazon.github.io/guides/what-the-earth-turkey-and-iss-screens-show-in-uzay-gunlugu/",
+    "tr": "https://nrazon.github.io/tr/rehber/uzay-gunlugu-turkiye-dunya-ve-iss-ekranlari-ne-gosteriyor/",
+    "es": "https://nrazon.github.io/es/guias/que-muestran-las-pantallas-de-turquia-tierra-e-iss-en-uzay-gunlugu/",
+    "pt": "https://nrazon.github.io/pt/guias/o-que-mostram-as-telas-turquia-terra-e-iss-no-uzay-gunlugu/"
+   },
+   "default": "en",
+   "hash": "52e277c45f5be954aae86af62cbc8b1b"
+  },
+  {
    "url": "https://nrazon.github.io/guides/",
    "loc": {
     "en": "https://nrazon.github.io/guides/",
@@ -1371,7 +1471,7 @@
     "pt": "https://nrazon.github.io/pt/guias/"
    },
    "default": "en",
-   "hash": "80fec7c51a7375fd8824e5a6d6c8f3db"
+   "hash": "11023559299b2fb08e7f933b6adaff71"
   },
   {
    "url": "https://nrazon.github.io/tr/rehber/",
@@ -1382,7 +1482,7 @@
     "pt": "https://nrazon.github.io/pt/guias/"
    },
    "default": "en",
-   "hash": "11ebb77a0ea7d0841d3ce02c1e3db0f7"
+   "hash": "16b3ee1916ec0d1d089c17dacded8429"
   },
   {
    "url": "https://nrazon.github.io/es/guias/",
@@ -1393,7 +1493,7 @@
     "pt": "https://nrazon.github.io/pt/guias/"
    },
    "default": "en",
-   "hash": "231154e230076f4a58c5a496daf99459"
+   "hash": "a862df68471aee7bc28bfbb5ed911b0e"
   },
   {
    "url": "https://nrazon.github.io/pt/guias/",
@@ -1404,7 +1504,7 @@
     "pt": "https://nrazon.github.io/pt/guias/"
    },
    "default": "en",
-   "hash": "38a10f75902bfb13b91767643996e2e2"
+   "hash": "cb2a7e8e5bacd907101525124b70f5f4"
   }
  ],
  "index": {

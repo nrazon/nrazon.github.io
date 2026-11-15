@@ -160,8 +160,8 @@
   "date": "2026-11-13"
  },
  "https://nrazon.github.io/sondepremler/": {
-  "hash": "afec071a464216e4f75b859fada7ca9b",
-  "date": "2026-11-11"
+  "hash": "8323db8f7b6ebdc97370285bff752fc7",
+  "date": "2026-11-15"
  },
  "https://nrazon.github.io/tictactoe/": {
   "hash": "d454837f193409e21c16213abfe06cd8",
@@ -232,8 +232,8 @@
   "date": "2026-11-13"
  },
  "https://nrazon.github.io/tr/sondepremler/": {
-  "hash": "ddd5ab968a8951cdcddda7f4f98ce9e6",
-  "date": "2026-11-11"
+  "hash": "477017a12a9836e94fff946b3d04484b",
+  "date": "2026-11-15"
  },
  "https://nrazon.github.io/tr/tictactoe/": {
   "hash": "9e555f1b330fd392ee5551b4f546baf4",
@@ -260,7 +260,7 @@
   "date": "2026-11-15"
  },
  "https://nrazon.github.io/uzaygunlugu/": {
-  "hash": "eb24b1b2aa2064573d7e6d7a7b750d69",
+  "hash": "5f7016aa70e5f8a3e5c660bf9dc0cf76",
   "date": "2026-11-15"
  },
  "https://nrazon.github.io/whereami/": {
@@ -268,8 +268,8 @@
   "date": "2026-11-13"
  },
  "https://nrazon.github.io/es/guias/": {
-  "hash": "231154e230076f4a58c5a496daf99459",
-  "date": "2026-11-14"
+  "hash": "a862df68471aee7bc28bfbb5ed911b0e",
+  "date": "2026-11-15"
  },
  "https://nrazon.github.io/es/guias/como-jugar-2048-estrategia/": {
   "hash": "2c28c6760f96b02db62d4f20301211e1",
@@ -304,8 +304,8 @@
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/guides/": {
-  "hash": "80fec7c51a7375fd8824e5a6d6c8f3db",
-  "date": "2026-11-14"
+  "hash": "11023559299b2fb08e7f933b6adaff71",
+  "date": "2026-11-15"
  },
  "https://nrazon.github.io/guides/block-puzzle-tips-and-tricks/": {
   "hash": "03fcee3d5bff7140a6af7479f34f08de",
@@ -340,8 +340,8 @@
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/pt/guias/": {
-  "hash": "38a10f75902bfb13b91767643996e2e2",
-  "date": "2026-11-14"
+  "hash": "cb2a7e8e5bacd907101525124b70f5f4",
+  "date": "2026-11-15"
  },
  "https://nrazon.github.io/pt/guias/como-jogar-2048-estrategia/": {
   "hash": "6a3b99ab5fff74504f9e7344b7cbf5c1",
@@ -376,8 +376,8 @@
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/tr/rehber/": {
-  "hash": "11ebb77a0ea7d0841d3ce02c1e3db0f7",
-  "date": "2026-11-14"
+  "hash": "16b3ee1916ec0d1d089c17dacded8429",
+  "date": "2026-11-15"
  },
  "https://nrazon.github.io/tr/rehber/2048-nasil-oynanir-strateji/": {
   "hash": "747c995232a89b868c9e121f855a31b0",
@@ -1309,6 +1309,38 @@
  },
  "https://nrazon.github.io/tr/yazilar/telefonsuz-app-store-ekran-goruntuleri-robolectric-sahte-gorsel-yukleyici-ve-basliksiz-tarayici/": {
   "hash": "0cf4a8fd1dce1f0ff60d183a65a095d8",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/es/guias/como-leer-las-listas-de-terremotos-de-afad-y-kandilli/": {
+  "hash": "95bfb5105e968d4d59cdef3fe00d0c78",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/es/guias/que-muestran-las-pantallas-de-turquia-tierra-e-iss-en-uzay-gunlugu/": {
+  "hash": "7442bd1a54acf2395cefdb7466ba2f6a",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/guides/how-to-read-the-afad-and-kandilli-earthquake-lists/": {
+  "hash": "6f20b5b133c1a210e1d866ce5b78d7c2",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/guides/what-the-earth-turkey-and-iss-screens-show-in-uzay-gunlugu/": {
+  "hash": "5d24f9c9d4a3438672c3dfcb823ea36b",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/pt/guias/como-ler-as-listas-de-terremotos-da-afad-e-do-kandilli/": {
+  "hash": "dcdd709e44052ef905123295a75fbc2e",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/pt/guias/o-que-mostram-as-telas-turquia-terra-e-iss-no-uzay-gunlugu/": {
+  "hash": "52e277c45f5be954aae86af62cbc8b1b",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/tr/rehber/afad-ve-kandilli-deprem-listesi-nasil-okunur/": {
+  "hash": "e7585a4f6f48be3ab0941aa70b3c8b1d",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/tr/rehber/uzay-gunlugu-turkiye-dunya-ve-iss-ekranlari-ne-gosteriyor/": {
+  "hash": "6053ead561adc6c43dc754b9f8c4c1cc",
   "date": "2026-11-15"
  }
 }
