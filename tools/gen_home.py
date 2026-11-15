@@ -130,6 +130,17 @@ def badge(pkg):
     return f'<a class="play" href="{play_url(pkg)}">{imgs}</a>'
 
 
+IOS = json.load(open(os.path.join(G, "tools", "ios_apps.json"), encoding="utf-8"))
+
+
+def badge_ios(slug):
+    """App Store rozeti (yalnız App Store'da yayında olan uygulamalarda: tools/ios_apps.json)."""
+    if slug not in IOS:
+        return ""
+    imgs = "".join(f'<img lang="{l}" src="badges/app-store-{"tr" if l == "tr" else "en"}.svg" alt="{"App Store'dan indir" if l == "tr" else "Download on the App Store"}">' for l in LANGS)
+    return f'<a class="play appstore" href="https://apps.apple.com/app/id{IOS[slug]}">{imgs}</a>'
+
+
 def shots_for(slug, lang):
     ext = "jpg" if slug == "sliplines" else "png"
     return f"{slug}/shots/{lang}/%02d.{ext}"
@@ -192,7 +203,7 @@ def show_card(a):
         <h3><a class="stretch" href="{s}/">{esc(a["names"]["en"])}</a>{badge_new(a["new"])}</h3>
         <p class="stag">{L(SHOW_TAG[s])}</p>
         {L(desc, "p", "sdesc")}
-        <div class="links">{badge(pk)}{qr_html(s)}<a class="small" href="{s}/">{L(T["more"], "b")}</a></div>
+        <div class="links">{badge(pk)}{badge_ios(s)}{qr_html(s)}<a class="small" href="{s}/">{L(T["more"], "b")}</a></div>
       </div>
       <div class="shots" aria-hidden="true">{shot_imgs(s, picks)}</div>
     </article>'''
@@ -207,7 +218,7 @@ def tool_card(a):
         <div class="tbody">
           <h3><a class="stretch" href="{s}/">{L(a["names"])}</a>{chip}</h3>
           {L(a["desc"], "p")}
-          <div class="gprow"><a class="gp" href="{play_url(pk)}"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a>{qr_html(s, short=True)}{demo_btn(s)}</div>
+          <div class="gprow"><a class="gp" href="{play_url(pk)}"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a>{(f'<a class="gp" href="https://apps.apple.com/app/id{IOS[s]}">App Store</a>' if s in IOS else "")}{qr_html(s, short=True)}{demo_btn(s)}</div>
         </div>
       </article>'''
 

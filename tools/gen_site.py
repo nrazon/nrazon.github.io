@@ -395,6 +395,9 @@ def esc(s):
 GLYPH = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z"/></svg>'
 
 
+ANDROID_QR = {"en": "Install on Android (QR)", "tr": "Android için QR", "es": "Instalar en Android (QR)", "pt": "Instalar no Android (QR)", "fr": "Installer sur Android (QR)"}
+
+
 def page(cfg):
     L = cfg["langs"]
     slug = cfg["slug"]
@@ -454,7 +457,7 @@ def page(cfg):
     }, ensure_ascii=False)
     title_main = t(cfg["title"], "en")
     qr_html = "" if cfg["slug"] in HIDDEN else (
-        f'<details class="qr" data-qr="{cfg["slug"]}"><summary>' + GLYPH + multi(SEC["qr"], L) + '</summary><div class="qrpop">'
+        f'<details class="qr" data-qr="{cfg["slug"]}"><summary>' + GLYPH + multi(ANDROID_QR if cfg["slug"] in IOS else SEC["qr"], L) + '</summary><div class="qrpop">'
         f'<img src="../qr/{cfg["slug"]}.svg" alt="QR code: install {esc(cfg["name"])}" width="183" height="183" loading="lazy">' + multi(SEC["qrscan"], L, "p") + '</div></details>')
     IOS_QR = {"en": "Install on iPhone (QR)", "tr": "iPhone için QR", "es": "Instalar en iPhone (QR)", "pt": "Instalar no iPhone (QR)", "fr": "Installer sur iPhone (QR)"}
     ios_id = IOS.get(cfg["slug"])
