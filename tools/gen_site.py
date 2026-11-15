@@ -395,7 +395,8 @@ def esc(s):
 GLYPH = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z"/></svg>'
 
 
-ANDROID_QR = {"en": "Install on Android (QR)", "tr": "Android için QR", "es": "Instalar en Android (QR)", "pt": "Instalar no Android (QR)", "fr": "Installer sur Android (QR)"}
+QRSCAN_IOS = {"tr": "Kamerayla tara: Android'de Google Play, iPhone'da App Store açılır", "en": "Scan with your camera: opens Google Play on Android, the App Store on iPhone", "es": "Escanea con la cámara: abre Google Play en Android y App Store en iPhone", "pt": "Escaneie com a câmera: abre o Google Play no Android e a App Store no iPhone", "fr": "Scannez avec l'appareil photo : ouvre Google Play sur Android, l'App Store sur iPhone"}
+ANDROID_QR_UNUSED = {"en": "Install on Android (QR)", "tr": "Android için QR", "es": "Instalar en Android (QR)", "pt": "Instalar no Android (QR)", "fr": "Installer sur Android (QR)"}
 
 
 def page(cfg):
@@ -457,16 +458,14 @@ def page(cfg):
     }, ensure_ascii=False)
     title_main = t(cfg["title"], "en")
     qr_html = "" if cfg["slug"] in HIDDEN else (
-        f'<details class="qr" data-qr="{cfg["slug"]}"><summary>' + GLYPH + multi(ANDROID_QR if cfg["slug"] in IOS else SEC["qr"], L) + '</summary><div class="qrpop">'
-        f'<img src="../qr/{cfg["slug"]}.svg" alt="QR code: install {esc(cfg["name"])}" width="183" height="183" loading="lazy">' + multi(SEC["qrscan"], L, "p") + '</div></details>')
+        f'<details class="qr" data-qr="{cfg["slug"]}"><summary>' + GLYPH + multi(SEC["qr"], L) + '</summary><div class="qrpop">'
+        f'<img src="../qr/{cfg["slug"]}.svg" alt="QR code: install {esc(cfg["name"])}" width="183" height="183" loading="lazy">' + multi(QRSCAN_IOS if cfg["slug"] in IOS else SEC["qrscan"], L, "p") + '</div></details>')
     IOS_QR = {"en": "Install on iPhone (QR)", "tr": "iPhone için QR", "es": "Instalar en iPhone (QR)", "pt": "Instalar no iPhone (QR)", "fr": "Installer sur iPhone (QR)"}
     ios_id = IOS.get(cfg["slug"])
     appstore_html = qr_ios_html = ""
     if ios_id:
         appstore_html = (f'<a class="play appstore" href="https://apps.apple.com/app/id{ios_id}"><img src="../badges/app-store-tr.svg" alt="App Store\'dan indir" data-l="tr">'
                          + "".join(f'<img src="../badges/app-store-en.svg" alt="Download on the App Store" data-l="{l}">' for l in L if l != "tr") + '</a>')
-        qr_ios_html = (f'<details class="qr" data-qr="{cfg["slug"]}-ios"><summary>' + GLYPH + multi(IOS_QR, L) + '</summary><div class="qrpop">'
-                       f'<img src="../qr/{cfg["slug"]}-ios.svg" alt="QR code: install {esc(cfg["name"])} on iPhone" width="183" height="183" loading="lazy">' + multi(SEC["qrscan"], L, "p") + '</div></details>')
     demo_attr = {"tictactoe": ("data-ttt", "ttt.js?v=2"), "game2048": ("data-g2048", "g2048.js?v=1"), "calisan": ("data-calisan", "calisan.js?v=3")}.get(cfg["slug"])
     demo_block = (f'  <section class="block" aria-labelledby="h-demo">\n    <h2 class="h" id="h-demo">{multi(SEC["try"], L)}</h2>\n'
                   f'    <div class="demo-wrap"><div {demo_attr[0]} data-play="{play}"></div></div>\n  </section>\n\n') if demo_attr else ""

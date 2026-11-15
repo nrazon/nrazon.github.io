@@ -9,7 +9,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "fd22d7ef66677cd2b56a3567e7dd08e8",
+  "hash": "f4d7708160e03530c4f69471c497f66d",
   "slug": ""
  },
  "https://nrazon.github.io/tr/": {
@@ -22,7 +22,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "b871cde7ba57ea37e893a126d5294661",
+  "hash": "3ac7335d7387f1e2f8d744f08a3d5aa3",
   "slug": ""
  },
  "https://nrazon.github.io/es/": {
@@ -35,7 +35,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "03840078a60d5b2c3624381765852728",
+  "hash": "878220a0a30722e1ce0b39136488d06e",
   "slug": ""
  },
  "https://nrazon.github.io/pt/": {
@@ -48,7 +48,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "1894e3c6c6eb18ab2075892d9d6b8886",
+  "hash": "130e5f54acc78038dcd7c255b45f4862",
   "slug": ""
  },
  "https://nrazon.github.io/agecalculator/": {
@@ -600,7 +600,7 @@
   },
   "lang": "tr",
   "default": "tr",
-  "hash": "d2ea385d221c13313fab9d3d3d68cbfb",
+  "hash": "7a4243f36d3ecb2426c5c82b7f41ff95",
   "slug": "medyafobi"
  },
  "https://nrazon.github.io/nudgelings/": {
@@ -766,7 +766,7 @@
   },
   "lang": "tr",
   "default": "tr",
-  "hash": "f3ad8487718f850df637eacfe77803e9",
+  "hash": "3739459178d26d3c06991effc2d635f0",
   "slug": "sansoyunlari"
  },
  "https://nrazon.github.io/sliplines/": {

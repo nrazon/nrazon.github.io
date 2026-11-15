@@ -27,7 +27,7 @@ MARK = "<!--i18n-split-->"
 LANGS = ["en", "tr", "es", "pt", "fr"]
 LABEL = {"tr": "TR", "en": "EN", "es": "ES", "pt": "PT", "fr": "FR"}
 OGLOC = {"en": "en_US", "tr": "tr_TR", "es": "es_ES", "pt": "pt_BR", "fr": "fr_CA"}
-SKIP_DIRS = {"tools", "qr", "badges", "node_modules", ".git", ".github", "playreports", "tr", "es", "pt", "fr", "guides", "rehber", "guias", "blog", "yazilar"}
+SKIP_DIRS = {"tools", "qr", "go", "badges", "node_modules", ".git", ".github", "playreports", "tr", "es", "pt", "fr", "guides", "rehber", "guias", "blog", "yazilar"}
 SOCIAL = ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]
 
 SUFFIX = {

@@ -169,13 +169,16 @@ def badge_new(until, key="new"):
 GLYPH = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z"/></svg>'
 
 
+QRSCAN_IOS = {"tr": "Kamerayla tara: Android'de Google Play, iPhone'da App Store açılır", "en": "Scan with your camera: opens Google Play on Android, the App Store on iPhone", "es": "Escanea con la cámara: abre Google Play en Android y App Store en iPhone", "pt": "Escaneie com a câmera: abre o Google Play no Android e a App Store no iPhone", "fr": "Scannez avec l'appareil photo : ouvre Google Play sur Android, l'App Store sur iPhone"}
+
+
 def qr_html(slug, short=False):
     """Masaüstü ziyaretçiler için "QR ile yükle" (CSS yalnız fare olan geniş ekranlarda gösterir). QR: tools/gen_qr.py ile üretilen qr/<slug>.svg"""
     if not os.path.exists(os.path.join(G, "qr", slug + ".svg")):
         return ""
     lab = L(T["qrshort" if short else "qr"])
     return (f'<details class="qr" data-qr="{slug}"><summary>{GLYPH}{lab}</summary><div class="qrpop">'
-            f'<img src="qr/{slug}.svg" alt="QR code: install {esc(app_name(slug))}" width="183" height="183" loading="lazy">{L(T["qrscan"], "p")}</div></details>')
+            f'<img src="qr/{slug}.svg" alt="QR code: install {esc(app_name(slug))}" width="183" height="183" loading="lazy">{L(QRSCAN_IOS if slug in IOS else T["qrscan"], "p")}</div></details>')
 
 
 # Tarayıcı demosu olan oyunlar: slug -> (panel kimliği, betik). Betik ilk açılışta yüklenir.
