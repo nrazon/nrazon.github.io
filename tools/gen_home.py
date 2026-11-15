@@ -177,7 +177,7 @@ def qr_html(slug, short=False):
     if not os.path.exists(os.path.join(G, "qr", slug + ".svg")):
         return ""
     lab = L(T["qrshort" if short else "qr"])
-    return (f'<details class="qr" data-qr="{slug}"><summary>{GLYPH}{lab}</summary><div class="qrpop">'
+    return (f'<details class="qr" data-qr="{slug}"><summary aria-label="QR">{GLYPH}{lab}</summary><div class="qrpop">'
             f'<img src="qr/{slug}.svg" alt="QR code: install {esc(app_name(slug))}" width="183" height="183" loading="lazy">{L(QRSCAN_IOS if slug in IOS else T["qrscan"], "p")}</div></details>')
 
 
@@ -221,7 +221,7 @@ def tool_card(a):
         <div class="tbody">
           <h3><a class="stretch" href="{s}/">{L(a["names"])}</a>{chip}</h3>
           {L(a["desc"], "p")}
-          <div class="gprow"><a class="gp" href="{play_url(pk)}"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a>{(f'<a class="gp" href="https://apps.apple.com/app/id{IOS[s]}">App Store</a>' if s in IOS else "")}{qr_html(s, short=True)}{demo_btn(s)}</div>
+          <div class="gprow{" dual" if s in IOS else ""}"><a class="gp" href="{play_url(pk)}"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a>{(f'<a class="gp" href="https://apps.apple.com/app/id{IOS[s]}">App Store</a>' if s in IOS else "")}{qr_html(s, short=True)}{demo_btn(s)}</div>
         </div>
       </article>'''
 
@@ -328,6 +328,12 @@ CSS = r'''
   .tool:has(.qr[open]) { z-index:40; }
   .gp { position:relative; z-index:2; display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:700; color:var(--link); text-decoration:none; padding:5px 11px; border:1.5px solid var(--line); border-radius:999px; }
   .gp:hover { background:var(--chip); }
+  /* Google Play + App Store + QR üç sütunlu kartta tek satıra sığsın: simgesiz, dar hap, QR yalnız simge */
+  .gprow.dual { gap:6px; }
+  .gprow.dual .gp { padding:5px 9px; font-size:12px; }
+  .gprow.dual .gp svg { display:none; }
+  .gprow.dual .qr summary { padding:6px 9px; }
+  .gprow.dual .qr summary > span { display:none; }
   .tool.soon { border:1.5px dashed var(--line); box-shadow:none; background:transparent; }
   .tool.soon:hover { transform:none; }
   .tool.soon .small { margin-right:10px; position:relative; z-index:2; }
