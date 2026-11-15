@@ -19,7 +19,8 @@ BLOG_MODULES = ["mahjong_solvable", "mahjong_history", "daily_seed", "generated_
                 "deprem_buyukluk", "deprem_oncesi_sonrasi", "deprem_veri_kaynaklari", "bmi_nedir", "bmi_hatalar", "yas_hesaplama", "artik_yil_dogum_gunu", "pento_history", "pento_dlx", "tombala_cards",
                 "merkur_retrosu", "burclar_takimyildiz", "ay_evreleri",
                 "solo_dev_portfolio", "ad_lifecycle_events", "compose_juice",
-                "ios_without_mac", "kmp_agp9_traps", "iphone_usb_windows", "remote_promo_list"]  # 3 yazı (12.11.2026); son 3 yalnız Türkçe: merkur_retrosu, burclar_takimyildiz, ay_evreleri: yalnız Türkçe (Astrolings)
+                "ios_without_mac", "kmp_agp9_traps", "iphone_usb_windows", "remote_promo_list",
+                "rewrite_parity_oracle", "one_qr_two_stores", "store_screenshots_without_a_phone", "app_review_information_request", "app_store_link_storefront"]  # 3 yazı (12.11.2026); son 3 yalnız Türkçe: merkur_retrosu, burclar_takimyildiz, ay_evreleri: yalnız Türkçe (Astrolings)
 
 BT = {
     "en": {"idx_title": "Blog: puzzle design, game history and dev notes", "idx_h1": "Blog", "idx_desc": "Notes from an independent Android developer: how puzzles are generated and checked, the history of classic puzzle games and behind-the-scenes dev stories.",

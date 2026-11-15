@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why My App Store Link Returned 404 and the Page Showed 2018 Screenshots</title>
+<meta name="description" content="Dev notes on two surprises with an old iPhone app that got a new version: a generic App Store link that returned &quot;not found&quot; outside one country, and a store…">
+<link rel="canonical" href="https://nrazon.github.io/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/app-store-baglantim-neden-404-verdi-ve-sayfa-2018-ekran-goruntulerini-gosterdi/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/por-que-mi-enlace-de-la-app-store-dio-404-y-la-pagina-mostraba-capturas-de-2018/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Why My App Store Link Returned 404 and the Page Showed 2018 Screenshots">
+<meta property="og:description" content="Dev notes on two surprises with an old iPhone app that got a new version: a generic App Store link that returned &quot;not found&quot; outside one country, and a store…">
+<meta property="og:url" content="https://nrazon.github.io/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why My App Store Link Returned 404 and the Page Showed 2018 Screenshots">
+<meta name="twitter:description" content="Dev notes on two surprises with an old iPhone app that got a new version: a generic App Store link that returned &quot;not found&quot; outside one country, and a store…">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Why My App Store Link Returned 404 and the Page Showed 2018 Screenshots", "description": "Dev notes on two surprises with an old iPhone app that got a new version: a generic App Store link that returned \"not found\" outside one country, and a store page that kept showing screenshots from 2018.", "inLanguage": "en", "mainEntityOfPage": "https://nrazon.github.io/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-16", "dateModified": "2026-11-16", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}, "keywords": "Dev notes, iOS"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nrazon.github.io/blog/"}, {"@type": "ListItem", "position": 3, "name": "Why My App Store Link Returned 404 and the Page Showed 2018 Screenshots", "item": "https://nrazon.github.io/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why did my App Store link show \"not found\" for some people?", "acceptedAnswer": {"@type": "Answer", "text": "In my case the generic link sent each visitor to their own storefront, and the app was available only in one country. For everyone else the page had no such app. The country-specific link worked."}}, {"@type": "Question", "name": "How can I check which countries list my app?", "acceptedAnswer": {"@type": "Answer", "text": "Open itunes.apple.com/lookup?id=<ID>&country=<cc> with a two-letter country code. In my checks, resultCount 1 meant the app was listed there and 0 meant it was not."}}, {"@type": "Question", "name": "Does a result of 0 always mean the app is blocked?", "acceptedAnswer": {"@type": "Answer", "text": "No. It can mean the country is not selected in availability, the release is still propagating, or a compliance review is pending. I saw the last one with a Digital Services Act item in review."}}, {"@type": "Question", "name": "Why did the store page still show old screenshots after the update?", "acceptedAnswer": {"@type": "Answer", "text": "In my case old screenshot sets under other device sizes were still attached and the page used them. I had to delete them in a new version, 4.0.1, and upload a new build."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/app-store-baglantim-neden-404-verdi-ve-sayfa-2018-ekran-goruntulerini-gosterdi/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/por-que-mi-enlace-de-la-app-store-dio-404-y-la-pagina-mostraba-capturas-de-2018/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>Why My App Store Link Returned 404 and the Page Showed 2018 Screenshots</h1>
+    <p class="by">By Nesim Razon, independent Android developer · 2026-11-16</p>
+    <p class="tags"><a href="/blog/#devlog">#Dev notes</a><a href="/blog/#ios">#iOS</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">One of my apps, a lottery results app for Turkey, has been on the App Store since 2018. This month it finally got a modern iPhone version. Two things then surprised me: the store link did not work for most people, and the approved page still showed the old 2018 screenshots. Both turned out to have simple causes. This is what I saw, and everything below is what happened in my case, not a general rule about how Apple works.</p>
+    <h2>The link that showed &quot;not found&quot;</h2>
+    <p>I needed the app&#x27;s store link for an ad network&#x27;s &quot;link your app&quot; form, and I also wanted it on my website. I used the generic form, apps.apple.com/app/id&lt;ID&gt;. When I opened it from my own phone it worked. When I tested it from other places, and when the ad network&#x27;s form tried to find the app, it said the app could not be found.</p>
+    <p>As far as I can tell, that generic link sends each visitor to the store of their own region. My app was available only in the Turkey storefront. For a visitor whose store region was somewhere else, the page they landed on had no such app, so they got a 404.</p>
+    <h2>The fix: put the country in the link</h2>
+    <p>The country-specific form, apps.apple.com/tr/app/id&lt;ID&gt;, worked for everyone I tried it with, because it points to the one storefront where the app exists. The ad network&#x27;s form also found the app once I used that link.</p>
+    <p>On my website I added a small setting. An app&#x27;s entry in the config can be written as &quot;tr:&lt;ID&gt;&quot; instead of just &quot;&lt;ID&gt;&quot;, and the build then produces the country-specific link. Entries without a prefix still produce the generic link. It is a tiny change, but it keeps me from fixing the same thing by hand on every page.</p>
+    <h2>A quick way to check which storefronts have your app</h2>
+    <p>Apple has a public lookup endpoint: itunes.apple.com/lookup?id=&lt;ID&gt;&amp;country=&lt;cc&gt;. For each two-letter country code it returns a JSON with resultCount. In my checks the value was 1 where the app was listed and 0 where it was not. It takes seconds to loop over a list of countries and see where you stand, with no login.</p>
+    <p>I ran it for a second, brand-new app of mine too. It appeared in about half of the storefronts I tried: the United States, the United Kingdom, Canada, Australia, Turkey and a few more. It did not appear in the EU countries yet.</p>
+    <h2>Absence can mean different things</h2>
+    <p>The missing EU storefronts matched something I saw in App Store Connect, a compliance item called &quot;Digital Services Act&quot; with the status &quot;In Review&quot;, covering 27 countries and regions. It is about trader verification. So for that app the gap was most likely a compliance review, which is not something I can fix by changing a setting.</p>
+    <p>That is the point I took away. A result of 0 for a country can mean at least three different things:</p>
+    <ul><li>The country is not selected in the app&#x27;s availability settings.</li><li>The release is still propagating and has not reached that storefront yet.</li><li>A compliance review is pending for that region.</li></ul>
+    <h2>The second surprise: 2018 screenshots</h2>
+    <p>After the new version was approved and live, I opened the store page and the screenshots were still the old ones from 2018. I checked the lookup API again. Its screenshotUrls list contained seven images, all in the older, narrower 9:16 shape. My new 6.9-inch set was not in it.</p>
+    <p>In App Store Connect, the Media Manager showed why. My new screenshots sat in the section that is required for the newest phones, &quot;iPhone with Dynamic Island (medium display)&quot;. But the old sets from earlier versions were still present under other device sizes, such as &quot;iPhone with Face ID (medium display)&quot; and &quot;iPhone with Home Button (large display)&quot;. In my case the page was using those older sets, not the new one.</p>
+    <h2>Fixing it needed a new version</h2>
+    <p>The screenshots of a version that is already live could not be edited. So I created version 4.0.1, deleted the old sets there, and kept only the new one.</p>
+    <p>A new version also needs a build with that version number, so I had to build and upload a new binary just to change the pictures. It is a slow way to replace screenshots, but I did not find another option for a live version.</p>
+    <p>I am describing this as it worked for me. I did not test whether other sizes behave the same way for every listing.</p>
+    <h2>What I would do differently</h2>
+    <p>Two small habits come out of this. First, when I add a modern iPhone version to an old listing, I now clear every old device-size set before submitting, not only the section that looks required. Second, after any release I check the real public page and the lookup API, not only the App Store Connect screens, because they showed me different things.</p>
+    <p>For links, I now use the country form whenever an app is not available worldwide, and I run the lookup for a handful of countries before sending a link to anyone, including an ad network.</p>
+    
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Why did my App Store link show &quot;not found&quot; for some people?</summary><p>In my case the generic link sent each visitor to their own storefront, and the app was available only in one country. For everyone else the page had no such app. The country-specific link worked.</p></details><details><summary>How can I check which countries list my app?</summary><p>Open itunes.apple.com/lookup?id=&lt;ID&gt;&amp;country=&lt;cc&gt; with a two-letter country code. In my checks, resultCount 1 meant the app was listed there and 0 meant it was not.</p></details><details><summary>Does a result of 0 always mean the app is blocked?</summary><p>No. It can mean the country is not selected in availability, the release is still propagating, or a compliance review is pending. I saw the last one with a Digital Services Act item in review.</p></details><details><summary>Why did the store page still show old screenshots after the update?</summary><p>In my case old screenshot sets under other device sizes were still attached and the page used them. I had to delete them in a new version, 4.0.1, and upload a new build.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/how-daily-puzzles-work-without-a-server/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>How a Daily Puzzle Can Be the Same for Everyone, No Server</b></div></a></li><li><a href="/blog/how-puzzle-levels-are-generated-and-checked/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>How Hundreds of Puzzle Levels Are Generated and Checked</b></div></a></li><li><a href="/blog/keeping-two-dozen-android-apps-maintainable-solo/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Keeping Two Dozen Android Apps Maintainable as a Solo Dev</b></div></a></li><li><a href="/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Catching a Stuck Interstitial Ad on Android With Event Logs</b></div></a></li><li><a href="/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Shipping an iPhone App Without a Mac: Kotlin Multiplatform, a Cloud Mac and TestFlight</b></div></a></li><li><a href="/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Moving an Android App to Kotlin Multiplatform With AGP 9: Seven Traps</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

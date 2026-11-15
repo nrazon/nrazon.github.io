@@ -47,12 +47,30 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/blog/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/blog/app-store-review-guideline-2-1-information-needed-what-i-sent/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/app-store-review-guideline-2-1-information-needed-what-i-sent/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/app-store-inceleme-kurali-2-1-bilgi-gerekli-ne-gonderdim/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/guia-2-1-de-app-store-informacion-necesaria-lo-que-envie/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/diretriz-2-1-da-app-store-informacao-necessaria-o-que-enviei/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/app-store-review-guideline-2-1-information-needed-what-i-sent/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/telefonsuz-app-store-ekran-goruntuleri-robolectric-sahte-gorsel-yukleyici-ve-basliksiz-tarayici/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/capturas-de-app-store-sin-telefono-robolectric-un-cargador-de-imagenes-falso-y-un-navegador-sin-interfaz/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/blog/bmi-common-mistakes-and-limits/</loc>
@@ -190,6 +208,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/blog/pentomino-puzzles-dancing-links-exact-cover/</loc>
     <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/pentomino-puzzles-dancing-links-exact-cover/"/>
@@ -206,6 +233,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/historia-de-los-pentominos-golomb-doce-piezas/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/historia-dos-pentominos-golomb-doze-pecas/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/pentominoes-history-golomb-twelve-pieces/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/reescribir-para-kotlin-multiplatform-sin-cambiar-el-comportamiento-el-codigo-antiguo-como-oraculo-de-pruebas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/</loc>
@@ -251,6 +287,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/de-donde-vienen-los-datos-de-terremotos/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/de-onde-vem-os-dados-de-terremotos/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/where-earthquake-data-comes-from/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/app-store-baglantim-neden-404-verdi-ve-sayfa-2018-ekran-goruntulerini-gosterdi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/por-que-mi-enlace-de-la-app-store-dio-404-y-la-pagina-mostraba-capturas-de-2018/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/bmicalculator/</loc>
@@ -321,12 +366,21 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/es/blog/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/blog/capturas-de-app-store-sin-telefono-robolectric-un-cargador-de-imagenes-falso-y-un-navegador-sin-interfaz/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/telefonsuz-app-store-ekran-goruntuleri-robolectric-sahte-gorsel-yukleyici-ve-basliksiz-tarayici/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/capturas-de-app-store-sin-telefono-robolectric-un-cargador-de-imagenes-falso-y-un-navegador-sin-interfaz/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/es/blog/como-calcular-la-edad-exacta-anos-meses-dias/</loc>
@@ -410,6 +464,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/bmi-common-mistakes-and-limits/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/es/blog/guia-2-1-de-app-store-informacion-necesaria-lo-que-envie/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/app-store-review-guideline-2-1-information-needed-what-i-sent/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/app-store-inceleme-kurali-2-1-bilgi-gerekli-ne-gonderdim/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/guia-2-1-de-app-store-informacion-necesaria-lo-que-envie/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/diretriz-2-1-da-app-store-informacao-necessaria-o-que-enviei/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/app-store-review-guideline-2-1-information-needed-what-i-sent/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/es/blog/historia-de-los-pentominos-golomb-doce-piezas/</loc>
     <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/pentominoes-history-golomb-twelve-pieces/"/>
@@ -473,6 +536,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/es/blog/por-que-mi-enlace-de-la-app-store-dio-404-y-la-pagina-mostraba-capturas-de-2018/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/app-store-baglantim-neden-404-verdi-ve-sayfa-2018-ekran-goruntulerini-gosterdi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/por-que-mi-enlace-de-la-app-store-dio-404-y-la-pagina-mostraba-capturas-de-2018/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/</loc>
     <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/"/>
@@ -509,6 +581,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/what-is-bmi-how-to-calculate-and-read-it/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/es/blog/reescribir-para-kotlin-multiplatform-sin-cambiar-el-comportamiento-el-codigo-antiguo-como-oraculo-de-pruebas/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/reescribir-para-kotlin-multiplatform-sin-cambiar-el-comportamiento-el-codigo-antiguo-como-oraculo-de-pruebas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/es/blog/sensacion-de-juego-jetpack-compose-sin-motor/</loc>
     <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/game-feel-jetpack-compose-without-game-engine/"/>
@@ -525,6 +606,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/terremoto-que-hacer-antes-durante-despues/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/terremoto-o-que-fazer-antes-durante-depois/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/earthquake-preparedness-what-to-do/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/es/bmicalculator/</loc>
@@ -1299,7 +1389,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/blog/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/"/>
@@ -1314,6 +1404,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/cumpleanos-29-de-febrero-como-contar-la-edad/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/aniversario-29-de-fevereiro-como-contar-a-idade/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/leap-day-birthday-how-to-count-age/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/telefonsuz-app-store-ekran-goruntuleri-robolectric-sahte-gorsel-yukleyici-ve-basliksiz-tarayici/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/capturas-de-app-store-sin-telefono-robolectric-un-cargador-de-imagenes-falso-y-un-navegador-sin-interfaz/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/blog/como-calcular-idade-exata-anos-meses-dias/</loc>
@@ -1377,6 +1476,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/detectar-anuncio-intersticial-bloqueado-android-eventos/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/blog/diretriz-2-1-da-app-store-informacao-necessaria-o-que-enviei/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/app-store-review-guideline-2-1-information-needed-what-i-sent/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/app-store-inceleme-kurali-2-1-bilgi-gerekli-ne-gonderdim/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/guia-2-1-de-app-store-informacion-necesaria-lo-que-envie/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/diretriz-2-1-da-app-store-informacao-necessaria-o-que-enviei/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/app-store-review-guideline-2-1-information-needed-what-i-sent/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/blog/erros-comuns-e-limites-do-imc/</loc>
@@ -1469,6 +1577,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/what-is-bmi-how-to-calculate-and-read-it/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/app-store-baglantim-neden-404-verdi-ve-sayfa-2018-ekran-goruntulerini-gosterdi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/por-que-mi-enlace-de-la-app-store-dio-404-y-la-pagina-mostraba-capturas-de-2018/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/</loc>
     <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/"/>
@@ -1496,6 +1613,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/pentomino-puzzles-dancing-links-exact-cover/"/>
   </url>
   <url>
+    <loc>https://nrazon.github.io/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/reescribir-para-kotlin-multiplatform-sin-cambiar-el-comportamiento-el-codigo-antiguo-como-oraculo-de-pruebas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/pt/blog/terremoto-o-que-fazer-antes-durante-depois/</loc>
     <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/earthquake-preparedness-what-to-do/"/>
@@ -1503,6 +1629,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/terremoto-que-hacer-antes-durante-despues/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/terremoto-o-que-fazer-antes-durante-depois/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/earthquake-preparedness-what-to-do/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/pt/bmicalculator/</loc>
@@ -2404,7 +2539,7 @@
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/yazilar/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/"/>
@@ -2437,6 +2572,24 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/yazilar/app-store-baglantim-neden-404-verdi-ve-sayfa-2018-ekran-goruntulerini-gosterdi/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/app-store-baglantim-neden-404-verdi-ve-sayfa-2018-ekran-goruntulerini-gosterdi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/por-que-mi-enlace-de-la-app-store-dio-404-y-la-pagina-mostraba-capturas-de-2018/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/yazilar/app-store-inceleme-kurali-2-1-bilgi-gerekli-ne-gonderdim/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/app-store-review-guideline-2-1-information-needed-what-i-sent/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/app-store-inceleme-kurali-2-1-bilgi-gerekli-ne-gonderdim/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/guia-2-1-de-app-store-informacion-necesaria-lo-que-envie/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/diretriz-2-1-da-app-store-informacao-necessaria-o-que-enviei/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/app-store-review-guideline-2-1-information-needed-what-i-sent/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/yazilar/ay-evreleri-neden-29-5-gunde-doner-yeniay-dolunay/</loc>
@@ -2474,6 +2627,15 @@
     <lastmod>2026-11-12</lastmod>
   </url>
   <url>
+    <loc>https://nrazon.github.io/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/reescribir-para-kotlin-multiplatform-sin-cambiar-el-comportamiento-el-codigo-antiguo-como-oraculo-de-pruebas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/"/>
+  </url>
+  <url>
     <loc>https://nrazon.github.io/tr/yazilar/deprem-buyuklugu-ve-siddeti-arasindaki-fark/</loc>
     <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/earthquake-magnitude-vs-intensity/"/>
@@ -2499,6 +2661,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/</loc>
@@ -2593,6 +2764,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/mantener-dos-docenas-de-apps-android-siendo-un-solo-desarrollador/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/keeping-two-dozen-android-apps-maintainable-solo/"/>
+  </url>
+  <url>
+    <loc>https://nrazon.github.io/tr/yazilar/telefonsuz-app-store-ekran-goruntuleri-robolectric-sahte-gorsel-yukleyici-ve-basliksiz-tarayici/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/telefonsuz-app-store-ekran-goruntuleri-robolectric-sahte-gorsel-yukleyici-ve-basliksiz-tarayici/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/capturas-de-app-store-sin-telefono-robolectric-un-cargador-de-imagenes-falso-y-un-navegador-sin-interfaz/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/"/>
   </url>
   <url>
     <loc>https://nrazon.github.io/tr/yazilar/tombala-karti-nasil-uretilir-alti-kart-doksan-sayi/</loc>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>One QR Code for Two App Stores: A Tiny Redirect Page</title>
+<meta name="description" content="Dev notes: how my website went from one Google Play QR code to a single universal QR that sends an Android phone to Google Play and an iPhone to the App…">
+<link rel="canonical" href="https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="One QR Code for Two App Stores: A Tiny Redirect Page">
+<meta property="og:description" content="Dev notes: how my website went from one Google Play QR code to a single universal QR that sends an Android phone to Google Play and an iPhone to the App…">
+<meta property="og:url" content="https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="One QR Code for Two App Stores: A Tiny Redirect Page">
+<meta name="twitter:description" content="Dev notes: how my website went from one Google Play QR code to a single universal QR that sends an Android phone to Google Play and an iPhone to the App…">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "One QR Code for Two App Stores: A Tiny Redirect Page", "description": "Dev notes: how my website went from one Google Play QR code to a single universal QR that sends an Android phone to Google Play and an iPhone to the App Store, with a short redirect page, the traps I hit and the downsides.", "inLanguage": "en", "mainEntityOfPage": "https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-16", "dateModified": "2026-11-16", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}, "keywords": "Dev notes, Tools and calculators"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nrazon.github.io/blog/"}, {"@type": "ListItem", "position": 3, "name": "One QR Code for Two App Stores: A Tiny Redirect Page", "item": "https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why not show two QR codes, one per store?", "acceptedAnswer": {"@type": "Answer", "text": "Because the QR button only appears on desktop, the phone that scans it is the phone that should install the app. One code and a page that picks the store spares the visitor a choice."}}, {"@type": "Question", "name": "How does the page know the phone is an iPhone?", "acceptedAnswer": {"@type": "Answer", "text": "It checks the user agent for iPhone, iPad or iPod. Newer iPads report a Mac user agent, so a Mac user agent with more than one touch point also counts as iOS."}}, {"@type": "Question", "name": "Do I still see QR installs in Google Play Console?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The Android target keeps the Play address with the QR referrer, so the install-source breakdown still counts them."}}, {"@type": "Question", "name": "What happens without JavaScript or on a computer?", "acceptedAnswer": {"@type": "Answer", "text": "There is no redirect. The page shows both official store badges so the visitor can choose."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>One QR Code for Two App Stores: A Tiny Redirect Page</h1>
+    <p class="by">By Nesim Razon, independent Android developer · 2026-11-16</p>
+    <p class="tags"><a href="/blog/#devlog">#Dev notes</a><a href="/blog/#tools">#Tools and calculators</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">My website has an &quot;Install with QR&quot; button for people who visit from a computer. It used to be simple, because every app was Android-only. Then the apps arrived on the iPhone too, and I had to decide what that button should show. I ended up with one QR code that works for both stores. Here is how it works and what it costs.</p>
+    <h2>The question: what does the button show now?</h2>
+    <p>Until recently the QR code encoded the Google Play address of the app, including a referrer parameter so that Play Console could tell me how many installs came from the QR. With an App Store version, one code was no longer enough, or so it seemed.</p>
+    <p>I considered four options: two separate QR codes, one image with two codes side by side, tabs that switch between a Play code and an App Store code, or a single universal code. The first three all put a choice in front of the visitor, and the visitor does not know which one is right until they have already picked up the phone.</p>
+    <h2>Why one code is enough</h2>
+    <p>The button is only visible on desktop. In the stylesheet it needs a mouse-like device (hover and a fine pointer) and a window at least 900 pixels wide, so phones and tablets never see it. That means the person who scans the code is holding the very phone that should install the app, and that phone already knows which store it belongs to.</p>
+    <p>So the code does not need to carry the choice. It only needs to carry an address that makes the choice after the phone opens it.</p>
+    <h2>The redirect page</h2>
+    <p>The QR code points to a short address of the form /go/&lt;app&gt;/ on my site. A small generator script writes that page for every app that exists on the App Store. The page does three things.</p>
+    <p>First, it reads the user agent. If it contains iPhone, iPad or iPod, the visitor is on iOS. There is one catch: since iPadOS 13 an iPad reports a Mac user agent, so a Mac user agent together with more than one touch point is also counted as iOS. A real Mac has no touch screen, so it is not caught by mistake.</p>
+    <p>Second, it sends the phone to the right store with location.replace. I chose replace over assigning location.href because it does not leave the redirect page in the history. Otherwise the Back button would return to my page, which would immediately redirect again, and the visitor would be stuck in a loop.</p>
+    <p>Third, on Android it opens the same Google Play address as before, with the referrer that marks the visit as coming from a QR code. That keeps the install-source breakdown in Play Console working, so I can still see how many installs came from QR codes.</p>
+    <h2>Desktop and no-JavaScript fallback</h2>
+    <p>If the page is opened on a computer, or the browser has no JavaScript, nothing is redirected. The page then shows both official store badges, one for Google Play and one for the App Store, with a link back to the app&#x27;s page on my site. Nobody gets a blank page, and anyone who shares the short link by mistake still gets something useful.</p>
+    <p>The page is marked noindex. It exists for scanners, not for search, and I do not want a pile of near-identical pages in search results.</p>
+    <h2>A smaller code as a bonus</h2>
+    <p>The QR code now encodes a short address instead of the long Play URL with its referrer. Fewer characters means a less dense pattern with bigger squares, which is easier for a phone camera to read from a screen, especially a laptop screen at an angle. The generator uses the segno library with error correction level M.</p>
+    <h2>Only where an iPhone app exists</h2>
+    <p>Not every app has an iPhone version. A small JSON file lists the apps that are on the App Store, and only those get a /go/ page and the universal code. Android-only apps keep a direct Google Play QR, with no middle page at all.</p>
+    <h2>A trap in the site build</h2>
+    <p>My website build splits each page into language folders and writes sitemap entries. When I added the new /go/ folder, the build treated it as a normal site page and started producing translated copies and sitemap lines for it. The fix was one word: adding the folder to the list of directories the language build skips, next to folders such as the QR images and badges. A redirect helper should not be in the sitemap at all.</p>
+    <h2>How I tested it, and the downsides</h2>
+    <p>I opened the short address on an Android phone and it opened the Play listing. The scan with an iPhone camera was confirmed too, so both phones have been checked once by hand. It is a small test, not a device lab.</p>
+    <p>The downsides are honest ones. The automatic choice needs JavaScript; without it the visitor has to tap a badge. And a middle page is one more hop: a short flash of my page before the store opens, and one more thing that could break, although it is a single static file.</p>
+    
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Why not show two QR codes, one per store?</summary><p>Because the QR button only appears on desktop, the phone that scans it is the phone that should install the app. One code and a page that picks the store spares the visitor a choice.</p></details><details><summary>How does the page know the phone is an iPhone?</summary><p>It checks the user agent for iPhone, iPad or iPod. Newer iPads report a Mac user agent, so a Mac user agent with more than one touch point also counts as iOS.</p></details><details><summary>Do I still see QR installs in Google Play Console?</summary><p>Yes. The Android target keeps the Play address with the QR referrer, so the install-source breakdown still counts them.</p></details><details><summary>What happens without JavaScript or on a computer?</summary><p>There is no redirect. The page shows both official store badges so the visitor can choose.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/how-daily-puzzles-work-without-a-server/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>How a Daily Puzzle Can Be the Same for Everyone, No Server</b></div></a></li><li><a href="/blog/how-puzzle-levels-are-generated-and-checked/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>How Hundreds of Puzzle Levels Are Generated and Checked</b></div></a></li><li><a href="/blog/keeping-two-dozen-android-apps-maintainable-solo/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Keeping Two Dozen Android Apps Maintainable as a Solo Dev</b></div></a></li><li><a href="/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Catching a Stuck Interstitial Ad on Android With Event Logs</b></div></a></li><li><a href="/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Shipping an iPhone App Without a Mac: Kotlin Multiplatform, a Cloud Mac and TestFlight</b></div></a></li><li><a href="/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Moving an Android App to Kotlin Multiplatform With AGP 9: Seven Traps</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

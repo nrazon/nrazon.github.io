@@ -993,6 +993,226 @@
    "hash": "aabcc496ae696fe659644a0def0d4f26"
   },
   {
+   "url": "https://nrazon.github.io/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/",
+    "tr": "https://nrazon.github.io/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/",
+    "es": "https://nrazon.github.io/es/blog/reescribir-para-kotlin-multiplatform-sin-cambiar-el-comportamiento-el-codigo-antiguo-como-oraculo-de-pruebas/",
+    "pt": "https://nrazon.github.io/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/"
+   },
+   "default": "en",
+   "hash": "17b672452e1a19984c101c94d6445104"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/",
+    "tr": "https://nrazon.github.io/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/",
+    "es": "https://nrazon.github.io/es/blog/reescribir-para-kotlin-multiplatform-sin-cambiar-el-comportamiento-el-codigo-antiguo-como-oraculo-de-pruebas/",
+    "pt": "https://nrazon.github.io/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/"
+   },
+   "default": "en",
+   "hash": "74cdbd6521dec8d3f787f272d79f1a81"
+  },
+  {
+   "url": "https://nrazon.github.io/es/blog/reescribir-para-kotlin-multiplatform-sin-cambiar-el-comportamiento-el-codigo-antiguo-como-oraculo-de-pruebas/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/",
+    "tr": "https://nrazon.github.io/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/",
+    "es": "https://nrazon.github.io/es/blog/reescribir-para-kotlin-multiplatform-sin-cambiar-el-comportamiento-el-codigo-antiguo-como-oraculo-de-pruebas/",
+    "pt": "https://nrazon.github.io/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/"
+   },
+   "default": "en",
+   "hash": "f9ed35a66c41d669d04fd73aad7adff7"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/",
+    "tr": "https://nrazon.github.io/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/",
+    "es": "https://nrazon.github.io/es/blog/reescribir-para-kotlin-multiplatform-sin-cambiar-el-comportamiento-el-codigo-antiguo-como-oraculo-de-pruebas/",
+    "pt": "https://nrazon.github.io/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/"
+   },
+   "default": "en",
+   "hash": "97e18894e50ae528bf4b7d4741e0e58d"
+  },
+  {
+   "url": "https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/",
+    "tr": "https://nrazon.github.io/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/",
+    "es": "https://nrazon.github.io/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/",
+    "pt": "https://nrazon.github.io/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/"
+   },
+   "default": "en",
+   "hash": "7a5f27dda83a12053f5f2a2e365f5808"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/",
+    "tr": "https://nrazon.github.io/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/",
+    "es": "https://nrazon.github.io/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/",
+    "pt": "https://nrazon.github.io/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/"
+   },
+   "default": "en",
+   "hash": "ebf0b5b484a6555179e0ec371a46a83f"
+  },
+  {
+   "url": "https://nrazon.github.io/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/",
+    "tr": "https://nrazon.github.io/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/",
+    "es": "https://nrazon.github.io/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/",
+    "pt": "https://nrazon.github.io/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/"
+   },
+   "default": "en",
+   "hash": "f0e79dab2eccc428ca0559496486e27b"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/",
+    "tr": "https://nrazon.github.io/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/",
+    "es": "https://nrazon.github.io/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/",
+    "pt": "https://nrazon.github.io/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/"
+   },
+   "default": "en",
+   "hash": "70b8daaa570e9207c6b420eb750ed1e3"
+  },
+  {
+   "url": "https://nrazon.github.io/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/",
+    "tr": "https://nrazon.github.io/tr/yazilar/telefonsuz-app-store-ekran-goruntuleri-robolectric-sahte-gorsel-yukleyici-ve-basliksiz-tarayici/",
+    "es": "https://nrazon.github.io/es/blog/capturas-de-app-store-sin-telefono-robolectric-un-cargador-de-imagenes-falso-y-un-navegador-sin-interfaz/",
+    "pt": "https://nrazon.github.io/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/"
+   },
+   "default": "en",
+   "hash": "753d4988a2a314f153d365562ca3db81"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/telefonsuz-app-store-ekran-goruntuleri-robolectric-sahte-gorsel-yukleyici-ve-basliksiz-tarayici/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/",
+    "tr": "https://nrazon.github.io/tr/yazilar/telefonsuz-app-store-ekran-goruntuleri-robolectric-sahte-gorsel-yukleyici-ve-basliksiz-tarayici/",
+    "es": "https://nrazon.github.io/es/blog/capturas-de-app-store-sin-telefono-robolectric-un-cargador-de-imagenes-falso-y-un-navegador-sin-interfaz/",
+    "pt": "https://nrazon.github.io/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/"
+   },
+   "default": "en",
+   "hash": "4fa7a26174aad36c2620fd1e0c1c8697"
+  },
+  {
+   "url": "https://nrazon.github.io/es/blog/capturas-de-app-store-sin-telefono-robolectric-un-cargador-de-imagenes-falso-y-un-navegador-sin-interfaz/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/",
+    "tr": "https://nrazon.github.io/tr/yazilar/telefonsuz-app-store-ekran-goruntuleri-robolectric-sahte-gorsel-yukleyici-ve-basliksiz-tarayici/",
+    "es": "https://nrazon.github.io/es/blog/capturas-de-app-store-sin-telefono-robolectric-un-cargador-de-imagenes-falso-y-un-navegador-sin-interfaz/",
+    "pt": "https://nrazon.github.io/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/"
+   },
+   "default": "en",
+   "hash": "cb3dc4ef74ba04db3dede23aab25ea63"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/",
+    "tr": "https://nrazon.github.io/tr/yazilar/telefonsuz-app-store-ekran-goruntuleri-robolectric-sahte-gorsel-yukleyici-ve-basliksiz-tarayici/",
+    "es": "https://nrazon.github.io/es/blog/capturas-de-app-store-sin-telefono-robolectric-un-cargador-de-imagenes-falso-y-un-navegador-sin-interfaz/",
+    "pt": "https://nrazon.github.io/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/"
+   },
+   "default": "en",
+   "hash": "48d2d4b85330297a1d3bce02f8b565e0"
+  },
+  {
+   "url": "https://nrazon.github.io/blog/app-store-review-guideline-2-1-information-needed-what-i-sent/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/app-store-review-guideline-2-1-information-needed-what-i-sent/",
+    "tr": "https://nrazon.github.io/tr/yazilar/app-store-inceleme-kurali-2-1-bilgi-gerekli-ne-gonderdim/",
+    "es": "https://nrazon.github.io/es/blog/guia-2-1-de-app-store-informacion-necesaria-lo-que-envie/",
+    "pt": "https://nrazon.github.io/pt/blog/diretriz-2-1-da-app-store-informacao-necessaria-o-que-enviei/"
+   },
+   "default": "en",
+   "hash": "3a63ec45b34997d40e31cc173e22424d"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/app-store-inceleme-kurali-2-1-bilgi-gerekli-ne-gonderdim/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/app-store-review-guideline-2-1-information-needed-what-i-sent/",
+    "tr": "https://nrazon.github.io/tr/yazilar/app-store-inceleme-kurali-2-1-bilgi-gerekli-ne-gonderdim/",
+    "es": "https://nrazon.github.io/es/blog/guia-2-1-de-app-store-informacion-necesaria-lo-que-envie/",
+    "pt": "https://nrazon.github.io/pt/blog/diretriz-2-1-da-app-store-informacao-necessaria-o-que-enviei/"
+   },
+   "default": "en",
+   "hash": "0da6dac5c71c6639e844162e57eb1393"
+  },
+  {
+   "url": "https://nrazon.github.io/es/blog/guia-2-1-de-app-store-informacion-necesaria-lo-que-envie/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/app-store-review-guideline-2-1-information-needed-what-i-sent/",
+    "tr": "https://nrazon.github.io/tr/yazilar/app-store-inceleme-kurali-2-1-bilgi-gerekli-ne-gonderdim/",
+    "es": "https://nrazon.github.io/es/blog/guia-2-1-de-app-store-informacion-necesaria-lo-que-envie/",
+    "pt": "https://nrazon.github.io/pt/blog/diretriz-2-1-da-app-store-informacao-necessaria-o-que-enviei/"
+   },
+   "default": "en",
+   "hash": "168fed7c600e2fb9adeff25e00520766"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/blog/diretriz-2-1-da-app-store-informacao-necessaria-o-que-enviei/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/app-store-review-guideline-2-1-information-needed-what-i-sent/",
+    "tr": "https://nrazon.github.io/tr/yazilar/app-store-inceleme-kurali-2-1-bilgi-gerekli-ne-gonderdim/",
+    "es": "https://nrazon.github.io/es/blog/guia-2-1-de-app-store-informacion-necesaria-lo-que-envie/",
+    "pt": "https://nrazon.github.io/pt/blog/diretriz-2-1-da-app-store-informacao-necessaria-o-que-enviei/"
+   },
+   "default": "en",
+   "hash": "785859b983bfd45b35f83b3d55c602f1"
+  },
+  {
+   "url": "https://nrazon.github.io/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/",
+    "tr": "https://nrazon.github.io/tr/yazilar/app-store-baglantim-neden-404-verdi-ve-sayfa-2018-ekran-goruntulerini-gosterdi/",
+    "es": "https://nrazon.github.io/es/blog/por-que-mi-enlace-de-la-app-store-dio-404-y-la-pagina-mostraba-capturas-de-2018/",
+    "pt": "https://nrazon.github.io/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/"
+   },
+   "default": "en",
+   "hash": "5db4bd02b2afb8805f6f46f7965ceabf"
+  },
+  {
+   "url": "https://nrazon.github.io/tr/yazilar/app-store-baglantim-neden-404-verdi-ve-sayfa-2018-ekran-goruntulerini-gosterdi/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/",
+    "tr": "https://nrazon.github.io/tr/yazilar/app-store-baglantim-neden-404-verdi-ve-sayfa-2018-ekran-goruntulerini-gosterdi/",
+    "es": "https://nrazon.github.io/es/blog/por-que-mi-enlace-de-la-app-store-dio-404-y-la-pagina-mostraba-capturas-de-2018/",
+    "pt": "https://nrazon.github.io/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/"
+   },
+   "default": "en",
+   "hash": "75460f5364b4583a5c29a34778a376f5"
+  },
+  {
+   "url": "https://nrazon.github.io/es/blog/por-que-mi-enlace-de-la-app-store-dio-404-y-la-pagina-mostraba-capturas-de-2018/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/",
+    "tr": "https://nrazon.github.io/tr/yazilar/app-store-baglantim-neden-404-verdi-ve-sayfa-2018-ekran-goruntulerini-gosterdi/",
+    "es": "https://nrazon.github.io/es/blog/por-que-mi-enlace-de-la-app-store-dio-404-y-la-pagina-mostraba-capturas-de-2018/",
+    "pt": "https://nrazon.github.io/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/"
+   },
+   "default": "en",
+   "hash": "285b8c280d24e59883f06fa4fe22e031"
+  },
+  {
+   "url": "https://nrazon.github.io/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/",
+   "loc": {
+    "en": "https://nrazon.github.io/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/",
+    "tr": "https://nrazon.github.io/tr/yazilar/app-store-baglantim-neden-404-verdi-ve-sayfa-2018-ekran-goruntulerini-gosterdi/",
+    "es": "https://nrazon.github.io/es/blog/por-que-mi-enlace-de-la-app-store-dio-404-y-la-pagina-mostraba-capturas-de-2018/",
+    "pt": "https://nrazon.github.io/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/"
+   },
+   "default": "en",
+   "hash": "522f68d3b8a78e1133ce442349d6fa8f"
+  },
+  {
    "url": "https://nrazon.github.io/blog/",
    "loc": {
     "en": "https://nrazon.github.io/blog/",
@@ -1001,7 +1221,7 @@
     "pt": "https://nrazon.github.io/pt/blog/"
    },
    "default": "en",
-   "hash": "c7c7944bbc015ed8f59ff45f361359e6"
+   "hash": "d8cfeb40f96bae2c708840f4acf74bc6"
   },
   {
    "url": "https://nrazon.github.io/tr/yazilar/",
@@ -1012,7 +1232,7 @@
     "pt": "https://nrazon.github.io/pt/blog/"
    },
    "default": "en",
-   "hash": "4d1c9f39f7eac320d873f4c4523c6210"
+   "hash": "0701529b116bfa3be317ff352c00d768"
   },
   {
    "url": "https://nrazon.github.io/es/blog/",
@@ -1023,7 +1243,7 @@
     "pt": "https://nrazon.github.io/pt/blog/"
    },
    "default": "en",
-   "hash": "6fcf1e9765bed6f63c4aed98a344604a"
+   "hash": "0a87ba87e448b033357385253703cba4"
   },
   {
    "url": "https://nrazon.github.io/pt/blog/",
@@ -1034,7 +1254,7 @@
     "pt": "https://nrazon.github.io/pt/blog/"
    },
    "default": "en",
-   "hash": "bc4666fd35988e748732200c9ec732ed"
+   "hash": "d42665f965fdeedba231fa08233b84d1"
   }
  ],
  "index": {

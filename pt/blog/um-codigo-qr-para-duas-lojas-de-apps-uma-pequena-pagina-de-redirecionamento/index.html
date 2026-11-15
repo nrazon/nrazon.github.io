@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt" data-lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Um código QR para duas lojas de apps | Nesim Apps</title>
+<meta name="description" content="Notas de desenvolvimento: como meu site passou de um código QR do Google Play para um único QR universal que leva um celular Android ao Google Play e um…">
+<link rel="canonical" href="https://nrazon.github.io/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Um código QR para duas lojas de apps: uma pequena página de redirecionamento">
+<meta property="og:description" content="Notas de desenvolvimento: como meu site passou de um código QR do Google Play para um único QR universal que leva um celular Android ao Google Play e um…">
+<meta property="og:url" content="https://nrazon.github.io/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Um código QR para duas lojas de apps: uma pequena página de redirecionamento">
+<meta name="twitter:description" content="Notas de desenvolvimento: como meu site passou de um código QR do Google Play para um único QR universal que leva um celular Android ao Google Play e um…">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Um código QR para duas lojas de apps: uma pequena página de redirecionamento", "description": "Notas de desenvolvimento: como meu site passou de um código QR do Google Play para um único QR universal que leva um celular Android ao Google Play e um iPhone à App Store, com uma página de redirecionamento curta, as armadilhas que encontrei e as desvantagens.", "inLanguage": "pt", "mainEntityOfPage": "https://nrazon.github.io/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-16", "dateModified": "2026-11-16", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}, "keywords": "Notas de desenvolvimento, Ferramentas e calculadoras"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/pt/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nrazon.github.io/pt/blog/"}, {"@type": "ListItem", "position": 3, "name": "Um código QR para duas lojas de apps: uma pequena página de redirecionamento", "item": "https://nrazon.github.io/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Por que não mostrar dois códigos QR, um por loja?", "acceptedAnswer": {"@type": "Answer", "text": "Porque o botão de QR só aparece no desktop, então o celular que escaneia é o que deve instalar o app. Um código e uma página que escolhe a loja poupam o visitante de uma escolha."}}, {"@type": "Question", "name": "Como a página sabe que o celular é um iPhone?", "acceptedAnswer": {"@type": "Answer", "text": "Ela procura iPhone, iPad ou iPod no user agent. Os iPads recentes se identificam com um user agent de Mac, então um user agent de Mac com mais de um ponto de toque também conta como iOS."}}, {"@type": "Question", "name": "Ainda vejo as instalações por QR no Google Play Console?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. O destino Android mantém o endereço do Play com a referência do QR, então o detalhamento da origem das instalações continua contando essas instalações."}}, {"@type": "Question", "name": "O que acontece sem JavaScript ou em um computador?", "acceptedAnswer": {"@type": "Answer", "text": "Não há redirecionamento. A página mostra os dois selos oficiais das lojas para o visitante escolher."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/" hreflang="pt" data-lang="pt" aria-current="page">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/pt/">Nesim Apps</a> › <a href="/pt/blog/">Blog</a></nav>
+    <h1>Um código QR para duas lojas de apps: uma pequena página de redirecionamento</h1>
+    <p class="by">Por Nesim Razon, desenvolvedor Android independente · 2026-11-16</p>
+    <p class="tags"><a href="/pt/blog/#devlog">#Notas de desenvolvimento</a><a href="/pt/blog/#tools">#Ferramentas e calculadoras</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Meu site tem um botão &quot;Instalar com QR&quot; para quem o visita pelo computador. Antes era simples, porque todos os apps eram só para Android. Depois os apps chegaram também ao iPhone e eu precisei decidir o que esse botão deveria mostrar. Terminei com um único código QR que serve para as duas lojas. Veja como funciona e quanto custa.</p>
+    <h2>A pergunta: o que o botão mostra agora?</h2>
+    <p>Até pouco tempo atrás o código QR continha o endereço do app no Google Play, com um parâmetro de referência para que o Play Console me dissesse quantas instalações vinham do QR. Com uma versão na App Store, um único código parecia insuficiente.</p>
+    <p>Considerei quatro opções: dois códigos QR separados, uma imagem com dois códigos lado a lado, abas que alternam entre um código do Play e outro da App Store, ou um único código universal. As três primeiras colocam uma escolha diante do visitante, e o visitante não sabe qual é a certa até já ter pegado o celular.</p>
+    <h2>Por que um código basta</h2>
+    <p>O botão só aparece no desktop. Na folha de estilos ele exige um dispositivo parecido com um mouse (hover e ponteiro preciso) e uma janela de pelo menos 900 pixels de largura, então celulares e tablets nunca o veem. Isso significa que quem escaneia o código está segurando exatamente o celular que deve instalar o app, e esse celular já sabe a qual loja pertence.</p>
+    <p>Por isso o código não precisa carregar a escolha. Ele só precisa carregar um endereço que faça a escolha depois que o celular o abrir.</p>
+    <h2>A página de redirecionamento</h2>
+    <p>O código QR aponta para um endereço curto no formato /go/&lt;app&gt;/ no meu site. Um pequeno script gerador escreve essa página para cada app que existe na App Store. A página faz três coisas.</p>
+    <p>Primeiro, ela lê o user agent. Se contiver iPhone, iPad ou iPod, o visitante está no iOS. Há uma pegadinha: desde o iPadOS 13 o iPad se identifica com um user agent de Mac, então um user agent de Mac junto com mais de um ponto de toque também conta como iOS. Um Mac de verdade não tem tela sensível ao toque, por isso não é pego por engano.</p>
+    <p>Segundo, ela envia o celular para a loja certa com location.replace. Escolhi replace em vez de atribuir location.href porque ele não deixa a página de redirecionamento no histórico. Caso contrário, o botão Voltar levaria de volta à minha página, que redirecionaria de novo na hora, e o visitante ficaria preso em um loop.</p>
+    <p>Terceiro, no Android ela abre o mesmo endereço do Google Play de antes, com a referência que marca a visita como vinda de um QR. Assim o detalhamento da origem das instalações no Play Console continua funcionando e eu ainda consigo ver quantas instalações vêm de códigos QR.</p>
+    <h2>Alternativa no desktop e sem JavaScript</h2>
+    <p>Se a página for aberta em um computador, ou o navegador não tiver JavaScript, nada é redirecionado. A página então mostra os dois selos oficiais das lojas, um do Google Play e outro da App Store, com um link para a página do app no meu site. Ninguém encontra uma página em branco, e quem compartilhar o link curto por engano ainda recebe algo útil.</p>
+    <p>A página está marcada como noindex. Ela existe para quem escaneia, não para buscadores, e não quero um monte de páginas quase idênticas nos resultados de busca.</p>
+    <h2>Um código menor de bônus</h2>
+    <p>O código QR agora contém um endereço curto em vez da URL longa do Play com sua referência. Menos caracteres significam um padrão menos denso, com quadrados maiores, que a câmera de um celular lê com mais facilidade de uma tela, principalmente a de um notebook em ângulo. O gerador usa a biblioteca segno com nível de correção de erros M.</p>
+    <h2>Só onde existe um app para iPhone</h2>
+    <p>Nem todo app tem versão para iPhone. Um pequeno arquivo JSON lista os apps que estão na App Store, e só eles recebem uma página /go/ e o código universal. Os apps só para Android mantêm um QR direto para o Google Play, sem nenhuma página intermediária.</p>
+    <h2>Uma armadilha na compilação do site</h2>
+    <p>A compilação do meu site divide cada página em pastas por idioma e escreve entradas no mapa do site. Ao adicionar a nova pasta /go/, a compilação a tratou como uma página normal do site e começou a gerar cópias traduzidas e linhas de mapa do site para ela. A correção foi uma única palavra: adicionar a pasta à lista de diretórios que a compilação de idiomas ignora, ao lado de pastas como as imagens de QR e os selos. Um auxiliar de redirecionamento não deveria estar no mapa do site.</p>
+    <h2>Como testei e as desvantagens</h2>
+    <p>Abri o endereço curto em um celular Android e ele abriu a página do Play. A leitura com a câmera de um iPhone também foi confirmada, então os dois celulares foram verificados uma vez à mão. É um teste pequeno, não um laboratório de dispositivos.</p>
+    <p>As desvantagens são as honestas. A escolha automática precisa de JavaScript; sem ele, o visitante precisa tocar em um selo. E uma página intermediária é mais um salto: um breve lampejo da minha página antes de a loja abrir e mais uma coisa que poderia quebrar, embora seja um único arquivo estático.</p>
+    
+    <section class="faq"><h2>Perguntas frequentes</h2><details><summary>Por que não mostrar dois códigos QR, um por loja?</summary><p>Porque o botão de QR só aparece no desktop, então o celular que escaneia é o que deve instalar o app. Um código e uma página que escolhe a loja poupam o visitante de uma escolha.</p></details><details><summary>Como a página sabe que o celular é um iPhone?</summary><p>Ela procura iPhone, iPad ou iPod no user agent. Os iPads recentes se identificam com um user agent de Mac, então um user agent de Mac com mais de um ponto de toque também conta como iOS.</p></details><details><summary>Ainda vejo as instalações por QR no Google Play Console?</summary><p>Sim. O destino Android mantém o endereço do Play com a referência do QR, então o detalhamento da origem das instalações continua contando essas instalações.</p></details><details><summary>O que acontece sem JavaScript ou em um computador?</summary><p>Não há redirecionamento. A página mostra os dois selos oficiais das lojas para o visitante escolher.</p></details></section>
+    <section><h2>Mais do blog</h2><ul class="glist"><li><a href="/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Como dar o mesmo quebra-cabeça diário a todos sem servidor</b></div></a></li><li><a href="/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Como centenas de fases de quebra-cabeça são geradas e verificadas</b></div></a></li><li><a href="/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Duas dúzias de apps Android mantidas por um só dev</b></div></a></li><li><a href="/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Detectar um anúncio intersticial travado no Android com eventos</b></div></a></li><li><a href="/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Publicar um app de iPhone sem Mac: Kotlin Multiplatform, um Mac na nuvem e TestFlight</b></div></a></li><li><a href="/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Migrar um app Android para Kotlin Multiplatform com AGP 9: sete armadilhas</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

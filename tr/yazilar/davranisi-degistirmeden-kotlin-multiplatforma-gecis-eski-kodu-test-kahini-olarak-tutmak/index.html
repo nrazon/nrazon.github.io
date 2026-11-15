@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Davranışı Değiştirmeden Kotlin Multiplatform&#x27;a Geçiş</title>
+<meta name="description" content="Geliştirici notu: iOS için XmlPullParser, HtmlCompat, SimpleDateFormat ve java.util.Random yerine saf ortak Kotlin yazarken eski kodu testlerde tutup…">
+<link rel="canonical" href="https://nrazon.github.io/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/reescribir-para-kotlin-multiplatform-sin-cambiar-el-comportamiento-el-codigo-antiguo-como-oraculo-de-pruebas/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Davranışı Değiştirmeden Kotlin Multiplatform&#x27;a Geçiş: Eski Kodu Test Kâhini Olarak Tutmak">
+<meta property="og:description" content="Geliştirici notu: iOS için XmlPullParser, HtmlCompat, SimpleDateFormat ve java.util.Random yerine saf ortak Kotlin yazarken eski kodu testlerde tutup…">
+<meta property="og:url" content="https://nrazon.github.io/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Davranışı Değiştirmeden Kotlin Multiplatform&#x27;a Geçiş: Eski Kodu Test Kâhini Olarak Tutmak">
+<meta name="twitter:description" content="Geliştirici notu: iOS için XmlPullParser, HtmlCompat, SimpleDateFormat ve java.util.Random yerine saf ortak Kotlin yazarken eski kodu testlerde tutup…">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Davranışı Değiştirmeden Kotlin Multiplatform'a Geçiş: Eski Kodu Test Kâhini Olarak Tutmak", "description": "Geliştirici notu: iOS için XmlPullParser, HtmlCompat, SimpleDateFormat ve java.util.Random yerine saf ortak Kotlin yazarken eski kodu testlerde tutup çıktının aynı kaldığını nasıl kanıtladım ve bu kanıtın neyi kapsamadığı.", "inLanguage": "tr", "mainEntityOfPage": "https://nrazon.github.io/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-16", "dateModified": "2026-11-16", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}, "keywords": "Geliştirici notları, Android"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/tr/"}, {"@type": "ListItem", "position": 2, "name": "Yazılar", "item": "https://nrazon.github.io/tr/yazilar/"}, {"@type": "ListItem", "position": 3, "name": "Davranışı Değiştirmeden Kotlin Multiplatform'a Geçiş: Eski Kodu Test Kâhini Olarak Tutmak", "item": "https://nrazon.github.io/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Eski kodu silmek yerine neden testlerde tutuyorsun?", "acceptedAnswer": {"@type": "Answer", "text": "Çünkü davranışın en güvenilir tarifi o. Yeni kodu onunla alan alan karşılaştırmak, beklenen değerleri elle yazmaktan hem hızlı hem daha güvenilir."}}, {"@type": "Question", "name": "Eşitlik testi internet erişimi gerektirir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Varsayılan olarak hayır. Projeyle gelen örnek beslemeleri kullanır. Canlı karşılaştırma yalnızca test -Drss.live=true ile başlatılınca çalışır."}}, {"@type": "Question", "name": "Neden başka bir karıştırma kullanmak yerine java.util.Random'ı yeniden yazdın?", "acceptedAnswer": {"@type": "Answer", "text": "Farklı bir karıştırma, mevcut her kullanıcı için günün kartını değiştirirdi. Üreteci birebir yeniden üretmek diziyi aynı tutuyor."}}, {"@type": "Question", "name": "Geçen bir eşitlik testi gerilemeyeceğini garanti eder mi?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Yalnızca gördüğü girdileri kapsar ve canlı veri değişir; riski azaltır ama ortadan kaldırmaz."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/" hreflang="tr" data-lang="tr" aria-current="page">TR</a><a href="/es/blog/reescribir-para-kotlin-multiplatform-sin-cambiar-el-comportamiento-el-codigo-antiguo-como-oraculo-de-pruebas/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/tr/">Nesim Apps</a> › <a href="/tr/yazilar/">Yazılar</a></nav>
+    <h1>Davranışı Değiştirmeden Kotlin Multiplatform&#x27;a Geçiş: Eski Kodu Test Kâhini Olarak Tutmak</h1>
+    <p class="by">Nesim Razon, bağımsız Android geliştiricisi · 2026-11-16</p>
+    <p class="tags"><a href="/tr/yazilar/#devlog">#Geliştirici notları</a><a href="/tr/yazilar/#android">#Android</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">İki küçük RSS okuyucu uygulamayı ve bir uzay uygulamasını iOS&#x27;ta da çalışsın diye Kotlin Multiplatform&#x27;a taşıdım. Bu, Android ve Java sınıflarına yaslanan kodu yeniden yazmak demekti. Mevcut hiçbir kullanıcının bir fark görmesini istemedim; bu yüzden eski uygulamayı test kaynaklarında tuttum ve yenisiyle tartıştırdım. Süreç şöyle işledi.</p>
+    <h2>Neyin yeniden yazılması gerekti</h2>
+    <p>Ortak Kotlin kodu Android ya da Java sınıflarını çağıramaz, iOS&#x27;ta da bunların hiçbiri yoktur. RSS ayrıştırıcısı XmlPullParser, metin temizliği HtmlCompat kullanıyordu, tarihler SimpleDateFormat&#x27;tan geçiyordu ve uzay uygulaması günlük kartlarını java.util.Random ile karıştırıyordu. Dördü de iki platformda derlenen düz Kotlin&#x27;e dönüşmek zorundaydı.</p>
+    <p>Böyle bir yeniden yazım sessiz değişikliklerin klasik yeridir: aksanını kaybeden bir başlık, bir saat kayan bir tarih, farklı sırada gelen bir liste. Bunların hiçbiri çökme yaratmaz, bu yüzden bir kullanıcı yorum yazana kadar kimse fark etmez.</p>
+    <h2>Eski kodu kâhin olarak tut</h2>
+    <p>Kuralım basitti: eski uygulamayı silme, taşı. TurkSail&#x27;de önceki ayrıştırıcı, değiştirilmeden, Android test kaynaklarında LegacyRss adlı bir dosyaya gitti. Artık yayınlanmıyor ama hâlâ derleniyor ve güvendiğim cevapları üretiyor; çünkü gerçek kullanıcılar yıllardır onun çıktısına bakıyor.</p>
+    <p>Yeni ayrıştırıcı ortak modülde duruyor. Test aynı XML&#x27;i ikisine de verip sonuçların eşit olup olmadığını soruyor.</p>
+    <h2>Eşitlik testi</h2>
+    <p>Test bir beslemeyi yeni ve eski ayrıştırıcıyla çözüyor ve önce ikisinin de aynı sayıda yazı döndürdüğünü denetliyor. Sonra yazıları tek tek gezip altı şeyi alan alan karşılaştırıyor: başlık, bağlantı, tarih, kapak görseli, özet ve temizlenmiş HTML. Hata mesajı beslemeyi, yazı sırasını ve alanı söylüyor; böylece fark kolay bulunuyor.</p>
+    <p>Eski taraf için Android sınıfları gerektiği için test, uygulama modülünde Robolectric altında çalışıyor. Varsayılan olarak projeyle gelen örnek beslemeleri kullanıyor. -Drss.live=true ile başlatırsam gerçek sitelerin canlı beslemelerini de indirip onları karşılaştırıyor. Bu sistem özelliğinin modülün test yapılandırmasında test JVM&#x27;sine iletilmesi gerekiyor; yoksa anahtar sessizce hiçbir şey yapmıyor.</p>
+    <h2>Kâhinin yakaladığı tuzaklar</h2>
+    <p>Beslemelerdeki HTML&#x27;in kendisi XML&#x27;e kaçırılmış olduğundan varlıklar iki kez çözülüyor: bir kez XML geçişinde, bir kez de HTML geçişinde. Kaçırılmış bir ve işareti ile uuml içeren bir besleme, ancak iki geçişten sonra noktalı u harfine dönüşüyor. Bir kez çözen kısa yol yanlış metin veriyor.</p>
+    <p>HtmlCompat adlandırılmış HTML varlıklarını biliyordu, ortak kod bilmiyor. 96 Latin-1 adlandırılmış varlığın ve beslemelerin kullandığı birkaç diğerinin tablosunu yazdım; ondalık ve onaltılı sayısal varlıkları, temel aralığın dışındaki karakterler dahil, işliyorum. Bilinmeyen varlıklar olduğu gibi kalıyor; eski kod da böyle yapıyordu.</p>
+    <p>Tarihler ofsetli RFC 822 biçiminde: gün adı, gün, ay adı, saat ve artı ya da eksi dört haneli bir dilim. SimpleDateFormat gitti; bu yüzden bir düzenli ifadeyle ayrıştırıyor, ofseti elle kuruyor ve kotlinx-datetime ile çeviriyorum. Birim testleri hem ofsetli hem GMT&#x27;li tek bir somut zaman damgasını sabitliyor ve çöp girdinin eskisi gibi null döndürdüğünü denetliyor.</p>
+    <h2>Değişmemesi gereken bir rastgele sayı üreteci</h2>
+    <p>Uzay uygulaması günün kartını gösteriyor. Sıra, kart listesinin 2026 tohumlu java.util.Random ile karıştırılmasından geliyor ve kart sırası tarihten türetiliyor. Karıştırma değişseydi, mevcut her kullanıcı aynı gün birden farklı bir kart görürdü.</p>
+    <p>Bu yüzden java.util.Random&#x27;ı birebir yeniden üreten küçük bir sınıf yazdım: 48 bitlik doğrusal eşlenik üreteç, nextInt&#x27;in bir sınırın altında değer seçme yolu (yeniden deneme döngüsü ve ikinin kuvveti kısayolu dahil) ve Collections.shuffle&#x27;ın kullandığı aynı algoritma. Buradaki kâhin gerçeğin kendisi: bir test, listeyi JVM&#x27;de java.util.Random(2026) ile karıştırıyor ve kimliklerin benim sınıfımla aynı sırada çıktığını denetliyor.</p>
+    <h2>Önemli çıkan küçük şeyler</h2>
+    <p>Android indirilen beslemeyi, adresin özetiyle adlandırılan bir önbellek dosyasında tutuyor. Dosya adlarını aynı bıraktım; böylece güncellemeden sonra uygulama eski dosyayı hâlâ buluyor ve besleme çevrimdışı hemen açılıyor. Eşitlik testi değişmiş bir dosya adını yakalamazdı; bu yüzden burada yazıyorum.</p>
+    <p>Canlı karşılaştırma TurkSail için 7 kategoriyi ve 72 yazıyı, MedyaFobi için 20 yazıyı kapsadı; sıfır fark çıktı.</p>
+    <h2>Bunun neyi kanıtlamadığı</h2>
+    <p>Eşitlik testi yalnızca ona verdiğin girdileri kapsar. Örnek beslemeler ve bir canlı görüntü, gelecek hafta yayımlanacak, hiç görmediğim bir varlık ya da tarih biçimi içeren bir yazı hakkında hiçbir şey söylemez. Canlı beslemeler de değişir; bugünkü yeşil bir koşu bugün hakkında bir ifadedir.</p>
+    <p>Ayrıca doğruluğu değil eşitliği gösterir: eski kodda bir hata varsa yeni kod artık aynı hataya bilerek sahip. Hedef davranışı korumak olduğu için bunu kabul ettim; düzeltmeler ayrı ve görünür bir değişikliktir. Rastgele sayı üreteci için de aynı sınır geçerli: denediğim liste boyutları için eşleşiyor ve algoritmanın belirleyici olmasına güveniyorum.</p>
+    
+    <section class="faq"><h2>Sık sorulan sorular</h2><details><summary>Eski kodu silmek yerine neden testlerde tutuyorsun?</summary><p>Çünkü davranışın en güvenilir tarifi o. Yeni kodu onunla alan alan karşılaştırmak, beklenen değerleri elle yazmaktan hem hızlı hem daha güvenilir.</p></details><details><summary>Eşitlik testi internet erişimi gerektirir mi?</summary><p>Varsayılan olarak hayır. Projeyle gelen örnek beslemeleri kullanır. Canlı karşılaştırma yalnızca test -Drss.live=true ile başlatılınca çalışır.</p></details><details><summary>Neden başka bir karıştırma kullanmak yerine java.util.Random&#x27;ı yeniden yazdın?</summary><p>Farklı bir karıştırma, mevcut her kullanıcı için günün kartını değiştirirdi. Üreteci birebir yeniden üretmek diziyi aynı tutuyor.</p></details><details><summary>Geçen bir eşitlik testi gerilemeyeceğini garanti eder mi?</summary><p>Hayır. Yalnızca gördüğü girdileri kapsar ve canlı veri değişir; riski azaltır ama ortadan kaldırmaz.</p></details></section>
+    <section><h2>Diğer yazılar</h2><ul class="glist"><li><a href="/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Sunucu Olmadan Herkese Aynı Günlük Bulmaca Nasıl Verilir?</b></div></a></li><li><a href="/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Yüzlerce Bulmaca Bölümü Nasıl Üretilir ve Doğrulanır?</b></div></a></li><li><a href="/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Tek Geliştirici, Yaklaşık İki Düzine Android Uygulaması</b></div></a></li><li><a href="/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Android&#x27;de Takılan Geçiş Reklamını Olay Kayıtlarıyla Yakalamak</b></div></a></li><li><a href="/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Mac Olmadan iPhone Uygulaması Yayınlamak: Kotlin Multiplatform, Bulut Mac ve TestFlight</b></div></a></li><li><a href="/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Bir Android Uygulamasını AGP 9 ile Kotlin Multiplatform&#x27;a Taşımak: Yedi Tuzak</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

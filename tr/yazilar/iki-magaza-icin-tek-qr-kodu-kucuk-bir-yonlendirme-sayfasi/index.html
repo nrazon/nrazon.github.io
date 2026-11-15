@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>İki Mağaza İçin Tek QR Kodu: Küçük Bir Yönlendirme Sayfası</title>
+<meta name="description" content="Geliştirici notu: web sitemin tek bir Google Play QR kodundan, Android telefonu Google Play&#x27;e iPhone&#x27;u App Store&#x27;a gönderen tek bir evrensel QR koduna nasıl…">
+<link rel="canonical" href="https://nrazon.github.io/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="İki Mağaza İçin Tek QR Kodu: Küçük Bir Yönlendirme Sayfası">
+<meta property="og:description" content="Geliştirici notu: web sitemin tek bir Google Play QR kodundan, Android telefonu Google Play&#x27;e iPhone&#x27;u App Store&#x27;a gönderen tek bir evrensel QR koduna nasıl…">
+<meta property="og:url" content="https://nrazon.github.io/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="İki Mağaza İçin Tek QR Kodu: Küçük Bir Yönlendirme Sayfası">
+<meta name="twitter:description" content="Geliştirici notu: web sitemin tek bir Google Play QR kodundan, Android telefonu Google Play&#x27;e iPhone&#x27;u App Store&#x27;a gönderen tek bir evrensel QR koduna nasıl…">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "İki Mağaza İçin Tek QR Kodu: Küçük Bir Yönlendirme Sayfası", "description": "Geliştirici notu: web sitemin tek bir Google Play QR kodundan, Android telefonu Google Play'e iPhone'u App Store'a gönderen tek bir evrensel QR koduna nasıl geçtiği; kısa yönlendirme sayfası, düştüğüm tuzaklar ve dezavantajlar.", "inLanguage": "tr", "mainEntityOfPage": "https://nrazon.github.io/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-16", "dateModified": "2026-11-16", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}, "keywords": "Geliştirici notları, Araçlar ve hesaplayıcılar"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/tr/"}, {"@type": "ListItem", "position": 2, "name": "Yazılar", "item": "https://nrazon.github.io/tr/yazilar/"}, {"@type": "ListItem", "position": 3, "name": "İki Mağaza İçin Tek QR Kodu: Küçük Bir Yönlendirme Sayfası", "item": "https://nrazon.github.io/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Neden mağaza başına bir tane olmak üzere iki QR kodu göstermiyorsun?", "acceptedAnswer": {"@type": "Answer", "text": "Çünkü QR düğmesi yalnızca masaüstünde görünüyor; onu okutan telefon, uygulamayı yükleyecek telefon. Tek kod ve mağazayı seçen bir sayfa ziyaretçiyi bir seçimden kurtarıyor."}}, {"@type": "Question", "name": "Sayfa telefonun iPhone olduğunu nasıl anlıyor?", "acceptedAnswer": {"@type": "Answer", "text": "Kullanıcı aracısında iPhone, iPad ya da iPod arıyor. Yeni iPad'ler Mac gibi bir kullanıcı aracısı bildirdiği için, birden fazla dokunma noktası olan bir Mac kullanıcı aracısı da iOS sayılıyor."}}, {"@type": "Question", "name": "QR'dan gelen yüklemeleri Google Play Console'da hâlâ görüyor muyum?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. Android hedefi Play adresini QR referrer'ıyla koruyor, bu yüzden yükleme kaynağı kırılımı onları saymaya devam ediyor."}}, {"@type": "Question", "name": "JavaScript yokken ya da bilgisayarda ne oluyor?", "acceptedAnswer": {"@type": "Answer", "text": "Yönlendirme yapılmıyor. Sayfa iki resmî mağaza rozetini gösteriyor, ziyaretçi seçiyor."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/" hreflang="tr" data-lang="tr" aria-current="page">TR</a><a href="/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/tr/">Nesim Apps</a> › <a href="/tr/yazilar/">Yazılar</a></nav>
+    <h1>İki Mağaza İçin Tek QR Kodu: Küçük Bir Yönlendirme Sayfası</h1>
+    <p class="by">Nesim Razon, bağımsız Android geliştiricisi · 2026-11-16</p>
+    <p class="tags"><a href="/tr/yazilar/#devlog">#Geliştirici notları</a><a href="/tr/yazilar/#tools">#Araçlar ve hesaplayıcılar</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Web sitemde bilgisayardan gelen ziyaretçiler için bir &quot;QR ile yükle&quot; düğmesi var. Eskiden basitti, çünkü her uygulama yalnızca Android içindi. Sonra uygulamalar iPhone&#x27;a da geldi ve bu düğmenin ne göstereceğine karar vermem gerekti. Sonunda iki mağaza için de çalışan tek bir QR koduna vardım. Nasıl çalıştığı ve neye mal olduğu burada.</p>
+    <h2>Soru: düğme artık ne gösterecek?</h2>
+    <p>Yakın zamana kadar QR kodu uygulamanın Google Play adresini içeriyordu; Play Console&#x27;un kaç yüklemenin QR&#x27;dan geldiğini söyleyebilmesi için bir referrer parametresi de vardı. App Store sürümü gelince tek kod yetmez gibi göründü.</p>
+    <p>Dört seçenek düşündüm: iki ayrı QR kodu, iki kodu yan yana gösteren tek bir görsel, Play ve App Store kodu arasında geçen sekmeler ya da tek bir evrensel kod. İlk üçü ziyaretçinin önüne bir seçim koyuyor ve ziyaretçi, telefonu elinden alana kadar hangisinin doğru olduğunu bilmiyor.</p>
+    <h2>Neden tek kod yeterli</h2>
+    <p>Düğme yalnızca masaüstünde görünüyor. Stil dosyasında fare benzeri bir cihaz (hover ve ince imleç) ve en az 900 piksel genişlikte bir pencere gerekiyor; yani telefonlar ve tabletler onu hiç görmüyor. Demek ki kodu okutan kişi, uygulamayı yükleyecek telefonu tam elinde tutuyor ve o telefon hangi mağazaya ait olduğunu zaten biliyor.</p>
+    <p>Bu yüzden kodun seçimi taşıması gerekmiyor. Yalnızca telefon onu açtıktan sonra seçimi yapan bir adres taşıması yeterli.</p>
+    <h2>Yönlendirme sayfası</h2>
+    <p>QR kodu, sitemde /go/&lt;uygulama&gt;/ biçimindeki kısa bir adrese işaret ediyor. Küçük bir üretici betik, App Store&#x27;da bulunan her uygulama için bu sayfayı yazıyor. Sayfa üç şey yapıyor.</p>
+    <p>Birincisi, kullanıcı aracısını (user agent) okuyor. İçinde iPhone, iPad ya da iPod geçiyorsa ziyaretçi iOS&#x27;ta. Bir püf noktası var: iPadOS 13&#x27;ten beri iPad Mac gibi bir kullanıcı aracısı bildiriyor; bu yüzden Mac kullanıcı aracısı ve birden fazla dokunma noktası birlikte olunca da iOS sayılıyor. Gerçek bir Mac&#x27;in dokunmatik ekranı yok, o yüzden yanlışlıkla yakalanmıyor.</p>
+    <p>İkincisi, telefonu location.replace ile doğru mağazaya gönderiyor. location.href atamak yerine replace seçtim, çünkü yönlendirme sayfasını geçmişte bırakmıyor. Aksi halde Geri düğmesi sayfama dönerdi, sayfa hemen yeniden yönlendirirdi ve ziyaretçi bir döngüde kalırdı.</p>
+    <p>Üçüncüsü, Android&#x27;de eskiden olduğu gibi aynı Google Play adresini, ziyareti QR&#x27;dan gelmiş diye işaretleyen referrer ile açıyor. Bu, Play Console&#x27;daki yükleme kaynağı kırılımının çalışmaya devam etmesini sağlıyor; yani kaç yüklemenin QR&#x27;dan geldiğini hâlâ görebiliyorum.</p>
+    <h2>Masaüstü ve JavaScript&#x27;siz yedek</h2>
+    <p>Sayfa bir bilgisayarda açılırsa ya da tarayıcıda JavaScript yoksa hiçbir yönlendirme yapılmıyor. Sayfa o zaman iki resmî mağaza rozetini gösteriyor: biri Google Play, biri App Store için; ayrıca sitemdeki uygulama sayfasına bir bağlantı var. Kimse boş bir sayfayla karşılaşmıyor ve kısa bağlantıyı yanlışlıkla paylaşan biri bile işe yarar bir şey buluyor.</p>
+    <p>Sayfa noindex olarak işaretli. Aramalar için değil, tarayanlar için var ve arama sonuçlarında birbirine çok benzeyen sayfalar yığını istemiyorum.</p>
+    <h2>Bonus: daha küçük bir kod</h2>
+    <p>QR kodu artık referrer&#x27;lı uzun Play adresi yerine kısa bir adres içeriyor. Daha az karakter, daha seyrek bir desen ve daha büyük kareler demek; bu da telefon kamerasının onu bir ekrandan, özellikle açılı duran bir dizüstü ekranından okumasını kolaylaştırıyor. Üretici, segno kütüphanesini M hata düzeltme düzeyiyle kullanıyor.</p>
+    <h2>Yalnızca iPhone uygulaması olan yerlerde</h2>
+    <p>Her uygulamanın iPhone sürümü yok. Küçük bir JSON dosyası App Store&#x27;da bulunan uygulamaları listeliyor ve yalnızca onlar bir /go/ sayfası ve evrensel kodu alıyor. Yalnızca Android olan uygulamalar doğrudan Google Play QR&#x27;ını koruyor; aralarında hiçbir ara sayfa yok.</p>
+    <h2>Site derlemesinde bir tuzak</h2>
+    <p>Web sitemin derlemesi her sayfayı dil klasörlerine bölüyor ve site haritası satırları yazıyor. Yeni /go/ klasörünü ekleyince derleme onu normal bir site sayfası saydı ve onun için çevrilmiş kopyalar ve site haritası satırları üretmeye başladı. Çözüm tek bir sözcüktü: klasörü, dil derlemesinin atladığı klasörler listesine eklemek (QR görselleri ve rozetler gibi klasörlerin yanına). Bir yönlendirme yardımcısı site haritasında hiç olmamalı.</p>
+    <h2>Nasıl denedim ve dezavantajlar</h2>
+    <p>Kısa adresi bir Android telefonda açtım ve Play sayfasını açtı. iPhone kamerasıyla okutma da doğrulandı; yani iki telefon da elle bir kez denendi. Küçük bir test, bir cihaz laboratuvarı değil.</p>
+    <p>Dezavantajlar dürüst olanlar. Otomatik seçim JavaScript gerektiriyor; o olmadan ziyaretçinin bir rozete dokunması gerekiyor. Ve ara sayfa bir sıçrama daha demek: mağaza açılmadan önce sayfamın kısa bir görünüşü ve bozulabilecek bir şey daha; gerçi bu tek bir statik dosya.</p>
+    
+    <section class="faq"><h2>Sık sorulan sorular</h2><details><summary>Neden mağaza başına bir tane olmak üzere iki QR kodu göstermiyorsun?</summary><p>Çünkü QR düğmesi yalnızca masaüstünde görünüyor; onu okutan telefon, uygulamayı yükleyecek telefon. Tek kod ve mağazayı seçen bir sayfa ziyaretçiyi bir seçimden kurtarıyor.</p></details><details><summary>Sayfa telefonun iPhone olduğunu nasıl anlıyor?</summary><p>Kullanıcı aracısında iPhone, iPad ya da iPod arıyor. Yeni iPad&#x27;ler Mac gibi bir kullanıcı aracısı bildirdiği için, birden fazla dokunma noktası olan bir Mac kullanıcı aracısı da iOS sayılıyor.</p></details><details><summary>QR&#x27;dan gelen yüklemeleri Google Play Console&#x27;da hâlâ görüyor muyum?</summary><p>Evet. Android hedefi Play adresini QR referrer&#x27;ıyla koruyor, bu yüzden yükleme kaynağı kırılımı onları saymaya devam ediyor.</p></details><details><summary>JavaScript yokken ya da bilgisayarda ne oluyor?</summary><p>Yönlendirme yapılmıyor. Sayfa iki resmî mağaza rozetini gösteriyor, ziyaretçi seçiyor.</p></details></section>
+    <section><h2>Diğer yazılar</h2><ul class="glist"><li><a href="/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Sunucu Olmadan Herkese Aynı Günlük Bulmaca Nasıl Verilir?</b></div></a></li><li><a href="/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Yüzlerce Bulmaca Bölümü Nasıl Üretilir ve Doğrulanır?</b></div></a></li><li><a href="/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Tek Geliştirici, Yaklaşık İki Düzine Android Uygulaması</b></div></a></li><li><a href="/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Android&#x27;de Takılan Geçiş Reklamını Olay Kayıtlarıyla Yakalamak</b></div></a></li><li><a href="/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Mac Olmadan iPhone Uygulaması Yayınlamak: Kotlin Multiplatform, Bulut Mac ve TestFlight</b></div></a></li><li><a href="/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Bir Android Uygulamasını AGP 9 ile Kotlin Multiplatform&#x27;a Taşımak: Yedi Tuzak</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

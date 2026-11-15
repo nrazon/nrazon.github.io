@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rewriting for Kotlin Multiplatform Without Changing Behavior</title>
+<meta name="description" content="Dev notes: how I replaced XmlPullParser, HtmlCompat, SimpleDateFormat and java.util.Random with pure common Kotlin for iOS, keeping the old code in the tests…">
+<link rel="canonical" href="https://nrazon.github.io/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/reescribir-para-kotlin-multiplatform-sin-cambiar-el-comportamiento-el-codigo-antiguo-como-oraculo-de-pruebas/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Rewriting for Kotlin Multiplatform Without Changing Behavior: Old Code as a Test Oracle">
+<meta property="og:description" content="Dev notes: how I replaced XmlPullParser, HtmlCompat, SimpleDateFormat and java.util.Random with pure common Kotlin for iOS, keeping the old code in the tests…">
+<meta property="og:url" content="https://nrazon.github.io/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rewriting for Kotlin Multiplatform Without Changing Behavior: Old Code as a Test Oracle">
+<meta name="twitter:description" content="Dev notes: how I replaced XmlPullParser, HtmlCompat, SimpleDateFormat and java.util.Random with pure common Kotlin for iOS, keeping the old code in the tests…">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Rewriting for Kotlin Multiplatform Without Changing Behavior: Old Code as a Test Oracle", "description": "Dev notes: how I replaced XmlPullParser, HtmlCompat, SimpleDateFormat and java.util.Random with pure common Kotlin for iOS, keeping the old code in the tests to prove the output stayed identical, and what that proof does not cover.", "inLanguage": "en", "mainEntityOfPage": "https://nrazon.github.io/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-16", "dateModified": "2026-11-16", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}, "keywords": "Dev notes, Android"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nrazon.github.io/blog/"}, {"@type": "ListItem", "position": 3, "name": "Rewriting for Kotlin Multiplatform Without Changing Behavior: Old Code as a Test Oracle", "item": "https://nrazon.github.io/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why keep the old code in the tests instead of deleting it?", "acceptedAnswer": {"@type": "Answer", "text": "Because it is the most trusted description of the behavior. Comparing the new code against it field by field is faster and more reliable than writing expected values by hand."}}, {"@type": "Question", "name": "Does the parity test need internet access?", "acceptedAnswer": {"@type": "Answer", "text": "Not by default. It uses bundled sample feeds. The live comparison runs only when the test is started with -Drss.live=true."}}, {"@type": "Question", "name": "Why reimplement java.util.Random instead of using a different shuffle?", "acceptedAnswer": {"@type": "Answer", "text": "A different shuffle would change the daily card for every existing user. Reproducing the exact generator keeps the sequence unchanged."}}, {"@type": "Question", "name": "Can a passing parity test guarantee no regressions?", "acceptedAnswer": {"@type": "Answer", "text": "No. It only covers the inputs it sees, and live data changes, so it lowers the risk but does not remove it."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/reescribir-para-kotlin-multiplatform-sin-cambiar-el-comportamiento-el-codigo-antiguo-como-oraculo-de-pruebas/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>Rewriting for Kotlin Multiplatform Without Changing Behavior: Old Code as a Test Oracle</h1>
+    <p class="by">By Nesim Razon, independent Android developer · 2026-11-16</p>
+    <p class="tags"><a href="/blog/#devlog">#Dev notes</a><a href="/blog/#android">#Android</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">I moved two small RSS reader apps and a space app to Kotlin Multiplatform so they could also run on iOS. That meant rewriting code that leaned on Android and Java classes. I did not want a single existing user to notice a difference, so I kept the old implementation in the test sources and made it argue with the new one. Here is how that went.</p>
+    <h2>What had to be rewritten</h2>
+    <p>Common Kotlin code cannot call Android or Java classes, and iOS has none of them. The RSS parser used XmlPullParser, the text cleanup used HtmlCompat, the dates went through SimpleDateFormat, and the space app shuffled its daily cards with java.util.Random. All four had to become plain Kotlin that compiles for both platforms.</p>
+    <p>A rewrite like this is the classic place to introduce quiet changes: a title that loses an accent, a date that shifts by an hour, a list in a different order. None of these crash anything, so nobody notices until a user writes a review.</p>
+    <h2>Keep the old code as an oracle</h2>
+    <p>My rule was simple: do not delete the old implementation, move it. In TurkSail the previous parser went, unchanged, into a file in the Android test sources called LegacyRss. It is no longer shipped, but it still compiles and still produces the answers I trust, because real users have been looking at its output for years.</p>
+    <p>The new parser lives in the shared module. The test feeds the same XML to both and asks whether the results are equal.</p>
+    <h2>The parity test</h2>
+    <p>The test parses a feed with the new and the old parser and first checks that both return the same number of articles. Then it walks through them one by one and compares six things field by field: title, link, date, cover image, summary and the cleaned HTML. A failure message names the feed, the article index and the field, so a difference is easy to locate.</p>
+    <p>It needs Android classes for the old side, so it runs under Robolectric in the app module. By default it uses sample feeds bundled with the project. If I start it with -Drss.live=true, it also downloads the live feeds of the real sites and compares those. That system property has to be forwarded to the test JVM in the module&#x27;s test configuration, otherwise the switch silently does nothing.</p>
+    <h2>Traps the oracle found</h2>
+    <p>The feeds contain HTML that is itself XML-escaped, so entities are decoded twice: once by the XML pass and once more by the HTML pass. A feed that says an escaped ampersand followed by uuml ends up as the letter u with an umlaut only after both passes. A shortcut that decodes once gives the wrong text.</p>
+    <p>HtmlCompat knew the named HTML entities, and common code does not. I wrote a table of the 96 Latin-1 named entities, plus the handful of others the feeds use, and handle numeric entities, decimal and hexadecimal, including characters outside the basic range. Unknown entities are left as they are, which is what the old code did.</p>
+    <p>Dates are RFC 822 with an offset, for example a weekday, a day, a month name, a time and a plus or minus four-digit zone. SimpleDateFormat is gone, so I parse them with a regular expression, build the offset by hand and convert with kotlinx-datetime. Unit tests pin one concrete timestamp both with an offset and with GMT, and check that garbage returns null, as before.</p>
+    <h2>A random generator that must not change</h2>
+    <p>The space app shows a card of the day. The order comes from shuffling the card list with java.util.Random seeded with 2026, and the card index is derived from the date. If the shuffle changed, every existing user would suddenly see a different card on the same day.</p>
+    <p>So I wrote a small class that reproduces java.util.Random exactly: the 48-bit linear congruential generator, the way nextInt picks a value below a bound (including the retry loop and the power-of-two shortcut), and the same algorithm that Collections.shuffle uses. The oracle here is the real thing: a test shuffles the list with java.util.Random(2026) on the JVM and checks that the ids come out in the same order as with my class.</p>
+    <h2>Small things that mattered</h2>
+    <p>Android keeps the downloaded feed in a cache file named after a hash of the address. I kept the file names identical, so after the update the app still finds the old file and the feed opens offline right away. Nothing in the parity test would have caught a changed file name, which is why I list it here.</p>
+    <p>The live comparison covered 7 categories and 72 articles for TurkSail and 20 articles for MedyaFobi, with zero differences.</p>
+    <h2>What this does not prove</h2>
+    <p>A parity test only covers the inputs you feed it. Sample feeds and one live snapshot say nothing about an article published next week with an entity or a date format I have never seen. Live feeds also change, so a green run today is a statement about today.</p>
+    <p>It also shows equality, not correctness: if the old code had a bug, the new code now has the same bug on purpose. I accepted that because the goal was to keep behavior, and fixes are a separate, visible change. For the random generator the same limit applies: it matches for the list sizes I tested, and I rely on the algorithm being deterministic.</p>
+    
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Why keep the old code in the tests instead of deleting it?</summary><p>Because it is the most trusted description of the behavior. Comparing the new code against it field by field is faster and more reliable than writing expected values by hand.</p></details><details><summary>Does the parity test need internet access?</summary><p>Not by default. It uses bundled sample feeds. The live comparison runs only when the test is started with -Drss.live=true.</p></details><details><summary>Why reimplement java.util.Random instead of using a different shuffle?</summary><p>A different shuffle would change the daily card for every existing user. Reproducing the exact generator keeps the sequence unchanged.</p></details><details><summary>Can a passing parity test guarantee no regressions?</summary><p>No. It only covers the inputs it sees, and live data changes, so it lowers the risk but does not remove it.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/how-daily-puzzles-work-without-a-server/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>How a Daily Puzzle Can Be the Same for Everyone, No Server</b></div></a></li><li><a href="/blog/how-puzzle-levels-are-generated-and-checked/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>How Hundreds of Puzzle Levels Are Generated and Checked</b></div></a></li><li><a href="/blog/keeping-two-dozen-android-apps-maintainable-solo/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Keeping Two Dozen Android Apps Maintainable as a Solo Dev</b></div></a></li><li><a href="/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Catching a Stuck Interstitial Ad on Android With Event Logs</b></div></a></li><li><a href="/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Shipping an iPhone App Without a Mac: Kotlin Multiplatform, a Cloud Mac and TestFlight</b></div></a></li><li><a href="/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Moving an Android App to Kotlin Multiplatform With AGP 9: Seven Traps</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

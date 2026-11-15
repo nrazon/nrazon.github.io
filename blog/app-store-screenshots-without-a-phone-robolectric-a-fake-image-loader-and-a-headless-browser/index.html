@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>App Store Screenshots Without a Phone | Nesim Apps</title>
+<meta name="description" content="Dev notes: how I make 1206x2622 App Store screenshots for my iPhone apps on a Windows laptop, with no device and no cloud build minutes, by rendering the…">
+<link rel="canonical" href="https://nrazon.github.io/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/">
+<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/">
+<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/telefonsuz-app-store-ekran-goruntuleri-robolectric-sahte-gorsel-yukleyici-ve-basliksiz-tarayici/">
+<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/capturas-de-app-store-sin-telefono-robolectric-un-cargador-de-imagenes-falso-y-un-navegador-sin-interfaz/">
+<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/">
+<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="App Store Screenshots Without a Phone: Robolectric, a Fake Image Loader and a Headless Browser">
+<meta property="og:description" content="Dev notes: how I make 1206x2622 App Store screenshots for my iPhone apps on a Windows laptop, with no device and no cloud build minutes, by rendering the…">
+<meta property="og:url" content="https://nrazon.github.io/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="App Store Screenshots Without a Phone: Robolectric, a Fake Image Loader and a Headless Browser">
+<meta name="twitter:description" content="Dev notes: how I make 1206x2622 App Store screenshots for my iPhone apps on a Windows laptop, with no device and no cloud build minutes, by rendering the…">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "App Store Screenshots Without a Phone: Robolectric, a Fake Image Loader and a Headless Browser", "description": "Dev notes: how I make 1206x2622 App Store screenshots for my iPhone apps on a Windows laptop, with no device and no cloud build minutes, by rendering the shared Compose UI inside Robolectric unit tests.", "inLanguage": "en", "mainEntityOfPage": "https://nrazon.github.io/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-16", "dateModified": "2026-11-16", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}, "keywords": "Dev notes, Tools and calculators"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nrazon.github.io/blog/"}, {"@type": "ListItem", "position": 3, "name": "App Store Screenshots Without a Phone: Robolectric, a Fake Image Loader and a Headless Browser", "item": "https://nrazon.github.io/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does this produce real iOS screenshots?", "acceptedAnswer": {"@type": "Answer", "text": "No. They are Android renderings of the shared Compose UI, sized to 1206x2622. Real iPhone behavior was checked separately on a device through TestFlight."}}, {"@type": "Question", "name": "Why is the size exactly 1206x2622?", "acceptedAnswer": {"@type": "Answer", "text": "The test uses a 402 by 874 dp window at xxhdpi, which is three pixels per dp, so the output is 1206 by 2622 pixels."}}, {"@type": "Question", "name": "Why not take screenshots on a real iPhone or a simulator?", "acceptedAnswer": {"@type": "Answer", "text": "I have no spare device for it and no Mac, and I want to keep my cloud build minutes for real builds. Unit tests run on my own laptop for free and can be repeated at any time."}}, {"@type": "Question", "name": "Why are WebView screens handled separately?", "acceptedAnswer": {"@type": "Answer", "text": "Robolectric does not draw WebViews, so the page HTML is rendered in headless Edge and pasted under a Compose-drawn app bar."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/telefonsuz-app-store-ekran-goruntuleri-robolectric-sahte-gorsel-yukleyici-ve-basliksiz-tarayici/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/capturas-de-app-store-sin-telefono-robolectric-un-cargador-de-imagenes-falso-y-un-navegador-sin-interfaz/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>App Store Screenshots Without a Phone: Robolectric, a Fake Image Loader and a Headless Browser</h1>
+    <p class="by">By Nesim Razon, independent Android developer · 2026-11-16</p>
+    <p class="tags"><a href="/blog/#devlog">#Dev notes</a><a href="/blog/#tools">#Tools and calculators</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">My iPhone apps share their screens with the Android versions, written once in Compose. App Store Connect wants screenshots at 1206x2622 pixels, and I work on a Windows laptop with no iPhone to spare for the job and a limited amount of cloud build minutes that I would rather spend on real builds. So I let unit tests draw the screens. This is how it works, what broke, and what these images honestly are.</p>
+    <h2>The idea: let a unit test draw the screen</h2>
+    <p>Robolectric runs Android code on the desktop JVM, and with native graphics mode it can draw Compose to a real bitmap. Roborazzi saves that bitmap as a PNG. So a screenshot becomes a test: set up the screen, click through to the state I want, capture the root node, done. No emulator, no phone, no build service.</p>
+    <p>One qualifier does the sizing: w402dp-h874dp-xxhdpi. That is a 402 by 874 dp screen at three pixels per dp, which gives exactly 1206x2622 pixels, the size App Store Connect asks for. I checked the output files rather than trusting the arithmetic.</p>
+    <h2>Safe areas by hand</h2>
+    <p>An Android test window has no notch, so the top of every screen would sit under where the Dynamic Island goes. In the test I wrap the app in a box with 47 dp of top padding, which stands for the iPhone safe area. In one app I also added 34 dp at the bottom for the home indicator, because that app has a bottom navigation bar.</p>
+    <p>It is a rough stand-in, not a measurement. It only has to make the layout look the way it would look on the phone, with nothing hidden under the island.</p>
+    <h2>Network images that never load</h2>
+    <p>Robolectric has no useful network in these tests, so article covers and satellite pictures would show as empty boxes. Coil has a FakeImageLoaderEngine for this: I register real images, saved as test resources, against the URLs or URL patterns the app would request. The screenshot then shows real pictures and not placeholders.</p>
+    <p>The data gets the same treatment. For the news reader the feed in the test is a copy of the real feed taken from the live site. For the space app the daily data is a copy of the real daily file. I do not invent content for a store listing; I freeze real content.</p>
+    <h2>Live content and endless loops</h2>
+    <p>Some screens show things that change, like the current position of the space station. For those the test passes a fixed sample object, and the screen draws it as if it had just arrived.</p>
+    <p>That needed a change in the app code. The live screen polled in a loop, and a while(true) loop with a delay inside it can keep the test framework&#x27;s waitForIdle from ever returning, because the app is never idle. I did not wait to find out whether it would hang; I added a preview parameter up front: when a sample is given, the screen shows it and does not start the loop. It is a small testing seam that also makes the screen easier to preview.</p>
+    <h2>Screens with a WebView</h2>
+    <p>Robolectric does not draw a WebView. The article view and the static pages in my news apps are WebViews, so the screenshot came out with a hole where the page should be.</p>
+    <p>The workaround has two halves. The test writes the page HTML, built by the same shared function the app uses, plus a screenshot of the screen without the page: just the app bar, which is 111 dp or 333 pixels high. A Python script then renders that HTML in headless Edge inside a 402-pixel-wide iframe at 3x scale and pastes the result under the app bar. The page is drawn by a real browser engine, the bar by Compose, and they meet at a fixed line.</p>
+    <h2>The traps</h2>
+    <p>Each of these cost me an evening or part of one.</p>
+    <ul><li>Headless Edge will not go narrower than about 500 px, so the page was cut off on the right. The fix was a wrapper page with a 402 px iframe, then cropping the screenshot.</li><li>Edge can detach from the process, so the screenshot file appears after the command has already returned. The script polls for the file and uses its own user data directory, so it does not collide with my open browser.</li><li>Roborazzi writes RGBA PNGs, and App Store Connect wants RGB without transparency. A small script flattens them before upload.</li><li>A folder in an app repository named screenshots_ios was picked up by my website generator as a folder of newer screenshots. Three web pages silently lost their screenshots until I restricted the search to folder names that start with a digit-versioned pattern.</li></ul>
+    <h2>What these images are, and are not</h2>
+    <p>These are Android renderings sized for an iPhone. Fonts, scrolling feel, system bars and some small controls are not what iOS draws. I accept that for the store listing because the shared UI is the same code, but I do not call them iOS captures.</p>
+    <p>The actual iPhone behavior of those apps I checked separately, on an iPhone 7 installed through TestFlight. The screenshots show the screens; the real device told me whether the screens work.</p>
+    
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Does this produce real iOS screenshots?</summary><p>No. They are Android renderings of the shared Compose UI, sized to 1206x2622. Real iPhone behavior was checked separately on a device through TestFlight.</p></details><details><summary>Why is the size exactly 1206x2622?</summary><p>The test uses a 402 by 874 dp window at xxhdpi, which is three pixels per dp, so the output is 1206 by 2622 pixels.</p></details><details><summary>Why not take screenshots on a real iPhone or a simulator?</summary><p>I have no spare device for it and no Mac, and I want to keep my cloud build minutes for real builds. Unit tests run on my own laptop for free and can be repeated at any time.</p></details><details><summary>Why are WebView screens handled separately?</summary><p>Robolectric does not draw WebViews, so the page HTML is rendered in headless Edge and pasted under a Compose-drawn app bar.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/how-daily-puzzles-work-without-a-server/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>How a Daily Puzzle Can Be the Same for Everyone, No Server</b></div></a></li><li><a href="/blog/how-puzzle-levels-are-generated-and-checked/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>How Hundreds of Puzzle Levels Are Generated and Checked</b></div></a></li><li><a href="/blog/keeping-two-dozen-android-apps-maintainable-solo/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Keeping Two Dozen Android Apps Maintainable as a Solo Dev</b></div></a></li><li><a href="/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Catching a Stuck Interstitial Ad on Android With Event Logs</b></div></a></li><li><a href="/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Shipping an iPhone App Without a Mac: Kotlin Multiplatform, a Cloud Mac and TestFlight</b></div></a></li><li><a href="/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Moving an Android App to Kotlin Multiplatform With AGP 9: Seven Traps</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

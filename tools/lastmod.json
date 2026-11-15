@@ -508,8 +508,8 @@
   "date": "2026-11-14"
  },
  "https://nrazon.github.io/blog/": {
-  "hash": "c7c7944bbc015ed8f59ff45f361359e6",
-  "date": "2026-11-14"
+  "hash": "d8cfeb40f96bae2c708840f4acf74bc6",
+  "date": "2026-11-15"
  },
  "https://nrazon.github.io/blog/how-daily-puzzles-work-without-a-server/": {
   "hash": "283d8a49ec374fb4df595c94228aff85",
@@ -528,8 +528,8 @@
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/es/blog/": {
-  "hash": "6fcf1e9765bed6f63c4aed98a344604a",
-  "date": "2026-11-14"
+  "hash": "0a87ba87e448b033357385253703cba4",
+  "date": "2026-11-15"
  },
  "https://nrazon.github.io/es/blog/como-garantizamos-que-un-mahjong-solitario-tenga-solucion/": {
   "hash": "4065b7294156d63a18a13b7d28f4def8",
@@ -620,8 +620,8 @@
   "date": "2026-11-14"
  },
  "https://nrazon.github.io/pt/blog/": {
-  "hash": "bc4666fd35988e748732200c9ec732ed",
-  "date": "2026-11-14"
+  "hash": "d42665f965fdeedba231fa08233b84d1",
+  "date": "2026-11-15"
  },
  "https://nrazon.github.io/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/": {
   "hash": "1a7f25c18de1e2e60c6ed6376af7f2a7",
@@ -712,8 +712,8 @@
   "date": "2026-11-12"
  },
  "https://nrazon.github.io/tr/yazilar/": {
-  "hash": "4d1c9f39f7eac320d873f4c4523c6210",
-  "date": "2026-11-14"
+  "hash": "0701529b116bfa3be317ff352c00d768",
+  "date": "2026-11-15"
  },
  "https://nrazon.github.io/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/": {
   "hash": "7a18dcf418c87f94ae583c62f4eb6680",
@@ -1230,5 +1230,85 @@
  "https://nrazon.github.io/tr/rehber/tas-eslestirme-nasil-oynanir-raf-stratejisi/": {
   "hash": "b389562a78f41683ba3ffcda7ceddf7f",
   "date": "2026-11-14"
+ },
+ "https://nrazon.github.io/blog/app-store-review-guideline-2-1-information-needed-what-i-sent/": {
+  "hash": "3a63ec45b34997d40e31cc173e22424d",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/": {
+  "hash": "753d4988a2a314f153d365562ca3db81",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/": {
+  "hash": "7a5f27dda83a12053f5f2a2e365f5808",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/": {
+  "hash": "17b672452e1a19984c101c94d6445104",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/": {
+  "hash": "5db4bd02b2afb8805f6f46f7965ceabf",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/es/blog/capturas-de-app-store-sin-telefono-robolectric-un-cargador-de-imagenes-falso-y-un-navegador-sin-interfaz/": {
+  "hash": "cb3dc4ef74ba04db3dede23aab25ea63",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/es/blog/guia-2-1-de-app-store-informacion-necesaria-lo-que-envie/": {
+  "hash": "168fed7c600e2fb9adeff25e00520766",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/es/blog/por-que-mi-enlace-de-la-app-store-dio-404-y-la-pagina-mostraba-capturas-de-2018/": {
+  "hash": "285b8c280d24e59883f06fa4fe22e031",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/es/blog/reescribir-para-kotlin-multiplatform-sin-cambiar-el-comportamiento-el-codigo-antiguo-como-oraculo-de-pruebas/": {
+  "hash": "f9ed35a66c41d669d04fd73aad7adff7",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/": {
+  "hash": "f0e79dab2eccc428ca0559496486e27b",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/": {
+  "hash": "48d2d4b85330297a1d3bce02f8b565e0",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/pt/blog/diretriz-2-1-da-app-store-informacao-necessaria-o-que-enviei/": {
+  "hash": "785859b983bfd45b35f83b3d55c602f1",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/": {
+  "hash": "522f68d3b8a78e1133ce442349d6fa8f",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/": {
+  "hash": "97e18894e50ae528bf4b7d4741e0e58d",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/": {
+  "hash": "70b8daaa570e9207c6b420eb750ed1e3",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/tr/yazilar/app-store-baglantim-neden-404-verdi-ve-sayfa-2018-ekran-goruntulerini-gosterdi/": {
+  "hash": "75460f5364b4583a5c29a34778a376f5",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/tr/yazilar/app-store-inceleme-kurali-2-1-bilgi-gerekli-ne-gonderdim/": {
+  "hash": "0da6dac5c71c6639e844162e57eb1393",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/": {
+  "hash": "74cdbd6521dec8d3f787f272d79f1a81",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/": {
+  "hash": "ebf0b5b484a6555179e0ec371a46a83f",
+  "date": "2026-11-15"
+ },
+ "https://nrazon.github.io/tr/yazilar/telefonsuz-app-store-ekran-goruntuleri-robolectric-sahte-gorsel-yukleyici-ve-basliksiz-tarayici/": {
+  "hash": "4fa7a26174aad36c2620fd1e0c1c8697",
+  "date": "2026-11-15"
  }
 }
