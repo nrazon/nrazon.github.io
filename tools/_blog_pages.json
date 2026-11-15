@@ -9,7 +9,7 @@
     "pt": "https://nesimapps.com/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/"
    },
    "default": "en",
-   "hash": "61800d91a1237ff2029a1a7f2faae95c"
+   "hash": "45dd171a37a70cc03be56660acd78e4c"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/mahjong-solitaire-tahtasi-cozulebilir-nasil-garanti-ederiz/",
@@ -20,7 +20,7 @@
     "pt": "https://nesimapps.com/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/"
    },
    "default": "en",
-   "hash": "d21e1ef36509481348c01b17dd66779e"
+   "hash": "d00d8556917714b03c876803459ef316"
   },
   {
    "url": "https://nesimapps.com/es/blog/como-garantizamos-que-un-mahjong-solitario-tenga-solucion/",
@@ -31,7 +31,7 @@
     "pt": "https://nesimapps.com/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/"
    },
    "default": "en",
-   "hash": "12769142db8332001c42169abbdfe49f"
+   "hash": "623ee60f96b3126d8d8510d016b59bc7"
   },
   {
    "url": "https://nesimapps.com/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/",
@@ -42,7 +42,7 @@
     "pt": "https://nesimapps.com/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/"
    },
    "default": "en",
-   "hash": "39e9c2d671bef2b7ed40773b620e9faa"
+   "hash": "0d32fcecbcdd8421a86c3199bad3fb2e"
   },
   {
    "url": "https://nesimapps.com/blog/mahjong-solitaire-history-vs-real-mahjong/",
@@ -53,7 +53,7 @@
     "pt": "https://nesimapps.com/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/"
    },
    "default": "en",
-   "hash": "7917e6a7d158b450849fe27d1e8a8ada"
+   "hash": "f5aa8aa4e845c2854ae22a60cc64494a"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/mahjong-solitaire-tarihi-ve-klasik-mahjong-farki/",
@@ -64,7 +64,7 @@
     "pt": "https://nesimapps.com/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/"
    },
    "default": "en",
-   "hash": "f0089ea3ba287cf7294a514aa3480736"
+   "hash": "c7742005ca6186750286412d07984271"
   },
   {
    "url": "https://nesimapps.com/es/blog/historia-mahjong-solitario-y-diferencias-con-mahjong/",
@@ -75,7 +75,7 @@
     "pt": "https://nesimapps.com/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/"
    },
    "default": "en",
-   "hash": "f73d487bc1381475da4637f51b935745"
+   "hash": "341b58085b5913906402f9729ea1492f"
   },
   {
    "url": "https://nesimapps.com/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/",
@@ -86,7 +86,7 @@
     "pt": "https://nesimapps.com/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/"
    },
    "default": "en",
-   "hash": "989ea88430f1a7f45f4fb81546dd739c"
+   "hash": "b7824c9a00bd1a6a9bd0176c6012972c"
   },
   {
    "url": "https://nesimapps.com/blog/how-daily-puzzles-work-without-a-server/",
@@ -97,7 +97,7 @@
     "pt": "https://nesimapps.com/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"
    },
    "default": "en",
-   "hash": "d7d1644984fa8b43e4e79b3f291f43c4"
+   "hash": "41abe5af6504b79eb900196e7e3f5362"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/",
@@ -108,7 +108,7 @@
     "pt": "https://nesimapps.com/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"
    },
    "default": "en",
-   "hash": "80f59fe40e84e6a9f64126b929011736"
+   "hash": "ba5e8e9c6a69d31db1da3f9b6a4182f6"
   },
   {
    "url": "https://nesimapps.com/es/blog/puzle-diario-igual-para-todos-sin-servidor/",
@@ -119,7 +119,7 @@
     "pt": "https://nesimapps.com/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"
    },
    "default": "en",
-   "hash": "71bf629660b28007555e609a2424cb4f"
+   "hash": "eeb008ea949f2ad4f751e72622098f59"
   },
   {
    "url": "https://nesimapps.com/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/",
@@ -130,7 +130,7 @@
     "pt": "https://nesimapps.com/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/"
    },
    "default": "en",
-   "hash": "94cc4d8b8a13dbb565ffec5cc2aa6904"
+   "hash": "f78f9ce0bfd2010c162d1cccae98b694"
   },
   {
    "url": "https://nesimapps.com/blog/how-puzzle-levels-are-generated-and-checked/",
@@ -141,7 +141,7 @@
     "pt": "https://nesimapps.com/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"
    },
    "default": "en",
-   "hash": "00ddabd658b606473f73a0155258e44f"
+   "hash": "48e6895fe55c24ef1e4df6f7a98ad72e"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/",
@@ -152,7 +152,7 @@
     "pt": "https://nesimapps.com/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"
    },
    "default": "en",
-   "hash": "6c5f1fb598ae92c6d81f3d37763cd36e"
+   "hash": "0c509080c4f009d967f98c9d5cfa96d8"
   },
   {
    "url": "https://nesimapps.com/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/",
@@ -163,7 +163,7 @@
     "pt": "https://nesimapps.com/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"
    },
    "default": "en",
-   "hash": "5294dbdecf856ac8c0d2ffbf050f3c8b"
+   "hash": "140614280d6cd1fc87d3f6d3a200933c"
   },
   {
    "url": "https://nesimapps.com/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/",
@@ -174,7 +174,7 @@
     "pt": "https://nesimapps.com/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/"
    },
    "default": "en",
-   "hash": "60e48dbeaf4624fe9068ec5d7ab00154"
+   "hash": "ada764b8c9862fb4905621eeab5edfa5"
   },
   {
    "url": "https://nesimapps.com/blog/tic-tac-toe-history-and-variants/",
@@ -185,7 +185,7 @@
     "pt": "https://nesimapps.com/pt/blog/historia-do-jogo-da-velha-e-variantes/"
    },
    "default": "en",
-   "hash": "bc994481c5c3bbe4d8acb823948d7de7"
+   "hash": "bee4e70a539bac8bc99d16671aba7abe"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/xox-tarihi-ve-cesitleri/",
@@ -196,7 +196,7 @@
     "pt": "https://nesimapps.com/pt/blog/historia-do-jogo-da-velha-e-variantes/"
    },
    "default": "en",
-   "hash": "46f316b5531bbab5bfebf140b0d77739"
+   "hash": "7dab27a7d76d2121fe04136c1e502392"
   },
   {
    "url": "https://nesimapps.com/es/blog/historia-del-tres-en-raya-y-sus-variantes/",
@@ -207,7 +207,7 @@
     "pt": "https://nesimapps.com/pt/blog/historia-do-jogo-da-velha-e-variantes/"
    },
    "default": "en",
-   "hash": "2ceb5ac85763db0362a64dbb45c25745"
+   "hash": "736052ec0a78763a46af7de3edbc445a"
   },
   {
    "url": "https://nesimapps.com/pt/blog/historia-do-jogo-da-velha-e-variantes/",
@@ -218,7 +218,7 @@
     "pt": "https://nesimapps.com/pt/blog/historia-do-jogo-da-velha-e-variantes/"
    },
    "default": "en",
-   "hash": "f443924ddb29cb72f7159b10c3d1e567"
+   "hash": "718a5c9bda6bc32ad71d3ebf7584c01f"
   },
   {
    "url": "https://nesimapps.com/blog/earthquake-magnitude-vs-intensity/",
@@ -229,7 +229,7 @@
     "pt": "https://nesimapps.com/pt/blog/magnitude-e-intensidade-de-um-terremoto/"
    },
    "default": "en",
-   "hash": "0f0ffa4bec48c3c9a35f1df2e773410d"
+   "hash": "c7e2d6d6e19ad4d6af19a97dfeab371f"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/deprem-buyuklugu-ve-siddeti-arasindaki-fark/",
@@ -240,7 +240,7 @@
     "pt": "https://nesimapps.com/pt/blog/magnitude-e-intensidade-de-um-terremoto/"
    },
    "default": "en",
-   "hash": "5671b1cc8509bb27f87b79339b14866f"
+   "hash": "8f36f7afc8da461374a113c45dee2993"
   },
   {
    "url": "https://nesimapps.com/es/blog/magnitud-e-intensidad-de-un-terremoto/",
@@ -251,7 +251,7 @@
     "pt": "https://nesimapps.com/pt/blog/magnitude-e-intensidade-de-um-terremoto/"
    },
    "default": "en",
-   "hash": "59bd69a5f8ba67dd121f6a16a8996af7"
+   "hash": "537244d30380f33c84091c0caaf11f35"
   },
   {
    "url": "https://nesimapps.com/pt/blog/magnitude-e-intensidade-de-um-terremoto/",
@@ -262,7 +262,7 @@
     "pt": "https://nesimapps.com/pt/blog/magnitude-e-intensidade-de-um-terremoto/"
    },
    "default": "en",
-   "hash": "bc2b969ebf077b97d04ed3c31e394ae7"
+   "hash": "33bcf98f5b3a2b42982ea962c47d2757"
   },
   {
    "url": "https://nesimapps.com/blog/earthquake-preparedness-what-to-do/",
@@ -273,7 +273,7 @@
     "pt": "https://nesimapps.com/pt/blog/terremoto-o-que-fazer-antes-durante-depois/"
    },
    "default": "en",
-   "hash": "36026ead24f5b0191fcb540f1279187b"
+   "hash": "b3840aa0bd767a6ddfc0e5827b26b652"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/deprem-oncesi-sirasinda-sonrasinda-ne-yapilir/",
@@ -284,7 +284,7 @@
     "pt": "https://nesimapps.com/pt/blog/terremoto-o-que-fazer-antes-durante-depois/"
    },
    "default": "en",
-   "hash": "17ee99175b331fa57050b51626f7a590"
+   "hash": "ff0e130f10d8ac44ae0d530a91749224"
   },
   {
    "url": "https://nesimapps.com/es/blog/terremoto-que-hacer-antes-durante-despues/",
@@ -295,7 +295,7 @@
     "pt": "https://nesimapps.com/pt/blog/terremoto-o-que-fazer-antes-durante-depois/"
    },
    "default": "en",
-   "hash": "2e2542e2d4c43dccfb537122a2f26493"
+   "hash": "94729b36aa1c1bf32b0596586ad39cee"
   },
   {
    "url": "https://nesimapps.com/pt/blog/terremoto-o-que-fazer-antes-durante-depois/",
@@ -306,7 +306,7 @@
     "pt": "https://nesimapps.com/pt/blog/terremoto-o-que-fazer-antes-durante-depois/"
    },
    "default": "en",
-   "hash": "b0cb16a7396d85eef0103641c4548210"
+   "hash": "48a295271ec485e646dc7b7d88b14ca8"
   },
   {
    "url": "https://nesimapps.com/blog/where-earthquake-data-comes-from/",
@@ -317,7 +317,7 @@
     "pt": "https://nesimapps.com/pt/blog/de-onde-vem-os-dados-de-terremotos/"
    },
    "default": "en",
-   "hash": "657afd8b4c3bf4bfb4c552151ff48cfa"
+   "hash": "9c9a8f0d12dcc77c6c00e02d9db9b898"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/son-deprem-verileri-nereden-geliyor/",
@@ -328,7 +328,7 @@
     "pt": "https://nesimapps.com/pt/blog/de-onde-vem-os-dados-de-terremotos/"
    },
    "default": "en",
-   "hash": "afa28b7832616c24286e71ae7e712d57"
+   "hash": "c918e82742e1fbb1e0b32c8d5790ad66"
   },
   {
    "url": "https://nesimapps.com/es/blog/de-donde-vienen-los-datos-de-terremotos/",
@@ -339,7 +339,7 @@
     "pt": "https://nesimapps.com/pt/blog/de-onde-vem-os-dados-de-terremotos/"
    },
    "default": "en",
-   "hash": "227a38627f39ce26012725a15f666e22"
+   "hash": "eba2e99da0fb9d223817abfbc76103b5"
   },
   {
    "url": "https://nesimapps.com/pt/blog/de-onde-vem-os-dados-de-terremotos/",
@@ -350,7 +350,7 @@
     "pt": "https://nesimapps.com/pt/blog/de-onde-vem-os-dados-de-terremotos/"
    },
    "default": "en",
-   "hash": "6614f1688199fb0e0674e775a6e8d22a"
+   "hash": "6fae0acffd3217502067b0548f14d75b"
   },
   {
    "url": "https://nesimapps.com/blog/what-is-bmi-how-to-calculate-and-read-it/",
@@ -361,7 +361,7 @@
     "pt": "https://nesimapps.com/pt/blog/o-que-e-imc-como-calcular-e-interpretar/"
    },
    "default": "en",
-   "hash": "ea1c32c782581bebe29ba98fb23c251c"
+   "hash": "ba0199546846932e9aed70ba9fa1804c"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/bmi-nedir-nasil-hesaplanir-yorumlanir/",
@@ -372,7 +372,7 @@
     "pt": "https://nesimapps.com/pt/blog/o-que-e-imc-como-calcular-e-interpretar/"
    },
    "default": "en",
-   "hash": "5f096c826a49a5fc17e85ec41611ff94"
+   "hash": "3107e9b5a00af01b252943af65227ef8"
   },
   {
    "url": "https://nesimapps.com/es/blog/que-es-el-imc-como-se-calcula-y-se-interpreta/",
@@ -383,7 +383,7 @@
     "pt": "https://nesimapps.com/pt/blog/o-que-e-imc-como-calcular-e-interpretar/"
    },
    "default": "en",
-   "hash": "a68c5ece8853d41c22743071c6450a60"
+   "hash": "82e2cd1c9680cab71a49d0a2cdeb78c4"
   },
   {
    "url": "https://nesimapps.com/pt/blog/o-que-e-imc-como-calcular-e-interpretar/",
@@ -394,7 +394,7 @@
     "pt": "https://nesimapps.com/pt/blog/o-que-e-imc-como-calcular-e-interpretar/"
    },
    "default": "en",
-   "hash": "9d8ffa420faef4f79310fb943ffea99e"
+   "hash": "a422ae2949e1955f5c72256eaaca04cb"
   },
   {
    "url": "https://nesimapps.com/blog/bmi-common-mistakes-and-limits/",
@@ -405,7 +405,7 @@
     "pt": "https://nesimapps.com/pt/blog/erros-comuns-e-limites-do-imc/"
    },
    "default": "en",
-   "hash": "3831f9ec8022daabe9b961e94aaf4333"
+   "hash": "1cf1fefd5dc7d5a3552e18000e07be1a"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/bmi-yanilgilari-ve-sinirlari/",
@@ -416,7 +416,7 @@
     "pt": "https://nesimapps.com/pt/blog/erros-comuns-e-limites-do-imc/"
    },
    "default": "en",
-   "hash": "f13c7bddaa349efd7910fb89d61985e9"
+   "hash": "fcb4982b23698dad76c2d3618035115b"
   },
   {
    "url": "https://nesimapps.com/es/blog/errores-comunes-y-limites-del-imc/",
@@ -427,7 +427,7 @@
     "pt": "https://nesimapps.com/pt/blog/erros-comuns-e-limites-do-imc/"
    },
    "default": "en",
-   "hash": "2d9ca3c592096dab2aa0879fc8addb5e"
+   "hash": "0bd7974e5a648da282a1a906141d0747"
   },
   {
    "url": "https://nesimapps.com/pt/blog/erros-comuns-e-limites-do-imc/",
@@ -438,7 +438,7 @@
     "pt": "https://nesimapps.com/pt/blog/erros-comuns-e-limites-do-imc/"
    },
    "default": "en",
-   "hash": "f3fcca4df8fb1386b90d07aa8b87c56b"
+   "hash": "10a6896132ecb0123079784dc52b8748"
   },
   {
    "url": "https://nesimapps.com/blog/how-to-calculate-exact-age-years-months-days/",
@@ -449,7 +449,7 @@
     "pt": "https://nesimapps.com/pt/blog/como-calcular-idade-exata-anos-meses-dias/"
    },
    "default": "en",
-   "hash": "499a0a10eb0bafdcf915835a52b0a209"
+   "hash": "b559a1ca035f512f47edc31dcd1e58f8"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/yas-hesaplama-yil-ay-gun-nasil-hesaplanir/",
@@ -460,7 +460,7 @@
     "pt": "https://nesimapps.com/pt/blog/como-calcular-idade-exata-anos-meses-dias/"
    },
    "default": "en",
-   "hash": "55d92e07046d67f1783cb7eeaf48edfc"
+   "hash": "d7ef9d45f299dae3367b3d9b3344465a"
   },
   {
    "url": "https://nesimapps.com/es/blog/como-calcular-la-edad-exacta-anos-meses-dias/",
@@ -471,7 +471,7 @@
     "pt": "https://nesimapps.com/pt/blog/como-calcular-idade-exata-anos-meses-dias/"
    },
    "default": "en",
-   "hash": "73cd83a831224dda1cc4aaee87d9bed9"
+   "hash": "ab49d76246246b49ce89c1387f6de43a"
   },
   {
    "url": "https://nesimapps.com/pt/blog/como-calcular-idade-exata-anos-meses-dias/",
@@ -482,7 +482,7 @@
     "pt": "https://nesimapps.com/pt/blog/como-calcular-idade-exata-anos-meses-dias/"
    },
    "default": "en",
-   "hash": "b00e840cdff40b11cdad2cfb94d24178"
+   "hash": "36c86523e007cb3ba0c9f934776353dc"
   },
   {
    "url": "https://nesimapps.com/blog/leap-day-birthday-how-to-count-age/",
@@ -493,7 +493,7 @@
     "pt": "https://nesimapps.com/pt/blog/aniversario-29-de-fevereiro-como-contar-a-idade/"
    },
    "default": "en",
-   "hash": "536ab04fef83f3b12683dde93328ea0c"
+   "hash": "465b36fb95391001a58a51ad1e355e16"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/29-subat-dogum-gunu-yas-nasil-sayilir/",
@@ -504,7 +504,7 @@
     "pt": "https://nesimapps.com/pt/blog/aniversario-29-de-fevereiro-como-contar-a-idade/"
    },
    "default": "en",
-   "hash": "fc65b25820b6cca70fa2af98833bba5b"
+   "hash": "7c0c73c39975177a81132e810c3123db"
   },
   {
    "url": "https://nesimapps.com/es/blog/cumpleanos-29-de-febrero-como-contar-la-edad/",
@@ -515,7 +515,7 @@
     "pt": "https://nesimapps.com/pt/blog/aniversario-29-de-fevereiro-como-contar-a-idade/"
    },
    "default": "en",
-   "hash": "c476369a7dc2eecd6b53f243827eb0fc"
+   "hash": "13eabe15f3c4a40cf6202a9f8d97aefe"
   },
   {
    "url": "https://nesimapps.com/pt/blog/aniversario-29-de-fevereiro-como-contar-a-idade/",
@@ -526,7 +526,7 @@
     "pt": "https://nesimapps.com/pt/blog/aniversario-29-de-fevereiro-como-contar-a-idade/"
    },
    "default": "en",
-   "hash": "7d6108cacbbecf2a2db06f87cd5db2a0"
+   "hash": "1eb9489bda694bcb564691caec61e8e3"
   },
   {
    "url": "https://nesimapps.com/blog/pentominoes-history-golomb-twelve-pieces/",
@@ -537,7 +537,7 @@
     "pt": "https://nesimapps.com/pt/blog/historia-dos-pentominos-golomb-doze-pecas/"
    },
    "default": "en",
-   "hash": "8e6d961958b579094e2f45dcc035fc61"
+   "hash": "c17fffd3d822397e541f7526958d69d3"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/pentomino-tarihi-golomb-12-parca/",
@@ -548,7 +548,7 @@
     "pt": "https://nesimapps.com/pt/blog/historia-dos-pentominos-golomb-doze-pecas/"
    },
    "default": "en",
-   "hash": "e8546d6ddf9c621410d5ba15bbafa12a"
+   "hash": "85a99defba81bd9af0b4a90b8c075f86"
   },
   {
    "url": "https://nesimapps.com/es/blog/historia-de-los-pentominos-golomb-doce-piezas/",
@@ -559,7 +559,7 @@
     "pt": "https://nesimapps.com/pt/blog/historia-dos-pentominos-golomb-doze-pecas/"
    },
    "default": "en",
-   "hash": "1cbdbd58a6f3785d4d42c23f8a1c8f7b"
+   "hash": "a5e2628cf61ee58c11126c0743c6dcd4"
   },
   {
    "url": "https://nesimapps.com/pt/blog/historia-dos-pentominos-golomb-doze-pecas/",
@@ -570,7 +570,7 @@
     "pt": "https://nesimapps.com/pt/blog/historia-dos-pentominos-golomb-doze-pecas/"
    },
    "default": "en",
-   "hash": "c0ba78c07c7edc7e860c24f695ed491a"
+   "hash": "6d46b2fac009fe0ce7bfca213f714f4f"
   },
   {
    "url": "https://nesimapps.com/blog/pentomino-puzzles-dancing-links-exact-cover/",
@@ -581,7 +581,7 @@
     "pt": "https://nesimapps.com/pt/blog/quebra-cabecas-de-pentominos-dancing-links-cobertura-exata/"
    },
    "default": "en",
-   "hash": "e3dd37df052ba11fd545cb1d6e0d60f1"
+   "hash": "09b2c658a84f904e6a1277deb3781193"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/pentomino-bulmacalari-dancing-links-tam-kapsama/",
@@ -592,7 +592,7 @@
     "pt": "https://nesimapps.com/pt/blog/quebra-cabecas-de-pentominos-dancing-links-cobertura-exata/"
    },
    "default": "en",
-   "hash": "871dde698f65ded8dbfd0a05007a4e50"
+   "hash": "d287ee6b384641aedb34e6a4723a04c7"
   },
   {
    "url": "https://nesimapps.com/es/blog/puzles-de-pentominos-dancing-links-cobertura-exacta/",
@@ -603,7 +603,7 @@
     "pt": "https://nesimapps.com/pt/blog/quebra-cabecas-de-pentominos-dancing-links-cobertura-exata/"
    },
    "default": "en",
-   "hash": "f44e95444a41fadce0542acf95be8bd4"
+   "hash": "b8f0a0635419a0caff5d2cf077b3bd36"
   },
   {
    "url": "https://nesimapps.com/pt/blog/quebra-cabecas-de-pentominos-dancing-links-cobertura-exata/",
@@ -614,7 +614,7 @@
     "pt": "https://nesimapps.com/pt/blog/quebra-cabecas-de-pentominos-dancing-links-cobertura-exata/"
    },
    "default": "en",
-   "hash": "139841e4c3c9ff42b1719e6317230278"
+   "hash": "3068b1af0ac2215c9ccf3806af3a7b11"
   },
   {
    "url": "https://nesimapps.com/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/",
@@ -625,7 +625,7 @@
     "pt": "https://nesimapps.com/pt/blog/como-uma-cartela-de-tombala-e-gerada-seis-cartelas-noventa-numeros/"
    },
    "default": "en",
-   "hash": "6406a4167767b6ce6da066be7e3f8664"
+   "hash": "b2ae22571fe8d71b38d8ccd5c63329ae"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/tombala-karti-nasil-uretilir-alti-kart-doksan-sayi/",
@@ -636,7 +636,7 @@
     "pt": "https://nesimapps.com/pt/blog/como-uma-cartela-de-tombala-e-gerada-seis-cartelas-noventa-numeros/"
    },
    "default": "en",
-   "hash": "97d743808a7f8d2dfeacfed31794bfd9"
+   "hash": "3bb4c614f0cb92fefa3c05226230d508"
   },
   {
    "url": "https://nesimapps.com/es/blog/como-se-genera-un-carton-de-tombola-seis-cartones-noventa-numeros/",
@@ -647,7 +647,7 @@
     "pt": "https://nesimapps.com/pt/blog/como-uma-cartela-de-tombala-e-gerada-seis-cartelas-noventa-numeros/"
    },
    "default": "en",
-   "hash": "b33084c35cafa2eddf0c3f5587b8031b"
+   "hash": "dd638b2a0f867615686adc1ef8e57749"
   },
   {
    "url": "https://nesimapps.com/pt/blog/como-uma-cartela-de-tombala-e-gerada-seis-cartelas-noventa-numeros/",
@@ -658,7 +658,7 @@
     "pt": "https://nesimapps.com/pt/blog/como-uma-cartela-de-tombala-e-gerada-seis-cartelas-noventa-numeros/"
    },
    "default": "en",
-   "hash": "f6627b3cc282c5dbc77fca6cf5fa9725"
+   "hash": "69c7a9cae3b75ff8429a3ee4126223c2"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/merkur-retrosu-nedir-gokyuzunde-gercekte-ne-oluyor/",
@@ -666,7 +666,7 @@
     "tr": "https://nesimapps.com/tr/yazilar/merkur-retrosu-nedir-gokyuzunde-gercekte-ne-oluyor/"
    },
    "default": "tr",
-   "hash": "e65f985e13cc9abe0712a58cdab8c69d"
+   "hash": "846551f1283a213b86c53234ae972d7e"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/burclar-takimyildizlardan-neden-kaydi-13-burc-yilanci/",
@@ -674,7 +674,7 @@
     "tr": "https://nesimapps.com/tr/yazilar/burclar-takimyildizlardan-neden-kaydi-13-burc-yilanci/"
    },
    "default": "tr",
-   "hash": "e5fd8426a988d695a30ad0e64ec3d0fa"
+   "hash": "1a0821879e24cc2dc186b30ef7d61df3"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/ay-evreleri-neden-29-5-gunde-doner-yeniay-dolunay/",
@@ -682,7 +682,7 @@
     "tr": "https://nesimapps.com/tr/yazilar/ay-evreleri-neden-29-5-gunde-doner-yeniay-dolunay/"
    },
    "default": "tr",
-   "hash": "15c05e5f280c4d7865a8768f3e20f163"
+   "hash": "bcf1906a46de2b8e4a940c9bdf6236c9"
   },
   {
    "url": "https://nesimapps.com/blog/keeping-two-dozen-android-apps-maintainable-solo/",
@@ -693,7 +693,7 @@
     "pt": "https://nesimapps.com/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/"
    },
    "default": "en",
-   "hash": "ede5bafc7745c265d7b300ad99886c0a"
+   "hash": "9743333dd5ea296d91446bf6549a3ec6"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/",
@@ -704,7 +704,7 @@
     "pt": "https://nesimapps.com/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/"
    },
    "default": "en",
-   "hash": "78fa76fa57d1ba4814e3d27a5ae14a26"
+   "hash": "72fd87bc40b41f40bca4eef01d2905d8"
   },
   {
    "url": "https://nesimapps.com/es/blog/mantener-dos-docenas-de-apps-android-siendo-un-solo-desarrollador/",
@@ -715,7 +715,7 @@
     "pt": "https://nesimapps.com/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/"
    },
    "default": "en",
-   "hash": "c19c8645eb761ddfe9e4986af1b72cde"
+   "hash": "fb4e60ca44f542e0248eae4b2551312b"
   },
   {
    "url": "https://nesimapps.com/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/",
@@ -726,7 +726,7 @@
     "pt": "https://nesimapps.com/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/"
    },
    "default": "en",
-   "hash": "34378a80ee1ecc1d3dab5c6611dd950f"
+   "hash": "f7bcbbfcc7d58d8ad9a6771b9f36d00a"
   },
   {
    "url": "https://nesimapps.com/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/",
@@ -737,7 +737,7 @@
     "pt": "https://nesimapps.com/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/"
    },
    "default": "en",
-   "hash": "778b28f54e8c7d2a4ef218f9f1b531a7"
+   "hash": "012e927ad2283f11bcaf4c369ec0a75a"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/",
@@ -748,7 +748,7 @@
     "pt": "https://nesimapps.com/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/"
    },
    "default": "en",
-   "hash": "350e3ef1e0b481855288159e4aeab20c"
+   "hash": "037bafe4bce4d035d83d96342d42075d"
   },
   {
    "url": "https://nesimapps.com/es/blog/detectar-anuncio-intersticial-bloqueado-android-eventos/",
@@ -759,7 +759,7 @@
     "pt": "https://nesimapps.com/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/"
    },
    "default": "en",
-   "hash": "77a5ef18fb384d6752bd91bd93c3f199"
+   "hash": "f121a034f5b6fb249a144e05b9f5f0bf"
   },
   {
    "url": "https://nesimapps.com/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/",
@@ -770,7 +770,7 @@
     "pt": "https://nesimapps.com/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/"
    },
    "default": "en",
-   "hash": "2889da0ccd7e7f2df6d6f6535a4799ba"
+   "hash": "a50d437d28b763ebbf535e432775d223"
   },
   {
    "url": "https://nesimapps.com/blog/game-feel-jetpack-compose-without-game-engine/",
@@ -781,7 +781,7 @@
     "pt": "https://nesimapps.com/pt/blog/game-feel-jetpack-compose-sem-motor-de-jogo/"
    },
    "default": "en",
-   "hash": "8432ac73e1a5922c03951b4bd90be7d0"
+   "hash": "c1ca4b9144efa9bc8047882efd4ccb97"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/oyun-motoru-olmadan-jetpack-compose-oyun-hissi/",
@@ -792,7 +792,7 @@
     "pt": "https://nesimapps.com/pt/blog/game-feel-jetpack-compose-sem-motor-de-jogo/"
    },
    "default": "en",
-   "hash": "d21e840e6edb26fdea1090385ea94756"
+   "hash": "86d5c48094e3c1abab8e4c5d91e502dd"
   },
   {
    "url": "https://nesimapps.com/es/blog/sensacion-de-juego-jetpack-compose-sin-motor/",
@@ -803,7 +803,7 @@
     "pt": "https://nesimapps.com/pt/blog/game-feel-jetpack-compose-sem-motor-de-jogo/"
    },
    "default": "en",
-   "hash": "dc356c6d1c79d63f1c111144c1039b2c"
+   "hash": "9dd679f03a7ab264ca30dd20622774ea"
   },
   {
    "url": "https://nesimapps.com/pt/blog/game-feel-jetpack-compose-sem-motor-de-jogo/",
@@ -814,7 +814,7 @@
     "pt": "https://nesimapps.com/pt/blog/game-feel-jetpack-compose-sem-motor-de-jogo/"
    },
    "default": "en",
-   "hash": "82aa985923b46f371542ec7286eb26c0"
+   "hash": "a9f6f25909e8ecb289c68e7116be5064"
   },
   {
    "url": "https://nesimapps.com/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/",
@@ -825,7 +825,7 @@
     "pt": "https://nesimapps.com/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/"
    },
    "default": "en",
-   "hash": "c8aeff5705eac2690c5ad43793a46840"
+   "hash": "b6a7e4f7e90001590b84a3b8f1281ce6"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/",
@@ -836,7 +836,7 @@
     "pt": "https://nesimapps.com/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/"
    },
    "default": "en",
-   "hash": "93dc59c605ef79f9232d790b82a8c27a"
+   "hash": "812e641f12de7d1cb8c33e7826a65734"
   },
   {
    "url": "https://nesimapps.com/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/",
@@ -847,7 +847,7 @@
     "pt": "https://nesimapps.com/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/"
    },
    "default": "en",
-   "hash": "1fb52554f8ecbf8bb0aa08e69228ac3d"
+   "hash": "83d19b78dc27ce2a3c2d9187c11c01b6"
   },
   {
    "url": "https://nesimapps.com/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/",
@@ -858,7 +858,7 @@
     "pt": "https://nesimapps.com/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/"
    },
    "default": "en",
-   "hash": "109d1d2010a254ac7d7f0d23a2271746"
+   "hash": "8d0bdca810b6d7701f3298007c8182bd"
   },
   {
    "url": "https://nesimapps.com/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/",
@@ -869,7 +869,7 @@
     "pt": "https://nesimapps.com/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/"
    },
    "default": "en",
-   "hash": "22e264b019140afdef5361786a01dea2"
+   "hash": "c3bf4617b7fdb34f0667ef13e3aee7cb"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/",
@@ -880,7 +880,7 @@
     "pt": "https://nesimapps.com/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/"
    },
    "default": "en",
-   "hash": "997e8231e5e4e15f9f6dddc215ac2277"
+   "hash": "71d5966362ceba675e744f3e8ce0ec8e"
   },
   {
    "url": "https://nesimapps.com/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/",
@@ -891,7 +891,7 @@
     "pt": "https://nesimapps.com/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/"
    },
    "default": "en",
-   "hash": "85d0bd16cd21460d08f2f0388b801014"
+   "hash": "cf988d606b4bc9693cdf44b1da38e95c"
   },
   {
    "url": "https://nesimapps.com/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/",
@@ -902,7 +902,7 @@
     "pt": "https://nesimapps.com/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/"
    },
    "default": "en",
-   "hash": "7e87569b0d2aeac0c7eada4b6e49798d"
+   "hash": "f0bdc41b67f079a4dc89c6b497524547"
   },
   {
    "url": "https://nesimapps.com/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/",
@@ -913,7 +913,7 @@
     "pt": "https://nesimapps.com/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/"
    },
    "default": "en",
-   "hash": "6fbcc859ad9328249f2e6a87967b26a9"
+   "hash": "b501b033d248de30ac180751f35769cf"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/",
@@ -924,7 +924,7 @@
     "pt": "https://nesimapps.com/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/"
    },
    "default": "en",
-   "hash": "7d46ed5af540eab2a9f455c0dbad577d"
+   "hash": "6b982fcb75443ca21fae98eb0c58b5eb"
   },
   {
    "url": "https://nesimapps.com/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/",
@@ -935,7 +935,7 @@
     "pt": "https://nesimapps.com/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/"
    },
    "default": "en",
-   "hash": "b33608d522afd1780f5e01dbfd6f5567"
+   "hash": "3adf191db9475a97bad24cbad6bbfac0"
   },
   {
    "url": "https://nesimapps.com/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/",
@@ -946,7 +946,7 @@
     "pt": "https://nesimapps.com/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/"
    },
    "default": "en",
-   "hash": "85dde17e346c89b77c1997075994db4e"
+   "hash": "4cef6ea2ce98861b9f088b43f4d71975"
   },
   {
    "url": "https://nesimapps.com/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/",
@@ -957,7 +957,7 @@
     "pt": "https://nesimapps.com/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/"
    },
    "default": "en",
-   "hash": "48b445956a7993188b5a85cf18de38dd"
+   "hash": "1fb5ba9dc914755a0a7fe1ee679133cf"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/",
@@ -968,7 +968,7 @@
     "pt": "https://nesimapps.com/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/"
    },
    "default": "en",
-   "hash": "8c2d4e6a3e104175760dba5afcb651ea"
+   "hash": "f5bfd1a2c2baed2f7b15e4216c90b926"
   },
   {
    "url": "https://nesimapps.com/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/",
@@ -979,7 +979,7 @@
     "pt": "https://nesimapps.com/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/"
    },
    "default": "en",
-   "hash": "8dc8cee398920b0ab4ca13af98434329"
+   "hash": "eda263577f5c0a3223cce156cdd99665"
   },
   {
    "url": "https://nesimapps.com/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/",
@@ -990,7 +990,7 @@
     "pt": "https://nesimapps.com/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/"
    },
    "default": "en",
-   "hash": "fd850b1ee469d7ce6a408fc3d9e41088"
+   "hash": "ac68d690472ce56b71c96f880ae7ab74"
   },
   {
    "url": "https://nesimapps.com/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/",
@@ -1001,7 +1001,7 @@
     "pt": "https://nesimapps.com/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/"
    },
    "default": "en",
-   "hash": "386f3737bc60fd2c0ba122ac12917005"
+   "hash": "8e3e649944b0b5d673a8c5bcb66793ec"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/",
@@ -1012,7 +1012,7 @@
     "pt": "https://nesimapps.com/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/"
    },
    "default": "en",
-   "hash": "fa90a93bdc203d92a338d38542392d7b"
+   "hash": "2bd411618c565b0bd4362db246f1bee3"
   },
   {
    "url": "https://nesimapps.com/es/blog/reescribir-para-kotlin-multiplatform-sin-cambiar-el-comportamiento-el-codigo-antiguo-como-oraculo-de-pruebas/",
@@ -1023,7 +1023,7 @@
     "pt": "https://nesimapps.com/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/"
    },
    "default": "en",
-   "hash": "82524b50f04dd399be89209797c13b08"
+   "hash": "ff184c7337d9599e6b07e98b656baa32"
   },
   {
    "url": "https://nesimapps.com/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/",
@@ -1034,7 +1034,7 @@
     "pt": "https://nesimapps.com/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/"
    },
    "default": "en",
-   "hash": "945bc1d9f4d3bde2261cc15210433fbb"
+   "hash": "f409aad901de26378d8015b6f78f10c9"
   },
   {
    "url": "https://nesimapps.com/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/",
@@ -1045,7 +1045,7 @@
     "pt": "https://nesimapps.com/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/"
    },
    "default": "en",
-   "hash": "44aa433da6c583c7a27dbefcfc5cf5e5"
+   "hash": "718cbb6561ceabeff2fab4f237de6795"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/",
@@ -1056,7 +1056,7 @@
     "pt": "https://nesimapps.com/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/"
    },
    "default": "en",
-   "hash": "812337ec72ea86a85bcaa6ad737dd134"
+   "hash": "533745fd560e3132639394e88845f99c"
   },
   {
    "url": "https://nesimapps.com/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/",
@@ -1067,7 +1067,7 @@
     "pt": "https://nesimapps.com/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/"
    },
    "default": "en",
-   "hash": "e647e4072ff4743e0bb59d364c322f2c"
+   "hash": "8564da15cef091ca8080ddd5d67184af"
   },
   {
    "url": "https://nesimapps.com/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/",
@@ -1078,7 +1078,7 @@
     "pt": "https://nesimapps.com/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/"
    },
    "default": "en",
-   "hash": "2b933e06854625d1053558f41145b5c7"
+   "hash": "1b82adce403bc84ff8d3187e8d4af035"
   },
   {
    "url": "https://nesimapps.com/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/",
@@ -1089,7 +1089,7 @@
     "pt": "https://nesimapps.com/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/"
    },
    "default": "en",
-   "hash": "8bda746e688020abde2b2a2a9e429de9"
+   "hash": "8a0b8f2faaf7ea6b622ba958bb6ae8a3"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/telefonsuz-app-store-ekran-goruntuleri-robolectric-sahte-gorsel-yukleyici-ve-basliksiz-tarayici/",
@@ -1100,7 +1100,7 @@
     "pt": "https://nesimapps.com/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/"
    },
    "default": "en",
-   "hash": "869d2005f036aa08ac7ccaa5ec9519c3"
+   "hash": "0d81f5d09eee808bb981a0eca72b6090"
   },
   {
    "url": "https://nesimapps.com/es/blog/capturas-de-app-store-sin-telefono-robolectric-un-cargador-de-imagenes-falso-y-un-navegador-sin-interfaz/",
@@ -1111,7 +1111,7 @@
     "pt": "https://nesimapps.com/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/"
    },
    "default": "en",
-   "hash": "25882cbde411d88c717b96e696e850c4"
+   "hash": "50c8f19489619f4a89804e01b8cce361"
   },
   {
    "url": "https://nesimapps.com/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/",
@@ -1122,7 +1122,7 @@
     "pt": "https://nesimapps.com/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/"
    },
    "default": "en",
-   "hash": "65f9cabcd477230a2a0cb6f88f4d47ce"
+   "hash": "4e25b87db79566a55b49b116ef4f353b"
   },
   {
    "url": "https://nesimapps.com/blog/app-store-review-guideline-2-1-information-needed-what-i-sent/",
@@ -1133,7 +1133,7 @@
     "pt": "https://nesimapps.com/pt/blog/diretriz-2-1-da-app-store-informacao-necessaria-o-que-enviei/"
    },
    "default": "en",
-   "hash": "22fabedc6711d0c17e98e93e934b40f3"
+   "hash": "3cd567dea8b9f3bd32ea3396ae35dc3f"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/app-store-inceleme-kurali-2-1-bilgi-gerekli-ne-gonderdim/",
@@ -1144,7 +1144,7 @@
     "pt": "https://nesimapps.com/pt/blog/diretriz-2-1-da-app-store-informacao-necessaria-o-que-enviei/"
    },
    "default": "en",
-   "hash": "7169c4f3f8ff4597fc58eb0fd6dc1fbc"
+   "hash": "e870507e34fbd2409f0875e700e6e5e5"
   },
   {
    "url": "https://nesimapps.com/es/blog/guia-2-1-de-app-store-informacion-necesaria-lo-que-envie/",
@@ -1155,7 +1155,7 @@
     "pt": "https://nesimapps.com/pt/blog/diretriz-2-1-da-app-store-informacao-necessaria-o-que-enviei/"
    },
    "default": "en",
-   "hash": "dea026ba87574ed66d2931c7a0c82d17"
+   "hash": "f1e8fa2941a8b47b9b25f33bbcc8b039"
   },
   {
    "url": "https://nesimapps.com/pt/blog/diretriz-2-1-da-app-store-informacao-necessaria-o-que-enviei/",
@@ -1166,7 +1166,7 @@
     "pt": "https://nesimapps.com/pt/blog/diretriz-2-1-da-app-store-informacao-necessaria-o-que-enviei/"
    },
    "default": "en",
-   "hash": "44195c3b71c6e98cbc0349743794ca32"
+   "hash": "4de6c8087bd40955fe403e7f08508448"
   },
   {
    "url": "https://nesimapps.com/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/",
@@ -1177,7 +1177,7 @@
     "pt": "https://nesimapps.com/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/"
    },
    "default": "en",
-   "hash": "1c3cdd07dd7749b57e32b124635b644d"
+   "hash": "c642d47140cb422ca700f367ea183068"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/app-store-baglantim-neden-404-verdi-ve-sayfa-2018-ekran-goruntulerini-gosterdi/",
@@ -1188,7 +1188,7 @@
     "pt": "https://nesimapps.com/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/"
    },
    "default": "en",
-   "hash": "8d8b5ab86766c62fa67611d05a124cf2"
+   "hash": "ced18ba399154e50f3844712547e7d3b"
   },
   {
    "url": "https://nesimapps.com/es/blog/por-que-mi-enlace-de-la-app-store-dio-404-y-la-pagina-mostraba-capturas-de-2018/",
@@ -1199,7 +1199,7 @@
     "pt": "https://nesimapps.com/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/"
    },
    "default": "en",
-   "hash": "faaadad689d2f7d34bdb4f2417f83015"
+   "hash": "4ceb7e1ed53809b88788ac48648da354"
   },
   {
    "url": "https://nesimapps.com/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/",
@@ -1210,7 +1210,7 @@
     "pt": "https://nesimapps.com/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/"
    },
    "default": "en",
-   "hash": "d05db0fc8d5cbfce1fd7df615564cba4"
+   "hash": "a63dcfd4517a00a36c098915ea7a0b4f"
   },
   {
    "url": "https://nesimapps.com/blog/",
@@ -1221,7 +1221,7 @@
     "pt": "https://nesimapps.com/pt/blog/"
    },
    "default": "en",
-   "hash": "237573e84042778c629ba222a8eb983e"
+   "hash": "bc761287f814ba12ce6878ef387a9c5b"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/",
@@ -1232,7 +1232,7 @@
     "pt": "https://nesimapps.com/pt/blog/"
    },
    "default": "en",
-   "hash": "d61cb6964f820d735e461902500b1574"
+   "hash": "13780e7b33337fd2b42bd13d1c88cf90"
   },
   {
    "url": "https://nesimapps.com/es/blog/",
@@ -1243,7 +1243,7 @@
     "pt": "https://nesimapps.com/pt/blog/"
    },
    "default": "en",
-   "hash": "d0f0c4b07543ef0dc73272691d6772e1"
+   "hash": "713eba77313a0b01c71cf9fc9972cdf9"
   },
   {
    "url": "https://nesimapps.com/pt/blog/",
@@ -1254,7 +1254,7 @@
     "pt": "https://nesimapps.com/pt/blog/"
    },
    "default": "en",
-   "hash": "75883a6e3c05eca2cdf9cde8df16fb0b"
+   "hash": "0aa0bdceafb39d05c9166cf69dbb71de"
   }
  ],
  "index": {

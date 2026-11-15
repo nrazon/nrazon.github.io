@@ -1,6 +1,6 @@
 # Nesim Apps
 
-> Small, ad-supported Android games and utility apps by independent developer Nesim Razon, published on Google Play. Pages are available in Turkish, English, Spanish and Portuguese.
+> Small, mostly ad-supported games and utility apps for Android and iPhone by independent developer Nesim Razon, published on Google Play and the App Store. Pages are available in Turkish, English, Spanish and Portuguese.
 
 ## Games
 

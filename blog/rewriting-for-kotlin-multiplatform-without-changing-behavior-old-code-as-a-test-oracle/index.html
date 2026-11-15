@@ -41,7 +41,7 @@
   <article class="guide">
     <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
     <h1>Rewriting for Kotlin Multiplatform Without Changing Behavior: Old Code as a Test Oracle</h1>
-    <p class="by">By Nesim Razon, independent Android developer · 2026-11-16</p>
+    <p class="by">By Nesim Razon, independent mobile developer · 2026-11-16</p>
     <p class="tags"><a href="/blog/#devlog">#Dev notes</a><a href="/blog/#android">#Android</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
     <p class="lead">I moved two small RSS reader apps and a space app to Kotlin Multiplatform so they could also run on iOS. That meant rewriting code that leaned on Android and Java classes. I did not want a single existing user to notice a difference, so I kept the old implementation in the test sources and made it argue with the new one. Here is how that went.</p>
     <h2>What had to be rewritten</h2>

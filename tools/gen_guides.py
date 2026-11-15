@@ -26,16 +26,16 @@ SOCIAL = ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "ht
 T = {
     "en": {"back": "← Nesim Apps", "idx_title": "How-to-play guides: rules, tips and strategy", "idx_h1": "How-to-play guides", "idx_desc": "Rules, tips and strategy for Mahjong Solitaire, Klondike, block puzzles, arrow puzzles, logic puzzles, 2048 and Tic-Tac-Toe.",
            "idx_intro": "Short, practical guides to the games in our apps: how they work, how to win more often and where to try them for free.", "cta": "Try it free: {name}", "cta_sub": "Free on Google Play. No account needed.", "about": "About {name}",
-           "faq": "Frequently asked questions", "more": "More guides", "by": "By Nesim Razon, independent Android developer", "home": "Nesim Apps", "crumb": "Guides", "read": "Read the guide"},
+           "faq": "Frequently asked questions", "more": "More guides", "by": "By Nesim Razon, independent mobile developer", "home": "Nesim Apps", "crumb": "Guides", "read": "Read the guide"},
     "tr": {"back": "← Nesim Apps", "idx_title": "Nasıl oynanır rehberleri: kurallar, ipuçları ve strateji", "idx_h1": "Nasıl oynanır rehberleri", "idx_desc": "Mahjong Solitaire, Klondike, blok bulmaca, ok bulmacası, mantık bulmacaları, 2048 ve XOX için kurallar, ipuçları ve strateji.",
            "idx_intro": "Uygulamalarımızdaki oyunlar için kısa ve pratik rehberler: nasıl çalıştıkları, daha sık nasıl kazanılacağı ve ücretsiz nereden deneneceği.", "cta": "Ücretsiz dene: {name}", "cta_sub": "Google Play'de ücretsiz. Hesap gerekmez.", "about": "{name} hakkında",
-           "faq": "Sık sorulan sorular", "more": "Diğer rehberler", "by": "Nesim Razon, bağımsız Android geliştiricisi", "home": "Nesim Apps", "crumb": "Rehberler", "read": "Rehberi oku"},
+           "faq": "Sık sorulan sorular", "more": "Diğer rehberler", "by": "Nesim Razon, bağımsız mobil uygulama geliştiricisi", "home": "Nesim Apps", "crumb": "Rehberler", "read": "Rehberi oku"},
     "es": {"back": "← Nesim Apps", "idx_title": "Guías de cómo jugar: reglas, consejos y estrategia", "idx_h1": "Guías de cómo jugar", "idx_desc": "Reglas, consejos y estrategia para Mahjong Solitario, Klondike, puzles de bloques, puzles de flechas, puzles de lógica, 2048 y tres en raya.",
            "idx_intro": "Guías breves y prácticas de los juegos de nuestras apps: cómo funcionan, cómo ganar más a menudo y dónde probarlos gratis.", "cta": "Pruébalo gratis: {name}", "cta_sub": "Gratis en Google Play. Sin cuenta.", "about": "Sobre {name}",
-           "faq": "Preguntas frecuentes", "more": "Más guías", "by": "Por Nesim Razon, desarrollador Android independiente", "home": "Nesim Apps", "crumb": "Guías", "read": "Leer la guía"},
+           "faq": "Preguntas frecuentes", "more": "Más guías", "by": "Por Nesim Razon, desarrollador móvil independiente", "home": "Nesim Apps", "crumb": "Guías", "read": "Leer la guía"},
     "pt": {"back": "← Nesim Apps", "idx_title": "Guias de como jogar: regras, dicas e estratégia", "idx_h1": "Guias de como jogar", "idx_desc": "Regras, dicas e estratégia para Mahjong Paciência, Klondike, quebra-cabeças de blocos, de setas, de lógica, 2048 e jogo da velha.",
            "idx_intro": "Guias curtos e práticos dos jogos dos nossos apps: como funcionam, como vencer mais vezes e onde experimentar de graça.", "cta": "Experimente grátis: {name}", "cta_sub": "Grátis no Google Play. Sem conta.", "about": "Sobre {name}",
-           "faq": "Perguntas frequentes", "more": "Mais guias", "by": "Por Nesim Razon, desenvolvedor Android independente", "home": "Nesim Apps", "crumb": "Guias", "read": "Ler o guia"},
+           "faq": "Perguntas frequentes", "more": "Mais guias", "by": "Por Nesim Razon, desenvolvedor mobile independente", "home": "Nesim Apps", "crumb": "Guias", "read": "Ler o guia"},
 }
 LABEL = {"en": "EN", "tr": "TR", "es": "ES", "pt": "PT"}
 

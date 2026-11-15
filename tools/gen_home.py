@@ -37,9 +37,9 @@ def L(d, tag="span", cls=""):
 T = {
     "tagline": {"tr": "Güldüren oyunlar,<br>işe yarayan uygulamalar.", "en": "Games that make you smile,<br>apps that get things done.",
                 "es": "Juegos que hacen sonreír,<br>apps que sirven de verdad.", "pt": "Jogos que fazem sorrir,<br>apps que resolvem."},
-    "eyebrow": {"tr": "Bağımsız Android geliştiricisi", "en": "Independent Android developer", "es": "Desarrollador Android independiente", "pt": "Desenvolvedor Android independente"},
-    "lead": {"tr": "Nesim Razon'un Android oyunları ve uygulamaları", "en": "Android games and apps by Nesim Razon",
-             "es": "Juegos y aplicaciones de Android de Nesim Razon", "pt": "Jogos e aplicativos Android de Nesim Razon"},
+    "eyebrow": {"tr": "Bağımsız mobil uygulama geliştiricisi", "en": "Independent mobile developer", "es": "Desarrollador móvil independiente", "pt": "Desenvolvedor mobile independente"},
+    "lead": {"tr": "Nesim Razon'un Android ve iPhone oyunları ve uygulamaları", "en": "Android and iPhone games and apps by Nesim Razon",
+             "es": "Juegos y aplicaciones para Android y iPhone de Nesim Razon", "pt": "Jogos e aplicativos para Android e iPhone de Nesim Razon"},
     "nav_games": {"tr": "Oyunlar", "en": "Games", "es": "Juegos", "pt": "Jogos"},
     "nav_apps": {"tr": "Uygulamalar", "en": "Apps", "es": "Apps", "pt": "Apps"},
     "nav_about": {"tr": "Hakkımda", "en": "About", "es": "Acerca de", "pt": "Sobre"},
@@ -59,10 +59,10 @@ T = {
     "play_alt": {"tr": "Google Play'den indir", "en": "Get it on Google Play", "es": "Get it on Google Play", "pt": "Get it on Google Play"},
     "privacy": {"tr": "Gizlilik Politikası", "en": "Privacy Policy", "es": "Política de privacidad", "pt": "Política de privacidade"},
     "h_about": {"tr": "Merhaba, ben Nesim.", "en": "Hi, I'm Nesim.", "es": "Hola, soy Nesim.", "pt": "Olá, eu sou o Nesim."},
-    "about": {"tr": "Android için bağımsız bir geliştiriciyim. Oyunlarımı ve uygulamalarımı tek başıma tasarlıyor, yazıyor ve yayınlıyorum. Çoğu ücretsiz ve hiçbiri hesap açmanı istemiyor. Önerin ya da bir hata bildirimin olursa yaz, hepsini okurum.",
-              "en": "I'm an independent Android developer. I design, build and publish my games and apps on my own. Most are free and none of them asks you to create an account. If you have a suggestion or a bug report, write to me, I read every message.",
-              "es": "Soy un desarrollador Android independiente. Diseño, programo y publico mis juegos y apps yo solo. La mayoría son gratis y ninguna te pide crear una cuenta. Si tienes una sugerencia o un error que contar, escríbeme: leo todos los mensajes.",
-              "pt": "Sou um desenvolvedor Android independente. Eu mesmo projeto, programo e publico meus jogos e apps. A maioria é grátis e nenhum pede que você crie uma conta. Se tiver uma sugestão ou um erro para relatar, escreva para mim: leio todas as mensagens."},
+    "about": {"tr": "Android ve iPhone için bağımsız bir geliştiriciyim. Oyunlarımı ve uygulamalarımı tek başıma tasarlıyor, yazıyor ve yayınlıyorum. Çoğu ücretsiz ve hiçbiri hesap açmanı istemiyor. Önerin ya da bir hata bildirimin olursa yaz, hepsini okurum.",
+              "en": "I'm an independent mobile developer, building for Android and iPhone. I design, build and publish my games and apps on my own. Most are free and none of them asks you to create an account. If you have a suggestion or a bug report, write to me, I read every message.",
+              "es": "Soy un desarrollador móvil independiente: programo para Android y iPhone. Diseño, programo y publico mis juegos y apps yo solo. La mayoría son gratis y ninguna te pide crear una cuenta. Si tienes una sugerencia o un error que contar, escríbeme: leo todos los mensajes.",
+              "pt": "Sou um desenvolvedor mobile independente: programo para Android e iPhone. Eu mesmo projeto, programo e publico meus jogos e apps. A maioria é grátis e nenhum pede que você crie uma conta. Se tiver uma sugestão ou um erro para relatar, escreva para mim: leio todas as mensagens."},
     "email": {"tr": "E-posta gönder", "en": "Send an email", "es": "Enviar un correo", "pt": "Enviar e-mail"},
     "contact": {"tr": "İletişim", "en": "Contact", "es": "Contacto", "pt": "Contato"},
     "webprivacy": {"tr": "Site gizliliği", "en": "Website privacy", "es": "Privacidad del sitio", "pt": "Privacidade do site"},
@@ -459,7 +459,7 @@ def build(preview):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nesim Apps</title>
-{robots}<meta name="description" content="Android games and apps by Nesim Razon: Beamies, Cardles, Cubbles, Sliplines, 2048, Tic-Tac-Toe, Son Depremler, Age Calculator, BMI Calculator, Where Am I?, National Anthems and more. Android oyunları ve uygulamaları.">
+{robots}<meta name="description" content="Android and iPhone games and apps by Nesim Razon: Beamies, Cardles, Cubbles, Sliplines, 2048, Tic-Tac-Toe, Son Depremler, Age Calculator, BMI Calculator, Where Am I?, National Anthems and more. Android ve iPhone oyunları ve uygulamaları.">
 <link rel="canonical" href="https://nesimapps.com/">
 <link rel="icon" href="logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -468,7 +468,7 @@ def build(preview):
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Nesim Apps">
 <meta property="og:title" content="Nesim Apps">
-<meta property="og:description" content="Android games and apps by Nesim Razon. Android oyunları ve uygulamaları.">
+<meta property="og:description" content="Android and iPhone games and apps by Nesim Razon. Android ve iPhone oyunları ve uygulamaları.">
 <meta property="og:url" content="https://nesimapps.com/">
 <meta property="og:image" content="https://nesimapps.com/og-v3.png">
 <meta property="og:image:width" content="1200">
@@ -569,13 +569,13 @@ if __name__ == "__main__":
         {"@type": "WebSite", "@id": "https://nesimapps.com/#site", "name": "Nesim Apps", "url": "https://nesimapps.com/",
          "inLanguage": ["tr", "en", "es", "pt"], "publisher": {"@id": "https://nesimapps.com/#dev"}},
         {"@type": "Person", "@id": "https://nesimapps.com/#dev", "name": "Nesim Razon", "url": "https://nesimapps.com/",
-         "image": "https://nesimapps.com/nesim.jpg", "jobTitle": "Independent Android developer"},
-        {"@type": "ItemList", "name": "Nesim Apps: Android games and apps", "itemListElement": [
+         "image": "https://nesimapps.com/nesim.jpg", "jobTitle": "Independent mobile developer"},
+        {"@type": "ItemList", "name": "Nesim Apps: Android and iPhone games and apps", "itemListElement": [
             {"@type": "ListItem", "position": i + 1, "url": "https://nesimapps.com/" + a["slug"] + "/", "name": nm_(a)} for i, a in enumerate(live)]}]}
     page = page.replace("</head>", '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>\n</head>", 1)
     open(out, "w", encoding="utf-8", newline="\n").write(page)
     if yayin:
-        L_ = ["# Nesim Apps", "", "> Small, ad-supported Android games and utility apps by independent developer Nesim Razon, published on Google Play. Pages are available in Turkish, English, Spanish and Portuguese.", "", "## Games", ""]
+        L_ = ["# Nesim Apps", "", "> Small, mostly ad-supported games and utility apps for Android and iPhone by independent developer Nesim Razon, published on Google Play and the App Store. Pages are available in Turkish, English, Spanish and Portuguese.", "", "## Games", ""]
         for a in live:
             if a["cat"] == "games":
                 L_.append("- [" + nm_(a) + "](https://nesimapps.com/" + a["slug"] + "/): " + a["desc"]["en"])

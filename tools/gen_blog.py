@@ -23,13 +23,13 @@ BLOG_MODULES = ["mahjong_solvable", "mahjong_history", "daily_seed", "generated_
                 "rewrite_parity_oracle", "one_qr_two_stores", "store_screenshots_without_a_phone", "app_review_information_request", "app_store_link_storefront"]  # 3 yazı (12.11.2026); son 3 yalnız Türkçe: merkur_retrosu, burclar_takimyildiz, ay_evreleri: yalnız Türkçe (Astrolings)
 
 BT = {
-    "en": {"idx_title": "Blog: puzzle design, game history and dev notes", "idx_h1": "Blog", "idx_desc": "Notes from an independent Android developer: how puzzles are generated and checked, the history of classic puzzle games and behind-the-scenes dev stories.",
+    "en": {"idx_title": "Blog: puzzle design, game history and dev notes", "idx_h1": "Blog", "idx_desc": "Notes from an independent mobile developer: how puzzles are generated and checked, the history of classic puzzle games and behind-the-scenes dev stories.",
            "idx_intro": "Notes from behind the scenes: how our puzzle games are built, where classic puzzles come from and what we learn while making them.", "crumb": "Blog", "more": "More from the blog", "read": "Read"},
-    "tr": {"idx_title": "Yazılar: bulmaca tasarımı, oyun tarihi ve geliştirici notları", "idx_h1": "Yazılar", "idx_desc": "Bağımsız bir Android geliştiricisinden notlar: bulmacalar nasıl üretilip doğrulanır, klasik bulmaca oyunlarının tarihi ve perde arkası hikâyeleri.",
+    "tr": {"idx_title": "Yazılar: bulmaca tasarımı, oyun tarihi ve geliştirici notları", "idx_h1": "Yazılar", "idx_desc": "Bağımsız bir mobil uygulama geliştiricisinden notlar: bulmacalar nasıl üretilip doğrulanır, klasik bulmaca oyunlarının tarihi ve perde arkası hikâyeleri.",
            "idx_intro": "Perde arkasından notlar: bulmaca oyunlarımız nasıl yapılıyor, klasik bulmacalar nereden geliyor ve yaparken neler öğreniyoruz.", "crumb": "Yazılar", "more": "Diğer yazılar", "read": "Oku"},
-    "es": {"idx_title": "Blog: diseño de puzles, historia de juegos y notas de desarrollo", "idx_h1": "Blog", "idx_desc": "Notas de un desarrollador Android independiente: cómo se generan y comprueban los puzles, la historia de los juegos clásicos y anécdotas del desarrollo.",
+    "es": {"idx_title": "Blog: diseño de puzles, historia de juegos y notas de desarrollo", "idx_h1": "Blog", "idx_desc": "Notas de un desarrollador móvil independiente: cómo se generan y comprueban los puzles, la historia de los juegos clásicos y anécdotas del desarrollo.",
            "idx_intro": "Notas entre bastidores: cómo se construyen nuestros juegos de puzles, de dónde vienen los puzles clásicos y qué aprendemos al hacerlos.", "crumb": "Blog", "more": "Más del blog", "read": "Leer"},
-    "pt": {"idx_title": "Blog: design de quebra-cabeças, história dos jogos e notas de desenvolvimento", "idx_h1": "Blog", "idx_desc": "Notas de um desenvolvedor Android independente: como os quebra-cabeças são gerados e verificados, a história dos jogos clássicos e bastidores do desenvolvimento.",
+    "pt": {"idx_title": "Blog: design de quebra-cabeças, história dos jogos e notas de desenvolvimento", "idx_h1": "Blog", "idx_desc": "Notas de um desenvolvedor mobile independente: como os quebra-cabeças são gerados e verificados, a história dos jogos clássicos e bastidores do desenvolvimento.",
            "idx_intro": "Notas dos bastidores: como nossos jogos de quebra-cabeça são feitos, de onde vêm os quebra-cabeças clássicos e o que aprendemos ao criá-los.", "crumb": "Blog", "more": "Mais do blog", "read": "Ler"},
 }
 
