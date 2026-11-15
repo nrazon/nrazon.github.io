@@ -7,7 +7,7 @@
 (function () {
   var GA_ID = "G-L5BQL3D4WB";
   var h = location.hostname;
-  if (h !== "nrazon.github.io") return; // yerel/önizleme sayılmaz
+  if (h !== "nesimapps.com" && h !== "nrazon.github.io") return; // yerel/önizleme sayılmaz (nesimapps.com: 15.11.2026 özel alan adı; eski adres yönlendirilir)
 
   try {
     var q = /[?&]notrack=([01])/.exec(location.search);
