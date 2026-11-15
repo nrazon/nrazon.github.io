@@ -8,6 +8,8 @@ import re
 import json
 
 G = r"C:\@Development\PersonalAndroidApps\github-pages"
+# App Store'da yayinda olan uygulamalar (slug -> Apple ID): sayfada App Store rozeti + iOS QR. tools/ios_apps.json
+IOS = json.load(open(os.path.join(G, "tools", "ios_apps.json"), encoding="utf-8"))
 BASE = "https://nrazon.github.io"
 # Yayına henüz çıkmamış uygulamaların detay sayfaları: URL'den açılır ama ana sayfa kartı, "Diğer uygulamalarım" listeleri ve sitemap'e GİRMEZ,
 # sayfada noindex var. Uygulama Play'de yayınlanınca slug buradan silinir (ve home_data.json'da status=live yapılır).
@@ -445,7 +447,7 @@ def page(cfg):
             'if(e.target===d||(e.target.classList&&e.target.classList.contains("vclose")))d.close();});'
             'd.addEventListener("close",function(){f.innerHTML="";});})();</script>\n')
     jsonld = json.dumps({
-        "@context": "https://schema.org", "@type": "SoftwareApplication", "name": cfg["name"], "operatingSystem": "Android",
+        "@context": "https://schema.org", "@type": "SoftwareApplication", "name": cfg["name"], "operatingSystem": "Android, iOS" if cfg["slug"] in IOS else "Android",
         "applicationCategory": "GameApplication", "description": cfg["desc"], "url": url, "image": f"{BASE}/{slug}/icon.svg",
         "author": {"@type": "Person", "name": "Nesim Razon"}, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
         "installUrl": f"https://play.google.com/store/apps/details?id={cfg['pkg']}",
@@ -454,6 +456,14 @@ def page(cfg):
     qr_html = "" if cfg["slug"] in HIDDEN else (
         f'<details class="qr" data-qr="{cfg["slug"]}"><summary>' + GLYPH + multi(SEC["qr"], L) + '</summary><div class="qrpop">'
         f'<img src="../qr/{cfg["slug"]}.svg" alt="QR code: install {esc(cfg["name"])}" width="183" height="183" loading="lazy">' + multi(SEC["qrscan"], L, "p") + '</div></details>')
+    IOS_QR = {"en": "Install on iPhone (QR)", "tr": "iPhone için QR", "es": "Instalar en iPhone (QR)", "pt": "Instalar no iPhone (QR)", "fr": "Installer sur iPhone (QR)"}
+    ios_id = IOS.get(cfg["slug"])
+    appstore_html = qr_ios_html = ""
+    if ios_id:
+        appstore_html = (f'<a class="play appstore" href="https://apps.apple.com/app/id{ios_id}"><img src="../badges/app-store-tr.svg" alt="App Store\'dan indir" data-l="tr">'
+                         + "".join(f'<img src="../badges/app-store-en.svg" alt="Download on the App Store" data-l="{l}">' for l in L if l != "tr") + '</a>')
+        qr_ios_html = (f'<details class="qr" data-qr="{cfg["slug"]}-ios"><summary>' + GLYPH + multi(IOS_QR, L) + '</summary><div class="qrpop">'
+                       f'<img src="../qr/{cfg["slug"]}-ios.svg" alt="QR code: install {esc(cfg["name"])} on iPhone" width="183" height="183" loading="lazy">' + multi(SEC["qrscan"], L, "p") + '</div></details>')
     demo_attr = {"tictactoe": ("data-ttt", "ttt.js?v=2"), "game2048": ("data-g2048", "g2048.js?v=1"), "calisan": ("data-calisan", "calisan.js?v=3")}.get(cfg["slug"])
     demo_block = (f'  <section class="block" aria-labelledby="h-demo">\n    <h2 class="h" id="h-demo">{multi(SEC["try"], L)}</h2>\n'
                   f'    <div class="demo-wrap"><div {demo_attr[0]} data-play="{play}"></div></div>\n  </section>\n\n') if demo_attr else ""
@@ -507,7 +517,9 @@ def page(cfg):
       {('<ul class="chips">' + chips + '</ul>') if chips else ""}
       <div class="cta">
         <a class="play" href="{play}"><img src="../badges/google-play-tr.svg" alt="Google Play" data-l="tr"><img src="../badges/google-play-en.svg" alt="Get it on Google Play" data-l="en">{"".join(f'<img src="../badges/google-play-en.svg" alt="Google Play" data-l="{l}">' for l in L if l not in ("tr", "en"))}</a>
+        {appstore_html}
         {qr_html}
+        {qr_ios_html}
         <a class="small" href="privacy.html#{ 'tr' if False else 'en'}" data-l-privacy>{multi(SEC['privacy'], L)}</a>
       </div>
     </div>
@@ -758,7 +770,7 @@ def index_pkgs():
 
 def shot_list(folder, srcdir):
     base = os.path.join(MD, folder, "market_assets")
-    newer = sorted(glob.glob(os.path.join(base, "screenshots_*", srcdir)))  # örn. screenshots_1.1.0: varsa en yenisi kullanılır
+    newer = sorted(glob.glob(os.path.join(base, "screenshots_[0-9]*", srcdir)))  # örn. screenshots_1.1.0: varsa en yenisi kullanılır
     d = newer[-1] if newer else os.path.join(base, "screenshots", srcdir)
     return [os.path.join(d, f) for f in sorted(os.listdir(d)) if f.lower().endswith((".png", ".jpg", ".jpeg"))]
 
@@ -782,6 +794,8 @@ def build_apps():
                 cfg["title"][l] = e["name"]
                 cfg["tagline"][l] = e["short"]
                 cfg["intro"][l] = " ".join(intro[:2])
+                if slug in IOS:  # Play metni "resmi Android uygulamasi" der; App Store surumu de var
+                    cfg["intro"][l] = cfg["intro"][l].replace("resmî Android uygulaması", "resmî Android ve iPhone uygulaması").replace("official Android app", "official Android and iPhone app")
                 bullets[l] = bl
                 notes[l] = format_note(tail)
             cfg["desc"] = (lst.get("en") or lst["tr"])["short"]

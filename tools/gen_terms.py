@@ -161,6 +161,14 @@ SEC_TAIL = [
       "pt": "Nesim Razon · <a href=\"mailto:" + MAIL + "\">" + MAIL + "</a>"}),
 ]
 
+IOS_APPS = __import__("json").load(io.open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "ios_apps.json"), encoding="utf-8"))
+DATE_IOS = {"en": "15 November 2026", "tr": "15 Kasım 2026", "es": "15 de noviembre de 2026", "pt": "15 de novembro de 2026"}  # App Store maddesi eklenen uygulamalarda yürürlük tarihi
+APPLE_ADD = {
+    "en": " Apple, iPhone and the App Store are trademarks of Apple Inc. On iPhone, use of the app is also subject to Apple's Licensed Application End User License Agreement (Standard EULA); Apple is not a party to these terms and is not responsible for the app.",
+    "tr": " Apple, iPhone ve App Store, Apple Inc.'in ticari markalarıdır. iPhone'da uygulamanın kullanımı ayrıca Apple'ın Lisanslı Uygulama Son Kullanıcı Lisans Sözleşmesi'ne (Standart EULA) tabidir; Apple bu şartların tarafı değildir ve uygulamadan sorumlu değildir.",
+    "es": " Apple, iPhone y App Store son marcas de Apple Inc. En iPhone, el uso de la aplicación también está sujeto al Contrato de licencia de usuario final de aplicaciones con licencia de Apple (EULA estándar); Apple no es parte de estos términos ni responsable de la aplicación.",
+    "pt": " Apple, iPhone e App Store são marcas da Apple Inc. No iPhone, o uso do aplicativo também está sujeito ao Contrato de Licença de Usuário Final de Aplicativos Licenciados da Apple (EULA padrão); a Apple não é parte destes termos nem responsável pelo aplicativo.",
+}
 LANG_NAMES = {"en": "English", "tr": "Türkçe", "es": "Español", "pt": "Português"}
 PRIV_WORD = {"en": "Privacy Policy", "tr": "Gizlilik Politikası", "es": "Política de privacidad", "pt": "Política de Privacidade"}
 
@@ -205,9 +213,12 @@ def build(slug, spec):
     for l in langs:
         body = []
         for i, (h, p) in enumerate(secs, 1):
-            body.append(f"    <h3>{i}. {fill(h[l], name, kind, l)}</h3>\n    <p>{fill(p[l], name, kind, l)}</p>")
+            ptxt = fill(p[l], name, kind, l)
+            if slug in IOS_APPS and "Google Play and Android" in p["en"]:  # Ownership bolumu: Apple ticari marka + EULA
+                ptxt += APPLE_ADD[l]
+            body.append(f"    <h3>{i}. {fill(h[l], name, kind, l)}</h3>\n    <p>{ptxt}</p>")
         body.append(f'    <p><a href="privacy.html#{l}">{PRIV_WORD[l]}</a></p>')
-        parts.append(f'  <section id="{l}" lang="{l}">\n    <h2>{T["h"][l]}</h2>\n    <p class="meta">{T["eff"][l]}: {DATE[l]}</p>\n    <p>{fill(T["intro"][l], name, kind, l)}</p>\n' + "\n".join(body) + "\n  </section>")
+        parts.append(f'  <section id="{l}" lang="{l}">\n    <h2>{T["h"][l]}</h2>\n    <p class="meta">{T["eff"][l]}: {DATE_IOS[l] if slug in IOS_APPS else DATE[l]}</p>\n    <p>{fill(T["intro"][l], name, kind, l)}</p>\n' + "\n".join(body) + "\n  </section>")
     nav = "\n".join(f'    <a href="#{l}">{LANG_NAMES[l]}</a>' for l in langs)
     meta = " · ".join(T["h"][l] for l in langs)
     html = f'''<!doctype html>

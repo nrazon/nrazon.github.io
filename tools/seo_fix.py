@@ -7,6 +7,8 @@ import os
 import re
 
 G = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+import json
+IOS_APPS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "ios_apps.json"), encoding="utf-8"))
 SKIP = ("tools", "node_modules", "google6b7f0191d81507b3.html")
 
 
@@ -19,9 +21,10 @@ def describe(path, title):
         return "Privacy notice for the Nesim Apps website (nrazon.github.io): anonymous analytics, no accounts, no ads. Gizlilik · Privacidad · Privacidade."
     tr_only = "Gizlilik Politikası" in title and "Privacy" not in title
     if base == "terms.html":
-        return f"{name} terms of use: license, acceptable use and liability for the Android app by Nesim Apps. Kullanım şartları · Términos de uso · Termos de uso."
+        plat = "Android and iPhone app" if os.path.basename(os.path.dirname(path)) in IOS_APPS else "Android app"
+        return f"{name} terms of use: license, acceptable use and liability for the {plat} by Nesim Apps. Kullanım şartları · Términos de uso · Termos de uso."
     if "Kullanım Koşulları" in title:
-        return f"{name}: gizlilik politikası ve kullanım koşulları. Hangi veriler işlenir, nasıl korunur. Nesim Apps Android uygulaması."
+        return f"{name}: gizlilik politikası ve kullanım koşulları. Hangi veriler işlenir, nasıl korunur. Nesim Apps Android" + (" ve iPhone" if os.path.basename(os.path.dirname(path)) in IOS_APPS else "") + " uygulaması."
     if tr_only:
         return f"{name}: gizlilik politikası. Uygulamanın hangi verileri işlediği ve nasıl korunduğu. Privacy policy of the Nesim Apps Android app."
     return f"{name} privacy policy: what data the Android app uses and how it is protected. Gizlilik politikası · Política de privacidad · Política de privacidade."

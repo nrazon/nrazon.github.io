@@ -24,3 +24,10 @@ for a in DATA:
     q.save(os.path.join(OUT, a["slug"] + ".svg"), kind="svg", scale=4, border=2, dark="#111111", light="#ffffff", xmldecl=False, nl=False)
     n += 1
 print(n, "QR üretildi ->", OUT)
+
+# iOS (App Store) QR'ları: tools/ios_apps.json (slug -> Apple ID); qr/<slug>-ios.svg
+IOS = json.load(open(os.path.join(G, "tools", "ios_apps.json"), encoding="utf-8"))
+for slug, apple_id in IOS.items():
+    q = segno.make(f"https://apps.apple.com/app/id{apple_id}", error="m", micro=False)
+    q.save(os.path.join(OUT, slug + "-ios.svg"), kind="svg", scale=4, border=2, dark="#111111", light="#ffffff", xmldecl=False, nl=False)
+    print("iOS QR:", slug)

@@ -37,6 +37,9 @@ SUFFIX = {
     "pt": {"games": "Jogo Android grátis", "apps": "App Android grátis"},
     "fr": {"games": "Jeu Android gratuit", "apps": "Application Android gratuite"},
 }
+CTA_IOS = {"en": "Free on Google Play and the App Store.", "tr": "Google Play ve App Store'da ücretsiz.", "es": "Gratis en Google Play y App Store.", "pt": "Grátis no Google Play e na App Store.", "fr": "Gratuit sur Google Play et l'App Store."}
+SUFFIX_IOS = {"apps": {"en": "Free Android and iPhone App", "tr": "Ücretsiz Android ve iPhone Uygulaması", "es": "App Android e iPhone gratis", "pt": "App Android e iPhone grátis", "fr": "Application Android et iPhone gratuite"}}
+IOS_APPS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "ios_apps.json"), encoding="utf-8"))
 CTA = {"en": "Free on Google Play.", "tr": "Google Play'de ücretsiz.", "es": "Gratis en Google Play.", "pt": "Grátis no Google Play.", "fr": "Gratuit sur Google Play."}
 HOWTO = {  # oyun detay sayfasına eklenen rehber bağlantısı bölümü
     "en": ("How to play", "Read the guide: how to play {name}"),
@@ -101,17 +104,17 @@ def trim(text, n):
     return cut[:cut.rfind(" ")].rstrip(",;:") + "…"
 
 
-def make_desc(tagline, intro, lang):
+def make_desc(tagline, intro, lang, ios=False):
     base = tagline.strip()
     if intro:
         base = base.rstrip() + " " + intro.strip()
-    cta = CTA[lang]
+    cta = (CTA_IOS if ios else CTA)[lang]
     d = trim(base, 158 - len(cta) - 1)
     return d + " " + cta
 
 
-def make_title(store_title, lang, cat):
-    t = f"{store_title} – {SUFFIX[lang][cat]}"
+def make_title(store_title, lang, cat, ios=False):
+    t = f"{store_title} – {SUFFIX_IOS['apps'][lang] if (ios and cat == 'apps') else SUFFIX[lang][cat]}"
     if len(t) + 12 <= 60:
         t += " | Nesim Apps"
     return t
@@ -179,8 +182,8 @@ def process_source(rel, plan, guides, registry, pagedata, lastmod, today, guides
         url = alternates[lang]
         if slug:
             st = (pd.get("title") or {}).get(lang) or pd.get("name") or slug
-            title = make_title(st, lang, cat)
-            desc = make_desc((pd.get("tagline") or {}).get(lang, ""), (pd.get("intro") or {}).get(lang, ""), lang)
+            title = make_title(st, lang, cat, slug in IOS_APPS)
+            desc = make_desc((pd.get("tagline") or {}).get(lang, ""), (pd.get("intro") or {}).get(lang, ""), lang, slug in IOS_APPS)
             og_title = st
         else:
             title, desc = HOME[lang]
