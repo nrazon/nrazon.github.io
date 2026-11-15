@@ -28,6 +28,12 @@ print(n, "QR üretildi ->", OUT)
 # iOS uygulamaları (tools/ios_apps.json: slug -> Apple ID): TEK evrensel QR = https://nrazon.github.io/go/<slug>/ ; sayfa telefonun
 # işletim sistemine göre Play'e (utm_medium=qr, Play Console QR kırılımı korunur) ya da App Store'a yönlendirir; masaüstünde/JS yoksa iki rozet.
 IOS = json.load(open(os.path.join(G, "tools", "ios_apps.json"), encoding="utf-8"))
+def apple_url(v):
+    """tools/ios_apps.json değeri: "<Apple ID>" (genel bağlantı, ziyaretçinin mağazasına yönlenir) ya da "<ülke>:<Apple ID>" (yalnız o mağazada yayında olan uygulama: örn. Şans Oyunları "tr:1438867538"; genel bağlantı başka ülkelerde 404 verir)."""
+    if ":" in str(v):
+        c, i = str(v).split(":", 1)
+        return f"https://apps.apple.com/{c}/app/id{i}"
+    return f"https://apps.apple.com/app/id{v}"
 NAMES = {a["slug"]: a["names"] for a in DATA}
 PKGS = {a["slug"]: a.get("pkg") for a in DATA}
 GO_PAGE = """<!doctype html>
@@ -84,7 +90,7 @@ for slug, apple_id in IOS.items():
     if os.path.exists(stale):
         os.remove(stale)
     play = f"https://play.google.com/store/apps/details?id={PKGS[slug]}{UTM}"
-    apple = f"https://apps.apple.com/app/id{apple_id}"
+    apple = apple_url(apple_id)
     d = os.path.join(G, "go", slug)
     os.makedirs(d, exist_ok=True)
     page = GO_PAGE.replace("__NAME__", NAMES[slug].get("tr") or NAMES[slug]["en"]).replace("__PLAY__", play.replace("&", "&amp;") if False else play).replace("__APPLE__", apple).replace("__SLUG__", slug)

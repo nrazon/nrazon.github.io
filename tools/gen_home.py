@@ -131,6 +131,12 @@ def badge(pkg):
 
 
 IOS = json.load(open(os.path.join(G, "tools", "ios_apps.json"), encoding="utf-8"))
+def apple_url(v):
+    """tools/ios_apps.json değeri: "<Apple ID>" (genel bağlantı, ziyaretçinin mağazasına yönlenir) ya da "<ülke>:<Apple ID>" (yalnız o mağazada yayında olan uygulama: örn. Şans Oyunları "tr:1438867538"; genel bağlantı başka ülkelerde 404 verir)."""
+    if ":" in str(v):
+        c, i = str(v).split(":", 1)
+        return f"https://apps.apple.com/{c}/app/id{i}"
+    return f"https://apps.apple.com/app/id{v}"
 
 
 def badge_ios(slug):
@@ -138,7 +144,7 @@ def badge_ios(slug):
     if slug not in IOS:
         return ""
     imgs = "".join(f'<img lang="{l}" src="badges/app-store-{"tr" if l == "tr" else "en"}.svg" alt="{"App Store'dan indir" if l == "tr" else "Download on the App Store"}">' for l in LANGS)
-    return f'<a class="play appstore" href="https://apps.apple.com/app/id{IOS[slug]}">{imgs}</a>'
+    return f'<a class="play appstore" href="{apple_url(IOS[slug])}">{imgs}</a>'
 
 
 def shots_for(slug, lang):
@@ -221,7 +227,7 @@ def tool_card(a):
         <div class="tbody">
           <h3><a class="stretch" href="{s}/">{L(a["names"])}</a>{chip}</h3>
           {L(a["desc"], "p")}
-          <div class="gprow{" dual" if s in IOS else ""}"><a class="gp" href="{play_url(pk)}"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a>{(f'<a class="gp" href="https://apps.apple.com/app/id{IOS[s]}">App Store</a>' if s in IOS else "")}{qr_html(s, short=True)}{demo_btn(s)}</div>
+          <div class="gprow{" dual" if s in IOS else ""}"><a class="gp" href="{play_url(pk)}"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 3.5v17l15-8.5z" fill="currentColor"/></svg>Google Play</a>{(f'<a class="gp" href="{apple_url(IOS[s])}">App Store</a>' if s in IOS else "")}{qr_html(s, short=True)}{demo_btn(s)}</div>
         </div>
       </article>'''
 

@@ -10,6 +10,12 @@ import json
 G = r"C:\@Development\PersonalAndroidApps\github-pages"
 # App Store'da yayinda olan uygulamalar (slug -> Apple ID): sayfada App Store rozeti + iOS QR. tools/ios_apps.json
 IOS = json.load(open(os.path.join(G, "tools", "ios_apps.json"), encoding="utf-8"))
+def apple_url(v):
+    """tools/ios_apps.json değeri: "<Apple ID>" (genel bağlantı, ziyaretçinin mağazasına yönlenir) ya da "<ülke>:<Apple ID>" (yalnız o mağazada yayında olan uygulama: örn. Şans Oyunları "tr:1438867538"; genel bağlantı başka ülkelerde 404 verir)."""
+    if ":" in str(v):
+        c, i = str(v).split(":", 1)
+        return f"https://apps.apple.com/{c}/app/id{i}"
+    return f"https://apps.apple.com/app/id{v}"
 BASE = "https://nrazon.github.io"
 # Yayına henüz çıkmamış uygulamaların detay sayfaları: URL'den açılır ama ana sayfa kartı, "Diğer uygulamalarım" listeleri ve sitemap'e GİRMEZ,
 # sayfada noindex var. Uygulama Play'de yayınlanınca slug buradan silinir (ve home_data.json'da status=live yapılır).
@@ -464,7 +470,7 @@ def page(cfg):
     ios_id = IOS.get(cfg["slug"])
     appstore_html = qr_ios_html = ""
     if ios_id:
-        appstore_html = (f'<a class="play appstore" href="https://apps.apple.com/app/id{ios_id}"><img src="../badges/app-store-tr.svg" alt="App Store\'dan indir" data-l="tr">'
+        appstore_html = (f'<a class="play appstore" href="{apple_url(ios_id)}"><img src="../badges/app-store-tr.svg" alt="App Store\'dan indir" data-l="tr">'
                          + "".join(f'<img src="../badges/app-store-en.svg" alt="Download on the App Store" data-l="{l}">' for l in L if l != "tr") + '</a>')
     demo_attr = {"tictactoe": ("data-ttt", "ttt.js?v=2"), "game2048": ("data-g2048", "g2048.js?v=1"), "calisan": ("data-calisan", "calisan.js?v=3")}.get(cfg["slug"])
     demo_block = (f'  <section class="block" aria-labelledby="h-demo">\n    <h2 class="h" id="h-demo">{multi(SEC["try"], L)}</h2>\n'
