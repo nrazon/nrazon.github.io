@@ -4,41 +4,41 @@
 
 ## Games
 
-- [Tombalings](https://nrazon.github.io/tombalings/): Tombala (90 balls) and Bingo (75 balls): a cheerful number race against cute rivals. No real money, free play.
-- [Brassline](https://nrazon.github.io/brassline/): Blackjack, European roulette and Texas Hold'em with play chips. 18+, no real money, entertainment only.
-- [Nuzzlings](https://nrazon.github.io/nuzzlings/): Adopt a kitten, cuddle it, feed it and watch it grow up. Cozy and calm.
-- [Pentolings](https://nrazon.github.io/pentolings/): Fit and Drop: two cute puzzle games in one app. Fill shapes with pieces, pop the colours.
-- [Nudgelings](https://nrazon.github.io/nudgelings/): Slide and Push: two cute puzzle games in one app, 400 levels.
-- [Grumblings](https://nrazon.github.io/grumblings/): Outsmart the grumpy monster: a turn-based maze puzzle with 300 levels in 30 worlds.
-- [Tilelings](https://nrazon.github.io/tilelings/): Cute Mahjong Solitaire, Connect and Tile Match puzzles. New ones every day!
-- [Logiclings](https://nrazon.github.io/logiclings/): Three new logic puzzles every day from five kinds: Crown, Twin, Path, Sleepy Faces and Frog Hops. No timers, just cute faces.
-- [Cardles](https://nrazon.github.io/cardles/): Klondike, Spider, FreeCell & TriPeaks with cute faces. Daily challenge!
-- [Beamies](https://nrazon.github.io/beamies/): Slide gates to beam cute aliens home. 400 levels from the Moon to the Galaxy!
-- [Cubbles](https://nrazon.github.io/cubbles/): A block puzzle with cute faces: drag blocks onto the board, fill rows and columns to clear them and chain combos. Daily challenge, quests and themes.
-- [Sliplines](https://nrazon.github.io/sliplines/): An arrow puzzle game: slide the arrows out in the right order and clear the board. Hundreds of levels, a Daily Puzzle with a global leaderboard, and badges to collect.
-- [2048](https://nrazon.github.io/game2048/): The classic number puzzle: swipe, merge matching numbers and reach the 2048 tile.
-- [Tic-Tac-Toe](https://nrazon.github.io/tictactoe/): Classic Tic-Tac-Toe against the computer: Easy, Medium or Hard. On Hard it never loses.
+- [Tombalings](https://nesimapps.com/tombalings/): Tombala (90 balls) and Bingo (75 balls): a cheerful number race against cute rivals. No real money, free play.
+- [Brassline](https://nesimapps.com/brassline/): Blackjack, European roulette and Texas Hold'em with play chips. 18+, no real money, entertainment only.
+- [Nuzzlings](https://nesimapps.com/nuzzlings/): Adopt a kitten, cuddle it, feed it and watch it grow up. Cozy and calm.
+- [Pentolings](https://nesimapps.com/pentolings/): Fit and Drop: two cute puzzle games in one app. Fill shapes with pieces, pop the colours.
+- [Nudgelings](https://nesimapps.com/nudgelings/): Slide and Push: two cute puzzle games in one app, 400 levels.
+- [Grumblings](https://nesimapps.com/grumblings/): Outsmart the grumpy monster: a turn-based maze puzzle with 300 levels in 30 worlds.
+- [Tilelings](https://nesimapps.com/tilelings/): Cute Mahjong Solitaire, Connect and Tile Match puzzles. New ones every day!
+- [Logiclings](https://nesimapps.com/logiclings/): Three new logic puzzles every day from five kinds: Crown, Twin, Path, Sleepy Faces and Frog Hops. No timers, just cute faces.
+- [Cardles](https://nesimapps.com/cardles/): Klondike, Spider, FreeCell & TriPeaks with cute faces. Daily challenge!
+- [Beamies](https://nesimapps.com/beamies/): Slide gates to beam cute aliens home. 400 levels from the Moon to the Galaxy!
+- [Cubbles](https://nesimapps.com/cubbles/): A block puzzle with cute faces: drag blocks onto the board, fill rows and columns to clear them and chain combos. Daily challenge, quests and themes.
+- [Sliplines](https://nesimapps.com/sliplines/): An arrow puzzle game: slide the arrows out in the right order and clear the board. Hundreds of levels, a Daily Puzzle with a global leaderboard, and badges to collect.
+- [2048](https://nesimapps.com/game2048/): The classic number puzzle: swipe, merge matching numbers and reach the 2048 tile.
+- [Tic-Tac-Toe](https://nesimapps.com/tictactoe/): Classic Tic-Tac-Toe against the computer: Easy, Medium or Hard. On Hard it never loses.
 
 ## Apps
 
-- [Hafta Sonum](https://nrazon.github.io/haftasonum/): What to do this weekend? Theatre, concerts, exhibitions and kids' events in your city on one screen, no account or location needed (Turkish only, Turkey).
-- [Çalışan Asistanı](https://nrazon.github.io/calisan/): Net salary, severance and notice pay, overtime and leave planning in one app, for employees in Turkey (Turkish only), with a friendly payslip assistant.
-- [Astrolings](https://nrazon.github.io/astrolings/): Your zodiac sign's daily companion: daily readings, a Moon calendar, sign compatibility and 12 cute zodiac creatures (Turkish only).
-- [Uzay Günlüğü](https://nrazon.github.io/uzaygunlugu/): A new space card every day, Turkey from space, the spinning Earth and the live position of the ISS, built on NASA's public data (Turkish only).
-- [Şans Oyunları](https://nrazon.github.io/sansoyunlari/): Results of the Turkish lotteries (Sayısal Loto, Süper Loto, Şans Topu, On Numara, Milli Piyango), random tickets and ticket checking.
-- [Where Am I?](https://nrazon.github.io/whereami/): See where you are on the map with your address and coordinates; explore places and photos nearby.
-- [Age Calculator](https://nrazon.github.io/agecalculator/): Calculate exact age and the time between dates, and keep a list of birthdays and anniversaries.
-- [Son Depremler](https://nrazon.github.io/sondepremler/): Recent earthquakes in and around Turkey from AFAD and Kandilli, with a map and statistics.
-- [BMI Calculator](https://nrazon.github.io/bmicalculator/): Calculate your BMI with WHO categories and see the healthy weight range for your height.
-- [National Anthem of Turkey](https://nrazon.github.io/anthemturkey/): İstiklal Marşı, the national anthem of Türkiye, with a waving flag; plays in the background and on Chromecast.
-- [National Anthem of Canada](https://nrazon.github.io/anthemcanada/): O Canada, the national anthem of Canada, with a waving flag; plays in the background and on Chromecast.
-- [TurkSail](https://nrazon.github.io/turksail/): Sailing and sea news, race results and articles from turksail.com (in Turkish).
-- [MedyaFobi](https://nrazon.github.io/medyafobi/): Media relations, crisis communication and speaking trainings from medyafobi.com (in Turkish).
+- [Hafta Sonum](https://nesimapps.com/haftasonum/): What to do this weekend? Theatre, concerts, exhibitions and kids' events in your city on one screen, no account or location needed (Turkish only, Turkey).
+- [Çalışan Asistanı](https://nesimapps.com/calisan/): Net salary, severance and notice pay, overtime and leave planning in one app, for employees in Turkey (Turkish only), with a friendly payslip assistant.
+- [Astrolings](https://nesimapps.com/astrolings/): Your zodiac sign's daily companion: daily readings, a Moon calendar, sign compatibility and 12 cute zodiac creatures (Turkish only).
+- [Uzay Günlüğü](https://nesimapps.com/uzaygunlugu/): A new space card every day, Turkey from space, the spinning Earth and the live position of the ISS, built on NASA's public data (Turkish only).
+- [Şans Oyunları](https://nesimapps.com/sansoyunlari/): Results of the Turkish lotteries (Sayısal Loto, Süper Loto, Şans Topu, On Numara, Milli Piyango), random tickets and ticket checking.
+- [Where Am I?](https://nesimapps.com/whereami/): See where you are on the map with your address and coordinates; explore places and photos nearby.
+- [Age Calculator](https://nesimapps.com/agecalculator/): Calculate exact age and the time between dates, and keep a list of birthdays and anniversaries.
+- [Son Depremler](https://nesimapps.com/sondepremler/): Recent earthquakes in and around Turkey from AFAD and Kandilli, with a map and statistics.
+- [BMI Calculator](https://nesimapps.com/bmicalculator/): Calculate your BMI with WHO categories and see the healthy weight range for your height.
+- [National Anthem of Turkey](https://nesimapps.com/anthemturkey/): İstiklal Marşı, the national anthem of Türkiye, with a waving flag; plays in the background and on Chromecast.
+- [National Anthem of Canada](https://nesimapps.com/anthemcanada/): O Canada, the national anthem of Canada, with a waving flag; plays in the background and on Chromecast.
+- [TurkSail](https://nesimapps.com/turksail/): Sailing and sea news, race results and articles from turksail.com (in Turkish).
+- [MedyaFobi](https://nesimapps.com/medyafobi/): Media relations, crisis communication and speaking trainings from medyafobi.com (in Turkish).
 
 ## Policies
 
 - Each app has a privacy policy at /<app>/privacy.html and terms of use at /<app>/terms.html.
-- [Website privacy](https://nrazon.github.io/site-privacy.html)
+- [Website privacy](https://nesimapps.com/site-privacy.html)
 
 ## Developer
 

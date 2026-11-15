@@ -22,7 +22,7 @@ from bs4 import BeautifulSoup, Comment
 
 TOOLS = os.path.dirname(os.path.abspath(__file__))
 G = os.path.dirname(TOOLS)
-BASE = "https://nrazon.github.io"
+BASE = "https://nesimapps.com"
 MARK = "<!--i18n-split-->"
 LANGS = ["en", "tr", "es", "pt", "fr"]
 LABEL = {"tr": "TR", "en": "EN", "es": "ES", "pt": "PT", "fr": "FR"}

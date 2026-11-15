@@ -18,7 +18,7 @@ def describe(path, title):
     if base == "404.html":
         return "Page not found. Nesim Apps: small Android games and apps on Google Play – Sayfa bulunamadı · Página no encontrada · Página não encontrada."
     if base == "site-privacy.html":
-        return "Privacy notice for the Nesim Apps website (nrazon.github.io): anonymous analytics, no accounts, no ads. Gizlilik · Privacidad · Privacidade."
+        return "Privacy notice for the Nesim Apps website (nesimapps.com): anonymous analytics, no accounts, no ads. Gizlilik · Privacidad · Privacidade."
     tr_only = "Gizlilik Politikası" in title and "Privacy" not in title
     if base == "terms.html":
         plat = "Android and iPhone app" if os.path.basename(os.path.dirname(path)) in IOS_APPS else "Android app"

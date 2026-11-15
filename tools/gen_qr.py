@@ -25,7 +25,7 @@ for a in DATA:
     n += 1
 print(n, "QR üretildi ->", OUT)
 
-# iOS uygulamaları (tools/ios_apps.json: slug -> Apple ID): TEK evrensel QR = https://nrazon.github.io/go/<slug>/ ; sayfa telefonun
+# iOS uygulamaları (tools/ios_apps.json: slug -> Apple ID): TEK evrensel QR = https://nesimapps.com/go/<slug>/ ; sayfa telefonun
 # işletim sistemine göre Play'e (utm_medium=qr, Play Console QR kırılımı korunur) ya da App Store'a yönlendirir; masaüstünde/JS yoksa iki rozet.
 IOS = json.load(open(os.path.join(G, "tools", "ios_apps.json"), encoding="utf-8"))
 def apple_url(v):
@@ -61,7 +61,7 @@ GO_PAGE = """<!doctype html>
     <a href="__PLAY__"><img src="../../badges/google-play-tr.svg" alt="Google Play"></a>
     <a href="__APPLE__"><img src="../../badges/app-store-tr.svg" alt="App Store"></a>
   </div>
-  <a class="s" href="../../__SLUG__/">__NAME__ · nrazon.github.io</a>
+  <a class="s" href="../../__SLUG__/">__NAME__ · nesimapps.com</a>
 </main>
 <script>
 (function () {
@@ -83,7 +83,7 @@ GO_PAGE = """<!doctype html>
 </html>
 """
 for slug, apple_id in IOS.items():
-    go_url = f"https://nrazon.github.io/go/{slug}/"
+    go_url = f"https://nesimapps.com/go/{slug}/"
     q = segno.make(go_url, error="m", micro=False)
     q.save(os.path.join(OUT, slug + ".svg"), kind="svg", scale=4, border=2, dark="#111111", light="#ffffff", xmldecl=False, nl=False)
     stale = os.path.join(OUT, slug + "-ios.svg")

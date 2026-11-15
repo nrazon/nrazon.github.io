@@ -12,7 +12,7 @@ import re
 
 TOOLS = os.path.dirname(os.path.abspath(__file__))
 G = os.path.dirname(TOOLS)
-BASE = "https://nrazon.github.io"
+BASE = "https://nesimapps.com"
 LANGS = ["en", "tr", "es", "pt"]
 DIRS = {"en": "guides", "tr": "tr/rehber", "es": "es/guias", "pt": "pt/guias"}
 HREFLANG = {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}

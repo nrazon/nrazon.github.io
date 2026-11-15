@@ -16,7 +16,7 @@ def apple_url(v):
         c, i = str(v).split(":", 1)
         return f"https://apps.apple.com/{c}/app/id{i}"
     return f"https://apps.apple.com/app/id{v}"
-BASE = "https://nrazon.github.io"
+BASE = "https://nesimapps.com"
 # Yayına henüz çıkmamış uygulamaların detay sayfaları: URL'den açılır ama ana sayfa kartı, "Diğer uygulamalarım" listeleri ve sitemap'e GİRMEZ,
 # sayfada noindex var. Uygulama Play'de yayınlanınca slug buradan silinir (ve home_data.json'da status=live yapılır).
 HIDDEN = {"pulselings"}  # Pulselings: Play incelemesinde (13.11.2026), yayin gunu buradan SIL. Yayinda olmayan uygulama onceden buraya eklenir, yayin gunu silinir (Brassline 13.11.2026 yayinda: cikarildi)

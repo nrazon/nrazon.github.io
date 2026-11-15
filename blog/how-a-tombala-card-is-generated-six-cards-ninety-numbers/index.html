@@ -5,24 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>How a Tombala Card Is Generated: Six Cards, Ninety Numbers</title>
 <meta name="description" content="Dev notes: how Tombalings builds a Tombala card set where six cards cover 1 to 90 exactly once, and how the rivals are timed to feel human.">
-<link rel="canonical" href="https://nrazon.github.io/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/">
-<link rel="alternate" hreflang="en" href="https://nrazon.github.io/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/">
-<link rel="alternate" hreflang="tr" href="https://nrazon.github.io/tr/yazilar/tombala-karti-nasil-uretilir-alti-kart-doksan-sayi/">
-<link rel="alternate" hreflang="es" href="https://nrazon.github.io/es/blog/como-se-genera-un-carton-de-tombola-seis-cartones-noventa-numeros/">
-<link rel="alternate" hreflang="pt" href="https://nrazon.github.io/pt/blog/como-uma-cartela-de-tombala-e-gerada-seis-cartelas-noventa-numeros/">
-<link rel="alternate" hreflang="x-default" href="https://nrazon.github.io/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/">
+<link rel="canonical" href="https://nesimapps.com/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/tombala-karti-nasil-uretilir-alti-kart-doksan-sayi/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/como-se-genera-un-carton-de-tombola-seis-cartones-noventa-numeros/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/como-uma-cartela-de-tombala-e-gerada-seis-cartelas-noventa-numeros/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/">
 <link rel="icon" href="/logo.svg" type="image/svg+xml">
 <meta name="theme-color" content="#C8372A">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Nesim Apps">
 <meta property="og:title" content="How a Tombala Card Is Generated: Six Cards, Ninety Numbers">
 <meta property="og:description" content="Dev notes: how Tombalings builds a Tombala card set where six cards cover 1 to 90 exactly once, and how the rivals are timed to feel human.">
-<meta property="og:url" content="https://nrazon.github.io/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/">
+<meta property="og:url" content="https://nesimapps.com/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="tr_TR">
 <meta property="og:locale:alternate" content="es_ES">
 <meta property="og:locale:alternate" content="pt_BR">
-<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="How a Tombala Card Is Generated: Six Cards, Ninety Numbers">
 <meta name="twitter:description" content="Dev notes: how Tombalings builds a Tombala card set where six cards cover 1 to 90 exactly once, and how the rivals are timed to feel human.">
@@ -30,7 +30,7 @@
 <link rel="stylesheet" href="/landing.css?v=7">
 <link rel="stylesheet" href="/guides.css?v=1">
 <script src="/analytics.js?v=5" defer></script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "How a Tombala Card Is Generated: Six Cards, Ninety Numbers", "description": "Dev notes: how Tombalings builds a Tombala card set where six cards cover 1 to 90 exactly once, and how the rivals are timed to feel human.", "inLanguage": "en", "mainEntityOfPage": "https://nrazon.github.io/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/", "image": "https://nrazon.github.io/og-v3.png", "datePublished": "2026-11-12", "dateModified": "2026-11-12", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nrazon.github.io/"}, "keywords": "Level generation, Game design", "about": {"@type": "SoftwareApplication", "name": "Tombalings", "operatingSystem": "Android", "applicationCategory": "GameApplication", "url": "https://nrazon.github.io/tombalings/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nrazon.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nrazon.github.io/blog/"}, {"@type": "ListItem", "position": 3, "name": "How a Tombala Card Is Generated: Six Cards, Ninety Numbers", "item": "https://nrazon.github.io/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many numbers are on a Tombala card?", "acceptedAnswer": {"@type": "Answer", "text": "Fifteen: five in each of the three rows, spread across nine columns."}}, {"@type": "Question", "name": "What is a strip of six cards?", "acceptedAnswer": {"@type": "Answer", "text": "Six cards that together contain every number from 1 to 90 exactly once."}}, {"@type": "Question", "name": "Do the rivals react instantly?", "acceptedAnswer": {"@type": "Answer", "text": "No. They mark instantly but wait a short reaction time before calling, which depends on the difficulty you choose."}}, {"@type": "Question", "name": "Is the draw order random?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The numbers 1 to 90 are shuffled and drawn once each."}}]}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "How a Tombala Card Is Generated: Six Cards, Ninety Numbers", "description": "Dev notes: how Tombalings builds a Tombala card set where six cards cover 1 to 90 exactly once, and how the rivals are timed to feel human.", "inLanguage": "en", "mainEntityOfPage": "https://nesimapps.com/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-12", "dateModified": "2026-11-12", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Level generation, Game design", "about": {"@type": "SoftwareApplication", "name": "Tombalings", "operatingSystem": "Android", "applicationCategory": "GameApplication", "url": "https://nesimapps.com/tombalings/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "How a Tombala Card Is Generated: Six Cards, Ninety Numbers", "item": "https://nesimapps.com/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many numbers are on a Tombala card?", "acceptedAnswer": {"@type": "Answer", "text": "Fifteen: five in each of the three rows, spread across nine columns."}}, {"@type": "Question", "name": "What is a strip of six cards?", "acceptedAnswer": {"@type": "Answer", "text": "Six cards that together contain every number from 1 to 90 exactly once."}}, {"@type": "Question", "name": "Do the rivals react instantly?", "acceptedAnswer": {"@type": "Answer", "text": "No. They mark instantly but wait a short reaction time before calling, which depends on the difficulty you choose."}}, {"@type": "Question", "name": "Is the draw order random?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The numbers 1 to 90 are shuffled and drawn once each."}}]}]}</script>
 </head>
 <body>
 <main>

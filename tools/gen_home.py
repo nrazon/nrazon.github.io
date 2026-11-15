@@ -460,7 +460,7 @@ def build(preview):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nesim Apps</title>
 {robots}<meta name="description" content="Android games and apps by Nesim Razon: Beamies, Cardles, Cubbles, Sliplines, 2048, Tic-Tac-Toe, Son Depremler, Age Calculator, BMI Calculator, Where Am I?, National Anthems and more. Android oyunları ve uygulamaları.">
-<link rel="canonical" href="https://nrazon.github.io/">
+<link rel="canonical" href="https://nesimapps.com/">
 <link rel="icon" href="logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="theme-color" content="#141829" media="(prefers-color-scheme: dark)">
@@ -469,8 +469,8 @@ def build(preview):
 <meta property="og:site_name" content="Nesim Apps">
 <meta property="og:title" content="Nesim Apps">
 <meta property="og:description" content="Android games and apps by Nesim Razon. Android oyunları ve uygulamaları.">
-<meta property="og:url" content="https://nrazon.github.io/">
-<meta property="og:image" content="https://nrazon.github.io/og-v3.png">
+<meta property="og:url" content="https://nesimapps.com/">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -566,24 +566,24 @@ if __name__ == "__main__":
     live = [a for a in DATA if a.get("status") == "live" and a["slug"] not in NO_CARD]
     def nm_(a): return a["names"].get("en") or next(iter(a["names"].values()))
     ld = {"@context": "https://schema.org", "@graph": [
-        {"@type": "WebSite", "@id": "https://nrazon.github.io/#site", "name": "Nesim Apps", "url": "https://nrazon.github.io/",
-         "inLanguage": ["tr", "en", "es", "pt"], "publisher": {"@id": "https://nrazon.github.io/#dev"}},
-        {"@type": "Person", "@id": "https://nrazon.github.io/#dev", "name": "Nesim Razon", "url": "https://nrazon.github.io/",
-         "image": "https://nrazon.github.io/nesim.jpg", "jobTitle": "Independent Android developer"},
+        {"@type": "WebSite", "@id": "https://nesimapps.com/#site", "name": "Nesim Apps", "url": "https://nesimapps.com/",
+         "inLanguage": ["tr", "en", "es", "pt"], "publisher": {"@id": "https://nesimapps.com/#dev"}},
+        {"@type": "Person", "@id": "https://nesimapps.com/#dev", "name": "Nesim Razon", "url": "https://nesimapps.com/",
+         "image": "https://nesimapps.com/nesim.jpg", "jobTitle": "Independent Android developer"},
         {"@type": "ItemList", "name": "Nesim Apps: Android games and apps", "itemListElement": [
-            {"@type": "ListItem", "position": i + 1, "url": "https://nrazon.github.io/" + a["slug"] + "/", "name": nm_(a)} for i, a in enumerate(live)]}]}
+            {"@type": "ListItem", "position": i + 1, "url": "https://nesimapps.com/" + a["slug"] + "/", "name": nm_(a)} for i, a in enumerate(live)]}]}
     page = page.replace("</head>", '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>\n</head>", 1)
     open(out, "w", encoding="utf-8", newline="\n").write(page)
     if yayin:
         L_ = ["# Nesim Apps", "", "> Small, ad-supported Android games and utility apps by independent developer Nesim Razon, published on Google Play. Pages are available in Turkish, English, Spanish and Portuguese.", "", "## Games", ""]
         for a in live:
             if a["cat"] == "games":
-                L_.append("- [" + nm_(a) + "](https://nrazon.github.io/" + a["slug"] + "/): " + a["desc"]["en"])
+                L_.append("- [" + nm_(a) + "](https://nesimapps.com/" + a["slug"] + "/): " + a["desc"]["en"])
         L_ += ["", "## Apps", ""]
         for a in live:
             if a["cat"] == "apps":
-                L_.append("- [" + nm_(a) + "](https://nrazon.github.io/" + a["slug"] + "/): " + a["desc"]["en"])
-        L_ += ["", "## Policies", "", "- Each app has a privacy policy at /<app>/privacy.html and terms of use at /<app>/terms.html.", "- [Website privacy](https://nrazon.github.io/site-privacy.html)", "", "## Developer", "", "- Google Play developer page: https://play.google.com/store/apps/dev?id=4632277715794688965"]
+                L_.append("- [" + nm_(a) + "](https://nesimapps.com/" + a["slug"] + "/): " + a["desc"]["en"])
+        L_ += ["", "## Policies", "", "- Each app has a privacy policy at /<app>/privacy.html and terms of use at /<app>/terms.html.", "- [Website privacy](https://nesimapps.com/site-privacy.html)", "", "## Developer", "", "- Google Play developer page: https://play.google.com/store/apps/dev?id=4632277715794688965"]
         open(os.path.join(G, "llms.txt"), "w", encoding="utf-8", newline="\n").write("\n".join(L_) + "\n")
     print("yazıldı:", out)
     if yayin:
