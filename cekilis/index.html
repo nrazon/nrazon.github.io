@@ -284,6 +284,8 @@ footer a{color:var(--ice)}
     if (m) { try { return viewMode(CekilisDraw.decode(m[1])); } catch (e) { /* bozuk baglanti: formu goster */ } }
     if (state.result) resultView("link"); else setupView();
   }
+  // Bagli adres yalniz # kismi degisirse (ayni sekmede yeni baglanti yapistirma) sayfa yenilenmez: hashchange ile yeniden ciz
+  window.addEventListener("hashchange", render);
   render();
 })();
 </script>
