@@ -819,6 +819,13 @@ def build_apps():
                     "es": "Brassline es para adultos (18+) y solo para entretenimiento. Usa fichas de juego gratis: sin dinero real, sin premios, sin venta de fichas. Las fichas no tienen valor ni se pueden canjear. Jugar aquí no dice nada sobre el éxito en juegos de azar reales.",
                     "pt": "Brassline é para adultos (18+) e apenas para diversão. Usa fichas de jogo grátis: sem dinheiro real, sem prêmios, sem venda de fichas. As fichas não têm valor e não podem ser trocadas. Jogar aqui não diz nada sobre sucesso em jogos de azar reais.",
                 }
+            if slug == "snowlings":  # yilbasi cekilisi web araci (16.11.2026)
+                cfg["note"] = {
+                    "en": 'Free web tool: <a href="/cekilis/?lang=en">online Secret Santa draw</a> (names, exclusions, private WhatsApp links; nothing is stored on a server).',
+                    "tr": 'Ücretsiz web aracı: <a href="/cekilis/">online yılbaşı çekilişi (gizli hediye arkadaşı)</a>: isimler, "birbirini çekmesin" kısıtları, kişiye özel WhatsApp bağlantıları; hiçbir şey sunucuda saklanmaz.',
+                    "es": 'Herramienta web gratis: <a href="/cekilis/?lang=es">sorteo online de amigo invisible</a> (nombres, exclusiones, enlaces privados por WhatsApp; nada se guarda en un servidor).',
+                    "pt": 'Ferramenta web grátis: <a href="/cekilis/?lang=pt">sorteio online de amigo secreto</a> (nomes, exclusões, links privados no WhatsApp; nada é guardado em servidor).',
+                }
             cfg["shotfiles_src"] = {l: shot_list(folder, shotsrc[l]) for l in langs}
         cfg["priv"] = re.findall(r'id="([a-z]{2})"', open(os.path.join(G, slug, "privacy.html"), encoding="utf-8").read())
         cfgs.append(cfg)

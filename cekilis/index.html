@@ -44,12 +44,35 @@ button.gold{background:var(--gold);color:#16213F}
 footer{margin-top:30px;color:var(--dim);font-size:14px}
 footer a{color:var(--ice)}
 .hide{display:none!important}
+.info{max-width:720px;margin:28px 0 0;color:var(--dim)}.info h2{color:var(--text);font-size:20px;margin:22px 0 8px}.info h3{color:var(--text);font-size:16px;margin:14px 0 4px}.info p,.info li{margin:4px 0}.info a{color:var(--ice)}
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebApplication", "name": "Online yılbaşı çekilişi (gizli hediye arkadaşı)", "url": "https://nesimapps.com/cekilis/", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "inLanguage": ["tr", "en", "es", "pt"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "TRY"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Kimse kendini ya da birbirini çekebilir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır, kimse kendini çekmez. Mümkün olduğunda eşleşmeler tek büyük bir döngü olarak kurulur (A → B → C → … → A); böylece A kişisi B'yi çekerken B'nin de A'yı çektiği karşılıklı eşleşme çıkmaz."}}, {"@type": "Question", "name": "Eşler ya da kardeşler birbirini çekmesin nasıl yapılır?", "acceptedAnswer": {"@type": "Answer", "text": "\"Birbirini çekmesin\" kutusuna her satıra bir çift yazın (örneğin: Ayşe - Mehmet). Çekiliş bu çiftleri birbirine eşleştirmez. Girdiğiniz kısıtlarla çekiliş mümkün değilse sayfa sizi uyarır; birkaç kısıtı kaldırıp yeniden deneyin."}}, {"@type": "Question", "name": "Girdiğim isimler ve eşleşmeler kaydediliyor mu?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Çekiliş tarayıcınızda yapılır; isimler ve eşleşmeler hiçbir sunucuya gönderilmez, kayıt ya da hesap gerekmez. Kişiye özel bağlantıda eşleşme, bağlantının # işaretinden sonraki kısmında kodlanır ve bu kısım sunucuya iletilmez. Bağlantıyı yalnızca ilgili kişiye gönderin, çünkü bağlantıya sahip olan eşleşmeyi görebilir."}}, {"@type": "Question", "name": "Kaç kişiyle çekiliş yapabilirim?", "acceptedAnswer": {"@type": "Answer", "text": "En az 3, en fazla 50 kişiyle. Her satıra bir isim yazmanız yeterli; aynı isim iki kez yazılırsa sayfa uyarır."}}, {"@type": "Question", "name": "Ücretsiz mi, uygulama indirmem gerekir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Tamamen ücretsizdir ve uygulama gerekmez, telefon ya da bilgisayar tarayıcısında çalışır. Aynı geliştiricinin Snowlings uygulaması (yılbaşı takvimi, kış bulmacaları, tebrik kartları) ayrı bir üründür."}}]}]}</script>
 </head>
 <body>
 <main>
   <div class="lang" id="langs"></div>
   <div id="app"></div>
+<section id="info" class="info">
+  <h2>Online yılbaşı çekilişi (gizli hediye arkadaşı) nasıl çalışır?</h2>
+  <ol>
+    <li><b>Katılımcıları yazın:</b> her satıra bir isim (en az 3, en fazla 50).</li>
+    <li><b>İsterseniz kısıt ekleyin:</b> eşler, kardeşler ya da birbirini çekmesini istemediğiniz kişiler için her satıra bir çift (Ayşe - Mehmet).</li>
+    <li><b>Bütçe, tarih ve not ekleyip</b> "Çekilişi yap" düğmesine basın.</li>
+    <li><b>Eşleşmeleri paylaşın:</b> telefonu sırayla dolaştırın ya da her kişiye ona özel bağlantıyı WhatsApp'tan gönderin; herkes yalnızca kendi eşleşmesini görür.</li>
+  </ol>
+  <h2>Sık sorulan sorular</h2>
+  <h3>Kimse kendini ya da birbirini çekebilir mi?</h3>
+  <p>Hayır, kimse kendini çekmez. Mümkün olduğunda eşleşmeler tek büyük bir döngü olarak kurulur (A → B → C → … → A); böylece A kişisi B'yi çekerken B'nin de A'yı çektiği karşılıklı eşleşme çıkmaz.</p>
+  <h3>Eşler ya da kardeşler birbirini çekmesin nasıl yapılır?</h3>
+  <p>&quot;Birbirini çekmesin&quot; kutusuna her satıra bir çift yazın (örneğin: Ayşe - Mehmet). Çekiliş bu çiftleri birbirine eşleştirmez. Girdiğiniz kısıtlarla çekiliş mümkün değilse sayfa sizi uyarır; birkaç kısıtı kaldırıp yeniden deneyin.</p>
+  <h3>Girdiğim isimler ve eşleşmeler kaydediliyor mu?</h3>
+  <p>Hayır. Çekiliş tarayıcınızda yapılır; isimler ve eşleşmeler hiçbir sunucuya gönderilmez, kayıt ya da hesap gerekmez. Kişiye özel bağlantıda eşleşme, bağlantının # işaretinden sonraki kısmında kodlanır ve bu kısım sunucuya iletilmez. Bağlantıyı yalnızca ilgili kişiye gönderin, çünkü bağlantıya sahip olan eşleşmeyi görebilir.</p>
+  <h3>Kaç kişiyle çekiliş yapabilirim?</h3>
+  <p>En az 3, en fazla 50 kişiyle. Her satıra bir isim yazmanız yeterli; aynı isim iki kez yazılırsa sayfa uyarır.</p>
+  <h3>Ücretsiz mi, uygulama indirmem gerekir mi?</h3>
+  <p>Tamamen ücretsizdir ve uygulama gerekmez, telefon ya da bilgisayar tarayıcısında çalışır. Aynı geliştiricinin Snowlings uygulaması (yılbaşı takvimi, kış bulmacaları, tebrik kartları) ayrı bir üründür.</p>
+  <p class="more">Bu araç <a href="/tr/snowlings/">Snowlings</a> yılbaşı uygulamasının bir parçasıdır: Aralık'ta her gün yeni bir kapı, 6 kış bulmaca oyunu ve tebrik kartları.</p>
+</section>
 <footer id="foot"></footer>
 </main>
 <script src="draw.js"></script>
@@ -256,7 +279,8 @@ footer a{color:var(--ice)}
     if (lm && !state.langSet) lang = lm[1];
     langBar(); footer();
     document.documentElement.lang = lang;
-    document.title = T().title + " | Snowlings";
+    if (lang !== "tr") document.title = T().title + " | Snowlings";
+    var inf = document.getElementById("info"); if (inf) inf.style.display = (lang === "tr" && !m) ? "" : "none";
     if (m) { try { return viewMode(CekilisDraw.decode(m[1])); } catch (e) { /* bozuk baglanti: formu goster */ } }
     if (state.result) resultView("link"); else setupView();
   }
