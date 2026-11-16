@@ -22,6 +22,7 @@ APPS = {
     "nudgelings": ("Nudgelings", "game", True, True, True, None),
     "pentolings": ("Pentolings", "game", True, True, True, None),
     "tombalings": ("Tombalings", "game", True, True, True, None),
+    "snowlings": ("Snowlings", "game", True, False, False, None),
     "brassline": ("Brassline", "game", True, False, True, "casino"),
     "astrolings": ("Astrolings", "app", True, True, False, "astro"),
     "nuzzlings": ("Nuzzlings", "game", False, True, True, "pet"),

@@ -1,0 +1,92 @@
+# -*- coding: utf-8 -*-
+"""Snowlings gizlilik sayfasini (snowlings/privacy.html) uretir: baslik/stil Tombalings sayfasindan, metinler 4 dilde burada.
+Hizmetler: AdMob+UMP, Firebase Analytics/Crashlytics, yerel bildirim, sistem paylasim menusu, sallama algilayici (cihazda).
+Android + iPhone; iPhone'da ATT yok. Calistir: py -3 -X utf8 tools/gen_privacy_snowlings.py"""
+import io, os
+
+G = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+src = io.open(os.path.join(G, "tombalings", "privacy.html"), encoding="utf-8").read()
+head = src[:src.index('  <section id="en"')]
+head = head.replace("Tombalings", "Snowlings").replace("tombalings", "snowlings")
+head = head.replace("--bg:#F4E4C6; --card:#FFFBF0; --text:#2B211C; --dim:#4A3C32; --accent:#C8372A; --link:#2B5FA8;",
+                    "--bg:#0F1D45; --card:#1B2F5E; --text:#F4F8FF; --dim:#B7C6E6; --accent:#FFC94A; --link:#8ED8F8;")
+tail = src[src.rindex("</section>") + len("</section>"):]
+
+ADS = {
+    "en": '<a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>',
+    "tr": '<a href="https://policies.google.com/technologies/partner-sites?hl=tr">Google, hizmetlerini kullanan sitelerden veya uygulamalardan gelen bilgileri nasıl kullanır</a> ve <a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a>',
+    "es": '<a href="https://policies.google.com/technologies/partner-sites?hl=es">Cómo usa Google la información de sitios o aplicaciones que utilizan sus servicios</a> y la <a href="https://policies.google.com/privacy?hl=es">Política de Privacidad de Google</a>',
+    "pt": '<a href="https://policies.google.com/technologies/partner-sites?hl=pt-BR">Como o Google usa informações de sites ou apps que usam seus serviços</a> e a <a href="https://policies.google.com/privacy?hl=pt-BR">Política de Privacidade do Google</a>',
+}
+
+T = {
+    "en": dict(h="Privacy Policy", eff="Effective date: 16 November 2026", sec=[
+        ("", 'Snowlings ("the app") is a winter calendar with puzzle games, greeting cards and a New Year countdown for Android and iPhone. It is made by Nesim Razon, an individual developer ("I", "me"). The app has no accounts; I do not sell any data and I do not operate servers for the app.'),
+        ("Your progress and what you write", "Your progress (solved doors, level stars, snowflakes), settings, and the wishes you seal in the wish capsule are stored only on your phone. They never leave your phone. Greeting cards are created on your phone; when you share one, it is handed to the share menu of your phone and sent only to the app you pick. If Android backup is turned on, Android may include the app data in your device backup to your Google account. Uninstalling the app or clearing its data deletes it."),
+        ("Notifications", "If you turn on reminders, the app asks for your phone's notification permission and then shows a short message when the day's door opens, an hour before the New Year, at midnight, and when your wish capsule can be opened. These notifications are scheduled on your phone; nothing about them is sent anywhere. You can turn them off in the app or in your phone's settings."),
+        ("Motion sensor", "The snow globe uses your phone's motion sensor to detect shaking. This happens on your phone and nothing is recorded or sent."),
+        ("Advertising (Google AdMob)", "The app is free and shows ads provided by Google AdMob: a banner in some screens, an occasional full-screen ad after finishing a level, and optional rewarded ads that you choose to watch. To serve and measure ads and to prevent fraud, Google may collect and process information such as your device's advertising ID, IP address, approximate location derived from the IP address, device and app information, and how you interact with ads. Learn more in {ADS}. In the European Economic Area, the United Kingdom and Switzerland the app asks for your consent first; you can change your choice in the app under <strong>Settings → Ad privacy options</strong>. On iPhone the app does not ask for the app tracking permission (App Tracking Transparency) and does not track you across other companies' apps and websites."),
+        ("Usage statistics (Google Analytics for Firebase)", 'The app sends anonymous events to Google Analytics for Firebase, such as "a door was opened", "a puzzle was solved" (game, level and stars), "a card was shared" or which tab you open. They are linked to a random installation ID, not to you. The advertising ID is not collected for analytics.'),
+        ("Crash reports (Firebase Crashlytics)", "If the app crashes, it sends a technical crash report (error details, device model, system and app version) linked to a random installation ID. It contains no personal information."),
+        ("Children", "The app is not directed to children under 13, and I do not knowingly collect personal information from children. Ads are limited to content suitable for general audiences."),
+        ("Your rights and changes", "Depending on where you live (for example under the GDPR, Brazil's LGPD or Turkey's KVKK), you may have rights over your personal data. Because I do not hold personal data about you, requests about advertising data should be made to Google. If this policy changes, the new version will be published on this page with a new effective date."),
+    ], contact="Contact"),
+    "tr": dict(h="Gizlilik Politikası", eff="Yürürlük tarihi: 16 Kasım 2026", sec=[
+        ("", 'Snowlings ("uygulama"), Android ve iPhone için bulmaca oyunları, tebrik kartları ve yeni yıl geri sayımı olan bir kış takvimidir. Bağımsız geliştirici Nesim Razon ("ben") tarafından yapılmıştır. Uygulamada hesap yoktur; hiçbir veri satmıyorum ve uygulama için sunucu kullanmıyorum.'),
+        ("İlerlemen ve yazdıkların", "İlerlemen (çözülen kapılar, bölüm yıldızları, kar taneleri), ayarların ve dilek kapsülüne mühürlediğin dilekler yalnızca telefonunda saklanır; telefonundan asla çıkmaz. Tebrik kartları telefonunda üretilir; paylaştığında telefonunun paylaşım menüsüne verilir ve yalnızca seçtiğin uygulamaya gider. Android yedeklemesi açıksa Android uygulama verilerini Google hesabındaki cihaz yedeğine ekleyebilir. Uygulamayı kaldırmak ya da verilerini silmek bunları siler."),
+        ("Bildirimler", "Hatırlatmaları açarsan uygulama telefonunun bildirim iznini ister; sonra günün kapısı açıldığında, yeni yıldan bir saat önce, gece yarısı ve dilek kapsülün açılabildiğinde kısa bir mesaj gösterir. Bu bildirimler telefonunda planlanır; bunlarla ilgili hiçbir şey bir yere gönderilmez. Bildirimleri uygulamadan ya da telefonunun ayarlarından kapatabilirsin."),
+        ("Hareket sensörü", "Kar küresi, sallamayı algılamak için telefonunun hareket sensörünü kullanır. Bu telefonunda gerçekleşir; hiçbir şey kaydedilmez ya da gönderilmez."),
+        ("Reklamlar (Google AdMob)", "Uygulama ücretsizdir ve Google AdMob reklamları gösterir: bazı ekranlarda banner, bir bölümü bitirdikten sonra ara sıra tam ekran reklam ve izlemeyi senin seçtiğin isteğe bağlı ödüllü reklamlar. Reklamları sunmak, ölçmek ve dolandırıcılığı önlemek için Google, cihazının reklam kimliği, IP adresi, IP adresinden çıkarılan yaklaşık konum, cihaz ve uygulama bilgileri ile reklamlarla etkileşimin gibi bilgileri toplayıp işleyebilir. Ayrıntılar: {ADS}. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de uygulama önce iznini ister; seçimini uygulamada <strong>Ayarlar → Reklam gizlilik seçenekleri</strong> bölümünden değiştirebilirsin. iPhone'da uygulama uygulama izleme iznini (App Tracking Transparency) istemez ve seni diğer şirketlerin uygulama ve sitelerinde takip etmez."),
+        ("Kullanım istatistikleri (Google Analytics for Firebase)", 'Uygulama Google Analytics for Firebase\'e "bir kapı açıldı", "bir bulmaca çözüldü" (oyun, bölüm ve yıldız), "bir kart paylaşıldı" ya da hangi sekmeyi açtığın gibi anonim olaylar gönderir. Olaylar sana değil, rastgele bir kurulum kimliğine bağlıdır. İstatistikler için reklam kimliği toplanmaz.'),
+        ("Çökme raporları (Firebase Crashlytics)", "Uygulama bir hata yüzünden kapanırsa, rastgele bir kurulum kimliğine bağlı teknik bir çökme raporu (hata ayrıntıları, cihaz modeli, sistem ve uygulama sürümü) gönderir. Kişisel bilgi içermez."),
+        ("Çocuklar", "Uygulama 13 yaş altı çocuklara yönelik değildir ve bilerek çocuklardan kişisel bilgi toplamam. Reklamlar genel izleyiciye uygun içerikle sınırlıdır."),
+        ("Hakların ve değişiklikler", "Yaşadığın yere göre (örneğin KVKK veya GDPR kapsamında) kişisel verilerin üzerinde hakların olabilir. Sana ait kişisel veri tutmadığım için reklam verileriyle ilgili talepler Google'a yapılmalıdır. Bu politika değişirse yeni sürüm, yeni yürürlük tarihiyle bu sayfada yayınlanır."),
+    ], contact="İletişim"),
+    "es": dict(h="Política de privacidad", eff="Fecha de entrada en vigor: 16 de noviembre de 2026", sec=[
+        ("", 'Snowlings («la app») es un calendario de invierno con juegos de puzles, tarjetas de felicitación y cuenta atrás de Año Nuevo para Android y iPhone. Lo ha creado Nesim Razon, desarrollador independiente («yo»). La app no tiene cuentas; no vendo ningún dato y no uso servidores para la app.'),
+        ("Tu progreso y lo que escribes", "Tu progreso (puertas resueltas, estrellas de nivel, copos de nieve), tus ajustes y los deseos que sellas en la cápsula de deseos se guardan solo en tu teléfono y nunca salen de él. Las tarjetas se crean en tu teléfono; cuando compartes una, se entrega al menú de compartir de tu teléfono y solo llega a la app que elijas. Si la copia de seguridad de Android está activada, Android puede incluir los datos de la app en la copia de tu dispositivo en tu cuenta de Google. Desinstalar la app o borrar sus datos los elimina."),
+        ("Notificaciones", "Si activas los recordatorios, la app pide el permiso de notificaciones de tu teléfono y luego muestra un mensaje corto cuando se abre la puerta del día, una hora antes del Año Nuevo, a medianoche y cuando tu cápsula de deseos se puede abrir. Estas notificaciones se programan en tu teléfono; no se envía nada sobre ellas. Puedes desactivarlas en la app o en los ajustes del teléfono."),
+        ("Sensor de movimiento", "La bola de nieve usa el sensor de movimiento de tu teléfono para detectar que lo agitas. Esto ocurre en tu teléfono y no se graba ni se envía nada."),
+        ("Publicidad (Google AdMob)", "La app es gratuita y muestra anuncios de Google AdMob: un banner en algunas pantallas, un anuncio ocasional a pantalla completa tras terminar un nivel y anuncios con recompensa opcionales que decides ver. Para mostrar y medir anuncios y prevenir fraudes, Google puede recopilar y procesar información como el ID de publicidad de tu dispositivo, la dirección IP, la ubicación aproximada derivada de la IP, información del dispositivo y de la app, y cómo interactúas con los anuncios. Más información en {ADS}. En el Espacio Económico Europeo, el Reino Unido y Suiza la app te pide primero tu consentimiento; puedes cambiar tu elección en la app en <strong>Ajustes → Opciones de privacidad de anuncios</strong>. En iPhone la app no solicita el permiso de seguimiento (App Tracking Transparency) y no te rastrea en apps y sitios web de otras empresas."),
+        ("Estadísticas de uso (Google Analytics for Firebase)", 'La app envía eventos anónimos a Google Analytics for Firebase, como «se abrió una puerta», «se resolvió un puzle» (juego, nivel y estrellas), «se compartió una tarjeta» o qué pestaña abres. Están vinculados a un ID de instalación aleatorio, no a ti. No se recopila el ID de publicidad para analítica.'),
+        ("Informes de fallos (Firebase Crashlytics)", "Si la app falla, envía un informe técnico (detalles del error, modelo del dispositivo, versión del sistema y de la app) vinculado a un ID de instalación aleatorio. No contiene información personal."),
+        ("Niños", "La app no está dirigida a menores de 13 años y no recopilo a sabiendas datos personales de niños. Los anuncios se limitan a contenido apto para todos los públicos."),
+        ("Tus derechos y cambios", "Según donde vivas (por ejemplo, conforme al RGPD, la LGPD de Brasil o la KVKK de Turquía), puedes tener derechos sobre tus datos personales. Como no conservo datos personales tuyos, las solicitudes sobre datos publicitarios deben dirigirse a Google. Si esta política cambia, la nueva versión se publicará en esta página con una nueva fecha de entrada en vigor."),
+    ], contact="Contacto"),
+    "pt": dict(h="Política de Privacidade", eff="Data de vigência: 16 de novembro de 2026", sec=[
+        ("", 'O Snowlings ("o app") é um calendário de inverno com jogos de quebra-cabeça, cartões de felicitações e contagem regressiva do Ano Novo para Android e iPhone. Foi criado por Nesim Razon, desenvolvedor independente ("eu"). O app não tem contas; não vendo nenhum dado e não uso servidores para o app.'),
+        ("Seu progresso e o que você escreve", "Seu progresso (portas resolvidas, estrelas dos níveis, flocos de neve), suas configurações e os desejos que você sela na cápsula de desejos ficam armazenados apenas no seu telefone e nunca saem dele. Os cartões são criados no seu telefone; quando você compartilha um, ele é entregue ao menu de compartilhamento do telefone e vai só para o app que você escolher. Se o backup do Android estiver ativado, o Android pode incluir os dados do app no backup do aparelho na sua conta Google. Desinstalar o app ou limpar seus dados os apaga."),
+        ("Notificações", "Se você ativar os lembretes, o app pede a permissão de notificações do seu telefone e depois mostra uma mensagem curta quando a porta do dia abre, uma hora antes do Ano Novo, à meia-noite e quando sua cápsula de desejos puder ser aberta. Essas notificações são agendadas no seu telefone; nada sobre elas é enviado. Você pode desativá-las no app ou nas configurações do telefone."),
+        ("Sensor de movimento", "O globo de neve usa o sensor de movimento do seu telefone para detectar que você o sacode. Isso acontece no seu telefone e nada é gravado ou enviado."),
+        ("Publicidade (Google AdMob)", "O app é gratuito e mostra anúncios do Google AdMob: um banner em algumas telas, um anúncio ocasional em tela cheia após terminar um nível e anúncios com recompensa opcionais que você escolhe assistir. Para exibir e medir anúncios e prevenir fraudes, o Google pode coletar e processar informações como o ID de publicidade do aparelho, o endereço IP, a localização aproximada derivada do IP, informações do aparelho e do app e como você interage com os anúncios. Saiba mais em {ADS}. No Espaço Econômico Europeu, no Reino Unido e na Suíça, o app pede seu consentimento primeiro; você pode mudar sua escolha no app em <strong>Configurações → Opções de privacidade de anúncios</strong>. No iPhone o app não solicita a permissão de rastreamento (App Tracking Transparency) e não rastreia você em apps e sites de outras empresas."),
+        ("Estatísticas de uso (Google Analytics for Firebase)", 'O app envia eventos anônimos ao Google Analytics for Firebase, como "uma porta foi aberta", "um desafio foi resolvido" (jogo, nível e estrelas), "um cartão foi compartilhado" ou qual aba você abre. Eles ficam vinculados a um ID de instalação aleatório, não a você. O ID de publicidade não é coletado para estatísticas.'),
+        ("Relatórios de falhas (Firebase Crashlytics)", "Se o app travar, ele envia um relatório técnico (detalhes do erro, modelo do aparelho, versão do sistema e do app) vinculado a um ID de instalação aleatório. Não contém informações pessoais."),
+        ("Crianças", "O app não é direcionado a menores de 13 anos e não coleto conscientemente informações pessoais de crianças. Os anúncios são limitados a conteúdo adequado ao público geral."),
+        ("Seus direitos e alterações", "Dependendo de onde você mora (por exemplo, pela GDPR, pela LGPD do Brasil ou pela KVKK da Turquia), você pode ter direitos sobre seus dados pessoais. Como não guardo dados pessoais seus, pedidos sobre dados de publicidade devem ser feitos ao Google. Se esta política mudar, a nova versão será publicada nesta página com uma nova data de vigência."),
+    ], contact="Contato"),
+}
+
+out = [head]
+for lang in ("en", "tr", "es", "pt"):
+    d = T[lang]
+    out.append(f'  <section id="{lang}" lang="{lang}">\n    <h2>{d["h"]}</h2>\n    <p class="meta">{d["eff"]}</p>')
+    for title, body in d["sec"]:
+        body = body.replace("{ADS}", ADS[lang])
+        if title:
+            out.append(f"    <h3>{title}</h3>")
+        out.append(f"    <p>{body}</p>")
+    out.append(src[src.index('<h3>', src.index(f'<section id="{lang}"')):][:0])
+    # iletisim bolumu kaynak sayfadan aynen alinir (e-posta tek yerde yonetilir)
+    sec_src = src[src.index(f'<section id="{lang}"'):]
+    sec_src = sec_src[:sec_src.index("</section>")]
+    contact_block = sec_src[sec_src.rindex("    <h3>"):] if "    <h3>" in sec_src else ""
+    out.append(contact_block.rstrip() + "\n  </section>")
+out.append(tail)
+html = "\n".join(out)
+for bad in ("Tombalings", "Tombala", "Bingo", "Play Games", "Billing", "bahis", "betting"):
+    if bad in html:
+        print("UYARI: kalinti:", bad)
+dst = os.path.join(G, "snowlings")
+os.makedirs(dst, exist_ok=True)
+io.open(os.path.join(dst, "privacy.html"), "w", encoding="utf-8", newline="\n").write(html)
+print("ok", os.path.join(dst, "privacy.html"))

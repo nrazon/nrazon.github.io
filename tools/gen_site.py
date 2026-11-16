@@ -19,7 +19,7 @@ def apple_url(v):
 BASE = "https://nesimapps.com"
 # Yayına henüz çıkmamış uygulamaların detay sayfaları: URL'den açılır ama ana sayfa kartı, "Diğer uygulamalarım" listeleri ve sitemap'e GİRMEZ,
 # sayfada noindex var. Uygulama Play'de yayınlanınca slug buradan silinir (ve home_data.json'da status=live yapılır).
-HIDDEN = {"pulselings"}  # Pulselings: Play incelemesinde (13.11.2026), yayin gunu buradan SIL. Yayinda olmayan uygulama onceden buraya eklenir, yayin gunu silinir (Brassline 13.11.2026 yayinda: cikarildi)
+HIDDEN = {"pulselings", "snowlings"}  # Pulselings: Play incelemesinde (13.11.2026), yayin gunu buradan SIL. Yayinda olmayan uygulama onceden buraya eklenir, yayin gunu silinir (Brassline 13.11.2026 yayinda: cikarildi)
 # Capraz tanitim YOK (kullanici karari 10.11.2026): bu uygulama hicbir sayfadaki "Diger oyunlar" listesinde cikmaz, yayinda bile.
 NO_PROMO = {"brassline"}
 NO_CARD = set()  # ana sayfada karti olmayan slug kumesi (Brassline 13.11.2026: kart acildi)
@@ -27,7 +27,7 @@ NO_CARD = set()  # ana sayfada karti olmayan slug kumesi (Brassline 13.11.2026: 
 VIDEOS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "videos.json"), encoding="utf-8"))
 VIDEO_LABEL = {"tr": "Tanıtım videosu", "en": "Promo video", "es": "Vídeo de presentación", "pt": "Vídeo de apresentação"}
 VIDEO_PLAY = {"tr": "Tanıtım videosunu oynat", "en": "Play promo video", "es": "Reproducir el vídeo", "pt": "Reproduzir o vídeo"}
-PKG_FALLBACK = {"calisan": "com.calisanasistani.nesimapps", "uzaygunlugu": "com.uzaygunlugu.nesimapps", "haftasonum": "com.haftasonum.nesimapps", "beamies": "com.beamies.nesimapps", "logiclings": "com.logiclings.nesimapps", "grumblings": "com.grumblings.nesimapps", "nudgelings": "com.nudgelings.nesimapps", "pentolings": "com.pentolings.nesimapps", "tombalings": "com.tombalings.nesimapps", "astrolings": "com.astrolings.nesimapps", "nuzzlings": "com.nuzzlingscat.nesimapps", "brassline": "com.brassline.nesimapps", "pulselings": "com.pulselings.nesimapps"}
+PKG_FALLBACK = {"snowlings": "com.snowlings.nesimapps", "calisan": "com.calisanasistani.nesimapps", "uzaygunlugu": "com.uzaygunlugu.nesimapps", "haftasonum": "com.haftasonum.nesimapps", "beamies": "com.beamies.nesimapps", "logiclings": "com.logiclings.nesimapps", "grumblings": "com.grumblings.nesimapps", "nudgelings": "com.nudgelings.nesimapps", "pentolings": "com.pentolings.nesimapps", "tombalings": "com.tombalings.nesimapps", "astrolings": "com.astrolings.nesimapps", "nuzzlings": "com.nuzzlingscat.nesimapps", "brassline": "com.brassline.nesimapps", "pulselings": "com.pulselings.nesimapps"}
 REF = "&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"
 
 # ------------------------------------------------------------------ ortak: göz takip betiği
@@ -647,6 +647,7 @@ LANDING_CSS += VIDEO_CSS
 
 # slug, klasör, ad(tr), ad(en), simge, tint, ekran görüntüsü kaynakları {dil: klasör}, yeni-rozet
 APPDEFS = [
+    ("snowlings", "Snowlings", "Snowlings", "Snowlings", "icon.png", "#2E6FBF", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2027-01-10"),
     ("pulselings", "Pulselings", "Pulselings", "Pulselings", "icon.png", "#FF5C7A", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, None),
     ("brassline", "Brassline", "Brassline", "Brassline", "icon.png", "#C9A45C", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-15"),
     ("astrolings", "Astrolings", "Astrolings", "Astrolings", "icon.png", "#6A5ACD", {"tr": "tr"}, "2026-11-24"),
