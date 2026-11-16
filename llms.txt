@@ -34,6 +34,7 @@
 - [National Anthem of Canada](https://nesimapps.com/anthemcanada/): O Canada, the national anthem of Canada, with a waving flag; plays in the background and on Chromecast.
 - [TurkSail](https://nesimapps.com/turksail/): Sailing and sea news, race results and articles from turksail.com (in Turkish).
 - [MedyaFobi](https://nesimapps.com/medyafobi/): Media relations, crisis communication and speaking trainings from medyafobi.com (in Turkish).
+- [Pulselings](https://nesimapps.com/pulselings/): Check your resting pulse with your camera and flash; calm, private, no account. Not a medical device.
 
 ## Policies
 

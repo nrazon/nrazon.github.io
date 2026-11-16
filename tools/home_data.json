@@ -717,14 +717,14 @@
   },
   "tint": "#FF5C7A",
   "pkg": "com.pulselings.nesimapps",
-  "new": null,
+  "new": "2026-11-30",
   "desc": {
    "tr": "Kamera ve flaşla dinlenik nabzını kontrol et; sakin, gizli, hesapsız. Tıbbi cihaz değildir.",
    "en": "Check your resting pulse with your camera and flash; calm, private, no account. Not a medical device.",
    "es": "Revisa tu pulso en reposo con la cámara y el flash; tranquilo, privado, sin cuenta. No es un dispositivo médico.",
    "pt": "Verifique sua pulsação em repouso com a câmera e o flash; tranquilo, privado, sem conta. Não é um dispositivo médico."
   },
-  "status": "soon",
+  "status": "live",
   "popular": false,
   "desc_live": {
    "tr": "Kamera ve flaşla dinlenik nabzını kontrol et; sakin, gizli, hesapsız. Tıbbi cihaz değildir.",
