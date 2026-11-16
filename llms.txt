@@ -26,6 +26,7 @@
 - [Çalışan Asistanı](https://nesimapps.com/calisan/): Net salary, severance and notice pay, overtime and leave planning in one app, for employees in Turkey (Turkish only), with a friendly payslip assistant.
 - [Astrolings](https://nesimapps.com/astrolings/): Your zodiac sign's daily companion: daily readings, a Moon calendar, sign compatibility and 12 cute zodiac creatures (Turkish only).
 - [Uzay Günlüğü](https://nesimapps.com/uzaygunlugu/): A new space card every day, Turkey from space, the spinning Earth and the live position of the ISS, built on NASA's public data (Turkish only).
+- [Pulselings](https://nesimapps.com/pulselings/): Check your resting pulse with your camera and flash; calm, private, no account. Not a medical device.
 - [Şans Oyunları](https://nesimapps.com/sansoyunlari/): Results of the Turkish lotteries (Sayısal Loto, Süper Loto, Şans Topu, On Numara, Milli Piyango), random tickets and ticket checking.
 - [Where Am I?](https://nesimapps.com/whereami/): See where you are on the map with your address and coordinates; explore places and photos nearby.
 - [Age Calculator](https://nesimapps.com/agecalculator/): Calculate exact age and the time between dates, and keep a list of birthdays and anniversaries.
@@ -35,7 +36,6 @@
 - [National Anthem of Canada](https://nesimapps.com/anthemcanada/): O Canada, the national anthem of Canada, with a waving flag; plays in the background and on Chromecast.
 - [TurkSail](https://nesimapps.com/turksail/): Sailing and sea news, race results and articles from turksail.com (in Turkish).
 - [MedyaFobi](https://nesimapps.com/medyafobi/): Media relations, crisis communication and speaking trainings from medyafobi.com (in Turkish).
-- [Pulselings](https://nesimapps.com/pulselings/): Check your resting pulse with your camera and flash; calm, private, no account. Not a medical device.
 
 ## Policies
 

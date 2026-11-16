@@ -685,12 +685,48 @@
    "hash": "bcf1906a46de2b8e4a940c9bdf6236c9"
   },
   {
+   "url": "https://nesimapps.com/blog/how-to-run-an-online-secret-santa-draw-free-no-sign-up/",
+   "loc": {
+    "en": "https://nesimapps.com/blog/how-to-run-an-online-secret-santa-draw-free-no-sign-up/",
+    "tr": "https://nesimapps.com/tr/yazilar/online-yilbasi-cekilisi-nasil-yapilir-gizli-hediye-arkadasi/",
+    "es": "https://nesimapps.com/es/blog/como-hacer-un-sorteo-de-amigo-invisible-online-gratis-sin-registro/",
+    "pt": "https://nesimapps.com/pt/blog/como-fazer-um-sorteio-de-amigo-secreto-online-gratis-sem-cadastro/"
+   },
+   "default": "en",
+   "hash": "546a7095b58cc2a4fc679b6c79638b4b"
+  },
+  {
    "url": "https://nesimapps.com/tr/yazilar/online-yilbasi-cekilisi-nasil-yapilir-gizli-hediye-arkadasi/",
    "loc": {
-    "tr": "https://nesimapps.com/tr/yazilar/online-yilbasi-cekilisi-nasil-yapilir-gizli-hediye-arkadasi/"
+    "en": "https://nesimapps.com/blog/how-to-run-an-online-secret-santa-draw-free-no-sign-up/",
+    "tr": "https://nesimapps.com/tr/yazilar/online-yilbasi-cekilisi-nasil-yapilir-gizli-hediye-arkadasi/",
+    "es": "https://nesimapps.com/es/blog/como-hacer-un-sorteo-de-amigo-invisible-online-gratis-sin-registro/",
+    "pt": "https://nesimapps.com/pt/blog/como-fazer-um-sorteio-de-amigo-secreto-online-gratis-sem-cadastro/"
    },
-   "default": "tr",
-   "hash": "20948f3bceb0c9de9b78d1ce82006561"
+   "default": "en",
+   "hash": "c965e64fbb9bf62b61b5d3864b6d46ab"
+  },
+  {
+   "url": "https://nesimapps.com/es/blog/como-hacer-un-sorteo-de-amigo-invisible-online-gratis-sin-registro/",
+   "loc": {
+    "en": "https://nesimapps.com/blog/how-to-run-an-online-secret-santa-draw-free-no-sign-up/",
+    "tr": "https://nesimapps.com/tr/yazilar/online-yilbasi-cekilisi-nasil-yapilir-gizli-hediye-arkadasi/",
+    "es": "https://nesimapps.com/es/blog/como-hacer-un-sorteo-de-amigo-invisible-online-gratis-sin-registro/",
+    "pt": "https://nesimapps.com/pt/blog/como-fazer-um-sorteio-de-amigo-secreto-online-gratis-sem-cadastro/"
+   },
+   "default": "en",
+   "hash": "a6763b6a17b9e4a056443915ae4de233"
+  },
+  {
+   "url": "https://nesimapps.com/pt/blog/como-fazer-um-sorteio-de-amigo-secreto-online-gratis-sem-cadastro/",
+   "loc": {
+    "en": "https://nesimapps.com/blog/how-to-run-an-online-secret-santa-draw-free-no-sign-up/",
+    "tr": "https://nesimapps.com/tr/yazilar/online-yilbasi-cekilisi-nasil-yapilir-gizli-hediye-arkadasi/",
+    "es": "https://nesimapps.com/es/blog/como-hacer-un-sorteo-de-amigo-invisible-online-gratis-sin-registro/",
+    "pt": "https://nesimapps.com/pt/blog/como-fazer-um-sorteio-de-amigo-secreto-online-gratis-sem-cadastro/"
+   },
+   "default": "en",
+   "hash": "413a40a7418425e83f24123d215697a1"
   },
   {
    "url": "https://nesimapps.com/blog/keeping-two-dozen-android-apps-maintainable-solo/",
@@ -1229,7 +1265,7 @@
     "pt": "https://nesimapps.com/pt/blog/"
    },
    "default": "en",
-   "hash": "bc761287f814ba12ce6878ef387a9c5b"
+   "hash": "50540aba8ed4df1f0a906f9d61fe44c0"
   },
   {
    "url": "https://nesimapps.com/tr/yazilar/",
@@ -1251,7 +1287,7 @@
     "pt": "https://nesimapps.com/pt/blog/"
    },
    "default": "en",
-   "hash": "713eba77313a0b01c71cf9fc9972cdf9"
+   "hash": "8108fb83acee1d2dce54ca6be8370295"
   },
   {
    "url": "https://nesimapps.com/pt/blog/",
@@ -1262,7 +1298,7 @@
     "pt": "https://nesimapps.com/pt/blog/"
    },
    "default": "en",
-   "hash": "0aa0bdceafb39d05c9166cf69dbb71de"
+   "hash": "98d5f7ea78cba9b8390ea3ef98c88d2e"
   }
  ],
  "index": {
