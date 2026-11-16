@@ -428,5 +428,13 @@
    "es",
    "pt"
   ]
+ },
+ "cekilis": {
+  "langs": [
+   "tr"
+  ],
+  "default": "tr",
+  "cat": "games",
+  "priv": []
  }
 }

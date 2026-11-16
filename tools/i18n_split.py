@@ -27,7 +27,7 @@ MARK = "<!--i18n-split-->"
 LANGS = ["en", "tr", "es", "pt", "fr"]
 LABEL = {"tr": "TR", "en": "EN", "es": "ES", "pt": "PT", "fr": "FR"}
 OGLOC = {"en": "en_US", "tr": "tr_TR", "es": "es_ES", "pt": "pt_BR", "fr": "fr_CA"}
-SKIP_DIRS = {"tools", "qr", "go", "badges", "node_modules", ".git", ".github", "playreports", "tr", "es", "pt", "fr", "guides", "rehber", "guias", "blog", "yazilar"}
+SKIP_DIRS = {"tools", "qr", "go", "badges", "node_modules", ".git", ".github", "playreports", "tr", "es", "pt", "fr", "guides", "rehber", "guias", "blog", "yazilar", "cekilis"}
 SOCIAL = ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]
 
 SUFFIX = {
@@ -435,6 +435,11 @@ def write_sitemap(lastmod, today):
     guides = guides + load_json(os.path.join(TOOLS, "_blog_pages.json"), {}).get("pages", [])
     for g in guides:  # {"url","loc":{lang:url},"hash"}
         entries.append(g)
+    # Tek sayfalik web araclari (el yazisi, i18n_split'e GIRMEZ): cekilis/ (Snowlings yilbasi cekilisi, 16.11.2026)
+    for extra in ("cekilis/",):
+        if os.path.exists(os.path.join(G, extra, "index.html")):
+            h = str(os.path.getsize(os.path.join(G, extra, "index.html")))
+            entries.append({"url": f"https://nesimapps.com/{extra}", "hash": h})
     xml = ['<?xml version="1.0" encoding="UTF-8"?>',
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
     changed = False
