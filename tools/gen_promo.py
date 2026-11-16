@@ -11,6 +11,7 @@ ROOT = os.path.dirname(SITE)
 
 # (anahtar, ad, paket, klasor)   en yeni en ustte
 GAMES = [
+    ('snowlings', 'Snowlings', 'com.snowlings.nesimapps', 'Snowlings'),
     ('pentolings', 'Pentolings', 'com.pentolings.nesimapps', 'Pentolings'),
     ('nudgelings', 'Nudgelings', 'com.nudgelings.nesimapps', 'Nudgelings'),
     ('grumblings', 'Grumblings', 'com.grumblings.nesimapps', 'Grumblings'),
@@ -24,6 +25,10 @@ GAMES = [
     ('tictactoe', 'Tic-Tac-Toe', 'com.tictactoe.nesimapps', 'TicTacToe'),
 ]
 DESC_OVERRIDE = {  # tr, en, es, pt
+    'snowlings': ("Yılbaşı kış takvimi: Aralık'ta her gün yeni bir kapı, 6 kış bulmaca oyunu, tebrik kartları ve yeni yıl geri sayımı.",
+                  'A winter calendar for December: a new door every day, 6 winter puzzle games, greeting cards and a New Year countdown.',
+                  'Un calendario de invierno para diciembre: una puerta nueva cada día, 6 juegos de puzles, tarjetas y cuenta atrás de Año Nuevo.',
+                  'Um calendário de inverno para dezembro: uma porta nova por dia, 6 jogos de quebra-cabeça, cartões e contagem regressiva do Ano Novo.'),
     'pentolings': ('Parçaları şekle döşe, renkleri patlat: tek uygulamada iki sevimli bulmaca. 150 bölüm.',
                    'Fit the pieces, pop the colours: two cute puzzle games in one. 150 levels.',
                    'Encaja las piezas, explota los colores: dos puzles adorables en uno. 150 niveles.',

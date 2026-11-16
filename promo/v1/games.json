@@ -2,6 +2,16 @@
  "v": 1,
  "games": [
   {
+   "key": "snowlings",
+   "name": "Snowlings",
+   "pkg": "com.snowlings.nesimapps",
+   "icon": "icons/snowlings.png",
+   "tr": "Yılbaşı kış takvimi: Aralık'ta her gün yeni bir kapı, 6 kış bulmaca oyunu, tebrik kartları ve yeni yıl geri sayımı.",
+   "en": "A winter calendar for December: a new door every day, 6 winter puzzle games, greeting cards and a New Year countdown.",
+   "es": "Un calendario de invierno para diciembre: una puerta nueva cada día, 6 juegos de puzles, tarjetas y cuenta atrás de Año Nuevo.",
+   "pt": "Um calendário de inverno para dezembro: uma porta nova por dia, 6 jogos de quebra-cabeça, cartões e contagem regressiva do Ano Novo."
+  },
+  {
    "key": "pentolings",
    "name": "Pentolings",
    "pkg": "com.pentolings.nesimapps",

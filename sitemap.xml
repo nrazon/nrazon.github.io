@@ -1017,6 +1017,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/sliplines/"/>
   </url>
   <url>
+    <loc>https://nesimapps.com/es/snowlings/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/snowlings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/snowlings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/snowlings/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/snowlings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/snowlings/"/>
+  </url>
+  <url>
     <loc>https://nesimapps.com/es/tictactoe/</loc>
     <lastmod>2026-11-16</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/tictactoe/"/>
@@ -2085,6 +2094,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/sliplines/"/>
   </url>
   <url>
+    <loc>https://nesimapps.com/pt/snowlings/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/snowlings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/snowlings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/snowlings/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/snowlings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/snowlings/"/>
+  </url>
+  <url>
     <loc>https://nesimapps.com/pt/tictactoe/</loc>
     <lastmod>2026-11-16</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/tictactoe/"/>
@@ -2141,6 +2159,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/sliplines/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/sliplines/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/sliplines/"/>
+  </url>
+  <url>
+    <loc>https://nesimapps.com/snowlings/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/snowlings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/snowlings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/snowlings/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/snowlings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/snowlings/"/>
   </url>
   <url>
     <loc>https://nesimapps.com/sondepremler/</loc>
@@ -2605,6 +2632,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/sliplines/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/sliplines/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/sliplines/"/>
+  </url>
+  <url>
+    <loc>https://nesimapps.com/tr/snowlings/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/snowlings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/snowlings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/snowlings/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/snowlings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/snowlings/"/>
   </url>
   <url>
     <loc>https://nesimapps.com/tr/sondepremler/</loc>
