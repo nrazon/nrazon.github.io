@@ -193,6 +193,13 @@ footer a{color:var(--ice)}
   function run() {
     var p = parse();
     if (p.err) return setupView(p.err);
+    state.parsed = p;
+    redraw();
+  }
+
+  /* Yeniden cek: form alanlari artik ekranda yok; kayitli isimler ve kisitlarla tekrar cek */
+  function redraw() {
+    var p = state.parsed;
     var r = CekilisDraw.draw(p.names, p.ex);
     if (!r) return setupView(T().imposs);
     state.result = { map: r.map, names: p.names, cfg: p.cfg };
@@ -222,7 +229,7 @@ footer a{color:var(--ice)}
     app.innerHTML = h;
     document.getElementById("m_link").onclick = function () { resultView("link"); };
     document.getElementById("m_pass").onclick = function () { resultView("pass"); };
-    document.getElementById("again").onclick = run;
+    document.getElementById("again").onclick = redraw;
     document.getElementById("edit").onclick = function () { setupView(); };
     app.onclick = function (e) {
       var el = e.target, wa = el.getAttribute && el.getAttribute("data-wa"), cp = el.getAttribute && el.getAttribute("data-cp"), pn = el.getAttribute && el.getAttribute("data-pn");
