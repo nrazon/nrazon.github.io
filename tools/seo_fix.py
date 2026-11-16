@@ -9,7 +9,7 @@ import re
 G = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 import json
 IOS_APPS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "ios_apps.json"), encoding="utf-8"))
-SKIP = ("tools", "node_modules", "google6b7f0191d81507b3.html")
+SKIP = ("tools", "node_modules", "google6b7f0191d81507b3.html", "cekilis")  # cekilis: el yazisi tek sayfalik arac, seo_fix bozuyordu (16.11.2026)
 
 
 def describe(path, title):
