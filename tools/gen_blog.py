@@ -17,7 +17,7 @@ DIRS = {"en": "blog", "tr": "tr/yazilar", "es": "es/blog", "pt": "pt/blog"}
 # Yayın günü eklenenler (Pentolings yayına çıkınca): "pento_history", "pento_dlx"
 BLOG_MODULES = ["mahjong_solvable", "mahjong_history", "daily_seed", "generated_levels", "ttt_history",
                 "deprem_buyukluk", "deprem_oncesi_sonrasi", "deprem_veri_kaynaklari", "bmi_nedir", "bmi_hatalar", "yas_hesaplama", "artik_yil_dogum_gunu", "pento_history", "pento_dlx", "tombala_cards",
-                "merkur_retrosu", "burclar_takimyildiz", "ay_evreleri",
+                "merkur_retrosu", "burclar_takimyildiz", "ay_evreleri", "yilbasi_cekilisi",
                 "solo_dev_portfolio", "ad_lifecycle_events", "compose_juice",
                 "ios_without_mac", "kmp_agp9_traps", "iphone_usb_windows", "remote_promo_list",
                 "rewrite_parity_oracle", "one_qr_two_stores", "store_screenshots_without_a_phone", "app_review_information_request", "app_store_link_storefront"]  # 3 yazı (12.11.2026); son 3 yalnız Türkçe: merkur_retrosu, burclar_takimyildiz, ay_evreleri: yalnız Türkçe (Astrolings)

@@ -685,6 +685,14 @@
    "hash": "bcf1906a46de2b8e4a940c9bdf6236c9"
   },
   {
+   "url": "https://nesimapps.com/tr/yazilar/online-yilbasi-cekilisi-nasil-yapilir-gizli-hediye-arkadasi/",
+   "loc": {
+    "tr": "https://nesimapps.com/tr/yazilar/online-yilbasi-cekilisi-nasil-yapilir-gizli-hediye-arkadasi/"
+   },
+   "default": "tr",
+   "hash": "20948f3bceb0c9de9b78d1ce82006561"
+  },
+  {
    "url": "https://nesimapps.com/blog/keeping-two-dozen-android-apps-maintainable-solo/",
    "loc": {
     "en": "https://nesimapps.com/blog/keeping-two-dozen-android-apps-maintainable-solo/",
@@ -1232,7 +1240,7 @@
     "pt": "https://nesimapps.com/pt/blog/"
    },
    "default": "en",
-   "hash": "13780e7b33337fd2b42bd13d1c88cf90"
+   "hash": "977d2057b639cff3bdbaee5185595f36"
   },
   {
    "url": "https://nesimapps.com/es/blog/",

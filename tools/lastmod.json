@@ -2520,8 +2520,8 @@
   "date": "2026-11-16"
  },
  "https://nesimapps.com/tr/yazilar/": {
-  "hash": "13780e7b33337fd2b42bd13d1c88cf90",
-  "date": "2026-11-15"
+  "hash": "977d2057b639cff3bdbaee5185595f36",
+  "date": "2026-11-16"
  },
  "https://nesimapps.com/tr/yazilar/29-subat-dogum-gunu-yas-nasil-sayilir/": {
   "hash": "7c0c73c39975177a81132e810c3123db",
@@ -2656,7 +2656,7 @@
   "date": "2026-11-16"
  },
  "https://nesimapps.com/cekilis/": {
-  "hash": "26634",
+  "hash": "26967",
   "date": "2026-11-16"
  },
  "https://nesimapps.com/es/pulselings/": {
@@ -2689,6 +2689,10 @@
  },
  "https://nesimapps.com/tr/snowlings/": {
   "hash": "f5e6676c6628f342ceb595a6affdbb1e",
+  "date": "2026-11-16"
+ },
+ "https://nesimapps.com/tr/yazilar/online-yilbasi-cekilisi-nasil-yapilir-gizli-hediye-arkadasi/": {
+  "hash": "20948f3bceb0c9de9b78d1ce82006561",
   "date": "2026-11-16"
  }
 }
