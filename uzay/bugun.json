@@ -1,7 +1,16 @@
 {
- "uretim": "2026-11-16T13:39:10Z",
+ "uretim": "2026-11-17T14:24:39Z",
  "surum": 1,
  "apod": [
+  {
+   "tarih": "2026-11-17",
+   "baslik": "Milky Way versus Aurora",
+   "tur": "image",
+   "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-17-milky-way-versus-aurora/",
+   "ozet_en": "Explanation: Are these two giant arches battling for control of the sky? No, but it sure looks like it! The arch on the left is the central band of our Milky Way Galaxy, an ancient system of stars, gas, and dust that predates our Earth and is very far away.",
+   "kredi": "Guillaume Scheib",
+   "nasa_kaynakli": false
+  },
   {
    "tarih": "2026-11-16",
    "baslik": "NGC 7129: Star Formation with Jets from Webb",
@@ -81,15 +90,6 @@
    "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-8-major-fireball-meteor/",
    "ozet_en": "Explanation: The sky glows with soft pinkish colors of fading twilight in this serendipitous mountaintop vista. Taken in subfreezing temperatures, the thoughtfully composed photo shows snowy, rugged peaks seen from a mountain pass on 2017 November 14.",
    "kredi": "Ollie Taylor",
-   "nasa_kaynakli": false
-  },
-  {
-   "tarih": "2026-11-07",
-   "baslik": "De Gerlache-Kocher Massif",
-   "tur": "image",
-   "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-7-de-gerlache-kocher-massif/",
-   "ozet_en": "Explanation: De Gerlache-Kocher massif looms on the visible horizon in this close-up of the edge of the Moon. The mountainous formation rises about 4 kilometers above its surroundings and is located very close to the lunar south pole.",
-   "kredi": "Alejandro Sanz",
    "nasa_kaynakli": false
   }
  ],
@@ -192,24 +192,10 @@
  },
  "asteroitler": {
   "aralik": [
-   "2026-11-16",
-   "2026-11-30"
+   "2026-11-17",
+   "2026-12-01"
   ],
   "liste": [
-   {
-    "ad": "(2026 VW15)",
-    "tarih": "2026-Nov-16 05:26",
-    "mesafe_ay": 5.1,
-    "hiz_kms": 6.1,
-    "cap_m": 14
-   },
-   {
-    "ad": "(2026 VM3)",
-    "tarih": "2026-Nov-16 16:47",
-    "mesafe_ay": 8.1,
-    "hiz_kms": 3.7,
-    "cap_m": 12
-   },
    {
     "ad": "(2026 VJ13)",
     "tarih": "2026-Nov-17 05:36",
@@ -223,6 +209,13 @@
     "mesafe_ay": 18.3,
     "hiz_kms": 10.1,
     "cap_m": 13
+   },
+   {
+    "ad": "(2026 WA)",
+    "tarih": "2026-Nov-17 07:59",
+    "mesafe_ay": 0.3,
+    "hiz_kms": 6.7,
+    "cap_m": 5
    },
    {
     "ad": "(2026 VB13)",
@@ -247,10 +240,10 @@
    },
    {
     "ad": "(2026 VY18)",
-    "tarih": "2026-Nov-18 18:28",
+    "tarih": "2026-Nov-18 18:27",
     "mesafe_ay": 10.0,
     "hiz_kms": 17.5,
-    "cap_m": 35
+    "cap_m": 36
    },
    {
     "ad": "(2018 NE1)",
@@ -258,6 +251,13 @@
     "mesafe_ay": 16.6,
     "hiz_kms": 13.3,
     "cap_m": 74
+   },
+   {
+    "ad": "(2007 WK3)",
+    "tarih": "2026-Nov-19 07:19",
+    "mesafe_ay": 14.2,
+    "hiz_kms": 7.8,
+    "cap_m": 20
    },
    {
     "ad": "(2026 VA11)",
@@ -271,7 +271,7 @@
     "tarih": "2026-Nov-19 22:20",
     "mesafe_ay": 12.1,
     "hiz_kms": 9.9,
-    "cap_m": 66
+    "cap_m": 67
    },
    {
     "ad": "(2026 VD6)",
@@ -288,9 +288,44 @@
    {
     "baslik": "Tropical Cyclone Xavier",
     "tur": "Severe Storms",
-    "tarih": "2026-11-15",
-    "boylam": -158.9,
-    "enlem": -8.2
+    "tarih": "2026-11-17",
+    "boylam": -163.5,
+    "enlem": -9.1
+   },
+   {
+    "baslik": "Wildfire Range 47, Forrest, Mississippi",
+    "tur": "Wildfires",
+    "tarih": "2026-11-13",
+    "boylam": -89.159329,
+    "enlem": 31.099822
+   },
+   {
+    "baslik": "Wildfire 201W, Perry, Mississippi",
+    "tur": "Wildfires",
+    "tarih": "2026-11-13",
+    "boylam": -89.079783,
+    "enlem": 31.119783
+   },
+   {
+    "baslik": "Prescribed Fire rx-Northern Scuppernong, Waukesha, Wisconsin",
+    "tur": "Wildfires",
+    "tarih": "2026-11-13",
+    "boylam": -88.4829256,
+    "enlem": 42.9241779
+   },
+   {
+    "baslik": "Prescribed Fire 3R RX - KRUMM MP, Stevens, Washington",
+    "tur": "Wildfires",
+    "tarih": "2026-11-12",
+    "boylam": -117.533129,
+    "enlem": 48.402056
+   },
+   {
+    "baslik": "Prescribed Fire Holly Springs 119-1 &amp; 84-2 RX, Lafayette, Mississippi",
+    "tur": "Wildfires",
+    "tarih": "2026-11-12",
+    "boylam": -89.421184,
+    "enlem": 34.49329
    },
    {
     "baslik": "Wildfire Red Hill, Perry, Mississippi",
@@ -312,13 +347,6 @@
     "tarih": "2026-11-09",
     "boylam": -83.259363,
     "enlem": 33.747313
-   },
-   {
-    "baslik": "Typhoon Cempaka",
-    "tur": "Severe Storms",
-    "tarih": "2026-11-11",
-    "boylam": 154.1,
-    "enlem": 30.2
    },
    {
     "baslik": "Tropical Storm Pena",
@@ -361,34 +389,6 @@
     "tarih": "2026-10-30",
     "boylam": 163.35,
     "enlem": -69.76
-   },
-   {
-    "baslik": "Prescribed Fire McCarty Piles RX, Coconino, Arizona",
-    "tur": "Wildfires",
-    "tarih": "2026-10-29",
-    "boylam": -111.262694,
-    "enlem": 34.513944
-   },
-   {
-    "baslik": "Prescribed Fire Freidland-Chimney Piles RX, Coconino, Arizona",
-    "tur": "Wildfires",
-    "tarih": "2026-10-29",
-    "boylam": -111.666667,
-    "enlem": 35.283333
-   },
-   {
-    "baslik": "Prescribed Fire TON RX - BAILEY LOST HP, Okanogan, Washington",
-    "tur": "Wildfires",
-    "tarih": "2026-10-29",
-    "boylam": -119.055205,
-    "enlem": 48.532726
-   },
-   {
-    "baslik": "Wildfire South Tank Trail, Perry, Mississippi",
-    "tur": "Wildfires",
-    "tarih": "2026-10-28",
-    "boylam": -89.097783,
-    "enlem": 31.085833
    }
   ],
   "kredi": "NASA EONET"
@@ -396,25 +396,25 @@
  "iss_tle": {
   "OBJECT_NAME": "ISS (ZARYA)",
   "OBJECT_ID": "1998-067A",
-  "EPOCH": "2026-11-16T04:09:58.887072",
-  "MEAN_MOTION": 15.4940776,
-  "ECCENTRICITY": 0.00073961,
-  "INCLINATION": 51.6321,
-  "RA_OF_ASC_NODE": 267.9711,
-  "ARG_OF_PERICENTER": 31.0164,
-  "MEAN_ANOMALY": 329.126,
+  "EPOCH": "2026-11-17T04:56:00.646656",
+  "MEAN_MOTION": 15.49427836,
+  "ECCENTRICITY": 0.00073782,
+  "INCLINATION": 51.6317,
+  "RA_OF_ASC_NODE": 262.8623,
+  "ARG_OF_PERICENTER": 34.8927,
+  "MEAN_ANOMALY": 325.2544,
   "EPHEMERIS_TYPE": 0,
   "CLASSIFICATION_TYPE": "U",
   "NORAD_CAT_ID": 25544,
   "ELEMENT_SET_NO": 999,
-  "REV_AT_EPOCH": 59531,
-  "BSTAR": 0.00016856939,
-  "MEAN_MOTION_DOT": 8.984e-05,
+  "REV_AT_EPOCH": 59547,
+  "BSTAR": 0.00017680433,
+  "MEAN_MOTION_DOT": 9.453e-05,
   "MEAN_MOTION_DDOT": 0
  },
  "gibs": {
-  "tarih": "2026-11-15",
-  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_NOAA21_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-11-15&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
+  "tarih": "2026-11-16",
+  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_NOAA21_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-11-16&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
   "kredi": "NASA GIBS / Worldview"
  }
 }
