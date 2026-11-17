@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Puerta de región para Analytics en iOS cuando no se lee el país de la SIM</title>
+<meta name="description" content="Cómo dos apps pequeñas de noticias activan la analítica solo fuera del EEE, el Reino Unido y Suiza: una regla común en Kotlin, señales de SIM en Android y…">
+<link rel="canonical" href="https://nesimapps.com/es/blog/puerta-de-region-para-analytics-en-ios-cuando-no-se-lee-el-pais-de-la-sim/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/analytics-region-gate-on-ios-when-the-sim-country-is-unreadable/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/ios-te-sim-ulkesi-okunamayinca-analytics-bolge-kapisi/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/puerta-de-region-para-analytics-en-ios-cuando-no-se-lee-el-pais-de-la-sim/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/porta-de-regiao-do-analytics-no-ios-quando-o-pais-do-chip-nao-pode-ser-lido/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/analytics-region-gate-on-ios-when-the-sim-country-is-unreadable/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Puerta de región para Analytics en iOS cuando no se lee el país de la SIM">
+<meta property="og:description" content="Cómo dos apps pequeñas de noticias activan la analítica solo fuera del EEE, el Reino Unido y Suiza: una regla común en Kotlin, señales de SIM en Android y…">
+<meta property="og:url" content="https://nesimapps.com/es/blog/puerta-de-region-para-analytics-en-ios-cuando-no-se-lee-el-pais-de-la-sim/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Puerta de región para Analytics en iOS cuando no se lee el país de la SIM">
+<meta name="twitter:description" content="Cómo dos apps pequeñas de noticias activan la analítica solo fuera del EEE, el Reino Unido y Suiza: una regla común en Kotlin, señales de SIM en Android y…">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Puerta de región para Analytics en iOS cuando no se lee el país de la SIM", "description": "Cómo dos apps pequeñas de noticias activan la analítica solo fuera del EEE, el Reino Unido y Suiza: una regla común en Kotlin, señales de SIM en Android y, en iOS, región y zona horaria.", "inLanguage": "es", "mainEntityOfPage": "https://nesimapps.com/es/blog/puerta-de-region-para-analytics-en-ios-cuando-no-se-lee-el-pais-de-la-sim/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-17", "dateModified": "2026-11-17", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Notas de desarrollo, iOS, Android"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/es/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/es/blog/"}, {"@type": "ListItem", "position": 3, "name": "Puerta de región para Analytics en iOS cuando no se lee el país de la SIM", "item": "https://nesimapps.com/es/blog/puerta-de-region-para-analytics-en-ios-cuando-no-se-lee-el-pais-de-la-sim/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Por qué no pedir consentimiento en todas partes?", "acceptedAnswer": {"@type": "Answer", "text": "Porque estas dos apps son pequeñas y sin anuncios, y preferimos no mostrar ningún formulario de consentimiento. Desactivar la recogida en las regiones restringidas era el diseño más simple para nosotros."}}, {"@type": "Question", "name": "¿Por qué iOS no puede usar el país de la SIM?", "acceptedAnswer": {"@type": "Answer", "text": "Una app normal de iPhone no puede leer el país de la SIM ni de la red, así que el lado de iOS usa la región de la configuración regional y la zona horaria."}}, {"@type": "Question", "name": "¿Qué pasa si las señales faltan o se contradicen?", "acceptedAnswer": {"@type": "Answer", "text": "La recogida queda desactivada. Lo desconocido cuenta como desactivado y un solo valor restringido basta para desactivarla."}}, {"@type": "Question", "name": "¿Es asesoramiento jurídico?", "acceptedAnswer": {"@type": "Answer", "text": "No. Es la descripción de cómo construimos nuestra propia regla. Decide para tus apps con el asesoramiento adecuado."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/analytics-region-gate-on-ios-when-the-sim-country-is-unreadable/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/ios-te-sim-ulkesi-okunamayinca-analytics-bolge-kapisi/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/puerta-de-region-para-analytics-en-ios-cuando-no-se-lee-el-pais-de-la-sim/" hreflang="es" data-lang="es" aria-current="page">ES</a><a href="/pt/blog/porta-de-regiao-do-analytics-no-ios-quando-o-pais-do-chip-nao-pode-ser-lido/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/es/">Nesim Apps</a> › <a href="/es/blog/">Blog</a></nav>
+    <h1>Puerta de región para Analytics en iOS cuando no se lee el país de la SIM</h1>
+    <p class="by">Por Nesim Razon, desarrollador móvil independiente · 2026-11-17</p>
+    <p class="tags"><a href="/es/blog/#devlog">#Notas de desarrollo</a><a href="/es/blog/#ios">#iOS</a><a href="/es/blog/#android">#Android</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Dos de nuestras apps recogen estadísticas de uso solo en dispositivos fuera del Espacio Económico Europeo, el Reino Unido y Suiza, para no necesitar un formulario de consentimiento. En Android es fácil de comprobar. En el iPhone no se puede leer el país de la SIM ni de la red, así que la misma regla necesitó otras señales. Aquí se cuenta cómo se escribe la regla una sola vez en Kotlin Multiplatform y qué hace cuando duda. Describe una decisión de diseño propia, no es asesoramiento jurídico.</p>
+    <h2>La regla en una frase</h2>
+    <p>La analítica está activada solo cuando estamos seguros de que el dispositivo está fuera de las regiones restringidas. Si cualquier señal apunta a un país restringido, está desactivada. Si no se conoce ninguna señal, está desactivada. La duda siempre significa desactivada.</p>
+    <p>La regla vive en el código común, de modo que Android y el iPhone no pueden desviarse. Es una función que recibe cualquier número de códigos de país, algunos de los cuales pueden faltar, y devuelve si se permite la recogida.</p>
+    <h2>La función compartida</h2>
+    <p>La función recorta cada valor, lo pasa a mayúsculas y conserva solo los códigos de dos letras. Si no queda nada, devuelve false. Si no, devuelve true solo cuando ninguno de los códigos está en el conjunto restringido: los Estados miembros de la UE, Islandia, Liechtenstein y Noruega, el Reino Unido y Suiza.</p>
+    <p>Pasar a mayúsculas importa, porque las plataformas informan los códigos de formas distintas, y un valor vacío o mal formado debe contar como desconocido y no como permitido. Las pruebas unitarias cubren justo estos casos: Turquía pasa, un solo código restringido en cualquier sitio falla (un teléfono turco con SIM alemana se trata como restringido), los códigos en minúscula se normalizan y sin datos queda desactivado.</p>
+    <h2>Android: tres señales</h2>
+    <p>En Android la app puede leer la región del dispositivo, el país de la SIM y el país de la red. Se pasan juntos a la función. Un viajero en Alemania con SIM turca, o un residente alemán con SIM turca, acaban con la recogida desactivada, porque gana cualquier valor restringido.</p>
+    <p>El indicador de recogida está desactivado por defecto en el manifiesto y la app vuelve a decidir en cada inicio. Una compilación de depuración o de pruebas nunca recoge, porque la recogida exige además el indicador de la versión de tienda.</p>
+    <h2>iPhone: menos señales</h2>
+    <p>En el iPhone, el país de la SIM y de la red no están disponibles para una app normal. Quedan la región del dispositivo en la configuración regional, que refleja un ajuste elegido por el usuario, y la zona horaria, que refleja dónde está realmente el teléfono.</p>
+    <p>Por eso el lado de iOS pasa el código de país de la configuración regional a la misma función y añade una segunda comprobación sobre el nombre de la zona horaria. Toda zona que empiece por Europe/ cuenta como restringida, igual que algunas zonas atlánticas y africanas de países restringidos, como Madeira, las Canarias, las Azores, las Feroe y Ceuta.</p>
+    <h2>La excepción de Estambul</h2>
+    <p>Europe/Istanbul empieza por Europe/, pero Turquía no está en el conjunto restringido y estas son apps de noticias turcas. La comprobación de zona horaria tiene una excepción explícita para ella. Sin esa línea, casi todos los iPhone turcos habrían quedado desactivados.</p>
+    <p>La comprobación de zona horaria es deliberadamente tosca. A veces desactivará la analítica de alguien fuera de las regiones restringidas, por ejemplo un viajero en París con configuración turca, y ese es el lado seguro para equivocarse.</p>
+    <h2>Lo que el código no hace</h2>
+    <p>El proyecto de iOS también se entrega con la recogida automática desactivada en su lista de propiedades, y la app la activa en el código solo cuando la regla lo permite. No hay identificador publicitario y las apps no contienen anuncios. Los eventos llevan una categoría o un tipo, nunca datos personales.</p>
+    <p>Las piezas para copiar son pequeñas: un conjunto restringido, una función que trata lo desconocido como desactivado, un ayudante de zona horaria con una excepción explícita para tu zona y pruebas unitarias que fijan el comportamiento. Decidir qué regiones excluir es cosa tuya y de tu asesor, no del código.</p>
+    
+    <section class="faq"><h2>Preguntas frecuentes</h2><details><summary>¿Por qué no pedir consentimiento en todas partes?</summary><p>Porque estas dos apps son pequeñas y sin anuncios, y preferimos no mostrar ningún formulario de consentimiento. Desactivar la recogida en las regiones restringidas era el diseño más simple para nosotros.</p></details><details><summary>¿Por qué iOS no puede usar el país de la SIM?</summary><p>Una app normal de iPhone no puede leer el país de la SIM ni de la red, así que el lado de iOS usa la región de la configuración regional y la zona horaria.</p></details><details><summary>¿Qué pasa si las señales faltan o se contradicen?</summary><p>La recogida queda desactivada. Lo desconocido cuenta como desactivado y un solo valor restringido basta para desactivarla.</p></details><details><summary>¿Es asesoramiento jurídico?</summary><p>No. Es la descripción de cómo construimos nuestra propia regla. Decide para tus apps con el asesoramiento adecuado.</p></details></section>
+    <section><h2>Más del blog</h2><ul class="glist"><li><a href="/es/blog/el-numero-de-compilacion-de-ios-que-se-quedo-en-1-tres-arreglos-fallidos-y-uno-que-funciono/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>El número de compilación de iOS que se quedó en 1: tres arreglos fallidos y uno que funcionó</b></div></a></li><li><a href="/es/blog/por-que-mi-enlace-de-la-app-store-dio-404-y-la-pagina-mostraba-capturas-de-2018/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Por qué mi enlace de la App Store dio 404 y la página mostraba capturas de 2018</b></div></a></li><li><a href="/es/blog/guia-2-1-de-app-store-informacion-necesaria-lo-que-envie/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Guía 2.1 de App Store «Information Needed»: lo que envié</b></div></a></li><li><a href="/es/blog/capturas-de-app-store-sin-telefono-robolectric-un-cargador-de-imagenes-falso-y-un-navegador-sin-interfaz/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Capturas de App Store sin teléfono: Robolectric, un cargador de imágenes falso y un navegador sin interfaz</b></div></a></li><li><a href="/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Un código QR para dos tiendas de apps: una pequeña página de redirección</b></div></a></li><li><a href="/es/blog/reescribir-para-kotlin-multiplatform-sin-cambiar-el-comportamiento-el-codigo-antiguo-como-oraculo-de-pruebas/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Reescribir para Kotlin Multiplatform sin cambiar el comportamiento: el código antiguo como oráculo de pruebas</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

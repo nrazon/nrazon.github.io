@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iOS&#x27;ta SIM Ülkesi Okunamayınca Analytics Bölge Kapısı</title>
+<meta name="description" content="İki küçük haber uygulaması analitiği yalnız AEA, Birleşik Krallık ve İsviçre dışında nasıl açıyor: ortak Kotlin kuralı, Android SIM sinyalleri ve iOS&#x27;ta…">
+<link rel="canonical" href="https://nesimapps.com/tr/yazilar/ios-te-sim-ulkesi-okunamayinca-analytics-bolge-kapisi/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/analytics-region-gate-on-ios-when-the-sim-country-is-unreadable/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/ios-te-sim-ulkesi-okunamayinca-analytics-bolge-kapisi/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/puerta-de-region-para-analytics-en-ios-cuando-no-se-lee-el-pais-de-la-sim/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/porta-de-regiao-do-analytics-no-ios-quando-o-pais-do-chip-nao-pode-ser-lido/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/analytics-region-gate-on-ios-when-the-sim-country-is-unreadable/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="iOS&#x27;ta SIM Ülkesi Okunamayınca Analytics Bölge Kapısı">
+<meta property="og:description" content="İki küçük haber uygulaması analitiği yalnız AEA, Birleşik Krallık ve İsviçre dışında nasıl açıyor: ortak Kotlin kuralı, Android SIM sinyalleri ve iOS&#x27;ta…">
+<meta property="og:url" content="https://nesimapps.com/tr/yazilar/ios-te-sim-ulkesi-okunamayinca-analytics-bolge-kapisi/">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="iOS&#x27;ta SIM Ülkesi Okunamayınca Analytics Bölge Kapısı">
+<meta name="twitter:description" content="İki küçük haber uygulaması analitiği yalnız AEA, Birleşik Krallık ve İsviçre dışında nasıl açıyor: ortak Kotlin kuralı, Android SIM sinyalleri ve iOS&#x27;ta…">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "iOS'ta SIM Ülkesi Okunamayınca Analytics Bölge Kapısı", "description": "İki küçük haber uygulaması analitiği yalnız AEA, Birleşik Krallık ve İsviçre dışında nasıl açıyor: ortak Kotlin kuralı, Android SIM sinyalleri ve iOS'ta yerel ayar ile saat dilimi yedeği.", "inLanguage": "tr", "mainEntityOfPage": "https://nesimapps.com/tr/yazilar/ios-te-sim-ulkesi-okunamayinca-analytics-bolge-kapisi/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-17", "dateModified": "2026-11-17", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Geliştirici notları, iOS, Android"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/tr/"}, {"@type": "ListItem", "position": 2, "name": "Yazılar", "item": "https://nesimapps.com/tr/yazilar/"}, {"@type": "ListItem", "position": 3, "name": "iOS'ta SIM Ülkesi Okunamayınca Analytics Bölge Kapısı", "item": "https://nesimapps.com/tr/yazilar/ios-te-sim-ulkesi-okunamayinca-analytics-bolge-kapisi/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Neden her yerde onay istemiyoruz?", "acceptedAnswer": {"@type": "Answer", "text": "Bu iki uygulama küçük ve reklamsız; hiç onay formu göstermemeyi tercih ettik. Kısıtlı bölgelerde toplamayı kapatmak bizim için daha basit bir tasarımdı."}}, {"@type": "Question", "name": "iOS neden SIM ülkesini kullanamıyor?", "acceptedAnswer": {"@type": "Answer", "text": "Sıradan bir iPhone uygulaması SIM ya da ağ ülkesini okuyamaz; bu yüzden iOS tarafı yerel ayar bölgesini ve saat dilimini kullanır."}}, {"@type": "Question", "name": "Sinyaller eksik ya da çelişkiliyse ne olur?", "acceptedAnswer": {"@type": "Answer", "text": "Toplama kapalı kalır. Bilinmeyen kapalı sayılır ve kısıtlı tek bir değer bile kapatır."}}, {"@type": "Question", "name": "Bu hukuki tavsiye mi?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Kendi kuralımızı nasıl kurduğumuzun anlatımıdır. Kendi uygulamalarınız için uygun danışmanlıkla karar verin."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/analytics-region-gate-on-ios-when-the-sim-country-is-unreadable/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/ios-te-sim-ulkesi-okunamayinca-analytics-bolge-kapisi/" hreflang="tr" data-lang="tr" aria-current="page">TR</a><a href="/es/blog/puerta-de-region-para-analytics-en-ios-cuando-no-se-lee-el-pais-de-la-sim/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/porta-de-regiao-do-analytics-no-ios-quando-o-pais-do-chip-nao-pode-ser-lido/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/tr/">Nesim Apps</a> › <a href="/tr/yazilar/">Yazılar</a></nav>
+    <h1>iOS&#x27;ta SIM Ülkesi Okunamayınca Analytics Bölge Kapısı</h1>
+    <p class="by">Nesim Razon, bağımsız mobil uygulama geliştiricisi · 2026-11-17</p>
+    <p class="tags"><a href="/tr/yazilar/#devlog">#Geliştirici notları</a><a href="/tr/yazilar/#ios">#iOS</a><a href="/tr/yazilar/#android">#Android</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Uygulamalarımızdan ikisi, onay formu gerekmesin diye kullanım istatistiklerini yalnızca Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre dışındaki cihazlarda toplar. Android&#x27;de bunu denetlemek kolaydır. iPhone&#x27;da SIM ve ağ ülkesi okunamaz; aynı kuralın başka sinyallere ihtiyacı vardı. Bu yazı kuralın Kotlin Multiplatform&#x27;da bir kez nasıl yazıldığını ve emin olamadığında ne yaptığını anlatıyor. Kendi tasarım tercihimizi anlatır, hukuki tavsiye değildir.</p>
+    <h2>Kural tek cümlede</h2>
+    <p>Analitik yalnızca cihazın kısıtlı bölgelerin dışında olduğundan emin olduğumuzda açıktır. Herhangi bir sinyal kısıtlı bir ülkeyi gösteriyorsa kapalıdır. Hiçbir sinyal bilinmiyorsa kapalıdır. Emin olmamak her zaman kapalı demektir.</p>
+    <p>Kural ortak kodda durur; böylece Android ile iPhone birbirinden ayrılamaz. Bazıları eksik olabilen istenen sayıda ülke kodu alan ve toplamanın izinli olup olmadığını döndüren bir fonksiyondur.</p>
+    <h2>Ortak fonksiyon</h2>
+    <p>Fonksiyon her değeri kırpar, büyük harfe çevirir ve yalnızca iki harfli kodları tutar. Hiçbir şey kalmazsa false döner. Aksi hâlde yalnızca kodların hiçbiri kısıtlı kümede değilse true döner: AB üye ülkeleri, İzlanda, Lihtenştayn ve Norveç, Birleşik Krallık ve İsviçre.</p>
+    <p>Büyük harfe çevirmek önemlidir, çünkü platformlar kodları farklı bildirir ve boş ya da bozuk bir değer izinli değil, bilinmiyor sayılmalıdır. Birim testleri tam olarak bu durumları kapsar: Türkiye geçer, herhangi bir yerdeki tek bir kısıtlı kod başarısız olur (Alman SIM&#x27;li bir Türk telefonu kısıtlı sayılır), küçük harfli kodlar normalleştirilir ve hiç veri yoksa kapalıdır.</p>
+    <h2>Android: üç sinyal</h2>
+    <p>Android&#x27;de uygulama cihaz bölgesini, SIM ülkesini ve ağ ülkesini okuyabilir. Üçü birlikte fonksiyona verilir. Türk SIM&#x27;li Almanya&#x27;daki bir gezgin ya da Türk SIM&#x27;li bir Alman sakini toplamayı kapalı bırakır, çünkü kısıtlı herhangi bir değer kazanır.</p>
+    <p>Toplama bayrağı manifestte varsayılan olarak kapalıdır ve uygulama her açılışta yeniden karar verir. Debug ya da staging derlemesi hiç toplamaz, çünkü toplama ayrıca market sürümü bayrağı ister.</p>
+    <h2>iPhone: daha az sinyal</h2>
+    <p>iPhone&#x27;da SIM ve ağ ülkesi sıradan bir uygulamaya açık değildir. Geriye yerel ayardaki cihaz bölgesi kalır; bu, kullanıcının seçtiği bir ayarı yansıtır; bir de telefonun gerçekte nerede olduğunu yansıtan saat dilimi.</p>
+    <p>Bu yüzden iOS tarafı yerel ayarın ülke kodunu aynı fonksiyona verir ve saat dilimi adı için ikinci bir denetim ekler. Europe/ ile başlayan her dilim kısıtlı sayılır; kısıtlı ülkelere ait birkaç Atlantik ve Afrika dilimi de öyle: Madeira, Kanarya Adaları, Azorlar, Faroe Adaları ve Ceuta.</p>
+    <h2>İstanbul istisnası</h2>
+    <p>Europe/Istanbul, Europe/ ile başlar ama Türkiye kısıtlı kümede değildir ve bunlar Türkçe haber uygulamalarıdır. Saat dilimi denetiminde bunun için açık bir istisna vardır. O satır olmasaydı neredeyse her Türk iPhone&#x27;u kapanırdı.</p>
+    <p>Saat dilimi denetimi bilerek kabadır. Zaman zaman kısıtlı bölgelerin dışındaki birinin analitiğini kapatacaktır, örneğin Türkçe yerel ayarlı Paris&#x27;teki bir gezgin; yanılmak için bu güvenli yöndür.</p>
+    <h2>Kodun yapmadığı şeyler</h2>
+    <p>iOS projesi ayrıca özellik listesinde otomatik toplamayı kapalı gönderir ve uygulama onu yalnızca kural izin verdiğinde kodda açar. Reklam kimliği yoktur ve uygulamalarda reklam bulunmaz. Olaylar bir kategori ya da tür taşır, asla kişisel veri taşımaz.</p>
+    <p>Kopyalanacak parçalar küçüktür: kısıtlı bir küme, bilinmeyeni kapalı sayan bir fonksiyon, kendi yerel diliminiz için açık istisnası olan bir saat dilimi yardımcısı ve davranışı sabitleyen birim testleri. Hangi bölgelerin hariç tutulacağı kararı kodun değil, sizin ve danışmanınızındır.</p>
+    
+    <section class="faq"><h2>Sık sorulan sorular</h2><details><summary>Neden her yerde onay istemiyoruz?</summary><p>Bu iki uygulama küçük ve reklamsız; hiç onay formu göstermemeyi tercih ettik. Kısıtlı bölgelerde toplamayı kapatmak bizim için daha basit bir tasarımdı.</p></details><details><summary>iOS neden SIM ülkesini kullanamıyor?</summary><p>Sıradan bir iPhone uygulaması SIM ya da ağ ülkesini okuyamaz; bu yüzden iOS tarafı yerel ayar bölgesini ve saat dilimini kullanır.</p></details><details><summary>Sinyaller eksik ya da çelişkiliyse ne olur?</summary><p>Toplama kapalı kalır. Bilinmeyen kapalı sayılır ve kısıtlı tek bir değer bile kapatır.</p></details><details><summary>Bu hukuki tavsiye mi?</summary><p>Hayır. Kendi kuralımızı nasıl kurduğumuzun anlatımıdır. Kendi uygulamalarınız için uygun danışmanlıkla karar verin.</p></details></section>
+    <section><h2>Diğer yazılar</h2><ul class="glist"><li><a href="/tr/yazilar/ios-derleme-numarasi-1-de-takildi-isleyen-bir-cozum-ve-uc-islemeyen/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>1&#x27;de Takılan iOS Derleme Numarası: İşlemeyen Üç Çözüm ve İşleyen Bir Çözüm</b></div></a></li><li><a href="/tr/yazilar/app-store-baglantim-neden-404-verdi-ve-sayfa-2018-ekran-goruntulerini-gosterdi/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>App Store Bağlantım Neden 404 Verdi ve Sayfa 2018 Ekran Görüntülerini Gösterdi</b></div></a></li><li><a href="/tr/yazilar/app-store-inceleme-kurali-2-1-bilgi-gerekli-ne-gonderdim/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>App Store İnceleme Kuralı 2.1 &quot;Bilgi Gerekli&quot;: Ne Gönderdim</b></div></a></li><li><a href="/tr/yazilar/telefonsuz-app-store-ekran-goruntuleri-robolectric-sahte-gorsel-yukleyici-ve-basliksiz-tarayici/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Telefonsuz App Store Ekran Görüntüleri: Robolectric, Sahte Görsel Yükleyici ve Başsız Tarayıcı</b></div></a></li><li><a href="/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>İki Mağaza İçin Tek QR Kodu: Küçük Bir Yönlendirme Sayfası</b></div></a></li><li><a href="/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Davranışı Değiştirmeden Kotlin Multiplatform&#x27;a Geçiş: Eski Kodu Test Kâhini Olarak Tutmak</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

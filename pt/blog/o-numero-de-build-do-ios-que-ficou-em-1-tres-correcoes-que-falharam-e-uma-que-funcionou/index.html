@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt" data-lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O número de build do iOS que ficou em 1 | Nesim Apps</title>
+<meta name="description" content="Por que o CFBundleVersion ficou em 1 num app iOS gerado com XcodeGen e compilado na nuvem, três tentativas que não fizeram nada e o passo com PlistBuddy que…">
+<link rel="canonical" href="https://nesimapps.com/pt/blog/o-numero-de-build-do-ios-que-ficou-em-1-tres-correcoes-que-falharam-e-uma-que-funcionou/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/ios-build-number-stuck-at-one-three-failed-fixes-and-one-that-worked/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/ios-derleme-numarasi-1-de-takildi-isleyen-bir-cozum-ve-uc-islemeyen/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/el-numero-de-compilacion-de-ios-que-se-quedo-en-1-tres-arreglos-fallidos-y-uno-que-funciono/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/o-numero-de-build-do-ios-que-ficou-em-1-tres-correcoes-que-falharam-e-uma-que-funcionou/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/ios-build-number-stuck-at-one-three-failed-fixes-and-one-that-worked/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="O número de build do iOS que ficou em 1: três correções que falharam e uma que funcionou">
+<meta property="og:description" content="Por que o CFBundleVersion ficou em 1 num app iOS gerado com XcodeGen e compilado na nuvem, três tentativas que não fizeram nada e o passo com PlistBuddy que…">
+<meta property="og:url" content="https://nesimapps.com/pt/blog/o-numero-de-build-do-ios-que-ficou-em-1-tres-correcoes-que-falharam-e-uma-que-funcionou/">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="O número de build do iOS que ficou em 1: três correções que falharam e uma que funcionou">
+<meta name="twitter:description" content="Por que o CFBundleVersion ficou em 1 num app iOS gerado com XcodeGen e compilado na nuvem, três tentativas que não fizeram nada e o passo com PlistBuddy que…">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "O número de build do iOS que ficou em 1: três correções que falharam e uma que funcionou", "description": "Por que o CFBundleVersion ficou em 1 num app iOS gerado com XcodeGen e compilado na nuvem, três tentativas que não fizeram nada e o passo com PlistBuddy que finalmente definiu o número.", "inLanguage": "pt", "mainEntityOfPage": "https://nesimapps.com/pt/blog/o-numero-de-build-do-ios-que-ficou-em-1-tres-correcoes-que-falharam-e-uma-que-funcionou/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-17", "dateModified": "2026-11-17", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Notas de desenvolvimento, iOS"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/pt/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/pt/blog/"}, {"@type": "ListItem", "position": 3, "name": "O número de build do iOS que ficou em 1: três correções que falharam e uma que funcionou", "item": "https://nesimapps.com/pt/blog/o-numero-de-build-do-ios-que-ficou-em-1-tres-correcoes-que-falharam-e-uma-que-funcionou/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Qual é a diferença entre a versão e o número de build?", "acceptedAnswer": {"@type": "Answer", "text": "A versão é o número que os usuários veem, por exemplo 1.0. O número de build só precisa subir a cada envio dessa versão."}}, {"@type": "Question", "name": "Por que editar a descrição do projeto não funcionou?", "acceptedAnswer": {"@type": "Answer", "text": "O Info.plist gerado pelo XcodeGen não pegou o número de build dessa configuração, então o pacote manteve seu próprio valor."}}, {"@type": "Question", "name": "Como verificar o valor empacotado?", "acceptedAnswer": {"@type": "Answer", "text": "Lê-se o CFBundleVersion do Info.plist dentro do pacote pronto e imprime-se no log de build antes de enviar."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/ios-build-number-stuck-at-one-three-failed-fixes-and-one-that-worked/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/ios-derleme-numarasi-1-de-takildi-isleyen-bir-cozum-ve-uc-islemeyen/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/el-numero-de-compilacion-de-ios-que-se-quedo-en-1-tres-arreglos-fallidos-y-uno-que-funciono/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/o-numero-de-build-do-ios-que-ficou-em-1-tres-correcoes-que-falharam-e-uma-que-funcionou/" hreflang="pt" data-lang="pt" aria-current="page">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/pt/">Nesim Apps</a> › <a href="/pt/blog/">Blog</a></nav>
+    <h1>O número de build do iOS que ficou em 1: três correções que falharam e uma que funcionou</h1>
+    <p class="by">Por Nesim Razon, desenvolvedor mobile independente · 2026-11-17</p>
+    <p class="tags"><a href="/pt/blog/#devlog">#Notas de desenvolvimento</a><a href="/pt/blog/#ios">#iOS</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Cada envio ao App Store Connect precisa de um número de build maior que o anterior. Nosso pipeline na nuvem continuava produzindo um pacote com número de build 1, não importava o que mudássemos. Foram necessárias três tentativas para descobrir o motivo. Esta é a história e a correção, para quem compila apps iOS a partir de um projeto Xcode gerado sem ter um Mac próprio.</p>
+    <h2>O sintoma</h2>
+    <p>A etapa de envio falhou com um erro dizendo que a versão do pacote deve ser maior que a enviada anteriormente. O primeiro envio de um app sempre funciona, então o problema só aparece a partir do segundo build. O número exibido para o build na loja era 1 todas as vezes.</p>
+    <p>Há dois números em jogo. A versão de marketing, como 1.0, é a que as pessoas veem. O número de build, CFBundleVersion, só precisa aumentar a cada envio da mesma versão de marketing.</p>
+    <h2>Primeira tentativa: opções do arquivamento</h2>
+    <p>A ferramenta de build permite passar opções extras ao comando de arquivamento, então passamos o número de build ali. Nada mudou. A opção foi aceita sem efeito algum sobre o valor que acabava no pacote.</p>
+    <h2>Segunda tentativa: editar a descrição do projeto</h2>
+    <p>O projeto é gerado pelo XcodeGen a partir de um pequeno arquivo de descrição, que tem um campo para o número de build. Reescrevemos esse campo com sed antes de gerar o projeto, usando o número da execução da integração contínua. O projeto gerado continha o valor novo, mas o pacote ainda dizia 1.</p>
+    <p>O motivo é que o Info.plist produzido pelo XcodeGen não pega o número de build dessa configuração. Ele tem seu próprio valor, e é esse que é empacotado.</p>
+    <h2>Terceira tentativa e uma ideia melhor</h2>
+    <p>Uma terceira variação da mesma ideia falhou do mesmo jeito. O que precisava mudar não eram as configurações de build, e sim o arquivo que realmente é lido: o Info.plist.</p>
+    <h2>A correção: escrever no Info.plist</h2>
+    <p>Depois que o projeto é gerado, um único comando define o valor diretamente: PlistBuddy com Set :CFBundleVersion e o número. O número é 1000 mais o contador de builds do serviço de integração contínua, então sempre cresce e não colide com envios anteriores.</p>
+    <p>A segunda metade da correção é provar. Antes de enviar, o script lê o CFBundleVersion do pacote pronto e o imprime no log. Se o valor estiver errado, você vê em um minuto, e não depois de um envio com falha.</p>
+    <h2>O que levar</h2>
+    <ul><li>Defina o número de build no arquivo que é empacotado, não numa configuração que talvez não chegue a ele.</li><li>Imprima o valor do pacote final, não o da sua entrada.</li><li>Use um contador que só sobe, como o número de build da integração contínua com um deslocamento fixo.</li><li>Se o envio disser que a versão do pacote deve ser maior, olhe primeiro o pacote.</li></ul>
+    
+    <section class="faq"><h2>Perguntas frequentes</h2><details><summary>Qual é a diferença entre a versão e o número de build?</summary><p>A versão é o número que os usuários veem, por exemplo 1.0. O número de build só precisa subir a cada envio dessa versão.</p></details><details><summary>Por que editar a descrição do projeto não funcionou?</summary><p>O Info.plist gerado pelo XcodeGen não pegou o número de build dessa configuração, então o pacote manteve seu próprio valor.</p></details><details><summary>Como verificar o valor empacotado?</summary><p>Lê-se o CFBundleVersion do Info.plist dentro do pacote pronto e imprime-se no log de build antes de enviar.</p></details></section>
+    <section><h2>Mais do blog</h2><ul class="glist"><li><a href="/pt/blog/porta-de-regiao-do-analytics-no-ios-quando-o-pais-do-chip-nao-pode-ser-lido/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Porta de região do Analytics no iOS quando o país do chip não pode ser lido</b></div></a></li><li><a href="/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Por que meu link da App Store deu 404 e a página mostrava capturas de 2018</b></div></a></li><li><a href="/pt/blog/diretriz-2-1-da-app-store-informacao-necessaria-o-que-enviei/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Diretriz 2.1 da App Store &quot;Information Needed&quot;: o que enviei</b></div></a></li><li><a href="/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Capturas de tela da App Store sem celular: Robolectric, um carregador de imagens falso e um navegador sem interface</b></div></a></li><li><a href="/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Um código QR para duas lojas de apps: uma pequena página de redirecionamento</b></div></a></li><li><a href="/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Reescrever para Kotlin Multiplatform sem mudar o comportamento: o código antigo como oráculo de testes</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

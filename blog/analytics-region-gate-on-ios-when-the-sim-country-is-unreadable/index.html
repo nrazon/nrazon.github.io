@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analytics Region Gate on iOS When the SIM Country Is Unreadable</title>
+<meta name="description" content="How two small news apps turn analytics on only outside the EEA, UK and Switzerland: a shared Kotlin rule, Android SIM signals, and an iOS fallback to locale…">
+<link rel="canonical" href="https://nesimapps.com/blog/analytics-region-gate-on-ios-when-the-sim-country-is-unreadable/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/analytics-region-gate-on-ios-when-the-sim-country-is-unreadable/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/ios-te-sim-ulkesi-okunamayinca-analytics-bolge-kapisi/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/puerta-de-region-para-analytics-en-ios-cuando-no-se-lee-el-pais-de-la-sim/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/porta-de-regiao-do-analytics-no-ios-quando-o-pais-do-chip-nao-pode-ser-lido/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/analytics-region-gate-on-ios-when-the-sim-country-is-unreadable/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Analytics Region Gate on iOS When the SIM Country Is Unreadable">
+<meta property="og:description" content="How two small news apps turn analytics on only outside the EEA, UK and Switzerland: a shared Kotlin rule, Android SIM signals, and an iOS fallback to locale…">
+<meta property="og:url" content="https://nesimapps.com/blog/analytics-region-gate-on-ios-when-the-sim-country-is-unreadable/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Analytics Region Gate on iOS When the SIM Country Is Unreadable">
+<meta name="twitter:description" content="How two small news apps turn analytics on only outside the EEA, UK and Switzerland: a shared Kotlin rule, Android SIM signals, and an iOS fallback to locale…">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Analytics Region Gate on iOS When the SIM Country Is Unreadable", "description": "How two small news apps turn analytics on only outside the EEA, UK and Switzerland: a shared Kotlin rule, Android SIM signals, and an iOS fallback to locale and time zone.", "inLanguage": "en", "mainEntityOfPage": "https://nesimapps.com/blog/analytics-region-gate-on-ios-when-the-sim-country-is-unreadable/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-17", "dateModified": "2026-11-17", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Dev notes, iOS, Android"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Analytics Region Gate on iOS When the SIM Country Is Unreadable", "item": "https://nesimapps.com/blog/analytics-region-gate-on-ios-when-the-sim-country-is-unreadable/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why not just ask for consent everywhere?", "acceptedAnswer": {"@type": "Answer", "text": "Because these two apps are small and ad-free, and we preferred not to show a consent form at all. Turning collection off in the restricted regions was the simpler design for us."}}, {"@type": "Question", "name": "Why can iOS not use the SIM country?", "acceptedAnswer": {"@type": "Answer", "text": "An ordinary iPhone app cannot read the SIM or network country, so the iOS side uses the locale region and the time zone instead."}}, {"@type": "Question", "name": "What happens when the signals are missing or conflict?", "acceptedAnswer": {"@type": "Answer", "text": "Collection stays off. Unknown counts as off, and any single restricted value switches it off."}}, {"@type": "Question", "name": "Is this legal advice?", "acceptedAnswer": {"@type": "Answer", "text": "No. It is a description of how we built our own rule. Decide for your own apps with proper advice."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/analytics-region-gate-on-ios-when-the-sim-country-is-unreadable/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/ios-te-sim-ulkesi-okunamayinca-analytics-bolge-kapisi/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/puerta-de-region-para-analytics-en-ios-cuando-no-se-lee-el-pais-de-la-sim/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/porta-de-regiao-do-analytics-no-ios-quando-o-pais-do-chip-nao-pode-ser-lido/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>Analytics Region Gate on iOS When the SIM Country Is Unreadable</h1>
+    <p class="by">By Nesim Razon, independent mobile developer · 2026-11-17</p>
+    <p class="tags"><a href="/blog/#devlog">#Dev notes</a><a href="/blog/#ios">#iOS</a><a href="/blog/#android">#Android</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Two of our apps collect usage statistics only on devices outside the European Economic Area, the United Kingdom and Switzerland, so that no consent form is needed. On Android that is easy to check. On iPhone the SIM and network country cannot be read, so the same rule needed a different set of signals. This is how the rule is written once in Kotlin Multiplatform, and what it does when it is unsure. It describes our own design choice, not legal advice.</p>
+    <h2>The rule in one sentence</h2>
+    <p>Analytics is on only when we are sure the device is outside the restricted regions. If any signal points to a restricted country, it is off. If no signal is known at all, it is off. Being unsure always means off.</p>
+    <p>The rule lives in common code, so Android and iPhone cannot drift apart. It is a function that takes any number of country codes, some of which can be missing, and returns whether collection is allowed.</p>
+    <h2>The shared function</h2>
+    <p>The function trims each value, upper-cases it and keeps only two-letter codes. If nothing is left, it returns false. Otherwise it returns true only when none of the codes is in the restricted set: the EU member states, Iceland, Liechtenstein and Norway, the United Kingdom and Switzerland.</p>
+    <p>Upper-casing matters, because platforms report codes differently, and an empty or malformed value must count as unknown rather than as allowed. The unit tests cover exactly these cases: Turkey passes, a single restricted code anywhere fails (a Turkish phone with a German SIM is treated as restricted), lower-case codes are normalised, and no data at all means off.</p>
+    <h2>Android: three signals</h2>
+    <p>On Android the app can read the device region, the SIM country and the network country. They are passed together into the function. A traveller in Germany with a Turkish SIM, or a German resident with a Turkish SIM, both end up with collection off, because any restricted value wins.</p>
+    <p>The collection flag is off by default in the manifest, and the app decides again on every launch. A debug or staging build never collects, because collection also needs the release build flag.</p>
+    <h2>iPhone: fewer signals</h2>
+    <p>On iPhone the SIM and network country are not available to an ordinary app. What remains is the device region from the locale, which reflects a setting the user chose, and the time zone, which reflects where the phone actually is.</p>
+    <p>So the iOS side passes the locale&#x27;s country code to the same function and adds a second check on the time zone name. Any zone that starts with Europe/ counts as restricted, as do a few Atlantic and African zones that belong to restricted countries, such as Madeira, the Canary Islands, the Azores, the Faroe Islands and Ceuta.</p>
+    <h2>The Istanbul exception</h2>
+    <p>Europe/Istanbul starts with Europe/ but Turkey is not in the restricted set, and these are Turkish news apps. The time zone check has one explicit exception for it. Without that line, almost every Turkish iPhone would have been switched off.</p>
+    <p>The time zone check is deliberately blunt. It will sometimes switch analytics off for someone outside the restricted regions, for example a traveller in Paris with a Turkish locale, and that is the safe direction to be wrong in.</p>
+    <h2>What the code does not do</h2>
+    <p>The iOS project also ships with automatic collection switched off in its property list, and the app turns it on in code only when the rule allows. There is no advertising identifier, and the apps contain no ads. Events carry a category or a type, never personal data.</p>
+    <p>The pieces to copy are small: a restricted set, a function that treats unknown as off, a time zone helper with an explicit exception for your home zone, and unit tests that fix the behaviour. The decision about which regions to exclude is yours and your adviser&#x27;s, not the code&#x27;s.</p>
+    
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Why not just ask for consent everywhere?</summary><p>Because these two apps are small and ad-free, and we preferred not to show a consent form at all. Turning collection off in the restricted regions was the simpler design for us.</p></details><details><summary>Why can iOS not use the SIM country?</summary><p>An ordinary iPhone app cannot read the SIM or network country, so the iOS side uses the locale region and the time zone instead.</p></details><details><summary>What happens when the signals are missing or conflict?</summary><p>Collection stays off. Unknown counts as off, and any single restricted value switches it off.</p></details><details><summary>Is this legal advice?</summary><p>No. It is a description of how we built our own rule. Decide for your own apps with proper advice.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/ios-build-number-stuck-at-one-three-failed-fixes-and-one-that-worked/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>The iOS Build Number That Stayed at 1: Three Failed Fixes and One That Worked</b></div></a></li><li><a href="/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Why My App Store Link Returned 404 and the Page Showed 2018 Screenshots</b></div></a></li><li><a href="/blog/app-store-review-guideline-2-1-information-needed-what-i-sent/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>App Store Review Guideline 2.1 &quot;Information Needed&quot;: What I Sent</b></div></a></li><li><a href="/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>App Store Screenshots Without a Phone: Robolectric, a Fake Image Loader and a Headless Browser</b></div></a></li><li><a href="/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>One QR Code for Two App Stores: A Tiny Redirect Page</b></div></a></li><li><a href="/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Rewriting for Kotlin Multiplatform Without Changing Behavior: Old Code as a Test Oracle</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>
