@@ -95,6 +95,12 @@
    "tr": "/tr/rehber/uzay-gunlugu-turkiye-dunya-ve-iss-ekranlari-ne-gosteriyor/",
    "es": "/es/guias/que-muestran-las-pantallas-de-turquia-tierra-e-iss-en-uzay-gunlugu/",
    "pt": "/pt/guias/o-que-mostram-as-telas-turquia-terra-e-iss-no-uzay-gunlugu/"
+  },
+  "pulselings": {
+   "en": "/guides/how-to-check-your-pulse-with-your-phone-camera/",
+   "tr": "/tr/rehber/telefon-kamerasiyla-nabiz-nasil-olculur/",
+   "es": "/es/guias/como-medir-el-pulso-con-la-camara-del-movil/",
+   "pt": "/pt/guias/como-medir-a-pulsacao-com-a-camera-do-celular/"
   }
  },
  "pages": [
@@ -1463,6 +1469,50 @@
    "hash": "f5684bb15d581b28091143c44d65fd7b"
   },
   {
+   "url": "https://nesimapps.com/guides/how-to-check-your-pulse-with-your-phone-camera/",
+   "loc": {
+    "en": "https://nesimapps.com/guides/how-to-check-your-pulse-with-your-phone-camera/",
+    "tr": "https://nesimapps.com/tr/rehber/telefon-kamerasiyla-nabiz-nasil-olculur/",
+    "es": "https://nesimapps.com/es/guias/como-medir-el-pulso-con-la-camara-del-movil/",
+    "pt": "https://nesimapps.com/pt/guias/como-medir-a-pulsacao-com-a-camera-do-celular/"
+   },
+   "default": "en",
+   "hash": "950dfd76471f8ce6cfdf858b152f67a8"
+  },
+  {
+   "url": "https://nesimapps.com/tr/rehber/telefon-kamerasiyla-nabiz-nasil-olculur/",
+   "loc": {
+    "en": "https://nesimapps.com/guides/how-to-check-your-pulse-with-your-phone-camera/",
+    "tr": "https://nesimapps.com/tr/rehber/telefon-kamerasiyla-nabiz-nasil-olculur/",
+    "es": "https://nesimapps.com/es/guias/como-medir-el-pulso-con-la-camara-del-movil/",
+    "pt": "https://nesimapps.com/pt/guias/como-medir-a-pulsacao-com-a-camera-do-celular/"
+   },
+   "default": "en",
+   "hash": "da97c520c64df8cf898ff28ad8e5721c"
+  },
+  {
+   "url": "https://nesimapps.com/es/guias/como-medir-el-pulso-con-la-camara-del-movil/",
+   "loc": {
+    "en": "https://nesimapps.com/guides/how-to-check-your-pulse-with-your-phone-camera/",
+    "tr": "https://nesimapps.com/tr/rehber/telefon-kamerasiyla-nabiz-nasil-olculur/",
+    "es": "https://nesimapps.com/es/guias/como-medir-el-pulso-con-la-camara-del-movil/",
+    "pt": "https://nesimapps.com/pt/guias/como-medir-a-pulsacao-com-a-camera-do-celular/"
+   },
+   "default": "en",
+   "hash": "5620034325c499745f4fccab1f8c6aa9"
+  },
+  {
+   "url": "https://nesimapps.com/pt/guias/como-medir-a-pulsacao-com-a-camera-do-celular/",
+   "loc": {
+    "en": "https://nesimapps.com/guides/how-to-check-your-pulse-with-your-phone-camera/",
+    "tr": "https://nesimapps.com/tr/rehber/telefon-kamerasiyla-nabiz-nasil-olculur/",
+    "es": "https://nesimapps.com/es/guias/como-medir-el-pulso-con-la-camara-del-movil/",
+    "pt": "https://nesimapps.com/pt/guias/como-medir-a-pulsacao-com-a-camera-do-celular/"
+   },
+   "default": "en",
+   "hash": "cb9ce0781831a34f199135d2208aef4a"
+  },
+  {
    "url": "https://nesimapps.com/guides/",
    "loc": {
     "en": "https://nesimapps.com/guides/",
@@ -1471,7 +1521,7 @@
     "pt": "https://nesimapps.com/pt/guias/"
    },
    "default": "en",
-   "hash": "c7a2514ce15f3864d4b2e260af5b879e"
+   "hash": "b2c55b10dc138da3bbd164e374c488de"
   },
   {
    "url": "https://nesimapps.com/tr/rehber/",
@@ -1482,7 +1532,7 @@
     "pt": "https://nesimapps.com/pt/guias/"
    },
    "default": "en",
-   "hash": "0edd8ec06c4476808cd12a45917737a0"
+   "hash": "9e8d8909b85593fe8a76b3f1dee226c2"
   },
   {
    "url": "https://nesimapps.com/es/guias/",
@@ -1493,7 +1543,7 @@
     "pt": "https://nesimapps.com/pt/guias/"
    },
    "default": "en",
-   "hash": "d09ba0332f01801672002c74ff50f809"
+   "hash": "45a4a659036c32dda2dfdf60ab78ac44"
   },
   {
    "url": "https://nesimapps.com/pt/guias/",
@@ -1504,7 +1554,7 @@
     "pt": "https://nesimapps.com/pt/guias/"
    },
    "default": "en",
-   "hash": "a2189837b2e124f3b23a40bab1fbacc1"
+   "hash": "e3d782f8153a0408d30c43792ba10b8a"
   }
  ],
  "index": {
