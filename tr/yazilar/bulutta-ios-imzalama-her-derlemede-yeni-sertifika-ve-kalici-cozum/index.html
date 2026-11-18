@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bulutta iOS İmzalama | Nesim Apps</title>
+<meta name="description" content="Bulut derlemesinde otomatik imzalama neden her çalıştırmada yeni bir geliştirme sertifikası üretir, dışa aktarırken imzalamak neden framework&#x27;leri bozar ve…">
+<link rel="canonical" href="https://nesimapps.com/tr/yazilar/bulutta-ios-imzalama-her-derlemede-yeni-sertifika-ve-kalici-cozum/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/cloud-ios-signing-a-new-certificate-on-every-build-and-the-fix/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/bulutta-ios-imzalama-her-derlemede-yeni-sertifika-ve-kalici-cozum/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/firma-ios-en-la-nube-un-certificado-nuevo-en-cada-compilacion-y-la-solucion/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/assinatura-ios-na-nuvem-um-certificado-novo-a-cada-build-e-a-solucao/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/cloud-ios-signing-a-new-certificate-on-every-build-and-the-fix/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Bulutta iOS İmzalama: Her Derlemede Yeni Sertifika ve Kalıcı Çözüm">
+<meta property="og:description" content="Bulut derlemesinde otomatik imzalama neden her çalıştırmada yeni bir geliştirme sertifikası üretir, dışa aktarırken imzalamak neden framework&#x27;leri bozar ve…">
+<meta property="og:url" content="https://nesimapps.com/tr/yazilar/bulutta-ios-imzalama-her-derlemede-yeni-sertifika-ve-kalici-cozum/">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bulutta iOS İmzalama: Her Derlemede Yeni Sertifika ve Kalıcı Çözüm">
+<meta name="twitter:description" content="Bulut derlemesinde otomatik imzalama neden her çalıştırmada yeni bir geliştirme sertifikası üretir, dışa aktarırken imzalamak neden framework&#x27;leri bozar ve…">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Bulutta iOS İmzalama: Her Derlemede Yeni Sertifika ve Kalıcı Çözüm", "description": "Bulut derlemesinde otomatik imzalama neden her çalıştırmada yeni bir geliştirme sertifikası üretir, dışa aktarırken imzalamak neden framework'leri bozar ve tek dağıtım anahtarıyla kalıcı düzen.", "inLanguage": "tr", "mainEntityOfPage": "https://nesimapps.com/tr/yazilar/bulutta-ios-imzalama-her-derlemede-yeni-sertifika-ve-kalici-cozum/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-18", "dateModified": "2026-11-18", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Geliştirici notları, iOS"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/tr/"}, {"@type": "ListItem", "position": 2, "name": "Yazılar", "item": "https://nesimapps.com/tr/yazilar/"}, {"@type": "ListItem", "position": 3, "name": "Bulutta iOS İmzalama: Her Derlemede Yeni Sertifika ve Kalıcı Çözüm", "item": "https://nesimapps.com/tr/yazilar/bulutta-ios-imzalama-her-derlemede-yeni-sertifika-ve-kalici-cozum/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Derlemeler neden eksik özel anahtar hatasıyla düştü?", "acceptedAnswer": {"@type": "Answer", "text": "Her çalıştırma yeni bir makinede yeni bir sertifika üretti ve bir sertifikanın özel anahtarı yalnızca onu üreten makinede bulunur."}}, {"@type": "Question", "name": "İmzasız arşivleyip sonra imzalayabilir miyim?", "acceptedAnswer": {"@type": "Answer", "text": "Güvenilir biçimde hayır. Gömülü framework'ler imzasız kalır ve App Store Connect yüklemeyi geçersiz imza hatasıyla reddeder."}}, {"@type": "Question", "name": "Dağıtım özel anahtarı nerede durmalı?", "acceptedAnswer": {"@type": "Answer", "text": "Kontrol ettiğin güvenli bir yedekte ve CI hizmetinde gizli değişken olarak; depoda asla."}}, {"@type": "Question", "name": "Bunu kurmak için Mac gerekir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Sertifika isteği ve anahtar herhangi bir makinede üretilebilir, gerisini bulut derlemesi yapar."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/cloud-ios-signing-a-new-certificate-on-every-build-and-the-fix/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/bulutta-ios-imzalama-her-derlemede-yeni-sertifika-ve-kalici-cozum/" hreflang="tr" data-lang="tr" aria-current="page">TR</a><a href="/es/blog/firma-ios-en-la-nube-un-certificado-nuevo-en-cada-compilacion-y-la-solucion/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/assinatura-ios-na-nuvem-um-certificado-novo-a-cada-build-e-a-solucao/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/tr/">Nesim Apps</a> › <a href="/tr/yazilar/">Yazılar</a></nav>
+    <h1>Bulutta iOS İmzalama: Her Derlemede Yeni Sertifika ve Kalıcı Çözüm</h1>
+    <p class="by">Nesim Razon, bağımsız mobil uygulama geliştiricisi · 2026-11-18</p>
+    <p class="tags"><a href="/tr/yazilar/#devlog">#Geliştirici notları</a><a href="/tr/yazilar/#ios">#iOS</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">iPhone derlemelerimiz bulutta çalışıyor, çünkü Windows&#x27;ta geliştiriyoruz. İlk çalışan hat uygulamayı otomatik imzalıyordu ve işe yaradı, ta ki yaramayana kadar. Her çalıştırma geliştirici hesabında sessizce bir sertifika daha üretti ve bir gün derlemeler eksik özel anahtar hatasıyla düşmeye başladı. Bu yazı olanı ve onun yerine koyduğumuz düzeni anlatıyor.</p>
+    <h2>Belirti: biriken sertifikalar</h2>
+    <p>Arşiv adımında bulut yönetimli imzalamayla derleme, ihtiyacı olanı App Store Connect API&#x27;sinden ister. Bizde bu, her derlemede Created via API notlu yeni bir Apple Development sertifikası demekti. Hızla birikirler. Hesap, bir türde en fazla kaç sertifika tutabileceğini sınırlar; biz bu sınıra yaklaşık on birde vardık.</p>
+    <p>Sonra ikinci hata çıktı: arşiv adımı özel anahtarın kurulu olmadığından yakındı. Makinede eşleşen özel anahtarı olmayan sertifika işe yaramaz ve yeni bir derleme makinesinde, önceki bir makinenin ürettiği sertifikanın anahtarı hiçbir zaman bulunmaz.</p>
+    <h2>Sonradan patlayan kestirme</h2>
+    <p>Akla gelen fikir, imzasız arşivlemek ve dışa aktarırken imzalamaktır. Arşiv başarılı olur, dışa aktarma bir paket bile üretir ve yükleme App Store Connect tarafından 90035 numaralı geçersiz imza hatasıyla reddedilir. Sebebi şu: arşiv kod imzalama kapalıyken derlendiğinde uygulamanın içine gömülü framework&#x27;ler imzasız kalır. Yalnızca dıştaki uygulamayı imzalamak yetmez, gömülü her framework&#x27;ün kendi imzası olmalıdır.</p>
+    <p>Yani burada kestirme yok. Arşiv, özel anahtarı derleme makinesinde bulunan bir sertifikayla düzgün imzalanmalıdır.</p>
+    <h2>Kalıcı düzen: sakladığın tek dağıtım anahtarı</h2>
+    <p>Çözüm, her derlemenin kendi kimliğini üretmesine izin vermemektir. Tek bir dağıtım sertifikası oluşturur, özel anahtarını bulut hizmetinin dışında güvenle saklar ve derlemeye her seferinde aynı anahtarı verirsin. Derleme API&#x27;den sertifikayı ve provizyon profilini ister; API de yeni bir tane üretmek yerine o anahtara ait mevcut sertifikayı döndürür.</p>
+    <p>Bizim hattımızda özel anahtar, App Store Connect API anahtarı ve iki tanımlayıcısıyla birlikte, gizli bir değişken grubunda base64 olarak durur. Derleme sırasında dosyaya çözülür ve openssl ile denetlenir; böylece bozuk bir gizli değer uzun bir derlemenin sonunda değil, ilk dakikada anlaşılır.</p>
+    <h2>Adımlar, sırasıyla</h2>
+    <ul><li>API anahtar dosyasını temiz bir PEM olarak yeniden kur: gizli değerler çoğu zaman satır sonları bozulmuş gelir; başlık ve alt bilgiyi, boşlukları ve düz ters eğik çizgi-n yazılarını at, gövdeyi 64 karakterlik satırlara böl ve openssl ile doğrula.</li><li>Derleme numarasını projeye ve Info.plist&#x27;e yaz, yüklemeden önce bitmiş paketten tekrar yazdır.</li><li>Dağıtım özel anahtarını gizli değerden çöz ve openssl ile denetle.</li><li>Derleme makinesinde anahtarlığı başlat.</li><li>Paket kimliği için imzalama dosyalarını create bayrağıyla, iOS App Store türünde getir. Araç, anahtarına ait sertifikayı yeniden kullanır.</li><li>Sertifikaları anahtarlığa ekle, ardından provizyon profillerini Xcode projesine uygula.</li><li>Proje ve şemadan imzalı ipa üret, sonra TestFlight&#x27;a yayınla.</li></ul>
+    <h2>Dakika kazanmak</h2>
+    <p>Ücretsiz planda macOS derleme dakikaları sınırlıdır ve başarısız her imzalama çalıştırması bir kısmını yakar. İki alışkanlık yardım eder. Birincisi, imzalama iş akışını yalnızca elle başlatmak; böylece bir gönderim dakika harcamaz. İkincisi, imzasız derleyen ve Apple ile hiç konuşmayan ayrı bir simülatör iş akışı tutmak. Sıradan derleme hatalarını hızlı yakalar ve sertifika açısından bedavadır.</p>
+    <p>Ayrıca her bulut derlemesinden önce Windows&#x27;ta, projeyi bir kez bedelini ödediğimiz hatalara karşı denetleyen bir betik çalıştırıyoruz. Bir saniyelik bir kural, on dakikalık bir derlemeden iyidir.</p>
+    <h2>Akılda kalacaklar</h2>
+    <ul><li>Otomatik bulut imzalama ilk deneme için iyidir ama her çalıştırmada yeni sertifika üretir.</li><li>Dışa aktarırken imzalanan imzasız arşiv, framework&#x27;leri imzasız bırakır ve yükleme doğrulamasında düşer.</li><li>Tek bir dağıtım sertifikası oluştur, özel anahtarını yedekli sakla ve her derlemeye gizli değer olarak ver.</li><li>Gizli değerleri derlemenin başında doğrula, sürüm numaralarını son paketten yazdır.</li></ul>
+    
+    <section class="faq"><h2>Sık sorulan sorular</h2><details><summary>Derlemeler neden eksik özel anahtar hatasıyla düştü?</summary><p>Her çalıştırma yeni bir makinede yeni bir sertifika üretti ve bir sertifikanın özel anahtarı yalnızca onu üreten makinede bulunur.</p></details><details><summary>İmzasız arşivleyip sonra imzalayabilir miyim?</summary><p>Güvenilir biçimde hayır. Gömülü framework&#x27;ler imzasız kalır ve App Store Connect yüklemeyi geçersiz imza hatasıyla reddeder.</p></details><details><summary>Dağıtım özel anahtarı nerede durmalı?</summary><p>Kontrol ettiğin güvenli bir yedekte ve CI hizmetinde gizli değişken olarak; depoda asla.</p></details><details><summary>Bunu kurmak için Mac gerekir mi?</summary><p>Hayır. Sertifika isteği ve anahtar herhangi bir makinede üretilebilir, gerisini bulut derlemesi yapar.</p></details></section>
+    <section><h2>Diğer yazılar</h2><ul class="glist"><li><a href="/tr/yazilar/ios-derleme-numarasi-1-de-takildi-isleyen-bir-cozum-ve-uc-islemeyen/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>1&#x27;de Takılan iOS Derleme Numarası: İşlemeyen Üç Çözüm ve İşleyen Bir Çözüm</b></div></a></li><li><a href="/tr/yazilar/ios-te-sim-ulkesi-okunamayinca-analytics-bolge-kapisi/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>iOS&#x27;ta SIM Ülkesi Okunamayınca Analytics Bölge Kapısı</b></div></a></li><li><a href="/tr/yazilar/app-store-baglantim-neden-404-verdi-ve-sayfa-2018-ekran-goruntulerini-gosterdi/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>App Store Bağlantım Neden 404 Verdi ve Sayfa 2018 Ekran Görüntülerini Gösterdi</b></div></a></li><li><a href="/tr/yazilar/app-store-inceleme-kurali-2-1-bilgi-gerekli-ne-gonderdim/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>App Store İnceleme Kuralı 2.1 &quot;Bilgi Gerekli&quot;: Ne Gönderdim</b></div></a></li><li><a href="/tr/yazilar/telefonsuz-app-store-ekran-goruntuleri-robolectric-sahte-gorsel-yukleyici-ve-basliksiz-tarayici/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Telefonsuz App Store Ekran Görüntüleri: Robolectric, Sahte Görsel Yükleyici ve Başsız Tarayıcı</b></div></a></li><li><a href="/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>İki Mağaza İçin Tek QR Kodu: Küçük Bir Yönlendirme Sayfası</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

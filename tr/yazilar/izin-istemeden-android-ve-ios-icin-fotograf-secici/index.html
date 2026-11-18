@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>İzin İstemeden Android ve iOS İçin Fotoğraf Seçici</title>
+<meta name="description" content="Tek bir ortak Kotlin fonksiyonu iki platformda nasıl fotoğraf seçer: sistem seçicileri, EXIF dönüşü, güvenli boyuta küçültme ve resmi Swift köprüsünden…">
+<link rel="canonical" href="https://nesimapps.com/tr/yazilar/izin-istemeden-android-ve-ios-icin-fotograf-secici/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/a-photo-picker-for-android-and-ios-without-asking-for-permission/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/izin-istemeden-android-ve-ios-icin-fotograf-secici/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/un-selector-de-fotos-para-android-e-ios-sin-pedir-permiso/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/um-seletor-de-fotos-para-android-e-ios-sem-pedir-permissao/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/a-photo-picker-for-android-and-ios-without-asking-for-permission/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#2E6FBF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="İzin İstemeden Android ve iOS İçin Fotoğraf Seçici">
+<meta property="og:description" content="Tek bir ortak Kotlin fonksiyonu iki platformda nasıl fotoğraf seçer: sistem seçicileri, EXIF dönüşü, güvenli boyuta küçültme ve resmi Swift köprüsünden…">
+<meta property="og:url" content="https://nesimapps.com/tr/yazilar/izin-istemeden-android-ve-ios-icin-fotograf-secici/">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="İzin İstemeden Android ve iOS İçin Fotoğraf Seçici">
+<meta name="twitter:description" content="Tek bir ortak Kotlin fonksiyonu iki platformda nasıl fotoğraf seçer: sistem seçicileri, EXIF dönüşü, güvenli boyuta küçültme ve resmi Swift köprüsünden…">
+<style>:root { --accent:#2E6FBF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "İzin İstemeden Android ve iOS İçin Fotoğraf Seçici", "description": "Tek bir ortak Kotlin fonksiyonu iki platformda nasıl fotoğraf seçer: sistem seçicileri, EXIF dönüşü, güvenli boyuta küçültme ve resmi Swift köprüsünden geçirme.", "inLanguage": "tr", "mainEntityOfPage": "https://nesimapps.com/tr/yazilar/izin-istemeden-android-ve-ios-icin-fotograf-secici/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-18", "dateModified": "2026-11-18", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Geliştirici notları, Android, iOS", "about": {"@type": "SoftwareApplication", "name": "Snowlings", "operatingSystem": "Android", "applicationCategory": "GameApplication", "url": "https://nesimapps.com/tr/snowlings/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/tr/"}, {"@type": "ListItem", "position": 2, "name": "Yazılar", "item": "https://nesimapps.com/tr/yazilar/"}, {"@type": "ListItem", "position": 3, "name": "İzin İstemeden Android ve iOS İçin Fotoğraf Seçici", "item": "https://nesimapps.com/tr/yazilar/izin-istemeden-android-ve-ios-icin-fotograf-secici/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Fotoğraf seçici izin ister mi?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Hem Android sistem fotoğraf seçicisi hem iPhone PHPicker uygulamanın dışında çalışır ve yalnızca oyuncunun seçtiği resmi teslim eder."}}, {"@type": "Question", "name": "Neden 1600 piksele küçültülüyor?", "acceptedAnswer": {"@type": "Answer", "text": "Kartta keskin görünecek kadar büyük, belleği düşük tutacak ve hızlı paylaşılacak kadar küçüktür."}}, {"@type": "Question", "name": "Bazı fotoğraflar neden yan geliyor?", "acceptedAnswer": {"@type": "Answer", "text": "Birçok kamera dönüşü pikselleri döndürmek yerine bir üst veri bayrağında saklar; bu yüzden EXIF yönü okunup uygulanmalıdır."}}, {"@type": "Question", "name": "Resim neden Swift'ten base64 olarak geçiriliyor?", "acceptedAnswer": {"@type": "Answer", "text": "Köprüyü düz bir metinde tutar; bu, Swift ile Kotlin arasında ham belleğin zahmetli dönüşümlerinden kaçınır."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/a-photo-picker-for-android-and-ios-without-asking-for-permission/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/izin-istemeden-android-ve-ios-icin-fotograf-secici/" hreflang="tr" data-lang="tr" aria-current="page">TR</a><a href="/es/blog/un-selector-de-fotos-para-android-e-ios-sin-pedir-permiso/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/um-seletor-de-fotos-para-android-e-ios-sem-pedir-permissao/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/tr/">Nesim Apps</a> › <a href="/tr/yazilar/">Yazılar</a></nav>
+    <h1>İzin İstemeden Android ve iOS İçin Fotoğraf Seçici</h1>
+    <p class="by">Nesim Razon, bağımsız mobil uygulama geliştiricisi · 2026-11-18</p>
+    <p class="tags"><a href="/tr/yazilar/#devlog">#Geliştirici notları</a><a href="/tr/yazilar/#android">#Android</a><a href="/tr/yazilar/#ios">#iOS</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Tebrik kartı özelliğimiz oyuncunun kartın üstüne kendi fotoğrafını koymasına izin verir. Android&#x27;de ve iPhone&#x27;da çalışmasını, hiçbir izin istememesini ve resmin cihazda kalmasını istedik. Sistem fotoğraf seçicileri bunu mümkün kılıyor. İlginç olan kısım, iki çok farklı uygulamayı gizleyen küçük ortak sözleşmedir.</p>
+    <h2>Ortak sözleşme</h2>
+    <p>Ortak kod tek bir fonksiyon görür: bir resim seç, sonra resmin baytlarıyla ya da oyuncu vazgeçtiyse ya da bir şey ters gittiyse hiçbiriyle geri çağır. Varsayılan uygulama yalnızca hiçbir şey döndürür; yani seçicisi olmayan bir platform sorun değildir. Yanında, baytları Compose&#x27;un çizebileceği bir bit eşleme yapan bir beklenen fonksiyon durur; her platformda ayrı gerçek bir uygulaması vardır.</p>
+    <p>Sözleşmenin vaadi, türünden daha önemlidir. Platform içeride ne yaparsa yapsın, gelen baytlar en uzun kenarı en fazla 1600 piksel olan bir JPEG&#x27;dir. Ortak kodun kamera çözünürlüklerini, dönüş bayraklarını ya da belleği hiç düşünmesi gerekmez.</p>
+    <h2>Android: sistem seçici ve dikkatli çözme</h2>
+    <p>Android&#x27;de, görsel medya seçmek için etkinlik sonucu sözleşmesi üzerinden sistem fotoğraf seçicisini kullanırız, yalnızca resimler. Depolama izni gerekmez, çünkü oyuncu tam olarak bir resmi teslim eder. Sonuç bir içerik adresi olarak gelir ve onu okumak, ekran hiç takılmasın diye arka plan iş parçacığında yapılır.</p>
+    <p>On iki megapiksellik bir fotoğrafı saf biçimde okumak küçük bir telefonun belleğini bitirebilir. Bu yüzden kod önce yalnızca resim sınırlarını okur, sonra en uzun kenar en fazla 3200 piksel olana kadar ikinin kuvveti bir örnekleme boyutu seçer, onu çözer, EXIF yönünü 90, 180 ya da 270 derecelik bir dönüş olarak uygular, en fazla 1600 piksele ölçekler ve 90 kalitesinde bir JPEG yazar. Dönüş adımı insanların unuttuğu adımdır: onsuz, bazı kameralardan gelen dikey fotoğraflar yan gelir.</p>
+    <h2>iOS: PHPicker ve bir base64 metni</h2>
+    <p>iPhone&#x27;da karşılığı, resimler ve bir seçim sınırı için yapılandırılmış fotoğraf seçici görünüm denetleyicisidir. O da izin gerektirmez ve oyuncunun kitaplığını bir sayfa olarak gösterir. Temsilcide resmi bir görüntü olarak yükler, yeni bir çizim ortamına çizerek en fazla 1600 piksele küçültürüz; bu, yönünü de resme işler; sonra 0,9 kalitesinde JPEG olarak kodlarız.</p>
+    <p>Baytlar sonra Swift&#x27;ten Kotlin&#x27;e base64 metni olarak geçer ve Kotlin onları çözer. Bu savurgan görünür, ama dil sınırında ham bellek nesneleriyle uğraşmak yerine köprüyü olabilecek en basit türde, bir metinde tutar. Bu resim boyutunda maliyeti görünmezdir.</p>
+    <h2>Gösterim için çözme</h2>
+    <p>Ortak kod baytları alınca bir bit eşleme ister. Android&#x27;de gerçek fonksiyon platformun bit eşleme çözücüsünü kullanır. iPhone&#x27;da Compose çalışma zamanındaki Skia görüntüsünü kullanır: kodlanmış baytlardan bir görüntü yap ve onu Compose bit eşlemine çevir. İkisi de, bozuk bir dosya hata fırlatmak yerine hiçbir şey döndürsün diye sarılmıştır.</p>
+    <h2>Yapısı gereği gizlilik</h2>
+    <p>Bu özellikte resim cihazdan hiç çıkmaz. Yerelde seçilir, yerelde küçültülür ve oyuncunun sonra normal sistem paylaşım sayfasıyla paylaştığı bir karta çizilir. Fotoğraf izni istenmediği ve hiçbir şey yüklenmediği için mağaza gizlilik formları kısa kalır; bu başlı başına bir özelliktir.</p>
+    <h2>Akılda kalacaklar</h2>
+    <ul><li>Sistem seçicilerini kullan: izin yok, daha az kod, daha iyi ilk açılış.</li><li>Platform tarafında sabit bir üst sınıra küçült; ortak kod tek bilinen biçimle uğraşsın.</li><li>Ölçeklemeden önce yön verisini oku, yoksa dikey fotoğraflar yan gelir.</li><li>Swift köprüsünde, savurgan görünse de, en basit türü tercih et.</li><li>Her hatada hiçbir şey döndür ve karar vermeyi çağırana bırak; katmanlar arasında hata fırlatma.</li></ul>
+    <aside class="gcta"><img class="ic" src="/snowlings/icon.png" alt="Snowlings icon" width="64" height="64"><div class="tx"><b>Ücretsiz dene: Snowlings</b><span>Google Play&#x27;de ücretsiz. Hesap gerekmez.</span></div><a class="play" href="https://play.google.com/store/apps/details?id=com.snowlings.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dblog%26utm_campaign%3Dphoto-picker-multiplatform"><img src="/badges/google-play-tr.svg" alt="Google Play" width="162" height="48"></a><a class="small" href="/tr/snowlings/">Snowlings hakkında</a></aside>
+    <section class="faq"><h2>Sık sorulan sorular</h2><details><summary>Fotoğraf seçici izin ister mi?</summary><p>Hayır. Hem Android sistem fotoğraf seçicisi hem iPhone PHPicker uygulamanın dışında çalışır ve yalnızca oyuncunun seçtiği resmi teslim eder.</p></details><details><summary>Neden 1600 piksele küçültülüyor?</summary><p>Kartta keskin görünecek kadar büyük, belleği düşük tutacak ve hızlı paylaşılacak kadar küçüktür.</p></details><details><summary>Bazı fotoğraflar neden yan geliyor?</summary><p>Birçok kamera dönüşü pikselleri döndürmek yerine bir üst veri bayrağında saklar; bu yüzden EXIF yönü okunup uygulanmalıdır.</p></details><details><summary>Resim neden Swift&#x27;ten base64 olarak geçiriliyor?</summary><p>Köprüyü düz bir metinde tutar; bu, Swift ile Kotlin arasında ham belleğin zahmetli dönüşümlerinden kaçınır.</p></details></section>
+    <section><h2>Diğer yazılar</h2><ul class="glist"><li><a href="/tr/yazilar/android-ve-ios-te-bulut-kaydi-ilerlemeyi-asla-kaybetmeyen-birlestirme-kurali/"><img src="/snowlings/icon.png" alt="Snowlings icon" width="48" height="48"><div><b>Android ve iOS&#x27;ta Bulut Kaydı: İlerlemeyi Asla Kaybetmeyen Birleştirme Kuralı</b></div></a></li><li><a href="/tr/yazilar/bir-advent-takvimi-uygulamasi-bugun-hangi-kapinin-acilacagina-nasil-karar-verir/"><img src="/snowlings/icon.png" alt="Snowlings icon" width="48" height="48"><div><b>Bir Advent Takvimi Uygulaması Bugün Hangi Kapının Açılacağına Nasıl Karar Verir</b></div></a></li><li><a href="/tr/yazilar/online-yilbasi-cekilisi-nasil-yapilir-gizli-hediye-arkadasi/"><img src="/snowlings/icon.png" alt="Snowlings icon" width="48" height="48"><div><b>Online Yılbaşı Çekilişi Nasıl Yapılır? Gizli Hediye Arkadaşı</b></div></a></li><li><a href="/tr/yazilar/acik-kaynak-bir-astronomi-kutuphanesini-tek-yama-betigiyle-android-ve-ios-ta-calistirmak/"><img src="/astrolings/icon.png" alt="Astrolings icon" width="48" height="48"><div><b>Açık Kaynak Astronomi Kütüphanesi: Tek Yama Betiğiyle Android ve iOS</b></div></a></li><li><a href="/tr/yazilar/bulutta-ios-imzalama-her-derlemede-yeni-sertifika-ve-kalici-cozum/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Bulutta iOS İmzalama: Her Derlemede Yeni Sertifika ve Kalıcı Çözüm</b></div></a></li><li><a href="/tr/yazilar/ios-derleme-numarasi-1-de-takildi-isleyen-bir-cozum-ve-uc-islemeyen/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>1&#x27;de Takılan iOS Derleme Numarası: İşlemeyen Üç Çözüm ve İşleyen Bir Çözüm</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

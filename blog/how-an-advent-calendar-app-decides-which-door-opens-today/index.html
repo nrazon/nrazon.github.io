@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How an Advent Calendar App Decides Which Door Opens Today</title>
+<meta name="description" content="The date logic behind a 31-door advent calendar: seasons, missed doors, late installs, time zones, a difficulty curve, and why no server is needed.">
+<link rel="canonical" href="https://nesimapps.com/blog/how-an-advent-calendar-app-decides-which-door-opens-today/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/how-an-advent-calendar-app-decides-which-door-opens-today/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/bir-advent-takvimi-uygulamasi-bugun-hangi-kapinin-acilacagina-nasil-karar-verir/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/como-decide-una-app-de-calendario-de-adviento-que-puerta-se-abre-hoy/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/como-um-app-de-calendario-do-advento-decide-qual-porta-abre-hoje/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/how-an-advent-calendar-app-decides-which-door-opens-today/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#2E6FBF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="How an Advent Calendar App Decides Which Door Opens Today">
+<meta property="og:description" content="The date logic behind a 31-door advent calendar: seasons, missed doors, late installs, time zones, a difficulty curve, and why no server is needed.">
+<meta property="og:url" content="https://nesimapps.com/blog/how-an-advent-calendar-app-decides-which-door-opens-today/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How an Advent Calendar App Decides Which Door Opens Today">
+<meta name="twitter:description" content="The date logic behind a 31-door advent calendar: seasons, missed doors, late installs, time zones, a difficulty curve, and why no server is needed.">
+<style>:root { --accent:#2E6FBF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "How an Advent Calendar App Decides Which Door Opens Today", "description": "The date logic behind a 31-door advent calendar: seasons, missed doors, late installs, time zones, a difficulty curve, and why no server is needed.", "inLanguage": "en", "mainEntityOfPage": "https://nesimapps.com/blog/how-an-advent-calendar-app-decides-which-door-opens-today/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-18", "dateModified": "2026-11-18", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Dev notes, Android", "about": {"@type": "SoftwareApplication", "name": "Snowlings", "operatingSystem": "Android", "applicationCategory": "GameApplication", "url": "https://nesimapps.com/snowlings/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "How an Advent Calendar App Decides Which Door Opens Today", "item": "https://nesimapps.com/blog/how-an-advent-calendar-app-decides-which-door-opens-today/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does the calendar need an internet connection?", "acceptedAnswer": {"@type": "Answer", "text": "No. The date logic runs on the device, so the doors work offline."}}, {"@type": "Question", "name": "What happens to doors a player missed?", "acceptedAnswer": {"@type": "Answer", "text": "They can be opened later with a short ad or with snowflakes earned in free play, and the unlock is remembered."}}, {"@type": "Question", "name": "What if someone installs in the middle of December?", "acceptedAnswer": {"@type": "Answer", "text": "All doors before the installation day are open, so a late start never meets an ad wall."}}, {"@type": "Question", "name": "Can changing the phone date open doors early?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The app reads the phone clock and has no server to check it, which we accept for a casual puzzle calendar."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/how-an-advent-calendar-app-decides-which-door-opens-today/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/bir-advent-takvimi-uygulamasi-bugun-hangi-kapinin-acilacagina-nasil-karar-verir/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/como-decide-una-app-de-calendario-de-adviento-que-puerta-se-abre-hoy/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/como-um-app-de-calendario-do-advento-decide-qual-porta-abre-hoje/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>How an Advent Calendar App Decides Which Door Opens Today</h1>
+    <p class="by">By Nesim Razon, independent mobile developer · 2026-11-18</p>
+    <p class="tags"><a href="/blog/#devlog">#Dev notes</a><a href="/blog/#android">#Android</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">An advent calendar looks simple: one door per day. Making it behave well for every kind of player is not. Somebody installs on December 17th. Somebody travels across time zones. Somebody forgets for a week. This is how the winter puzzle calendar in our app Snowlings handles all of it with a small, pure piece of date logic and no server.</p>
+    <h2>The year is cut into four phases</h2>
+    <p>The calendar screen depends only on today&#x27;s date, and the date maps to one of four phases. November is a preview, with a single practice door, so the app is not empty before the season. December is the advent proper: one new door every day. January and February are winter mode, where every door stays open and can be replayed. From March to October the app is quiet.</p>
+    <p>A small detail with a big effect is the season year. January to October belong to the previous December&#x27;s season, so the decorated tree is still there in the spring, and only November starts a new season. Progress is stored per season year and per door, so a new December starts from empty doors without touching last year&#x27;s stars.</p>
+    <h2>Which door is open</h2>
+    <p>During the advent the rule is a single comparison: a door is open when its number is not greater than today&#x27;s day of the month. In winter and quiet months all doors are open. In the November preview only the practice door is open. Because the function takes a date and returns an answer, it is trivial to test with any date, including the awkward ones.</p>
+    <h2>Missed doors without a punishment</h2>
+    <p>A door from an earlier December day that was never solved counts as missed. To open it, the player watches a short ad or spends snowflakes earned in free play, and the choice is stored as an unlocked flag for that season and day, so the door never asks twice.</p>
+    <p>There is one rule that matters for fairness. If the player installs in December, every door before the installation day is simply open. Somebody who arrives on December 17th should not meet an ad wall on sixteen doors. The app records the installation date once, and the missed check compares against it.</p>
+    <h2>Time zones and the midnight timer</h2>
+    <p>Today is computed from the phone clock and the phone time zone, converted to a local calendar date. The countdown to the next door asks for the milliseconds until the next local midnight, which is the start of the following local day in the current time zone. The New Year countdown works the same way, aimed at January 1st at local midnight.</p>
+    <p>The same idea gives a fun screen at midnight: a list of cities that have already entered the new year, built from fixed standard-time offsets in minutes for each city. The offsets are the December ones, so the list does not depend on any online service.</p>
+    <h2>A difficulty curve you can read in one function</h2>
+    <p>Each door maps to a game and a difficulty with one function. The six games rotate through the days, so the same game returns every sixth door. Days one to three start at level one, days four to seven at level two, days eight to twenty-one climb from three to five, and the last stretch before the end goes up to seven and eight. Day twenty-four and day twenty-five are large picture puzzles, and day thirty-one is the finale that puts the star on the tree.</p>
+    <p>Keeping this in one pure function means that balance changes are a one-line edit, and that every player sees the same door on the same day.</p>
+    <h2>Honest limits</h2>
+    <p>There is no server, so the app trusts the phone clock. A phone set to a wrong date shows a wrong door. For a free puzzle calendar we accepted that: a local, offline-first app that works on a plane is worth more to us than a strict clock. If your calendar has prizes, you need a different design.</p>
+    <aside class="gcta"><img class="ic" src="/snowlings/icon.png" alt="Snowlings icon" width="64" height="64"><div class="tx"><b>Try it free: Snowlings</b><span>Free on Google Play. No account needed.</span></div><a class="play" href="https://play.google.com/store/apps/details?id=com.snowlings.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dblog%26utm_campaign%3Dadvent-calendar-door-logic"><img src="/badges/google-play-en.svg" alt="Google Play" width="162" height="48"></a><a class="small" href="/snowlings/">About Snowlings</a></aside>
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Does the calendar need an internet connection?</summary><p>No. The date logic runs on the device, so the doors work offline.</p></details><details><summary>What happens to doors a player missed?</summary><p>They can be opened later with a short ad or with snowflakes earned in free play, and the unlock is remembered.</p></details><details><summary>What if someone installs in the middle of December?</summary><p>All doors before the installation day are open, so a late start never meets an ad wall.</p></details><details><summary>Can changing the phone date open doors early?</summary><p>Yes. The app reads the phone clock and has no server to check it, which we accept for a casual puzzle calendar.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/a-photo-picker-for-android-and-ios-without-asking-for-permission/"><img src="/snowlings/icon.png" alt="Snowlings icon" width="48" height="48"><div><b>A Photo Picker for Android and iOS Without Asking for Permission</b></div></a></li><li><a href="/blog/cloud-save-on-android-and-ios-the-merge-rule-that-never-loses-progress/"><img src="/snowlings/icon.png" alt="Snowlings icon" width="48" height="48"><div><b>Cloud Save on Android and iOS: The Merge Rule That Never Loses Progress</b></div></a></li><li><a href="/blog/how-to-run-an-online-secret-santa-draw-free-no-sign-up/"><img src="/snowlings/icon.png" alt="Snowlings icon" width="48" height="48"><div><b>How to Run an Online Secret Santa Draw (Free, No Sign-Up)</b></div></a></li><li><a href="/blog/running-an-open-source-astronomy-library-on-android-and-ios-with-one-patch-script/"><img src="/astrolings/icon.png" alt="Astrolings icon" width="48" height="48"><div><b>Open Source Astronomy on Android and iOS With One Patch Script</b></div></a></li><li><a href="/blog/cloud-ios-signing-a-new-certificate-on-every-build-and-the-fix/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Cloud iOS Signing: A New Certificate on Every Build, and the Fix</b></div></a></li><li><a href="/blog/ios-build-number-stuck-at-one-three-failed-fixes-and-one-that-worked/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>The iOS Build Number That Stayed at 1: Three Failed Fixes and One That Worked</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

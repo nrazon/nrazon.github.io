@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Photo Picker for Android and iOS Without Asking for Permission</title>
+<meta name="description" content="How one shared Kotlin function picks a photo on both platforms: the system pickers, EXIF rotation, resizing to a safe size and passing the picture across the…">
+<link rel="canonical" href="https://nesimapps.com/blog/a-photo-picker-for-android-and-ios-without-asking-for-permission/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/a-photo-picker-for-android-and-ios-without-asking-for-permission/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/izin-istemeden-android-ve-ios-icin-fotograf-secici/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/un-selector-de-fotos-para-android-e-ios-sin-pedir-permiso/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/um-seletor-de-fotos-para-android-e-ios-sem-pedir-permissao/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/a-photo-picker-for-android-and-ios-without-asking-for-permission/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#2E6FBF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="A Photo Picker for Android and iOS Without Asking for Permission">
+<meta property="og:description" content="How one shared Kotlin function picks a photo on both platforms: the system pickers, EXIF rotation, resizing to a safe size and passing the picture across the…">
+<meta property="og:url" content="https://nesimapps.com/blog/a-photo-picker-for-android-and-ios-without-asking-for-permission/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A Photo Picker for Android and iOS Without Asking for Permission">
+<meta name="twitter:description" content="How one shared Kotlin function picks a photo on both platforms: the system pickers, EXIF rotation, resizing to a safe size and passing the picture across the…">
+<style>:root { --accent:#2E6FBF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "A Photo Picker for Android and iOS Without Asking for Permission", "description": "How one shared Kotlin function picks a photo on both platforms: the system pickers, EXIF rotation, resizing to a safe size and passing the picture across the Swift bridge.", "inLanguage": "en", "mainEntityOfPage": "https://nesimapps.com/blog/a-photo-picker-for-android-and-ios-without-asking-for-permission/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-18", "dateModified": "2026-11-18", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Dev notes, Android, iOS", "about": {"@type": "SoftwareApplication", "name": "Snowlings", "operatingSystem": "Android", "applicationCategory": "GameApplication", "url": "https://nesimapps.com/snowlings/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "A Photo Picker for Android and iOS Without Asking for Permission", "item": "https://nesimapps.com/blog/a-photo-picker-for-android-and-ios-without-asking-for-permission/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does the photo picker need a permission?", "acceptedAnswer": {"@type": "Answer", "text": "No. Both the Android system photo picker and the iPhone PHPicker run outside the app and hand over only the picture the player chooses."}}, {"@type": "Question", "name": "Why resize to 1600 pixels?", "acceptedAnswer": {"@type": "Answer", "text": "It is large enough to look sharp on a card and small enough to keep memory use low and to share quickly."}}, {"@type": "Question", "name": "Why do some photos arrive sideways?", "acceptedAnswer": {"@type": "Answer", "text": "Many cameras store the rotation in a metadata flag instead of rotating the pixels, so you must read the EXIF orientation and apply it."}}, {"@type": "Question", "name": "Why pass the picture as base64 from Swift?", "acceptedAnswer": {"@type": "Answer", "text": "It keeps the bridge to a plain string, which avoids awkward conversions of raw memory between Swift and Kotlin."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/a-photo-picker-for-android-and-ios-without-asking-for-permission/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/izin-istemeden-android-ve-ios-icin-fotograf-secici/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/un-selector-de-fotos-para-android-e-ios-sin-pedir-permiso/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/um-seletor-de-fotos-para-android-e-ios-sem-pedir-permissao/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>A Photo Picker for Android and iOS Without Asking for Permission</h1>
+    <p class="by">By Nesim Razon, independent mobile developer · 2026-11-18</p>
+    <p class="tags"><a href="/blog/#devlog">#Dev notes</a><a href="/blog/#android">#Android</a><a href="/blog/#ios">#iOS</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Our greeting card feature lets the player put their own photo on a card. We wanted it to work on Android and iPhone, to ask for no permission, and to keep the picture on the device. The system photo pickers make that possible. The interesting part is the small shared contract that hides the two very different implementations.</p>
+    <h2>The shared contract</h2>
+    <p>Common code sees one function: pick an image, then call back with the bytes of a picture, or with nothing if the player cancelled or something failed. The default implementation simply returns nothing, so a platform that has no picker is not a problem. Next to it sits one expected function that turns bytes into a bitmap Compose can draw, with a separate real implementation on each platform.</p>
+    <p>The promise of the contract matters more than its type. Whatever the platform does inside, the bytes that arrive are a JPEG whose longest side is at most 1600 pixels. Common code never has to care about camera resolutions, rotation flags or memory.</p>
+    <h2>Android: the system picker and careful decoding</h2>
+    <p>On Android we use the system photo picker through the activity result contract for picking visual media, images only. It needs no storage permission, because the player hands over exactly one picture. The result arrives as a content address, and reading it happens on a background thread so the screen never stutters.</p>
+    <p>Reading a twelve megapixel photo naively can run a small phone out of memory. So the code first reads only the image bounds, then picks a power-of-two sample size until the longest side is no more than 3200 pixels, decodes that, applies the EXIF orientation as a rotation of 90, 180 or 270 degrees, scales to at most 1600 pixels and writes a JPEG at quality 90. The rotation step is the one people forget: without it, portrait photos from some cameras arrive sideways.</p>
+    <h2>iOS: PHPicker and a base64 string</h2>
+    <p>On iPhone the equivalent is the photo picker view controller, configured for images and a selection limit of one. It also needs no permission and shows the player&#x27;s library in a sheet. In the delegate we load the picture as an image, scale it to at most 1600 pixels by drawing it into a new renderer, which also bakes in its orientation, and encode it as a JPEG at quality 0.9.</p>
+    <p>The bytes then cross from Swift to Kotlin as a base64 string, and Kotlin decodes them. That looks wasteful, but it keeps the bridge to the simplest possible type, a string, instead of fiddling with raw memory objects across the language boundary. At this image size the cost is invisible.</p>
+    <h2>Decoding for display</h2>
+    <p>Once common code has the bytes it asks for a bitmap. On Android the real function uses the platform bitmap decoder. On iPhone it uses the Skia image from the Compose runtime: make an image from the encoded bytes and convert it to a Compose bitmap. Both are wrapped so that a corrupt file returns nothing instead of throwing.</p>
+    <h2>Privacy by construction</h2>
+    <p>The picture never leaves the device in this feature. It is picked locally, resized locally and drawn onto a card that the player then shares through the normal system share sheet. Because no photo permission is requested and nothing is uploaded, the store privacy forms stay short, which is a feature of its own.</p>
+    <h2>What to take away</h2>
+    <ul><li>Use the system pickers: no permission, less code, a better first run.</li><li>Resize on the platform side to a fixed maximum, so common code deals with one known shape.</li><li>Read orientation data before you scale, or portrait photos will turn up sideways.</li><li>Prefer the simplest type across the Swift bridge, even if it looks wasteful.</li><li>Return nothing on any failure and let the caller decide, instead of throwing across layers.</li></ul>
+    <aside class="gcta"><img class="ic" src="/snowlings/icon.png" alt="Snowlings icon" width="64" height="64"><div class="tx"><b>Try it free: Snowlings</b><span>Free on Google Play. No account needed.</span></div><a class="play" href="https://play.google.com/store/apps/details?id=com.snowlings.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dblog%26utm_campaign%3Dphoto-picker-multiplatform"><img src="/badges/google-play-en.svg" alt="Google Play" width="162" height="48"></a><a class="small" href="/snowlings/">About Snowlings</a></aside>
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Does the photo picker need a permission?</summary><p>No. Both the Android system photo picker and the iPhone PHPicker run outside the app and hand over only the picture the player chooses.</p></details><details><summary>Why resize to 1600 pixels?</summary><p>It is large enough to look sharp on a card and small enough to keep memory use low and to share quickly.</p></details><details><summary>Why do some photos arrive sideways?</summary><p>Many cameras store the rotation in a metadata flag instead of rotating the pixels, so you must read the EXIF orientation and apply it.</p></details><details><summary>Why pass the picture as base64 from Swift?</summary><p>It keeps the bridge to a plain string, which avoids awkward conversions of raw memory between Swift and Kotlin.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/cloud-save-on-android-and-ios-the-merge-rule-that-never-loses-progress/"><img src="/snowlings/icon.png" alt="Snowlings icon" width="48" height="48"><div><b>Cloud Save on Android and iOS: The Merge Rule That Never Loses Progress</b></div></a></li><li><a href="/blog/how-an-advent-calendar-app-decides-which-door-opens-today/"><img src="/snowlings/icon.png" alt="Snowlings icon" width="48" height="48"><div><b>How an Advent Calendar App Decides Which Door Opens Today</b></div></a></li><li><a href="/blog/how-to-run-an-online-secret-santa-draw-free-no-sign-up/"><img src="/snowlings/icon.png" alt="Snowlings icon" width="48" height="48"><div><b>How to Run an Online Secret Santa Draw (Free, No Sign-Up)</b></div></a></li><li><a href="/blog/running-an-open-source-astronomy-library-on-android-and-ios-with-one-patch-script/"><img src="/astrolings/icon.png" alt="Astrolings icon" width="48" height="48"><div><b>Open Source Astronomy on Android and iOS With One Patch Script</b></div></a></li><li><a href="/blog/cloud-ios-signing-a-new-certificate-on-every-build-and-the-fix/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Cloud iOS Signing: A New Certificate on Every Build, and the Fix</b></div></a></li><li><a href="/blog/ios-build-number-stuck-at-one-three-failed-fixes-and-one-that-worked/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>The iOS Build Number That Stayed at 1: Three Failed Fixes and One That Worked</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cloud iOS Signing | Nesim Apps</title>
+<meta name="description" content="Why automatic signing in a cloud build creates a fresh development certificate every run, why signing at export breaks frameworks, and the stable setup with…">
+<link rel="canonical" href="https://nesimapps.com/blog/cloud-ios-signing-a-new-certificate-on-every-build-and-the-fix/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/cloud-ios-signing-a-new-certificate-on-every-build-and-the-fix/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/bulutta-ios-imzalama-her-derlemede-yeni-sertifika-ve-kalici-cozum/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/firma-ios-en-la-nube-un-certificado-nuevo-en-cada-compilacion-y-la-solucion/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/assinatura-ios-na-nuvem-um-certificado-novo-a-cada-build-e-a-solucao/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/cloud-ios-signing-a-new-certificate-on-every-build-and-the-fix/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Cloud iOS Signing: A New Certificate on Every Build, and the Fix">
+<meta property="og:description" content="Why automatic signing in a cloud build creates a fresh development certificate every run, why signing at export breaks frameworks, and the stable setup with…">
+<meta property="og:url" content="https://nesimapps.com/blog/cloud-ios-signing-a-new-certificate-on-every-build-and-the-fix/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cloud iOS Signing: A New Certificate on Every Build, and the Fix">
+<meta name="twitter:description" content="Why automatic signing in a cloud build creates a fresh development certificate every run, why signing at export breaks frameworks, and the stable setup with…">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Cloud iOS Signing: A New Certificate on Every Build, and the Fix", "description": "Why automatic signing in a cloud build creates a fresh development certificate every run, why signing at export breaks frameworks, and the stable setup with one distribution key.", "inLanguage": "en", "mainEntityOfPage": "https://nesimapps.com/blog/cloud-ios-signing-a-new-certificate-on-every-build-and-the-fix/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-18", "dateModified": "2026-11-18", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Dev notes, iOS"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Cloud iOS Signing: A New Certificate on Every Build, and the Fix", "item": "https://nesimapps.com/blog/cloud-ios-signing-a-new-certificate-on-every-build-and-the-fix/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why did the builds fail with a missing private key?", "acceptedAnswer": {"@type": "Answer", "text": "Each run created a new certificate on a new machine, and the private key of a certificate exists only on the machine that created it."}}, {"@type": "Question", "name": "Can I archive without signing and sign later?", "acceptedAnswer": {"@type": "Answer", "text": "Not reliably. The embedded frameworks stay unsigned and App Store Connect rejects the upload with an invalid signature error."}}, {"@type": "Question", "name": "Where should the distribution private key live?", "acceptedAnswer": {"@type": "Answer", "text": "In a secure backup you control, and in the CI service as a secret variable, never in the repository."}}, {"@type": "Question", "name": "Do I need a Mac to set this up?", "acceptedAnswer": {"@type": "Answer", "text": "No. The certificate request and the key can be created on any machine, and the cloud build does the rest."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/cloud-ios-signing-a-new-certificate-on-every-build-and-the-fix/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/bulutta-ios-imzalama-her-derlemede-yeni-sertifika-ve-kalici-cozum/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/firma-ios-en-la-nube-un-certificado-nuevo-en-cada-compilacion-y-la-solucion/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/assinatura-ios-na-nuvem-um-certificado-novo-a-cada-build-e-a-solucao/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>Cloud iOS Signing: A New Certificate on Every Build, and the Fix</h1>
+    <p class="by">By Nesim Razon, independent mobile developer · 2026-11-18</p>
+    <p class="tags"><a href="/blog/#devlog">#Dev notes</a><a href="/blog/#ios">#iOS</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Our iPhone builds run in the cloud, because we develop on Windows. The first working pipeline signed the app automatically and it worked, until it did not. Every run quietly created one more certificate in the developer account, and one day the builds started failing with a missing private key. This is what was happening and the setup that replaced it.</p>
+    <h2>The symptom: certificates piling up</h2>
+    <p>With cloud-managed signing during the archive step, the build asks the App Store Connect API for what it needs. In our case that meant a new Apple Development certificate with the note Created via API on every single build. They add up fast. The account has a limit on how many certificates of a type it can hold, which we hit at around eleven.</p>
+    <p>Then the second failure appeared: the archive step complained that the private key was not installed. A certificate without the matching private key on the machine is useless, and a fresh build machine never has the key of a certificate that an earlier machine created.</p>
+    <h2>The tempting shortcut that fails later</h2>
+    <p>The obvious idea is to archive without signing and sign when exporting. The archive succeeds, the export even produces a package, and the upload is rejected by App Store Connect with an invalid signature error, number 90035. The reason is that the frameworks embedded in the app stay unsigned when the archive was built with code signing switched off. Signing only the outer app is not enough, every embedded framework needs its own signature.</p>
+    <p>So there is no shortcut here. The archive has to be signed properly, with a certificate whose private key is present on the build machine.</p>
+    <h2>The stable setup: one distribution key you keep</h2>
+    <p>The fix is to stop letting every build invent its own identity. You create one distribution certificate, keep its private key safe outside the cloud service, and give the build the same key every time. The build then asks the API for the certificate and the provisioning profile, and the API returns the same certificate it already has for that key instead of minting a new one.</p>
+    <p>In our pipeline the private key is stored base64 encoded in a secret variable group, next to the App Store Connect API key and its two identifiers. During the build it is decoded to a file and checked with openssl, so a damaged secret fails in the first minute and not at the end of a long build.</p>
+    <h2>The steps, in order</h2>
+    <ul><li>Rebuild the API key file as a clean PEM: secrets often arrive with their line breaks mangled, so strip the header and footer, whitespace and literal backslash-n sequences, then wrap the body at 64 characters and verify it with openssl.</li><li>Set the build number in the project and in the Info.plist, and print it again from the finished package before uploading.</li><li>Decode the distribution private key from the secret and check it with openssl.</li><li>Initialize the keychain on the build machine.</li><li>Fetch the signing files for the bundle id with the create flag, type iOS App Store. The tool reuses the certificate that belongs to your key.</li><li>Add the certificates to the keychain, then apply the provisioning profiles to the Xcode project.</li><li>Build the signed ipa from the project and scheme, then publish it to TestFlight.</li></ul>
+    <h2>Saving minutes</h2>
+    <p>Build minutes on a macOS machine are limited on a free plan, and every failed signing run burns some of them. Two habits help. First, start the signing workflow only by hand, so a push does not spend minutes. Second, keep a separate simulator workflow that builds without signing and never talks to Apple. It finds ordinary compile errors quickly and for free in terms of certificates.</p>
+    <p>We also run a script on Windows before any cloud build that checks the project for the mistakes we already paid for once. A rule that costs one second beats a build that costs ten minutes.</p>
+    <h2>What to take away</h2>
+    <ul><li>Automatic cloud signing is fine for a first experiment, but it creates a new certificate per run.</li><li>An unsigned archive signed at export leaves frameworks unsigned and fails upload validation.</li><li>Create one distribution certificate, keep its private key backed up, and pass it to every build as a secret.</li><li>Validate secrets early in the build, and print the version numbers from the final package.</li></ul>
+    
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Why did the builds fail with a missing private key?</summary><p>Each run created a new certificate on a new machine, and the private key of a certificate exists only on the machine that created it.</p></details><details><summary>Can I archive without signing and sign later?</summary><p>Not reliably. The embedded frameworks stay unsigned and App Store Connect rejects the upload with an invalid signature error.</p></details><details><summary>Where should the distribution private key live?</summary><p>In a secure backup you control, and in the CI service as a secret variable, never in the repository.</p></details><details><summary>Do I need a Mac to set this up?</summary><p>No. The certificate request and the key can be created on any machine, and the cloud build does the rest.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/ios-build-number-stuck-at-one-three-failed-fixes-and-one-that-worked/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>The iOS Build Number That Stayed at 1: Three Failed Fixes and One That Worked</b></div></a></li><li><a href="/blog/analytics-region-gate-on-ios-when-the-sim-country-is-unreadable/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Analytics Region Gate on iOS When the SIM Country Is Unreadable</b></div></a></li><li><a href="/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Why My App Store Link Returned 404 and the Page Showed 2018 Screenshots</b></div></a></li><li><a href="/blog/app-store-review-guideline-2-1-information-needed-what-i-sent/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>App Store Review Guideline 2.1 &quot;Information Needed&quot;: What I Sent</b></div></a></li><li><a href="/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>App Store Screenshots Without a Phone: Robolectric, a Fake Image Loader and a Headless Browser</b></div></a></li><li><a href="/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>One QR Code for Two App Stores: A Tiny Redirect Page</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

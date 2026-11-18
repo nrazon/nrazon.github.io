@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Source Astronomy on Android and iOS With One Patch Script</title>
+<meta name="description" content="How we moved a JVM-only astronomy library into Kotlin Multiplatform common code with a small patch script, and proved the results stayed identical with…">
+<link rel="canonical" href="https://nesimapps.com/blog/running-an-open-source-astronomy-library-on-android-and-ios-with-one-patch-script/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/running-an-open-source-astronomy-library-on-android-and-ios-with-one-patch-script/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/acik-kaynak-bir-astronomi-kutuphanesini-tek-yama-betigiyle-android-ve-ios-ta-calistirmak/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/ejecutar-una-biblioteca-de-astronomia-de-codigo-abierto-en-android-e-ios-con-un-script-de-parches/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/rodando-uma-biblioteca-de-astronomia-de-codigo-aberto-no-android-e-ios-com-um-script-de-patches/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/running-an-open-source-astronomy-library-on-android-and-ios-with-one-patch-script/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#6A5ACD">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Open Source Astronomy on Android and iOS With One Patch Script">
+<meta property="og:description" content="How we moved a JVM-only astronomy library into Kotlin Multiplatform common code with a small patch script, and proved the results stayed identical with…">
+<meta property="og:url" content="https://nesimapps.com/blog/running-an-open-source-astronomy-library-on-android-and-ios-with-one-patch-script/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Open Source Astronomy on Android and iOS With One Patch Script">
+<meta name="twitter:description" content="How we moved a JVM-only astronomy library into Kotlin Multiplatform common code with a small patch script, and proved the results stayed identical with…">
+<style>:root { --accent:#6A5ACD; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Open Source Astronomy on Android and iOS With One Patch Script", "description": "How we moved a JVM-only astronomy library into Kotlin Multiplatform common code with a small patch script, and proved the results stayed identical with golden tests.", "inLanguage": "en", "mainEntityOfPage": "https://nesimapps.com/blog/running-an-open-source-astronomy-library-on-android-and-ios-with-one-patch-script/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-18", "dateModified": "2026-11-18", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Dev notes, Astronomy, iOS", "about": {"@type": "SoftwareApplication", "name": "Astrolings", "operatingSystem": "Android", "applicationCategory": "GameApplication", "url": "https://nesimapps.com/astrolings/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Open Source Astronomy on Android and iOS With One Patch Script", "item": "https://nesimapps.com/blog/running-an-open-source-astronomy-library-on-android-and-ios-with-one-patch-script/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why not call a native astronomy library on each platform?", "acceptedAnswer": {"@type": "Answer", "text": "Two engines can disagree slightly on moon phase times. One shared source gives identical results everywhere."}}, {"@type": "Question", "name": "Is it allowed to modify an MIT licensed library?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, as long as the licence notice stays. Our patched file keeps it and adds a header listing the changes."}}, {"@type": "Question", "name": "What happens when the engine publishes a new version?", "acceptedAnswer": {"@type": "Answer", "text": "Download the new source, run the patch script and the golden tests. The script stops if a patch no longer applies."}}, {"@type": "Question", "name": "How do golden tests help here?", "acceptedAnswer": {"@type": "Answer", "text": "They compare the new shared code with recorded output of the old code, so any difference in a result is caught immediately."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/running-an-open-source-astronomy-library-on-android-and-ios-with-one-patch-script/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/acik-kaynak-bir-astronomi-kutuphanesini-tek-yama-betigiyle-android-ve-ios-ta-calistirmak/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/ejecutar-una-biblioteca-de-astronomia-de-codigo-abierto-en-android-e-ios-con-un-script-de-parches/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/rodando-uma-biblioteca-de-astronomia-de-codigo-aberto-no-android-e-ios-com-um-script-de-patches/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>Open Source Astronomy on Android and iOS With One Patch Script</h1>
+    <p class="by">By Nesim Razon, independent mobile developer · 2026-11-18</p>
+    <p class="tags"><a href="/blog/#devlog">#Dev notes</a><a href="/blog/#astronomy">#Astronomy</a><a href="/blog/#ios">#iOS</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Our horoscope and moon app needs real astronomy: where the Moon is, when the phase changes, when a planet looks like it moves backwards. We use an open source engine for that, and it worked on Android. When we moved the app to Kotlin Multiplatform for iPhone, the engine did not come along. This is how we made it run on both platforms without changing a single calculation.</p>
+    <h2>The problem: a JVM-only artifact</h2>
+    <p>The engine is published as a Kotlin library, and the ready-made version on the central Maven repository works only on the Java virtual machine. That is fine on Android and useless in shared code that also has to compile for iPhone. We did not want to rewrite thousands of lines of orbital maths, nor to call a different library on each platform, because two engines can give two slightly different moon phase times.</p>
+    <h2>Use the source, not the package</h2>
+    <p>The engine is open source under the MIT licence and the whole thing is one Kotlin source file. So instead of the package we took the source file itself and put it into the common source set of the shared module. The question became what in that file is Java-specific. It turned out to be very little.</p>
+    <h2>What had to change</h2>
+    <ul><li>A file-level annotation that sets the Java class name, which common code does not know.</li><li>A few annotations that make functions static or generate Java overloads, again Java-only. Removing them changes nothing for Kotlin callers.</li><li>One use of a Java synchronization block, guarding the cache of an object we do not use, replaced with a plain block.</li><li>One string formatting call in the time-to-text function, replaced by manual zero padding with the same output.</li></ul>
+    <h2>A patch script that fails loudly</h2>
+    <p>We did not edit the file by hand. A small script applies each change with a regular expression and asserts how many matches it expects. If a future version of the engine moves a line, the script stops with an error instead of silently producing a half-patched file. The script also writes a header comment into the result, saying which engine version it is, that only these changes were made, and that the calculation code is untouched, which keeps the licence notice honest.</p>
+    <p>Updating the engine becomes a repeatable routine: download the new source, run the script, run the tests.</p>
+    <h2>Proving nothing changed: golden tests</h2>
+    <p>Nobody should trust a port because the compiler is happy. Before the migration we recorded the output of the old Android code for a large set of cases: a reading summary for every sign over more than a year of days, full text samples, moon sign changes, phases and retrograde dates, the ISO week and compatibility results, plus a hash of the content bank. After the migration the shared code has to reproduce those files exactly.</p>
+    <p>It does, and that is the real safety net. When the content bank text changes on purpose, the golden files are regenerated with one switch and the diff is reviewed like any other change.</p>
+    <h2>The rest of the move</h2>
+    <p>Around the engine, the usual replacements applied: Java time classes became the Kotlin date and time library, a JSON library became Kotlin serialization, and locale-based formatting became small helpers. None of that needed a clever idea, only a list and patience. The astronomy engine was the one dependency that needed a plan.</p>
+    <aside class="gcta"><img class="ic" src="/astrolings/icon.png" alt="Astrolings icon" width="64" height="64"><div class="tx"><b>Try it free: Astrolings</b><span>Free on Google Play. No account needed.</span></div><a class="play" href="https://play.google.com/store/apps/details?id=com.astrolings.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dblog%26utm_campaign%3Dastronomy-engine-multiplatform"><img src="/badges/google-play-en.svg" alt="Google Play" width="162" height="48"></a><a class="small" href="/astrolings/">About Astrolings</a></aside>
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Why not call a native astronomy library on each platform?</summary><p>Two engines can disagree slightly on moon phase times. One shared source gives identical results everywhere.</p></details><details><summary>Is it allowed to modify an MIT licensed library?</summary><p>Yes, as long as the licence notice stays. Our patched file keeps it and adds a header listing the changes.</p></details><details><summary>What happens when the engine publishes a new version?</summary><p>Download the new source, run the patch script and the golden tests. The script stops if a patch no longer applies.</p></details><details><summary>How do golden tests help here?</summary><p>They compare the new shared code with recorded output of the old code, so any difference in a result is caught immediately.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/a-photo-picker-for-android-and-ios-without-asking-for-permission/"><img src="/snowlings/icon.png" alt="Snowlings icon" width="48" height="48"><div><b>A Photo Picker for Android and iOS Without Asking for Permission</b></div></a></li><li><a href="/blog/cloud-save-on-android-and-ios-the-merge-rule-that-never-loses-progress/"><img src="/snowlings/icon.png" alt="Snowlings icon" width="48" height="48"><div><b>Cloud Save on Android and iOS: The Merge Rule That Never Loses Progress</b></div></a></li><li><a href="/blog/how-an-advent-calendar-app-decides-which-door-opens-today/"><img src="/snowlings/icon.png" alt="Snowlings icon" width="48" height="48"><div><b>How an Advent Calendar App Decides Which Door Opens Today</b></div></a></li><li><a href="/blog/cloud-ios-signing-a-new-certificate-on-every-build-and-the-fix/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Cloud iOS Signing: A New Certificate on Every Build, and the Fix</b></div></a></li><li><a href="/blog/ios-build-number-stuck-at-one-three-failed-fixes-and-one-that-worked/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>The iOS Build Number That Stayed at 1: Three Failed Fixes and One That Worked</b></div></a></li><li><a href="/blog/analytics-region-gate-on-ios-when-the-sim-country-is-unreadable/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Analytics Region Gate on iOS When the SIM Country Is Unreadable</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

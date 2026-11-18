@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bir Advent Takvimi Uygulaması Bugün Hangi Kapının Açılacağına Nasıl Karar Verir</title>
+<meta name="description" content="31 kapılı bir advent takviminin tarih mantığı: mevsimler, kaçırılan kapılar, geç kurulumlar, saat dilimleri, zorluk eğrisi ve neden sunucuya gerek olmadığı.">
+<link rel="canonical" href="https://nesimapps.com/tr/yazilar/bir-advent-takvimi-uygulamasi-bugun-hangi-kapinin-acilacagina-nasil-karar-verir/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/how-an-advent-calendar-app-decides-which-door-opens-today/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/bir-advent-takvimi-uygulamasi-bugun-hangi-kapinin-acilacagina-nasil-karar-verir/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/como-decide-una-app-de-calendario-de-adviento-que-puerta-se-abre-hoy/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/como-um-app-de-calendario-do-advento-decide-qual-porta-abre-hoje/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/how-an-advent-calendar-app-decides-which-door-opens-today/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#2E6FBF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Bir Advent Takvimi Uygulaması Bugün Hangi Kapının Açılacağına Nasıl Karar Verir">
+<meta property="og:description" content="31 kapılı bir advent takviminin tarih mantığı: mevsimler, kaçırılan kapılar, geç kurulumlar, saat dilimleri, zorluk eğrisi ve neden sunucuya gerek olmadığı.">
+<meta property="og:url" content="https://nesimapps.com/tr/yazilar/bir-advent-takvimi-uygulamasi-bugun-hangi-kapinin-acilacagina-nasil-karar-verir/">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bir Advent Takvimi Uygulaması Bugün Hangi Kapının Açılacağına Nasıl Karar Verir">
+<meta name="twitter:description" content="31 kapılı bir advent takviminin tarih mantığı: mevsimler, kaçırılan kapılar, geç kurulumlar, saat dilimleri, zorluk eğrisi ve neden sunucuya gerek olmadığı.">
+<style>:root { --accent:#2E6FBF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Bir Advent Takvimi Uygulaması Bugün Hangi Kapının Açılacağına Nasıl Karar Verir", "description": "31 kapılı bir advent takviminin tarih mantığı: mevsimler, kaçırılan kapılar, geç kurulumlar, saat dilimleri, zorluk eğrisi ve neden sunucuya gerek olmadığı.", "inLanguage": "tr", "mainEntityOfPage": "https://nesimapps.com/tr/yazilar/bir-advent-takvimi-uygulamasi-bugun-hangi-kapinin-acilacagina-nasil-karar-verir/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-18", "dateModified": "2026-11-18", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Geliştirici notları, Android", "about": {"@type": "SoftwareApplication", "name": "Snowlings", "operatingSystem": "Android", "applicationCategory": "GameApplication", "url": "https://nesimapps.com/tr/snowlings/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/tr/"}, {"@type": "ListItem", "position": 2, "name": "Yazılar", "item": "https://nesimapps.com/tr/yazilar/"}, {"@type": "ListItem", "position": 3, "name": "Bir Advent Takvimi Uygulaması Bugün Hangi Kapının Açılacağına Nasıl Karar Verir", "item": "https://nesimapps.com/tr/yazilar/bir-advent-takvimi-uygulamasi-bugun-hangi-kapinin-acilacagina-nasil-karar-verir/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Takvim internet bağlantısı ister mi?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Tarih mantığı cihazda çalışır, bu yüzden kapılar çevrimdışı da işler."}}, {"@type": "Question", "name": "Oyuncunun kaçırdığı kapılara ne olur?", "acceptedAnswer": {"@type": "Answer", "text": "Sonradan kısa bir reklamla ya da serbest oyunda kazanılan kar taneleriyle açılabilir ve açılma hatırlanır."}}, {"@type": "Question", "name": "Biri Aralık ortasında kurarsa ne olur?", "acceptedAnswer": {"@type": "Answer", "text": "Kurulum gününden önceki bütün kapılar açıktır; geç başlayan reklam duvarına çarpmaz."}}, {"@type": "Question", "name": "Telefon tarihini değiştirmek kapıları erken açar mı?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. Uygulama telefonun saatini okur ve onu denetleyecek sunucusu yoktur; gündelik bir bulmaca takvimi için bunu kabul ediyoruz."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/how-an-advent-calendar-app-decides-which-door-opens-today/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/bir-advent-takvimi-uygulamasi-bugun-hangi-kapinin-acilacagina-nasil-karar-verir/" hreflang="tr" data-lang="tr" aria-current="page">TR</a><a href="/es/blog/como-decide-una-app-de-calendario-de-adviento-que-puerta-se-abre-hoy/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/como-um-app-de-calendario-do-advento-decide-qual-porta-abre-hoje/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/tr/">Nesim Apps</a> › <a href="/tr/yazilar/">Yazılar</a></nav>
+    <h1>Bir Advent Takvimi Uygulaması Bugün Hangi Kapının Açılacağına Nasıl Karar Verir</h1>
+    <p class="by">Nesim Razon, bağımsız mobil uygulama geliştiricisi · 2026-11-18</p>
+    <p class="tags"><a href="/tr/yazilar/#devlog">#Geliştirici notları</a><a href="/tr/yazilar/#android">#Android</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Bir advent takvimi basit görünür: günde bir kapı. Ama onu her tür oyuncu için iyi davranacak hale getirmek basit değildir. Biri 17 Aralık&#x27;ta kuruyor. Biri saat dilimleri arasında seyahat ediyor. Biri bir hafta unutuyor. Snowlings uygulamamızdaki kış bulmaca takvimi bunların hepsini küçük, saf bir tarih mantığıyla ve sunucusuz nasıl hallediyor, bu yazı onu anlatıyor.</p>
+    <h2>Yıl dört evreye bölünür</h2>
+    <p>Takvim ekranı yalnızca bugünün tarihine bağlıdır ve tarih dört evreden birine denk gelir. Kasım bir ön denemedir; tek bir prova kapısı vardır, böylece uygulama sezondan önce boş durmaz. Aralık gerçek adventtir: her gün yeni bir kapı. Ocak ve Şubat kış modudur; her kapı açık kalır ve yeniden oynanabilir. Mart&#x27;tan Ekim&#x27;e uygulama sessizdir.</p>
+    <p>Küçük ama etkisi büyük bir ayrıntı sezon yılıdır. Ocak&#x27;tan Ekim&#x27;e kadar olan aylar bir önceki Aralık&#x27;ın sezonuna aittir; böylece süslü ağaç ilkbaharda da yerinde durur ve yeni sezonu yalnızca Kasım başlatır. İlerleme sezon yılına ve kapıya göre saklanır; yeni bir Aralık, geçen yılın yıldızlarına dokunmadan boş kapılarla başlar.</p>
+    <h2>Hangi kapı açık</h2>
+    <p>Advent boyunca kural tek bir karşılaştırmadır: kapının numarası bugünün ay içindeki gününden büyük değilse kapı açıktır. Kış ve sessiz aylarda bütün kapılar açıktır. Kasım ön denemesinde yalnızca prova kapısı açıktır. Fonksiyon bir tarih alıp bir cevap döndürdüğü için, garip olanlar dahil herhangi bir tarihle test etmek çok kolaydır.</p>
+    <h2>Ceza vermeyen kaçırılmış kapılar</h2>
+    <p>Daha önceki bir Aralık gününe ait ve hiç çözülmemiş kapı kaçırılmış sayılır. Onu açmak için oyuncu kısa bir reklam izler ya da serbest oyunda kazandığı kar tanelerini harcar. Seçim, o sezon ve gün için açılmış işareti olarak saklanır; kapı bir daha sormaz.</p>
+    <p>Adalet için önemli bir kural var. Oyuncu Aralık&#x27;ta kurduysa, kurulum gününden önceki bütün kapılar doğrudan açıktır. 17 Aralık&#x27;ta gelen biri on altı kapıda reklam duvarına çarpmamalıdır. Uygulama kurulum tarihini bir kez kaydeder ve kaçırılma denetimi buna göre yapılır.</p>
+    <h2>Saat dilimleri ve gece yarısı sayacı</h2>
+    <p>Bugün, telefonun saatinden ve saat diliminden hesaplanır ve yerel bir takvim tarihine çevrilir. Sonraki kapıya geri sayım, bir sonraki yerel gece yarısına kalan milisaniyeyi sorar; bu, mevcut saat diliminde bir sonraki yerel günün başlangıcıdır. Yılbaşı geri sayımı da aynı yolla, 1 Ocak yerel gece yarısına yöneltilerek çalışır.</p>
+    <p>Aynı fikir gece yarısı için eğlenceli bir ekran da verir: yeni yıla çoktan girmiş şehirlerin listesi. Her şehir için dakika cinsinden sabit standart saat farklarından kurulur. Farklar Aralık&#x27;taki değerlerdir, bu yüzden liste hiçbir çevrimiçi hizmete bağlı değildir.</p>
+    <h2>Tek fonksiyonda okunabilen bir zorluk eğrisi</h2>
+    <p>Her kapı, tek bir fonksiyonla bir oyuna ve bir zorluğa eşlenir. Altı oyun günlere dağılarak döner; aynı oyun her altıncı kapıda geri gelir. Bir ile üçüncü günler birinci seviyeden, dördüncü ile yedinci günler ikinci seviyeden başlar, sekizinci ile yirmi birinci günler üçten beşe tırmanır, bitişten önceki son bölüm yedi ve sekize çıkar. Yirmi dördüncü ve yirmi beşinci günler büyük resim bulmacalarıdır, otuz birinci gün ağacın tepesine yıldızı koyan finaldir.</p>
+    <p>Bunu saf bir fonksiyonda tutmak, denge değişikliklerini tek satırlık bir düzenleme yapar ve her oyuncunun aynı gün aynı kapıyı görmesini sağlar.</p>
+    <h2>Dürüst sınırlar</h2>
+    <p>Sunucu yok; bu yüzden uygulama telefonun saatine güvenir. Yanlış tarihe ayarlı bir telefon yanlış kapıyı gösterir. Ücretsiz bir bulmaca takvimi için bunu kabul ettik: uçakta çalışan, yerel ve önce çevrimdışı bir uygulama bizim için katı bir saatten değerlidir. Takviminizde ödüller varsa farklı bir tasarım gerekir.</p>
+    <aside class="gcta"><img class="ic" src="/snowlings/icon.png" alt="Snowlings icon" width="64" height="64"><div class="tx"><b>Ücretsiz dene: Snowlings</b><span>Google Play&#x27;de ücretsiz. Hesap gerekmez.</span></div><a class="play" href="https://play.google.com/store/apps/details?id=com.snowlings.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dblog%26utm_campaign%3Dadvent-calendar-door-logic"><img src="/badges/google-play-tr.svg" alt="Google Play" width="162" height="48"></a><a class="small" href="/tr/snowlings/">Snowlings hakkında</a></aside>
+    <section class="faq"><h2>Sık sorulan sorular</h2><details><summary>Takvim internet bağlantısı ister mi?</summary><p>Hayır. Tarih mantığı cihazda çalışır, bu yüzden kapılar çevrimdışı da işler.</p></details><details><summary>Oyuncunun kaçırdığı kapılara ne olur?</summary><p>Sonradan kısa bir reklamla ya da serbest oyunda kazanılan kar taneleriyle açılabilir ve açılma hatırlanır.</p></details><details><summary>Biri Aralık ortasında kurarsa ne olur?</summary><p>Kurulum gününden önceki bütün kapılar açıktır; geç başlayan reklam duvarına çarpmaz.</p></details><details><summary>Telefon tarihini değiştirmek kapıları erken açar mı?</summary><p>Evet. Uygulama telefonun saatini okur ve onu denetleyecek sunucusu yoktur; gündelik bir bulmaca takvimi için bunu kabul ediyoruz.</p></details></section>
+    <section><h2>Diğer yazılar</h2><ul class="glist"><li><a href="/tr/yazilar/izin-istemeden-android-ve-ios-icin-fotograf-secici/"><img src="/snowlings/icon.png" alt="Snowlings icon" width="48" height="48"><div><b>İzin İstemeden Android ve iOS İçin Fotoğraf Seçici</b></div></a></li><li><a href="/tr/yazilar/android-ve-ios-te-bulut-kaydi-ilerlemeyi-asla-kaybetmeyen-birlestirme-kurali/"><img src="/snowlings/icon.png" alt="Snowlings icon" width="48" height="48"><div><b>Android ve iOS&#x27;ta Bulut Kaydı: İlerlemeyi Asla Kaybetmeyen Birleştirme Kuralı</b></div></a></li><li><a href="/tr/yazilar/online-yilbasi-cekilisi-nasil-yapilir-gizli-hediye-arkadasi/"><img src="/snowlings/icon.png" alt="Snowlings icon" width="48" height="48"><div><b>Online Yılbaşı Çekilişi Nasıl Yapılır? Gizli Hediye Arkadaşı</b></div></a></li><li><a href="/tr/yazilar/acik-kaynak-bir-astronomi-kutuphanesini-tek-yama-betigiyle-android-ve-ios-ta-calistirmak/"><img src="/astrolings/icon.png" alt="Astrolings icon" width="48" height="48"><div><b>Açık Kaynak Astronomi Kütüphanesi: Tek Yama Betiğiyle Android ve iOS</b></div></a></li><li><a href="/tr/yazilar/bulutta-ios-imzalama-her-derlemede-yeni-sertifika-ve-kalici-cozum/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Bulutta iOS İmzalama: Her Derlemede Yeni Sertifika ve Kalıcı Çözüm</b></div></a></li><li><a href="/tr/yazilar/ios-derleme-numarasi-1-de-takildi-isleyen-bir-cozum-ve-uc-islemeyen/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>1&#x27;de Takılan iOS Derleme Numarası: İşlemeyen Üç Çözüm ve İşleyen Bir Çözüm</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

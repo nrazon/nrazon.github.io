@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cloud Save on Android and iOS | Nesim Apps</title>
+<meta name="description" content="How one shared Kotlin function merges game progress for Play Games Saved Games on Android and iCloud key-value storage on iOS, and why taking the maximum…">
+<link rel="canonical" href="https://nesimapps.com/blog/cloud-save-on-android-and-ios-the-merge-rule-that-never-loses-progress/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/cloud-save-on-android-and-ios-the-merge-rule-that-never-loses-progress/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/android-ve-ios-te-bulut-kaydi-ilerlemeyi-asla-kaybetmeyen-birlestirme-kurali/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/guardado-en-la-nube-en-android-e-ios-la-regla-de-fusion-que-nunca-pierde-progreso/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/salvamento-na-nuvem-no-android-e-ios-a-regra-de-mesclagem-que-nunca-perde-progresso/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/cloud-save-on-android-and-ios-the-merge-rule-that-never-loses-progress/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#2E6FBF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Cloud Save on Android and iOS: The Merge Rule That Never Loses Progress">
+<meta property="og:description" content="How one shared Kotlin function merges game progress for Play Games Saved Games on Android and iCloud key-value storage on iOS, and why taking the maximum…">
+<meta property="og:url" content="https://nesimapps.com/blog/cloud-save-on-android-and-ios-the-merge-rule-that-never-loses-progress/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cloud Save on Android and iOS: The Merge Rule That Never Loses Progress">
+<meta name="twitter:description" content="How one shared Kotlin function merges game progress for Play Games Saved Games on Android and iCloud key-value storage on iOS, and why taking the maximum…">
+<style>:root { --accent:#2E6FBF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Cloud Save on Android and iOS: The Merge Rule That Never Loses Progress", "description": "How one shared Kotlin function merges game progress for Play Games Saved Games on Android and iCloud key-value storage on iOS, and why taking the maximum avoids conflicts.", "inLanguage": "en", "mainEntityOfPage": "https://nesimapps.com/blog/cloud-save-on-android-and-ios-the-merge-rule-that-never-loses-progress/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-18", "dateModified": "2026-11-18", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Dev notes, iOS, Android", "about": {"@type": "SoftwareApplication", "name": "Snowlings", "operatingSystem": "Android", "applicationCategory": "GameApplication", "url": "https://nesimapps.com/snowlings/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Cloud Save on Android and iOS: The Merge Rule That Never Loses Progress", "item": "https://nesimapps.com/blog/cloud-save-on-android-and-ios-the-merge-rule-that-never-loses-progress/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why take the maximum instead of the newest save?", "acceptedAnswer": {"@type": "Answer", "text": "Progress values only go up, so the larger number is always correct, and it needs no timestamps or conflict dialogs."}}, {"@type": "Question", "name": "What is stored in the cloud?", "acceptedAnswer": {"@type": "Answer", "text": "Door stars, level stars, unlocked doors and a total counter. Settings, snowflakes, hints, wish capsule text and photos stay on the device."}}, {"@type": "Question", "name": "What happens if the cloud is unavailable?", "acceptedAnswer": {"@type": "Answer", "text": "The app keeps working and saves locally. The merge happens the next time the cloud can be reached."}}, {"@type": "Question", "name": "Does this work for scores that can go down?", "acceptedAnswer": {"@type": "Answer", "text": "No. For values that can decrease, such as a reset or a removed item, you need version stamps or tombstones."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/cloud-save-on-android-and-ios-the-merge-rule-that-never-loses-progress/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/android-ve-ios-te-bulut-kaydi-ilerlemeyi-asla-kaybetmeyen-birlestirme-kurali/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/guardado-en-la-nube-en-android-e-ios-la-regla-de-fusion-que-nunca-pierde-progreso/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/salvamento-na-nuvem-no-android-e-ios-a-regra-de-mesclagem-que-nunca-perde-progresso/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>Cloud Save on Android and iOS: The Merge Rule That Never Loses Progress</h1>
+    <p class="by">By Nesim Razon, independent mobile developer · 2026-11-18</p>
+    <p class="tags"><a href="/blog/#devlog">#Dev notes</a><a href="/blog/#ios">#iOS</a><a href="/blog/#android">#Android</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Players change phones and reinstall apps, and they expect their stars to come with them. We wanted cloud save in our new game from the first release, on both Android and iPhone, without a server and without a conflict dialog. The trick is a merge rule so simple that it fits in one line, and a shared piece of Kotlin that both platforms call.</p>
+    <h2>Two stores, one format</h2>
+    <p>On Android the progress lives in Play Games Saved Games. On iPhone it lives in the iCloud key-value store. They have nothing in common technically, so the shared code does not touch either. It only knows how to turn progress into a small text blob, how to read a blob back, and how to merge two of them.</p>
+    <p>The blob has one entry per line in the form key, a vertical bar, and an integer, sorted by key. Door stars, level stars, unlocked doors and one total counter go in. A reader skips anything it does not understand, negative numbers included, so a damaged blob can never crash the game.</p>
+    <h2>Why iCloud and not Game Center</h2>
+    <p>Both could store a save on iPhone. We chose the iCloud key-value store because it asks nothing of the player: if iCloud is on for the device, which is the default, it just works. Game Center saved games need a Game Center login that many players have never used, and a login dialog is friction exactly at the moment we want a smooth restore. Our data is only a few kilobytes and the key-value store allows far more, so size was never an issue.</p>
+    <h2>The rule: the larger number wins</h2>
+    <p>Merging two phones&#x27; progress sounds like a conflict problem until you look at what is being stored. Stars only go up. An unlocked door is zero or one and never goes back to zero. The total solved counter only grows. For values like that, taking the larger of the two always gives the right answer.</p>
+    <p>This kind of merge has three useful properties. The order does not matter, merging A with B equals merging B with A. Merging the same data twice changes nothing. And you can merge three phones in any grouping. That means there is no need for timestamps, no last-writer-wins, and no dialog asking which save to keep.</p>
+    <h2>The same rule in two places</h2>
+    <p>The merge function is not the only place the rule lives. The setters that write a star count to local storage only accept a value higher than the stored one. So even a buggy caller could not lower progress. The cloud merge and the local setters agree, which gives two independent layers of protection.</p>
+    <p>The sync step itself is short. Read the remote text, merge it with an export of local progress, apply the merged result locally if it differs, and return the merged text to be written back to the cloud. Both platforms call that one function and only differ in how they fetch and store the text.</p>
+    <h2>What stays on the device</h2>
+    <p>Not everything belongs in the cloud. Settings, hint counts, snowflakes, the text of a private wish capsule and any photos stay on the phone. That keeps the privacy story simple, no extra data types are sent to us, and it keeps the blob tiny. Whitelisting keys by prefix in one function makes that decision easy to audit.</p>
+    <h2>Where the rule does not work</h2>
+    <p>Taking the maximum only works for values that cannot legitimately decrease. A reset progress button is the classic trap: the cloud still holds the old high numbers and merges them back. If your game needs real deletion, you need tombstones or version stamps, which is a different and bigger design. We kept to values that only grow. The reset button in our game clears only the local copy, so with cloud save on, the next sync can bring the old stars back; we accept that for now.</p>
+    <p>Testing is mostly a ritual: solve a door, delete the app, install again, sign in, and watch the stars return. On iPhone expect a short delay, because iCloud sync is not instant.</p>
+    <aside class="gcta"><img class="ic" src="/snowlings/icon.png" alt="Snowlings icon" width="64" height="64"><div class="tx"><b>Try it free: Snowlings</b><span>Free on Google Play. No account needed.</span></div><a class="play" href="https://play.google.com/store/apps/details?id=com.snowlings.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dblog%26utm_campaign%3Dcloud-save-max-merge"><img src="/badges/google-play-en.svg" alt="Google Play" width="162" height="48"></a><a class="small" href="/snowlings/">About Snowlings</a></aside>
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Why take the maximum instead of the newest save?</summary><p>Progress values only go up, so the larger number is always correct, and it needs no timestamps or conflict dialogs.</p></details><details><summary>What is stored in the cloud?</summary><p>Door stars, level stars, unlocked doors and a total counter. Settings, snowflakes, hints, wish capsule text and photos stay on the device.</p></details><details><summary>What happens if the cloud is unavailable?</summary><p>The app keeps working and saves locally. The merge happens the next time the cloud can be reached.</p></details><details><summary>Does this work for scores that can go down?</summary><p>No. For values that can decrease, such as a reset or a removed item, you need version stamps or tombstones.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/a-photo-picker-for-android-and-ios-without-asking-for-permission/"><img src="/snowlings/icon.png" alt="Snowlings icon" width="48" height="48"><div><b>A Photo Picker for Android and iOS Without Asking for Permission</b></div></a></li><li><a href="/blog/how-an-advent-calendar-app-decides-which-door-opens-today/"><img src="/snowlings/icon.png" alt="Snowlings icon" width="48" height="48"><div><b>How an Advent Calendar App Decides Which Door Opens Today</b></div></a></li><li><a href="/blog/how-to-run-an-online-secret-santa-draw-free-no-sign-up/"><img src="/snowlings/icon.png" alt="Snowlings icon" width="48" height="48"><div><b>How to Run an Online Secret Santa Draw (Free, No Sign-Up)</b></div></a></li><li><a href="/blog/running-an-open-source-astronomy-library-on-android-and-ios-with-one-patch-script/"><img src="/astrolings/icon.png" alt="Astrolings icon" width="48" height="48"><div><b>Open Source Astronomy on Android and iOS With One Patch Script</b></div></a></li><li><a href="/blog/cloud-ios-signing-a-new-certificate-on-every-build-and-the-fix/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Cloud iOS Signing: A New Certificate on Every Build, and the Fix</b></div></a></li><li><a href="/blog/ios-build-number-stuck-at-one-three-failed-fixes-and-one-that-worked/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>The iOS Build Number That Stayed at 1: Three Failed Fixes and One That Worked</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>
