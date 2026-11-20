@@ -1,7 +1,16 @@
 {
- "uretim": "2026-11-19T14:26:35Z",
+ "uretim": "2026-11-20T14:00:24Z",
  "surum": 1,
  "apod": [
+  {
+   "tarih": "2026-11-20",
+   "baslik": "V-G-R",
+   "tur": "image",
+   "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-20-v-g-r/",
+   "ozet_en": "Explanation: On November 17, fans of interstellar spaceflight around planet Earth were invited to shine a message into the night sky. Traced by a flashlight beam switched on and off, the dashes and dots of a Morse code message captured in this time exposure from the Emirates Astronomical Observatory, are read V-G-R.",
+   "kredi": "Apostolos Kyriazis",
+   "nasa_kaynakli": false
+  },
   {
    "tarih": "2026-11-19",
    "baslik": "The Horsehead and Flame Nebulas",
@@ -81,15 +90,6 @@
    "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-11-ngc-4449-small-galaxy-big-impact/",
    "ozet_en": "Explanation: Don’t judge a galaxy by its size. Our home galaxy, the Milky Way, is about 100,000 light years across. This huge expanse of space contains hundreds of billions of stars! The smallest galaxies, called dwarf galaxies, are about 1/10th the size of the Milky Way and only contain a few billion stars.",
    "kredi": "NASA, ESA, A. Aloisi (STScI/ESA), and the Hubble Heritage (STScI/AURA)-ESA/Hubble Collaboration",
-   "nasa_kaynakli": false
-  },
-  {
-   "tarih": "2026-11-10",
-   "baslik": "Saturn Behind the Moon",
-   "tur": "image",
-   "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-10-saturn-behind-the-moon/",
-   "ozet_en": "Explanation: Sometimes Saturn disappears. It doesn't really go away, of course -- it just disappears from our view when Earth's Moon moves in front.",
-   "kredi": "Roberto Ortu",
    "nasa_kaynakli": false
   }
  ],
@@ -192,38 +192,10 @@
  },
  "asteroitler": {
   "aralik": [
-   "2026-11-19",
-   "2026-12-03"
+   "2026-11-20",
+   "2026-12-04"
   ],
   "liste": [
-   {
-    "ad": "(2018 NE1)",
-    "tarih": "2026-Nov-19 02:16",
-    "mesafe_ay": 16.6,
-    "hiz_kms": 13.3,
-    "cap_m": 74
-   },
-   {
-    "ad": "(2007 WK3)",
-    "tarih": "2026-Nov-19 07:19",
-    "mesafe_ay": 14.2,
-    "hiz_kms": 7.8,
-    "cap_m": 20
-   },
-   {
-    "ad": "(2026 VA11)",
-    "tarih": "2026-Nov-19 11:26",
-    "mesafe_ay": 8.7,
-    "hiz_kms": 8.9,
-    "cap_m": 13
-   },
-   {
-    "ad": "(2026 TB84)",
-    "tarih": "2026-Nov-19 22:20",
-    "mesafe_ay": 12.1,
-    "hiz_kms": 9.9,
-    "cap_m": 67
-   },
    {
     "ad": "(2026 VD6)",
     "tarih": "2026-Nov-20 10:36",
@@ -237,6 +209,13 @@
     "mesafe_ay": 5.2,
     "hiz_kms": 7.1,
     "cap_m": 41
+   },
+   {
+    "ad": "(2026 WB1)",
+    "tarih": "2026-Nov-21 19:54",
+    "mesafe_ay": 1.9,
+    "hiz_kms": 14.0,
+    "cap_m": 10
    },
    {
     "ad": "(2026 VD9)",
@@ -253,11 +232,25 @@
     "cap_m": 29
    },
    {
+    "ad": "(2026 WA1)",
+    "tarih": "2026-Nov-21 22:28",
+    "mesafe_ay": 1.2,
+    "hiz_kms": 13.6,
+    "cap_m": 5
+   },
+   {
     "ad": "(2026 WJ)",
     "tarih": "2026-Nov-22 04:20",
     "mesafe_ay": 1.7,
     "hiz_kms": 9.2,
     "cap_m": 14
+   },
+   {
+    "ad": "(2026 WC1)",
+    "tarih": "2026-Nov-22 23:58",
+    "mesafe_ay": 5.9,
+    "hiz_kms": 19.8,
+    "cap_m": 16
    },
    {
     "ad": "(2026 WF)",
@@ -279,6 +272,13 @@
     "mesafe_ay": 4.4,
     "hiz_kms": 13.9,
     "cap_m": 15
+   },
+   {
+    "ad": "(2026 VQ5)",
+    "tarih": "2026-Nov-25 21:21",
+    "mesafe_ay": 5.2,
+    "hiz_kms": 11.7,
+    "cap_m": 58
    }
   ],
   "kredi": "NASA/JPL CNEOS"
@@ -289,15 +289,15 @@
     "baslik": "Tropical Cyclone Akvan",
     "tur": "Severe Storms",
     "tarih": "2026-11-19",
-    "boylam": 85.4,
-    "enlem": 15.1
+    "boylam": 84.7,
+    "enlem": 17.2
    },
    {
     "baslik": "Tropical Cyclone Xavier",
     "tur": "Severe Storms",
-    "tarih": "2026-11-19",
-    "boylam": -163.2,
-    "enlem": -10.6
+    "tarih": "2026-11-20",
+    "boylam": -162.8,
+    "enlem": -11
    },
    {
     "baslik": "Wildfire Range 47, Forrest, Mississippi",
@@ -396,25 +396,25 @@
  "iss_tle": {
   "OBJECT_NAME": "ISS (ZARYA)",
   "OBJECT_ID": "1998-067A",
-  "EPOCH": "2026-11-19T04:55:07.676544",
-  "MEAN_MOTION": 15.49480324,
-  "ECCENTRICITY": 0.0007402,
+  "EPOCH": "2026-11-20T04:08:12.769728",
+  "MEAN_MOTION": 15.49502307,
+  "ECCENTRICITY": 0.00074261,
   "INCLINATION": 51.6318,
-  "RA_OF_ASC_NODE": 252.9634,
-  "ARG_OF_PERICENTER": 42.1092,
-  "MEAN_ANOMALY": 318.0465,
+  "RA_OF_ASC_NODE": 248.1735,
+  "ARG_OF_PERICENTER": 45.4169,
+  "MEAN_ANOMALY": 314.7424,
   "EPHEMERIS_TYPE": 0,
   "CLASSIFICATION_TYPE": "U",
   "NORAD_CAT_ID": 25544,
   "ELEMENT_SET_NO": 999,
-  "REV_AT_EPOCH": 59578,
-  "BSTAR": 0.00025714952,
-  "MEAN_MOTION_DOT": 0.00013991,
+  "REV_AT_EPOCH": 59593,
+  "BSTAR": 0.00018678039,
+  "MEAN_MOTION_DOT": 0.0001004,
   "MEAN_MOTION_DDOT": 0
  },
  "gibs": {
-  "tarih": "2026-11-18",
-  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_NOAA21_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-11-18&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
+  "tarih": "2026-11-19",
+  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_NOAA21_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-11-19&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
   "kredi": "NASA GIBS / Worldview"
  }
 }
