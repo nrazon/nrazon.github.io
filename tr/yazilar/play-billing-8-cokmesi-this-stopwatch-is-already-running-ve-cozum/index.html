@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Play Billing 8.0.0 Çökmesi | Nesim Apps</title>
+<meta name="description" content="Play Billing 8.0.0&#x27;da otomatik yeniden bağlanmayla çıkan nadir IllegalStateException, Crashlytics&#x27;te nasıl buldum ve neden 8.3.0&#x27;a geçtim.">
+<link rel="canonical" href="https://nesimapps.com/tr/yazilar/play-billing-8-cokmesi-this-stopwatch-is-already-running-ve-cozum/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/play-billing-8-crash-this-stopwatch-is-already-running-and-the-fix/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/play-billing-8-cokmesi-this-stopwatch-is-already-running-ve-cozum/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/fallo-de-play-billing-8-this-stopwatch-is-already-running-y-la-solucion/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/falha-do-play-billing-8-this-stopwatch-is-already-running-e-a-correcao/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/play-billing-8-crash-this-stopwatch-is-already-running-and-the-fix/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#4A5BB0">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Play Billing 8.0.0 Çökmesi: “This Stopwatch Is Already Running” ve Çözümü">
+<meta property="og:description" content="Play Billing 8.0.0&#x27;da otomatik yeniden bağlanmayla çıkan nadir IllegalStateException, Crashlytics&#x27;te nasıl buldum ve neden 8.3.0&#x27;a geçtim.">
+<meta property="og:url" content="https://nesimapps.com/tr/yazilar/play-billing-8-cokmesi-this-stopwatch-is-already-running-ve-cozum/">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Play Billing 8.0.0 Çökmesi: “This Stopwatch Is Already Running” ve Çözümü">
+<meta name="twitter:description" content="Play Billing 8.0.0&#x27;da otomatik yeniden bağlanmayla çıkan nadir IllegalStateException, Crashlytics&#x27;te nasıl buldum ve neden 8.3.0&#x27;a geçtim.">
+<style>:root { --accent:#4A5BB0; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Play Billing 8.0.0 Çökmesi: “This Stopwatch Is Already Running” ve Çözümü", "description": "Play Billing 8.0.0'da otomatik yeniden bağlanmayla çıkan nadir IllegalStateException, Crashlytics'te nasıl buldum ve neden 8.3.0'a geçtim.", "inLanguage": "tr", "mainEntityOfPage": "https://nesimapps.com/tr/yazilar/play-billing-8-cokmesi-this-stopwatch-is-already-running-ve-cozum/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-20", "dateModified": "2026-11-20", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Geliştirici notları, Android", "about": {"@type": "SoftwareApplication", "name": "Tilelings", "operatingSystem": "Android", "applicationCategory": "GameApplication", "url": "https://nesimapps.com/tr/tilelings/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/tr/"}, {"@type": "ListItem", "position": 2, "name": "Yazılar", "item": "https://nesimapps.com/tr/yazilar/"}, {"@type": "ListItem", "position": 3, "name": "Play Billing 8.0.0 Çökmesi: “This Stopwatch Is Already Running” ve Çözümü", "item": "https://nesimapps.com/tr/yazilar/play-billing-8-cokmesi-this-stopwatch-is-already-running-ve-cozum/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "“This stopwatch is already running” ne demek?", "acceptedAnswer": {"@type": "Answer", "text": "Play Billing Kitaplığı'nın içindeki zamanlama kodu, çalışan bir zamanlayıcıyı yeniden başlatmaya çalıştığında attığı bir IllegalStateException'dır. 8.0.0'da otomatik hizmet yeniden bağlanması sırasında olabiliyordu."}}, {"@type": "Question", "name": "Hangi Play Billing sürümleri etkileniyor?", "acceptedAnswer": {"@type": "Answer", "text": "Raporlar, otomatik hizmet yeniden bağlanması açık 8.0.0'a işaret ediyor. Google'ın izleyicisi 8.1.0 ve sonrasında düzeltildiğini söylüyor."}}, {"@type": "Question", "name": "Billing 9'a geçmem gerekir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. 8.3.0 gibi bir 8.x sürümü, büyük bir API göçü olmadan bu çökmeyi düzeltir."}}, {"@type": "Question", "name": "Ne sıklıkla oluyor?", "acceptedAnswer": {"@type": "Answer", "text": "Nadiren. Benim durumumda tek kullanıcıdan iki olaydı. Yine de faturalama kitaplığındaki nadir çökmeler düzeltmeye değer."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/play-billing-8-crash-this-stopwatch-is-already-running-and-the-fix/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/play-billing-8-cokmesi-this-stopwatch-is-already-running-ve-cozum/" hreflang="tr" data-lang="tr" aria-current="page">TR</a><a href="/es/blog/fallo-de-play-billing-8-this-stopwatch-is-already-running-y-la-solucion/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/falha-do-play-billing-8-this-stopwatch-is-already-running-e-a-correcao/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/tr/">Nesim Apps</a> › <a href="/tr/yazilar/">Yazılar</a></nav>
+    <h1>Play Billing 8.0.0 Çökmesi: “This Stopwatch Is Already Running” ve Çözümü</h1>
+    <p class="by">Nesim Razon, bağımsız mobil uygulama geliştiricisi · 2026-11-20</p>
+    <p class="tags"><a href="/tr/yazilar/#devlog">#Geliştirici notları</a><a href="/tr/yazilar/#android">#Android</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Crashlytics&#x27;te Play Billing Kitaplığı&#x27;ndan gelen ve mesajı “This stopwatch is already running” olan bir IllegalStateException görüyorsan, 8.0.0 sürümündeki bilinen bir hataya denk geldin demektir; otomatik hizmet yeniden bağlanması açıkken ortaya çıkıyor. Google hatayı 8.1.0 ve sonrasında düzeltildi olarak işaretledi, ben de uygulamamı 8.3.0&#x27;a taşıdım. Çökmenin nasıl göründüğünü, kitaplığa nasıl bağladığımı ve kendi projende neye bakman gerektiğini anlatıyorum.</p>
+    <h2>Çökme nasıl görünüyordu</h2>
+    <p>Her yeni sürümde Crashlytics&#x27;e bakıyorum. Mahjong oyunumuz Tilelings için rapor çok küçüktü: yalnızca 1.1.0 sürümünde, tek kullanıcıdan iki olay; panodaki diğer her şey temizdi. İstisna, “This stopwatch is already running” metinli bir IllegalStateException&#x27;dı. Yığının en üstü, faturalama hizmeti bağlantısı koptuğunda çalışan geri çağrıda, karartılmış Billing Kitaplığı sınıflarındaydı.</p>
+    <p>Tek kişiden iki olay kolayca görmezden gelinir. Ben gelmedim, çünkü kontrol etmediğin bir kitaplığın içindeki çökme çoğu zaman talihsizlik değil hatadır ve ileride daha fazla kişiyi vurabilir.</p>
+    <h2>Neden suçun kitaplıkta olduğunu düşündüm</h2>
+    <p>Kendi kodumda kronometre kullanan hiçbir şey yok. Mesaj, kitaplığın içindeki zamanlama kodundan geliyor. Faturalama sınıfımda istemci otomatik hizmet yeniden bağlanması açık olarak kuruluyor ve kendi bağlantı kopması geri çağrım bilerek boş; çünkü kitaplığın kendi başına yeniden bağlanması gerekiyor. Yani çökme noktasındaki tek hareketli parça kitaplığın yeniden bağlanma mantığıydı.</p>
+    <h2>Sorun izleyicisi ne diyor</h2>
+    <p>Tam mesajı aramak, Play Billing 8.0.0&#x27;da otomatik yeniden bağlanma ile ortaya çıkan bu çökmeyi anlatan herkese açık bir Google kaydına götürdü. Benim kullandığım kombinasyonun aynısı. Konuya göre sorun 8.1.0 ve sonrasında düzeltilmiş. Sürüm notlarında geçmiyor, yani ancak izleyicide arayarak buluyorsun. Kayıt düzeltildi, yeniden açıldı ve yeniden düzeltildi olarak işaretlenmiş; bu, durumu güvenmeden önce son yorumları okumanın hatırlatıcısı.</p>
+    <h2>Çözüm: sürüm kataloğunda tek satır</h2>
+    <p>Değişikliğin kendisi küçük. Gradle sürüm kataloğunda Billing bağımlılığı 8.0.0&#x27;dan 8.3.0&#x27;a çıkıyor, uygulamanın sürüm kodu artıyor ve yeni bir sürüm yayınlanıyor. 9.x yerine 8.3.0&#x27;ı seçtim, çünkü büyük sürüm API&#x27;leri değiştirebilir ve ben bir çökme için düzeltme istedim, göç değil.</p>
+    <p>Bu yazı yazılırken yeni derleme mağazaya yeni ulaştı; bu yüzden uzun bir temiz kayıt gösteremiyorum. Birkaç günlük gerçek kullanımdan sonra Crashlytics&#x27;e yeniden bakacağım ve çökme geri gelirse bu notu güncelleyeceğim.</p>
+    <h2>Yükseltemiyorsan bir geçici çözüm</h2>
+    <p>8.0.0&#x27;da kalmak zorundaysan mantıksal geçici çözüm, otomatik yeniden bağlanmayı bırakıp bağlantı kopma geri çağrısında kendin yeniden bağlanmak ve denemeler arasında kısa bir bekleme koymak. Bunu denemedim, bu yüzden öneri değil fikir olarak düşün. Yükseltmek daha basit ve Google&#x27;ın işaret ettiği yol.</p>
+    <h2>Kendi uygulamalarında nasıl kontrol edersin</h2>
+    <ul><li>Crashlytics sorun listesinde “stopwatch is already running” metnini ara.</li><li>Gradle dosyalarındaki Billing sürümüne bak. 8.0.0 olan, yalnızca otomatik yeniden bağlanma da açıksa etkilenir.</li><li>Kodunda istemci kurucusundaki otomatik yeniden bağlanma çağrısını ara.</li><li>8.1.0 veya sonrasına yükselt, gerçek bir cihazda satın alma akışını dene ve yayınla.</li><li>Sonraki sürümleri de yalnızca ilk gün değil, Crashlytics&#x27;te izle.</li></ul>
+    <h2>Diğer uygulamalarım için ne yaptım</h2>
+    <p>Diğer yedi oyun ve uygulamam aynı Billing sürümünü aynı yeniden bağlanma ayarıyla kullanıyor. Henüz rapor yok ama aynı riski taşıyorlar, o yüzden hepsini tek seferde güncelliyorum. Satın alma kitaplığındaki nadir bir çökme, örüntüye dönüşmeden düzeltmeye değer.</p>
+    <aside class="gcta"><img class="ic" src="/tilelings/icon.png" alt="Tilelings icon" width="64" height="64"><div class="tx"><b>Ücretsiz dene: Tilelings</b><span>Google Play&#x27;de ücretsiz. Hesap gerekmez.</span></div><a class="play" href="https://play.google.com/store/apps/details?id=com.tilelings.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dblog%26utm_campaign%3Dplay-billing-stopwatch-crash"><img src="/badges/google-play-tr.svg" alt="Google Play" width="162" height="48"></a><a class="small" href="/tr/tilelings/">Tilelings hakkında</a></aside>
+    <section class="faq"><h2>Sık sorulan sorular</h2><details><summary>“This stopwatch is already running” ne demek?</summary><p>Play Billing Kitaplığı&#x27;nın içindeki zamanlama kodu, çalışan bir zamanlayıcıyı yeniden başlatmaya çalıştığında attığı bir IllegalStateException&#x27;dır. 8.0.0&#x27;da otomatik hizmet yeniden bağlanması sırasında olabiliyordu.</p></details><details><summary>Hangi Play Billing sürümleri etkileniyor?</summary><p>Raporlar, otomatik hizmet yeniden bağlanması açık 8.0.0&#x27;a işaret ediyor. Google&#x27;ın izleyicisi 8.1.0 ve sonrasında düzeltildiğini söylüyor.</p></details><details><summary>Billing 9&#x27;a geçmem gerekir mi?</summary><p>Hayır. 8.3.0 gibi bir 8.x sürümü, büyük bir API göçü olmadan bu çökmeyi düzeltir.</p></details><details><summary>Ne sıklıkla oluyor?</summary><p>Nadiren. Benim durumumda tek kullanıcıdan iki olaydı. Yine de faturalama kitaplığındaki nadir çökmeler düzeltmeye değer.</p></details></section>
+    <section><h2>Diğer yazılar</h2><ul class="glist"><li><a href="/tr/yazilar/mahjong-solitaire-tarihi-ve-klasik-mahjong-farki/"><img src="/tilelings/icon.png" alt="Tilelings icon" width="48" height="48"><div><b>Mahjong Solitaire&#x27;in Tarihi ve Klasik Mahjong&#x27;dan Farkı</b></div></a></li><li><a href="/tr/yazilar/mahjong-solitaire-tahtasi-cozulebilir-nasil-garanti-ederiz/"><img src="/tilelings/icon.png" alt="Tilelings icon" width="48" height="48"><div><b>Mahjong Solitaire Tahtası Çözülebilir mi? Nasıl Garanti Ederiz</b></div></a></li><li><a href="/tr/yazilar/clarity-ai-gorunurluk-kucuk-bir-site-icin-konu-icgoruleri-ilk-sonuclar/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Clarity AI Görünürlük: Küçük Bir Site İçin Konu İçgörüleri, İlk Sonuçlar</b></div></a></li><li><a href="/tr/yazilar/api-yokken-36-youtube-topluluk-gonderisini-zamanlamak/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>API Yokken 36 YouTube Topluluk Gönderisini Zamanlamak</b></div></a></li><li><a href="/tr/yazilar/play-age-signals-api-ve-kaliforniya-ab-1043-kucuk-bir-gelistirici-ne-yapmali/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Play Age Signals API ve Kaliforniya AB 1043: Küçük Bir Geliştirici Ne Yapmalı</b></div></a></li><li><a href="/tr/yazilar/ucretsiz-metinden-sese-ve-python-ile-anlatimli-blog-videolari/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Ücretsiz Metinden Sese ve Python ile Anlatımlı Blog Videoları</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

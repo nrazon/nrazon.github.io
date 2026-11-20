@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>URL Inspection API ile Google&#x27;ın Hangi Sayfaları Dizine Eklediğini Kontrol Et</title>
+<meta name="description" content="381 URL&#x27;lik bir sitemap&#x27;i Search Console URL Inspection API ile nasıl kontrol ettim, sonuçlar neydi ve bilinmeyen sayfalar için ne yaptım.">
+<link rel="canonical" href="https://nesimapps.com/tr/yazilar/url-inspection-api-ile-google-hangi-sayfalari-dizine-eklemis-kontrol-et/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/check-which-pages-google-has-indexed-with-the-url-inspection-api/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/url-inspection-api-ile-google-hangi-sayfalari-dizine-eklemis-kontrol-et/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/comprueba-que-paginas-ha-indexado-google-con-la-api-de-inspeccion-de-urls/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/verifique-quais-paginas-o-google-indexou-com-a-api-de-inspecao-de-url/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/check-which-pages-google-has-indexed-with-the-url-inspection-api/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="URL Inspection API ile Google&#x27;ın Hangi Sayfaları Dizine Eklediğini Kontrol Et">
+<meta property="og:description" content="381 URL&#x27;lik bir sitemap&#x27;i Search Console URL Inspection API ile nasıl kontrol ettim, sonuçlar neydi ve bilinmeyen sayfalar için ne yaptım.">
+<meta property="og:url" content="https://nesimapps.com/tr/yazilar/url-inspection-api-ile-google-hangi-sayfalari-dizine-eklemis-kontrol-et/">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="URL Inspection API ile Google&#x27;ın Hangi Sayfaları Dizine Eklediğini Kontrol Et">
+<meta name="twitter:description" content="381 URL&#x27;lik bir sitemap&#x27;i Search Console URL Inspection API ile nasıl kontrol ettim, sonuçlar neydi ve bilinmeyen sayfalar için ne yaptım.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "URL Inspection API ile Google'ın Hangi Sayfaları Dizine Eklediğini Kontrol Et", "description": "381 URL'lik bir sitemap'i Search Console URL Inspection API ile nasıl kontrol ettim, sonuçlar neydi ve bilinmeyen sayfalar için ne yaptım.", "inLanguage": "tr", "mainEntityOfPage": "https://nesimapps.com/tr/yazilar/url-inspection-api-ile-google-hangi-sayfalari-dizine-eklemis-kontrol-et/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-20", "dateModified": "2026-11-20", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Geliştirici notları, Android"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/tr/"}, {"@type": "ListItem", "position": 2, "name": "Yazılar", "item": "https://nesimapps.com/tr/yazilar/"}, {"@type": "ListItem", "position": 3, "name": "URL Inspection API ile Google'ın Hangi Sayfaları Dizine Eklediğini Kontrol Et", "item": "https://nesimapps.com/tr/yazilar/url-inspection-api-ile-google-hangi-sayfalari-dizine-eklemis-kontrol-et/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Birçok sayfanın dizin durumunu aynı anda kontrol edebilir miyim?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. URL Inspection API istek başına bir URL kontrol eder; bir betik, belgelenmiş günlük ve dakikalık sınırlara uyduğu sürece sitemap üzerinde döngü yapabilir."}}, {"@type": "Question", "name": "“Discovered” ile “Crawled” ama dizinde değil arasındaki fark nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Discovered, Google'ın adresi bildiği ama henüz taramadığı demektir. Crawled, Google'ın sayfayı çektiği ve dizine almamaya karar verdiği demektir; genelde bir kalite sinyalidir."}}, {"@type": "Question", "name": "Neden bir izin hatası aldım?", "acceptedAnswer": {"@type": "Answer", "text": "Mülk değeri büyük olasılıkla sitenin kayıtlı olduğu biçimle eşleşmedi; örneğin alan adı mülkü biçimi yerine düz bir URL kullanıldı."}}, {"@type": "Question", "name": "Sitemap'i yeniden göndermek dizine alınmayı garanti eder mi?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Google'ın URL'leri keşfetmesine yardım eder. Dizine alma yine her sayfa için Google'ın kararına bağlıdır."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/check-which-pages-google-has-indexed-with-the-url-inspection-api/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/url-inspection-api-ile-google-hangi-sayfalari-dizine-eklemis-kontrol-et/" hreflang="tr" data-lang="tr" aria-current="page">TR</a><a href="/es/blog/comprueba-que-paginas-ha-indexado-google-con-la-api-de-inspeccion-de-urls/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/verifique-quais-paginas-o-google-indexou-com-a-api-de-inspecao-de-url/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/tr/">Nesim Apps</a> › <a href="/tr/yazilar/">Yazılar</a></nav>
+    <h1>URL Inspection API ile Google&#x27;ın Hangi Sayfaları Dizine Eklediğini Kontrol Et</h1>
+    <p class="by">Nesim Razon, bağımsız mobil uygulama geliştiricisi · 2026-11-20</p>
+    <p class="tags"><a href="/tr/yazilar/#devlog">#Geliştirici notları</a><a href="/tr/yazilar/#android">#Android</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Search Console raporları yalnızca zaten gösterim almış sayfaları gösterir, bu yüzden Google&#x27;ın hiç dizine eklemediği sayfaları söyleyemez. URL Inspection API söyleyebilir. Sitemap&#x27;imdeki 381 URL&#x27;nin hepsini bir betikle kontrol ettim: 329&#x27;u dizindeydi, 52&#x27;si değildi. Kontrolün nasıl çalıştığını, yanıtların ne anlama geldiğini ve sonra ne yaptığımı anlatıyorum.</p>
+    <h2>Normal raporlar neden yetmiyor</h2>
+    <p>Performans raporu aramada gösterilen sorguları ve sayfaları listeler. Sıfır gösterimli bir sayfa raporda basitçe yoktur ve bilmek istediğin sayfa tam olarak odur. Yalnızca birkaç haftalık bir sitede sayfaların çoğu bu gruptadır.</p>
+    <h2>API çağrısı nasıl çalışıyor</h2>
+    <p>API iki değer alır: incelemek istediğin URL ve ait olduğu mülk. Dizin durumunu, kapsama durumunu sözcüklerle, son tarama zamanını, Google&#x27;ın seçtiği kanonik URL&#x27;yi ve taramaya izin verilip verilmediğini döndürür. Sitemap dosyasını okudum, her URL&#x27;yi gönderdim ve kapsama durumunu sakladım.</p>
+    <p>Bir ayrıntı ilk denememi başarısız kıldı: mülk değeri sitenin kayıtlı olduğu biçimle eşleşmeli. Alan adı mülkü özel bir önekle yazılır ve düz adresi kullanmak, URL&#x27;nin mülkün parçası olmadığını söyleyen bir izin hatası döndürdü. Mülkün kısıtlı kullanıcısı olarak eklenmiş bir hizmet hesabı incelemeleri çalıştırabiliyor.</p>
+    <h2>Kotaya nazik ol</h2>
+    <p>API&#x27;nin site başına günlük ve dakika başına bir sınırı var. Betiğim bir önbellek kullanıyor ve bir sayfayı ancak yaklaşık bir hafta sonra yeniden kontrol ediyor; bu yüzden haftalık bir çalıştırma sınırların çok altında kalıyor ve birkaç yüz URL&#x27;lik ilk çalıştırma birkaç paralel istekle birkaç dakikada bitiyor.</p>
+    <h2>Ne buldum</h2>
+    <p>381 URL&#x27;nin 329&#x27;u “Submitted and indexed” idi. Kalan 52 üç gruba ayrıldı: Google&#x27;ın hiç bilmediği 33, “Discovered, currently not indexed” olan 13 ve “Crawled, currently not indexed” olan 6. Dillere göre İngilizce sayfalar en iyi kapsanmıştı, Türkçe olanlarda en çok boşluk vardı. Google&#x27;ın bilmediği sayfalar çoğunlukla en yeni yazılar ve rehberlerdi.</p>
+    <p>Üç grup farklı eylemler ister. “Bilinmiyor”, Google&#x27;ın sayfayı henüz bulmadığı demektir, bulmasına yardım et. “Keşfedildi”, adresi bildiği ama taramadığı demektir. “Tarandı, dizinde değil”, baktığı ve dizine almamayı seçtiği demektir; bu bir içerik kalitesi sinyalidir ve orada sayfayı iyileştirmem gerekiyor.</p>
+    <h2>Bunun için ne yaptım</h2>
+    <ul><li>Sitemap&#x27;i Search Console&#x27;da yeniden gönderdim; ardından 381 sayfanın hepsini keşfedilmiş olarak bildirdi.</li><li>İç bağlantıların ve blog dizininin en yeni sayfalara ulaştığından emin oldum.</li><li>Aynı kontrolü bir hafta sonra yeniden çalıştırıp sayıları karşılaştırmayı planlıyorum.</li><li>“Tarandı, dizinde değil” sayfalarında yeniden dizine alma istemek yerine gerçek derinlik eklemeyi planlıyorum.</li></ul>
+    <h2>Bir panonun parçası yap</h2>
+    <p>Kontrol önbellekli düz bir betik olduğu için bir panoya koymak kolay: kontrol edilenlere oranla dizindekiler, dile göre dağılım ve dizinde olmayan sayfaların kısa listesi. Haftalık bir rakam, yayınlarının dizine ulaşıp ulaşmadığını söyler.</p>
+    
+    <section class="faq"><h2>Sık sorulan sorular</h2><details><summary>Birçok sayfanın dizin durumunu aynı anda kontrol edebilir miyim?</summary><p>Evet. URL Inspection API istek başına bir URL kontrol eder; bir betik, belgelenmiş günlük ve dakikalık sınırlara uyduğu sürece sitemap üzerinde döngü yapabilir.</p></details><details><summary>“Discovered” ile “Crawled” ama dizinde değil arasındaki fark nedir?</summary><p>Discovered, Google&#x27;ın adresi bildiği ama henüz taramadığı demektir. Crawled, Google&#x27;ın sayfayı çektiği ve dizine almamaya karar verdiği demektir; genelde bir kalite sinyalidir.</p></details><details><summary>Neden bir izin hatası aldım?</summary><p>Mülk değeri büyük olasılıkla sitenin kayıtlı olduğu biçimle eşleşmedi; örneğin alan adı mülkü biçimi yerine düz bir URL kullanıldı.</p></details><details><summary>Sitemap&#x27;i yeniden göndermek dizine alınmayı garanti eder mi?</summary><p>Hayır. Google&#x27;ın URL&#x27;leri keşfetmesine yardım eder. Dizine alma yine her sayfa için Google&#x27;ın kararına bağlıdır.</p></details></section>
+    <section><h2>Diğer yazılar</h2><ul class="glist"><li><a href="/tr/yazilar/clarity-ai-gorunurluk-kucuk-bir-site-icin-konu-icgoruleri-ilk-sonuclar/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Clarity AI Görünürlük: Küçük Bir Site İçin Konu İçgörüleri, İlk Sonuçlar</b></div></a></li><li><a href="/tr/yazilar/api-yokken-36-youtube-topluluk-gonderisini-zamanlamak/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>API Yokken 36 YouTube Topluluk Gönderisini Zamanlamak</b></div></a></li><li><a href="/tr/yazilar/play-age-signals-api-ve-kaliforniya-ab-1043-kucuk-bir-gelistirici-ne-yapmali/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Play Age Signals API ve Kaliforniya AB 1043: Küçük Bir Geliştirici Ne Yapmalı</b></div></a></li><li><a href="/tr/yazilar/ucretsiz-metinden-sese-ve-python-ile-anlatimli-blog-videolari/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Ücretsiz Metinden Sese ve Python ile Anlatımlı Blog Videoları</b></div></a></li><li><a href="/tr/yazilar/her-baglantiya-bir-utm-bagimsiz-gelistirici-icin-adlandirma-duzeni/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Her Bağlantıya Bir UTM: Bağımsız Geliştirici İçin Adlandırma Düzeni</b></div></a></li><li><a href="/tr/yazilar/bing-webmaster-api-pano-veri-gosterirken-bos-listeler-donduruyor/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Bing Webmaster API Pano Veri Gösterirken Boş Listeler Döndürüyor</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

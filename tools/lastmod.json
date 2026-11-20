@@ -1368,116 +1368,116 @@
   "date": "2026-11-16"
  },
  "https://nesimapps.com/blog/": {
-  "hash": "9a51e72fbcb3f2f20bbf377f0d1c4833",
-  "date": "2026-11-18"
+  "hash": "bdccc4ac7f5af36785f12f495dc67d9a",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/app-store-review-guideline-2-1-information-needed-what-i-sent/": {
-  "hash": "e90ac843fc0160ddf1be776d8a67be53",
-  "date": "2026-11-18"
+  "hash": "6e1e37330a4bd2dc5ba34414e86121a0",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/": {
-  "hash": "a76de2aa5229c1a2a0ab3ef53464492c",
-  "date": "2026-11-18"
+  "hash": "ceb88141a1cbd90a078045d38f328528",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/bmi-common-mistakes-and-limits/": {
-  "hash": "16a270605319f212a866dda34dd1ec04",
-  "date": "2026-11-18"
+  "hash": "09fb98487d35320b51ede911e8fc5c9d",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/": {
-  "hash": "26f481aaf976fd3f485fc5205141ca02",
-  "date": "2026-11-18"
+  "hash": "039509028c3690c3fbf0e4ee7c46f21f",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/": {
-  "hash": "b858d21a6652e8b12fbfea55626fa6b1",
-  "date": "2026-11-18"
+  "hash": "2736922730fea88c4d9a6ca281bb8e58",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/earthquake-magnitude-vs-intensity/": {
-  "hash": "2529c258244cb75dbbd48566104f8f24",
-  "date": "2026-11-18"
+  "hash": "4c4706137bf97bd6846a05d3ee1e1ba2",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/earthquake-preparedness-what-to-do/": {
-  "hash": "60a361186f0c167444c8b172aa21dbc7",
-  "date": "2026-11-18"
+  "hash": "7cfbde79e970cdd301b261d0e749b7f1",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/game-feel-jetpack-compose-without-game-engine/": {
-  "hash": "7babc2c908d6a74f2e22b517507579ab",
-  "date": "2026-11-18"
+  "hash": "a72a3b1e500cae6b2b56d4b931b6c84f",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/how-a-tombala-card-is-generated-six-cards-ninety-numbers/": {
-  "hash": "82ffcdb29fe3c35c6070bae03e6a5abc",
-  "date": "2026-11-18"
+  "hash": "5fa36272047951edc613aeedccaa3a77",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/how-daily-puzzles-work-without-a-server/": {
-  "hash": "0f22b8fadb6be5cb75cf6040ac92e923",
-  "date": "2026-11-18"
+  "hash": "7c36ab38525143d9035fb33002c05ab5",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/how-puzzle-levels-are-generated-and-checked/": {
-  "hash": "98e14d8a9a4117e7c20bd8a9122190ad",
-  "date": "2026-11-18"
+  "hash": "f5af68c284852d79f93f56cd0735455d",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/how-to-calculate-exact-age-years-months-days/": {
-  "hash": "0c6232bb9d73913d9028d34c9ec23cf2",
-  "date": "2026-11-18"
+  "hash": "217e4757c69c86dd39595a8cc681e89c",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/how-we-guarantee-mahjong-solitaire-is-solvable/": {
-  "hash": "f3958ae90c5eaa850ed168455aae6c6d",
-  "date": "2026-11-18"
+  "hash": "6a8e13b12fb09286ac68e7a4945cc741",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/keeping-two-dozen-android-apps-maintainable-solo/": {
-  "hash": "a0918906244c3b4af7ab6a95d556dfe3",
-  "date": "2026-11-18"
+  "hash": "0937d7936c97d3b54629364e48e934c4",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/leap-day-birthday-how-to-count-age/": {
-  "hash": "687764b7aac4273795e854526045cc0a",
-  "date": "2026-11-18"
+  "hash": "8cf0333a48ec854b1b9651d249125684",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/mahjong-solitaire-history-vs-real-mahjong/": {
-  "hash": "7037090365b9528a1bd3b466c53dbb06",
-  "date": "2026-11-18"
+  "hash": "24022f954468767eaaa87645a8bba3e1",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/": {
-  "hash": "85520bda2e658cbb0ea05301d5afbf01",
-  "date": "2026-11-18"
+  "hash": "de2df20f647b376420d00df95be7fd98",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/": {
-  "hash": "5dbb5da257c116e9dd36dc953f0df202",
-  "date": "2026-11-18"
+  "hash": "d170ea923b529c300becc9cb1e2a11b9",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/pentomino-puzzles-dancing-links-exact-cover/": {
-  "hash": "04400875cb5a2baf4a97271478033e36",
-  "date": "2026-11-18"
+  "hash": "4a8526c010e583a6abebee932de3d763",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/pentominoes-history-golomb-twelve-pieces/": {
-  "hash": "f9c077be185dd2f6b54f74e61eb962d1",
-  "date": "2026-11-18"
+  "hash": "78e605bbb25bfe96095acbc7ab49959e",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/": {
-  "hash": "9e4e7e85d61850fef62a4daa5a32afe3",
-  "date": "2026-11-18"
+  "hash": "a0d6e62e05fa05971118763b86a0b3d6",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/": {
-  "hash": "3240d8177614948ea18028ca09433a58",
-  "date": "2026-11-18"
+  "hash": "27619da6711b94df173b6417a3b4c13b",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/": {
-  "hash": "e096784297f4f0b923dddede23323aad",
-  "date": "2026-11-18"
+  "hash": "852bbe43996f2aad8ae141d39c2ef5f3",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/tic-tac-toe-history-and-variants/": {
-  "hash": "35345383e7c69e5e3a13baec2464f745",
-  "date": "2026-11-18"
+  "hash": "ed5b94526341948d3c008db9d2cc8793",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/what-is-bmi-how-to-calculate-and-read-it/": {
-  "hash": "9ab2bb0acbe2fabcefc0246cae6d03a0",
-  "date": "2026-11-18"
+  "hash": "da757478cdf6e486c276c72cec3906b1",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/where-earthquake-data-comes-from/": {
-  "hash": "478cd249e312cc775e8fee4af518ccc8",
-  "date": "2026-11-18"
+  "hash": "7900197f16ad6a1f784f5d81170bcfb0",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/": {
-  "hash": "c2f8b9e82bef82d53878c374f5d0be5a",
-  "date": "2026-11-18"
+  "hash": "4ff107bb0353a3a9fb29b284d70907bb",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/bmicalculator/": {
   "hash": "ab9c6462afb4f94d50c222c630d143f2",
@@ -1512,116 +1512,116 @@
   "date": "2026-11-16"
  },
  "https://nesimapps.com/es/blog/": {
-  "hash": "13edb06d5bf2330f8e768205ace6013b",
-  "date": "2026-11-18"
+  "hash": "a02f76cc27c3d233495d856111cf0128",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/capturas-de-app-store-sin-telefono-robolectric-un-cargador-de-imagenes-falso-y-un-navegador-sin-interfaz/": {
-  "hash": "391e7f5e4a3895e7daa651d7926b251c",
-  "date": "2026-11-18"
+  "hash": "6547e5d4aada740fba25f8dd9f39dece",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/como-calcular-la-edad-exacta-anos-meses-dias/": {
-  "hash": "87a0b7675db0788826a40f8496e802ed",
-  "date": "2026-11-18"
+  "hash": "585b6c4e12fbd05a6c0c4053a06a79e9",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/como-garantizamos-que-un-mahjong-solitario-tenga-solucion/": {
-  "hash": "4e5597ab07d5867d1041ff49ba36c83d",
-  "date": "2026-11-18"
+  "hash": "d5f2cfe9eebe667a5cbf6bbca6a156a2",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/como-se-genera-un-carton-de-tombola-seis-cartones-noventa-numeros/": {
-  "hash": "447abb9674b82373755b745fca06b772",
-  "date": "2026-11-18"
+  "hash": "59f65dcf36285649a9f841bd673a72a3",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/": {
-  "hash": "37f0f4b4c21c05caaa299869476eecab",
-  "date": "2026-11-18"
+  "hash": "5106fbcd2578444bf4608be41a92cd52",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/cumpleanos-29-de-febrero-como-contar-la-edad/": {
-  "hash": "b0ec8a507d1fd65fdeb8afd4d2df490b",
-  "date": "2026-11-18"
+  "hash": "fd60b217e6d87d39841a435f951cff4c",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/de-donde-vienen-los-datos-de-terremotos/": {
-  "hash": "223035451dd43b02a91d7dade4c0d973",
-  "date": "2026-11-18"
+  "hash": "7c878d51b5fbd550c516f9ef14015ebc",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/": {
-  "hash": "678e5157c34ef72dcb8c2a6fd7d2d164",
-  "date": "2026-11-18"
+  "hash": "04864c58f85c1788821f86049bd4b249",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/detectar-anuncio-intersticial-bloqueado-android-eventos/": {
-  "hash": "56cd68347622c162455fd022fefaaa03",
-  "date": "2026-11-18"
+  "hash": "fae72c766f1d7c9701f5922941af5cd4",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/errores-comunes-y-limites-del-imc/": {
-  "hash": "de487119dc3fd89a54faaad0b8c5673d",
-  "date": "2026-11-18"
+  "hash": "ed2f08cc3f67378050fdc45c9937588f",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/guia-2-1-de-app-store-informacion-necesaria-lo-que-envie/": {
-  "hash": "83ca1a1b687d35150e82b0188139c253",
-  "date": "2026-11-18"
+  "hash": "91c98e68e8815d53c418fee6c3afbe56",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/historia-de-los-pentominos-golomb-doce-piezas/": {
-  "hash": "72f94911d1b03906cc4b4f678ef46409",
-  "date": "2026-11-18"
+  "hash": "797afc7341b7359c15fe8f3475f41ba0",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/historia-del-tres-en-raya-y-sus-variantes/": {
-  "hash": "42a2adf5d97183e1fe49270702beeaae",
-  "date": "2026-11-18"
+  "hash": "34f1a126a4aff3cca5cc41835609a6e5",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/historia-mahjong-solitario-y-diferencias-con-mahjong/": {
-  "hash": "061d38eb0bfa776bb885a4ed8059821c",
-  "date": "2026-11-18"
+  "hash": "2b40ee895609bd752267eccee6718bbf",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/": {
-  "hash": "987a6df2713b51bacc55d874022d9a41",
-  "date": "2026-11-18"
+  "hash": "b324b1b1dea8c0c4944effb13fcaf9e7",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/magnitud-e-intensidad-de-un-terremoto/": {
-  "hash": "4c0fe3985a1560c520e64963fe36b0b5",
-  "date": "2026-11-18"
+  "hash": "abf7bd747a41ea3abc4b47007268c6ff",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/mantener-dos-docenas-de-apps-android-siendo-un-solo-desarrollador/": {
-  "hash": "c9805bcb04d6b092a985b2ca1c627144",
-  "date": "2026-11-18"
+  "hash": "6b454f46dab3f846d0926f74bd503b9a",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/": {
-  "hash": "2dc5b4daa4c6a162b4ebaff3f5e95718",
-  "date": "2026-11-18"
+  "hash": "2b7c98bd595060ab007660b7050a603d",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/por-que-mi-enlace-de-la-app-store-dio-404-y-la-pagina-mostraba-capturas-de-2018/": {
-  "hash": "8278247218dde8c844e232e732decba3",
-  "date": "2026-11-18"
+  "hash": "2226003e4f1ab3a21605fbbc767b7f99",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/": {
-  "hash": "02cd4e5aafa7ef810a71240b7f24448d",
-  "date": "2026-11-18"
+  "hash": "8eb5442bc626f7ed188b001156fe6747",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/puzle-diario-igual-para-todos-sin-servidor/": {
-  "hash": "ed0fc6ff878ed3d2590a6214955ff59b",
-  "date": "2026-11-18"
+  "hash": "7a2a2def209b882bd1b8074a8dae563c",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/puzles-de-pentominos-dancing-links-cobertura-exacta/": {
-  "hash": "725b186a6aa3435646909df2d2625de3",
-  "date": "2026-11-18"
+  "hash": "c3970cb039fcd7bfb6d68eaa05093c24",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/que-es-el-imc-como-se-calcula-y-se-interpreta/": {
-  "hash": "6a7433ee1a37f145d58c63fa280dc94a",
-  "date": "2026-11-18"
+  "hash": "f09118325ddd033212ff5e3fd8c49ec4",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/reescribir-para-kotlin-multiplatform-sin-cambiar-el-comportamiento-el-codigo-antiguo-como-oraculo-de-pruebas/": {
-  "hash": "5d55fc89159561a1700a13f560377d8c",
-  "date": "2026-11-18"
+  "hash": "3905c4d3d11eb6fe0e8b8343d400be04",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/sensacion-de-juego-jetpack-compose-sin-motor/": {
-  "hash": "8491a9d42716a5ab0693e20053f9a3fa",
-  "date": "2026-11-18"
+  "hash": "6f8904195f83d55406465da4818eb422",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/terremoto-que-hacer-antes-durante-despues/": {
-  "hash": "1a0c5fde4a870541dc747b10ff71e8a7",
-  "date": "2026-11-18"
+  "hash": "f01cfa191d5533cb17cbcd85eb9f700e",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/": {
-  "hash": "1ef2957649865b1c095e4d828566395b",
-  "date": "2026-11-18"
+  "hash": "0e9028a5f345117cf0af1a4667011633",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/bmicalculator/": {
   "hash": "0c58ee331051b24258e53d2db28ff7d8",
@@ -1988,116 +1988,116 @@
   "date": "2026-11-16"
  },
  "https://nesimapps.com/pt/blog/": {
-  "hash": "37ec66d540627c8c0be25f46a9a124d6",
-  "date": "2026-11-18"
+  "hash": "de4debe40c353de352431fa5b19200cc",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/aniversario-29-de-fevereiro-como-contar-a-idade/": {
-  "hash": "23b29a1a569935a7f499961fbcc1bec2",
-  "date": "2026-11-18"
+  "hash": "4bbffd170ea5da5acffaeb44c73cfdae",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/": {
-  "hash": "d35c0b64437b63ca20105ae3fb1d2f3b",
-  "date": "2026-11-18"
+  "hash": "15c54a12939f8ee2b41baf0932dfc8fa",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/como-calcular-idade-exata-anos-meses-dias/": {
-  "hash": "5f493925adf79ef28bc230f8131c3c67",
-  "date": "2026-11-18"
+  "hash": "f1c8c41a68a8dcb384fd4db7487f15cc",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/": {
-  "hash": "66f8d88b9ef02e8095209c220bb24cb1",
-  "date": "2026-11-18"
+  "hash": "c7fdad769f895c1db3452867013255dd",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/como-garantimos-que-um-mahjong-paciencia-tenha-solucao/": {
-  "hash": "5e2d13204ba0254f6568a039c568877a",
-  "date": "2026-11-18"
+  "hash": "e83230a382ed9861fe64754da3d8c1cf",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/como-uma-cartela-de-tombala-e-gerada-seis-cartelas-noventa-numeros/": {
-  "hash": "c162e249d331bb86d2c8e1c176bd9ea2",
-  "date": "2026-11-18"
+  "hash": "619e4a1a8be777e02e6b19fd26cc825c",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/de-onde-vem-os-dados-de-terremotos/": {
-  "hash": "aa3ed7ab17916157b24c14e32384d5a5",
-  "date": "2026-11-18"
+  "hash": "b4930c5b8d6a980b44b97f5b1e239636",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/": {
-  "hash": "592dfa2e5af0731cbf6fb4574dcbe3d3",
-  "date": "2026-11-18"
+  "hash": "e4ded928c985bd067790bd020d19023c",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/": {
-  "hash": "0e49ea6890504dcedcdeb77489342f5b",
-  "date": "2026-11-18"
+  "hash": "c14a36f79a2f4d38bb0caf55cc1ca229",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/diretriz-2-1-da-app-store-informacao-necessaria-o-que-enviei/": {
-  "hash": "66cbaeb5497bfb6c27a0b5cb0cd425b7",
-  "date": "2026-11-18"
+  "hash": "9f9651e78a07cef60417c7715b7be209",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/erros-comuns-e-limites-do-imc/": {
-  "hash": "7a5b93ff34dc7300d9e9e36773426473",
-  "date": "2026-11-18"
+  "hash": "c3b5eb45b771fd3eb72c9d8e93b792f7",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/game-feel-jetpack-compose-sem-motor-de-jogo/": {
-  "hash": "e8c70aa77ded25f77cff9483e9578617",
-  "date": "2026-11-18"
+  "hash": "6d67fc73a7444ca29f2ce841c98a8fe0",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/historia-do-jogo-da-velha-e-variantes/": {
-  "hash": "dd49b179693005a9defb6dbc5ecb91d3",
-  "date": "2026-11-18"
+  "hash": "6c028d010b55a5b05869f349c01e70f5",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/historia-dos-pentominos-golomb-doze-pecas/": {
-  "hash": "e5b2d04de2370511b186cec6868645ed",
-  "date": "2026-11-18"
+  "hash": "a1e1652a4fd0fe6b9a0d7a142b6e7170",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/historia-mahjong-paciencia-e-diferencas-para-o-mahjong/": {
-  "hash": "3bb23fb63eef987cdbd1d550dda22d74",
-  "date": "2026-11-18"
+  "hash": "5ea4c9db7dee4236011edb2850fdae9e",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/": {
-  "hash": "704c4f35dd4e8a94b683e0d38afdbcd7",
-  "date": "2026-11-18"
+  "hash": "b0c07e5bec02c8386d2c73e932f72ebb",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/magnitude-e-intensidade-de-um-terremoto/": {
-  "hash": "385bcb2ed4fc8d0caec77eea44a842d0",
-  "date": "2026-11-18"
+  "hash": "30786e4e355bb73f2bcb8ee4eccc5879",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/": {
-  "hash": "5cc82acc59b37790fe7eff1db0c8016a",
-  "date": "2026-11-18"
+  "hash": "3be0d7a92b1f612413550dc3e87e24c5",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/": {
-  "hash": "d9a44f24fc0e0259922f511dbd120302",
-  "date": "2026-11-18"
+  "hash": "33fd46eb328570c8cca5fb11ec6e04b8",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/o-que-e-imc-como-calcular-e-interpretar/": {
-  "hash": "6ec1c80f094396b2e699a5c0a101221f",
-  "date": "2026-11-18"
+  "hash": "2e7f5d186ce0e4284aa25fedfa23f1ba",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/": {
-  "hash": "972d680557a2667ab4c7a9892e5f9027",
-  "date": "2026-11-18"
+  "hash": "0625c34c24f31b3f9ff81f9eb9b5775f",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/": {
-  "hash": "044e893e04fa5c73ad4a8e0e415d8508",
-  "date": "2026-11-18"
+  "hash": "f5e2e181e11cfa206fc129d9feabd1a5",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/": {
-  "hash": "f720cdad79e1ace7854bc830d141f235",
-  "date": "2026-11-18"
+  "hash": "a2396ac38d170143a806416b54c492dd",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/quebra-cabecas-de-pentominos-dancing-links-cobertura-exata/": {
-  "hash": "690a841fe21e248e0688770c53a88bbf",
-  "date": "2026-11-18"
+  "hash": "5f04a3680f3a9695ddad8bd13c3dd265",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/": {
-  "hash": "6c77758c52f99622605714ed87434021",
-  "date": "2026-11-18"
+  "hash": "f49ab15541da68e6146e6e6c75dff38e",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/terremoto-o-que-fazer-antes-durante-depois/": {
-  "hash": "fe25e2296dd9e2127af6f9f3f2a2164b",
-  "date": "2026-11-18"
+  "hash": "e3f4ecab19466219a7f255a1c9948f2b",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/": {
-  "hash": "7267ac95456d2e165dbfbdcf00f1bf82",
-  "date": "2026-11-18"
+  "hash": "e80a7840ee54be3aef913cabab960a9b",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/bmicalculator/": {
   "hash": "e9c9cad183c10baae443a7f40607659a",
@@ -2520,128 +2520,128 @@
   "date": "2026-11-16"
  },
  "https://nesimapps.com/tr/yazilar/": {
-  "hash": "bcfdeba8cb446f03113b67e92fed828d",
-  "date": "2026-11-18"
+  "hash": "1069543e438ac090855654569df2003e",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/29-subat-dogum-gunu-yas-nasil-sayilir/": {
-  "hash": "149c6037631da4475a76449ae8b5e565",
-  "date": "2026-11-18"
+  "hash": "259a2aad2fb1a48786d5ea5e462eb719",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/": {
-  "hash": "ef08ed02879b98be4ebbbfb53c0691ad",
-  "date": "2026-11-18"
+  "hash": "fc91b7e7a77f68bbf66a3332b83cf62f",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/": {
-  "hash": "33707c7db12b71563ef01853f90d0a86",
-  "date": "2026-11-18"
+  "hash": "bd88f68111a4c7f822acc7ef97864809",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/app-store-baglantim-neden-404-verdi-ve-sayfa-2018-ekran-goruntulerini-gosterdi/": {
-  "hash": "49bf346c59bf41c12e4113eb459200f3",
-  "date": "2026-11-18"
+  "hash": "fd47ccebdbcb141edf1892b572051f87",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/app-store-inceleme-kurali-2-1-bilgi-gerekli-ne-gonderdim/": {
-  "hash": "b455b0f4489842dcc32523c578956801",
-  "date": "2026-11-18"
+  "hash": "b6f903b1584695b77dc4c2ad780dc657",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/ay-evreleri-neden-29-5-gunde-doner-yeniay-dolunay/": {
-  "hash": "f83b5f94ba19d6b15cbfe10c53a455ef",
-  "date": "2026-11-18"
+  "hash": "7d30cbe5a2445f27abb59671c2012f42",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/bmi-nedir-nasil-hesaplanir-yorumlanir/": {
-  "hash": "972906b05ae9c6229ed867e1f15d354e",
-  "date": "2026-11-18"
+  "hash": "f5aead3199640bce0b01ef7ab92b38fa",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/bmi-yanilgilari-ve-sinirlari/": {
-  "hash": "078072597cfc16bcf061f11668651b52",
-  "date": "2026-11-18"
+  "hash": "2d27536c3b57417ea263754f4f23f332",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/": {
-  "hash": "9578e1aefa2aaf7c957df947a3fea321",
-  "date": "2026-11-18"
+  "hash": "0a0537722931365662af0d2bac01c1ca",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/burclar-takimyildizlardan-neden-kaydi-13-burc-yilanci/": {
-  "hash": "2af593c25864a1bc58d806cab3530bbd",
-  "date": "2026-11-18"
+  "hash": "7fda996e2b66a126a38a85794e32ba0d",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/": {
-  "hash": "e7bc0c9bbb654b523bb98f8ed262a792",
-  "date": "2026-11-18"
+  "hash": "cedf78ca230e271a29dfba830a72e2ac",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/deprem-buyuklugu-ve-siddeti-arasindaki-fark/": {
-  "hash": "c52d446ec5c7614100e796b15a4c3be8",
-  "date": "2026-11-18"
+  "hash": "d9a00893ae3cb9d46c08f401e4adbb13",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/deprem-oncesi-sirasinda-sonrasinda-ne-yapilir/": {
-  "hash": "0891a7178b1cd900edca53b600ee7448",
-  "date": "2026-11-18"
+  "hash": "617e2d0f24098c3323cbff9e5bebf006",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/": {
-  "hash": "e93071be1dab5a55933b5ebe7f20a433",
-  "date": "2026-11-18"
+  "hash": "2a5b32287ab5e741617f7264e4bb06a7",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/": {
-  "hash": "05c466da40639a6fc3d167654241de97",
-  "date": "2026-11-18"
+  "hash": "8875ed76291ec008791af6ef6936067f",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/": {
-  "hash": "305c12534863075d0d543e7265308a71",
-  "date": "2026-11-18"
+  "hash": "d1e2c3b968031575d2994f5da6bcb81b",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/": {
-  "hash": "cdfb4c9407bec676a4c6555affb113d3",
-  "date": "2026-11-18"
+  "hash": "d24e567d8998237a7960ded600c325f9",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/mahjong-solitaire-tahtasi-cozulebilir-nasil-garanti-ederiz/": {
-  "hash": "f73f47217aaeb1600e32eceb092ed505",
-  "date": "2026-11-18"
+  "hash": "8c910f40e6b3b074cd173c36e3354c97",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/mahjong-solitaire-tarihi-ve-klasik-mahjong-farki/": {
-  "hash": "0c1e1846a75cdc047c2061fcadb41782",
-  "date": "2026-11-18"
+  "hash": "5cceb4cb88684573ea8899e34efafe79",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/merkur-retrosu-nedir-gokyuzunde-gercekte-ne-oluyor/": {
-  "hash": "fbfe6a09152cabcf61a710a6c75e8d1d",
-  "date": "2026-11-18"
+  "hash": "a078268bebc41ab75975a875ea00238d",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/oyun-motoru-olmadan-jetpack-compose-oyun-hissi/": {
-  "hash": "23f3aea393adebec5dc60e388c35d655",
-  "date": "2026-11-18"
+  "hash": "f448ebe01bd3c2877fda472a967be578",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/pentomino-bulmacalari-dancing-links-tam-kapsama/": {
-  "hash": "9e1e80115e15011bb58f8dfa03d190f9",
-  "date": "2026-11-18"
+  "hash": "6cb4348c77b1f6e5744e9056ffebaeba",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/pentomino-tarihi-golomb-12-parca/": {
-  "hash": "b2c1709bd7194f04938aa154da138f5d",
-  "date": "2026-11-18"
+  "hash": "435844225fac020f2e6bb770a784f22d",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/son-deprem-verileri-nereden-geliyor/": {
-  "hash": "ec92d625ee759a68c71ffdc2f7dcc0ea",
-  "date": "2026-11-18"
+  "hash": "5dccf155f571dfb692cd28b6dce68157",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/": {
-  "hash": "941d24863755587fff0c8fc8e8e8647f",
-  "date": "2026-11-18"
+  "hash": "e70b06e5c197ab4f7e0feb9ebb118aeb",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/": {
-  "hash": "3ac8ef7b5bbc0b05eb3be123eadb33d6",
-  "date": "2026-11-18"
+  "hash": "e5c70b1e9d987b7067d57f56574dfa2c",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/telefonsuz-app-store-ekran-goruntuleri-robolectric-sahte-gorsel-yukleyici-ve-basliksiz-tarayici/": {
-  "hash": "2bb31cefc1d4b479f3e49d06e9253598",
-  "date": "2026-11-18"
+  "hash": "e7829437316561dada7c4b39799ca8dd",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/tombala-karti-nasil-uretilir-alti-kart-doksan-sayi/": {
-  "hash": "93fff8a4f156fcf5d7317b2ccdafcbb0",
-  "date": "2026-11-18"
+  "hash": "b10f9b45ef47ab1c82788f89a17b6f75",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/xox-tarihi-ve-cesitleri/": {
-  "hash": "c6cacd22e14aa6bc7e45fb42ca7257e9",
-  "date": "2026-11-18"
+  "hash": "c57aea9984bbc54bf914f39c8801ab67",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/yas-hesaplama-yil-ay-gun-nasil-hesaplanir/": {
-  "hash": "95df03d23b2f200a76acdc70382ba8a8",
-  "date": "2026-11-18"
+  "hash": "06898906b8c7e3b6b8c91adfeba971d0",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/turksail/": {
   "hash": "ad43a3f591ae3e0b296b3de7026a6bb7",
@@ -2692,20 +2692,20 @@
   "date": "2026-11-16"
  },
  "https://nesimapps.com/tr/yazilar/online-yilbasi-cekilisi-nasil-yapilir-gizli-hediye-arkadasi/": {
-  "hash": "123c6b74d80466466ff42da8d26e649e",
-  "date": "2026-11-18"
+  "hash": "9ca10dd8af1a34a5b0e54a5995b1c9c4",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/how-to-run-an-online-secret-santa-draw-free-no-sign-up/": {
-  "hash": "e1d3ab1068449a11599050defde0be20",
-  "date": "2026-11-18"
+  "hash": "a38d10deae742c824e060b02ac4088f1",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/como-hacer-un-sorteo-de-amigo-invisible-online-gratis-sin-registro/": {
-  "hash": "899953bed1a474a1ee945fcabf1d31a0",
-  "date": "2026-11-18"
+  "hash": "884a4fc7247f1c32077f26dd1ae9e6fc",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/como-fazer-um-sorteio-de-amigo-secreto-online-gratis-sem-cadastro/": {
-  "hash": "75fcf7f7591befe589d6d59b74b5e3f5",
-  "date": "2026-11-18"
+  "hash": "270eeec93401bc2108f7caa3267a1c6d",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/guias/como-medir-el-pulso-con-la-camara-del-movil/": {
   "hash": "5620034325c499745f4fccab1f8c6aa9",
@@ -2724,132 +2724,132 @@
   "date": "2026-11-17"
  },
  "https://nesimapps.com/blog/reading-a-pulse-from-a-phone-camera-filter-peaks-and-refusing-to-guess/": {
-  "hash": "722a51670323268c837586781c0b1701",
-  "date": "2026-11-18"
+  "hash": "4b5574c2cd9e3f1c0d45db77fd438cd8",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/leer-el-pulso-con-la-camara-del-movil-filtro-picos-y-no-adivinar/": {
-  "hash": "42c135cb659d4490cac097ec6befc501",
-  "date": "2026-11-18"
+  "hash": "84ec51f7ed39d84cdd9e876f6537b555",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/ler-a-pulsacao-pela-camera-do-celular-filtro-picos-e-nao-adivinhar/": {
-  "hash": "d22f5093cb0365c9052b7ab23e3f3397",
-  "date": "2026-11-18"
+  "hash": "be0eca1a603ed9ae77a7c1d0393fd108",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/telefon-kamerasindan-nabiz-okumak-filtre-tepeler-ve-tahmin-etmemek/": {
-  "hash": "bf00ade713f764b0d1e61d81b0432312",
-  "date": "2026-11-18"
+  "hash": "046bd5f0f50ae12f9b2b855159ca8b11",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/analytics-region-gate-on-ios-when-the-sim-country-is-unreadable/": {
-  "hash": "c68eb52545f0764163af296d02d5412d",
-  "date": "2026-11-18"
+  "hash": "8dca356c2d3dc7a090971990d78a14f2",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/ios-build-number-stuck-at-one-three-failed-fixes-and-one-that-worked/": {
-  "hash": "a40f49204ed9bce0b216fe0287439cf3",
-  "date": "2026-11-18"
+  "hash": "b3caa6f2cc8803986207ea552d1033cb",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/el-numero-de-compilacion-de-ios-que-se-quedo-en-1-tres-arreglos-fallidos-y-uno-que-funciono/": {
-  "hash": "e61bce5c385c396c99f74c2c91af8c5e",
-  "date": "2026-11-18"
+  "hash": "d3e6643c793708aa7157e0b7302b92fa",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/puerta-de-region-para-analytics-en-ios-cuando-no-se-lee-el-pais-de-la-sim/": {
-  "hash": "c432e5530cf68e7602aada25e4a989ba",
-  "date": "2026-11-18"
+  "hash": "d1d789449aba0304b4db746fef80a845",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/o-numero-de-build-do-ios-que-ficou-em-1-tres-correcoes-que-falharam-e-uma-que-funcionou/": {
-  "hash": "e9d2d83b62b7e29269b27280d3ab7ade",
-  "date": "2026-11-18"
+  "hash": "3f2c57c3670a5dbcf427aab5ef4c3200",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/porta-de-regiao-do-analytics-no-ios-quando-o-pais-do-chip-nao-pode-ser-lido/": {
-  "hash": "39cc1f250a490dbf634343d12d6e5639",
-  "date": "2026-11-18"
+  "hash": "a2206ac8dceccf99ea8086f8b33a07e4",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/ios-derleme-numarasi-1-de-takildi-isleyen-bir-cozum-ve-uc-islemeyen/": {
-  "hash": "4655a665afcc2b4c257d1098347f0907",
-  "date": "2026-11-18"
+  "hash": "f266e951c1b2ce173cae573b6c9f57f4",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/ios-te-sim-ulkesi-okunamayinca-analytics-bolge-kapisi/": {
-  "hash": "47da4e9285ccebf376ea34f41f997f8c",
-  "date": "2026-11-18"
+  "hash": "94d6970b3d608f0e03479edf3452637e",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/a-photo-picker-for-android-and-ios-without-asking-for-permission/": {
-  "hash": "b989cd35d230e7d2bc7c7459a4f36d42",
-  "date": "2026-11-18"
+  "hash": "02d3b81166277e0c9387d512a6bcb482",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/cloud-ios-signing-a-new-certificate-on-every-build-and-the-fix/": {
-  "hash": "cc91c1716be7314b841754265479b554",
-  "date": "2026-11-18"
+  "hash": "ada44fc05b8014dbc020298b960a4dd2",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/cloud-save-on-android-and-ios-the-merge-rule-that-never-loses-progress/": {
-  "hash": "f76b0416a1637ac360460b1e74ca25e0",
-  "date": "2026-11-18"
+  "hash": "d18521ebce8c3a9482dd4bb23a2f5d39",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/how-an-advent-calendar-app-decides-which-door-opens-today/": {
-  "hash": "92df0b3f6c89a36387d9d2a08ec6f54f",
-  "date": "2026-11-18"
+  "hash": "9e95f3889af40ac17740aaa194edffe2",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/blog/running-an-open-source-astronomy-library-on-android-and-ios-with-one-patch-script/": {
-  "hash": "0743fe37a67d0a3e3b548942ab9d931a",
-  "date": "2026-11-18"
+  "hash": "0fbc91ee1289a36c6528e422da674dd7",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/como-decide-una-app-de-calendario-de-adviento-que-puerta-se-abre-hoy/": {
-  "hash": "46e2bfca4ee7ea12c87ed902363040e3",
-  "date": "2026-11-18"
+  "hash": "606877d5e7368d67eab2202e8eb6cb31",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/ejecutar-una-biblioteca-de-astronomia-de-codigo-abierto-en-android-e-ios-con-un-script-de-parches/": {
-  "hash": "6dd571d2ba038def6a4b96e17019dbec",
-  "date": "2026-11-18"
+  "hash": "e12b8c85c62f5f8b315d3644f3b049d8",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/firma-ios-en-la-nube-un-certificado-nuevo-en-cada-compilacion-y-la-solucion/": {
-  "hash": "3141c4b12131b225d40a5e44d2c3a72a",
-  "date": "2026-11-18"
+  "hash": "4eff54a2ab534c4fae26781c8e7cf30e",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/guardado-en-la-nube-en-android-e-ios-la-regla-de-fusion-que-nunca-pierde-progreso/": {
-  "hash": "367cdd31caf809d1099e0ee0d3909b5e",
-  "date": "2026-11-18"
+  "hash": "f51e6a5c206c61603ed513aacdcc81c1",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/blog/un-selector-de-fotos-para-android-e-ios-sin-pedir-permiso/": {
-  "hash": "426c00fd31fb14e1315bf6a65d313223",
-  "date": "2026-11-18"
+  "hash": "e0b5f623f5082fd67d6eef5a8e61792c",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/assinatura-ios-na-nuvem-um-certificado-novo-a-cada-build-e-a-solucao/": {
-  "hash": "564e02c1dbddb51d6cc9a4b5c28978fd",
-  "date": "2026-11-18"
+  "hash": "ce193e78305b28049a6848ae82d22f59",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/como-um-app-de-calendario-do-advento-decide-qual-porta-abre-hoje/": {
-  "hash": "3990c6bd1cd26a8273818be516c7f490",
-  "date": "2026-11-18"
+  "hash": "61d888c6125a61c0bf60ae4c18251b49",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/rodando-uma-biblioteca-de-astronomia-de-codigo-aberto-no-android-e-ios-com-um-script-de-patches/": {
-  "hash": "babd529c9d5baa1f095121165e0a2ac9",
-  "date": "2026-11-18"
+  "hash": "3042f96b358e233ce7fcd40f0cf2002e",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/salvamento-na-nuvem-no-android-e-ios-a-regra-de-mesclagem-que-nunca-perde-progresso/": {
-  "hash": "b9c024b2e9f0c1e7a340b540b91e0004",
-  "date": "2026-11-18"
+  "hash": "e926855af7d69d6ccf8df6c70401dcad",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/blog/um-seletor-de-fotos-para-android-e-ios-sem-pedir-permissao/": {
-  "hash": "3c18973cb4fbbb16b34c462eec664a38",
-  "date": "2026-11-18"
+  "hash": "7eba85493fa0b0c586fff2ff75e241f8",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/acik-kaynak-bir-astronomi-kutuphanesini-tek-yama-betigiyle-android-ve-ios-ta-calistirmak/": {
-  "hash": "b0380cdb14d48719097ea64e02adb68a",
-  "date": "2026-11-18"
+  "hash": "2dba431a23cb8cb0b4b446703f57fa76",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/android-ve-ios-te-bulut-kaydi-ilerlemeyi-asla-kaybetmeyen-birlestirme-kurali/": {
-  "hash": "0b064f53b83aa409103ee5667f73c889",
-  "date": "2026-11-18"
+  "hash": "4a74dd2162587b4f342abb8b844815b1",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/bir-advent-takvimi-uygulamasi-bugun-hangi-kapinin-acilacagina-nasil-karar-verir/": {
-  "hash": "20ce3283e855670d40d0f0cb6d3ae1c0",
-  "date": "2026-11-18"
+  "hash": "ef5109e348dca33b279e75d39db02244",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/bulutta-ios-imzalama-her-derlemede-yeni-sertifika-ve-kalici-cozum/": {
-  "hash": "0ea48d4a9d04ca6ab0c9652b9a7342c4",
-  "date": "2026-11-18"
+  "hash": "1650abce6c2711e01aac33e78f1f6a82",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/tr/yazilar/izin-istemeden-android-ve-ios-icin-fotograf-secici/": {
-  "hash": "a2cc41a45b94a3b32f8a0e48a1bec87b",
-  "date": "2026-11-18"
+  "hash": "4b3bc521d215f43465161834648a1443",
+  "date": "2026-11-20"
  },
  "https://nesimapps.com/es/guias/como-elegir-un-juego-de-puzles-relajante-para-android/": {
   "hash": "c049a23fec8b325d970eafd1f461adcf",
@@ -2865,6 +2865,166 @@
  },
  "https://nesimapps.com/tr/rehber/android-icin-rahat-bulmaca-oyunu-nasil-secilir/": {
   "hash": "7c89f384d812dcd2ed5fb9209d2448ae",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/blog/bing-webmaster-api-returns-empty-lists-while-the-dashboard-shows-data/": {
+  "hash": "965a7c117e28d15152abdee556f8cba4",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/blog/check-which-pages-google-has-indexed-with-the-url-inspection-api/": {
+  "hash": "671ac250f297c37e996e55de1e959a94",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/blog/clarity-ai-visibility-topic-insights-for-a-small-site-first-results/": {
+  "hash": "caeecae3c57e25517d9ffbd8da9147c1",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/blog/narrated-blog-videos-with-free-text-to-speech-and-python/": {
+  "hash": "d8beaf5c04d133c17f078f8d7781146f",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/blog/one-utm-per-link-a-naming-scheme-for-a-solo-developer/": {
+  "hash": "1a06525f75ad6f39686cb3c22e8147bf",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/blog/play-age-signals-api-and-california-ab-1043-what-a-small-developer-must-do/": {
+  "hash": "10bed5a3a88fdacfd606dd335a65903a",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/blog/play-billing-8-crash-this-stopwatch-is-already-running-and-the-fix/": {
+  "hash": "0483fd1d3bd050359bd775d9203bb498",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/blog/play-console-bulk-reports-show-zero-active-devices-on-the-latest-day/": {
+  "hash": "cfdba3d63fa359b9986458061d32deb9",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/blog/reading-crashlytics-from-an-ai-coding-assistant-the-project-folder-trap/": {
+  "hash": "754f575ec241ad95b03d497511d463bb",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/blog/scheduling-36-youtube-community-posts-when-there-is-no-api/": {
+  "hash": "6f293646af3da116dd2aff5fdac2d234",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/es/blog/api-play-age-signals-y-ab-1043-de-california-que-debe-hacer-un-desarrollador-pequeno/": {
+  "hash": "ed413020b7e642ad40d91ecad73a740e",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/es/blog/clarity-ai-visibility-topic-insights-para-un-sitio-pequeno-primeros-resultados/": {
+  "hash": "930bd658a5b9c30a7605b1779ac0f6b4",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/es/blog/comprueba-que-paginas-ha-indexado-google-con-la-api-de-inspeccion-de-urls/": {
+  "hash": "dea01b67b7f9e1ac13ec584465605ca2",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/es/blog/fallo-de-play-billing-8-this-stopwatch-is-already-running-y-la-solucion/": {
+  "hash": "8f40d8f7385ab688c0721e0c73b5afdb",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/es/blog/la-api-de-bing-webmaster-devuelve-listas-vacias-mientras-el-panel-muestra-datos/": {
+  "hash": "6bb78411f7ce621938b62a54087ad021",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/es/blog/leer-crashlytics-desde-un-asistente-de-codigo-con-ia-la-trampa-de-la-carpeta-del-proyecto/": {
+  "hash": "f72d233f860d1a4dc7ee452157f8732c",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/es/blog/los-informes-masivos-de-play-console-muestran-0-dispositivos-activos-el-ultimo-dia/": {
+  "hash": "3e0d13d95d55ff48d19869d5f730ffa5",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/es/blog/programar-36-publicaciones-de-la-comunidad-de-youtube-cuando-no-hay-api/": {
+  "hash": "fa930151e586e71e27a1ff69edc463ab",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/es/blog/un-utm-por-enlace-un-esquema-de-nombres-para-un-desarrollador-independiente/": {
+  "hash": "d26817d467904679dcf1492923031ebf",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/es/blog/videos-de-blog-narrados-con-texto-a-voz-gratuito-y-python/": {
+  "hash": "4e4cea97090f180bffa80810446d344f",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/pt/blog/a-api-do-bing-webmaster-devolve-listas-vazias-enquanto-o-painel-mostra-dados/": {
+  "hash": "06b494492f4314e4b2811a7a4d41f5a2",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/pt/blog/agendar-36-posts-da-comunidade-do-youtube-quando-nao-ha-api/": {
+  "hash": "366c73db744feb787cd3f4f624c2707d",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/pt/blog/api-play-age-signals-e-ab-1043-da-california-o-que-um-desenvolvedor-pequeno-deve-fazer/": {
+  "hash": "dfa1e8da680d8e6e3d9e92acaeb88f30",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/pt/blog/clarity-ai-visibility-topic-insights-para-um-site-pequeno-primeiros-resultados/": {
+  "hash": "ecbb70c79f0e68bbcde8dbaeb2ac400f",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/pt/blog/falha-do-play-billing-8-this-stopwatch-is-already-running-e-a-correcao/": {
+  "hash": "bbefd964c972cd1bfdbd10e78c4f63ee",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/pt/blog/ler-o-crashlytics-com-um-assistente-de-codigo-com-ia-a-armadilha-da-pasta-do-projeto/": {
+  "hash": "1421974dd8af768b6b63ec8ec236b372",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/pt/blog/os-relatorios-em-massa-do-play-console-mostram-0-dispositivos-ativos-no-ultimo-dia/": {
+  "hash": "b5b5ea927edca4688eb6ad95d3eb15ef",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/pt/blog/um-utm-por-link-um-esquema-de-nomes-para-um-desenvolvedor-independente/": {
+  "hash": "e8a806f42d81049e25bad821e59deab2",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/pt/blog/verifique-quais-paginas-o-google-indexou-com-a-api-de-inspecao-de-url/": {
+  "hash": "864cb6918641cbe8ee210bc4bd5e073d",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/pt/blog/videos-de-blog-narrados-com-texto-para-fala-gratuito-e-python/": {
+  "hash": "f1cfba3baaee11ad2a991e79f83914e1",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/tr/yazilar/api-yokken-36-youtube-topluluk-gonderisini-zamanlamak/": {
+  "hash": "808cc2450772f65aa303bebcc1ad7c1d",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/tr/yazilar/bing-webmaster-api-pano-veri-gosterirken-bos-listeler-donduruyor/": {
+  "hash": "8bc902fd759dc434ab1635419edb9591",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/tr/yazilar/clarity-ai-gorunurluk-kucuk-bir-site-icin-konu-icgoruleri-ilk-sonuclar/": {
+  "hash": "d589f5d0ce219ea89ce21dfec72b2c11",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/tr/yazilar/her-baglantiya-bir-utm-bagimsiz-gelistirici-icin-adlandirma-duzeni/": {
+  "hash": "868b63ee84fe4f45565a07de6178851d",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/tr/yazilar/play-age-signals-api-ve-kaliforniya-ab-1043-kucuk-bir-gelistirici-ne-yapmali/": {
+  "hash": "c2a6b2c7a48fcd8c1a11ce0c5970bff2",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/tr/yazilar/play-billing-8-cokmesi-this-stopwatch-is-already-running-ve-cozum/": {
+  "hash": "6962a3abda0bea963ab2e5ade9460cfb",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/tr/yazilar/play-console-toplu-raporlari-son-gunde-sifir-aktif-cihaz-gosteriyor/": {
+  "hash": "7e96257fe54adeea327e508a6d2ca8bc",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/tr/yazilar/ucretsiz-metinden-sese-ve-python-ile-anlatimli-blog-videolari/": {
+  "hash": "eac11ae686e681451791193e376aa1b6",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/tr/yazilar/url-inspection-api-ile-google-hangi-sayfalari-dizine-eklemis-kontrol-et/": {
+  "hash": "f60f8c4705cddafa30306eaf4c046ad9",
+  "date": "2026-11-20"
+ },
+ "https://nesimapps.com/tr/yazilar/yapay-zeka-kod-asistaniyla-crashlytics-okumak-proje-klasoru-tuzagi/": {
+  "hash": "c66ffa3cae6a8fb0ae68b7cd48f3f015",
   "date": "2026-11-20"
  }
 }

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comprueba qué páginas ha indexado Google con la API de inspección de URL</title>
+<meta name="description" content="Cómo comprobé las 381 URL de un sitemap con la API de inspección de URL de Search Console, los resultados y qué hice con las páginas desconocidas.">
+<link rel="canonical" href="https://nesimapps.com/es/blog/comprueba-que-paginas-ha-indexado-google-con-la-api-de-inspeccion-de-urls/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/check-which-pages-google-has-indexed-with-the-url-inspection-api/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/url-inspection-api-ile-google-hangi-sayfalari-dizine-eklemis-kontrol-et/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/comprueba-que-paginas-ha-indexado-google-con-la-api-de-inspeccion-de-urls/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/verifique-quais-paginas-o-google-indexou-com-a-api-de-inspecao-de-url/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/check-which-pages-google-has-indexed-with-the-url-inspection-api/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Comprueba qué páginas ha indexado Google con la API de inspección de URL">
+<meta property="og:description" content="Cómo comprobé las 381 URL de un sitemap con la API de inspección de URL de Search Console, los resultados y qué hice con las páginas desconocidas.">
+<meta property="og:url" content="https://nesimapps.com/es/blog/comprueba-que-paginas-ha-indexado-google-con-la-api-de-inspeccion-de-urls/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Comprueba qué páginas ha indexado Google con la API de inspección de URL">
+<meta name="twitter:description" content="Cómo comprobé las 381 URL de un sitemap con la API de inspección de URL de Search Console, los resultados y qué hice con las páginas desconocidas.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Comprueba qué páginas ha indexado Google con la API de inspección de URL", "description": "Cómo comprobé las 381 URL de un sitemap con la API de inspección de URL de Search Console, los resultados y qué hice con las páginas desconocidas.", "inLanguage": "es", "mainEntityOfPage": "https://nesimapps.com/es/blog/comprueba-que-paginas-ha-indexado-google-con-la-api-de-inspeccion-de-urls/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-20", "dateModified": "2026-11-20", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Notas de desarrollo, Android"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/es/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/es/blog/"}, {"@type": "ListItem", "position": 3, "name": "Comprueba qué páginas ha indexado Google con la API de inspección de URL", "item": "https://nesimapps.com/es/blog/comprueba-que-paginas-ha-indexado-google-con-la-api-de-inspeccion-de-urls/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Puedo comprobar la indexación de muchas páginas a la vez?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. La API de inspección de URL comprueba una URL por petición, así que un script puede recorrer un sitemap, siempre que respete los límites diario y por minuto documentados."}}, {"@type": "Question", "name": "¿Qué diferencia hay entre “descubierta” y “rastreada” pero no indexada?", "acceptedAnswer": {"@type": "Answer", "text": "Descubierta significa que Google conoce la dirección pero aún no la ha rastreado. Rastreada significa que Google obtuvo la página y decidió no indexarla, normalmente una señal de calidad."}}, {"@type": "Question", "name": "¿Por qué recibí un error de permisos?", "acceptedAnswer": {"@type": "Answer", "text": "Probablemente el valor de la propiedad no coincidía con cómo está registrado el sitio, por ejemplo una URL sencilla en lugar de la forma de propiedad de dominio."}}, {"@type": "Question", "name": "¿Reenviar un sitemap garantiza la indexación?", "acceptedAnswer": {"@type": "Answer", "text": "No. Ayuda a Google a descubrir URL. La indexación sigue dependiendo de la decisión de Google sobre cada página."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/check-which-pages-google-has-indexed-with-the-url-inspection-api/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/url-inspection-api-ile-google-hangi-sayfalari-dizine-eklemis-kontrol-et/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/comprueba-que-paginas-ha-indexado-google-con-la-api-de-inspeccion-de-urls/" hreflang="es" data-lang="es" aria-current="page">ES</a><a href="/pt/blog/verifique-quais-paginas-o-google-indexou-com-a-api-de-inspecao-de-url/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/es/">Nesim Apps</a> › <a href="/es/blog/">Blog</a></nav>
+    <h1>Comprueba qué páginas ha indexado Google con la API de inspección de URL</h1>
+    <p class="by">Por Nesim Razon, desarrollador móvil independiente · 2026-11-20</p>
+    <p class="tags"><a href="/es/blog/#devlog">#Notas de desarrollo</a><a href="/es/blog/#android">#Android</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Los informes de Search Console solo muestran páginas que ya obtuvieron impresiones, así que no pueden decirte qué páginas Google no ha indexado en absoluto. La API de inspección de URL sí puede. La usé para comprobar con un script las 381 URL de mi sitemap: 329 estaban indexadas y 52 no. Aquí cuento cómo funciona la comprobación, qué significan las respuestas y qué hice después.</p>
+    <h2>Por qué no bastan los informes normales</h2>
+    <p>El informe de rendimiento lista las consultas y páginas que se mostraron en la búsqueda. Una página con cero impresiones simplemente no aparece, y esa es la página sobre la que más quieres saber. En un sitio de solo unas semanas, la mayoría de las páginas están en ese grupo.</p>
+    <h2>Cómo funciona la llamada a la API</h2>
+    <p>La API recibe dos valores: la URL que quieres inspeccionar y la propiedad a la que pertenece. Responde con el estado del índice, el estado de cobertura en palabras, la hora del último rastreo, la URL canónica que eligió Google y si se permitió el rastreo. Leí el archivo del sitemap, envié cada URL y guardé el estado de cobertura.</p>
+    <p>Un detalle me costó un primer intento fallido: el valor de la propiedad debe coincidir con cómo está registrado el sitio. Una propiedad de dominio se escribe con un prefijo especial, y usar la dirección sencilla devolvió un error de permisos que decía que la URL no forma parte de la propiedad. Una cuenta de servicio añadida como usuario restringido de la propiedad puede ejecutar las inspecciones.</p>
+    <h2>Sé amable con la cuota</h2>
+    <p>La API tiene un límite diario por sitio y uno por minuto. Mi script reutiliza una caché y solo vuelve a comprobar una página tras aproximadamente una semana, así que una ejecución semanal queda muy por debajo de los límites, y una primera ejecución de unos cientos de URL termina en varios minutos con unas pocas peticiones en paralelo.</p>
+    <h2>Qué encontré</h2>
+    <p>De 381 URL, 329 estaban “Submitted and indexed”. Las otras 52 se dividían en tres grupos: 33 que Google no conocía en absoluto, 13 “Discovered, currently not indexed” y 6 “Crawled, currently not indexed”. Por idioma, las páginas en inglés eran las mejor cubiertas y las turcas tenían más huecos. Las páginas que Google no conocía eran sobre todo las entradas y guías más nuevas.</p>
+    <p>Los tres grupos piden acciones distintas. “Desconocida” significa que Google aún no encontró la página, así que ayúdale a encontrarla. “Descubierta” significa que conoce la dirección pero no la ha rastreado. “Rastreada, no indexada” significa que la miró y decidió no indexarla, lo que es una señal de calidad del contenido, y ahí tengo que mejorar la página.</p>
+    <h2>Qué hice al respecto</h2>
+    <ul><li>Reenvié el sitemap en Search Console, tras lo cual informó de las 381 páginas como descubiertas.</li><li>Me aseguré de que los enlaces internos y el índice del blog llegan a las páginas más nuevas.</li><li>Pienso repetir la misma comprobación una semana después y comparar los recuentos.</li><li>Para las páginas “rastreadas, no indexadas”, pienso añadir profundidad real en lugar de volver a pedir la indexación.</li></ul>
+    <h2>Conviértelo en parte de un panel</h2>
+    <p>Como la comprobación es un script sencillo con caché, es fácil ponerlo en un panel: indexadas sobre comprobadas, un desglose por idioma y una lista corta de páginas no indexadas. Un número semanal te dice si lo que publicas llega al índice.</p>
+    
+    <section class="faq"><h2>Preguntas frecuentes</h2><details><summary>¿Puedo comprobar la indexación de muchas páginas a la vez?</summary><p>Sí. La API de inspección de URL comprueba una URL por petición, así que un script puede recorrer un sitemap, siempre que respete los límites diario y por minuto documentados.</p></details><details><summary>¿Qué diferencia hay entre “descubierta” y “rastreada” pero no indexada?</summary><p>Descubierta significa que Google conoce la dirección pero aún no la ha rastreado. Rastreada significa que Google obtuvo la página y decidió no indexarla, normalmente una señal de calidad.</p></details><details><summary>¿Por qué recibí un error de permisos?</summary><p>Probablemente el valor de la propiedad no coincidía con cómo está registrado el sitio, por ejemplo una URL sencilla en lugar de la forma de propiedad de dominio.</p></details><details><summary>¿Reenviar un sitemap garantiza la indexación?</summary><p>No. Ayuda a Google a descubrir URL. La indexación sigue dependiendo de la decisión de Google sobre cada página.</p></details></section>
+    <section><h2>Más del blog</h2><ul class="glist"><li><a href="/es/blog/clarity-ai-visibility-topic-insights-para-un-sitio-pequeno-primeros-resultados/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Clarity AI Visibility: Topic Insights para un sitio pequeño, primeros resultados</b></div></a></li><li><a href="/es/blog/programar-36-publicaciones-de-la-comunidad-de-youtube-cuando-no-hay-api/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Programar 36 publicaciones de la comunidad de YouTube cuando no hay API</b></div></a></li><li><a href="/es/blog/api-play-age-signals-y-ab-1043-de-california-que-debe-hacer-un-desarrollador-pequeno/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>API Play Age Signals y AB 1043 de California: qué debe hacer un desarrollador pequeño</b></div></a></li><li><a href="/es/blog/videos-de-blog-narrados-con-texto-a-voz-gratuito-y-python/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Vídeos de blog narrados con texto a voz gratuito y Python</b></div></a></li><li><a href="/es/blog/un-utm-por-enlace-un-esquema-de-nombres-para-un-desarrollador-independiente/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Un UTM por enlace: un esquema de nombres para un desarrollador independiente</b></div></a></li><li><a href="/es/blog/la-api-de-bing-webmaster-devuelve-listas-vacias-mientras-el-panel-muestra-datos/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>La API de Bing Webmaster devuelve listas vacías mientras el panel muestra datos</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

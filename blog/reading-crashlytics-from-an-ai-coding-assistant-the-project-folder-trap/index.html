@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reading Crashlytics From an AI Coding Assistant</title>
+<meta name="description" content="Why the Firebase MCP server may show no Crashlytics tools, how the project folder decides which tools appear, and the checks that keep reports trustworthy.">
+<link rel="canonical" href="https://nesimapps.com/blog/reading-crashlytics-from-an-ai-coding-assistant-the-project-folder-trap/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/reading-crashlytics-from-an-ai-coding-assistant-the-project-folder-trap/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/yapay-zeka-kod-asistaniyla-crashlytics-okumak-proje-klasoru-tuzagi/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/leer-crashlytics-desde-un-asistente-de-codigo-con-ia-la-trampa-de-la-carpeta-del-proyecto/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/ler-o-crashlytics-com-um-assistente-de-codigo-com-ia-a-armadilha-da-pasta-do-projeto/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/reading-crashlytics-from-an-ai-coding-assistant-the-project-folder-trap/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Reading Crashlytics From an AI Coding Assistant: The Project Folder Trap">
+<meta property="og:description" content="Why the Firebase MCP server may show no Crashlytics tools, how the project folder decides which tools appear, and the checks that keep reports trustworthy.">
+<meta property="og:url" content="https://nesimapps.com/blog/reading-crashlytics-from-an-ai-coding-assistant-the-project-folder-trap/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Reading Crashlytics From an AI Coding Assistant: The Project Folder Trap">
+<meta name="twitter:description" content="Why the Firebase MCP server may show no Crashlytics tools, how the project folder decides which tools appear, and the checks that keep reports trustworthy.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Reading Crashlytics From an AI Coding Assistant: The Project Folder Trap", "description": "Why the Firebase MCP server may show no Crashlytics tools, how the project folder decides which tools appear, and the checks that keep reports trustworthy.", "inLanguage": "en", "mainEntityOfPage": "https://nesimapps.com/blog/reading-crashlytics-from-an-ai-coding-assistant-the-project-folder-trap/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-20", "dateModified": "2026-11-20", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Dev notes, Android"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Reading Crashlytics From an AI Coding Assistant: The Project Folder Trap", "item": "https://nesimapps.com/blog/reading-crashlytics-from-an-ai-coding-assistant-the-project-folder-trap/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why does the Firebase MCP server show no Crashlytics tools?", "acceptedAnswer": {"@type": "Answer", "text": "The server enables tools based on the Firebase SDKs found in its project directory. If that folder has no Crashlytics SDK, the Crashlytics tools stay hidden."}}, {"@type": "Question", "name": "How do I make the Crashlytics tools appear?", "acceptedAnswer": {"@type": "Answer", "text": "Update the server environment so the project directory is an app folder that uses Crashlytics and set the matching Firebase project. Then search the tool list again."}}, {"@type": "Question", "name": "Does a 404 on top issues mean the app has no crashes?", "acceptedAnswer": {"@type": "Answer", "text": "No. It can mean crash collection is off for that app, so there is no data to return."}}, {"@type": "Question", "name": "Do I have to edit a config file?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily. The environment update tool can change the directory and the active project during the session."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/reading-crashlytics-from-an-ai-coding-assistant-the-project-folder-trap/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/yapay-zeka-kod-asistaniyla-crashlytics-okumak-proje-klasoru-tuzagi/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/leer-crashlytics-desde-un-asistente-de-codigo-con-ia-la-trampa-de-la-carpeta-del-proyecto/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/ler-o-crashlytics-com-um-assistente-de-codigo-com-ia-a-armadilha-da-pasta-do-projeto/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>Reading Crashlytics From an AI Coding Assistant: The Project Folder Trap</h1>
+    <p class="by">By Nesim Razon, independent mobile developer · 2026-11-20</p>
+    <p class="tags"><a href="/blog/#devlog">#Dev notes</a><a href="/blog/#android">#Android</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">If your AI coding assistant is connected to the Firebase MCP server but cannot see any Crashlytics tools, the cause is probably the project folder, not a broken login. The server turns tools on according to the Firebase SDKs it finds in the folder it is pointed at. Point it at an Android app that uses Crashlytics and the tools appear. Here is how I found that out and the checks I run before I trust a report.</p>
+    <h2>The symptom</h2>
+    <p>I asked the assistant to check crash reports for a few apps. It could list apps and read project details, but there were no Crashlytics tools at all. Reconnecting the server and signing in again changed nothing, and the login was fine, since other Firebase tools worked.</p>
+    <h2>The cause: tools follow the project folder</h2>
+    <p>The Firebase MCP server enables some tools automatically, based on the Firebase SDKs it detects in the project directory it uses. My default directory held a small Firebase config for a dashboard project that has no Crashlytics SDK, so the server never offered the Crashlytics tools.</p>
+    <h2>The fix without editing config files</h2>
+    <p>The environment can be changed from inside the session. I called the environment update tool with the project directory set to an Android app folder that does use Crashlytics, together with the Firebase project for that app. After that, searching for “crashlytics” in the tool list returned the report and issue tools. No settings file was touched.</p>
+    <h2>Read the guide before the first report</h2>
+    <p>The server also publishes a guide as a resource, with the right way to request reports. Reading it first saved me from guessing at filters. It is a short read and it explains which report types exist and what each one needs.</p>
+    <h2>Check the active project every time</h2>
+    <p>Tools act on the active Firebase project. Once I created an app in the wrong project because the active one was different from what I assumed. Now, before any write action, I ask the server for the current environment and compare the project identifier with the one I mean.</p>
+    <h2>Do not read an error as “no crashes”</h2>
+    <p>One app returned a 404 when I asked for its top issues. That did not mean zero crashes. For that app crash data collection is switched off on purpose, so there is nothing to read. A report is only meaningful if collection is on for the app and the build you care about, so I note which apps are covered before I call a release clean.</p>
+    <h2>Checklist</h2>
+    <ul><li>No Crashlytics tools? Point the server at an app folder that contains the Crashlytics SDK.</li><li>Set the project directory and the active project in one environment update, then confirm both.</li><li>Read the reports guide resource before requesting data.</li><li>Confirm the active project before creating or changing anything.</li><li>Know which apps have collection enabled, so an empty result is not mistaken for a clean one.</li></ul>
+    
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Why does the Firebase MCP server show no Crashlytics tools?</summary><p>The server enables tools based on the Firebase SDKs found in its project directory. If that folder has no Crashlytics SDK, the Crashlytics tools stay hidden.</p></details><details><summary>How do I make the Crashlytics tools appear?</summary><p>Update the server environment so the project directory is an app folder that uses Crashlytics and set the matching Firebase project. Then search the tool list again.</p></details><details><summary>Does a 404 on top issues mean the app has no crashes?</summary><p>No. It can mean crash collection is off for that app, so there is no data to return.</p></details><details><summary>Do I have to edit a config file?</summary><p>Not necessarily. The environment update tool can change the directory and the active project during the session.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/clarity-ai-visibility-topic-insights-for-a-small-site-first-results/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Clarity AI Visibility: Topic Insights for a Small Site, First Results</b></div></a></li><li><a href="/blog/scheduling-36-youtube-community-posts-when-there-is-no-api/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Scheduling 36 YouTube Community Posts When There Is No API</b></div></a></li><li><a href="/blog/play-age-signals-api-and-california-ab-1043-what-a-small-developer-must-do/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Play Age Signals API and California AB 1043: What a Small Developer Must Do</b></div></a></li><li><a href="/blog/narrated-blog-videos-with-free-text-to-speech-and-python/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Narrated Blog Videos With Free Text-to-Speech and Python</b></div></a></li><li><a href="/blog/one-utm-per-link-a-naming-scheme-for-a-solo-developer/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>One UTM Per Link: A Naming Scheme for a Solo Developer</b></div></a></li><li><a href="/blog/bing-webmaster-api-returns-empty-lists-while-the-dashboard-shows-data/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Bing Webmaster API Returns Empty Lists While the Dashboard Shows Data</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

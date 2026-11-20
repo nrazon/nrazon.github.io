@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bing Webmaster API Pano Veri Gösterirken Boş Listeler Döndürüyor</title>
+<meta name="description" content="Yeni bir sitede Bing Webmaster API günlük toplamları ve tarama verisini verdi ama sorgu, sayfa ve geri bağlantı listeleri boştu. Ne yaptım.">
+<link rel="canonical" href="https://nesimapps.com/tr/yazilar/bing-webmaster-api-pano-veri-gosterirken-bos-listeler-donduruyor/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/bing-webmaster-api-returns-empty-lists-while-the-dashboard-shows-data/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/bing-webmaster-api-pano-veri-gosterirken-bos-listeler-donduruyor/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/la-api-de-bing-webmaster-devuelve-listas-vacias-mientras-el-panel-muestra-datos/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/a-api-do-bing-webmaster-devolve-listas-vazias-enquanto-o-painel-mostra-dados/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/bing-webmaster-api-returns-empty-lists-while-the-dashboard-shows-data/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Bing Webmaster API Pano Veri Gösterirken Boş Listeler Döndürüyor">
+<meta property="og:description" content="Yeni bir sitede Bing Webmaster API günlük toplamları ve tarama verisini verdi ama sorgu, sayfa ve geri bağlantı listeleri boştu. Ne yaptım.">
+<meta property="og:url" content="https://nesimapps.com/tr/yazilar/bing-webmaster-api-pano-veri-gosterirken-bos-listeler-donduruyor/">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bing Webmaster API Pano Veri Gösterirken Boş Listeler Döndürüyor">
+<meta name="twitter:description" content="Yeni bir sitede Bing Webmaster API günlük toplamları ve tarama verisini verdi ama sorgu, sayfa ve geri bağlantı listeleri boştu. Ne yaptım.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Bing Webmaster API Pano Veri Gösterirken Boş Listeler Döndürüyor", "description": "Yeni bir sitede Bing Webmaster API günlük toplamları ve tarama verisini verdi ama sorgu, sayfa ve geri bağlantı listeleri boştu. Ne yaptım.", "inLanguage": "tr", "mainEntityOfPage": "https://nesimapps.com/tr/yazilar/bing-webmaster-api-pano-veri-gosterirken-bos-listeler-donduruyor/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-20", "dateModified": "2026-11-20", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Geliştirici notları"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/tr/"}, {"@type": "ListItem", "position": 2, "name": "Yazılar", "item": "https://nesimapps.com/tr/yazilar/"}, {"@type": "ListItem", "position": 3, "name": "Bing Webmaster API Pano Veri Gösterirken Boş Listeler Döndürüyor", "item": "https://nesimapps.com/tr/yazilar/bing-webmaster-api-pano-veri-gosterirken-bos-listeler-donduruyor/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Bing API neden sorgu ve sayfalar için boş liste döndürüyor?", "acceptedAnswer": {"@type": "Answer", "text": "Yeni bir sitede ayrıntı verisi, pano zaten gösterse bile API üzerinden henüz sunulmuyor olabilir. Çağrılar başarılı olur ama satır döndürmez."}}, {"@type": "Question", "name": "Yeni bir sitede hangi Bing API çağrıları çalıştı?", "acceptedAnswer": {"@type": "Answer", "text": "Günlük trafik toplamları, tarama istatistikleri, sitemap besleme durumu ve URL gönderim kotası."}}, {"@type": "Question", "name": "Bu benim kodumdaki bir hata mı?", "acceptedAnswer": {"@type": "Answer", "text": "Önce her çağrıyı elle dene. Ham yanıt başarı durumlu boş bir listeyse, veri API'den gelmiyordur."}}, {"@type": "Question", "name": "Bu arada veriyi nasıl gösterebilirim?", "acceptedAnswer": {"@type": "Answer", "text": "Pano tablolarını tarihli bir dosyaya kopyala ve net etiketle, API satır döndürdüğünde yeniden API'ye geç."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/bing-webmaster-api-returns-empty-lists-while-the-dashboard-shows-data/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/bing-webmaster-api-pano-veri-gosterirken-bos-listeler-donduruyor/" hreflang="tr" data-lang="tr" aria-current="page">TR</a><a href="/es/blog/la-api-de-bing-webmaster-devuelve-listas-vacias-mientras-el-panel-muestra-datos/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/a-api-do-bing-webmaster-devolve-listas-vazias-enquanto-o-painel-mostra-dados/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/tr/">Nesim Apps</a> › <a href="/tr/yazilar/">Yazılar</a></nav>
+    <h1>Bing Webmaster API Pano Veri Gösterirken Boş Listeler Döndürüyor</h1>
+    <p class="by">Nesim Razon, bağımsız mobil uygulama geliştiricisi · 2026-11-20</p>
+    <p class="tags"><a href="/tr/yazilar/#devlog">#Geliştirici notları</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Bir site yayına girdikten birkaç hafta sonra Bing Webmaster Tools panosu arama anahtar kelimelerini, sayfaları ve geri bağlantıları gösteriyordu ama API aynı şeyler için boş listeler döndürdü. API&#x27;nin yalnızca bir kısmında veri vardı. O API üzerine kurduğun panon boş görünüyorsa, bulduklarımı, hangi çağrıların çalıştığını ve boşluğu dürüstçe nasıl doldurduğumu anlatıyorum.</p>
+    <h2>Uyumsuzluk</h2>
+    <p>Bing panosunda Search Performance sayfası altı anahtar kelimeyi, üç sayfayı ve ülke ile cihaz dağılımını listeliyordu. Backlinks sayfası iki bağlantı veren alan adı ve yirmi bağlantı veren sayfa gösteriyordu. API&#x27;yi çağıran raporum birkaç toplam ve bir grafik gösterdi, başka bir şey değil; kendi kodumdan şüphelendim.</p>
+    <h2>Her çağrıyı elle denedim</h2>
+    <p>API yöntemlerini tek tek çağırdım. Günlük trafik çağrısı iki günlük tıklama ve gösterim döndürdü. Tarama istatistikleri çağrısı taranan sayfaları, dizindeki sayfaları ve gelen bağlantı sayılarını döndürdü. Besleme çağrısı sitemap&#x27;imi ve Bing&#x27;in ondan kaç URL okuduğunu döndürdü. Gönderim kotası çağrısı günlük ve aylık sınırları döndürdü.</p>
+    <p>Sorgular, sayfalar, sayfaya göre sorgu, bağlantı sayıları, bir URL&#x27;nin bağlantıları ve anahtar kelime istatistikleri çağrılarının hepsi normal bir başarı durumuyla boş liste döndürdü. Yakalanacak bir hata yoktu. Veri, panoda olmasına rağmen API üzerinden henüz sunulmuyordu.</p>
+    <h2>Yararlı bir yan ürün</h2>
+    <p>Besleme çağrısı, dosyada 381 URL varken Bing&#x27;in sitemap&#x27;imden 328 URL okuduğunu gösterdi. Bu, sitemap&#x27;in onların tarafında eski olduğunu söyledi ve panoda yeniden göndermek sorunu çözdü. Yalnızca toplamlara bakarsan bunun gibi küçük ayrıntılar kolayca gözden kaçar.</p>
+    <h2>Boşluğu nasıl ele aldım</h2>
+    <p>Boş bir sekme istemedim ve rakam uydurmak da istemedim. Pano tablolarını bir kez tarayıcıdan okudum, tarihi ve tarih aralığıyla küçük bir dosyaya kaydettim ve API listeleri boş olduğunda raporun bu dosyayı kullanmasını sağladım. Rapor, bu listelerin belirli bir tarihte panodan geldiğini söyleyen net bir not basıyor ve API veri döndürdüğünde otomatik olarak API&#x27;ye geçiyor.</p>
+    <h2>Dersler</h2>
+    <ul><li>Başarı durumlu boş bir liste, verinin olmadığının kanıtı değildir. Kodunu suçlamadan önce panoyla karşılaştır.</li><li>Her API yöntemini ayrı ayrı dene ve ilk çalıştırmanın ham yanıtlarını sakla.</li><li>Bir panodan kopyaladığın her rakamın kaynağını ve tarihini etiketle.</li><li>Ekstra çağrıları kullan: sitemap okuma sayıları ve tarama istatistikleri gerçek bir sorun buldu.</li><li>Bir iki hafta sonra yeniden kontrol et, çünkü yeni siteler yavaş dolar.</li></ul>
+    
+    <section class="faq"><h2>Sık sorulan sorular</h2><details><summary>Bing API neden sorgu ve sayfalar için boş liste döndürüyor?</summary><p>Yeni bir sitede ayrıntı verisi, pano zaten gösterse bile API üzerinden henüz sunulmuyor olabilir. Çağrılar başarılı olur ama satır döndürmez.</p></details><details><summary>Yeni bir sitede hangi Bing API çağrıları çalıştı?</summary><p>Günlük trafik toplamları, tarama istatistikleri, sitemap besleme durumu ve URL gönderim kotası.</p></details><details><summary>Bu benim kodumdaki bir hata mı?</summary><p>Önce her çağrıyı elle dene. Ham yanıt başarı durumlu boş bir listeyse, veri API&#x27;den gelmiyordur.</p></details><details><summary>Bu arada veriyi nasıl gösterebilirim?</summary><p>Pano tablolarını tarihli bir dosyaya kopyala ve net etiketle, API satır döndürdüğünde yeniden API&#x27;ye geç.</p></details></section>
+    <section><h2>Diğer yazılar</h2><ul class="glist"><li><a href="/tr/yazilar/clarity-ai-gorunurluk-kucuk-bir-site-icin-konu-icgoruleri-ilk-sonuclar/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Clarity AI Görünürlük: Küçük Bir Site İçin Konu İçgörüleri, İlk Sonuçlar</b></div></a></li><li><a href="/tr/yazilar/api-yokken-36-youtube-topluluk-gonderisini-zamanlamak/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>API Yokken 36 YouTube Topluluk Gönderisini Zamanlamak</b></div></a></li><li><a href="/tr/yazilar/play-age-signals-api-ve-kaliforniya-ab-1043-kucuk-bir-gelistirici-ne-yapmali/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Play Age Signals API ve Kaliforniya AB 1043: Küçük Bir Geliştirici Ne Yapmalı</b></div></a></li><li><a href="/tr/yazilar/ucretsiz-metinden-sese-ve-python-ile-anlatimli-blog-videolari/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Ücretsiz Metinden Sese ve Python ile Anlatımlı Blog Videoları</b></div></a></li><li><a href="/tr/yazilar/her-baglantiya-bir-utm-bagimsiz-gelistirici-icin-adlandirma-duzeni/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Her Bağlantıya Bir UTM: Bağımsız Geliştirici İçin Adlandırma Düzeni</b></div></a></li><li><a href="/tr/yazilar/url-inspection-api-ile-google-hangi-sayfalari-dizine-eklemis-kontrol-et/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>URL Inspection API ile Google&#x27;ın Hangi Sayfaları Dizine Eklediğini Kontrol Et</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

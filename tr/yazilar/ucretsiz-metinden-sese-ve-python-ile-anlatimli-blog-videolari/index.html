@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ücretsiz Metinden Sese ve Python ile Anlatımlı Blog Videoları</title>
+<meta name="description" content="Her blog yazısını ücretsiz nöral ses, Pillow diyagramları ve ffmpeg ile kamera ve mikrofon olmadan anlatımlı videoya nasıl çeviriyorum.">
+<link rel="canonical" href="https://nesimapps.com/tr/yazilar/ucretsiz-metinden-sese-ve-python-ile-anlatimli-blog-videolari/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/narrated-blog-videos-with-free-text-to-speech-and-python/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/ucretsiz-metinden-sese-ve-python-ile-anlatimli-blog-videolari/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/videos-de-blog-narrados-con-texto-a-voz-gratuito-y-python/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/videos-de-blog-narrados-com-texto-para-fala-gratuito-e-python/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/narrated-blog-videos-with-free-text-to-speech-and-python/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Ücretsiz Metinden Sese ve Python ile Anlatımlı Blog Videoları">
+<meta property="og:description" content="Her blog yazısını ücretsiz nöral ses, Pillow diyagramları ve ffmpeg ile kamera ve mikrofon olmadan anlatımlı videoya nasıl çeviriyorum.">
+<meta property="og:url" content="https://nesimapps.com/tr/yazilar/ucretsiz-metinden-sese-ve-python-ile-anlatimli-blog-videolari/">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ücretsiz Metinden Sese ve Python ile Anlatımlı Blog Videoları">
+<meta name="twitter:description" content="Her blog yazısını ücretsiz nöral ses, Pillow diyagramları ve ffmpeg ile kamera ve mikrofon olmadan anlatımlı videoya nasıl çeviriyorum.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Ücretsiz Metinden Sese ve Python ile Anlatımlı Blog Videoları", "description": "Her blog yazısını ücretsiz nöral ses, Pillow diyagramları ve ffmpeg ile kamera ve mikrofon olmadan anlatımlı videoya nasıl çeviriyorum.", "inLanguage": "tr", "mainEntityOfPage": "https://nesimapps.com/tr/yazilar/ucretsiz-metinden-sese-ve-python-ile-anlatimli-blog-videolari/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-20", "dateModified": "2026-11-20", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Geliştirici notları"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/tr/"}, {"@type": "ListItem", "position": 2, "name": "Yazılar", "item": "https://nesimapps.com/tr/yazilar/"}, {"@type": "ListItem", "position": 3, "name": "Ücretsiz Metinden Sese ve Python ile Anlatımlı Blog Videoları", "item": "https://nesimapps.com/tr/yazilar/ucretsiz-metinden-sese-ve-python-ile-anlatimli-blog-videolari/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Mikrofon veya kameraya ihtiyacım var mı?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Ücretsiz bir nöral metinden sese sesi yazıyı okur ve Python görselleri çizer."}}, {"@type": "Question", "name": "Yanlış okunan teknik sözcükleri nasıl düzeltirim?", "acceptedAnswer": {"@type": "Answer", "text": "Yalnızca sese giden metni değiştiren bir değiştirme sözlüğüne ekle; böylece altyazılar doğru kalır."}}, {"@type": "Question", "name": "Aynı betik başka diller üretebilir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Üretebilir ama testlerimde karışık teknik İngilizcenin kalitesi daha kötüydü, bu yüzden videoları İngilizce tutuyorum."}}, {"@type": "Question", "name": "İzleyicilere sesin sentetik olduğunu söylemeli miyim?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. Her açıklamada kısa bir not basit ve dürüsttür."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/narrated-blog-videos-with-free-text-to-speech-and-python/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/ucretsiz-metinden-sese-ve-python-ile-anlatimli-blog-videolari/" hreflang="tr" data-lang="tr" aria-current="page">TR</a><a href="/es/blog/videos-de-blog-narrados-con-texto-a-voz-gratuito-y-python/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/videos-de-blog-narrados-com-texto-para-fala-gratuito-e-python/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/tr/">Nesim Apps</a> › <a href="/tr/yazilar/">Yazılar</a></nav>
+    <h1>Ücretsiz Metinden Sese ve Python ile Anlatımlı Blog Videoları</h1>
+    <p class="by">Nesim Razon, bağımsız mobil uygulama geliştiricisi · 2026-11-20</p>
+    <p class="tags"><a href="/tr/yazilar/#devlog">#Geliştirici notları</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Her blog yazısını tek bir betikle anlatımlı bir YouTube videosuna çeviriyorum: ücretsiz bir metinden sese sesi yazıyı okuyor, Python her bölüm için bir diyagram çiziyor ve ffmpeg hepsini birleştiriyor. Kamera yok, mikrofon yok, kurgu programı yok. Bu yazı hattı, en çok zaman alan telaffuz tuzağını ve videoları dürüst tutan seçimleri anlatıyor.</p>
+    <h2>Hat tek paragrafta</h2>
+    <p>Betik, yazıyı blog sayfasını üreten aynı dosyadan yükler. Her cümle için, bir Python paketi üzerinden erişilen ücretsiz Microsoft nöral ses hizmetiyle bir konuşma dosyası oluşturur, sonra Pillow ile bölüm diyagramı ve o anki altyazıyla bir kare çizer ve son olarak ffmpeg kareleri ve sesi saniyede 30 kareyle 1920&#x27;ye 1080&#x27;lik bir videoda birleştirir. İkinci bir fonksiyon 1280&#x27;e 720&#x27;lik küçük resmi yapar.</p>
+    <h2>Tek ses, tek dil</h2>
+    <p>Türkçe, İspanyolca ve Portekizce sesleri de denedim ve reddettim. Tek bir Türkçe ses İngilizce teknik sözcükleri Türkçe okuyor, karışık bir ses yanlış duyuluyor, iki ses arasında geçiş yapmak her geçişte duraksama ve ton farkı yarattı. Kanalda şimdi biraz daha yavaş hızda tek bir İngilizce ses var ve site yalnızca metinde çok dilli kalıyor.</p>
+    <h2>Telaffuz tuzağı</h2>
+    <p>Geliştirici yazıları, bir sesin okuyamadığı sözcüklerle dolu: ürün adları, deve yazımlı tanımlayıcılar, kısaltmalar. Çözüm, yalnızca sese giden metne uygulanan küçük bir sözlük; altyazılar özgün yazımı korur. Bir paket sürüm anahtarı gibi bir tanımlayıcı ayrı sözcüklere dönüşür, iOS sözcüğü harflere. Sonucu kendim duyamıyorum; bu yüzden yanlış duyulan her yeni sözcük dinlenerek bildiriliyor ve zamanla büyüyen sözlüğe ekleniyor.</p>
+    <h2>Yazıya uyan diyagramlar</h2>
+    <p>Uzun bir video için başlık kartı artı madde metni yetmez. Her yazı, birkaç çizim ilkelinden kurulmuş kendi sahne listesini alıyor: akışlar, karşılaştırma panelleri, kod satırları, rakam kartları ve kontrol listeleri. Sahne, her cümle okundukça adım adım beliriyor; yani görsel anlatımı izliyor.</p>
+    <h2>Başında beklemeden yayınlamak</h2>
+    <p>Yükleme betiği her videoyu zamanlanmış bir yayın saatiyle özel olarak gönderir, küçük resmi ekler, bir oynatma listesi ayarlar ve makaleye bağlanan bir açıklama yazar. Her açıklama, anlatımın yapay zekâ üretimi olduğunu belirtir; bence dürüst olan bu.</p>
+    <h2>Yeni başlayana ne derdim</h2>
+    <ul><li>Bir yazı ve bir sesle başla. Sahne kitaplığı kurmadan önce temiz bir sonuç al.</li><li>Okunan metni ve altyazı metnini ilk günden ayrı tut.</li><li>Her videoyu yayına girmeden bir kez dinle. Yanlış telaffuzlar en yaygın kusurdur.</li><li>Kısa sürede çok fazla birbirine benzeyen video yayınlama. Her videonun yerini hak etmesi için görselleri çeşitlendir.</li><li>Açıklamada sesin sentetik olduğunu söyle.</li></ul>
+    
+    <section class="faq"><h2>Sık sorulan sorular</h2><details><summary>Mikrofon veya kameraya ihtiyacım var mı?</summary><p>Hayır. Ücretsiz bir nöral metinden sese sesi yazıyı okur ve Python görselleri çizer.</p></details><details><summary>Yanlış okunan teknik sözcükleri nasıl düzeltirim?</summary><p>Yalnızca sese giden metni değiştiren bir değiştirme sözlüğüne ekle; böylece altyazılar doğru kalır.</p></details><details><summary>Aynı betik başka diller üretebilir mi?</summary><p>Üretebilir ama testlerimde karışık teknik İngilizcenin kalitesi daha kötüydü, bu yüzden videoları İngilizce tutuyorum.</p></details><details><summary>İzleyicilere sesin sentetik olduğunu söylemeli miyim?</summary><p>Evet. Her açıklamada kısa bir not basit ve dürüsttür.</p></details></section>
+    <section><h2>Diğer yazılar</h2><ul class="glist"><li><a href="/tr/yazilar/clarity-ai-gorunurluk-kucuk-bir-site-icin-konu-icgoruleri-ilk-sonuclar/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Clarity AI Görünürlük: Küçük Bir Site İçin Konu İçgörüleri, İlk Sonuçlar</b></div></a></li><li><a href="/tr/yazilar/api-yokken-36-youtube-topluluk-gonderisini-zamanlamak/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>API Yokken 36 YouTube Topluluk Gönderisini Zamanlamak</b></div></a></li><li><a href="/tr/yazilar/play-age-signals-api-ve-kaliforniya-ab-1043-kucuk-bir-gelistirici-ne-yapmali/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Play Age Signals API ve Kaliforniya AB 1043: Küçük Bir Geliştirici Ne Yapmalı</b></div></a></li><li><a href="/tr/yazilar/her-baglantiya-bir-utm-bagimsiz-gelistirici-icin-adlandirma-duzeni/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Her Bağlantıya Bir UTM: Bağımsız Geliştirici İçin Adlandırma Düzeni</b></div></a></li><li><a href="/tr/yazilar/bing-webmaster-api-pano-veri-gosterirken-bos-listeler-donduruyor/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Bing Webmaster API Pano Veri Gösterirken Boş Listeler Döndürüyor</b></div></a></li><li><a href="/tr/yazilar/url-inspection-api-ile-google-hangi-sayfalari-dizine-eklemis-kontrol-et/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>URL Inspection API ile Google&#x27;ın Hangi Sayfaları Dizine Eklediğini Kontrol Et</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

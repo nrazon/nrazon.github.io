@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Her Bağlantıya Bir UTM | Nesim Apps</title>
+<meta name="description" content="Küçük bir geliştirici için basit UTM adlandırma düzeni: kaynak, ortam ve kampanya kuralları, gerçek örnekler ve GA4&#x27;te okumak.">
+<link rel="canonical" href="https://nesimapps.com/tr/yazilar/her-baglantiya-bir-utm-bagimsiz-gelistirici-icin-adlandirma-duzeni/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/one-utm-per-link-a-naming-scheme-for-a-solo-developer/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/her-baglantiya-bir-utm-bagimsiz-gelistirici-icin-adlandirma-duzeni/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/un-utm-por-enlace-un-esquema-de-nombres-para-un-desarrollador-independiente/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/um-utm-por-link-um-esquema-de-nomes-para-um-desenvolvedor-independente/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/one-utm-per-link-a-naming-scheme-for-a-solo-developer/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Her Bağlantıya Bir UTM: Bağımsız Geliştirici İçin Adlandırma Düzeni">
+<meta property="og:description" content="Küçük bir geliştirici için basit UTM adlandırma düzeni: kaynak, ortam ve kampanya kuralları, gerçek örnekler ve GA4&#x27;te okumak.">
+<meta property="og:url" content="https://nesimapps.com/tr/yazilar/her-baglantiya-bir-utm-bagimsiz-gelistirici-icin-adlandirma-duzeni/">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Her Bağlantıya Bir UTM: Bağımsız Geliştirici İçin Adlandırma Düzeni">
+<meta name="twitter:description" content="Küçük bir geliştirici için basit UTM adlandırma düzeni: kaynak, ortam ve kampanya kuralları, gerçek örnekler ve GA4&#x27;te okumak.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Her Bağlantıya Bir UTM: Bağımsız Geliştirici İçin Adlandırma Düzeni", "description": "Küçük bir geliştirici için basit UTM adlandırma düzeni: kaynak, ortam ve kampanya kuralları, gerçek örnekler ve GA4'te okumak.", "inLanguage": "tr", "mainEntityOfPage": "https://nesimapps.com/tr/yazilar/her-baglantiya-bir-utm-bagimsiz-gelistirici-icin-adlandirma-duzeni/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-20", "dateModified": "2026-11-20", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Geliştirici notları"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/tr/"}, {"@type": "ListItem", "position": 2, "name": "Yazılar", "item": "https://nesimapps.com/tr/yazilar/"}, {"@type": "ListItem", "position": 3, "name": "Her Bağlantıya Bir UTM: Bağımsız Geliştirici İçin Adlandırma Düzeni", "item": "https://nesimapps.com/tr/yazilar/her-baglantiya-bir-utm-bagimsiz-gelistirici-icin-adlandirma-duzeni/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Üç ana UTM parametresi nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Kaynak (trafiğin geldiği yer), ortam (kanal türü) ve kampanya (belirli içerik veya tanıtım)."}}, {"@type": "Question", "name": "Kendi web sitemin içindeki bağlantıları etiketlemeli miyim?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Dahili etiketli bağlantılar ziyaretin özgün kaynağını ezebilir."}}, {"@type": "Question", "name": "UTM değerlerinde büyük harf kullanmak sorun olur mu?", "acceptedAnswer": {"@type": "Answer", "text": "Kaçın. Analiz, farklı büyük/küçük harfleri farklı değerler sayar ve verini böler."}}, {"@type": "Question", "name": "Bir UTM'ye kullanıcı adı veya e-posta koyabilir miyim?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Parametreler URL'lerde ve günlüklerde görünür; kişisel bilgi koyma."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/one-utm-per-link-a-naming-scheme-for-a-solo-developer/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/her-baglantiya-bir-utm-bagimsiz-gelistirici-icin-adlandirma-duzeni/" hreflang="tr" data-lang="tr" aria-current="page">TR</a><a href="/es/blog/un-utm-por-enlace-un-esquema-de-nombres-para-un-desarrollador-independiente/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/um-utm-por-link-um-esquema-de-nomes-para-um-desenvolvedor-independente/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/tr/">Nesim Apps</a> › <a href="/tr/yazilar/">Yazılar</a></nav>
+    <h1>Her Bağlantıya Bir UTM: Bağımsız Geliştirici İçin Adlandırma Düzeni</h1>
+    <p class="by">Nesim Razon, bağımsız mobil uygulama geliştiricisi · 2026-11-20</p>
+    <p class="tags"><a href="/tr/yazilar/#devlog">#Geliştirici notları</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Aynı yazıyı bir blogda, bir video açıklamasında, bir topluluk gönderisinde ve bir tweet&#x27;te paylaşıyorsan ve her bağlantı düzse, ziyaretçiyi hangisinin getirdiğini asla bilemezsin. Her bağlantıyı kendi UTM değerleriyle etiketlemek bunu çözer; yeter ki adlar birkaç katı kurala uysun. Bağımsız geliştirici olarak kullandığım adlandırma düzenini, bağlantılarımdaki gerçek kalıplarla ve sonra neye baktığımla anlatıyorum.</p>
+    <h2>Üç alan ve her birinin yanıtladığı soru</h2>
+    <ul><li>utm_source: tıklamanın nereden geldiği; youtube, twitter veya producthunt gibi.</li><li>utm_medium: o kaynağın içindeki yerin türü; video, community veya social gibi.</li><li>utm_campaign: belirli içerik parçası; bir yazı adı gibi.</li></ul>
+    <h2>Gerçek kalıplarım</h2>
+    <p>Her video açıklaması makalesine youtube kaynağı, video ortamı ve tüm blog videoları için tek ortak kampanya değeriyle bağlanır. Her YouTube topluluk gönderisi youtube kaynağını, community ortamını ve post_ ile başlayıp makale adının geldiği bir kampanyayı kullanır. Tweet&#x27;ler twitter kaynağını, social ortamını ve tw_ ile başlayıp kısa bir ad gelen bir kampanyayı kullanır. Product Hunt bağlantılarının kendi kaynağı var.</p>
+    <p>Aynı makale, kişinin nereye tıkladığına göre analizde farklı etiketlerle gelir.</p>
+    <h2>Veriyi temiz tutan kurallar</h2>
+    <ul><li>Yalnızca küçük harf, boşluk yok, alt çizgi kullan. Aksi halde “YouTube” ve “youtube” iki satır olur.</li><li>Kaynak ve ortam listesini bir kez belirle ve yaz. Yeni adlar yalnızca gerçekten yeni bir yer olduğunda.</li><li>Kampanyayı içerik için kullan, tarih ya da haftanın fikri için değil.</li><li>Bir UTM değerine asla kişisel veya hassas veri koyma. URL&#x27;lere, günlüklere ve paylaşılan ekran görüntülerine girer.</li><li>Kendi sitenin sayfaları arasındaki bağlantıları etiketleme. Bu, ziyaretin özgün kaynağını ezer.</li></ul>
+    <h2>Videolar için neden tek ortak kampanya</h2>
+    <p>Blog videoları bilerek tek bir kampanya değeri paylaşıyor. Önce tüm video kanalını topluluk gönderileri ve tweet&#x27;lerle karşılaştırmak istiyorum. Makalenin kendisi zaten açılış sayfasından belli, bu yüzden video başına kampanya, buna ihtiyaç duyacak kadar trafiğim olmadan gürültü katardı.</p>
+    <h2>Sonucu okumak</h2>
+    <p>Google Analytics 4&#x27;te kaynak ve ortama göre oturumlara bakıyor, sonra her biri için açılış sayfalarını açıyorum. Küçük bir sitede sayılar çok küçük, bu yüzden düzineyle sayıyor ve kanalları neye yol açtıklarıyla karşılaştırıyorum; örneğin bir uygulama sayfası ziyareti ve sitenin kendi olay olarak kaydettiği bir mağaza bağlantısı tıklaması. Kurulumlar için Play Console&#x27;u kullanıyorum; orada QR kodları için ayrı bir ortam, onları ayırt etmemi sağlıyor.</p>
+    <h2>Yayından önce bir akıl sağlığı kontrolü</h2>
+    <p>Bağlantıyı bir kez gizli pencerede aç. Sayfanın yüklendiğini, parametrelerin adreste durduğunu ve ziyaretin gerçek zamanlı görünümde göründüğünü kontrol et. Bir dakikalık test, bir haftalık etiketsiz veriden kurtarır.</p>
+    
+    <section class="faq"><h2>Sık sorulan sorular</h2><details><summary>Üç ana UTM parametresi nedir?</summary><p>Kaynak (trafiğin geldiği yer), ortam (kanal türü) ve kampanya (belirli içerik veya tanıtım).</p></details><details><summary>Kendi web sitemin içindeki bağlantıları etiketlemeli miyim?</summary><p>Hayır. Dahili etiketli bağlantılar ziyaretin özgün kaynağını ezebilir.</p></details><details><summary>UTM değerlerinde büyük harf kullanmak sorun olur mu?</summary><p>Kaçın. Analiz, farklı büyük/küçük harfleri farklı değerler sayar ve verini böler.</p></details><details><summary>Bir UTM&#x27;ye kullanıcı adı veya e-posta koyabilir miyim?</summary><p>Hayır. Parametreler URL&#x27;lerde ve günlüklerde görünür; kişisel bilgi koyma.</p></details></section>
+    <section><h2>Diğer yazılar</h2><ul class="glist"><li><a href="/tr/yazilar/clarity-ai-gorunurluk-kucuk-bir-site-icin-konu-icgoruleri-ilk-sonuclar/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Clarity AI Görünürlük: Küçük Bir Site İçin Konu İçgörüleri, İlk Sonuçlar</b></div></a></li><li><a href="/tr/yazilar/api-yokken-36-youtube-topluluk-gonderisini-zamanlamak/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>API Yokken 36 YouTube Topluluk Gönderisini Zamanlamak</b></div></a></li><li><a href="/tr/yazilar/play-age-signals-api-ve-kaliforniya-ab-1043-kucuk-bir-gelistirici-ne-yapmali/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Play Age Signals API ve Kaliforniya AB 1043: Küçük Bir Geliştirici Ne Yapmalı</b></div></a></li><li><a href="/tr/yazilar/ucretsiz-metinden-sese-ve-python-ile-anlatimli-blog-videolari/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Ücretsiz Metinden Sese ve Python ile Anlatımlı Blog Videoları</b></div></a></li><li><a href="/tr/yazilar/bing-webmaster-api-pano-veri-gosterirken-bos-listeler-donduruyor/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Bing Webmaster API Pano Veri Gösterirken Boş Listeler Döndürüyor</b></div></a></li><li><a href="/tr/yazilar/url-inspection-api-ile-google-hangi-sayfalari-dizine-eklemis-kontrol-et/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>URL Inspection API ile Google&#x27;ın Hangi Sayfaları Dizine Eklediğini Kontrol Et</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

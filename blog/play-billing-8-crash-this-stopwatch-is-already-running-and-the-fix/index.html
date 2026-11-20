@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Play Billing 8.0.0 Crash | Nesim Apps</title>
+<meta name="description" content="A rare IllegalStateException from Play Billing 8.0.0 with automatic service reconnection, how I found it in Crashlytics, and why 8.3.0 is the safe upgrade.">
+<link rel="canonical" href="https://nesimapps.com/blog/play-billing-8-crash-this-stopwatch-is-already-running-and-the-fix/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/play-billing-8-crash-this-stopwatch-is-already-running-and-the-fix/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/play-billing-8-cokmesi-this-stopwatch-is-already-running-ve-cozum/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/fallo-de-play-billing-8-this-stopwatch-is-already-running-y-la-solucion/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/falha-do-play-billing-8-this-stopwatch-is-already-running-e-a-correcao/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/play-billing-8-crash-this-stopwatch-is-already-running-and-the-fix/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#4A5BB0">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Play Billing 8.0.0 Crash: “This Stopwatch Is Already Running” and the Fix">
+<meta property="og:description" content="A rare IllegalStateException from Play Billing 8.0.0 with automatic service reconnection, how I found it in Crashlytics, and why 8.3.0 is the safe upgrade.">
+<meta property="og:url" content="https://nesimapps.com/blog/play-billing-8-crash-this-stopwatch-is-already-running-and-the-fix/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Play Billing 8.0.0 Crash: “This Stopwatch Is Already Running” and the Fix">
+<meta name="twitter:description" content="A rare IllegalStateException from Play Billing 8.0.0 with automatic service reconnection, how I found it in Crashlytics, and why 8.3.0 is the safe upgrade.">
+<style>:root { --accent:#4A5BB0; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Play Billing 8.0.0 Crash: “This Stopwatch Is Already Running” and the Fix", "description": "A rare IllegalStateException from Play Billing 8.0.0 with automatic service reconnection, how I found it in Crashlytics, and why 8.3.0 is the safe upgrade.", "inLanguage": "en", "mainEntityOfPage": "https://nesimapps.com/blog/play-billing-8-crash-this-stopwatch-is-already-running-and-the-fix/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-20", "dateModified": "2026-11-20", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Dev notes, Android", "about": {"@type": "SoftwareApplication", "name": "Tilelings", "operatingSystem": "Android", "applicationCategory": "GameApplication", "url": "https://nesimapps.com/tilelings/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Play Billing 8.0.0 Crash: “This Stopwatch Is Already Running” and the Fix", "item": "https://nesimapps.com/blog/play-billing-8-crash-this-stopwatch-is-already-running-and-the-fix/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does “This stopwatch is already running” mean?", "acceptedAnswer": {"@type": "Answer", "text": "It is an IllegalStateException thrown by timing code inside the Play Billing Library when a timer is started while it is already running. In version 8.0.0 it could happen during automatic service reconnection."}}, {"@type": "Question", "name": "Which Play Billing versions are affected?", "acceptedAnswer": {"@type": "Answer", "text": "Reports point to 8.0.0 with automatic service reconnection enabled. Google’s tracker says it is fixed from 8.1.0 on."}}, {"@type": "Question", "name": "Do I need to move to Billing 9?", "acceptedAnswer": {"@type": "Answer", "text": "No. A 8.x version such as 8.3.0 fixes this crash without a major API migration."}}, {"@type": "Question", "name": "How often does it happen?", "acceptedAnswer": {"@type": "Answer", "text": "Rarely. In my case it was two events from one user. Rare crashes in a billing library are still worth fixing."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/play-billing-8-crash-this-stopwatch-is-already-running-and-the-fix/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/play-billing-8-cokmesi-this-stopwatch-is-already-running-ve-cozum/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/fallo-de-play-billing-8-this-stopwatch-is-already-running-y-la-solucion/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/falha-do-play-billing-8-this-stopwatch-is-already-running-e-a-correcao/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>Play Billing 8.0.0 Crash: “This Stopwatch Is Already Running” and the Fix</h1>
+    <p class="by">By Nesim Razon, independent mobile developer · 2026-11-20</p>
+    <p class="tags"><a href="/blog/#devlog">#Dev notes</a><a href="/blog/#android">#Android</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">If Crashlytics shows an IllegalStateException with the message “This stopwatch is already running” coming from the Play Billing Library, you have hit a known bug in version 8.0.0 that shows up when automatic service reconnection is enabled. Google marked it fixed from 8.1.0 on, and I moved my app to 8.3.0. Here is what the crash looked like, how I connected it to the library, and what to check in your own project.</p>
+    <h2>What the crash looked like</h2>
+    <p>I check Crashlytics for every new release. For our Mahjong game Tilelings the report was tiny: two events from one user, only on version 1.1.0, and every other number in the dashboard was clean. The exception was an IllegalStateException with the text “This stopwatch is already running”. The top stack frames were inside obfuscated Billing Library classes, in the callback that runs when the billing service disconnects.</p>
+    <p>Two events from one person is easy to ignore. I did not ignore it, because a crash inside a library you do not control tends to be a bug, not bad luck, and it can hit more people later.</p>
+    <h2>Why I suspected the library, not my code</h2>
+    <p>Nothing in my own code uses a stopwatch. The message comes from timing code inside the library. In my billing class the client is built with automatic service reconnection turned on, and my own disconnect callback is empty on purpose, because the library is supposed to reconnect by itself. So the only moving part at the crash site was the library&#x27;s reconnect logic.</p>
+    <h2>What the issue tracker says</h2>
+    <p>Searching for the exact message led to a public Google issue about this crash in Play Billing 8.0.0 with automatic reconnection. It is the same combination I use. The thread says the problem is fixed in version 8.1.0 and later. The release notes do not mention it, so you only find it by searching the tracker. The issue was marked fixed, reopened and fixed again, which is a reminder to read the latest comments before you trust a status.</p>
+    <h2>The fix: one line in the version catalog</h2>
+    <p>The change itself is tiny. In the Gradle version catalog the Billing dependency moves from 8.0.0 to 8.3.0, the app version code goes up, and a new release goes out. I picked 8.3.0 instead of a 9.x release because a major version can change APIs, and I wanted a fix for one crash, not a migration.</p>
+    <p>At the time of writing the new build has only just reached the store, so I cannot show a long clean record yet. I will look at Crashlytics again after a few days of real use and update this note if the crash comes back.</p>
+    <h2>A workaround if you cannot upgrade</h2>
+    <p>If you must stay on 8.0.0, the logical workaround is to stop using automatic reconnection and reconnect yourself inside the disconnect callback, with a short delay between attempts. I did not test this, so treat it as an idea, not as a recommendation. Upgrading is simpler and is what Google points to.</p>
+    <h2>How to check your own apps</h2>
+    <ul><li>Search the Crashlytics issue list for the text “stopwatch is already running”.</li><li>Look at the Billing version in your Gradle files. Anything at 8.0.0 is affected only if automatic reconnection is also on.</li><li>Search your code for the automatic reconnection call on the client builder.</li><li>Upgrade to 8.1.0 or later, test a purchase flow on a real device and release.</li><li>Watch the next releases in Crashlytics, not only the first day.</li></ul>
+    <h2>What I did for the rest of my apps</h2>
+    <p>Seven more of my games and apps use the same Billing version together with the same reconnection setting. They have no reports yet, but they carry the same risk, so I am updating them in one batch. A rare crash in a purchase library is worth fixing before it becomes a pattern.</p>
+    <aside class="gcta"><img class="ic" src="/tilelings/icon.png" alt="Tilelings icon" width="64" height="64"><div class="tx"><b>Try it free: Tilelings</b><span>Free on Google Play. No account needed.</span></div><a class="play" href="https://play.google.com/store/apps/details?id=com.tilelings.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dblog%26utm_campaign%3Dplay-billing-stopwatch-crash"><img src="/badges/google-play-en.svg" alt="Google Play" width="162" height="48"></a><a class="small" href="/tilelings/">About Tilelings</a></aside>
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>What does “This stopwatch is already running” mean?</summary><p>It is an IllegalStateException thrown by timing code inside the Play Billing Library when a timer is started while it is already running. In version 8.0.0 it could happen during automatic service reconnection.</p></details><details><summary>Which Play Billing versions are affected?</summary><p>Reports point to 8.0.0 with automatic service reconnection enabled. Google’s tracker says it is fixed from 8.1.0 on.</p></details><details><summary>Do I need to move to Billing 9?</summary><p>No. A 8.x version such as 8.3.0 fixes this crash without a major API migration.</p></details><details><summary>How often does it happen?</summary><p>Rarely. In my case it was two events from one user. Rare crashes in a billing library are still worth fixing.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/mahjong-solitaire-history-vs-real-mahjong/"><img src="/tilelings/icon.png" alt="Tilelings icon" width="48" height="48"><div><b>Mahjong Solitaire History and How It Differs From Mahjong</b></div></a></li><li><a href="/blog/how-we-guarantee-mahjong-solitaire-is-solvable/"><img src="/tilelings/icon.png" alt="Tilelings icon" width="48" height="48"><div><b>How We Guarantee a Mahjong Solitaire Board Is Solvable</b></div></a></li><li><a href="/blog/clarity-ai-visibility-topic-insights-for-a-small-site-first-results/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Clarity AI Visibility: Topic Insights for a Small Site, First Results</b></div></a></li><li><a href="/blog/scheduling-36-youtube-community-posts-when-there-is-no-api/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Scheduling 36 YouTube Community Posts When There Is No API</b></div></a></li><li><a href="/blog/play-age-signals-api-and-california-ab-1043-what-a-small-developer-must-do/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Play Age Signals API and California AB 1043: What a Small Developer Must Do</b></div></a></li><li><a href="/blog/narrated-blog-videos-with-free-text-to-speech-and-python/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Narrated Blog Videos With Free Text-to-Speech and Python</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

@@ -21,7 +21,8 @@ BLOG_MODULES = ["mahjong_solvable", "mahjong_history", "daily_seed", "generated_
                 "solo_dev_portfolio", "ad_lifecycle_events", "compose_juice",
                 "ios_without_mac", "kmp_agp9_traps", "iphone_usb_windows", "remote_promo_list",
                 "rewrite_parity_oracle", "one_qr_two_stores", "store_screenshots_without_a_phone", "app_review_information_request", "app_store_link_storefront", "camera_pulse_signal", "ios_analytics_region", "ios_build_number",
-                "codemagic_signing_certs", "advent_calendar_doors", "cloud_save_max_merge", "astronomy_engine_kmp", "photo_picker_kmp"]  # 3 yazı (12.11.2026); son 3 yalnız Türkçe: merkur_retrosu, burclar_takimyildiz, ay_evreleri: yalnız Türkçe (Astrolings)
+                "codemagic_signing_certs", "advent_calendar_doors", "cloud_save_max_merge", "astronomy_engine_kmp", "photo_picker_kmp",
+                "billing_stopwatch", "firebase_mcp_crashlytics", "play_active_devices_zero", "url_inspection_sitemap_audit", "bing_api_empty_lists", "utm_naming_scheme", "narrated_videos_tts_python", "play_age_signals_ab1043", "youtube_posts_no_api", "clarity_ai_visibility_topics"]  # 3 yazı (12.11.2026); son 3 yalnız Türkçe: merkur_retrosu, burclar_takimyildiz, ay_evreleri: yalnız Türkçe (Astrolings)
 
 BT = {
     "en": {"idx_title": "Blog: puzzle design, game history and dev notes", "idx_h1": "Blog", "idx_desc": "Notes from an independent mobile developer: how puzzles are generated and checked, the history of classic puzzle games and behind-the-scenes dev stories.",

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yapay Zekâ Kod Asistanıyla Crashlytics Okumak | Nesim Apps</title>
+<meta name="description" content="Firebase MCP sunucusu neden Crashlytics araçlarını göstermez, proje klasörü hangi araçların çıkacağını nasıl belirler ve hangi kontrolleri yaparım.">
+<link rel="canonical" href="https://nesimapps.com/tr/yazilar/yapay-zeka-kod-asistaniyla-crashlytics-okumak-proje-klasoru-tuzagi/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/reading-crashlytics-from-an-ai-coding-assistant-the-project-folder-trap/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/yapay-zeka-kod-asistaniyla-crashlytics-okumak-proje-klasoru-tuzagi/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/leer-crashlytics-desde-un-asistente-de-codigo-con-ia-la-trampa-de-la-carpeta-del-proyecto/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/ler-o-crashlytics-com-um-assistente-de-codigo-com-ia-a-armadilha-da-pasta-do-projeto/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/reading-crashlytics-from-an-ai-coding-assistant-the-project-folder-trap/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Yapay Zekâ Kod Asistanıyla Crashlytics Okumak: Proje Klasörü Tuzağı">
+<meta property="og:description" content="Firebase MCP sunucusu neden Crashlytics araçlarını göstermez, proje klasörü hangi araçların çıkacağını nasıl belirler ve hangi kontrolleri yaparım.">
+<meta property="og:url" content="https://nesimapps.com/tr/yazilar/yapay-zeka-kod-asistaniyla-crashlytics-okumak-proje-klasoru-tuzagi/">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Yapay Zekâ Kod Asistanıyla Crashlytics Okumak: Proje Klasörü Tuzağı">
+<meta name="twitter:description" content="Firebase MCP sunucusu neden Crashlytics araçlarını göstermez, proje klasörü hangi araçların çıkacağını nasıl belirler ve hangi kontrolleri yaparım.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Yapay Zekâ Kod Asistanıyla Crashlytics Okumak: Proje Klasörü Tuzağı", "description": "Firebase MCP sunucusu neden Crashlytics araçlarını göstermez, proje klasörü hangi araçların çıkacağını nasıl belirler ve hangi kontrolleri yaparım.", "inLanguage": "tr", "mainEntityOfPage": "https://nesimapps.com/tr/yazilar/yapay-zeka-kod-asistaniyla-crashlytics-okumak-proje-klasoru-tuzagi/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-20", "dateModified": "2026-11-20", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Geliştirici notları, Android"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/tr/"}, {"@type": "ListItem", "position": 2, "name": "Yazılar", "item": "https://nesimapps.com/tr/yazilar/"}, {"@type": "ListItem", "position": 3, "name": "Yapay Zekâ Kod Asistanıyla Crashlytics Okumak: Proje Klasörü Tuzağı", "item": "https://nesimapps.com/tr/yazilar/yapay-zeka-kod-asistaniyla-crashlytics-okumak-proje-klasoru-tuzagi/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Firebase MCP sunucusu neden Crashlytics araçlarını göstermiyor?", "acceptedAnswer": {"@type": "Answer", "text": "Sunucu, proje dizininde bulduğu Firebase SDK'larına göre araçları açar. O klasörde Crashlytics SDK'sı yoksa Crashlytics araçları gizli kalır."}}, {"@type": "Question", "name": "Crashlytics araçlarının çıkmasını nasıl sağlarım?", "acceptedAnswer": {"@type": "Answer", "text": "Sunucu ortamını, proje dizini Crashlytics kullanan bir uygulama klasörü olacak şekilde güncelle ve eşleşen Firebase projesini ayarla. Sonra araç listesinde yeniden ara."}}, {"@type": "Question", "name": "En çok görülen sorunlarda 404, uygulamada çökme olmadığı anlamına mı gelir?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. O uygulamada çökme toplama kapalı olabilir; bu durumda döndürülecek veri yoktur."}}, {"@type": "Question", "name": "Bir ayar dosyası düzenlemem gerekir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Şart değil. Ortam güncelleme aracı, oturum sırasında dizini ve etkin projeyi değiştirebilir."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/reading-crashlytics-from-an-ai-coding-assistant-the-project-folder-trap/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/yapay-zeka-kod-asistaniyla-crashlytics-okumak-proje-klasoru-tuzagi/" hreflang="tr" data-lang="tr" aria-current="page">TR</a><a href="/es/blog/leer-crashlytics-desde-un-asistente-de-codigo-con-ia-la-trampa-de-la-carpeta-del-proyecto/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/ler-o-crashlytics-com-um-assistente-de-codigo-com-ia-a-armadilha-da-pasta-do-projeto/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/tr/">Nesim Apps</a> › <a href="/tr/yazilar/">Yazılar</a></nav>
+    <h1>Yapay Zekâ Kod Asistanıyla Crashlytics Okumak: Proje Klasörü Tuzağı</h1>
+    <p class="by">Nesim Razon, bağımsız mobil uygulama geliştiricisi · 2026-11-20</p>
+    <p class="tags"><a href="/tr/yazilar/#devlog">#Geliştirici notları</a><a href="/tr/yazilar/#android">#Android</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Yapay zekâ kod asistanın Firebase MCP sunucusuna bağlı ama hiçbir Crashlytics aracını göremiyorsa, neden büyük olasılıkla bozuk bir oturum değil, proje klasörüdür. Sunucu araçları, işaret ettiği klasörde bulduğu Firebase SDK&#x27;larına göre açar. Crashlytics kullanan bir Android uygulama klasörüne yönlendirirsen araçlar çıkar. Bunu nasıl bulduğumu ve bir rapora güvenmeden önce yaptığım kontrolleri anlatıyorum.</p>
+    <h2>Belirti</h2>
+    <p>Asistandan birkaç uygulamanın çökme raporlarına bakmasını istedim. Uygulamaları listeleyebiliyor ve proje ayrıntılarını okuyabiliyordu ama hiç Crashlytics aracı yoktu. Sunucuyu yeniden bağlamak ve tekrar giriş yapmak bir şey değiştirmedi; giriş sağlamdı, çünkü diğer Firebase araçları çalışıyordu.</p>
+    <h2>Neden: araçlar proje klasörünü izler</h2>
+    <p>Firebase MCP sunucusu bazı araçları, kullandığı proje dizininde algıladığı Firebase SDK&#x27;larına göre otomatik açar. Varsayılan dizinimde, Crashlytics SDK&#x27;sı olmayan bir pano projesinin küçük bir Firebase ayarı vardı; bu yüzden sunucu Crashlytics araçlarını hiç sunmadı.</p>
+    <h2>Ayar dosyası düzenlemeden çözüm</h2>
+    <p>Ortam oturumun içinden değiştirilebiliyor. Ortam güncelleme aracını, proje dizini Crashlytics kullanan bir Android uygulama klasörü olacak şekilde ve o uygulamanın Firebase projesiyle birlikte çağırdım. Sonra araç listesinde “crashlytics” aramak rapor ve sorun araçlarını getirdi. Hiçbir ayar dosyasına dokunulmadı.</p>
+    <h2>İlk rapordan önce kılavuzu oku</h2>
+    <p>Sunucu, rapor istemenin doğru yolunu anlatan bir kılavuzu kaynak olarak da yayınlıyor. Önce onu okumak filtreleri tahmin etmekten kurtardı. Kısa bir okuma ve hangi rapor türlerinin olduğunu, her birinin neye ihtiyaç duyduğunu anlatıyor.</p>
+    <h2>Etkin projeyi her seferinde kontrol et</h2>
+    <p>Araçlar etkin Firebase projesi üzerinde çalışır. Bir keresinde etkin proje varsaydığımdan farklı olduğu için yanlış projede uygulama oluşturdum. Artık herhangi bir yazma işleminden önce sunucudan geçerli ortamı istiyor ve proje kimliğini kastettiğimle karşılaştırıyorum.</p>
+    <h2>Hatayı “çökme yok” diye okuma</h2>
+    <p>Bir uygulama, en çok görülen sorunlarını istediğimde 404 döndürdü. Bu sıfır çökme demek değildi. O uygulamada çökme verisi toplama bilerek kapalı, yani okunacak bir şey yok. Bir rapor ancak uygulama ve ilgilendiğin derleme için toplama açıksa anlamlı; bu yüzden bir sürümü temiz saymadan önce hangi uygulamaların kapsandığını not ediyorum.</p>
+    <h2>Kontrol listesi</h2>
+    <ul><li>Crashlytics araçları yok mu? Sunucuyu Crashlytics SDK&#x27;sı olan bir uygulama klasörüne yönlendir.</li><li>Proje dizinini ve etkin projeyi tek bir ortam güncellemesinde ayarla, sonra ikisini de doğrula.</li><li>Veri istemeden önce rapor kılavuzu kaynağını oku.</li><li>Bir şey oluşturmadan veya değiştirmeden önce etkin projeyi doğrula.</li><li>Hangi uygulamalarda toplama açık, bil; böylece boş sonuç temiz sonuçla karıştırılmaz.</li></ul>
+    
+    <section class="faq"><h2>Sık sorulan sorular</h2><details><summary>Firebase MCP sunucusu neden Crashlytics araçlarını göstermiyor?</summary><p>Sunucu, proje dizininde bulduğu Firebase SDK&#x27;larına göre araçları açar. O klasörde Crashlytics SDK&#x27;sı yoksa Crashlytics araçları gizli kalır.</p></details><details><summary>Crashlytics araçlarının çıkmasını nasıl sağlarım?</summary><p>Sunucu ortamını, proje dizini Crashlytics kullanan bir uygulama klasörü olacak şekilde güncelle ve eşleşen Firebase projesini ayarla. Sonra araç listesinde yeniden ara.</p></details><details><summary>En çok görülen sorunlarda 404, uygulamada çökme olmadığı anlamına mı gelir?</summary><p>Hayır. O uygulamada çökme toplama kapalı olabilir; bu durumda döndürülecek veri yoktur.</p></details><details><summary>Bir ayar dosyası düzenlemem gerekir mi?</summary><p>Şart değil. Ortam güncelleme aracı, oturum sırasında dizini ve etkin projeyi değiştirebilir.</p></details></section>
+    <section><h2>Diğer yazılar</h2><ul class="glist"><li><a href="/tr/yazilar/clarity-ai-gorunurluk-kucuk-bir-site-icin-konu-icgoruleri-ilk-sonuclar/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Clarity AI Görünürlük: Küçük Bir Site İçin Konu İçgörüleri, İlk Sonuçlar</b></div></a></li><li><a href="/tr/yazilar/api-yokken-36-youtube-topluluk-gonderisini-zamanlamak/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>API Yokken 36 YouTube Topluluk Gönderisini Zamanlamak</b></div></a></li><li><a href="/tr/yazilar/play-age-signals-api-ve-kaliforniya-ab-1043-kucuk-bir-gelistirici-ne-yapmali/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Play Age Signals API ve Kaliforniya AB 1043: Küçük Bir Geliştirici Ne Yapmalı</b></div></a></li><li><a href="/tr/yazilar/ucretsiz-metinden-sese-ve-python-ile-anlatimli-blog-videolari/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Ücretsiz Metinden Sese ve Python ile Anlatımlı Blog Videoları</b></div></a></li><li><a href="/tr/yazilar/her-baglantiya-bir-utm-bagimsiz-gelistirici-icin-adlandirma-duzeni/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Her Bağlantıya Bir UTM: Bağımsız Geliştirici İçin Adlandırma Düzeni</b></div></a></li><li><a href="/tr/yazilar/bing-webmaster-api-pano-veri-gosterirken-bos-listeler-donduruyor/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Bing Webmaster API Pano Veri Gösterirken Boş Listeler Döndürüyor</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

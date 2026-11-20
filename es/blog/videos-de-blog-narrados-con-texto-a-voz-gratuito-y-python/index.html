@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vídeos de blog narrados con texto a voz gratuito y Python</title>
+<meta name="description" content="Cómo convierto cada artículo del blog en un vídeo narrado con voz neuronal gratuita, diagramas de Pillow y ffmpeg, sin cámara ni micrófono.">
+<link rel="canonical" href="https://nesimapps.com/es/blog/videos-de-blog-narrados-con-texto-a-voz-gratuito-y-python/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/narrated-blog-videos-with-free-text-to-speech-and-python/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/ucretsiz-metinden-sese-ve-python-ile-anlatimli-blog-videolari/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/videos-de-blog-narrados-con-texto-a-voz-gratuito-y-python/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/videos-de-blog-narrados-com-texto-para-fala-gratuito-e-python/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/narrated-blog-videos-with-free-text-to-speech-and-python/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Vídeos de blog narrados con texto a voz gratuito y Python">
+<meta property="og:description" content="Cómo convierto cada artículo del blog en un vídeo narrado con voz neuronal gratuita, diagramas de Pillow y ffmpeg, sin cámara ni micrófono.">
+<meta property="og:url" content="https://nesimapps.com/es/blog/videos-de-blog-narrados-con-texto-a-voz-gratuito-y-python/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vídeos de blog narrados con texto a voz gratuito y Python">
+<meta name="twitter:description" content="Cómo convierto cada artículo del blog en un vídeo narrado con voz neuronal gratuita, diagramas de Pillow y ffmpeg, sin cámara ni micrófono.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Vídeos de blog narrados con texto a voz gratuito y Python", "description": "Cómo convierto cada artículo del blog en un vídeo narrado con voz neuronal gratuita, diagramas de Pillow y ffmpeg, sin cámara ni micrófono.", "inLanguage": "es", "mainEntityOfPage": "https://nesimapps.com/es/blog/videos-de-blog-narrados-con-texto-a-voz-gratuito-y-python/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-20", "dateModified": "2026-11-20", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Notas de desarrollo"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/es/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/es/blog/"}, {"@type": "ListItem", "position": 3, "name": "Vídeos de blog narrados con texto a voz gratuito y Python", "item": "https://nesimapps.com/es/blog/videos-de-blog-narrados-con-texto-a-voz-gratuito-y-python/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Necesito micrófono o cámara?", "acceptedAnswer": {"@type": "Answer", "text": "No. Una voz neuronal gratuita de texto a voz lee el artículo y Python dibuja las imágenes."}}, {"@type": "Question", "name": "¿Cómo corrijo las palabras técnicas mal pronunciadas?", "acceptedAnswer": {"@type": "Answer", "text": "Añádelas a un diccionario de sustituciones que cambie solo el texto enviado a la voz, para que los subtítulos sigan correctos."}}, {"@type": "Question", "name": "¿El mismo script puede producir otros idiomas?", "acceptedAnswer": {"@type": "Answer", "text": "Puede, pero en mis pruebas la calidad del inglés técnico mezclado fue peor, así que mantengo los vídeos en inglés."}}, {"@type": "Question", "name": "¿Debo decir a los espectadores que la voz es sintética?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Una nota breve en cada descripción es sencilla y honesta."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/narrated-blog-videos-with-free-text-to-speech-and-python/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/ucretsiz-metinden-sese-ve-python-ile-anlatimli-blog-videolari/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/videos-de-blog-narrados-con-texto-a-voz-gratuito-y-python/" hreflang="es" data-lang="es" aria-current="page">ES</a><a href="/pt/blog/videos-de-blog-narrados-com-texto-para-fala-gratuito-e-python/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/es/">Nesim Apps</a> › <a href="/es/blog/">Blog</a></nav>
+    <h1>Vídeos de blog narrados con texto a voz gratuito y Python</h1>
+    <p class="by">Por Nesim Razon, desarrollador móvil independiente · 2026-11-20</p>
+    <p class="tags"><a href="/es/blog/#devlog">#Notas de desarrollo</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Convierto cada artículo del blog en un vídeo narrado de YouTube con un solo script: una voz de texto a voz gratuita lee el artículo, Python dibuja un diagrama para cada sección y ffmpeg lo junta todo. Sin cámara, sin micrófono, sin programa de edición. Esta entrada explica el proceso, la trampa de la pronunciación que más tiempo me llevó y las decisiones que mantienen los vídeos honestos.</p>
+    <h2>El proceso en un párrafo</h2>
+    <p>El script carga el artículo desde el mismo archivo que genera la página del blog. Para cada frase crea un archivo de voz con el servicio gratuito de voz neuronal de Microsoft al que se accede mediante un paquete de Python, luego dibuja un fotograma con el diagrama de la sección y el subtítulo actual con Pillow, y por último ffmpeg une fotogramas y audio en un vídeo de 1920 por 1080 a 30 fotogramas por segundo. Una segunda función hace la miniatura de 1280 por 720.</p>
+    <h2>Una voz, un idioma</h2>
+    <p>Probé también voces en turco, español y portugués y las descarté. Una sola voz turca lee las palabras técnicas en inglés a la turca, una voz mixta suena mal y cambiar entre dos voces creaba pausas y un cambio de tono en cada cambio. El canal tiene ahora una voz en inglés con un ritmo algo más lento, y el sitio sigue siendo multilingüe solo en texto.</p>
+    <h2>La trampa de la pronunciación</h2>
+    <p>Los artículos para desarrolladores están llenos de palabras que una voz no sabe leer: nombres de producto, identificadores en camel case, abreviaturas. La solución es un pequeño diccionario que se aplica solo al texto que va a la voz, mientras que los subtítulos conservan la ortografía original. Un identificador como una clave de versión de paquete se convierte en palabras separadas, y la palabra iOS en letras. Yo no puedo oír el resultado, así que cada palabra nueva que suena mal se comunica al escuchar y se añade al diccionario, que crece con el tiempo.</p>
+    <h2>Diagramas que encajan con el artículo</h2>
+    <p>Una tarjeta de título más texto con viñetas no basta para un vídeo largo. Cada artículo recibe su propia lista de escenas construida con unas pocas primitivas de dibujo: flujos, paneles de comparación, líneas de código, tarjetas de cifras y listas de comprobación. La escena aparece paso a paso a medida que se lee cada frase, de modo que la imagen sigue a la narración.</p>
+    <h2>Publicar sin estar encima</h2>
+    <p>El script de subida envía cada vídeo como privado con una hora de publicación programada, añade la miniatura, asigna una lista de reproducción y escribe una descripción que enlaza el artículo. Cada descripción indica que la narración está generada por IA, lo que me parece lo honesto.</p>
+    <h2>Qué le diría a un principiante</h2>
+    <ul><li>Empieza con un artículo y una voz. Consigue un resultado limpio antes de construir una biblioteca de escenas.</li><li>Mantén separados desde el primer día el texto hablado y el de los subtítulos.</li><li>Escucha cada vídeo una vez antes de publicarlo. Las pronunciaciones erróneas son el defecto más común.</li><li>No publiques demasiados vídeos casi idénticos en poco tiempo. Varía las imágenes para que cada vídeo se gane su sitio.</li><li>Di en la descripción que la voz es sintética.</li></ul>
+    
+    <section class="faq"><h2>Preguntas frecuentes</h2><details><summary>¿Necesito micrófono o cámara?</summary><p>No. Una voz neuronal gratuita de texto a voz lee el artículo y Python dibuja las imágenes.</p></details><details><summary>¿Cómo corrijo las palabras técnicas mal pronunciadas?</summary><p>Añádelas a un diccionario de sustituciones que cambie solo el texto enviado a la voz, para que los subtítulos sigan correctos.</p></details><details><summary>¿El mismo script puede producir otros idiomas?</summary><p>Puede, pero en mis pruebas la calidad del inglés técnico mezclado fue peor, así que mantengo los vídeos en inglés.</p></details><details><summary>¿Debo decir a los espectadores que la voz es sintética?</summary><p>Sí. Una nota breve en cada descripción es sencilla y honesta.</p></details></section>
+    <section><h2>Más del blog</h2><ul class="glist"><li><a href="/es/blog/clarity-ai-visibility-topic-insights-para-un-sitio-pequeno-primeros-resultados/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Clarity AI Visibility: Topic Insights para un sitio pequeño, primeros resultados</b></div></a></li><li><a href="/es/blog/programar-36-publicaciones-de-la-comunidad-de-youtube-cuando-no-hay-api/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Programar 36 publicaciones de la comunidad de YouTube cuando no hay API</b></div></a></li><li><a href="/es/blog/api-play-age-signals-y-ab-1043-de-california-que-debe-hacer-un-desarrollador-pequeno/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>API Play Age Signals y AB 1043 de California: qué debe hacer un desarrollador pequeño</b></div></a></li><li><a href="/es/blog/un-utm-por-enlace-un-esquema-de-nombres-para-un-desarrollador-independiente/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Un UTM por enlace: un esquema de nombres para un desarrollador independiente</b></div></a></li><li><a href="/es/blog/la-api-de-bing-webmaster-devuelve-listas-vacias-mientras-el-panel-muestra-datos/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>La API de Bing Webmaster devuelve listas vacías mientras el panel muestra datos</b></div></a></li><li><a href="/es/blog/comprueba-que-paginas-ha-indexado-google-con-la-api-de-inspeccion-de-urls/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Comprueba qué páginas ha indexado Google con la API de inspección de URL</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

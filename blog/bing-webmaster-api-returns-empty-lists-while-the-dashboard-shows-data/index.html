@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bing Webmaster API Returns Empty Lists While the Dashboard Shows Data</title>
+<meta name="description" content="A new site: the Bing Webmaster API gave daily totals and crawl stats but empty query, page and backlink lists, while the dashboard had them. What I did.">
+<link rel="canonical" href="https://nesimapps.com/blog/bing-webmaster-api-returns-empty-lists-while-the-dashboard-shows-data/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/bing-webmaster-api-returns-empty-lists-while-the-dashboard-shows-data/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/bing-webmaster-api-pano-veri-gosterirken-bos-listeler-donduruyor/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/la-api-de-bing-webmaster-devuelve-listas-vacias-mientras-el-panel-muestra-datos/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/a-api-do-bing-webmaster-devolve-listas-vazias-enquanto-o-painel-mostra-dados/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/bing-webmaster-api-returns-empty-lists-while-the-dashboard-shows-data/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Bing Webmaster API Returns Empty Lists While the Dashboard Shows Data">
+<meta property="og:description" content="A new site: the Bing Webmaster API gave daily totals and crawl stats but empty query, page and backlink lists, while the dashboard had them. What I did.">
+<meta property="og:url" content="https://nesimapps.com/blog/bing-webmaster-api-returns-empty-lists-while-the-dashboard-shows-data/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bing Webmaster API Returns Empty Lists While the Dashboard Shows Data">
+<meta name="twitter:description" content="A new site: the Bing Webmaster API gave daily totals and crawl stats but empty query, page and backlink lists, while the dashboard had them. What I did.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Bing Webmaster API Returns Empty Lists While the Dashboard Shows Data", "description": "A new site: the Bing Webmaster API gave daily totals and crawl stats but empty query, page and backlink lists, while the dashboard had them. What I did.", "inLanguage": "en", "mainEntityOfPage": "https://nesimapps.com/blog/bing-webmaster-api-returns-empty-lists-while-the-dashboard-shows-data/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-20", "dateModified": "2026-11-20", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Dev notes"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Bing Webmaster API Returns Empty Lists While the Dashboard Shows Data", "item": "https://nesimapps.com/blog/bing-webmaster-api-returns-empty-lists-while-the-dashboard-shows-data/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why does the Bing API return empty lists for queries and pages?", "acceptedAnswer": {"@type": "Answer", "text": "On a new site the detail data may not be exposed through the API yet, even when the dashboard already shows it. The calls succeed but return no rows."}}, {"@type": "Question", "name": "Which Bing API calls worked on a new site?", "acceptedAnswer": {"@type": "Answer", "text": "The daily traffic totals, crawl statistics, sitemap feed status and the URL submission quota."}}, {"@type": "Question", "name": "Is it a bug in my code?", "acceptedAnswer": {"@type": "Answer", "text": "Test each call by hand first. If the raw response is an empty list with a success status, the data is not coming from the API."}}, {"@type": "Question", "name": "How can I show the data in the meantime?", "acceptedAnswer": {"@type": "Answer", "text": "Copy the dashboard tables to a dated file and label them clearly, then switch back to the API when it returns rows."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/bing-webmaster-api-returns-empty-lists-while-the-dashboard-shows-data/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/bing-webmaster-api-pano-veri-gosterirken-bos-listeler-donduruyor/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/la-api-de-bing-webmaster-devuelve-listas-vacias-mientras-el-panel-muestra-datos/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/a-api-do-bing-webmaster-devolve-listas-vazias-enquanto-o-painel-mostra-dados/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>Bing Webmaster API Returns Empty Lists While the Dashboard Shows Data</h1>
+    <p class="by">By Nesim Razon, independent mobile developer · 2026-11-20</p>
+    <p class="tags"><a href="/blog/#devlog">#Dev notes</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">A few weeks after launching a site, the Bing Webmaster Tools dashboard showed search keywords, pages and backlinks, but the API returned empty lists for the same things. Only part of the API had data. If your own dashboard built on that API looks empty, this is what I found, which calls worked and how I filled the gap honestly.</p>
+    <h2>The mismatch</h2>
+    <p>In the Bing dashboard the Search Performance page listed six keywords, three pages and a country and device split. The Backlinks page showed two referring domains and twenty referring pages. My report, which calls the API, showed a handful of totals and a chart and nothing else, and I suspected my own code.</p>
+    <h2>I tested each call by hand</h2>
+    <p>I called the API methods one at a time. The daily traffic call returned two days of clicks and impressions. The crawl statistics call returned crawled pages, indexed pages and inbound link counts. The feeds call returned my sitemap and how many URLs Bing had read from it. The submission quota call returned the daily and monthly limits.</p>
+    <p>The calls for queries, pages, query by page, link counts, links for a URL and keyword statistics all returned empty lists with a normal success status. There was no error to catch. The data simply was not exposed through the API yet, even though the dashboard had it.</p>
+    <h2>A useful by-product</h2>
+    <p>The feeds call showed Bing had read 328 URLs from my sitemap while the file had 381. That told me the sitemap was outdated on their side, and resubmitting it in the dashboard fixed it. Small details like this are easy to miss if you only watch totals.</p>
+    <h2>How I handled the gap</h2>
+    <p>I did not want an empty tab, and I did not want to invent numbers. I read the dashboard tables once through the browser, saved them in a small file with the date and the date range, and made the report use that file whenever the API lists are empty. The report prints a clear note that these lists come from the dashboard on a given date, and it switches to the API automatically once the API returns data.</p>
+    <h2>Lessons</h2>
+    <ul><li>An empty list with a success status is not proof there is no data. Compare with the dashboard before you blame your code.</li><li>Test every API method separately, and keep the raw responses of the first run.</li><li>Label the source and the date of every number you copy from a dashboard.</li><li>Use the extra calls: sitemap read counts and crawl stats found a real problem.</li><li>Re-check in a week or two, because new sites fill in slowly.</li></ul>
+    
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Why does the Bing API return empty lists for queries and pages?</summary><p>On a new site the detail data may not be exposed through the API yet, even when the dashboard already shows it. The calls succeed but return no rows.</p></details><details><summary>Which Bing API calls worked on a new site?</summary><p>The daily traffic totals, crawl statistics, sitemap feed status and the URL submission quota.</p></details><details><summary>Is it a bug in my code?</summary><p>Test each call by hand first. If the raw response is an empty list with a success status, the data is not coming from the API.</p></details><details><summary>How can I show the data in the meantime?</summary><p>Copy the dashboard tables to a dated file and label them clearly, then switch back to the API when it returns rows.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/clarity-ai-visibility-topic-insights-for-a-small-site-first-results/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Clarity AI Visibility: Topic Insights for a Small Site, First Results</b></div></a></li><li><a href="/blog/scheduling-36-youtube-community-posts-when-there-is-no-api/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Scheduling 36 YouTube Community Posts When There Is No API</b></div></a></li><li><a href="/blog/play-age-signals-api-and-california-ab-1043-what-a-small-developer-must-do/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Play Age Signals API and California AB 1043: What a Small Developer Must Do</b></div></a></li><li><a href="/blog/narrated-blog-videos-with-free-text-to-speech-and-python/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Narrated Blog Videos With Free Text-to-Speech and Python</b></div></a></li><li><a href="/blog/one-utm-per-link-a-naming-scheme-for-a-solo-developer/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>One UTM Per Link: A Naming Scheme for a Solo Developer</b></div></a></li><li><a href="/blog/check-which-pages-google-has-indexed-with-the-url-inspection-api/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Check Which Pages Google Has Indexed With the URL Inspection API</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

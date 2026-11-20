@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt" data-lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A API do Bing Webmaster devolve listas vazias enquanto o painel mostra dados</title>
+<meta name="description" content="Em um site novo a API do Bing Webmaster deu totais e estatísticas de rastreamento, mas listas vazias de consultas e páginas. O que fiz.">
+<link rel="canonical" href="https://nesimapps.com/pt/blog/a-api-do-bing-webmaster-devolve-listas-vazias-enquanto-o-painel-mostra-dados/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/bing-webmaster-api-returns-empty-lists-while-the-dashboard-shows-data/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/bing-webmaster-api-pano-veri-gosterirken-bos-listeler-donduruyor/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/la-api-de-bing-webmaster-devuelve-listas-vacias-mientras-el-panel-muestra-datos/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/a-api-do-bing-webmaster-devolve-listas-vazias-enquanto-o-painel-mostra-dados/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/bing-webmaster-api-returns-empty-lists-while-the-dashboard-shows-data/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="A API do Bing Webmaster devolve listas vazias enquanto o painel mostra dados">
+<meta property="og:description" content="Em um site novo a API do Bing Webmaster deu totais e estatísticas de rastreamento, mas listas vazias de consultas e páginas. O que fiz.">
+<meta property="og:url" content="https://nesimapps.com/pt/blog/a-api-do-bing-webmaster-devolve-listas-vazias-enquanto-o-painel-mostra-dados/">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A API do Bing Webmaster devolve listas vazias enquanto o painel mostra dados">
+<meta name="twitter:description" content="Em um site novo a API do Bing Webmaster deu totais e estatísticas de rastreamento, mas listas vazias de consultas e páginas. O que fiz.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "A API do Bing Webmaster devolve listas vazias enquanto o painel mostra dados", "description": "Em um site novo a API do Bing Webmaster deu totais e estatísticas de rastreamento, mas listas vazias de consultas e páginas. O que fiz.", "inLanguage": "pt", "mainEntityOfPage": "https://nesimapps.com/pt/blog/a-api-do-bing-webmaster-devolve-listas-vazias-enquanto-o-painel-mostra-dados/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-20", "dateModified": "2026-11-20", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Notas de desenvolvimento"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/pt/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/pt/blog/"}, {"@type": "ListItem", "position": 3, "name": "A API do Bing Webmaster devolve listas vazias enquanto o painel mostra dados", "item": "https://nesimapps.com/pt/blog/a-api-do-bing-webmaster-devolve-listas-vazias-enquanto-o-painel-mostra-dados/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Por que a API do Bing devolve listas vazias de consultas e páginas?", "acceptedAnswer": {"@type": "Answer", "text": "Em um site novo os dados de detalhe podem ainda não ser expostos pela API, mesmo que o painel já os mostre. As chamadas têm sucesso mas não devolvem linhas."}}, {"@type": "Question", "name": "Quais chamadas da API do Bing funcionaram em um site novo?", "acceptedAnswer": {"@type": "Answer", "text": "Os totais de tráfego diário, as estatísticas de rastreamento, o estado do feed do sitemap e a cota de envio de URLs."}}, {"@type": "Question", "name": "É um erro no meu código?", "acceptedAnswer": {"@type": "Answer", "text": "Teste primeiro cada chamada à mão. Se a resposta bruta é uma lista vazia com status de sucesso, os dados não vêm da API."}}, {"@type": "Question", "name": "Como posso mostrar os dados enquanto isso?", "acceptedAnswer": {"@type": "Answer", "text": "Copie as tabelas do painel para um arquivo com data e rotule com clareza, e volte para a API quando ela devolver linhas."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/bing-webmaster-api-returns-empty-lists-while-the-dashboard-shows-data/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/bing-webmaster-api-pano-veri-gosterirken-bos-listeler-donduruyor/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/la-api-de-bing-webmaster-devuelve-listas-vacias-mientras-el-panel-muestra-datos/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/a-api-do-bing-webmaster-devolve-listas-vazias-enquanto-o-painel-mostra-dados/" hreflang="pt" data-lang="pt" aria-current="page">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/pt/">Nesim Apps</a> › <a href="/pt/blog/">Blog</a></nav>
+    <h1>A API do Bing Webmaster devolve listas vazias enquanto o painel mostra dados</h1>
+    <p class="by">Por Nesim Razon, desenvolvedor mobile independente · 2026-11-20</p>
+    <p class="tags"><a href="/pt/blog/#devlog">#Notas de desenvolvimento</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Algumas semanas depois de lançar um site, o painel do Bing Webmaster Tools mostrava palavras-chave de busca, páginas e links de entrada, mas a API devolvia listas vazias para as mesmas coisas. Só uma parte da API tinha dados. Se o seu próprio painel construído sobre essa API parece vazio, isto é o que encontrei, quais chamadas funcionaram e como preenchi a lacuna com honestidade.</p>
+    <h2>A discrepância</h2>
+    <p>No painel do Bing, a página Search Performance listava seis palavras-chave, três páginas e uma divisão por país e dispositivo. A página Backlinks mostrava dois domínios que linkam e vinte páginas que linkam. Meu relatório, que chama a API, mostrava um punhado de totais e um gráfico e nada mais, e suspeitei do meu próprio código.</p>
+    <h2>Testei cada chamada à mão</h2>
+    <p>Chamei os métodos da API um por um. A chamada de tráfego diário devolveu dois dias de cliques e impressões. A de estatísticas de rastreamento devolveu páginas rastreadas, páginas indexadas e contagens de links de entrada. A de feeds devolveu meu sitemap e quantas URLs o Bing leu dele. A de cota de envios devolveu os limites diário e mensal.</p>
+    <p>As chamadas de consultas, páginas, consulta por página, contagens de links, links de uma URL e estatísticas de palavras-chave devolveram todas listas vazias com status de sucesso normal. Não havia erro para capturar. Os dados simplesmente ainda não eram expostos pela API, mesmo que o painel os tivesse.</p>
+    <h2>Um subproduto útil</h2>
+    <p>A chamada de feeds mostrou que o Bing tinha lido 328 URLs do meu sitemap quando o arquivo tinha 381. Isso me disse que o sitemap estava desatualizado do lado deles, e reenviá-lo no painel resolveu. Detalhes pequenos assim passam fácil se você só olha os totais.</p>
+    <h2>Como tratei a lacuna</h2>
+    <p>Eu não queria uma aba vazia nem inventar números. Li as tabelas do painel uma vez pelo navegador, salvei em um arquivo pequeno com a data e o intervalo de datas, e fiz o relatório usar esse arquivo quando as listas da API estiverem vazias. O relatório mostra uma nota clara de que essas listas vêm do painel em uma data, e passa para a API automaticamente quando ela devolve dados.</p>
+    <h2>Lições</h2>
+    <ul><li>Uma lista vazia com status de sucesso não prova que não há dados. Compare com o painel antes de culpar seu código.</li><li>Teste cada método da API separadamente e guarde as respostas brutas da primeira execução.</li><li>Rotule a fonte e a data de cada número que copiar de um painel.</li><li>Use as chamadas extras: as contagens de leitura do sitemap e as estatísticas de rastreamento acharam um problema real.</li><li>Verifique de novo em uma ou duas semanas, porque sites novos enchem devagar.</li></ul>
+    
+    <section class="faq"><h2>Perguntas frequentes</h2><details><summary>Por que a API do Bing devolve listas vazias de consultas e páginas?</summary><p>Em um site novo os dados de detalhe podem ainda não ser expostos pela API, mesmo que o painel já os mostre. As chamadas têm sucesso mas não devolvem linhas.</p></details><details><summary>Quais chamadas da API do Bing funcionaram em um site novo?</summary><p>Os totais de tráfego diário, as estatísticas de rastreamento, o estado do feed do sitemap e a cota de envio de URLs.</p></details><details><summary>É um erro no meu código?</summary><p>Teste primeiro cada chamada à mão. Se a resposta bruta é uma lista vazia com status de sucesso, os dados não vêm da API.</p></details><details><summary>Como posso mostrar os dados enquanto isso?</summary><p>Copie as tabelas do painel para um arquivo com data e rotule com clareza, e volte para a API quando ela devolver linhas.</p></details></section>
+    <section><h2>Mais do blog</h2><ul class="glist"><li><a href="/pt/blog/clarity-ai-visibility-topic-insights-para-um-site-pequeno-primeiros-resultados/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Clarity AI Visibility: Topic Insights para um site pequeno, primeiros resultados</b></div></a></li><li><a href="/pt/blog/agendar-36-posts-da-comunidade-do-youtube-quando-nao-ha-api/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Agendar 36 posts da comunidade do YouTube quando não há API</b></div></a></li><li><a href="/pt/blog/api-play-age-signals-e-ab-1043-da-california-o-que-um-desenvolvedor-pequeno-deve-fazer/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>API Play Age Signals e AB 1043 da Califórnia: o que um desenvolvedor pequeno deve fazer</b></div></a></li><li><a href="/pt/blog/videos-de-blog-narrados-com-texto-para-fala-gratuito-e-python/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Vídeos de blog narrados com texto para fala gratuito e Python</b></div></a></li><li><a href="/pt/blog/um-utm-por-link-um-esquema-de-nomes-para-um-desenvolvedor-independente/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Um UTM por link: um esquema de nomes para um desenvolvedor independente</b></div></a></li><li><a href="/pt/blog/verifique-quais-paginas-o-google-indexou-com-a-api-de-inspecao-de-url/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Verifique quais páginas o Google indexou com a API de inspeção de URL</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

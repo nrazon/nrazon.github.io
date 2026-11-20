@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt" data-lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Um UTM por link | Nesim Apps</title>
+<meta name="description" content="Um esquema simples de nomes UTM para um desenvolvedor pequeno: regras de origem, mídia e campanha, exemplos reais e como ler no GA4.">
+<link rel="canonical" href="https://nesimapps.com/pt/blog/um-utm-por-link-um-esquema-de-nomes-para-um-desenvolvedor-independente/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/one-utm-per-link-a-naming-scheme-for-a-solo-developer/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/her-baglantiya-bir-utm-bagimsiz-gelistirici-icin-adlandirma-duzeni/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/un-utm-por-enlace-un-esquema-de-nombres-para-un-desarrollador-independiente/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/um-utm-por-link-um-esquema-de-nomes-para-um-desenvolvedor-independente/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/one-utm-per-link-a-naming-scheme-for-a-solo-developer/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Um UTM por link: um esquema de nomes para um desenvolvedor independente">
+<meta property="og:description" content="Um esquema simples de nomes UTM para um desenvolvedor pequeno: regras de origem, mídia e campanha, exemplos reais e como ler no GA4.">
+<meta property="og:url" content="https://nesimapps.com/pt/blog/um-utm-por-link-um-esquema-de-nomes-para-um-desenvolvedor-independente/">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Um UTM por link: um esquema de nomes para um desenvolvedor independente">
+<meta name="twitter:description" content="Um esquema simples de nomes UTM para um desenvolvedor pequeno: regras de origem, mídia e campanha, exemplos reais e como ler no GA4.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Um UTM por link: um esquema de nomes para um desenvolvedor independente", "description": "Um esquema simples de nomes UTM para um desenvolvedor pequeno: regras de origem, mídia e campanha, exemplos reais e como ler no GA4.", "inLanguage": "pt", "mainEntityOfPage": "https://nesimapps.com/pt/blog/um-utm-por-link-um-esquema-de-nomes-para-um-desenvolvedor-independente/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-20", "dateModified": "2026-11-20", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Notas de desenvolvimento"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/pt/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/pt/blog/"}, {"@type": "ListItem", "position": 3, "name": "Um UTM por link: um esquema de nomes para um desenvolvedor independente", "item": "https://nesimapps.com/pt/blog/um-utm-por-link-um-esquema-de-nomes-para-um-desenvolvedor-independente/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quais são os três parâmetros UTM principais?", "acceptedAnswer": {"@type": "Answer", "text": "Origem (de onde vem o tráfego), mídia (o tipo de canal) e campanha (o conteúdo ou promoção específicos)."}}, {"@type": "Question", "name": "Devo marcar links dentro do meu próprio site?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Links internos marcados podem sobrescrever a origem original da visita."}}, {"@type": "Question", "name": "Posso usar letras maiúsculas nos valores UTM?", "acceptedAnswer": {"@type": "Answer", "text": "Evite. A análise trata maiúsculas diferentes como valores diferentes, o que divide seus dados."}}, {"@type": "Question", "name": "Posso colocar o nome ou o e-mail de um usuário em um UTM?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Os parâmetros aparecem em URLs e logs, então não inclua informações pessoais."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/one-utm-per-link-a-naming-scheme-for-a-solo-developer/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/her-baglantiya-bir-utm-bagimsiz-gelistirici-icin-adlandirma-duzeni/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/un-utm-por-enlace-un-esquema-de-nombres-para-un-desarrollador-independiente/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/um-utm-por-link-um-esquema-de-nomes-para-um-desenvolvedor-independente/" hreflang="pt" data-lang="pt" aria-current="page">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/pt/">Nesim Apps</a> › <a href="/pt/blog/">Blog</a></nav>
+    <h1>Um UTM por link: um esquema de nomes para um desenvolvedor independente</h1>
+    <p class="by">Por Nesim Razon, desenvolvedor mobile independente · 2026-11-20</p>
+    <p class="tags"><a href="/pt/blog/#devlog">#Notas de desenvolvimento</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Se você compartilha o mesmo artigo em um blog, na descrição de um vídeo, em um post da comunidade e em um tuíte, e cada link é simples, nunca saberá qual trouxe o visitante. Marcar cada link com seus próprios valores UTM resolve isso, desde que os nomes sigam algumas regras rígidas. Aqui está o esquema de nomes que uso como desenvolvedor independente, com os padrões reais dos meus links e o que olho depois.</p>
+    <h2>Os três campos e o que cada um responde</h2>
+    <ul><li>utm_source: de onde veio o clique, como youtube, twitter ou producthunt.</li><li>utm_medium: o tipo de lugar dentro dessa origem, como video, community ou social.</li><li>utm_campaign: a peça de conteúdo específica, como o nome de um artigo.</li></ul>
+    <h2>Meus padrões reais</h2>
+    <p>A descrição de cada vídeo liga ao seu artigo com a origem youtube, a mídia video e um valor de campanha compartilhado por todos os vídeos do blog. Cada post da comunidade do YouTube usa a origem youtube, a mídia community e uma campanha que começa com post_ seguida do nome do artigo. Os tuítes usam a origem twitter, a mídia social e uma campanha que começa com tw_ mais um nome curto. Os links do Product Hunt usam sua própria origem.</p>
+    <p>Assim, o mesmo artigo chega à análise com rótulos diferentes conforme onde a pessoa clicou.</p>
+    <h2>Regras que mantêm os dados limpos</h2>
+    <ul><li>Só minúsculas, sem espaços, com sublinhados. Senão “YouTube” e “youtube” viram duas linhas.</li><li>Decida a lista de origens e mídias uma vez e escreva. Nomes novos só quando houver de fato um lugar novo.</li><li>Use a campanha para o conteúdo, não para a data nem a ideia da semana.</li><li>Nunca ponha dados pessoais ou sensíveis em um valor UTM. Ele acaba em URLs, logs e capturas compartilhadas.</li><li>Não marque links entre páginas do seu próprio site. Isso sobrescreve a origem original da visita.</li></ul>
+    <h2>Por que uma campanha compartilhada para os vídeos</h2>
+    <p>Os vídeos do blog compartilham um valor de campanha de propósito. Quero comparar primeiro todo o canal de vídeo com os posts da comunidade e os tuítes. O artigo em si já é conhecido pela página de destino, então uma campanha por vídeo acrescentaria ruído antes de eu ter tráfego suficiente para precisar dela.</p>
+    <h2>Lendo o resultado</h2>
+    <p>No Google Analytics 4 olho as sessões por origem e mídia, e depois abro as páginas de destino de cada uma. Em um site pequeno os números são minúsculos, então conto em dúzias e comparo os canais pelo que provocaram, por exemplo visitas a uma página de app e cliques em um link da loja, que o site registra como evento próprio. Para as instalações uso o Play Console, onde uma mídia separada para códigos QR me permite distingui-las.</p>
+    <h2>Uma verificação antes de publicar</h2>
+    <p>Abra o link uma vez em uma janela privada. Confira se a página carrega, se os parâmetros continuam no endereço e se a visita aparece na visão em tempo real. Um minuto de teste poupa uma semana de dados sem rótulo.</p>
+    
+    <section class="faq"><h2>Perguntas frequentes</h2><details><summary>Quais são os três parâmetros UTM principais?</summary><p>Origem (de onde vem o tráfego), mídia (o tipo de canal) e campanha (o conteúdo ou promoção específicos).</p></details><details><summary>Devo marcar links dentro do meu próprio site?</summary><p>Não. Links internos marcados podem sobrescrever a origem original da visita.</p></details><details><summary>Posso usar letras maiúsculas nos valores UTM?</summary><p>Evite. A análise trata maiúsculas diferentes como valores diferentes, o que divide seus dados.</p></details><details><summary>Posso colocar o nome ou o e-mail de um usuário em um UTM?</summary><p>Não. Os parâmetros aparecem em URLs e logs, então não inclua informações pessoais.</p></details></section>
+    <section><h2>Mais do blog</h2><ul class="glist"><li><a href="/pt/blog/clarity-ai-visibility-topic-insights-para-um-site-pequeno-primeiros-resultados/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Clarity AI Visibility: Topic Insights para um site pequeno, primeiros resultados</b></div></a></li><li><a href="/pt/blog/agendar-36-posts-da-comunidade-do-youtube-quando-nao-ha-api/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Agendar 36 posts da comunidade do YouTube quando não há API</b></div></a></li><li><a href="/pt/blog/api-play-age-signals-e-ab-1043-da-california-o-que-um-desenvolvedor-pequeno-deve-fazer/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>API Play Age Signals e AB 1043 da Califórnia: o que um desenvolvedor pequeno deve fazer</b></div></a></li><li><a href="/pt/blog/videos-de-blog-narrados-com-texto-para-fala-gratuito-e-python/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Vídeos de blog narrados com texto para fala gratuito e Python</b></div></a></li><li><a href="/pt/blog/a-api-do-bing-webmaster-devolve-listas-vazias-enquanto-o-painel-mostra-dados/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>A API do Bing Webmaster devolve listas vazias enquanto o painel mostra dados</b></div></a></li><li><a href="/pt/blog/verifique-quais-paginas-o-google-indexou-com-a-api-de-inspecao-de-url/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Verifique quais páginas o Google indexou com a API de inspeção de URL</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

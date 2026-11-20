@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Narrated Blog Videos With Free Text-to-Speech and Python</title>
+<meta name="description" content="How I turn each blog article into a narrated video with a free neural voice, Pillow diagrams and ffmpeg, with no camera or microphone.">
+<link rel="canonical" href="https://nesimapps.com/blog/narrated-blog-videos-with-free-text-to-speech-and-python/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/narrated-blog-videos-with-free-text-to-speech-and-python/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/ucretsiz-metinden-sese-ve-python-ile-anlatimli-blog-videolari/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/videos-de-blog-narrados-con-texto-a-voz-gratuito-y-python/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/videos-de-blog-narrados-com-texto-para-fala-gratuito-e-python/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/narrated-blog-videos-with-free-text-to-speech-and-python/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Narrated Blog Videos With Free Text-to-Speech and Python">
+<meta property="og:description" content="How I turn each blog article into a narrated video with a free neural voice, Pillow diagrams and ffmpeg, with no camera or microphone.">
+<meta property="og:url" content="https://nesimapps.com/blog/narrated-blog-videos-with-free-text-to-speech-and-python/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Narrated Blog Videos With Free Text-to-Speech and Python">
+<meta name="twitter:description" content="How I turn each blog article into a narrated video with a free neural voice, Pillow diagrams and ffmpeg, with no camera or microphone.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Narrated Blog Videos With Free Text-to-Speech and Python", "description": "How I turn each blog article into a narrated video with a free neural voice, Pillow diagrams and ffmpeg, with no camera or microphone.", "inLanguage": "en", "mainEntityOfPage": "https://nesimapps.com/blog/narrated-blog-videos-with-free-text-to-speech-and-python/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-20", "dateModified": "2026-11-20", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Dev notes"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Narrated Blog Videos With Free Text-to-Speech and Python", "item": "https://nesimapps.com/blog/narrated-blog-videos-with-free-text-to-speech-and-python/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do I need a microphone or camera?", "acceptedAnswer": {"@type": "Answer", "text": "No. A free neural text-to-speech voice reads the article and Python draws the images."}}, {"@type": "Question", "name": "How do I fix mispronounced technical words?", "acceptedAnswer": {"@type": "Answer", "text": "Add them to a replacement dictionary that changes only the text sent to the voice, so the subtitles stay correct."}}, {"@type": "Question", "name": "Can the same script produce other languages?", "acceptedAnswer": {"@type": "Answer", "text": "It can, but in my tests the quality of mixed technical English was worse, so I keep the videos English."}}, {"@type": "Question", "name": "Should I tell viewers the voice is synthetic?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A short note in every description is simple and honest."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/narrated-blog-videos-with-free-text-to-speech-and-python/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/ucretsiz-metinden-sese-ve-python-ile-anlatimli-blog-videolari/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/videos-de-blog-narrados-con-texto-a-voz-gratuito-y-python/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/videos-de-blog-narrados-com-texto-para-fala-gratuito-e-python/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>Narrated Blog Videos With Free Text-to-Speech and Python</h1>
+    <p class="by">By Nesim Razon, independent mobile developer · 2026-11-20</p>
+    <p class="tags"><a href="/blog/#devlog">#Dev notes</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">I turn every blog article into a narrated YouTube video with one script: a free text-to-speech voice reads the article, Python draws a diagram for each section, and ffmpeg puts it together. No camera, no microphone, no editing program. This post explains the pipeline, the pronunciation trap that took the most time and the choices that keep the videos honest.</p>
+    <h2>The pipeline in one paragraph</h2>
+    <p>The script loads the article from the same file that builds the blog page. For each sentence it creates a speech file with the free Microsoft neural voice service available through a Python package, then draws a frame with the section diagram and the current subtitle using Pillow, and finally ffmpeg joins frames and audio into a 1920 by 1080 video at 30 frames per second. A second function makes the thumbnail at 1280 by 720.</p>
+    <h2>One voice, one language</h2>
+    <p>I tried Turkish, Spanish and Portuguese voices too and rejected them. A single Turkish voice reads English technical words in Turkish, a mixed voice sounds wrong, and switching between two voices created pauses and a tone change at every switch. The channel now has one English voice with a slightly slower rate, and the site stays multilingual in text only.</p>
+    <h2>The pronunciation trap</h2>
+    <p>Developer articles are full of words a voice cannot read: product names, camel case identifiers, abbreviations. The solution is a small dictionary applied only to the text that goes to the voice, while the subtitles keep the original spelling. An identifier like a bundle version key becomes separate words, and the iOS word becomes letters. I cannot hear the result myself, so every new word that sounds wrong gets reported by listening and added to the dictionary, which grows over time.</p>
+    <h2>Diagrams that match the article</h2>
+    <p>A title card plus bullet text is not enough for a long video. Each article gets its own list of scenes built from a few drawing primitives: flows, comparison panels, code lines, number cards and checklists. The scene appears step by step as each sentence is read, so the picture follows the narration.</p>
+    <h2>Publishing without babysitting</h2>
+    <p>The upload script sends each video as private with a scheduled publish time, adds the thumbnail, sets a playlist and writes a description that links the article. Every description states that the narration is AI-generated, which I think is the honest thing to do.</p>
+    <h2>What I would tell a beginner</h2>
+    <ul><li>Start with one article and one voice. Get a clean result before you build a scene library.</li><li>Keep spoken text and subtitle text separate from day one.</li><li>Listen to every video once before it goes public. Mispronunciations are the most common defect.</li><li>Do not publish too many near-identical videos in a short time. Vary the visuals so each video earns its place.</li><li>Say in the description that the voice is synthetic.</li></ul>
+    
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Do I need a microphone or camera?</summary><p>No. A free neural text-to-speech voice reads the article and Python draws the images.</p></details><details><summary>How do I fix mispronounced technical words?</summary><p>Add them to a replacement dictionary that changes only the text sent to the voice, so the subtitles stay correct.</p></details><details><summary>Can the same script produce other languages?</summary><p>It can, but in my tests the quality of mixed technical English was worse, so I keep the videos English.</p></details><details><summary>Should I tell viewers the voice is synthetic?</summary><p>Yes. A short note in every description is simple and honest.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/clarity-ai-visibility-topic-insights-for-a-small-site-first-results/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Clarity AI Visibility: Topic Insights for a Small Site, First Results</b></div></a></li><li><a href="/blog/scheduling-36-youtube-community-posts-when-there-is-no-api/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Scheduling 36 YouTube Community Posts When There Is No API</b></div></a></li><li><a href="/blog/play-age-signals-api-and-california-ab-1043-what-a-small-developer-must-do/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Play Age Signals API and California AB 1043: What a Small Developer Must Do</b></div></a></li><li><a href="/blog/one-utm-per-link-a-naming-scheme-for-a-solo-developer/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>One UTM Per Link: A Naming Scheme for a Solo Developer</b></div></a></li><li><a href="/blog/bing-webmaster-api-returns-empty-lists-while-the-dashboard-shows-data/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Bing Webmaster API Returns Empty Lists While the Dashboard Shows Data</b></div></a></li><li><a href="/blog/check-which-pages-google-has-indexed-with-the-url-inspection-api/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Check Which Pages Google Has Indexed With the URL Inspection API</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt" data-lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ler o Crashlytics com um assistente de código com IA</title>
+<meta name="description" content="Por que o servidor MCP do Firebase pode não mostrar ferramentas do Crashlytics, como a pasta do projeto as decide e o que verifico.">
+<link rel="canonical" href="https://nesimapps.com/pt/blog/ler-o-crashlytics-com-um-assistente-de-codigo-com-ia-a-armadilha-da-pasta-do-projeto/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/reading-crashlytics-from-an-ai-coding-assistant-the-project-folder-trap/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/yapay-zeka-kod-asistaniyla-crashlytics-okumak-proje-klasoru-tuzagi/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/leer-crashlytics-desde-un-asistente-de-codigo-con-ia-la-trampa-de-la-carpeta-del-proyecto/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/ler-o-crashlytics-com-um-assistente-de-codigo-com-ia-a-armadilha-da-pasta-do-projeto/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/reading-crashlytics-from-an-ai-coding-assistant-the-project-folder-trap/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Ler o Crashlytics com um assistente de código com IA: a armadilha da pasta do projeto">
+<meta property="og:description" content="Por que o servidor MCP do Firebase pode não mostrar ferramentas do Crashlytics, como a pasta do projeto as decide e o que verifico.">
+<meta property="og:url" content="https://nesimapps.com/pt/blog/ler-o-crashlytics-com-um-assistente-de-codigo-com-ia-a-armadilha-da-pasta-do-projeto/">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ler o Crashlytics com um assistente de código com IA: a armadilha da pasta do projeto">
+<meta name="twitter:description" content="Por que o servidor MCP do Firebase pode não mostrar ferramentas do Crashlytics, como a pasta do projeto as decide e o que verifico.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Ler o Crashlytics com um assistente de código com IA: a armadilha da pasta do projeto", "description": "Por que o servidor MCP do Firebase pode não mostrar ferramentas do Crashlytics, como a pasta do projeto as decide e o que verifico.", "inLanguage": "pt", "mainEntityOfPage": "https://nesimapps.com/pt/blog/ler-o-crashlytics-com-um-assistente-de-codigo-com-ia-a-armadilha-da-pasta-do-projeto/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-20", "dateModified": "2026-11-20", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Notas de desenvolvimento, Android"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/pt/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/pt/blog/"}, {"@type": "ListItem", "position": 3, "name": "Ler o Crashlytics com um assistente de código com IA: a armadilha da pasta do projeto", "item": "https://nesimapps.com/pt/blog/ler-o-crashlytics-com-um-assistente-de-codigo-com-ia-a-armadilha-da-pasta-do-projeto/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Por que o servidor MCP do Firebase não mostra ferramentas do Crashlytics?", "acceptedAnswer": {"@type": "Answer", "text": "O servidor ativa as ferramentas com base nos SDKs do Firebase que encontra no seu diretório de projeto. Se essa pasta não tem o SDK do Crashlytics, as ferramentas do Crashlytics ficam ocultas."}}, {"@type": "Question", "name": "Como faço as ferramentas do Crashlytics aparecerem?", "acceptedAnswer": {"@type": "Answer", "text": "Atualize o ambiente do servidor para que o diretório do projeto seja uma pasta de app que usa o Crashlytics e defina o projeto do Firebase correspondente. Depois procure de novo na lista de ferramentas."}}, {"@type": "Question", "name": "Um 404 nos principais problemas significa que o app não tem falhas?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Pode significar que a coleta de falhas está desativada nesse app, então não há dados para devolver."}}, {"@type": "Question", "name": "Preciso editar um arquivo de configuração?", "acceptedAnswer": {"@type": "Answer", "text": "Não necessariamente. A ferramenta de atualização do ambiente pode mudar o diretório e o projeto ativo durante a sessão."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/reading-crashlytics-from-an-ai-coding-assistant-the-project-folder-trap/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/yapay-zeka-kod-asistaniyla-crashlytics-okumak-proje-klasoru-tuzagi/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/leer-crashlytics-desde-un-asistente-de-codigo-con-ia-la-trampa-de-la-carpeta-del-proyecto/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/ler-o-crashlytics-com-um-assistente-de-codigo-com-ia-a-armadilha-da-pasta-do-projeto/" hreflang="pt" data-lang="pt" aria-current="page">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/pt/">Nesim Apps</a> › <a href="/pt/blog/">Blog</a></nav>
+    <h1>Ler o Crashlytics com um assistente de código com IA: a armadilha da pasta do projeto</h1>
+    <p class="by">Por Nesim Razon, desenvolvedor mobile independente · 2026-11-20</p>
+    <p class="tags"><a href="/pt/blog/#devlog">#Notas de desenvolvimento</a><a href="/pt/blog/#android">#Android</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Se o seu assistente de código com IA está conectado ao servidor MCP do Firebase mas não enxerga nenhuma ferramenta do Crashlytics, a causa provavelmente é a pasta do projeto e não um login quebrado. O servidor liga as ferramentas de acordo com os SDKs do Firebase que encontra na pasta para a qual aponta. Se você apontar para um app Android que usa o Crashlytics, as ferramentas aparecem. Aqui conto como descobri isso e o que verifico antes de confiar em um relatório.</p>
+    <h2>O sintoma</h2>
+    <p>Pedi ao assistente que olhasse os relatórios de falhas de alguns apps. Ele conseguia listar apps e ler detalhes do projeto, mas não havia nenhuma ferramenta do Crashlytics. Reconectar o servidor e entrar de novo não mudou nada, e o login estava certo, pois outras ferramentas do Firebase funcionavam.</p>
+    <h2>A causa: as ferramentas seguem a pasta do projeto</h2>
+    <p>O servidor MCP do Firebase ativa algumas ferramentas automaticamente com base nos SDKs do Firebase que detecta no diretório do projeto que usa. Meu diretório padrão tinha uma pequena configuração do Firebase de um projeto de painel que não tem o SDK do Crashlytics, então o servidor nunca ofereceu as ferramentas do Crashlytics.</p>
+    <h2>A correção sem editar arquivos de configuração</h2>
+    <p>O ambiente pode ser alterado de dentro da sessão. Chamei a ferramenta de atualização do ambiente com o diretório do projeto apontando para a pasta de um app Android que usa o Crashlytics, junto com o projeto do Firebase desse app. Depois, procurar “crashlytics” na lista de ferramentas devolveu as de relatórios e problemas. Nenhum arquivo de configurações foi tocado.</p>
+    <h2>Leia o guia antes do primeiro relatório</h2>
+    <p>O servidor também publica um guia como recurso, com a forma correta de pedir relatórios. Lê-lo primeiro me poupou de adivinhar filtros. É uma leitura curta e explica quais tipos de relatório existem e o que cada um precisa.</p>
+    <h2>Confira o projeto ativo toda vez</h2>
+    <p>As ferramentas agem sobre o projeto ativo do Firebase. Uma vez criei um app no projeto errado porque o ativo era diferente do que eu supunha. Agora, antes de qualquer ação de escrita, peço ao servidor o ambiente atual e comparo o identificador do projeto com o que eu quero.</p>
+    <h2>Não leia um erro como “sem falhas”</h2>
+    <p>Um app devolveu 404 quando pedi seus principais problemas. Isso não significava zero falhas. Nesse app a coleta de dados de falhas está desativada de propósito, então não há nada para ler. Um relatório só faz sentido se a coleta estiver ativa para o app e para a versão que importa, por isso anoto quais apps estão cobertos antes de dizer que uma versão está limpa.</p>
+    <h2>Lista de verificação</h2>
+    <ul><li>Sem ferramentas do Crashlytics? Aponte o servidor para uma pasta de app que contenha o SDK do Crashlytics.</li><li>Defina o diretório do projeto e o projeto ativo em uma só atualização do ambiente e confirme os dois.</li><li>Leia o recurso do guia de relatórios antes de pedir dados.</li><li>Confirme o projeto ativo antes de criar ou alterar algo.</li><li>Saiba quais apps têm a coleta ativada, para não confundir um resultado vazio com um limpo.</li></ul>
+    
+    <section class="faq"><h2>Perguntas frequentes</h2><details><summary>Por que o servidor MCP do Firebase não mostra ferramentas do Crashlytics?</summary><p>O servidor ativa as ferramentas com base nos SDKs do Firebase que encontra no seu diretório de projeto. Se essa pasta não tem o SDK do Crashlytics, as ferramentas do Crashlytics ficam ocultas.</p></details><details><summary>Como faço as ferramentas do Crashlytics aparecerem?</summary><p>Atualize o ambiente do servidor para que o diretório do projeto seja uma pasta de app que usa o Crashlytics e defina o projeto do Firebase correspondente. Depois procure de novo na lista de ferramentas.</p></details><details><summary>Um 404 nos principais problemas significa que o app não tem falhas?</summary><p>Não. Pode significar que a coleta de falhas está desativada nesse app, então não há dados para devolver.</p></details><details><summary>Preciso editar um arquivo de configuração?</summary><p>Não necessariamente. A ferramenta de atualização do ambiente pode mudar o diretório e o projeto ativo durante a sessão.</p></details></section>
+    <section><h2>Mais do blog</h2><ul class="glist"><li><a href="/pt/blog/clarity-ai-visibility-topic-insights-para-um-site-pequeno-primeiros-resultados/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Clarity AI Visibility: Topic Insights para um site pequeno, primeiros resultados</b></div></a></li><li><a href="/pt/blog/agendar-36-posts-da-comunidade-do-youtube-quando-nao-ha-api/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Agendar 36 posts da comunidade do YouTube quando não há API</b></div></a></li><li><a href="/pt/blog/api-play-age-signals-e-ab-1043-da-california-o-que-um-desenvolvedor-pequeno-deve-fazer/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>API Play Age Signals e AB 1043 da Califórnia: o que um desenvolvedor pequeno deve fazer</b></div></a></li><li><a href="/pt/blog/videos-de-blog-narrados-com-texto-para-fala-gratuito-e-python/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Vídeos de blog narrados com texto para fala gratuito e Python</b></div></a></li><li><a href="/pt/blog/um-utm-por-link-um-esquema-de-nomes-para-um-desenvolvedor-independente/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Um UTM por link: um esquema de nomes para um desenvolvedor independente</b></div></a></li><li><a href="/pt/blog/a-api-do-bing-webmaster-devolve-listas-vazias-enquanto-o-painel-mostra-dados/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>A API do Bing Webmaster devolve listas vazias enquanto o painel mostra dados</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Programar 36 publicaciones de la comunidad de YouTube cuando no hay API</title>
+<meta name="description" content="Cómo programé y reprogramé 36 publicaciones de la comunidad de YouTube en el navegador, por qué la página del canal muestra diez y la solución en Studio.">
+<link rel="canonical" href="https://nesimapps.com/es/blog/programar-36-publicaciones-de-la-comunidad-de-youtube-cuando-no-hay-api/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/scheduling-36-youtube-community-posts-when-there-is-no-api/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/api-yokken-36-youtube-topluluk-gonderisini-zamanlamak/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/programar-36-publicaciones-de-la-comunidad-de-youtube-cuando-no-hay-api/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/agendar-36-posts-da-comunidade-do-youtube-quando-nao-ha-api/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/scheduling-36-youtube-community-posts-when-there-is-no-api/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Programar 36 publicaciones de la comunidad de YouTube cuando no hay API">
+<meta property="og:description" content="Cómo programé y reprogramé 36 publicaciones de la comunidad de YouTube en el navegador, por qué la página del canal muestra diez y la solución en Studio.">
+<meta property="og:url" content="https://nesimapps.com/es/blog/programar-36-publicaciones-de-la-comunidad-de-youtube-cuando-no-hay-api/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Programar 36 publicaciones de la comunidad de YouTube cuando no hay API">
+<meta name="twitter:description" content="Cómo programé y reprogramé 36 publicaciones de la comunidad de YouTube en el navegador, por qué la página del canal muestra diez y la solución en Studio.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Programar 36 publicaciones de la comunidad de YouTube cuando no hay API", "description": "Cómo programé y reprogramé 36 publicaciones de la comunidad de YouTube en el navegador, por qué la página del canal muestra diez y la solución en Studio.", "inLanguage": "es", "mainEntityOfPage": "https://nesimapps.com/es/blog/programar-36-publicaciones-de-la-comunidad-de-youtube-cuando-no-hay-api/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-21", "dateModified": "2026-11-21", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Notas de desarrollo"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/es/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/es/blog/"}, {"@type": "ListItem", "position": 3, "name": "Programar 36 publicaciones de la comunidad de YouTube cuando no hay API", "item": "https://nesimapps.com/es/blog/programar-36-publicaciones-de-la-comunidad-de-youtube-cuando-no-hay-api/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Puedo programar publicaciones de la comunidad de YouTube?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, en el navegador. Elige Schedule post en el menú junto al botón Post y escoge una fecha y una hora."}}, {"@type": "Question", "name": "¿Por qué solo veo diez publicaciones programadas?", "acceptedAnswer": {"@type": "Answer", "text": "La pestaña Scheduled de la página del canal muestra solo una ventana limitada. La lista Posts de YouTube Studio muestra todas."}}, {"@type": "Question", "name": "¿Puedo cambiar la hora de una publicación programada?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Abre su página de detalles en Studio, cambia la fecha y la hora en el cuadro de visibilidad y guarda."}}, {"@type": "Question", "name": "¿Puedo adjuntar un vídeo privado a una publicación?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Pega la dirección del vídeo en el selector, porque los vídeos privados o programados no aparecen al buscar por título."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/scheduling-36-youtube-community-posts-when-there-is-no-api/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/api-yokken-36-youtube-topluluk-gonderisini-zamanlamak/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/programar-36-publicaciones-de-la-comunidad-de-youtube-cuando-no-hay-api/" hreflang="es" data-lang="es" aria-current="page">ES</a><a href="/pt/blog/agendar-36-posts-da-comunidade-do-youtube-quando-nao-ha-api/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/es/">Nesim Apps</a> › <a href="/es/blog/">Blog</a></nav>
+    <h1>Programar 36 publicaciones de la comunidad de YouTube cuando no hay API</h1>
+    <p class="by">Por Nesim Razon, desarrollador móvil independiente · 2026-11-21</p>
+    <p class="tags"><a href="/es/blog/#devlog">#Notas de desarrollo</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Quería que cada vídeo de mi canal tuviera una publicación de la comunidad que saliera quince minutos después del vídeo. No encontré una forma de crear o programar publicaciones mediante la API de YouTube, así que lo hice en el navegador, primero en la página del canal y después en YouTube Studio. La segunda vía fue mucho mejor. Aquí cuento qué hace cada una, las trampas y los pequeños hábitos que mantuvieron correctas las 36 publicaciones.</p>
+    <h2>La primera vía: la página del canal</h2>
+    <p>En la pestaña Posts del canal escribes el texto, adjuntas un vídeo pegando su dirección en el selector de vídeo, abres la flecha junto al botón Post y eliges Schedule post. Un vídeo privado o aún programado no se encuentra por su título, pero pegar su dirección funciona. Para cada publicación elegí la fecha en un calendario y la hora de una lista, y comprobé ambas antes de pulsar Schedule.</p>
+    <h2>La trampa: solo se ven diez publicaciones</h2>
+    <p>La pestaña Scheduled lista solo las diez publicaciones más lejanas. Cuando después necesité mover las 36 a un nuevo plan de dos por día, las anteriores simplemente no eran accesibles. La lista se desplaza cada vez que cambias una fecha y las referencias de los elementos de la página cambian tras cada edición, así que fue lento y frágil.</p>
+    <h2>La vía mejor: YouTube Studio</h2>
+    <p>Studio tiene una lista Posts en Channel content que muestra todas las publicaciones, ordenadas por fecha, treinta por página. Cada fila abre una página de detalles de la publicación con su propia dirección. En esa página abres el cuadro de visibilidad, cambias la fecha y la hora, confirmas y guardas. Como cada publicación tiene su propia dirección, pude ir directamente a cualquiera.</p>
+    <h2>Pequeños hábitos que importaron</h2>
+    <ul><li>Escribe la fecha y la hora en sus campos en lugar de moverte por calendarios. Es más rápido y más fácil de verificar.</li><li>Espera un segundo entre confirmar la programación y pulsar Guardar, o puede que el guardado no se registre.</li><li>Fija primero la fecha, compruébala y luego fija la hora. Cambiar ambas a la vez dejó una vez una publicación sin cambios.</li><li>Tras guardar, vuelve a abrir el cuadro o mira la lista de Studio para confirmar. No te fíes del clic.</li><li>Guarda los textos de las publicaciones en un archivo junto al plan, para poder recrear exactamente una publicación que falte.</li></ul>
+    <h2>Errores que cometí</h2>
+    <p>Una publicación se programó con la hora equivocada porque un desplegable seguía abierto cuando pulsé las teclas. Una publicación que creía que faltaba ya existía, así que creé un duplicado y borré el antiguo. Ambos errores se detectaron comparando la lista de Studio con el plan, por eso ahora comparo siempre con el plan.</p>
+    <h2>¿Vale la pena?</h2>
+    <p>Para un canal de unos pocos suscriptores, una publicación de la comunidad es un lugar extra barato para cada vídeo. Lo hice porque cuesta poco una vez que la rutina funciona, y mediré si las publicaciones aportan visualizaciones antes de decidir si sigo.</p>
+    
+    <section class="faq"><h2>Preguntas frecuentes</h2><details><summary>¿Puedo programar publicaciones de la comunidad de YouTube?</summary><p>Sí, en el navegador. Elige Schedule post en el menú junto al botón Post y escoge una fecha y una hora.</p></details><details><summary>¿Por qué solo veo diez publicaciones programadas?</summary><p>La pestaña Scheduled de la página del canal muestra solo una ventana limitada. La lista Posts de YouTube Studio muestra todas.</p></details><details><summary>¿Puedo cambiar la hora de una publicación programada?</summary><p>Sí. Abre su página de detalles en Studio, cambia la fecha y la hora en el cuadro de visibilidad y guarda.</p></details><details><summary>¿Puedo adjuntar un vídeo privado a una publicación?</summary><p>Sí. Pega la dirección del vídeo en el selector, porque los vídeos privados o programados no aparecen al buscar por título.</p></details></section>
+    <section><h2>Más del blog</h2><ul class="glist"><li><a href="/es/blog/clarity-ai-visibility-topic-insights-para-un-sitio-pequeno-primeros-resultados/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Clarity AI Visibility: Topic Insights para un sitio pequeño, primeros resultados</b></div></a></li><li><a href="/es/blog/api-play-age-signals-y-ab-1043-de-california-que-debe-hacer-un-desarrollador-pequeno/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>API Play Age Signals y AB 1043 de California: qué debe hacer un desarrollador pequeño</b></div></a></li><li><a href="/es/blog/videos-de-blog-narrados-con-texto-a-voz-gratuito-y-python/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Vídeos de blog narrados con texto a voz gratuito y Python</b></div></a></li><li><a href="/es/blog/un-utm-por-enlace-un-esquema-de-nombres-para-un-desarrollador-independiente/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Un UTM por enlace: un esquema de nombres para un desarrollador independiente</b></div></a></li><li><a href="/es/blog/la-api-de-bing-webmaster-devuelve-listas-vacias-mientras-el-panel-muestra-datos/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>La API de Bing Webmaster devuelve listas vacías mientras el panel muestra datos</b></div></a></li><li><a href="/es/blog/comprueba-que-paginas-ha-indexado-google-con-la-api-de-inspeccion-de-urls/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Comprueba qué páginas ha indexado Google con la API de inspección de URL</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

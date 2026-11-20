@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Play Age Signals API and California AB 1043 | Nesim Apps</title>
+<meta name="description" content="A plain reading of California AB 1043 and Google’s Play Age Signals API for a small developer: duties, dates, penalties. Not legal advice.">
+<link rel="canonical" href="https://nesimapps.com/blog/play-age-signals-api-and-california-ab-1043-what-a-small-developer-must-do/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/play-age-signals-api-and-california-ab-1043-what-a-small-developer-must-do/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/play-age-signals-api-ve-kaliforniya-ab-1043-kucuk-bir-gelistirici-ne-yapmali/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/api-play-age-signals-y-ab-1043-de-california-que-debe-hacer-un-desarrollador-pequeno/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/api-play-age-signals-e-ab-1043-da-california-o-que-um-desenvolvedor-pequeno-deve-fazer/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/play-age-signals-api-and-california-ab-1043-what-a-small-developer-must-do/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Play Age Signals API and California AB 1043: What a Small Developer Must Do">
+<meta property="og:description" content="A plain reading of California AB 1043 and Google’s Play Age Signals API for a small developer: duties, dates, penalties. Not legal advice.">
+<meta property="og:url" content="https://nesimapps.com/blog/play-age-signals-api-and-california-ab-1043-what-a-small-developer-must-do/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Play Age Signals API and California AB 1043: What a Small Developer Must Do">
+<meta name="twitter:description" content="A plain reading of California AB 1043 and Google’s Play Age Signals API for a small developer: duties, dates, penalties. Not legal advice.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Play Age Signals API and California AB 1043: What a Small Developer Must Do", "description": "A plain reading of California AB 1043 and Google’s Play Age Signals API for a small developer: duties, dates, penalties. Not legal advice.", "inLanguage": "en", "mainEntityOfPage": "https://nesimapps.com/blog/play-age-signals-api-and-california-ab-1043-what-a-small-developer-must-do/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-21", "dateModified": "2026-11-21", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Dev notes, Android"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Play Age Signals API and California AB 1043: What a Small Developer Must Do", "item": "https://nesimapps.com/blog/play-age-signals-api-and-california-ab-1043-what-a-small-developer-must-do/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When does California AB 1043 apply to developers?", "acceptedAnswer": {"@type": "Answer", "text": "From 1 January 2027, when a developer must request an age signal after an app is downloaded and launched."}}, {"@type": "Question", "name": "Is there an exemption for small developers?", "acceptedAnswer": {"@type": "Answer", "text": "I did not find one in the text of the law. Ask a lawyer if you need certainty."}}, {"@type": "Question", "name": "What age groups does the signal return?", "acceptedAnswer": {"@type": "Answer", "text": "Under 13, 13 to under 16, 16 to under 18, and 18 and over."}}, {"@type": "Question", "name": "Can I use the age signal for ads or analytics?", "acceptedAnswer": {"@type": "Answer", "text": "No. The law and Google’s policy limit it to compliance and age-appropriate experiences."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/play-age-signals-api-and-california-ab-1043-what-a-small-developer-must-do/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/play-age-signals-api-ve-kaliforniya-ab-1043-kucuk-bir-gelistirici-ne-yapmali/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/api-play-age-signals-y-ab-1043-de-california-que-debe-hacer-un-desarrollador-pequeno/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/api-play-age-signals-e-ab-1043-da-california-o-que-um-desenvolvedor-pequeno-deve-fazer/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>Play Age Signals API and California AB 1043: What a Small Developer Must Do</h1>
+    <p class="by">By Nesim Razon, independent mobile developer · 2026-11-21</p>
+    <p class="tags"><a href="/blog/#devlog">#Dev notes</a><a href="/blog/#android">#Android</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">This is a developer’s reading of the law, not legal advice. California’s Digital Age Assurance Act, AB 1043, says that from 1 January 2027 a developer must request an age signal when an app is downloaded and launched, and Google’s Play Age Signals API is how an Android app asks for it. I read the text of the law and Google’s documentation. Here is what it says, what it does not say and what a small developer can do.</p>
+    <h2>What the law requires of developers</h2>
+    <p>The text defines a developer as the person who owns, maintains or controls an application, and an application as software a user can run on a computer, a phone or a similar device. I found no exemption for small developers or for games. The key sentence says a developer shall request a signal about a particular user from the operating system provider or a covered app store when the application is downloaded and launched.</p>
+    <p>The signal is an age bracket: under 13, 13 to under 16, 16 to under 18, or 18 and over. A developer that receives a signal is treated as knowing the age range of that user. It must treat the signal as the primary indicator of age unless it has clear and convincing information that the age is different.</p>
+    <h2>Dates</h2>
+    <ul><li>1 January 2027: the duties begin.</li><li>Apps updated on or after 1 January 2026 and already installed before 2027 need a signal request before 1 July 2027.</li><li>Google says that from January 2027 sharing age signals through its API is mandatory for all users in California and in Brazil.</li></ul>
+    <h2>Penalties and enforcement</h2>
+    <p>A violation can bring an injunction and a civil penalty of up to 2,500 dollars per affected child for a negligent violation and up to 7,500 dollars per affected child for an intentional one. Only the California Attorney General can bring the action. Operating system providers and app stores that act in good faith are protected, while developers are not given that shield.</p>
+    <h2>What the signal may be used for</h2>
+    <p>Both the law and Google’s policy limit the use. The signal is for complying with the law and providing age-appropriate experiences. It must not be used for advertising, analytics, profiling or shared with third parties for other purposes. For an app that uses an ad network and analytics, that means keeping the age value away from both.</p>
+    <h2>The Android API in outline</h2>
+    <p>The flow has three steps. Optionally ask whether mandatory sharing applies to the user. Then request access, which returns one of three states: shared, not shared or verification required. If the state is shared, ask for the age signals, which return a lower and an upper age bound or nothing when the user does not share.</p>
+    <p>The new version of the API works worldwide and adds a method to tell if mandatory sharing applies. Check Google’s current documentation before you implement it, because the API is still marked beta.</p>
+    <h2>Brazil</h2>
+    <p>Google’s page for Brazil says the Digital ECA expects developers of apps aimed at children and teenagers, or likely to be used by them, to ingest age range data from app stores, and prohibits loot boxes in games for that audience. The same page presents the Age Signals API as a way to receive the data.</p>
+    <h2>What I plan to do</h2>
+    <p>My apps are small and mostly casual games. I plan to add the minimum call to the apps that have age limits first, keep the age value only inside the app, never send it to analytics or ads, and treat a missing signal as normal. If the text of the law is amended before 2027, I will revise this note.</p>
+    
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>When does California AB 1043 apply to developers?</summary><p>From 1 January 2027, when a developer must request an age signal after an app is downloaded and launched.</p></details><details><summary>Is there an exemption for small developers?</summary><p>I did not find one in the text of the law. Ask a lawyer if you need certainty.</p></details><details><summary>What age groups does the signal return?</summary><p>Under 13, 13 to under 16, 16 to under 18, and 18 and over.</p></details><details><summary>Can I use the age signal for ads or analytics?</summary><p>No. The law and Google’s policy limit it to compliance and age-appropriate experiences.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/clarity-ai-visibility-topic-insights-for-a-small-site-first-results/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Clarity AI Visibility: Topic Insights for a Small Site, First Results</b></div></a></li><li><a href="/blog/scheduling-36-youtube-community-posts-when-there-is-no-api/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Scheduling 36 YouTube Community Posts When There Is No API</b></div></a></li><li><a href="/blog/narrated-blog-videos-with-free-text-to-speech-and-python/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Narrated Blog Videos With Free Text-to-Speech and Python</b></div></a></li><li><a href="/blog/one-utm-per-link-a-naming-scheme-for-a-solo-developer/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>One UTM Per Link: A Naming Scheme for a Solo Developer</b></div></a></li><li><a href="/blog/bing-webmaster-api-returns-empty-lists-while-the-dashboard-shows-data/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Bing Webmaster API Returns Empty Lists While the Dashboard Shows Data</b></div></a></li><li><a href="/blog/check-which-pages-google-has-indexed-with-the-url-inspection-api/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Check Which Pages Google Has Indexed With the URL Inspection API</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

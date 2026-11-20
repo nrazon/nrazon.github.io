@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scheduling 36 YouTube Community Posts When There Is No API</title>
+<meta name="description" content="How I scheduled and rescheduled 36 YouTube community posts in the browser, why the channel page shows only ten, and the Studio page that fixed it.">
+<link rel="canonical" href="https://nesimapps.com/blog/scheduling-36-youtube-community-posts-when-there-is-no-api/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/scheduling-36-youtube-community-posts-when-there-is-no-api/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/api-yokken-36-youtube-topluluk-gonderisini-zamanlamak/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/programar-36-publicaciones-de-la-comunidad-de-youtube-cuando-no-hay-api/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/agendar-36-posts-da-comunidade-do-youtube-quando-nao-ha-api/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/scheduling-36-youtube-community-posts-when-there-is-no-api/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Scheduling 36 YouTube Community Posts When There Is No API">
+<meta property="og:description" content="How I scheduled and rescheduled 36 YouTube community posts in the browser, why the channel page shows only ten, and the Studio page that fixed it.">
+<meta property="og:url" content="https://nesimapps.com/blog/scheduling-36-youtube-community-posts-when-there-is-no-api/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Scheduling 36 YouTube Community Posts When There Is No API">
+<meta name="twitter:description" content="How I scheduled and rescheduled 36 YouTube community posts in the browser, why the channel page shows only ten, and the Studio page that fixed it.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Scheduling 36 YouTube Community Posts When There Is No API", "description": "How I scheduled and rescheduled 36 YouTube community posts in the browser, why the channel page shows only ten, and the Studio page that fixed it.", "inLanguage": "en", "mainEntityOfPage": "https://nesimapps.com/blog/scheduling-36-youtube-community-posts-when-there-is-no-api/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-21", "dateModified": "2026-11-21", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Dev notes"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Scheduling 36 YouTube Community Posts When There Is No API", "item": "https://nesimapps.com/blog/scheduling-36-youtube-community-posts-when-there-is-no-api/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can I schedule YouTube community posts?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, in the browser. Choose Schedule post from the menu next to the Post button and pick a date and time."}}, {"@type": "Question", "name": "Why can I see only ten scheduled posts?", "acceptedAnswer": {"@type": "Answer", "text": "The Scheduled tab on the channel page shows only a limited window. The Posts list in YouTube Studio shows all of them."}}, {"@type": "Question", "name": "Can I change the time of a scheduled post?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Open its post details page in Studio, change the date and time in the visibility box and save."}}, {"@type": "Question", "name": "Can I attach a private video to a post?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Paste the video address in the picker, because private or scheduled videos do not show up when you search by title."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/scheduling-36-youtube-community-posts-when-there-is-no-api/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/api-yokken-36-youtube-topluluk-gonderisini-zamanlamak/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/programar-36-publicaciones-de-la-comunidad-de-youtube-cuando-no-hay-api/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/agendar-36-posts-da-comunidade-do-youtube-quando-nao-ha-api/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>Scheduling 36 YouTube Community Posts When There Is No API</h1>
+    <p class="by">By Nesim Razon, independent mobile developer · 2026-11-21</p>
+    <p class="tags"><a href="/blog/#devlog">#Dev notes</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">I wanted every video on my channel to have a community post that goes out fifteen minutes after the video. I did not find a way to create or schedule posts through the YouTube API, so I did it in the browser, first on the channel page and later in YouTube Studio. The second route was much better. Here is what each one does, the traps and the small habits that kept 36 posts correct.</p>
+    <h2>The first route: the channel page</h2>
+    <p>On the channel’s Posts tab you write the text, attach a video by pasting its address into the video picker, open the arrow next to the Post button and choose Schedule post. A video that is private or still scheduled cannot be found by its title, but pasting its address works. For each post I picked the date in a calendar and the time from a list, then checked both before pressing Schedule.</p>
+    <h2>The trap: only ten posts are visible</h2>
+    <p>The Scheduled tab lists only the ten furthest posts. When I later needed to move all 36 to a new two-per-day plan, the earlier ones were simply not reachable. The list shifts every time you change a date, and the element references on the page change after each edit, so it was slow and fragile.</p>
+    <h2>The better route: YouTube Studio</h2>
+    <p>Studio has a Posts list under Channel content that shows every post, sorted by date, thirty per page. Each row opens a post details page with its own address. On that page you open the visibility box, change the date and time, confirm, and save. Because every post has its own address, I could go straight to any one of them.</p>
+    <h2>Small habits that mattered</h2>
+    <ul><li>Type the date and the time into their fields instead of clicking through calendars. It is faster and easier to verify.</li><li>Wait a second between confirming the schedule and pressing Save, or the save may not register.</li><li>Set the date first, check it, then set the time. Changing both at once once left a post unchanged.</li><li>After saving, reopen the box or look at the Studio list to confirm. Do not trust the click.</li><li>Keep the post texts in a file next to the plan, so a missing post can be recreated exactly.</li></ul>
+    <h2>Mistakes I made</h2>
+    <p>One post was scheduled with the wrong time because a dropdown was still open when I pressed keys. One post I thought was missing already existed, so I created a duplicate and deleted the old one. Both were caught by comparing the Studio list with the plan, which is why I now check against the plan every time.</p>
+    <h2>Is this worth doing?</h2>
+    <p>For a channel of a few subscribers, a community post is a cheap extra place for each video. I did it because it costs little once the routine works, and I will measure whether the posts bring views before I decide to keep going.</p>
+    
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Can I schedule YouTube community posts?</summary><p>Yes, in the browser. Choose Schedule post from the menu next to the Post button and pick a date and time.</p></details><details><summary>Why can I see only ten scheduled posts?</summary><p>The Scheduled tab on the channel page shows only a limited window. The Posts list in YouTube Studio shows all of them.</p></details><details><summary>Can I change the time of a scheduled post?</summary><p>Yes. Open its post details page in Studio, change the date and time in the visibility box and save.</p></details><details><summary>Can I attach a private video to a post?</summary><p>Yes. Paste the video address in the picker, because private or scheduled videos do not show up when you search by title.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/clarity-ai-visibility-topic-insights-for-a-small-site-first-results/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Clarity AI Visibility: Topic Insights for a Small Site, First Results</b></div></a></li><li><a href="/blog/play-age-signals-api-and-california-ab-1043-what-a-small-developer-must-do/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Play Age Signals API and California AB 1043: What a Small Developer Must Do</b></div></a></li><li><a href="/blog/narrated-blog-videos-with-free-text-to-speech-and-python/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Narrated Blog Videos With Free Text-to-Speech and Python</b></div></a></li><li><a href="/blog/one-utm-per-link-a-naming-scheme-for-a-solo-developer/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>One UTM Per Link: A Naming Scheme for a Solo Developer</b></div></a></li><li><a href="/blog/bing-webmaster-api-returns-empty-lists-while-the-dashboard-shows-data/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Bing Webmaster API Returns Empty Lists While the Dashboard Shows Data</b></div></a></li><li><a href="/blog/check-which-pages-google-has-indexed-with-the-url-inspection-api/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Check Which Pages Google Has Indexed With the URL Inspection API</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>
