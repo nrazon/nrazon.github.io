@@ -1,4 +1,4 @@
-# Blog: Apple 2.1 "Information Needed - New App Submission" talebi (Fikirler/IOS_2_1_BILGI_TALEBI.md ve IOS_PORT_TUZAKLARI.md'den doğrulandı)
+# Blog: Apple 2.1 "Information Needed - New App Submission" talebi (Referans/IOS_2_1_BILGI_TALEBI.md ve IOS_PORT_TUZAKLARI.md'den doğrulandı)
 POST = {"tags": ["devlog", "ios"],
     "id": "app-review-information-request", "app": None, "date": "2026-11-16",
     "en": {

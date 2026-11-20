@@ -1,4 +1,4 @@
-# Yazi: ucretsiz TTS ve Python ile anlatimli blog videolari. Kaynak: Araclar/blog_video/make_video.py (edge-tts, Pillow, ffmpeg, 1920x1080 30 fps, cumle basina ses, kucuk resim 1280x720), telaffuz.py, plan.py, Fikirler/BLOG_VIDEO_PLANI.md.
+# Yazi: ucretsiz TTS ve Python ile anlatimli blog videolari. Kaynak: Araclar/blog_video/make_video.py (edge-tts, Pillow, ffmpeg, 1920x1080 30 fps, cumle basina ses, kucuk resim 1280x720), telaffuz.py, plan.py, Referans/BLOG_VIDEO_PLANI.md.
 POST = {"tags": ["devlog"],
     "id": "narrated-videos-tts-python", "app": None, "date": "2026-11-20",
     "en": {
