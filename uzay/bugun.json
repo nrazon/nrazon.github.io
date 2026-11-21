@@ -1,13 +1,22 @@
 {
- "uretim": "2026-11-20T14:00:24Z",
+ "uretim": "2026-11-21T13:28:31Z",
  "surum": 1,
  "apod": [
+  {
+   "tarih": "2026-11-21",
+   "baslik": "Voyager's Neptune",
+   "tur": "image",
+   "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-21-voyagers-neptune/",
+   "ozet_en": "Explanation: Cruising through the outer solar system, the Voyager 2 spacecraft made its closest approach to Neptune on August 25, 1989, the only spacecraft to visit the most distant ice giant planet.",
+   "kredi": "Assembly/Processing - Rolf Olsen,Data - Voyager 2, NASA Planetary Data System",
+   "nasa_kaynakli": false
+  },
   {
    "tarih": "2026-11-20",
    "baslik": "V-G-R",
    "tur": "image",
    "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-20-v-g-r/",
-   "ozet_en": "Explanation: On November 17, fans of interstellar spaceflight around planet Earth were invited to shine a message into the night sky. Traced by a flashlight beam switched on and off, the dashes and dots of a Morse code message captured in this time exposure from the Emirates Astronomical Observatory, are read V-G-R.",
+   "ozet_en": "Explanation: On November 17, fans of interstellar spaceflight around planet Earth were invited to shine a message into the night sky. Traced by a flashlight beam switched on and off, the dashes and dots of a Morse code message captured in this time exposure from the Emirates Astronomical Observatory are read V-G-R.",
    "kredi": "Apostolos Kyriazis",
    "nasa_kaynakli": false
   },
@@ -82,126 +91,117 @@
    "ozet_en": "Explanation: Not all those who wander are lost. A night sky example is that planets wander, and in fact the very word \"planet\" comes from \"wandering star\" in Greek. As planets shift relative to fixed stars, they may appear from our perspective to get closer to other astronomical objects.",
    "kredi": "Włodzimierz Bubak",
    "nasa_kaynakli": false
-  },
-  {
-   "tarih": "2026-11-11",
-   "baslik": "NGC 4449: Small Galaxy, Big Impact",
-   "tur": "image",
-   "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-11-ngc-4449-small-galaxy-big-impact/",
-   "ozet_en": "Explanation: Don’t judge a galaxy by its size. Our home galaxy, the Milky Way, is about 100,000 light years across. This huge expanse of space contains hundreds of billions of stars! The smallest galaxies, called dwarf galaxies, are about 1/10th the size of the Milky Way and only contain a few billion stars.",
-   "kredi": "NASA, ESA, A. Aloisi (STScI/ESA), and the Hubble Heritage (STScI/AURA)-ESA/Hubble Collaboration",
-   "nasa_kaynakli": false
   }
  ],
  "epic": {
-  "gun": "2026-11-16",
+  "gun": "2026-11-19",
   "kareler": [
    {
-    "zaman": "2026-11-16 00:50:27",
-    "enlem": -13.88,
-    "boylam": 153.67,
-    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/jpg/epic_1b_20261116005516.jpg",
-    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/thumbs/epic_1b_20261116005516.jpg"
+    "zaman": "2026-11-19 00:03:42",
+    "enlem": -15.53,
+    "boylam": 165.89,
+    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/jpg/epic_1b_20261119000831.jpg",
+    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/thumbs/epic_1b_20261119000831.jpg"
    },
    {
-    "zaman": "2026-11-16 02:38:29",
-    "enlem": -13.88,
-    "boylam": 126.69,
-    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/jpg/epic_1b_20261116024318.jpg",
-    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/thumbs/epic_1b_20261116024318.jpg"
+    "zaman": "2026-11-19 01:51:45",
+    "enlem": -15.56,
+    "boylam": 138.87,
+    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/jpg/epic_1b_20261119015633.jpg",
+    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/thumbs/epic_1b_20261119015633.jpg"
    },
    {
-    "zaman": "2026-11-16 04:26:32",
-    "enlem": -13.94,
-    "boylam": 99.68,
-    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/jpg/epic_1b_20261116043120.jpg",
-    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/thumbs/epic_1b_20261116043120.jpg"
+    "zaman": "2026-11-19 03:39:47",
+    "enlem": -15.67,
+    "boylam": 111.91,
+    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/jpg/epic_1b_20261119034436.jpg",
+    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/thumbs/epic_1b_20261119034436.jpg"
    },
    {
-    "zaman": "2026-11-16 06:14:34",
-    "enlem": -13.97,
-    "boylam": 72.66,
-    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/jpg/epic_1b_20261116061922.jpg",
-    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/thumbs/epic_1b_20261116061922.jpg"
+    "zaman": "2026-11-19 05:27:49",
+    "enlem": -15.65,
+    "boylam": 84.9,
+    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/jpg/epic_1b_20261119053238.jpg",
+    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/thumbs/epic_1b_20261119053238.jpg"
    },
    {
-    "zaman": "2026-11-16 08:02:36",
-    "enlem": -14.03,
-    "boylam": 45.71,
-    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/jpg/epic_1b_20261116080725.jpg",
-    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/thumbs/epic_1b_20261116080725.jpg"
+    "zaman": "2026-11-19 07:15:51",
+    "enlem": -15.74,
+    "boylam": 57.91,
+    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/jpg/epic_1b_20261119072040.jpg",
+    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/thumbs/epic_1b_20261119072040.jpg"
    },
    {
-    "zaman": "2026-11-16 09:50:38",
-    "enlem": -14.06,
-    "boylam": 18.68,
-    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/jpg/epic_1b_20261116095527.jpg",
-    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/thumbs/epic_1b_20261116095527.jpg"
+    "zaman": "2026-11-19 09:03:54",
+    "enlem": -15.77,
+    "boylam": 30.86,
+    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/jpg/epic_1b_20261119090843.jpg",
+    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/thumbs/epic_1b_20261119090843.jpg"
    },
    {
-    "zaman": "2026-11-16 11:38:41",
-    "enlem": -14.11,
-    "boylam": -8.27,
-    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/jpg/epic_1b_20261116114330.jpg",
-    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/thumbs/epic_1b_20261116114330.jpg"
+    "zaman": "2026-11-19 10:51:57",
+    "enlem": -15.8,
+    "boylam": 3.91,
+    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/jpg/epic_1b_20261119105645.jpg",
+    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/thumbs/epic_1b_20261119105645.jpg"
    },
    {
-    "zaman": "2026-11-16 13:26:44",
-    "enlem": -14.16,
-    "boylam": -35.32,
-    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/jpg/epic_1b_20261116133133.jpg",
-    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/thumbs/epic_1b_20261116133133.jpg"
+    "zaman": "2026-11-19 12:39:59",
+    "enlem": -15.86,
+    "boylam": -23.09,
+    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/jpg/epic_1b_20261119124448.jpg",
+    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/thumbs/epic_1b_20261119124448.jpg"
    },
    {
-    "zaman": "2026-11-16 15:14:47",
-    "enlem": -14.22,
-    "boylam": -62.31,
-    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/jpg/epic_1b_20261116151935.jpg",
-    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/thumbs/epic_1b_20261116151935.jpg"
+    "zaman": "2026-11-19 14:28:02",
+    "enlem": -15.93,
+    "boylam": -50.1,
+    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/jpg/epic_1b_20261119143251.jpg",
+    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/thumbs/epic_1b_20261119143251.jpg"
    },
    {
-    "zaman": "2026-11-16 17:02:49",
-    "enlem": -14.22,
-    "boylam": -89.3,
-    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/jpg/epic_1b_20261116170738.jpg",
-    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/thumbs/epic_1b_20261116170738.jpg"
+    "zaman": "2026-11-19 16:16:04",
+    "enlem": -15.93,
+    "boylam": -77.08,
+    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/jpg/epic_1b_20261119162053.jpg",
+    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/thumbs/epic_1b_20261119162053.jpg"
    },
    {
-    "zaman": "2026-11-16 18:50:52",
-    "enlem": -14.3,
-    "boylam": -116.3,
-    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/jpg/epic_1b_20261116185541.jpg",
-    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/thumbs/epic_1b_20261116185541.jpg"
+    "zaman": "2026-11-19 18:04:07",
+    "enlem": -15.97,
+    "boylam": -104.11,
+    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/jpg/epic_1b_20261119180856.jpg",
+    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/thumbs/epic_1b_20261119180856.jpg"
    },
    {
-    "zaman": "2026-11-16 20:38:54",
-    "enlem": -14.3,
-    "boylam": -143.26,
-    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/jpg/epic_1b_20261116204343.jpg",
-    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/thumbs/epic_1b_20261116204343.jpg"
+    "zaman": "2026-11-19 19:52:10",
+    "enlem": -16.0,
+    "boylam": -131.05,
+    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/jpg/epic_1b_20261119195658.jpg",
+    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/thumbs/epic_1b_20261119195658.jpg"
    },
    {
-    "zaman": "2026-11-16 22:26:57",
-    "enlem": -14.37,
-    "boylam": -170.31,
-    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/jpg/epic_1b_20261116223145.jpg",
-    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/16/thumbs/epic_1b_20261116223145.jpg"
+    "zaman": "2026-11-19 21:40:12",
+    "enlem": -16.04,
+    "boylam": -158.09,
+    "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/jpg/epic_1b_20261119214501.jpg",
+    "kucuk": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/19/thumbs/epic_1b_20261119214501.jpg"
    }
   ],
   "kredi": "NASA EPIC / DSCOVR"
  },
  "asteroitler": {
   "aralik": [
-   "2026-11-20",
-   "2026-12-04"
+   "2026-11-21",
+   "2026-12-05"
   ],
   "liste": [
    {
-    "ad": "(2026 VD6)",
-    "tarih": "2026-Nov-20 10:36",
-    "mesafe_ay": 10.4,
-    "hiz_kms": 9.4,
-    "cap_m": 15
+    "ad": "(2026 WO1)",
+    "tarih": "2026-Nov-21 02:54",
+    "mesafe_ay": 15.2,
+    "hiz_kms": 7.1,
+    "cap_m": 10
    },
    {
     "ad": "(2026 VN11)",
@@ -215,7 +215,7 @@
     "tarih": "2026-Nov-21 19:54",
     "mesafe_ay": 1.9,
     "hiz_kms": 14.0,
-    "cap_m": 10
+    "cap_m": 9
    },
    {
     "ad": "(2026 VD9)",
@@ -240,16 +240,16 @@
    },
    {
     "ad": "(2026 WJ)",
-    "tarih": "2026-Nov-22 04:20",
+    "tarih": "2026-Nov-22 04:21",
     "mesafe_ay": 1.7,
     "hiz_kms": 9.2,
     "cap_m": 14
    },
    {
     "ad": "(2026 WC1)",
-    "tarih": "2026-Nov-22 23:58",
+    "tarih": "2026-Nov-22 23:54",
     "mesafe_ay": 5.9,
-    "hiz_kms": 19.8,
+    "hiz_kms": 19.7,
     "cap_m": 16
    },
    {
@@ -278,13 +278,41 @@
     "tarih": "2026-Nov-25 21:21",
     "mesafe_ay": 5.2,
     "hiz_kms": 11.7,
-    "cap_m": 58
+    "cap_m": 59
    }
   ],
   "kredi": "NASA/JPL CNEOS"
  },
  "eonet": {
   "liste": [
+   {
+    "baslik": "Wildfire Greene - Caney Creek Lane, Greene, Tennessee",
+    "tur": "Wildfires",
+    "tarih": "2026-11-18",
+    "boylam": -82.7985,
+    "enlem": 36.36301667
+   },
+   {
+    "baslik": "Prescribed Fire 2027 TXTMR HFR RX, Matagorda, Texas",
+    "tur": "Wildfires",
+    "tarih": "2026-11-18",
+    "boylam": -95.80795,
+    "enlem": 28.762433
+   },
+   {
+    "baslik": "Prescribed Fire OAK Compartment 29 RX, Bibb, Alabama",
+    "tur": "Wildfires",
+    "tarih": "2026-11-18",
+    "boylam": -87.347136,
+    "enlem": 32.945935
+   },
+   {
+    "baslik": "Prescribed Fire rx-Lapham Good Oak 2026, Waukesha, Wisconsin",
+    "tur": "Wildfires",
+    "tarih": "2026-11-18",
+    "boylam": -88.3992015,
+    "enlem": 43.0403647
+   },
    {
     "baslik": "Tropical Cyclone Akvan",
     "tur": "Severe Storms",
@@ -293,11 +321,25 @@
     "enlem": 17.2
    },
    {
+    "baslik": "Prescribed Fire STEELY MILL RX, El Dorado, California",
+    "tur": "Wildfires",
+    "tarih": "2026-11-16",
+    "boylam": -120.50025,
+    "enlem": 38.619383
+   },
+   {
+    "baslik": "Prescribed Fire Elk/Clark Piles RX, Coconino, Arizona",
+    "tur": "Wildfires",
+    "tarih": "2026-11-16",
+    "boylam": -111.578139,
+    "enlem": 35.050444
+   },
+   {
     "baslik": "Tropical Cyclone Xavier",
     "tur": "Severe Storms",
-    "tarih": "2026-11-20",
-    "boylam": -162.8,
-    "enlem": -11
+    "tarih": "2026-11-21",
+    "boylam": -164.7,
+    "enlem": -11.6
    },
    {
     "baslik": "Wildfire Range 47, Forrest, Mississippi",
@@ -347,48 +389,6 @@
     "tarih": "2026-11-11",
     "boylam": -89.5974,
     "enlem": 32.425
-   },
-   {
-    "baslik": "Prescribed Fire Compartment 170 RX, Greene, Georgia",
-    "tur": "Wildfires",
-    "tarih": "2026-11-09",
-    "boylam": -83.259363,
-    "enlem": 33.747313
-   },
-   {
-    "baslik": "Wildfire FOOT CREEK, Johnson, Wyoming",
-    "tur": "Wildfires",
-    "tarih": "2026-11-05",
-    "boylam": -106.93255,
-    "enlem": 44.318717
-   },
-   {
-    "baslik": "Prescribed Fire Cold Springs RX, Wasatch, Utah",
-    "tur": "Wildfires",
-    "tarih": "2026-11-03",
-    "boylam": -110.943493,
-    "enlem": 40.511329
-   },
-   {
-    "baslik": "Wildfire Wild River, Coos, New Hampshire",
-    "tur": "Wildfires",
-    "tarih": "2026-11-02",
-    "boylam": -71.031283,
-    "enlem": 44.330583
-   },
-   {
-    "baslik": "Prescribed Fire Dry Lake Hills Piles RX, Coconino, Arizona",
-    "tur": "Wildfires",
-    "tarih": "2026-10-30",
-    "boylam": -111.616667,
-    "enlem": 35.266667
-   },
-   {
-    "baslik": "Iceberg B22K",
-    "tur": "Sea and Lake Ice",
-    "tarih": "2026-10-30",
-    "boylam": 163.35,
-    "enlem": -69.76
    }
   ],
   "kredi": "NASA EONET"
@@ -396,25 +396,25 @@
  "iss_tle": {
   "OBJECT_NAME": "ISS (ZARYA)",
   "OBJECT_ID": "1998-067A",
-  "EPOCH": "2026-11-20T04:08:12.769728",
-  "MEAN_MOTION": 15.49502307,
-  "ECCENTRICITY": 0.00074261,
-  "INCLINATION": 51.6318,
-  "RA_OF_ASC_NODE": 248.1735,
-  "ARG_OF_PERICENTER": 45.4169,
-  "MEAN_ANOMALY": 314.7424,
+  "EPOCH": "2026-11-21T04:54:08.875296",
+  "MEAN_MOTION": 15.4952737,
+  "ECCENTRICITY": 0.0007384,
+  "INCLINATION": 51.6319,
+  "RA_OF_ASC_NODE": 243.0636,
+  "ARG_OF_PERICENTER": 49.3258,
+  "MEAN_ANOMALY": 310.8372,
   "EPHEMERIS_TYPE": 0,
   "CLASSIFICATION_TYPE": "U",
   "NORAD_CAT_ID": 25544,
   "ELEMENT_SET_NO": 999,
-  "REV_AT_EPOCH": 59593,
-  "BSTAR": 0.00018678039,
-  "MEAN_MOTION_DOT": 0.0001004,
+  "REV_AT_EPOCH": 59609,
+  "BSTAR": 0.0002073332,
+  "MEAN_MOTION_DOT": 0.00011207,
   "MEAN_MOTION_DDOT": 0
  },
  "gibs": {
-  "tarih": "2026-11-19",
-  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_NOAA21_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-11-19&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
+  "tarih": "2026-11-20",
+  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_NOAA21_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-11-20&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
   "kredi": "NASA GIBS / Worldview"
  }
 }
