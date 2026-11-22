@@ -1,7 +1,16 @@
 {
- "uretim": "2026-11-21T13:28:31Z",
+ "uretim": "2026-11-22T13:21:37Z",
  "surum": 1,
  "apod": [
+  {
+   "tarih": "2026-11-22",
+   "baslik": "Swirls and Colors on Jupiter from Juno",
+   "tur": "image",
+   "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-22-swirls-and-colors-on-jupiter-from-juno/",
+   "ozet_en": "Explanation: What creates the colors in Jupiter's clouds? No one is sure. The thick atmosphere of Jupiter is mostly hydrogen and helium, elements which are colorless at the low temperatures of the Jovian cloud tops.",
+   "kredi": "NASA, Juno, SwRI, MSSS; Processing &amp; License: Matt Brealey, Seán Doran",
+   "nasa_kaynakli": false
+  },
   {
    "tarih": "2026-11-21",
    "baslik": "Voyager's Neptune",
@@ -81,15 +90,6 @@
    "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-13-ngc-206-and-the-star-clouds-of-andromeda/",
    "ozet_en": "Explanation: The large stellar association cataloged as NGC 206 is nestled within the dusty arms of the neighboring Andromeda galaxy along with the galaxy's pinkish star-forming regions. Also known as M31, the spiral galaxy is a mere 2.5 million light-years away.",
    "kredi": "David Cruz",
-   "nasa_kaynakli": false
-  },
-  {
-   "tarih": "2026-11-12",
-   "baslik": "Moon, Venus and Spica Meet",
-   "tur": "image",
-   "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-12-moon-venus-and-spica-meet/",
-   "ozet_en": "Explanation: Not all those who wander are lost. A night sky example is that planets wander, and in fact the very word \"planet\" comes from \"wandering star\" in Greek. As planets shift relative to fixed stars, they may appear from our perspective to get closer to other astronomical objects.",
-   "kredi": "Włodzimierz Bubak",
    "nasa_kaynakli": false
   }
  ],
@@ -192,52 +192,10 @@
  },
  "asteroitler": {
   "aralik": [
-   "2026-11-21",
-   "2026-12-05"
+   "2026-11-22",
+   "2026-12-06"
   ],
   "liste": [
-   {
-    "ad": "(2026 WO1)",
-    "tarih": "2026-Nov-21 02:54",
-    "mesafe_ay": 15.2,
-    "hiz_kms": 7.1,
-    "cap_m": 10
-   },
-   {
-    "ad": "(2026 VN11)",
-    "tarih": "2026-Nov-21 06:47",
-    "mesafe_ay": 5.2,
-    "hiz_kms": 7.1,
-    "cap_m": 41
-   },
-   {
-    "ad": "(2026 WB1)",
-    "tarih": "2026-Nov-21 19:54",
-    "mesafe_ay": 1.9,
-    "hiz_kms": 14.0,
-    "cap_m": 9
-   },
-   {
-    "ad": "(2026 VD9)",
-    "tarih": "2026-Nov-21 21:15",
-    "mesafe_ay": 10.2,
-    "hiz_kms": 4.7,
-    "cap_m": 32
-   },
-   {
-    "ad": "(2026 VY15)",
-    "tarih": "2026-Nov-21 21:20",
-    "mesafe_ay": 9.6,
-    "hiz_kms": 13.3,
-    "cap_m": 29
-   },
-   {
-    "ad": "(2026 WA1)",
-    "tarih": "2026-Nov-21 22:28",
-    "mesafe_ay": 1.2,
-    "hiz_kms": 13.6,
-    "cap_m": 5
-   },
    {
     "ad": "(2026 WJ)",
     "tarih": "2026-Nov-22 04:21",
@@ -279,6 +237,48 @@
     "mesafe_ay": 5.2,
     "hiz_kms": 11.7,
     "cap_m": 59
+   },
+   {
+    "ad": "(2026 VV11)",
+    "tarih": "2026-Nov-25 21:22",
+    "mesafe_ay": 16.3,
+    "hiz_kms": 8.8,
+    "cap_m": 40
+   },
+   {
+    "ad": "(2026 VQ19)",
+    "tarih": "2026-Nov-26 10:15",
+    "mesafe_ay": 3.9,
+    "hiz_kms": 6.8,
+    "cap_m": 31
+   },
+   {
+    "ad": "(2026 WU1)",
+    "tarih": "2026-Nov-27 04:33",
+    "mesafe_ay": 12.5,
+    "hiz_kms": 12.4,
+    "cap_m": 40
+   },
+   {
+    "ad": "(2025 CP1)",
+    "tarih": "2026-Nov-30 17:53",
+    "mesafe_ay": 12.8,
+    "hiz_kms": 10.8,
+    "cap_m": 6
+   },
+   {
+    "ad": "(2026 WK1)",
+    "tarih": "2026-Dec-03 11:08",
+    "mesafe_ay": 5.2,
+    "hiz_kms": 6.3,
+    "cap_m": 25
+   },
+   {
+    "ad": "(2019 XF2)",
+    "tarih": "2026-Dec-04 00:35",
+    "mesafe_ay": 3.1,
+    "hiz_kms": 10.2,
+    "cap_m": 14
    }
   ],
   "kredi": "NASA/JPL CNEOS"
@@ -337,8 +337,8 @@
    {
     "baslik": "Tropical Cyclone Xavier",
     "tur": "Severe Storms",
-    "tarih": "2026-11-21",
-    "boylam": -164.7,
+    "tarih": "2026-11-22",
+    "boylam": -167.6,
     "enlem": -11.6
    },
    {
@@ -396,25 +396,25 @@
  "iss_tle": {
   "OBJECT_NAME": "ISS (ZARYA)",
   "OBJECT_ID": "1998-067A",
-  "EPOCH": "2026-11-21T04:54:08.875296",
-  "MEAN_MOTION": 15.4952737,
-  "ECCENTRICITY": 0.0007384,
-  "INCLINATION": 51.6319,
-  "RA_OF_ASC_NODE": 243.0636,
-  "ARG_OF_PERICENTER": 49.3258,
-  "MEAN_ANOMALY": 310.8372,
+  "EPOCH": "2026-11-22T04:07:11.627040",
+  "MEAN_MOTION": 15.49546258,
+  "ECCENTRICITY": 0.00073933,
+  "INCLINATION": 51.6321,
+  "RA_OF_ASC_NODE": 238.2738,
+  "ARG_OF_PERICENTER": 52.3454,
+  "MEAN_ANOMALY": 307.8204,
   "EPHEMERIS_TYPE": 0,
   "CLASSIFICATION_TYPE": "U",
   "NORAD_CAT_ID": 25544,
   "ELEMENT_SET_NO": 999,
-  "REV_AT_EPOCH": 59609,
-  "BSTAR": 0.0002073332,
-  "MEAN_MOTION_DOT": 0.00011207,
+  "REV_AT_EPOCH": 59624,
+  "BSTAR": 0.00018757194,
+  "MEAN_MOTION_DOT": 0.00010101,
   "MEAN_MOTION_DDOT": 0
  },
  "gibs": {
-  "tarih": "2026-11-20",
-  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_NOAA21_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-11-20&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
+  "tarih": "2026-11-21",
+  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_NOAA21_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-11-21&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
   "kredi": "NASA GIBS / Worldview"
  }
 }
