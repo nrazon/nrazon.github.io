@@ -140,18 +140,18 @@
 
   // ------------------------------------------------------------ arayüz
   var D = {
-    tr: { level: "Bölüm", moves: "Hamle", best: "En iyi", wait: "Bekle", undo: "Geri al", restart: "Yeniden", hint: "İpucu", preview: "Canavar planı", next: "Sonraki bölüm",
+    tr: { level: "Bölüm", moves: "Hamle", best: "En iyi", wait: "Bekle", undo: "Geri al", restart: "Yeniden", hint: "İpucu", preview: "Canavarın yolunu göster", next: "Sonraki bölüm",
       prev: "Önceki bölüm", win: "Kapıya ulaştın!", stars: "yıldız", caught: "Huysuz canavar seni gıdıkladı! Geri al ya da yeniden dene.", nohint: "Bu konumdan çıkış yok: geri al.",
-      how: "Ok tuşları, kaydırma ya da yanındaki kareye dokunma ile ilerle. Sen 1 adım atarsın, canavar 2!", cta: "Beğendin mi? 300 bölümün hepsi uygulamada", done: "Demodaki tüm bölümleri bitirdin!", of: "/", hintTxt: "İpucu: bu yöne git" },
-    en: { level: "Level", moves: "Moves", best: "Best", wait: "Wait", undo: "Undo", restart: "Restart", hint: "Hint", preview: "Monster plan", next: "Next level",
+      how: "Ok tuşları, kaydırma ya da yanındaki kareye dokunma ile ilerle. Sen 1 adım atarsın, canavar 2!", cta: "Beğendin mi? 300 bölümün hepsi uygulamada", done: "Demodaki tüm bölümleri bitirdin!", of: "/", hintTxt: "İpucu: bu yöne git", note: "Çizgiler, burada beklersen her canavarın atacağı iki adımı gösterir.", ovNext: "Sonraki bölüm ▶", ovAgain: "Tekrar oyna", ovUndo: "Geri al", ovRestart: "Yeniden", ovWinTitle: "Bölüm geçildi!" },
+    en: { level: "Level", moves: "Moves", best: "Best", wait: "Wait", undo: "Undo", restart: "Restart", hint: "Hint", preview: "Show monster path", next: "Next level",
       prev: "Previous level", win: "You reached the door!", stars: "stars", caught: "The grumpy monster tickled you! Undo or try again.", nohint: "No way out from here: undo.",
-      how: "Use arrow keys, swipe or tap the next square. You take 1 step, the monster takes 2!", cta: "Like it? All 300 levels are in the app", done: "You finished every level in the demo!", of: "/", hintTxt: "Hint: go this way" },
-    es: { level: "Nivel", moves: "Movs.", best: "Mejor", wait: "Esperar", undo: "Deshacer", restart: "Reiniciar", hint: "Pista", preview: "Plan del monstruo", next: "Siguiente nivel",
+      how: "Use arrow keys, swipe or tap the next square. You take 1 step, the monster takes 2!", cta: "Like it? All 300 levels are in the app", done: "You finished every level in the demo!", of: "/", hintTxt: "Hint: go this way", note: "The lines show the two steps each monster would take if you waited here.", ovNext: "Next level ▶", ovAgain: "Play again", ovUndo: "Undo", ovRestart: "Restart", ovWinTitle: "Level complete!" },
+    es: { level: "Nivel", moves: "Movs.", best: "Mejor", wait: "Esperar", undo: "Deshacer", restart: "Reiniciar", hint: "Pista", preview: "Ver camino del monstruo", next: "Siguiente nivel",
       prev: "Nivel anterior", win: "¡Llegaste a la puerta!", stars: "estrellas", caught: "¡El monstruo gruñón te hizo cosquillas! Deshaz o reintenta.", nohint: "Desde aquí no hay salida: deshaz.",
-      how: "Usa las flechas, desliza o toca la casilla de al lado. Tú das 1 paso, ¡el monstruo da 2!", cta: "¿Te gustó? Los 300 niveles están en la app", done: "¡Terminaste todos los niveles de la demo!", of: "/", hintTxt: "Pista: ve por aquí" },
-    pt: { level: "Nível", moves: "Jogadas", best: "Melhor", wait: "Esperar", undo: "Desfazer", restart: "Reiniciar", hint: "Dica", preview: "Plano do monstro", next: "Próximo nível",
+      how: "Usa las flechas, desliza o toca la casilla de al lado. Tú das 1 paso, ¡el monstruo da 2!", cta: "¿Te gustó? Los 300 niveles están en la app", done: "¡Terminaste todos los niveles de la demo!", of: "/", hintTxt: "Pista: ve por aquí", note: "Las líneas muestran los dos pasos que daría cada monstruo si esperas aquí.", ovNext: "Siguiente nivel ▶", ovAgain: "Jugar de nuevo", ovUndo: "Deshacer", ovRestart: "Reiniciar", ovWinTitle: "¡Nivel superado!" },
+    pt: { level: "Nível", moves: "Jogadas", best: "Melhor", wait: "Esperar", undo: "Desfazer", restart: "Reiniciar", hint: "Dica", preview: "Ver caminho do monstro", next: "Próximo nível",
       prev: "Nível anterior", win: "Você chegou à porta!", stars: "estrelas", caught: "O monstro rabugento fez cócegas em você! Desfaça ou tente de novo.", nohint: "Daqui não há saída: desfaça.",
-      how: "Use as setas, deslize ou toque no quadrado ao lado. Você dá 1 passo, o monstro dá 2!", cta: "Gostou? Os 300 níveis estão no app", done: "Você terminou todos os níveis da demo!", of: "/", hintTxt: "Dica: vá por aqui" }
+      how: "Use as setas, deslize ou toque no quadrado ao lado. Você dá 1 passo, o monstro dá 2!", cta: "Gostou? Os 300 níveis estão no app", done: "Você terminou todos os níveis da demo!", of: "/", hintTxt: "Dica: vá por aqui", note: "As linhas mostram os dois passos que cada monstro daria se você esperasse aqui.", ovNext: "Próximo nível ▶", ovAgain: "Jogar de novo", ovUndo: "Desfazer", ovRestart: "Reiniciar", ovWinTitle: "Nível concluído!" }
   };
   function lang() {
     var h = document.documentElement;
@@ -161,7 +161,7 @@
 
   var CSS = ".gm{--g-ink:#4A2F27;--g-soft:#8A6A58;--g-acc:#E8478B;--g-card:#FFF8EC;--g-edge:#D9BF9A;color:var(--g-ink);font:16px/1.5 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}" +
     ".gm *{box-sizing:border-box}.gm-box{display:flex;flex-wrap:wrap;gap:18px 26px;align-items:flex-start;justify-content:center}" +
-    ".gm-stage{flex:1 1 280px;max-width:380px;width:100%}.gm canvas{display:block;width:100%;aspect-ratio:1;border-radius:20px;touch-action:none;outline:none;box-shadow:0 6px 0 rgba(90,58,34,.35)}" +
+    ".gm-stage{flex:1 1 280px;max-width:380px;width:100%;position:relative}.gm canvas{display:block;width:100%;aspect-ratio:1;border-radius:20px;touch-action:none;outline:none;box-shadow:0 6px 0 rgba(90,58,34,.35)}" +
     ".gm canvas:focus-visible{outline:3px solid var(--g-acc);outline-offset:3px}" +
     ".gm-side{flex:1 1 220px;max-width:340px;display:flex;flex-direction:column;gap:12px;background:var(--g-card);border:2px solid var(--g-edge);border-radius:20px;padding:16px;color:var(--g-ink)}" +
     ".gm-top{display:flex;align-items:center;gap:8px}.gm-top b{flex:1;text-align:center;font-size:18px}" +
@@ -171,6 +171,11 @@
     ".gm-status{margin:0;min-height:3.2em;font-weight:800;font-size:15px}.gm-status.win{color:#2C8A83}.gm-status.lose{color:#D8432F}" +
     ".gm-btns{display:flex;flex-wrap:wrap;gap:8px}.gm-btn{border:2px solid var(--g-edge);background:#FFEFD9;color:var(--g-ink);font:inherit;font-weight:800;font-size:14px;padding:8px 14px;border-radius:999px;cursor:pointer}" +
     ".gm-btn[aria-pressed=true],.gm-btn.pri{background:var(--g-acc);border-color:#B02763;color:#fff}.gm-btn:disabled{opacity:.4;cursor:default}" +
+    ".gm-note{margin:0;font-size:13px;font-weight:700;color:#B02763}.gm-note[hidden]{display:none}" +
+    ".gm-ov{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(74,47,39,.5);border-radius:20px;padding:14px}.gm-ov[hidden]{display:none}" +
+    ".gm-ov-card{background:var(--g-card);border:3px solid var(--g-edge);border-radius:20px;padding:18px 20px;text-align:center;box-shadow:0 6px 0 rgba(90,58,34,.35);max-width:260px}" +
+    ".gm-ov-stars{font-size:40px;line-height:1;color:#FFC531;letter-spacing:4px;text-shadow:0 2px 0 #B77400}.gm-ov-title{font-weight:800;font-size:18px;margin:8px 0 12px}" +
+    ".gm-ov-btns{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}.gm-ov-btns .gm-btn{font-size:15px;padding:10px 16px}" +
     ".gm-how{margin:0;font-size:13px;color:var(--g-soft)}.gm a.gm-cta{font-weight:800;font-size:14px;color:#B02763}" +
     ".gm button:focus-visible,.gm a:focus-visible{outline:3px solid var(--g-acc);outline-offset:2px}";
 
@@ -194,16 +199,16 @@
     var pos = null, anim = null, raf = 0, W = 0;
 
     root.classList.add("gm");
-    root.innerHTML = '<div class="gm-box"><div class="gm-stage"><canvas tabindex="0" role="img"></canvas></div><div class="gm-side">' +
+    root.innerHTML = '<div class="gm-box"><div class="gm-stage"><canvas tabindex="0" role="img"></canvas><div class="gm-ov" hidden><div class="gm-ov-card"><div class="gm-ov-stars"></div><div class="gm-ov-title" role="status"></div><div class="gm-ov-btns"><button type="button" class="gm-btn pri" data-act="ov1"></button><button type="button" class="gm-btn" data-act="ov2"></button></div></div></div></div><div class="gm-side">' +
       '<div class="gm-top"><button type="button" class="gm-nav" data-act="prev">‹</button><b class="gm-lv"></b><button type="button" class="gm-nav" data-act="next">›</button></div>' +
       '<div class="gm-stats"><div><b class="gm-moves">0</b><span class="gm-l1"></span></div><div><b class="gm-best">0</b><span class="gm-l2"></span></div><div><b class="gm-star">–</b><span class="gm-l3"></span></div></div>' +
       '<p class="gm-status" role="status" aria-live="polite"></p>' +
       '<div class="gm-btns"><button type="button" class="gm-btn" data-act="wait"></button><button type="button" class="gm-btn" data-act="undo"></button>' +
       '<button type="button" class="gm-btn" data-act="restart"></button><button type="button" class="gm-btn" data-act="hint"></button><button type="button" class="gm-btn" data-act="preview" aria-pressed="false"></button></div>' +
-      '<p class="gm-how"></p>' + (root.getAttribute("data-play") ? '<a class="gm-cta" href="' + root.getAttribute("data-play") + '"></a>' : "") + "</div></div>";
+      '<p class="gm-note" hidden></p><p class="gm-how"></p>' + (root.getAttribute("data-play") ? '<a class="gm-cta" href="' + root.getAttribute("data-play") + '"></a>' : "") + "</div></div>";
     var cv = root.querySelector("canvas"), ctx = cv.getContext("2d");
     var q = function (s) { return root.querySelector(s); };
-    var els = { lv: q(".gm-lv"), moves: q(".gm-moves"), best: q(".gm-best"), star: q(".gm-star"), l1: q(".gm-l1"), l2: q(".gm-l2"), l3: q(".gm-l3"), status: q(".gm-status"), how: q(".gm-how"), cta: q(".gm-cta") };
+    var els = { ov: q(".gm-ov"), ovStars: q(".gm-ov-stars"), ovTitle: q(".gm-ov-title"), note: q(".gm-note"), lv: q(".gm-lv"), moves: q(".gm-moves"), best: q(".gm-best"), star: q(".gm-star"), l1: q(".gm-l1"), l2: q(".gm-l2"), l3: q(".gm-l3"), status: q(".gm-status"), how: q(".gm-how"), cta: q(".gm-cta") };
     var acts = {}; [].forEach.call(root.querySelectorAll("[data-act]"), function (b) { acts[b.getAttribute("data-act")] = b; });
     var status = { key: null, cls: "", extra: "" };
 
@@ -216,6 +221,28 @@
       els.how.textContent = t.how; if (els.cta) els.cta.textContent = t.cta;
       cv.setAttribute("aria-label", t.level + " " + (idx + 1) + ", " + t.moves + " " + moves);
       els.status.textContent = status.key ? t[status.key] + (status.extra || "") : ""; els.status.className = "gm-status " + status.cls;
+      els.note.textContent = t.note; els.note.hidden = !previewOn;
+      ovText();
+    }
+    function ovText() {
+      var t = D[lang()], win = finished, lose = !finished && status.cls === "lose";
+      if (!win && !lose) return;
+      var last = idx >= levels.length - 1;
+      if (win) {
+        els.ovStars.textContent = "★".repeat(stars[idx] || 1);
+        els.ovTitle.textContent = last ? t.done : t.ovWinTitle;
+        acts.ov1.textContent = last ? t.ovAgain : t.ovNext; acts.ov2.textContent = last ? t.restart : t.ovAgain;
+      } else {
+        els.ovStars.textContent = "😖";
+        els.ovTitle.textContent = t.caught;
+        acts.ov1.textContent = t.ovUndo; acts.ov2.textContent = t.ovRestart;
+      }
+    }
+    function showOv(show) {
+      var was = !els.ov.hidden;
+      els.ov.hidden = !show;
+      if (show) { ovText(); try { acts.ov1.focus({ preventScroll: true }); } catch (e) {} }
+      else if (was) { try { cv.focus({ preventScroll: true }); } catch (e) {} }
     }
     function setStatus(key, cls, extra) { status = { key: key, cls: cls || "", extra: extra || "" }; text(); }
     function hud() {
@@ -231,7 +258,7 @@
       idx = i; store("gm_lv", idx); L = levels[idx];
       hero = L.hero; ms = L.monsters.slice(); moves = 0; history = []; finished = false; locked = false; started = false; hintDir = null;
       pos = { h: { r: hero.r, c: hero.c }, m: ms.map(function (m) { return { r: m.r, c: m.c }; }) };
-      setStatus(null); hud(); draw();
+      showOv(false); setStatus(null); hud(); draw();
     }
 
     // ---- animasyon: parçalar sırayla (kahraman, A1, B1, A2, B2)
@@ -277,13 +304,14 @@
           track("demo_end", { app: "grumblings", difficulty: L.n + "x" + L.n, level: idx + 1, result: "loss", moves: moves });
         } else setStatus(null);
         hud(); draw();
+        showOv(r.outcome === "WIN" || r.outcome === "LOSE");
       });
     }
     function undo() {
       if (locked || !history.length) return;
       var h = history.pop(); hero = h.hero; ms = h.ms; moves = Math.max(0, moves - 1); finished = false; hintDir = null;
       pos = { h: { r: hero.r, c: hero.c }, m: ms.map(function (m) { return { r: m.r, c: m.c }; }) };
-      setStatus(null); hud(); draw();
+      showOv(false); setStatus(null); hud(); draw();
     }
     function hint() {
       if (locked || finished) return;
@@ -393,8 +421,13 @@
     root.addEventListener("click", function (e) {
       var b = e.target.closest("[data-act]"); if (!b || b.disabled) return;
       var a = b.getAttribute("data-act");
+      if (a === "ov1" || a === "ov2") {
+        if (finished) { if (a === "ov1" && idx < levels.length - 1) load(idx + 1); else load(idx); }
+        else if (a === "ov1") undo(); else load(idx);
+        return;
+      }
       if (a === "wait") act(null); else if (a === "undo") undo(); else if (a === "restart") load(idx); else if (a === "hint") hint();
-      else if (a === "preview") { previewOn = !previewOn; b.setAttribute("aria-pressed", previewOn); draw(); }
+      else if (a === "preview") { previewOn = !previewOn; b.setAttribute("aria-pressed", previewOn); text(); draw(); }
       else if (a === "prev" && idx > 0) load(idx - 1); else if (a === "next" && idx < levels.length - 1 && stars[idx]) load(idx + 1);
     });
     if (window.ResizeObserver) new ResizeObserver(function () { W = 0; draw(); }).observe(cv);
