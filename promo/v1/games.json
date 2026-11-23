@@ -126,10 +126,10 @@
    "name": "Tic-Tac-Toe",
    "pkg": "com.tictactoe.nesimapps",
    "icon": "icons/tictactoe.png",
-   "tr": "Bilgisayara karşı XOX, üç zorluk seviyesi.",
-   "en": "Tic-Tac-Toe against the computer, three difficulty levels.",
-   "es": "Tres en raya contra el ordenador, tres niveles de dificultad.",
-   "pt": "Jogo da velha contra o computador, três níveis de dificuldade."
+   "tr": "Bilgisayara karşı XOX ve dokuz tahtalı Ultimate modu; aynı telefonda 2 kişi de oynayabilir.",
+   "en": "Tic-Tac-Toe against the computer, plus Ultimate with nine boards. Two players on one phone too.",
+   "es": "Tres en raya contra la máquina y el modo Ultimate con nueve tableros. También 2 jugadores en un teléfono.",
+   "pt": "Jogo da velha contra o computador e o modo Ultimate com nove tabuleiros. Também 2 jogadores em um celular."
   }
  ]
 }
