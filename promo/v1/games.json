@@ -2,6 +2,16 @@
  "v": 1,
  "games": [
   {
+   "key": "slinglings",
+   "name": "Slinglings",
+   "pkg": "com.slinglings.nesimapps",
+   "icon": "icons/slinglings.png",
+   "tr": "Sevimli postacıları uzayda fırlat, gezegenlerin çevresinden kavisli atışlarla postayı teslim et!",
+   "en": "Sling cute couriers through space, bend shots around planets, deliver the mail!",
+   "es": "Lanza carteros adorables por el espacio y entrega el correo con tiros curvos alrededor de los planetas.",
+   "pt": "Lance carteiros fofos pelo espaço e entregue a correspondência com tiros curvos ao redor dos planetas!"
+  },
+  {
    "key": "snowlings",
    "name": "Snowlings",
    "pkg": "com.snowlings.nesimapps",
