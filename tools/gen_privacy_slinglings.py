@@ -36,6 +36,15 @@ R = [
     ("«puzzle iniciado» o «puzzle resuelto»", "«nivel iniciado» o «nivel resuelto»"),
     ("\"quebra-cabeça iniciado\" ou \"quebra-cabeça resolvido\"", "\"nível iniciado\" ou \"nível resolvido\""),
     ("\"bulmaca başladı\" ya da \"bulmaca çözüldü\"", "\"bölüm başladı\" ya da \"bölüm çözüldü\""),
+    # 23.11.2026 dogrulama (kod: Analytics.kt, AdMobAds.kt, Screens.kt "Ad options"): menu adi ve analitik kapsami
+    ("Menu → Settings → Privacy options", "Menu → Settings → Ad options (shown where consent is required)"),
+    ("Menü → Ayarlar → Gizlilik seçenekleri", "Menü → Ayarlar → Reklam seçenekleri (izin gereken yerlerde görünür)"),
+    ("Menú → Ajustes → Opciones de privacidad", "Menú → Ajustes → Opciones de anuncios (aparece donde se requiere consentimiento)"),
+    ("Menu → Configurações → Opções de privacidade", "Menu → Configurações → Opções de anúncios (aparece onde o consentimento é exigido)"),
+    ("stars earned and how many hints you used. They are linked", "stars earned, how many hints you used and how long it took. It also records technical ad events (for example that an ad was shown or failed to load) to help fix ad problems. They are linked"),
+    ("kazandığın yıldız ve kaç ipucu kullandığınla) gibi anonim olaylar gönderir.", "kazandığın yıldız, kullandığın ipucu sayısı ve süre) gibi anonim olaylar gönderir; ayrıca reklam sorunlarını gidermek için teknik reklam olaylarını (örneğin bir reklamın gösterildiği ya da yüklenemediği) kaydeder."),
+    ("estrellas ganadas y cuántas pistas usaste. Se vinculan", "estrellas ganadas, cuántas pistas usaste y cuánto tardaste. También registra eventos técnicos de anuncios (por ejemplo, que un anuncio se mostró o no se pudo cargar) para ayudar a corregir problemas con los anuncios. Se vinculan"),
+    ("estrelas ganhas e quantas dicas você usou. Eles ficam", "estrelas ganhas, quantas dicas você usou e quanto tempo levou. Também registra eventos técnicos de anúncios (por exemplo, que um anúncio foi exibido ou não pôde ser carregado) para ajudar a corrigir problemas com anúncios. Eles ficam"),
 ]
 out = src
 for a, b in R:

@@ -19,15 +19,18 @@ def apple_url(v):
 BASE = "https://nesimapps.com"
 # Yayına henüz çıkmamış uygulamaların detay sayfaları: URL'den açılır ama ana sayfa kartı, "Diğer uygulamalarım" listeleri ve sitemap'e GİRMEZ,
 # sayfada noindex var. Uygulama Play'de yayınlanınca slug buradan silinir (ve home_data.json'da status=live yapılır).
-HIDDEN = set()  # Pulselings: Play incelemesinde (13.11.2026), yayin gunu buradan SIL. Yayinda olmayan uygulama onceden buraya eklenir, yayin gunu silinir (Brassline 13.11.2026 yayinda: cikarildi)
+HIDDEN = {"slinglings"}  # Pulselings: Play incelemesinde (13.11.2026), yayin gunu buradan SIL. Yayinda olmayan uygulama onceden buraya eklenir, yayin gunu silinir (Brassline 13.11.2026 yayinda: cikarildi)
 # Capraz tanitim YOK (kullanici karari 10.11.2026): bu uygulama hicbir sayfadaki "Diger oyunlar" listesinde cikmaz, yayinda bile.
 NO_PROMO = {"brassline"}
+# Play'de henuz CANLI olmayan uygulama: detay sayfasinda Google Play dugmesi yerine "yakinda" rozeti, JSON-LD installUrl yok (yayin gunu slug buradan SIL).
+NO_STORE_LINK = {"slinglings"}
+SOON_BADGE = {"en": "Coming soon to Google Play", "tr": "Google Play'de çok yakında", "es": "Próximamente en Google Play", "pt": "Em breve no Google Play"}
 NO_CARD = set()  # ana sayfada karti olmayan slug kumesi (Brassline 13.11.2026: kart acildi)
 # Ana sayfada kartında data-pkg olmayan (henüz "yakında" kartı olan) uygulamaların paket adları.
 VIDEOS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "videos.json"), encoding="utf-8"))
 VIDEO_LABEL = {"tr": "Tanıtım videosu", "en": "Promo video", "es": "Vídeo de presentación", "pt": "Vídeo de apresentação"}
 VIDEO_PLAY = {"tr": "Tanıtım videosunu oynat", "en": "Play promo video", "es": "Reproducir el vídeo", "pt": "Reproduzir o vídeo"}
-PKG_FALLBACK = {"snowlings": "com.snowlings.nesimapps", "calisan": "com.calisanasistani.nesimapps", "uzaygunlugu": "com.uzaygunlugu.nesimapps", "haftasonum": "com.haftasonum.nesimapps", "beamies": "com.beamies.nesimapps", "logiclings": "com.logiclings.nesimapps", "grumblings": "com.grumblings.nesimapps", "nudgelings": "com.nudgelings.nesimapps", "pentolings": "com.pentolings.nesimapps", "tombalings": "com.tombalings.nesimapps", "astrolings": "com.astrolings.nesimapps", "nuzzlings": "com.nuzzlingscat.nesimapps", "brassline": "com.brassline.nesimapps", "pulselings": "com.pulselings.nesimapps"}
+PKG_FALLBACK = {"slinglings": "com.slinglings.nesimapps", "snowlings": "com.snowlings.nesimapps", "calisan": "com.calisanasistani.nesimapps", "uzaygunlugu": "com.uzaygunlugu.nesimapps", "haftasonum": "com.haftasonum.nesimapps", "beamies": "com.beamies.nesimapps", "logiclings": "com.logiclings.nesimapps", "grumblings": "com.grumblings.nesimapps", "nudgelings": "com.nudgelings.nesimapps", "pentolings": "com.pentolings.nesimapps", "tombalings": "com.tombalings.nesimapps", "astrolings": "com.astrolings.nesimapps", "nuzzlings": "com.nuzzlingscat.nesimapps", "brassline": "com.brassline.nesimapps", "pulselings": "com.pulselings.nesimapps"}
 REF = "&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"
 
 # ------------------------------------------------------------------ ortak: göz takip betiği
@@ -460,7 +463,7 @@ def page(cfg):
         "@context": "https://schema.org", "@type": "SoftwareApplication", "name": cfg["name"], "operatingSystem": "Android, iOS" if cfg["slug"] in IOS else "Android",
         "applicationCategory": "GameApplication", "description": cfg["desc"], "url": url, "image": f"{BASE}/{slug}/icon.svg",
         "author": {"@type": "Person", "name": "Nesim Razon"}, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
-        "installUrl": f"https://play.google.com/store/apps/details?id={cfg['pkg']}",
+        **({} if cfg["slug"] in NO_STORE_LINK else {"installUrl": f"https://play.google.com/store/apps/details?id={cfg['pkg']}"}),
     }, ensure_ascii=False)
     title_main = t(cfg["title"], "en")
     qr_html = "" if cfg["slug"] in HIDDEN else (
@@ -484,6 +487,8 @@ def page(cfg):
                       "w.hidden=!o;b.setAttribute('aria-expanded',o);b.querySelector('.ar').textContent=o?'▼':'▶';"
                       "if(o&&!document.getElementById('demo-js')){var s=document.createElement('script');s.id='demo-js';s.src='../calisan.js?v=3';document.head.appendChild(s);}"
                       "if(o)setTimeout(function(){w.scrollIntoView({behavior:'smooth',block:'start'});},50);});})();</script>")
+    soon_badge_html = (f'<span class="soonbadge" style="display:inline-block;padding:10px 18px;border-radius:12px;border:1.5px dashed currentColor;font-weight:700;opacity:.9">{multi(SOON_BADGE, L, "span")}</span>' if slug in NO_STORE_LINK else "")
+    play_btn_html = soon_badge_html if slug in NO_STORE_LINK else (f'''<a class="play" href="{play}"><img src="../badges/google-play-tr.svg" alt="Google Play" data-l="tr"><img src="../badges/google-play-en.svg" alt="Get it on Google Play" data-l="en">{"".join(f'<img src="../badges/google-play-en.svg" alt="Google Play" data-l="{l}">' for l in L if l not in ("tr", "en"))}</a>''')
     noindex = '\n<meta name="robots" content="noindex">' if cfg["slug"] in HIDDEN else ""
     return f'''<!doctype html>
 <html lang="en" data-lang="en">
@@ -524,7 +529,7 @@ def page(cfg):
       <p class="intro">{multi(cfg['intro'], L)}</p>
       {('<ul class="chips">' + chips + '</ul>') if chips else ""}
       <div class="cta">
-        <a class="play" href="{play}"><img src="../badges/google-play-tr.svg" alt="Google Play" data-l="tr"><img src="../badges/google-play-en.svg" alt="Get it on Google Play" data-l="en">{"".join(f'<img src="../badges/google-play-en.svg" alt="Google Play" data-l="{l}">' for l in L if l not in ("tr", "en"))}</a>
+        {play_btn_html}
         {appstore_html}
         {qr_html}
         {qr_ios_html}
@@ -647,6 +652,7 @@ LANDING_CSS += VIDEO_CSS
 
 # slug, klasör, ad(tr), ad(en), simge, tint, ekran görüntüsü kaynakları {dil: klasör}, yeni-rozet
 APPDEFS = [
+    ("slinglings", "Slinglings", "Slinglings", "Slinglings", "icon.png", "#D84225", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, None),
     ("snowlings", "Snowlings", "Snowlings", "Snowlings", "icon.png", "#2E6FBF", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2027-01-10"),
     ("pulselings", "Pulselings", "Pulselings", "Pulselings", "icon.png", "#FF5C7A", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, None),
     ("brassline", "Brassline", "Brassline", "Brassline", "icon.png", "#C9A45C", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-15"),
