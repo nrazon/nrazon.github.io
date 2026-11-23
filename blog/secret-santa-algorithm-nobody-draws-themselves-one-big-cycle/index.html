@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Secret Santa Draw Algorithm: No Self-Picks, No Swaps</title>
+<meta name="description" content="How to build a Secret Santa draw where nobody picks themselves and nobody swaps with each other: one big cycle, exclusion pairs, a fallback and tests.">
+<link rel="canonical" href="https://nesimapps.com/blog/secret-santa-algorithm-nobody-draws-themselves-one-big-cycle/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/secret-santa-algorithm-nobody-draws-themselves-one-big-cycle/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/gizli-hediye-cekilisi-algoritmasi-kimse-kendini-cekmesin-tek-buyuk-dongu/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/algoritmo-amigo-invisible-nadie-se-saca-a-si-mismo-un-solo-ciclo/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/algoritmo-amigo-secreto-ninguem-tira-a-si-mesmo-um-unico-ciclo/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/secret-santa-algorithm-nobody-draws-themselves-one-big-cycle/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Secret Santa Draw Algorithm: No Self-Picks, No Swaps">
+<meta property="og:description" content="How to build a Secret Santa draw where nobody picks themselves and nobody swaps with each other: one big cycle, exclusion pairs, a fallback and tests.">
+<meta property="og:url" content="https://nesimapps.com/blog/secret-santa-algorithm-nobody-draws-themselves-one-big-cycle/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Secret Santa Draw Algorithm: No Self-Picks, No Swaps">
+<meta name="twitter:description" content="How to build a Secret Santa draw where nobody picks themselves and nobody swaps with each other: one big cycle, exclusion pairs, a fallback and tests.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Secret Santa Draw Algorithm: No Self-Picks, No Swaps", "description": "How to build a Secret Santa draw where nobody picks themselves and nobody swaps with each other: one big cycle, exclusion pairs, a fallback and tests.", "inLanguage": "en", "mainEntityOfPage": "https://nesimapps.com/blog/secret-santa-algorithm-nobody-draws-themselves-one-big-cycle/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-23", "dateModified": "2026-11-23", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Algorithms, Dev notes"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Secret Santa Draw Algorithm: No Self-Picks, No Swaps", "item": "https://nesimapps.com/blog/secret-santa-algorithm-nobody-draws-themselves-one-big-cycle/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why does picking names from a hat sometimes get stuck?", "acceptedAnswer": {"@type": "Answer", "text": "The last person can be left with only their own name. In a 10-person simulation this happened in about 7 to 8 of 100 draws."}}, {"@type": "Question", "name": "What is a derangement?", "acceptedAnswer": {"@type": "Answer", "text": "A shuffle in which nobody ends up in their original place, so nobody draws themselves. It can still contain two people giving to each other."}}, {"@type": "Question", "name": "How does one big cycle avoid mutual swaps?", "acceptedAnswer": {"@type": "Answer", "text": "In one ring each person gives only to the next person in the ring, so two people cannot point at each other when there are more than two people."}}, {"@type": "Question", "name": "What if the exclusion rules make a ring impossible?", "acceptedAnswer": {"@type": "Answer", "text": "The algorithm falls back to a general backtracking assignment, where swaps may appear, and returns nothing if that also fails."}}, {"@type": "Question", "name": "Do names need to be unique?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The function uses each name as a key in its tables, so two identical names would be treated as one person."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/secret-santa-algorithm-nobody-draws-themselves-one-big-cycle/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/gizli-hediye-cekilisi-algoritmasi-kimse-kendini-cekmesin-tek-buyuk-dongu/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/algoritmo-amigo-invisible-nadie-se-saca-a-si-mismo-un-solo-ciclo/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/algoritmo-amigo-secreto-ninguem-tira-a-si-mesmo-um-unico-ciclo/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>Secret Santa Draw Algorithm: No Self-Picks, No Swaps</h1>
+    <p class="by">By Nesim Razon, independent mobile developer · 2026-11-23</p>
+    <p class="tags"><a href="/blog/#algorithms">#Algorithms</a><a href="/blog/#devlog">#Dev notes</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">A Secret Santa draw sounds trivial: everyone picks a name. Then someone picks their own, two people end up giving to each other, and a couple draws each other when they wanted to surprise someone else. This post explains the algorithm behind my free draw page: build one big cycle, respect exclusion pairs, fall back when no cycle exists, and prove the result with tests.</p>
+    <h2>The naive draw and where it breaks</h2>
+    <p>The first idea is a hat: each person in turn takes a random name from the hat that is not their own. It fails in a quiet way. When the last person reaches the hat, the only name left can be their own. In a simulation of 100,000 draws with 10 people, about 7 or 8 in 100 got stuck like this.</p>
+    <p>The second idea is to shuffle all names, check that nobody got themselves, and shuffle again if someone did. That always ends with a valid result, but it wastes work. A shuffle with no self-pick is called a derangement, and for 10 people it took 2.7 tries on average in the same simulation.</p>
+    <h2>A valid shuffle can still contain swaps</h2>
+    <p>Take 4 people. There are 24 ways to assign gifts. Only 9 have no self-pick. Look at those 9:</p>
+    <ul><li>6 of them are one loop: A gives to B, B to C, C to D, D to A.</li><li>3 of them are two swaps: A and B give to each other, and C and D give to each other.</li></ul>
+    <p>So a third of the valid results for 4 people are swaps. With 10 people, about 4 in 10 of the valid shuffles contained at least one swap in my simulation. A swap is not wrong, but it is dull: you learn who your gift-giver is the moment you pick. Most groups want it avoided.</p>
+    <h2>One big cycle: shuffle and hand to the neighbor</h2>
+    <p>The fix is to stop thinking of a table of picks and think of a ring. Shuffle the names into a line, then let each person give to the next one in the line, and the last to the first. In the code this is one line:</p>
+    <p>res[cycle[i]] = cycle[(i + 1) % n]</p>
+    <p>Four people shuffled to C, A, D, B give C to A, A to D, D to B and B to C. Everyone gives once, everyone receives once, nobody gives to themselves. For more than two people, nobody can swap either, because a swap would need two people pointing at each other, and in one ring each person points only to the next.</p>
+    <p>The count matches the idea: there are (n - 1)! distinct rings. That is 2 for 3 people, 6 for 4 people and 362,880 for 10 people, plenty of variety.</p>
+    <h2>The shuffle underneath: Fisher-Yates</h2>
+    <p>Everything above depends on a fair shuffle. The code uses the Fisher-Yates method: walk from the last position down to the second, pick a random position from the start up to the current one, and swap the two. When the random numbers are good, each of the n! orders is equally likely. The loop in short:</p>
+    <p>for (i = n - 1; i &gt; 0; i--) { j = floor(rnd() * (i + 1)); swap(a[i], a[j]); }</p>
+    <p>A common mistake is sorting with a random comparison, which does not give every order the same chance. Another detail: the function shuffles a copy, so your original list of names is never changed. The random source is a parameter that defaults to Math.random, so a test could pass a fixed sequence and repeat a draw exactly.</p>
+    <p>Fisher-Yates makes a plain ring fair. With exclusion pairs, the search takes the first ring the backtracking finds from a random start, and I do not claim that every valid ring is equally likely. For a gift draw that is fine. The whole thing runs in the page, and no names are sent to any server.</p>
+    <h2>Adding rules: couples and exclusion pairs</h2>
+    <p>Real groups have rules: partners should not draw each other, or two coworkers who already exchange gifts. The draw page stores each rule as a pair and writes it into a ban table in both directions, so one pair blocks A giving to B and B giving to A. Every name also bans itself, which is how self-picks are removed.</p>
+    <p>Now a plain shuffle is not enough, because a random neighbor may be banned. The code builds the ring step by step: start from the first name in a shuffled list, try the remaining names in random order, skip anyone already used or banned, and if the chain gets stuck, step back and try another name. This is called backtracking. When the ring is full, the last person must also be allowed to give to the first.</p>
+    <p>Example with 4 people where A and B must not draw each other. Of the 6 rings, only 2 keep A and B apart: A to C to B to D to A, and A to D to B to C to A. The code finds one of them within a few steps.</p>
+    <h2>The fallback and the impossible case</h2>
+    <p>Sometimes no ring exists but a valid assignment does. Take 4 people with exclusions A-B, B-C, C-D and D-A. A can give only to C, B only to D, and so on, so the only answer is A and C swapping and B and D swapping. No ring can do that.</p>
+    <p>So the code works in two stages. First it makes up to 60 attempts at a ring, each with a budget of 4,000 steps. If none works, it runs a plain random backtracking assignment with a budget of 50,000 steps. The result says which one it was: cycle true or cycle false. The page can then tell the group that swaps were unavoidable.</p>
+    <p>If both stages fail, the function returns null. With 3 people where A is excluded with both B and C, nobody can give to A and A can give to nobody, so null is the right answer. Note that null also means not found within the budget, so for very large and very tight rule sets it is a practical limit, not a proof. With 2 people the only result is a swap; the helper that checks feasibility returns false for fewer than 3 names.</p>
+    <h2>How I know it is correct</h2>
+    <p>The guarantees are simple to state. Everyone gives once and receives once. Nobody gets themselves. No excluded pair appears in either direction. When the result says cycle true, walking from the first name returns to it after exactly n steps.</p>
+    <p>The test file draws 400 times for each of four groups: 3 people, 4 people with one exclusion, 10 people with three couples and 50 people with two exclusion pairs. After every draw it checks four things: the receiver exists and is not the giver, no receiver appears twice, no excluded pair appears, and for ring results the walk takes exactly n steps. One more test checks that the impossible 3-person case returns null.</p>
+    <p>If you only want to run a draw, the page is at nesimapps.com/cekilis/ and the user side is covered in the post on running an online Secret Santa draw with no sign-up.</p>
+    
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Why does picking names from a hat sometimes get stuck?</summary><p>The last person can be left with only their own name. In a 10-person simulation this happened in about 7 to 8 of 100 draws.</p></details><details><summary>What is a derangement?</summary><p>A shuffle in which nobody ends up in their original place, so nobody draws themselves. It can still contain two people giving to each other.</p></details><details><summary>How does one big cycle avoid mutual swaps?</summary><p>In one ring each person gives only to the next person in the ring, so two people cannot point at each other when there are more than two people.</p></details><details><summary>What if the exclusion rules make a ring impossible?</summary><p>The algorithm falls back to a general backtracking assignment, where swaps may appear, and returns nothing if that also fails.</p></details><details><summary>Do names need to be unique?</summary><p>Yes. The function uses each name as a key in its tables, so two identical names would be treated as one person.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/measure-play-store-installs-with-utm-links-and-listing-experiments/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Measuring Play Installs: UTM Links and Listing Experiments</b></div></a></li><li><a href="/blog/when-github-actions-macos-minutes-run-out-moving-ios-builds-to-codemagic/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>No macOS Minutes Left on GitHub Actions: Moving to Codemagic</b></div></a></li><li><a href="/blog/ads-in-kotlin-multiplatform-shared-interface-platform-shell/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Ads in Kotlin Multiplatform: Shared Interface, Platform Shell</b></div></a></li><li><a href="/blog/edge-to-edge-and-three-button-navigation-fixing-clipped-compose-ui/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Edge-to-Edge and 3-Button Navigation: Fixing Clipped Compose UI</b></div></a></li><li><a href="/blog/clarity-ai-visibility-topic-insights-for-a-small-site-first-results/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Clarity AI Visibility: Topic Insights for a Small Site, First Results</b></div></a></li><li><a href="/blog/scheduling-36-youtube-community-posts-when-there-is-no-api/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Scheduling 36 YouTube Community Posts When There Is No API</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

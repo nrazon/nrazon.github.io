@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mahjong Connect Bulmacalarında İki Dönüşlü Yol Bulma</title>
+<meta name="description" content="İki taşın en çok iki dönüşle birleşip birleşmediğini nasıl denetlersin: düz çizgi, L, Z ve U yolları, tahta dışı çerçeve, maliyet, kenar durumları ve test.">
+<link rel="canonical" href="https://nesimapps.com/tr/yazilar/mahjong-connect-bulmacalarinda-iki-donuslu-yol-bulma/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/two-turn-path-finding-for-mahjong-connect-puzzles/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/mahjong-connect-bulmacalarinda-iki-donuslu-yol-bulma/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/busqueda-de-caminos-con-dos-giros-en-puzles-connect-de-mahjong/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/busca-de-caminhos-com-duas-curvas-em-puzzles-connect-de-mahjong/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/two-turn-path-finding-for-mahjong-connect-puzzles/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#4A5BB0">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Mahjong Connect Bulmacalarında İki Dönüşlü Yol Bulma">
+<meta property="og:description" content="İki taşın en çok iki dönüşle birleşip birleşmediğini nasıl denetlersin: düz çizgi, L, Z ve U yolları, tahta dışı çerçeve, maliyet, kenar durumları ve test.">
+<meta property="og:url" content="https://nesimapps.com/tr/yazilar/mahjong-connect-bulmacalarinda-iki-donuslu-yol-bulma/">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mahjong Connect Bulmacalarında İki Dönüşlü Yol Bulma">
+<meta name="twitter:description" content="İki taşın en çok iki dönüşle birleşip birleşmediğini nasıl denetlersin: düz çizgi, L, Z ve U yolları, tahta dışı çerçeve, maliyet, kenar durumları ve test.">
+<style>:root { --accent:#4A5BB0; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Mahjong Connect Bulmacalarında İki Dönüşlü Yol Bulma", "description": "İki taşın en çok iki dönüşle birleşip birleşmediğini nasıl denetlersin: düz çizgi, L, Z ve U yolları, tahta dışı çerçeve, maliyet, kenar durumları ve test.", "inLanguage": "tr", "mainEntityOfPage": "https://nesimapps.com/tr/yazilar/mahjong-connect-bulmacalarinda-iki-donuslu-yol-bulma/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-23", "dateModified": "2026-11-23", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Algoritmalar, Oyun tasarımı", "about": {"@type": "SoftwareApplication", "name": "Tilelings", "operatingSystem": "Android", "applicationCategory": "GameApplication", "url": "https://nesimapps.com/tr/tilelings/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/tr/"}, {"@type": "ListItem", "position": 2, "name": "Yazılar", "item": "https://nesimapps.com/tr/yazilar/"}, {"@type": "ListItem", "position": 3, "name": "Mahjong Connect Bulmacalarında İki Dönüşlü Yol Bulma", "item": "https://nesimapps.com/tr/yazilar/mahjong-connect-bulmacalarinda-iki-donuslu-yol-bulma/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "En çok iki dönüş ne demek?", "acceptedAnswer": {"@type": "Answer", "text": "Yol en çok üç düz parçadan oluşur; yani düz çizgi, L şekli ya da Z veya U şekli olabilir."}}, {"@type": "Question", "name": "Yol tahtanın dışına çıkabilir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Bu uygulamada evet, ızgaranın çevresindeki bir hücrelik boş çerçeveden. Bir hücreden fazlası hiç gerekmez."}}, {"@type": "Question", "name": "İki taş neden engel sayılmaz?", "acceptedAnswer": {"@type": "Answer", "text": "Yol onlarda başlar ve biter; bu yüzden çizgi denetimi yalnızca uçların arasında kalan hücrelere bakar. Köşe hücreleri ayrıca denetlenir."}}, {"@type": "Question", "name": "Böyle bir yol bulucu nasıl test edilir?", "acceptedAnswer": {"@type": "Answer", "text": "Her şekil için elle kurulmuş küçük tahtalarla, başarısız olması gereken tamamen dolu bir tahtayla ve her seviyede hamle olduğunu denetleyen bir üreteç testiyle."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/two-turn-path-finding-for-mahjong-connect-puzzles/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/mahjong-connect-bulmacalarinda-iki-donuslu-yol-bulma/" hreflang="tr" data-lang="tr" aria-current="page">TR</a><a href="/es/blog/busqueda-de-caminos-con-dos-giros-en-puzles-connect-de-mahjong/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/busca-de-caminhos-com-duas-curvas-em-puzzles-connect-de-mahjong/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/tr/">Nesim Apps</a> › <a href="/tr/yazilar/">Yazılar</a></nav>
+    <h1>Mahjong Connect Bulmacalarında İki Dönüşlü Yol Bulma</h1>
+    <p class="by">Nesim Razon, bağımsız mobil uygulama geliştiricisi · 2026-11-23</p>
+    <p class="tags"><a href="/tr/yazilar/#algorithms">#Algoritmalar</a><a href="/tr/yazilar/#game-design">#Oyun tasarımı</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Connect bulmacasında iki aynı taşı, aralarında en çok iki dönüşlü boş bir yol varsa kaldırabilirsin. Yani en fazla üç doğru parçası. Bu denetim her dokunuşta, her ipucunda ve her karıştırmada çalışır; küçük ve doğru olmalı. Tilelings&#x27;teki yol bulucunun nasıl çalıştığını, durum durum ve dikkat isteyen kenar durumlarıyla anlatıyorum.</p>
+    <h2>Kural tek bir resimde</h2>
+    <p>A ve B adında iki taş al. Yol, A&#x27;dan başlayıp B&#x27;de biten, yalnızca boş hücrelerden geçen yatay ve dikey parçalar zinciridir. İki uç hücre taşların kendisidir, bu yüzden engel sayılmazlar. En çok iki dönüş, en çok üç parça demektir.</p>
+    <p>Bu, en basitten en karmaşığa doğru denenecek tam dört durum verir.</p>
+    <p>Sıra önemlidir. Kod önce en ucuz durumu dener ve bulur bulmaz durur. Böylece çoğu çift, iki dönüşlü taramaya hiç girmeden yanıtlanır. Aynı satırdaki iki komşu taş tek bir döngüsüz denetimle biter; uzaktaki bir çift ise taramanın tamamını bekler. Oyunda bu fark hissedilmez, ama ipucu ya da çıkmaz denetimi gibi yüzlerce çiftin art arda sorulduğu yerlerde erken çıkış iş görür. Ayrıca yol, çizgiyi ekrana çizmek için köşe noktaları dizisi olarak döner: iki, üç ya da dört nokta.</p>
+    <ul><li>0 dönüş: tek bir düz çizgi.</li><li>1 dönüş: tek köşeli L şekli.</li><li>2 dönüş: iki köşeli Z ya da U şekli.</li><li>Başka bir şey yok. Üçü de olmazsa çift birleşemez.</li></ul>
+    <h2>Tek bir yardımcı: bu çizgi boş mu?</h2>
+    <p>Her şey tek bir yardımcıdan kurulur. Kodda adı clear. Aynı satır ya da sütundaki iki hücreyi alır ve şunu yanıtlar: arada kalan (uçlar hariç) tüm hücreler boş mu? Döngü küçük koordinatın bir fazlasından büyük koordinatın bir eksiğine yürür ve ilk dolu hücrede durur. İki hücre yan yanaysa ziyaret edilecek bir şey kalmaz ve yanıt evet olur.</p>
+    <p>Tahta düz bir mantıksal dizidir: her hücre için bir değer, taş varsa true. İkinci küçük yardımcı filled, ızgara dışındaki her koordinat için false döndürür. Dış çerçevenin çalışmasını sağlayan ayrıntı budur.</p>
+    <h2>Durum 0 ve 1: düz çizgi ve L şekli</h2>
+    <p>Durum 0 tek bir çağrıdır: A ve B aynı satır ya da sütundaysa ve clear evet derse yol yalnızca iki noktadır.</p>
+    <p>Durum 1, A ile B&#x27;nin oluşturduğu dikdörtgenin iki köşesini de dener. A 1. satır 1. sütunda, B 3. satır 4. sütundaysa köşeler 1. satır 4. sütun ile 3. satır 1. sütundur. Her köşe için üç şey doğru olmalı:</p>
+    <ul><li>köşe hücresinin kendisi boş,</li><li>A&#x27;dan köşeye giden parça boş,</li><li>köşeden B&#x27;ye giden parça boş.</li></ul>
+    <p>Köşe ayrıca denetlenir, çünkü clear iki uç hücreyi de yok sayar. Bu denetimi unutursan bir taşın içinden geçen yollar elde edersin.</p>
+    <h2>Durum 2: çizgi tarayarak Z ve U şekilleri</h2>
+    <p>İki dönüş, iki taşın da düz bir hatla erişebildiği, dikey ya da yatay bir orta parça demektir. Kod bu yüzden aday çizgileri tarar.</p>
+    <p>Dikey orta çizgiler için her c sütununu dolaşır. A ve B&#x27;nin sütunlarını atlar, çünkü onlar önceki durumlara çökerdi. Her c için, o sütunda A&#x27;nın satırındaki ve B&#x27;nin satırındaki iki hücrenin boş olduğunu, sonra üç parçanın boş olduğunu denetler: A&#x27;dan kendi hücresine, o hücreden diğerine, diğerinden B&#x27;ye. Yatay sürüm aynısını satırlarla yapar.</p>
+    <p>İki taramada neyin değiştiğini gösteren küçük bir tablo:</p>
+    <ul><li>Dikey tarama: eksi birden sütun sayısına kadar sütunlar, köşeler A&#x27;nın ve B&#x27;nin satırında.</li><li>Yatay tarama: eksi birden satır sayısına kadar satırlar, köşeler A&#x27;nın ve B&#x27;nin sütununda.</li><li>İkisi de bulunan en kısa yolu tutar; ölçü, yürünen toplam hücre sayısıdır.</li></ul>
+    <p>Neden genel bir arama değil? Dönüş sayısını izleyen bir genişlik öncelikli arama da işe yarar ve her sınırı karşılar. Sınır iki olduğunda ise gereğinden fazla düzenek demektir. Bir kuyruk, yönü ve dönüş sayısını hatırlayan bir ziyaret kümesi ve aynı durumu yeniden gezmemek için dikkat ister. Tarama sürümünün durumu yok, sonuç dışında bir şey ayırmaz ve her dalı gözle okuyup denetleyebilirsin. Ayrıca oyunun çizgiyi ekrana çizmek için kullandığı köşe noktalarını doğrudan döndürür. Sınır sabit ve küçükse açık durumlara güvenmek, akıllı bir genel yordamdan daha kolaydır.</p>
+    <h2>Tahtanın çevresindeki boş çerçeve</h2>
+    <p>Tarama aralığına bak: eksi birden başlar, son satır ya da sütunun bir ötesinde biter. Bu, ızgaranın çevresinde boş hücrelerden bir çerçevedir. filled ızgara dışındaki her şeyi boş saydığı için yol tahtadan çıkabilir, dışarıdan ilerleyip geri girebilir.</p>
+    <p>Bu yüzden en üst satırdaki iki taş, kenara giden yol tıkalı değilse her zaman birleşebilir. Projedeki bir testi de açıklar: üç satır dört sütunluk bir tahtada, üst satırın iki ucundaki taşlar, arada bir engel olsa bile birleşir. Yol çerçeveye çıkar, üstten ilerler ve tekrar iner; toplam iki dönüş.</p>
+    <p>Çerçeve bir hücre kalınlığındadır. Yola daha fazlası gerekmez, çünkü ızgara dışındaki her uzun dolambaç, kenara yapışan bir yolla değiştirilebilir.</p>
+    <p>Çalışılmış bir örnek. A 0. satır 0. sütunda, B 0. satır 3. sütunda; 1. sütunda bir engel var. Düz çizgi olmaz, iki L köşesi de dolu ve sütun taraması bir şey bulmaz. Satır taraması eksi bir satırına varır ve şunu bulur: A, yukarı, boyunca, aşağı B noktasına. 1 artı 3 artı 1, yani beş hücre. 1. satır da aynı uzunluğu verir, ama kod bulduğu ilk yolu tutar; beraberliği çerçeve kazanır.</p>
+    <h2>Maliyet ve kenar durumları</h2>
+    <p>Tek bir denetim ne kadar iş? Tarama yaklaşık sütun artı satır artı dört aday çizgi dener ve her aday, tahtanın bir kenarı kadar uzunlukta en çok üç düz yürüyüşe mal olur. En büyük Connect tahtasında, on altı sütun dokuz satırda, bu otuzun altında aday ve kısa döngülerdir. Bir dokunuş bunu hissetmez.</p>
+    <p>Pahalı olan, bu soruyu çok sayıda çift için sormaktır: ipucu, çıkmaz denetimi ya da karıştırma için. Kod önce taşları sınıfa göre gruplar ve yalnızca bir sınıfın içindeki çiftleri dener. Otuz sınıfa eşit dağılırsa dolu bir on altıya dokuz tahtada on binden fazla çift yerine yaklaşık üç yüz çift olur. Bu bir ölçüm değil, tahmindir.</p>
+    <p>Testi hak eden kenar durumları:</p>
+    <ul><li>Aynı taş iki kez: yol yok döndür.</li><li>İki komşu: düz durum hemen evet der.</li><li>Dolu bir köşe hücresi: parçaları denetlemeden önce reddet.</li><li>Tamamen dolu tahta: çerçeveye boş hattı olmayan iç taşlar, yakın olsalar bile birleşemez.</li></ul>
+    <h2>Test etmek ve kullanmak</h2>
+    <p>Testler küçük ve somut. Biri üç satır dört sütunluk bir tahta kurup düz durumu denetler, sonra bir engel ekleyip en çok iki dönüşlü bir yolun yine çıktığını doğrular. Bir diğeri beşe beş bir tahtayı tamamen doldurur ve ortadaki taşla 1. satır 1. sütundaki taşın arasında yol olmadığını doğrular. Üçüncüsü 150 seviyenin hepsini üreteçten geçirir ve her birinde en az bir geçerli hamle ister.</p>
+    <p>Üreteç aynı işlevi tersten kullanır. Dolu bir tahtadan başlar, yol bulucunun birleşebilir dediği iki taşı tekrar tekrar seçip kaldırır, seviyede varsa yerçekimini uygular ve sırayı kaydeder. Bu sıra bir çözümdür; yani seviye yapısı gereği çözülebilir.</p>
+    <p>Tilelings bu yol bulucuyu 150 seviyeli Connect modu için kullanıyor. Benzer bir bulmaca yapıyorsan düz, L ve tarama durumlarını üç kısa blok olarak yaz, tek bir clear yardımcısı tut ve çerçeveyi erken test et. Son bir ipucu: elle kurduğun birkaç tahta için köşe listesini yazdır ve kâğıt üzerindeki bir çizimle karşılaştır. Yanlış bir köşe, bir taşın içinden geçen çizgi olarak hemen belli olur.</p>
+    <aside class="gcta"><img class="ic" src="/tilelings/icon.png" alt="Tilelings icon" width="64" height="64"><div class="tx"><b>Ücretsiz dene: Tilelings</b><span>Google Play&#x27;de ücretsiz. Hesap gerekmez.</span></div><a class="play" href="https://play.google.com/store/apps/details?id=com.tilelings.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dblog%26utm_campaign%3Dmahjong-connect-two-turn-path-finding"><img src="/badges/google-play-tr.svg" alt="Google Play" width="162" height="48"></a><a class="small" href="/tr/tilelings/">Tilelings hakkında</a></aside>
+    <section class="faq"><h2>Sık sorulan sorular</h2><details><summary>En çok iki dönüş ne demek?</summary><p>Yol en çok üç düz parçadan oluşur; yani düz çizgi, L şekli ya da Z veya U şekli olabilir.</p></details><details><summary>Yol tahtanın dışına çıkabilir mi?</summary><p>Bu uygulamada evet, ızgaranın çevresindeki bir hücrelik boş çerçeveden. Bir hücreden fazlası hiç gerekmez.</p></details><details><summary>İki taş neden engel sayılmaz?</summary><p>Yol onlarda başlar ve biter; bu yüzden çizgi denetimi yalnızca uçların arasında kalan hücrelere bakar. Köşe hücreleri ayrıca denetlenir.</p></details><details><summary>Böyle bir yol bulucu nasıl test edilir?</summary><p>Her şekil için elle kurulmuş küçük tahtalarla, başarısız olması gereken tamamen dolu bir tahtayla ve her seviyede hamle olduğunu denetleyen bir üreteç testiyle.</p></details></section>
+    <section><h2>Diğer yazılar</h2><ul class="glist"><li><a href="/tr/yazilar/play-billing-8-cokmesi-this-stopwatch-is-already-running-ve-cozum/"><img src="/tilelings/icon.png" alt="Tilelings icon" width="48" height="48"><div><b>Play Billing 8.0.0 Çökmesi: “This Stopwatch Is Already Running” ve Çözümü</b></div></a></li><li><a href="/tr/yazilar/mahjong-solitaire-tarihi-ve-klasik-mahjong-farki/"><img src="/tilelings/icon.png" alt="Tilelings icon" width="48" height="48"><div><b>Mahjong Solitaire&#x27;in Tarihi ve Klasik Mahjong&#x27;dan Farkı</b></div></a></li><li><a href="/tr/yazilar/mahjong-solitaire-tahtasi-cozulebilir-nasil-garanti-ederiz/"><img src="/tilelings/icon.png" alt="Tilelings icon" width="48" height="48"><div><b>Mahjong Solitaire Tahtası Çözülebilir mi? Nasıl Garanti Ederiz</b></div></a></li><li><a href="/tr/yazilar/yercekimi-sapan-bulmacasi-cozucu-ve-guvenilir-ipucu/"><img src="/slinglings/icon.png" alt="Slinglings icon" width="48" height="48"><div><b>Her Yerçekimi Bölümünü Oyuncu Görmeden Çözmek</b></div></a></li><li><a href="/tr/yazilar/kotlin-multiplatformda-ayni-tohum-android-ve-iosta-ayni-bolum/"><img src="/snowlings/icon.png" alt="Snowlings icon" width="48" height="48"><div><b>Kotlin Multiplatform&#x27;da Aynı Tohum: Android ve iOS&#x27;ta Aynı Bölüm</b></div></a></li><li><a href="/tr/yazilar/utm-baglantilari-ve-magaza-girisi-deneyleriyle-play-kurulumlarini-olcmek/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Play Kurulumlarını Ölçmek: UTM Bağlantıları ve Mağaza Deneyleri</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

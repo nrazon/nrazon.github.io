@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edge-to-Edge and 3-Button Navigation | Nesim Apps</title>
+<meta name="description" content="Why text hides under the Android navigation bar after edge-to-edge, with three real bugs from my apps, the Compose fixes and a test routine.">
+<link rel="canonical" href="https://nesimapps.com/blog/edge-to-edge-and-three-button-navigation-fixing-clipped-compose-ui/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/edge-to-edge-and-three-button-navigation-fixing-clipped-compose-ui/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/edge-to-edge-ve-3-tuslu-gezinmede-kesilen-arayuz-nasil-duzelir/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/edge-to-edge-y-navegacion-de-3-botones-arreglar-la-interfaz-recortada/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/edge-to-edge-e-navegacao-de-3-botoes-corrigindo-a-interface-cortada/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/edge-to-edge-and-three-button-navigation-fixing-clipped-compose-ui/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Edge-to-Edge and 3-Button Navigation: Fixing Clipped Compose UI">
+<meta property="og:description" content="Why text hides under the Android navigation bar after edge-to-edge, with three real bugs from my apps, the Compose fixes and a test routine.">
+<meta property="og:url" content="https://nesimapps.com/blog/edge-to-edge-and-three-button-navigation-fixing-clipped-compose-ui/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Edge-to-Edge and 3-Button Navigation: Fixing Clipped Compose UI">
+<meta name="twitter:description" content="Why text hides under the Android navigation bar after edge-to-edge, with three real bugs from my apps, the Compose fixes and a test routine.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Edge-to-Edge and 3-Button Navigation: Fixing Clipped Compose UI", "description": "Why text hides under the Android navigation bar after edge-to-edge, with three real bugs from my apps, the Compose fixes and a test routine.", "inLanguage": "en", "mainEntityOfPage": "https://nesimapps.com/blog/edge-to-edge-and-three-button-navigation-fixing-clipped-compose-ui/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-23", "dateModified": "2026-11-23", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Android, Jetpack Compose"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Edge-to-Edge and 3-Button Navigation: Fixing Clipped Compose UI", "item": "https://nesimapps.com/blog/edge-to-edge-and-three-button-navigation-fixing-clipped-compose-ui/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "From which target SDK is edge-to-edge enforced?", "acceptedAnswer": {"@type": "Answer", "text": "According to the Android documentation, edge-to-edge is enforced on Android 15 (API level 35) and higher once your app targets SDK 35."}}, {"@type": "Question", "name": "Does navigationBarsPadding() go before or after verticalScroll?", "acceptedAnswer": {"@type": "Answer", "text": "Before. Placed after, the padding scrolls with the content and the list still shows behind the navigation bar."}}, {"@type": "Question", "name": "Why does my UI look fine on gesture navigation but break with three buttons?", "acceptedAnswer": {"@type": "Answer", "text": "With three buttons a real, translucent navigation bar covers the bottom of the window, so any content without bottom padding sits under it."}}, {"@type": "Question", "name": "Why did my bottom line disappear on a small screen?", "acceptedAnswer": {"@type": "Answer", "text": "A weight(1f) item shrinks to zero when the other items fill the screen. Make the screen scrollable and give that item a fixed height."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/edge-to-edge-and-three-button-navigation-fixing-clipped-compose-ui/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/edge-to-edge-ve-3-tuslu-gezinmede-kesilen-arayuz-nasil-duzelir/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/edge-to-edge-y-navegacion-de-3-botones-arreglar-la-interfaz-recortada/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/edge-to-edge-e-navegacao-de-3-botoes-corrigindo-a-interface-cortada/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>Edge-to-Edge and 3-Button Navigation: Fixing Clipped Compose UI</h1>
+    <p class="by">By Nesim Razon, independent mobile developer · 2026-11-23</p>
+    <p class="tags"><a href="/blog/#android">#Android</a><a href="/blog/#compose">#Jetpack Compose</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">After your app targets SDK 35, the system draws it behind the status bar and the navigation bar. On a gesture phone it often looks fine. On a phone with three buttons the last row can sit under the bar, or a bottom line can vanish. Here are three real bugs from my own apps, the fix for each, and the test routine I now use.</p>
+    <h2>What edge-to-edge changed</h2>
+    <p>Android&#x27;s documentation says edge-to-edge is enforced once your app targets SDK 35 and runs on Android 15 or higher. The window then spans the whole display and draws behind the system bars. On earlier Android versions you get the same look by calling enableEdgeToEdge() in the activity. My apps target SDK 36, so on a current phone this is not optional.</p>
+    <ul><li>The system does not move your content. Your layout must read the insets, the areas covered by system UI, and pad itself.</li><li>With enableEdgeToEdge() the gesture bar is transparent, but the three-button bar gets a translucent scrim by default.</li><li>So one screen can look right with gestures and wrong with three buttons: a real bar sits over your last row.</li></ul>
+    <p>Think of it as a change of contract. Before, the system reserved the bar areas and your layout lived in what remained. Now your layout owns the whole rectangle and you decide where the safe area starts. Most clipped UI bugs are places where nobody decided.</p>
+    <p>In Compose the two modifiers you need most are statusBarsPadding() for the top and navigationBarsPadding() for the bottom. All three bugs below are small mistakes around them.</p>
+    <h2>Bug 1: the bar space belonged to an ad</h2>
+    <p>In Calisan Asistani, an Android app, the home and settings screens have no banner ad. They slid under the navigation bar. I added navigationBarsPadding() to the page box and thought it was done.</p>
+    <p>A few days later it happened again. The real cause: the bottom space came only from the banner, written as Banner(Modifier.navigationBarsPadding()). When the banner was never drawn, because ads were off, consent was missing or nothing had loaded, the padding disappeared with it. The content went under the soft buttons.</p>
+    <p>The fix is to take the bar space from something that always exists. I put a box with navigationBarsPadding() at the bottom of the page, and the banner lives inside that box only on the screens that show one.</p>
+    <ul><li>Before: Banner(Modifier.navigationBarsPadding())</li><li>After: Box(Modifier.fillMaxWidth().navigationBarsPadding()) { if (showBanner) Banner() }</li></ul>
+    <p>Then I tested every screen with ads on and with ads off. The rule is simple: if a padding is attached to an element that can be absent, move it to its parent. This bug needs a specific state, no ad, so it only shows if you test that state on purpose.</p>
+    <h2>Bug 2: padding in the wrong place</h2>
+    <p>In Pentolings, the settings and statistics content flowed under the navigation buttons. The memory note I keep for this says it came back after I had fixed it in other games. The cause was the order of modifiers on a scrolling column.</p>
+    <ul><li>Wrong: Modifier.weight(1f).verticalScroll(state).navigationBarsPadding()</li><li>Right: Modifier.weight(1f).navigationBarsPadding().verticalScroll(state)</li></ul>
+    <p>My explanation from the notes: when the padding comes after verticalScroll, it is added inside the scrolled content. The visible window of the list still reaches the bottom edge of the screen, so the content shows through behind the buttons. When the padding comes first, the window itself ends above the bar. The Pentolings screens now use the second order, for example in HelpScreen.kt and Screens.kt.</p>
+    <p>A quick check for this bug: scroll to the very end of the screen. The last item must stop fully above the bar, with a little space. If it stops behind the bar, the order is wrong.</p>
+    <h2>Bug 3: a weight squeezed to zero</h2>
+    <p>The settings screen of Slinglings is a column with a title, switches, buttons, a decorative desk scene and a version line. The desk scene used weight(1f) to take whatever height was left, and the version line sat below it.</p>
+    <p>When the rows above filled the screen, nothing was left for the weight. The scene shrank to zero height and the version line at the very bottom was cut off. A taller phone hid the problem, so it only showed on a small screen.</p>
+    <ul><li>Before: DeskScene(Modifier.weight(1f))</li><li>After: verticalScroll on the column, DeskScene(Modifier.height(150.dp))</li></ul>
+    <p>The column is now scrollable and the scene has a fixed height. If the content does not fit, the user scrolls instead of losing a line. The same commit also stopped the version line from being a hard-coded text: it reads the real version name now.</p>
+    <p>There were two ways out: give flexible items a minimum height, or make the screen scrollable. I chose scrolling plus a fixed height, because on a small phone the decorative scene is the first thing to give up.</p>
+    <h2>Which inset for which job</h2>
+    <p>Compose offers several inset modifiers. You do not need all of them, but it helps to know what each one answers.</p>
+    <ul><li>statusBarsPadding(): keeps a top bar below the status bar.</li><li>navigationBarsPadding(): keeps bottom content above the navigation bar, in gesture mode and in button mode.</li><li>systemBarsPadding(): both of the above in one modifier.</li><li>imePadding(): keeps a text field above the on-screen keyboard.</li><li>safeDrawingPadding(): system bars, keyboard and display cutouts together.</li><li>Scaffold: hands you an innerPadding value. If you ignore it, the content is not padded at all.</li></ul>
+    <p>The Android documentation also lists display cutout insets and system gesture insets. The gesture insets matter when your own swipes start near the screen edge; the docs mention swiping in games as an example. My screens mostly use the first two modifiers. I have not needed more, so I cannot tell you from experience how the others behave in every case.</p>
+    <h2>Large text and longer languages</h2>
+    <p>Fixed heights are risky in the other direction too. A button with a fixed height cuts its label when the user sets a larger font. In Pentolings the shared button uses heightIn(min = ...) so it can grow with the text.</p>
+    <p>In my notes for other apps I also planned to test at 1.3x and 1.5x font size, because Spanish and Portuguese labels are longer than English ones. I have not run that test on every app yet, and I do not claim it. I treat it as a checklist item, not a result.</p>
+    <p>Do the arithmetic: at a 1.3 font scale a 14 sp label is drawn at about 18 sp, so the same words need roughly 30 percent more width. A label that fit on one line may now need two, or be cut.</p>
+    <p>In the Tilelings design notes I wrote a rule for long labels: one line only, a measurement test, and a fallback to 11 sp, checked on a small phone with a 1.3x font. That is a plan from the notes, not a measured result. The same notes list 48 dp touch targets, so a button never shrinks below a finger-sized area.</p>
+    <h2>The test routine</h2>
+    <p>Gesture navigation hides most of these bugs, so I test with the other mode. This is the routine.</p>
+    <ul><li>Use an emulator with three-button navigation (I use an Android 11 image).</li><li>Raise the font size to 1.3 with: adb shell settings put system font_scale 1.3 (set it back to 1.0 afterwards).</li><li>Open every screen, scroll to the very bottom and take a screenshot.</li><li>Repeat with the longest language and with a small screen.</li><li>Turn ads off and on, because optional elements change the layout.</li></ul>
+    <p>Before each release I now ask three questions. Is the last item of every scrolling screen fully above the bar? Does any bottom space depend on an optional element? Does any flexible item have a fixed minimum? Each step above reproduces one bug: three buttons show bugs 1 and 2, a small screen shows bug 3, a large font shows the cut labels, and ads off shows bug 1 again.</p>
+    
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>From which target SDK is edge-to-edge enforced?</summary><p>According to the Android documentation, edge-to-edge is enforced on Android 15 (API level 35) and higher once your app targets SDK 35.</p></details><details><summary>Does navigationBarsPadding() go before or after verticalScroll?</summary><p>Before. Placed after, the padding scrolls with the content and the list still shows behind the navigation bar.</p></details><details><summary>Why does my UI look fine on gesture navigation but break with three buttons?</summary><p>With three buttons a real, translucent navigation bar covers the bottom of the window, so any content without bottom padding sits under it.</p></details><details><summary>Why did my bottom line disappear on a small screen?</summary><p>A weight(1f) item shrinks to zero when the other items fill the screen. Make the screen scrollable and give that item a fixed height.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/measure-play-store-installs-with-utm-links-and-listing-experiments/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Measuring Play Installs: UTM Links and Listing Experiments</b></div></a></li><li><a href="/blog/secret-santa-algorithm-nobody-draws-themselves-one-big-cycle/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Secret Santa Draw Algorithm: No Self-Picks, No Swaps</b></div></a></li><li><a href="/blog/when-github-actions-macos-minutes-run-out-moving-ios-builds-to-codemagic/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>No macOS Minutes Left on GitHub Actions: Moving to Codemagic</b></div></a></li><li><a href="/blog/ads-in-kotlin-multiplatform-shared-interface-platform-shell/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Ads in Kotlin Multiplatform: Shared Interface, Platform Shell</b></div></a></li><li><a href="/blog/clarity-ai-visibility-topic-insights-for-a-small-site-first-results/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Clarity AI Visibility: Topic Insights for a Small Site, First Results</b></div></a></li><li><a href="/blog/scheduling-36-youtube-community-posts-when-there-is-no-api/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Scheduling 36 YouTube Community Posts When There Is No API</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

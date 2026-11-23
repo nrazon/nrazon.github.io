@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizli Hediye Çekilişi Algoritması: Kimse Kendini Çekmesin</title>
+<meta name="description" content="Kimsenin kendini çekmediği ve ikişer kişinin birbirine hediye vermediği bir çekiliş nasıl kurulur: tek büyük döngü, yasak çiftler, yedek yol ve testler.">
+<link rel="canonical" href="https://nesimapps.com/tr/yazilar/gizli-hediye-cekilisi-algoritmasi-kimse-kendini-cekmesin-tek-buyuk-dongu/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/secret-santa-algorithm-nobody-draws-themselves-one-big-cycle/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/gizli-hediye-cekilisi-algoritmasi-kimse-kendini-cekmesin-tek-buyuk-dongu/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/algoritmo-amigo-invisible-nadie-se-saca-a-si-mismo-un-solo-ciclo/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/algoritmo-amigo-secreto-ninguem-tira-a-si-mesmo-um-unico-ciclo/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/secret-santa-algorithm-nobody-draws-themselves-one-big-cycle/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Gizli Hediye Çekilişi Algoritması: Kimse Kendini Çekmesin">
+<meta property="og:description" content="Kimsenin kendini çekmediği ve ikişer kişinin birbirine hediye vermediği bir çekiliş nasıl kurulur: tek büyük döngü, yasak çiftler, yedek yol ve testler.">
+<meta property="og:url" content="https://nesimapps.com/tr/yazilar/gizli-hediye-cekilisi-algoritmasi-kimse-kendini-cekmesin-tek-buyuk-dongu/">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gizli Hediye Çekilişi Algoritması: Kimse Kendini Çekmesin">
+<meta name="twitter:description" content="Kimsenin kendini çekmediği ve ikişer kişinin birbirine hediye vermediği bir çekiliş nasıl kurulur: tek büyük döngü, yasak çiftler, yedek yol ve testler.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Gizli Hediye Çekilişi Algoritması: Kimse Kendini Çekmesin", "description": "Kimsenin kendini çekmediği ve ikişer kişinin birbirine hediye vermediği bir çekiliş nasıl kurulur: tek büyük döngü, yasak çiftler, yedek yol ve testler.", "inLanguage": "tr", "mainEntityOfPage": "https://nesimapps.com/tr/yazilar/gizli-hediye-cekilisi-algoritmasi-kimse-kendini-cekmesin-tek-buyuk-dongu/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-23", "dateModified": "2026-11-23", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Algoritmalar, Geliştirici notları"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/tr/"}, {"@type": "ListItem", "position": 2, "name": "Yazılar", "item": "https://nesimapps.com/tr/yazilar/"}, {"@type": "ListItem", "position": 3, "name": "Gizli Hediye Çekilişi Algoritması: Kimse Kendini Çekmesin", "item": "https://nesimapps.com/tr/yazilar/gizli-hediye-cekilisi-algoritmasi-kimse-kendini-cekmesin-tek-buyuk-dongu/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Şapkadan isim çekmek neden bazen takılır?", "acceptedAnswer": {"@type": "Answer", "text": "Son kişide yalnızca kendi adı kalabilir. 10 kişilik benzetimde 100 çekilişin yaklaşık 7-8'inde bu oldu."}}, {"@type": "Question", "name": "Düzensizlik (derangement) nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Kimsenin kendi yerinde kalmadığı karıştırma; yani kimse kendini çekmez. Yine de iki kişinin birbirine verdiği durum çıkabilir."}}, {"@type": "Question", "name": "Tek büyük döngü karşılıklı eşleşmeyi nasıl önler?", "acceptedAnswer": {"@type": "Answer", "text": "Tek halkada herkes yalnızca halkadaki bir sonraki kişiye verir; ikiden fazla kişide iki kişi birbirini gösteremez."}}, {"@type": "Question", "name": "Yasaklar halkayı imkânsız kılarsa ne olur?", "acceptedAnswer": {"@type": "Answer", "text": "Algoritma, takasların çıkabildiği genel bir geri izleme dağıtımına geçer; o da başarısız olursa sonuç döndürmez."}}, {"@type": "Question", "name": "İsimlerin benzersiz olması gerekir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. İşlev her ismi tablolarında anahtar olarak kullanır; aynı iki isim tek kişi sayılır."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/secret-santa-algorithm-nobody-draws-themselves-one-big-cycle/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/gizli-hediye-cekilisi-algoritmasi-kimse-kendini-cekmesin-tek-buyuk-dongu/" hreflang="tr" data-lang="tr" aria-current="page">TR</a><a href="/es/blog/algoritmo-amigo-invisible-nadie-se-saca-a-si-mismo-un-solo-ciclo/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/algoritmo-amigo-secreto-ninguem-tira-a-si-mesmo-um-unico-ciclo/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/tr/">Nesim Apps</a> › <a href="/tr/yazilar/">Yazılar</a></nav>
+    <h1>Gizli Hediye Çekilişi Algoritması: Kimse Kendini Çekmesin</h1>
+    <p class="by">Nesim Razon, bağımsız mobil uygulama geliştiricisi · 2026-11-23</p>
+    <p class="tags"><a href="/tr/yazilar/#algorithms">#Algoritmalar</a><a href="/tr/yazilar/#devlog">#Geliştirici notları</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Gizli hediye çekilişi basit görünür: herkes bir isim çeker. Sonra biri kendi adını çeker, iki kişi birbirine hediye verir, bir çift de başkasını şaşırtmak isterken birbirini çeker. Bu yazı ücretsiz çekiliş sayfamın arkasındaki algoritmayı anlatıyor: tek büyük döngü kur, yasak çiftlere uy, döngü yoksa yedek yola geç ve sonucu testlerle doğrula.</p>
+    <h2>Naif çekiliş ve takıldığı yer</h2>
+    <p>İlk fikir bir şapkadır: herkes sırayla şapkadan kendi adı olmayan rastgele bir isim çeker. Sessiz bir yerden bozulur. Son kişi şapkaya geldiğinde kalan tek isim kendi adı olabilir. 10 kişiyle yaptığım 100.000 çekilişlik benzetimde yüzde 7-8 oranında çekiliş böyle takıldı.</p>
+    <p>İkinci fikir tüm isimleri karıştırıp kimsenin kendini çekmediğine bakmak, biri çekmişse yeniden karıştırmaktır. Bu her zaman geçerli bir sonuca varır ama emek harcar. Kimsenin kendine düşmediği karıştırmaya düzensizlik (derangement) denir; aynı benzetimde 10 kişi için ortalama 2,7 deneme gerekti.</p>
+    <h2>Geçerli bir karıştırma da takas içerebilir</h2>
+    <p>4 kişiyi al. Hediyeleri dağıtmanın 24 yolu var. Yalnızca 9&#x27;unda kimse kendini çekmiyor. Bu 9&#x27;a bak:</p>
+    <ul><li>6&#x27;sı tek halka: A, B&#x27;ye; B, C&#x27;ye; C, D&#x27;ye; D, A&#x27;ya verir.</li><li>3&#x27;ü iki takas: A ile B birbirine, C ile D birbirine verir.</li></ul>
+    <p>Yani 4 kişi için geçerli sonuçların üçte biri takastır. 10 kişide benzetimimde geçerli karıştırmaların yaklaşık yüzde 39&#x27;unda en az bir takas vardı. Takas yanlış değil ama sıkıcı: çekilişte adını görür görmez hediyeyi kimin vereceğini öğrenirsin. Çoğu grup bunu istemez.</p>
+    <h2>Tek büyük döngü: karıştır ve komşuya ver</h2>
+    <p>Çözüm, çekim tablosu yerine bir halka düşünmek. İsimleri bir sıraya karıştır, herkes sıradaki bir sonrakine, sonuncu da ilkine versin. Kodda bu tek satır:</p>
+    <p>res[cycle[i]] = cycle[(i + 1) % n]</p>
+    <p>4 kişi C, A, D, B sırasına karışmışsa C, A&#x27;ya; A, D&#x27;ye; D, B&#x27;ye; B, C&#x27;ye verir. Herkes bir kez verir, bir kez alır, kimse kendine vermez. İkiden fazla kişide takas da olamaz; çünkü takas iki kişinin birbirini göstermesi demek, tek halkada ise herkes yalnızca bir sonrakini gösterir.</p>
+    <p>Sayı da fikre uyuyor: (n - 1)! farklı halka var. 3 kişide 2, 4 kişide 6, 10 kişide 362.880. Çeşitlilik bol.</p>
+    <h2>Alttaki karıştırma: Fisher-Yates</h2>
+    <p>Yukarıdakilerin hepsi adil bir karıştırmaya dayanıyor. Kod Fisher-Yates yöntemini kullanıyor: son konumdan ikinciye doğru yürü, baştan o ana kadar rastgele bir konum seç ve ikisini yer değiştir. Rastgele sayılar iyiyse n! sıralamanın her biri eşit olasılıklı olur. Döngü kısaca şöyle:</p>
+    <p>for (i = n - 1; i &gt; 0; i--) { j = floor(rnd() * (i + 1)); swap(a[i], a[j]); }</p>
+    <p>Sık yapılan bir hata, rastgele bir karşılaştırmayla sıralamaktır; bu her sıralamaya eşit şans vermez. Bir ayrıntı daha: işlev bir kopyayı karıştırır, yani senin isim listen hiç değişmez. Rastgelelik kaynağı bir parametredir ve varsayılan olarak Math.random kullanılır; bir test sabit bir dizi verip aynı çekilişi birebir tekrarlayabilir.</p>
+    <p>Fisher-Yates düz bir halkayı adil yapar. Yasak çiftler varsa arama, rastgele bir başlangıçtan geri izlemenin bulduğu ilk halkayı alır ve geçerli her halkanın eşit olasılıklı olduğunu iddia etmiyorum. Bir hediye çekilişi için bu yeterli. Her şey sayfanın içinde çalışır ve hiçbir isim bir sunucuya gönderilmez.</p>
+    <h2>Kurallar eklemek: çiftler ve yasak eşleşmeler</h2>
+    <p>Gerçek gruplarda kurallar olur: eşler birbirini çekmesin, ya da zaten hediyeleşen iki iş arkadaşı. Çekiliş sayfası her kuralı bir çift olarak saklar ve bir yasak tablosuna iki yönde yazar; yani bir çift hem A&#x27;nın B&#x27;ye hem B&#x27;nin A&#x27;ya vermesini engeller. Her isim kendini de yasaklar, kendini çekme bu yüzden elenir.</p>
+    <p>Artık düz karıştırma yetmez, çünkü rastgele komşu yasaklı olabilir. Kod halkayı adım adım kurar: karışık listenin ilk adından başla, kalan adları rastgele sırayla dene, kullanılmış ya da yasaklı olanı atla, zincir tıkanırsa bir adım geri dönüp başka ad dene. Buna geri izleme (backtracking) denir. Halka dolduğunda son kişinin ilk kişiye vermesine de izin verilmiş olmalı.</p>
+    <p>4 kişilik örnek: A ile B birbirini çekmesin. 6 halkadan yalnızca 2&#x27;si A ile B&#x27;yi ayrı tutuyor: A, C, B, D, A ve A, D, B, C, A. Kod bunlardan birini birkaç adımda bulur.</p>
+    <h2>Yedek yol ve imkânsız durum</h2>
+    <p>Bazen halka yoktur ama geçerli bir dağıtım vardır. Yasaklar A-B, B-C, C-D, D-A olan 4 kişiyi düşün. A yalnızca C&#x27;ye, B yalnızca D&#x27;ye verebilir; tek çözüm A ile C&#x27;nin, B ile D&#x27;nin takas yapmasıdır. Hiçbir halka bunu veremez.</p>
+    <p>Kod bu yüzden iki aşamalı çalışır. Önce halka için en çok 60 deneme yapar, her biri 4.000 adım bütçeli. Hiçbiri olmazsa 50.000 adım bütçeli düz bir rastgele geri izlemeli dağıtım çalıştırır. Sonuç hangisi olduğunu söyler: cycle true ya da cycle false. Sayfa da gruba takasın kaçınılmaz olduğunu söyleyebilir.</p>
+    <p>İki aşama da başarısız olursa fonksiyon null döndürür. 3 kişide A hem B hem C ile yasaksa kimse A&#x27;ya veremez ve A kimseye veremez; null doğru cevaptır. Null aynı zamanda bütçe içinde bulunamadı demektir; çok büyük ve çok sıkı kural kümelerinde bu kanıt değil, pratik bir sınırdır. 2 kişide tek sonuç takastır; olasılık kontrolü yapan yardımcı işlev 3&#x27;ten az isim için false döndürür.</p>
+    <h2>Doğru olduğunu nereden biliyorum</h2>
+    <p>Garantiler kolay söylenir. Herkes bir kez verir ve bir kez alır. Kimse kendini çekmez. Yasaklı hiçbir çift, iki yönde de görünmez. Sonuç cycle true diyorsa ilk addan yürümek tam n adımda geri döner.</p>
+    <p>Test dosyası dört grup için 400&#x27;er kez çekiliş yapar: 3 kişi, 1 yasaklı çiftle 4 kişi, 3 çiftle 10 kişi ve 2 yasak çiftle 50 kişi. Her çekilişten sonra dört şeye bakar: alıcı var ve verenden farklı, hiçbir alıcı iki kez görünmüyor, yasaklı çift yok ve halka sonuçlarında yürüyüş tam n adım sürüyor. Bir test daha, imkânsız 3 kişilik durumun null döndürdüğünü doğrular.</p>
+    <p>Yalnızca çekiliş yapmak istiyorsan sayfa nesimapps.com/cekilis/ adresinde; kullanıcı tarafı, kayıt gerektirmeyen online gizli hediye çekilişi yazısında anlatılıyor.</p>
+    
+    <section class="faq"><h2>Sık sorulan sorular</h2><details><summary>Şapkadan isim çekmek neden bazen takılır?</summary><p>Son kişide yalnızca kendi adı kalabilir. 10 kişilik benzetimde 100 çekilişin yaklaşık 7-8&#x27;inde bu oldu.</p></details><details><summary>Düzensizlik (derangement) nedir?</summary><p>Kimsenin kendi yerinde kalmadığı karıştırma; yani kimse kendini çekmez. Yine de iki kişinin birbirine verdiği durum çıkabilir.</p></details><details><summary>Tek büyük döngü karşılıklı eşleşmeyi nasıl önler?</summary><p>Tek halkada herkes yalnızca halkadaki bir sonraki kişiye verir; ikiden fazla kişide iki kişi birbirini gösteremez.</p></details><details><summary>Yasaklar halkayı imkânsız kılarsa ne olur?</summary><p>Algoritma, takasların çıkabildiği genel bir geri izleme dağıtımına geçer; o da başarısız olursa sonuç döndürmez.</p></details><details><summary>İsimlerin benzersiz olması gerekir mi?</summary><p>Evet. İşlev her ismi tablolarında anahtar olarak kullanır; aynı iki isim tek kişi sayılır.</p></details></section>
+    <section><h2>Diğer yazılar</h2><ul class="glist"><li><a href="/tr/yazilar/utm-baglantilari-ve-magaza-girisi-deneyleriyle-play-kurulumlarini-olcmek/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Play Kurulumlarını Ölçmek: UTM Bağlantıları ve Mağaza Deneyleri</b></div></a></li><li><a href="/tr/yazilar/github-actions-macos-dakikalari-bitince-ios-derlemelerini-codemagic-e-tasimak/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>GitHub Actions macOS Dakikaları Bitince Codemagic&#x27;e Geçiş</b></div></a></li><li><a href="/tr/yazilar/kotlin-multiplatformda-reklamlar-ortak-arayuz-platform-kabugu/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Kotlin Multiplatform&#x27;da Reklamlar: Ortak Arayüz, Platform Kabuğu</b></div></a></li><li><a href="/tr/yazilar/edge-to-edge-ve-3-tuslu-gezinmede-kesilen-arayuz-nasil-duzelir/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Edge-to-Edge ve 3 Tuşlu Gezinmede Kesilen Arayüz Nasıl Düzelir</b></div></a></li><li><a href="/tr/yazilar/clarity-ai-gorunurluk-kucuk-bir-site-icin-konu-icgoruleri-ilk-sonuclar/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Clarity AI Görünürlük: Küçük Bir Site İçin Konu İçgörüleri, İlk Sonuçlar</b></div></a></li><li><a href="/tr/yazilar/api-yokken-36-youtube-topluluk-gonderisini-zamanlamak/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>API Yokken 36 YouTube Topluluk Gönderisini Zamanlamak</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Measuring Play Installs: UTM Links and Listing Experiments</title>
+<meta name="description" content="Which link brought a visitor to your Play listing? How to tag links with UTM, where Play Console shows them, and what listing experiments can test.">
+<link rel="canonical" href="https://nesimapps.com/blog/measure-play-store-installs-with-utm-links-and-listing-experiments/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/measure-play-store-installs-with-utm-links-and-listing-experiments/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/utm-baglantilari-ve-magaza-girisi-deneyleriyle-play-kurulumlarini-olcmek/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/medir-instalaciones-en-play-con-enlaces-utm-y-experimentos-de-ficha/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/medir-instalacoes-no-play-com-links-utm-e-experimentos-de-pagina/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/measure-play-store-installs-with-utm-links-and-listing-experiments/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Measuring Play Installs: UTM Links and Listing Experiments">
+<meta property="og:description" content="Which link brought a visitor to your Play listing? How to tag links with UTM, where Play Console shows them, and what listing experiments can test.">
+<meta property="og:url" content="https://nesimapps.com/blog/measure-play-store-installs-with-utm-links-and-listing-experiments/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Measuring Play Installs: UTM Links and Listing Experiments">
+<meta name="twitter:description" content="Which link brought a visitor to your Play listing? How to tag links with UTM, where Play Console shows them, and what listing experiments can test.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Measuring Play Installs: UTM Links and Listing Experiments", "description": "Which link brought a visitor to your Play listing? How to tag links with UTM, where Play Console shows them, and what listing experiments can test.", "inLanguage": "en", "mainEntityOfPage": "https://nesimapps.com/blog/measure-play-store-installs-with-utm-links-and-listing-experiments/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-23", "dateModified": "2026-11-23", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Android, Dev notes"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Measuring Play Installs: UTM Links and Listing Experiments", "item": "https://nesimapps.com/blog/measure-play-store-installs-with-utm-links-and-listing-experiments/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Where do I see which link brought a Play visitor?", "acceptedAnswer": {"@type": "Answer", "text": "In Play Console under Grow users, Store performance, Conversion analysis. Filter the traffic source to ads and referrals to use the UTM source and campaign filters."}}, {"@type": "Question", "name": "How long does a store listing experiment run?", "acceptedAnswer": {"@type": "Answer", "text": "Google gives no fixed minimum. The creation page estimates the time and installs needed, and an experiment stops automatically after six months."}}, {"@type": "Question", "name": "What can a default graphics experiment test?", "acceptedAnswer": {"@type": "Answer", "text": "The icon, the feature graphic and the screenshots. Localized experiments can also test the descriptions."}}, {"@type": "Question", "name": "Are values like utm_source case sensitive?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Google treats utm_source=google and utm_source=Google as different values, so use lowercase everywhere."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/measure-play-store-installs-with-utm-links-and-listing-experiments/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/utm-baglantilari-ve-magaza-girisi-deneyleriyle-play-kurulumlarini-olcmek/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/medir-instalaciones-en-play-con-enlaces-utm-y-experimentos-de-ficha/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/medir-instalacoes-no-play-com-links-utm-e-experimentos-de-pagina/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>Measuring Play Installs: UTM Links and Listing Experiments</h1>
+    <p class="by">By Nesim Razon, independent mobile developer · 2026-11-23</p>
+    <p class="tags"><a href="/blog/#android">#Android</a><a href="/blog/#devlog">#Dev notes</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">A store page gets visitors from search, from ads, from your website and from QR codes, and by default you cannot tell the last three apart. Two Play Console tools help: tagged links show where a visitor came from, and store listing experiments show which version of the page converts better. Here is how I tag my own links, where the reports live, what an experiment can and cannot test, and why small traffic limits what you can conclude.</p>
+    <h2>How I tag a link to the store page</h2>
+    <p>Tagged links answer: which link sent this person to my store page? Listing experiments answer: when people arrive, which version of the page makes them install?</p>
+    <p>They work at different steps of the same path. First the visitor clicks a link. Then the store page either convinces them or it does not. Mixing the two questions gives confusing numbers, so keep them separate.</p>
+    <p>My website sends visitors to Google Play with a referrer parameter added to the store address. The value is percent-encoded, so the equals sign becomes %3D and the ampersand becomes %26:</p>
+    <ul><li>Normal badge on the site: referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb</li><li>QR code image on the site: referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dqr</li></ul>
+    <p>The source still shows the old address of my site. It was the first label I used, and I kept it so that the history stays in one row instead of splitting in two. The medium is the part that changes: web for the normal badge, qr for the code. Both patterns are in the site generator scripts, and the QR images are generated by a separate script. The same lowercase-only rule applies as everywhere else, because Google treats utm_source=google and utm_source=Google as different values.</p>
+    <h2>Where Play Console shows it</h2>
+    <p>The path I use is Grow users, then Store performance, then Conversion analysis. The page lets you filter by traffic source, store listing, country, language, UTM source and campaign, and acquisition state. A few details from Google&#x27;s help pages matter when you read it:</p>
+    <ul><li>Store listing visitors are people who opened your page and did not already have the app on any device.</li><li>The UTM source and campaign filters only appear when the traffic source is filtered to ads and referrals.</li><li>Values with too few visitors or acquisitions are grouped under Other, so a rare source can vanish into that row.</li><li>Installs that cannot be tied to a source, such as reinstalls or restores from backup, are counted as not attributed.</li></ul>
+    <p>One honest limit: Google&#x27;s help pages name the UTM source and campaign dimensions. They do not list the medium as a filter. I still send a medium, because it is a standard part of the tagging format, but I would check in your own console whether it appears before building a plan on it.</p>
+    <h2>Putting the website side next to the store side</h2>
+    <p>The site records its own event whenever a visitor clicks a Play link. In Google Analytics 4 that event is called play_click, and it carries the app name and the page where the click happened. So the website knows how many people left for the store, and Play Console knows how many arrived and installed.</p>
+    <p>Put the two numbers side by side:</p>
+    <p>Website: 40 play_click events on the weekly summary, as an example of the shape.</p>
+    <p>Play Console: the visitors from that referral source over the same week.</p>
+    <p>They will not match exactly. Some people click twice, some already have the app, some close the page, and the reports use different counting rules. The gap is still useful: if clicks are high and visitors are low, check the link. If visitors are high and installs are low, look at the page itself.</p>
+    <h2>What a store listing experiment can test</h2>
+    <p>Under Grow users, Store presence, Store listing experiments, you can run an A/B test on the page. From Google&#x27;s help page for experiments:</p>
+    <ul><li>A default graphics experiment tests the icon, the feature graphic and the screenshots.</li><li>A localized experiment can also test the descriptions, in one language at a time.</li><li>An app can run one default graphics experiment or up to five localized ones at the same time.</li><li>You test up to two variants against your current listing, and traffic is split equally between variants.</li><li>You choose the experiment audience percentage, which is the share of store impressions that see a variant.</li><li>The target metric is a unique user count of install clicks, open clicks or pre-registration clicks.</li><li>An experiment stops by itself after six months.</li></ul>
+    <p>Notice what is missing from that page: it does not say that a promo video or a short description can be tested. Do not plan around those until you see them in your own console.</p>
+    <h2>How to read the result</h2>
+    <p>When you create the experiment, Play Console estimates how long it needs and how many installs are required for a significant result. Two settings shape the answer. The confidence level controls how often the reported range contains the true value, so a higher level means fewer false winners. The minimum detectable effect is the smallest difference that counts. Anything smaller is reported as a draw.</p>
+    <p>The outcomes are simple: apply a variant, more data needed, or draw. On a draw you can keep the current page. That is a valid result, not a failure.</p>
+    <h2>The limits that matter for a small developer</h2>
+    <ul><li>Small traffic means long waits. A page with a few visitors per day cannot show a small difference within months. Test big changes, not a slightly different shade.</li><li>Change one thing per experiment. If you replace the icon and the screenshots together, you will not know which one worked.</li><li>Do not change your tagged links in the middle of an experiment. You want one moving part at a time.</li><li>A source row of three installs is a story, not a statistic. Count in dozens and compare channels over weeks.</li><li>Keep a log of dates: when you changed a graphic, when you started an experiment, when you published a new link.</li></ul>
+    <p>About my own record: I have planned experiments, for example a test of a page with and without a store video, written as an unchecked item in my release checklists. I have no finished experiment to report, so I will not claim any result. What I can show is the tagging that is already in place.</p>
+    <h2>A routine you can repeat for every new link</h2>
+    <p>Before you publish a link anywhere, run the same short routine. It takes two minutes and removes most mistakes.</p>
+    <ul><li>Write the source and medium on a note first, using only lowercase letters.</li><li>Build the store address with the referrer value percent-encoded.</li><li>Open it once in a private window and check that the store page loads.</li><li>Add the link to a small log with the date and the place it was published.</li><li>A few days later, open Conversion analysis and look for the new source row.</li><li>If the row is missing, remember that rows with too few visitors fall under Other. Wait before you blame the link.</li></ul>
+    <p>That last step saves the most time. A new link with five visitors will not appear on its own row, and that is normal, not a bug.</p>
+    
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Where do I see which link brought a Play visitor?</summary><p>In Play Console under Grow users, Store performance, Conversion analysis. Filter the traffic source to ads and referrals to use the UTM source and campaign filters.</p></details><details><summary>How long does a store listing experiment run?</summary><p>Google gives no fixed minimum. The creation page estimates the time and installs needed, and an experiment stops automatically after six months.</p></details><details><summary>What can a default graphics experiment test?</summary><p>The icon, the feature graphic and the screenshots. Localized experiments can also test the descriptions.</p></details><details><summary>Are values like utm_source case sensitive?</summary><p>Yes. Google treats utm_source=google and utm_source=Google as different values, so use lowercase everywhere.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/secret-santa-algorithm-nobody-draws-themselves-one-big-cycle/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Secret Santa Draw Algorithm: No Self-Picks, No Swaps</b></div></a></li><li><a href="/blog/when-github-actions-macos-minutes-run-out-moving-ios-builds-to-codemagic/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>No macOS Minutes Left on GitHub Actions: Moving to Codemagic</b></div></a></li><li><a href="/blog/ads-in-kotlin-multiplatform-shared-interface-platform-shell/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Ads in Kotlin Multiplatform: Shared Interface, Platform Shell</b></div></a></li><li><a href="/blog/edge-to-edge-and-three-button-navigation-fixing-clipped-compose-ui/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Edge-to-Edge and 3-Button Navigation: Fixing Clipped Compose UI</b></div></a></li><li><a href="/blog/clarity-ai-visibility-topic-insights-for-a-small-site-first-results/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Clarity AI Visibility: Topic Insights for a Small Site, First Results</b></div></a></li><li><a href="/blog/scheduling-36-youtube-community-posts-when-there-is-no-api/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Scheduling 36 YouTube Community Posts When There Is No API</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

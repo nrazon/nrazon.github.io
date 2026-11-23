@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt" data-lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edge-to-edge e 3 botões: corrija a interface cortada</title>
+<meta name="description" content="Por que o texto fica sob a barra de navegação após o edge-to-edge: três bugs reais dos meus apps, correções no Compose e uma rotina de testes.">
+<link rel="canonical" href="https://nesimapps.com/pt/blog/edge-to-edge-e-navegacao-de-3-botoes-corrigindo-a-interface-cortada/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/edge-to-edge-and-three-button-navigation-fixing-clipped-compose-ui/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/edge-to-edge-ve-3-tuslu-gezinmede-kesilen-arayuz-nasil-duzelir/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/edge-to-edge-y-navegacion-de-3-botones-arreglar-la-interfaz-recortada/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/edge-to-edge-e-navegacao-de-3-botoes-corrigindo-a-interface-cortada/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/edge-to-edge-and-three-button-navigation-fixing-clipped-compose-ui/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Edge-to-edge e 3 botões: corrija a interface cortada">
+<meta property="og:description" content="Por que o texto fica sob a barra de navegação após o edge-to-edge: três bugs reais dos meus apps, correções no Compose e uma rotina de testes.">
+<meta property="og:url" content="https://nesimapps.com/pt/blog/edge-to-edge-e-navegacao-de-3-botoes-corrigindo-a-interface-cortada/">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Edge-to-edge e 3 botões: corrija a interface cortada">
+<meta name="twitter:description" content="Por que o texto fica sob a barra de navegação após o edge-to-edge: três bugs reais dos meus apps, correções no Compose e uma rotina de testes.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Edge-to-edge e 3 botões: corrija a interface cortada", "description": "Por que o texto fica sob a barra de navegação após o edge-to-edge: três bugs reais dos meus apps, correções no Compose e uma rotina de testes.", "inLanguage": "pt", "mainEntityOfPage": "https://nesimapps.com/pt/blog/edge-to-edge-e-navegacao-de-3-botoes-corrigindo-a-interface-cortada/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-23", "dateModified": "2026-11-23", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Android, Jetpack Compose"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/pt/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/pt/blog/"}, {"@type": "ListItem", "position": 3, "name": "Edge-to-edge e 3 botões: corrija a interface cortada", "item": "https://nesimapps.com/pt/blog/edge-to-edge-e-navegacao-de-3-botoes-corrigindo-a-interface-cortada/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "A partir de qual SDK de destino o edge-to-edge é obrigatório?", "acceptedAnswer": {"@type": "Answer", "text": "Segundo a documentação do Android, o edge-to-edge é obrigatório no Android 15 (API 35) e superior quando o app mira o SDK 35."}}, {"@type": "Question", "name": "O navigationBarsPadding() vai antes ou depois do verticalScroll?", "acceptedAnswer": {"@type": "Answer", "text": "Antes. Se vier depois, o espaço rola junto com o conteúdo e a lista continua aparecendo atrás da barra de navegação."}}, {"@type": "Question", "name": "Por que minha interface fica boa com gestos mas quebra com três botões?", "acceptedAnswer": {"@type": "Answer", "text": "Com três botões uma barra de navegação real e translúcida cobre a base da janela, e o conteúdo sem espaço inferior fica embaixo dela."}}, {"@type": "Question", "name": "Por que a minha linha inferior sumiu em uma tela pequena?", "acceptedAnswer": {"@type": "Answer", "text": "Um item com weight(1f) encolhe a zero quando os outros enchem a tela. Torne a tela rolável e dê a esse item uma altura fixa."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/edge-to-edge-and-three-button-navigation-fixing-clipped-compose-ui/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/edge-to-edge-ve-3-tuslu-gezinmede-kesilen-arayuz-nasil-duzelir/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/edge-to-edge-y-navegacion-de-3-botones-arreglar-la-interfaz-recortada/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/edge-to-edge-e-navegacao-de-3-botoes-corrigindo-a-interface-cortada/" hreflang="pt" data-lang="pt" aria-current="page">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/pt/">Nesim Apps</a> › <a href="/pt/blog/">Blog</a></nav>
+    <h1>Edge-to-edge e 3 botões: corrija a interface cortada</h1>
+    <p class="by">Por Nesim Razon, desenvolvedor mobile independente · 2026-11-23</p>
+    <p class="tags"><a href="/pt/blog/#android">#Android</a><a href="/pt/blog/#compose">#Jetpack Compose</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Quando o seu app mira o SDK 35, o sistema o desenha atrás da barra de status e da barra de navegação. Com gestos, quase sempre parece bem. Em um celular com três botões, a última linha pode ficar sob a barra ou uma linha inferior pode sumir. Aqui estão três bugs reais dos meus próprios apps, a correção de cada um e a rotina de testes que uso agora.</p>
+    <h2>O que o edge-to-edge mudou</h2>
+    <p>A documentação do Android diz que o edge-to-edge é obrigatório quando o app mira o SDK 35 e roda no Android 15 ou superior. A janela ocupa a tela inteira e é desenhada atrás das barras do sistema. Em versões anteriores do Android, você obtém o mesmo visual chamando enableEdgeToEdge() na activity. Meus apps miram o SDK 36, então em um celular atual isso não é opcional.</p>
+    <ul><li>O sistema não move o seu conteúdo. Seu layout precisa ler os insets, as áreas cobertas pela interface do sistema, e reservar o próprio espaço.</li><li>Com enableEdgeToEdge() a barra de gestos é transparente, mas a barra de três botões recebe por padrão uma camada translúcida.</li><li>Assim, a mesma tela pode ficar certa com gestos e errada com três botões: uma barra de verdade fica por cima da sua última linha.</li></ul>
+    <p>Pense nisso como uma mudança de contrato. Antes, o sistema reservava as áreas das barras e o seu layout vivia no que sobrava. Agora o seu layout é dono de todo o retângulo e você decide onde começa a área segura. A maioria dos bugs de interface cortada são lugares onde ninguém decidiu.</p>
+    <p>No Compose, os dois modificadores mais usados são statusBarsPadding() para o topo e navigationBarsPadding() para a base. Os três bugs abaixo são pequenos erros em torno deles.</p>
+    <h2>Bug 1: o espaço da barra dependia de um anúncio</h2>
+    <p>No Calisan Asistani, um app Android, as telas inicial e de ajustes não têm banner. Elas entravam sob a barra de navegação. Adicionei navigationBarsPadding() à caixa da página e achei que estava pronto.</p>
+    <p>Alguns dias depois aconteceu de novo. A causa real: o espaço inferior vinha só do banner, escrito como Banner(Modifier.navigationBarsPadding()). Quando o banner não era desenhado, porque os anúncios estavam desligados, faltava o consentimento ou nada tinha carregado, o espaço sumia junto. O conteúdo ficava sob os botões virtuais.</p>
+    <p>A correção é tirar o espaço da barra de algo que sempre existe. Coloquei uma caixa com navigationBarsPadding() no fim da página, e o banner vive dentro dessa caixa só nas telas que o mostram.</p>
+    <ul><li>Antes: Banner(Modifier.navigationBarsPadding())</li><li>Depois: Box(Modifier.fillMaxWidth().navigationBarsPadding()) { if (temBanner) Banner() }</li></ul>
+    <p>Depois testei cada tela com anúncios ligados e desligados. A regra é simples: se um espaço está preso a um elemento que pode estar ausente, leve-o para o contêiner dele. Esse bug exige um estado específico, a ausência de anúncio, então só aparece se você testar esse estado de propósito.</p>
+    <h2>Bug 2: o espaço no lugar errado</h2>
+    <p>No Pentolings, o conteúdo de ajustes e estatísticas passava por baixo dos botões de navegação. A nota que guardo sobre isso diz que o problema voltou depois de eu o corrigir em outros jogos. A causa era a ordem dos modificadores em uma coluna com rolagem.</p>
+    <ul><li>Errado: Modifier.weight(1f).verticalScroll(state).navigationBarsPadding()</li><li>Certo: Modifier.weight(1f).navigationBarsPadding().verticalScroll(state)</li></ul>
+    <p>Minha explicação, tirada das notas: se o espaço vem depois de verticalScroll, ele é adicionado dentro do conteúdo rolável. A janela visível da lista continua chegando à borda inferior da tela, e o conteúdo aparece por trás dos botões. Se o espaço vem primeiro, a própria janela termina acima da barra. As telas do Pentolings agora usam a segunda ordem, por exemplo em HelpScreen.kt e Screens.kt.</p>
+    <p>Uma verificação rápida para esse bug: role até o final da tela. O último item deve parar totalmente acima da barra, com um pouco de espaço. Se parar atrás da barra, a ordem está errada.</p>
+    <h2>Bug 3: um weight espremido até zero</h2>
+    <p>A tela de ajustes do Slinglings é uma coluna com título, chaves, botões, uma cena decorativa de mesa e uma linha de versão. A cena usava weight(1f) para pegar a altura que sobrasse, e a linha de versão ficava embaixo.</p>
+    <p>Quando as linhas de cima enchiam a tela, não sobrava nada para o weight. A cena encolhia para altura zero e a linha de versão, no fim, era cortada. Um celular mais alto escondia o problema, então ele só aparecia em telas pequenas.</p>
+    <ul><li>Antes: DeskScene(Modifier.weight(1f))</li><li>Depois: verticalScroll na coluna, DeskScene(Modifier.height(150.dp))</li></ul>
+    <p>Agora a coluna rola e a cena tem altura fixa. Se o conteúdo não cabe, o usuário rola em vez de perder uma linha. A mesma mudança também fez a linha de versão deixar de ser um texto fixo: agora ela lê o nome de versão real.</p>
+    <p>Havia duas saídas: dar uma altura mínima aos itens flexíveis ou tornar a tela rolável. Escolhi rolagem mais altura fixa, porque em um celular pequeno a cena decorativa é a primeira coisa a ser sacrificada.</p>
+    <h2>Qual inset para cada tarefa</h2>
+    <p>O Compose oferece vários modificadores de insets. Você não precisa de todos, mas ajuda saber o que cada um responde.</p>
+    <ul><li>statusBarsPadding(): mantém uma barra superior abaixo da barra de status.</li><li>navigationBarsPadding(): mantém o conteúdo inferior acima da barra de navegação, tanto com gestos quanto com botões.</li><li>systemBarsPadding(): os dois anteriores em um só modificador.</li><li>imePadding(): mantém um campo de texto acima do teclado na tela.</li><li>safeDrawingPadding(): barras do sistema, teclado e recortes de tela juntos.</li><li>Scaffold: entrega um valor innerPadding. Se você o ignora, o conteúdo não recebe espaço nenhum.</li></ul>
+    <p>A documentação do Android também lista os insets de recorte de tela e os insets de gestos do sistema. Os de gestos importam quando os seus próprios deslizes começam perto da borda; a documentação cita como exemplo o deslize em jogos. Minhas telas usam principalmente os dois primeiros modificadores. Não precisei de mais, então não posso dizer por experiência como os outros se comportam em cada caso.</p>
+    <h2>Texto grande e idiomas mais longos</h2>
+    <p>Alturas fixas também são arriscadas no outro sentido. Um botão com altura fixa corta o rótulo quando o usuário escolhe uma fonte maior. No Pentolings o botão comum usa heightIn(min = ...) para poder crescer com o texto.</p>
+    <p>Nas minhas notas de outros apps também planejei testar com fonte de 1.3x e 1.5x, porque os rótulos em espanhol e português são mais longos que em inglês. Ainda não fiz esse teste em todos os apps e não afirmo que fiz. Trato isso como item de checklist, não como resultado.</p>
+    <p>Faça a conta: com escala de fonte 1.3, um rótulo de 14 sp é desenhado a cerca de 18 sp, então as mesmas palavras precisam de uns 30 por cento mais de largura. Um rótulo que cabia em uma linha pode precisar de duas, ou ser cortado.</p>
+    <p>Nas notas de design do Tilelings escrevi uma regra para rótulos longos: uma linha só, um teste de medição e uma redução para 11 sp, verificados em um celular pequeno com fonte 1.3x. É um plano das notas, não um resultado medido. As mesmas notas listam alvos de toque de 48 dp, para que um botão nunca fique menor que um dedo.</p>
+    <h2>A rotina de testes</h2>
+    <p>A navegação por gestos esconde a maioria desses bugs, então testo com o outro modo. Esta é a rotina.</p>
+    <ul><li>Use um emulador com navegação de três botões (eu uso uma imagem do Android 11).</li><li>Aumente a fonte para 1.3 com: adb shell settings put system font_scale 1.3 (depois volte para 1.0).</li><li>Abra cada tela, role até o final e tire uma captura.</li><li>Repita com o idioma mais longo e com uma tela pequena.</li><li>Ligue e desligue os anúncios, porque elementos opcionais mudam o layout.</li></ul>
+    <p>Antes de cada versão faço agora três perguntas. O último item de cada tela rolável fica totalmente acima da barra? Algum espaço inferior depende de um elemento opcional? Algum item flexível tem um mínimo fixo? Cada passo acima reproduz um bug: três botões mostram os bugs 1 e 2, uma tela pequena mostra o 3, uma fonte grande mostra os rótulos cortados, e desligar os anúncios mostra o 1 de novo.</p>
+    
+    <section class="faq"><h2>Perguntas frequentes</h2><details><summary>A partir de qual SDK de destino o edge-to-edge é obrigatório?</summary><p>Segundo a documentação do Android, o edge-to-edge é obrigatório no Android 15 (API 35) e superior quando o app mira o SDK 35.</p></details><details><summary>O navigationBarsPadding() vai antes ou depois do verticalScroll?</summary><p>Antes. Se vier depois, o espaço rola junto com o conteúdo e a lista continua aparecendo atrás da barra de navegação.</p></details><details><summary>Por que minha interface fica boa com gestos mas quebra com três botões?</summary><p>Com três botões uma barra de navegação real e translúcida cobre a base da janela, e o conteúdo sem espaço inferior fica embaixo dela.</p></details><details><summary>Por que a minha linha inferior sumiu em uma tela pequena?</summary><p>Um item com weight(1f) encolhe a zero quando os outros enchem a tela. Torne a tela rolável e dê a esse item uma altura fixa.</p></details></section>
+    <section><h2>Mais do blog</h2><ul class="glist"><li><a href="/pt/blog/medir-instalacoes-no-play-com-links-utm-e-experimentos-de-pagina/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Medir instalações no Play: links UTM e experimentos de página</b></div></a></li><li><a href="/pt/blog/algoritmo-amigo-secreto-ninguem-tira-a-si-mesmo-um-unico-ciclo/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Algoritmo de amigo secreto: sem autossorteio e sem trocas</b></div></a></li><li><a href="/pt/blog/quando-os-minutos-de-macos-do-github-actions-acabam-levando-os-builds-ios-para-o-codemagic/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Sem minutos de macOS no GitHub Actions: migrando para o Codemagic</b></div></a></li><li><a href="/pt/blog/anuncios-no-kotlin-multiplatform-interface-compartilhada-e-camada-por-plataforma/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Anúncios no Kotlin Multiplatform: interface e camada nativa</b></div></a></li><li><a href="/pt/blog/clarity-ai-visibility-topic-insights-para-um-site-pequeno-primeiros-resultados/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Clarity AI Visibility: Topic Insights para um site pequeno, primeiros resultados</b></div></a></li><li><a href="/pt/blog/agendar-36-posts-da-comunidade-do-youtube-quando-nao-ha-api/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Agendar 36 posts da comunidade do YouTube quando não há API</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

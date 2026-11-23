@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edge-to-Edge ve 3 Tuşlu Gezinmede Kesilen Arayüz Nasıl Düzelir</title>
+<meta name="description" content="Edge-to-edge sonrası yazılar neden gezinme çubuğunun altında kalır: kendi uygulamalarımdan üç gerçek hata, Compose çözümleri ve test rutini.">
+<link rel="canonical" href="https://nesimapps.com/tr/yazilar/edge-to-edge-ve-3-tuslu-gezinmede-kesilen-arayuz-nasil-duzelir/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/edge-to-edge-and-three-button-navigation-fixing-clipped-compose-ui/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/edge-to-edge-ve-3-tuslu-gezinmede-kesilen-arayuz-nasil-duzelir/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/edge-to-edge-y-navegacion-de-3-botones-arreglar-la-interfaz-recortada/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/edge-to-edge-e-navegacao-de-3-botoes-corrigindo-a-interface-cortada/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/edge-to-edge-and-three-button-navigation-fixing-clipped-compose-ui/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Edge-to-Edge ve 3 Tuşlu Gezinmede Kesilen Arayüz Nasıl Düzelir">
+<meta property="og:description" content="Edge-to-edge sonrası yazılar neden gezinme çubuğunun altında kalır: kendi uygulamalarımdan üç gerçek hata, Compose çözümleri ve test rutini.">
+<meta property="og:url" content="https://nesimapps.com/tr/yazilar/edge-to-edge-ve-3-tuslu-gezinmede-kesilen-arayuz-nasil-duzelir/">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Edge-to-Edge ve 3 Tuşlu Gezinmede Kesilen Arayüz Nasıl Düzelir">
+<meta name="twitter:description" content="Edge-to-edge sonrası yazılar neden gezinme çubuğunun altında kalır: kendi uygulamalarımdan üç gerçek hata, Compose çözümleri ve test rutini.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Edge-to-Edge ve 3 Tuşlu Gezinmede Kesilen Arayüz Nasıl Düzelir", "description": "Edge-to-edge sonrası yazılar neden gezinme çubuğunun altında kalır: kendi uygulamalarımdan üç gerçek hata, Compose çözümleri ve test rutini.", "inLanguage": "tr", "mainEntityOfPage": "https://nesimapps.com/tr/yazilar/edge-to-edge-ve-3-tuslu-gezinmede-kesilen-arayuz-nasil-duzelir/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-23", "dateModified": "2026-11-23", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Android, Jetpack Compose"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/tr/"}, {"@type": "ListItem", "position": 2, "name": "Yazılar", "item": "https://nesimapps.com/tr/yazilar/"}, {"@type": "ListItem", "position": 3, "name": "Edge-to-Edge ve 3 Tuşlu Gezinmede Kesilen Arayüz Nasıl Düzelir", "item": "https://nesimapps.com/tr/yazilar/edge-to-edge-ve-3-tuslu-gezinmede-kesilen-arayuz-nasil-duzelir/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Edge-to-edge hangi hedef SDK'dan itibaren zorunlu?", "acceptedAnswer": {"@type": "Answer", "text": "Android belgelerine göre uygulama SDK 35'i hedefleyince Android 15 (API 35) ve üstünde edge-to-edge zorunlu olur."}}, {"@type": "Question", "name": "navigationBarsPadding() verticalScroll'dan önce mi sonra mı gelmeli?", "acceptedAnswer": {"@type": "Answer", "text": "Önce. Sonra gelirse boşluk içerikle birlikte kayar ve liste gezinme çubuğunun arkasında görünmeye devam eder."}}, {"@type": "Question", "name": "Arayüzüm hareketli gezinmede düzgün, üç tuşta bozuk görünüyor, neden?", "acceptedAnswer": {"@type": "Answer", "text": "Üç tuşta gerçek ve yarı saydam bir gezinme çubuğu pencerenin altını kaplar; alt boşluğu olmayan içerik onun altında kalır."}}, {"@type": "Question", "name": "Küçük ekranda alttaki satırım neden kayboldu?", "acceptedAnswer": {"@type": "Answer", "text": "Diğer öğeler ekranı doldurunca weight(1f) olan öğe sıfıra iner. Ekranı kaydırılabilir yap ve o öğeye sabit yükseklik ver."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/edge-to-edge-and-three-button-navigation-fixing-clipped-compose-ui/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/edge-to-edge-ve-3-tuslu-gezinmede-kesilen-arayuz-nasil-duzelir/" hreflang="tr" data-lang="tr" aria-current="page">TR</a><a href="/es/blog/edge-to-edge-y-navegacion-de-3-botones-arreglar-la-interfaz-recortada/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/edge-to-edge-e-navegacao-de-3-botoes-corrigindo-a-interface-cortada/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/tr/">Nesim Apps</a> › <a href="/tr/yazilar/">Yazılar</a></nav>
+    <h1>Edge-to-Edge ve 3 Tuşlu Gezinmede Kesilen Arayüz Nasıl Düzelir</h1>
+    <p class="by">Nesim Razon, bağımsız mobil uygulama geliştiricisi · 2026-11-23</p>
+    <p class="tags"><a href="/tr/yazilar/#android">#Android</a><a href="/tr/yazilar/#compose">#Jetpack Compose</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Uygulaman SDK 35&#x27;i hedefleyince sistem onu durum çubuğunun ve gezinme çubuğunun arkasına çizer. Hareketli gezinmede çoğu zaman sorun görünmez. Üç tuşlu bir telefonda son satır çubuğun altında kalabilir ya da alttaki bir satır kaybolabilir. Kendi uygulamalarımdan üç gerçek hatayı, her birinin çözümünü ve şimdi kullandığım test rutinini anlatıyorum.</p>
+    <h2>Edge-to-edge neyi değiştirdi</h2>
+    <p>Android belgeleri, uygulama SDK 35&#x27;i hedefleyip Android 15 veya üstünde çalıştığında edge-to-edge&#x27;in zorunlu olduğunu söylüyor. Pencere bütün ekrana yayılır ve sistem çubuklarının arkasına çizilir. Eski Android sürümlerinde aynı görünümü etkinlikte enableEdgeToEdge() çağırarak alırsın. Benim uygulamalarım SDK 36&#x27;yı hedefliyor, yani güncel bir telefonda bu seçenek değil.</p>
+    <p>Belgeler ayrıca şunu da hatırlatıyor: uygulaman zaten edge-to-edge değilse, SDK 35&#x27;e geçince bazı bölümleri örtülebilir ve inset&#x27;leri sen ele almak zorunda kalırsın. Yani bu iş, hedef SDK&#x27;yı yükselttiğin gün başlayan bir bakım işidir.</p>
+    <ul><li>Sistem içeriğini senin yerine kaydırmaz. Düzenin, sistem arayüzünün kapladığı alanları yani inset&#x27;leri okuyup kendine boşluk bırakmalı.</li><li>enableEdgeToEdge() ile hareket çubuğu saydamdır, ama üç tuşlu çubuk varsayılan olarak yarı saydam bir perde alır.</li><li>Yani aynı ekran hareketli gezinmede doğru, üç tuşta yanlış görünebilir: gerçek bir çubuk son satırının üstünde durur.</li></ul>
+    <p>Bunu bir sözleşme değişikliği gibi düşün. Eskiden sistem çubuk alanlarını ayırıyordu ve düzenin kalan yerde yaşıyordu. Şimdi düzenin tüm dikdörtgenin sahibi ve güvenli alanın nerede başlayacağına sen karar veriyorsun. Kesilen arayüz hatalarının çoğu, kimsenin karar vermediği yerlerdir.</p>
+    <p>Compose&#x27;ta en çok iki değiştirici lazım: üst için statusBarsPadding(), alt için navigationBarsPadding(). Aşağıdaki üç hatanın hepsi bunların çevresindeki küçük yanlışlar.</p>
+    <h2>Hata 1: çubuk boşluğu bir reklama bağlıydı</h2>
+    <p>Çalışan Asistanı adlı Android uygulamamda ana ekran ve ayarlar sayfalarında banner reklam yok. Bu sayfalar gezinme çubuğunun altına giriyordu. Sayfa kutusuna navigationBarsPadding() ekledim ve bitti sandım.</p>
+    <p>Birkaç gün sonra yine oldu. Asıl neden şuydu: alttaki boşluk yalnızca banner&#x27;dan geliyordu, yani Banner(Modifier.navigationBarsPadding()) olarak yazılmıştı. Banner hiç çizilmeyince (reklam kapalı, onay yok ya da hiçbir şey yüklenmemiş) boşluk da kayboluyordu. İçerik yazılım düğmelerinin altına giriyordu.</p>
+    <p>Çözüm, çubuk boşluğunu her zaman var olan bir şeyden almak. Sayfanın altına navigationBarsPadding() olan bir kutu koydum; banner yalnızca onu gösteren ekranlarda bu kutunun içinde yaşıyor.</p>
+    <p>Bu hatayı yalnızca ekran görüntüsüyle yakalamak zor; hangi durumda çıktığını bilmek gerekir. Notlarıma durumları da yazdım: banner çizilmediğinde reklamsız mod, UMP onayının olmaması ve reklam izninin olmaması aynı sonucu veriyordu.</p>
+    <ul><li>Önce: Banner(Modifier.navigationBarsPadding())</li><li>Sonra: Box(Modifier.fillMaxWidth().navigationBarsPadding()) { if (bannerVar) Banner() }</li></ul>
+    <p>Sonra her ekranı reklam açıkken ve kapalıyken denedim. Kural basit: bir boşluk, yokluğu mümkün bir öğeye bağlıysa onu üst öğesine taşı. Bu hata belirli bir durum ister, yani reklamın olmaması; o durumu bilerek denemezsen hiç görünmez.</p>
+    <h2>Hata 2: boşluk yanlış yerde</h2>
+    <p>Pentolings&#x27;te ayarlar ve istatistik içeriği gezinme düğmelerinin altına akıyordu. Bunun için tuttuğum hafıza notu, başka oyunlarda düzelttikten sonra yeniden çıktığını yazıyor. Neden, kaydırmalı bir sütundaki değiştirici sırasıydı.</p>
+    <ul><li>Yanlış: Modifier.weight(1f).verticalScroll(state).navigationBarsPadding()</li><li>Doğru: Modifier.weight(1f).navigationBarsPadding().verticalScroll(state)</li></ul>
+    <p>Notlardaki açıklamam şu: boşluk verticalScroll&#x27;dan sonra gelirse kaydırılan içeriğin içine eklenir. Listenin görünür penceresi hâlâ ekranın alt kenarına uzanır, içerik düğmelerin arkasından görünür. Boşluk önce gelirse pencerenin kendisi çubuğun üstünde biter. Pentolings ekranları artık ikinci sırayı kullanıyor, örneğin HelpScreen.kt ve Screens.kt içinde.</p>
+    <p>Bu hata için hızlı bir kontrol: ekranın en sonuna kadar kaydır. Son öğe çubuğun tamamen üstünde, biraz boşlukla durmalı. Çubuğun arkasında duruyorsa sıra yanlıştır.</p>
+    <p>Başka bir deyişle sorun hiçbir zaman ekranın kendisinde değildi. Sorun, kaydırma penceresinin nerede bittiğiydi.</p>
+    <h2>Hata 3: sıfıra sıkışan weight</h2>
+    <p>Slinglings&#x27;in ayarlar ekranı bir sütun: başlık, anahtarlar, düğmeler, süs olarak bir masa sahnesi ve bir sürüm satırı. Masa sahnesi kalan yüksekliği almak için weight(1f) kullanıyordu, sürüm satırı da altındaydı.</p>
+    <p>Üstteki satırlar ekranı doldurunca weight&#x27;e hiçbir şey kalmıyordu. Sahne sıfır yüksekliğe iniyor, en alttaki sürüm satırı kesiliyordu. Daha uzun bir telefon sorunu gizliyordu, o yüzden yalnızca küçük ekranda görünüyordu.</p>
+    <ul><li>Önce: DeskScene(Modifier.weight(1f))</li><li>Sonra: sütunda verticalScroll, DeskScene(Modifier.height(150.dp))</li></ul>
+    <p>Sütun artık kaydırılabilir ve sahnenin sabit bir yüksekliği var. İçerik sığmazsa kullanıcı kaydırır, bir satırı kaybetmez. Aynı değişiklik sürüm satırını da sabit yazı olmaktan çıkardı: artık gerçek sürüm adını okuyor.</p>
+    <p>İki çıkış yolu vardı: esnek öğelere asgari yükseklik vermek ya da ekranı kaydırılabilir yapmak. Kaydırma artı sabit yükseklik seçtim, çünkü küçük telefonda süs sahnesi vazgeçilecek ilk şey.</p>
+    <p>Bu hatayı denemek için küçük bir cihaz profili kullan; asıl hata yalnızca ekran yüksekliği içeriğe yetmediğinde görünür.</p>
+    <h2>Hangi iş için hangi inset</h2>
+    <p>Compose birkaç inset değiştiricisi sunar. Hepsine ihtiyacın yok, ama her birinin neyi yanıtladığını bilmek işe yarar.</p>
+    <ul><li>statusBarsPadding(): üst çubuğu durum çubuğunun altında tutar.</li><li>navigationBarsPadding(): alttaki içeriği gezinme çubuğunun üstünde tutar; hareket kipinde de düğme kipinde de.</li><li>systemBarsPadding(): yukarıdakilerin ikisi tek değiştiricide.</li><li>imePadding(): bir metin alanını ekran klavyesinin üstünde tutar.</li><li>safeDrawingPadding(): sistem çubukları, klavye ve ekran çentiklerini birlikte kapsar.</li><li>Scaffold: sana bir innerPadding değeri verir. Onu görmezden gelirsen içerik hiç boşluk almaz.</li></ul>
+    <p>Android belgeleri ayrıca ekran çentiği inset&#x27;lerini ve sistem hareketi inset&#x27;lerini sayıyor. Hareket inset&#x27;leri, kendi kaydırma hareketlerin ekran kenarına yakın başladığında önemli; belgeler örnek olarak oyunlardaki kaydırmayı anıyor. Benim ekranlarım çoğunlukla ilk iki değiştiriciyi kullanıyor. Fazlasına ihtiyaç duymadım, bu yüzden diğerlerinin her durumda nasıl davrandığını deneyimimden söyleyemem.</p>
+    <h2>Büyük yazı ve uzun diller</h2>
+    <p>Sabit yükseklik öbür yönde de risklidir. Sabit yükseklikli bir düğme, kullanıcı daha büyük yazı seçince etiketini keser. Pentolings&#x27;te ortak düğme heightIn(min = ...) kullanır, böylece yazıyla birlikte büyüyebilir.</p>
+    <p>Diğer uygulamalar için notlarımda 1.3x ve 1.5x yazı boyutunda test de planladım; çünkü İspanyolca ve Portekizce etiketler İngilizceden uzun. Bu testi her uygulamada henüz çalıştırmadım ve yaptım demiyorum. Onu sonuç değil, kontrol listesi maddesi sayıyorum.</p>
+    <p>Hesabı yap: 1.3 yazı ölçeğinde 14 sp&#x27;lik bir etiket yaklaşık 18 sp çizilir, yani aynı kelimeler kabaca yüzde 30 daha fazla genişlik ister. Tek satıra sığan bir etiket artık iki satır isteyebilir ya da kesilebilir.</p>
+    <p>Tilelings tasarım notlarında uzun etiketler için bir kural yazdım: yalnızca tek satır, bir ölçü testi ve 11 sp&#x27;ye düşme planı; küçük bir telefonda 1.3x yazıyla denenecek. Bu notlardaki bir plan, ölçülmüş bir sonuç değil. Aynı notlar 48 dp dokunma hedeflerini de sayıyor; yani bir düğme parmak boyutunun altına inmez.</p>
+    <h2>Test rutini</h2>
+    <p>Hareketli gezinme bu hataların çoğunu gizler, bu yüzden öbür kipte test ediyorum. Rutin şu.</p>
+    <p>Hareketli gezinme açıkken bu hataların çoğu görünmez; üç tuş kipini bilerek açmazsan haftalarca fark etmezsin. Emülatörde bu ayarı sistem ayarlarından değiştirebilirsin.</p>
+    <ul><li>Üç tuşlu gezinmeli bir emülatör kullan (ben Android 11 imajı kullanıyorum).</li><li>Yazı boyutunu 1.3&#x27;e çıkar: adb shell settings put system font_scale 1.3 (sonra 1.0&#x27;a geri al).</li><li>Her ekranı aç, en alta kadar kaydır ve ekran görüntüsü al.</li><li>En uzun dille ve küçük bir ekranla tekrarla.</li><li>Reklamı kapatıp aç; isteğe bağlı öğeler düzeni değiştirir.</li></ul>
+    <p>Her sürümden önce artık üç soru soruyorum. Kaydırmalı her ekranın son öğesi çubuğun tamamen üstünde mi? Herhangi bir alt boşluk isteğe bağlı bir öğeye bağlı mı? Esnek bir öğenin sabit bir asgarisi var mı? Yukarıdaki her adım bir hatayı yeniden üretir: üç tuş 1. ve 2. hatayı, küçük ekran 3. hatayı, büyük yazı kesilen etiketleri, reklamı kapatmak da 1. hatayı yeniden gösterir.</p>
+    
+    <section class="faq"><h2>Sık sorulan sorular</h2><details><summary>Edge-to-edge hangi hedef SDK&#x27;dan itibaren zorunlu?</summary><p>Android belgelerine göre uygulama SDK 35&#x27;i hedefleyince Android 15 (API 35) ve üstünde edge-to-edge zorunlu olur.</p></details><details><summary>navigationBarsPadding() verticalScroll&#x27;dan önce mi sonra mı gelmeli?</summary><p>Önce. Sonra gelirse boşluk içerikle birlikte kayar ve liste gezinme çubuğunun arkasında görünmeye devam eder.</p></details><details><summary>Arayüzüm hareketli gezinmede düzgün, üç tuşta bozuk görünüyor, neden?</summary><p>Üç tuşta gerçek ve yarı saydam bir gezinme çubuğu pencerenin altını kaplar; alt boşluğu olmayan içerik onun altında kalır.</p></details><details><summary>Küçük ekranda alttaki satırım neden kayboldu?</summary><p>Diğer öğeler ekranı doldurunca weight(1f) olan öğe sıfıra iner. Ekranı kaydırılabilir yap ve o öğeye sabit yükseklik ver.</p></details></section>
+    <section><h2>Diğer yazılar</h2><ul class="glist"><li><a href="/tr/yazilar/utm-baglantilari-ve-magaza-girisi-deneyleriyle-play-kurulumlarini-olcmek/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Play Kurulumlarını Ölçmek: UTM Bağlantıları ve Mağaza Deneyleri</b></div></a></li><li><a href="/tr/yazilar/gizli-hediye-cekilisi-algoritmasi-kimse-kendini-cekmesin-tek-buyuk-dongu/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Gizli Hediye Çekilişi Algoritması: Kimse Kendini Çekmesin</b></div></a></li><li><a href="/tr/yazilar/github-actions-macos-dakikalari-bitince-ios-derlemelerini-codemagic-e-tasimak/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>GitHub Actions macOS Dakikaları Bitince Codemagic&#x27;e Geçiş</b></div></a></li><li><a href="/tr/yazilar/kotlin-multiplatformda-reklamlar-ortak-arayuz-platform-kabugu/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Kotlin Multiplatform&#x27;da Reklamlar: Ortak Arayüz, Platform Kabuğu</b></div></a></li><li><a href="/tr/yazilar/clarity-ai-gorunurluk-kucuk-bir-site-icin-konu-icgoruleri-ilk-sonuclar/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Clarity AI Görünürlük: Küçük Bir Site İçin Konu İçgörüleri, İlk Sonuçlar</b></div></a></li><li><a href="/tr/yazilar/api-yokken-36-youtube-topluluk-gonderisini-zamanlamak/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>API Yokken 36 YouTube Topluluk Gönderisini Zamanlamak</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

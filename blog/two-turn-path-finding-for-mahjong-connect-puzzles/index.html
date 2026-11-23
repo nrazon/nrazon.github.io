@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Two-Turn Path Finding for Mahjong Connect Puzzles</title>
+<meta name="description" content="How to check if two tiles connect with at most two turns: straight line, L shape, Z and U shapes, the outside border, cost, edge cases and tests.">
+<link rel="canonical" href="https://nesimapps.com/blog/two-turn-path-finding-for-mahjong-connect-puzzles/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/two-turn-path-finding-for-mahjong-connect-puzzles/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/mahjong-connect-bulmacalarinda-iki-donuslu-yol-bulma/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/busqueda-de-caminos-con-dos-giros-en-puzles-connect-de-mahjong/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/busca-de-caminhos-com-duas-curvas-em-puzzles-connect-de-mahjong/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/two-turn-path-finding-for-mahjong-connect-puzzles/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#4A5BB0">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Two-Turn Path Finding for Mahjong Connect Puzzles">
+<meta property="og:description" content="How to check if two tiles connect with at most two turns: straight line, L shape, Z and U shapes, the outside border, cost, edge cases and tests.">
+<meta property="og:url" content="https://nesimapps.com/blog/two-turn-path-finding-for-mahjong-connect-puzzles/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Two-Turn Path Finding for Mahjong Connect Puzzles">
+<meta name="twitter:description" content="How to check if two tiles connect with at most two turns: straight line, L shape, Z and U shapes, the outside border, cost, edge cases and tests.">
+<style>:root { --accent:#4A5BB0; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Two-Turn Path Finding for Mahjong Connect Puzzles", "description": "How to check if two tiles connect with at most two turns: straight line, L shape, Z and U shapes, the outside border, cost, edge cases and tests.", "inLanguage": "en", "mainEntityOfPage": "https://nesimapps.com/blog/two-turn-path-finding-for-mahjong-connect-puzzles/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-23", "dateModified": "2026-11-23", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Algorithms, Game design", "about": {"@type": "SoftwareApplication", "name": "Tilelings", "operatingSystem": "Android", "applicationCategory": "GameApplication", "url": "https://nesimapps.com/tilelings/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Two-Turn Path Finding for Mahjong Connect Puzzles", "item": "https://nesimapps.com/blog/two-turn-path-finding-for-mahjong-connect-puzzles/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does at most two turns mean?", "acceptedAnswer": {"@type": "Answer", "text": "The path has at most three straight segments, so it can be a straight line, an L shape or a Z or U shape."}}, {"@type": "Question", "name": "Can the path go outside the board?", "acceptedAnswer": {"@type": "Answer", "text": "In this implementation yes, through a one-cell empty frame around the grid. Anything beyond one cell is never needed."}}, {"@type": "Question", "name": "Why are the two tiles not counted as blockers?", "acceptedAnswer": {"@type": "Answer", "text": "The path starts and ends on them, so the line check looks only at the cells strictly between the endpoints. The corner cells are checked separately."}}, {"@type": "Question", "name": "How do you test a path finder like this?", "acceptedAnswer": {"@type": "Answer", "text": "With small hand-built boards for each shape, a fully packed board that must fail, and a generator test that checks every level has a move."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/two-turn-path-finding-for-mahjong-connect-puzzles/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/mahjong-connect-bulmacalarinda-iki-donuslu-yol-bulma/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/busqueda-de-caminos-con-dos-giros-en-puzles-connect-de-mahjong/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/busca-de-caminhos-com-duas-curvas-em-puzzles-connect-de-mahjong/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>Two-Turn Path Finding for Mahjong Connect Puzzles</h1>
+    <p class="by">By Nesim Razon, independent mobile developer · 2026-11-23</p>
+    <p class="tags"><a href="/blog/#algorithms">#Algorithms</a><a href="/blog/#game-design">#Game design</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">In a Connect puzzle you may remove two identical tiles if an empty path joins them with at most two turns. That is three straight segments and no more. The check runs on every tap, for every hint and every shuffle, so it has to be small and correct. Here is how the path finder in Tilelings works, case by case, with the edge cases that need care.</p>
+    <h2>The rule in one picture</h2>
+    <p>Take two tiles, A and B. A path is a chain of horizontal and vertical segments that starts at A, ends at B and passes only through empty cells. The two end cells are the tiles themselves, so they do not count as blocked. At most two turns means at most three segments.</p>
+    <p>That gives exactly four shapes to test, from simplest to most complex.</p>
+    <ul><li>0 turns: one straight line.</li><li>1 turn: an L shape, with one corner.</li><li>2 turns: a Z or U shape, with two corners.</li><li>Nothing else. If none of the three works, the pair cannot connect.</li></ul>
+    <h2>One helper: is this line clear?</h2>
+    <p>Everything is built from a single helper. In the code it is called clear. It takes two cells on the same row or the same column and answers: are all the cells strictly between them empty? A loop walks from the smaller coordinate plus one to the larger coordinate minus one and stops at the first filled cell. If the two cells are next to each other, the loop has nothing to visit and the answer is yes.</p>
+    <p>The board is a plain array of booleans, one per cell, true when a tile is there. A second small helper, filled, returns false for any coordinate outside the grid. That detail is what makes the outside border work later.</p>
+    <h2>Case 0 and case 1: straight line and L shape</h2>
+    <p>Case 0 is one call: if A and B share a row or column and clear says yes, the path is just the two points.</p>
+    <p>Case 1 tries both corners of the rectangle that A and B span. For A at row 1, column 1 and B at row 3, column 4, the corners are row 1, column 4 and row 3, column 1. For each corner, three things must hold:</p>
+    <ul><li>the corner cell itself is empty,</li><li>the segment from A to the corner is clear,</li><li>the segment from the corner to B is clear.</li></ul>
+    <p>The corner is checked separately because clear ignores both end cells. Forget that check and you get paths that pass through a tile.</p>
+    <h2>Case 2: Z and U shapes by scanning lines</h2>
+    <p>Two turns means a middle segment, either vertical or horizontal, that both tiles can reach with a straight run. So the code scans candidate lines.</p>
+    <p>For vertical middle lines it loops over every column c. It skips the columns of A and B, because those would collapse into the earlier cases. For each c it checks that the two cells in that column, on A’s row and on B’s row, are empty, then that three segments are clear: A to its cell, that cell to the other one, and that one to B. The horizontal version does the same with rows.</p>
+    <p>A small table of what changes between the two scans:</p>
+    <ul><li>Vertical scan: columns from minus one to the column count, corners on A’s row and B’s row.</li><li>Horizontal scan: rows from minus one to the row count, corners on A’s column and B’s column.</li><li>Both scans keep the shortest path found, measured by total number of cells walked.</li></ul>
+    <p>Why not a general search? A breadth-first search that tracks the number of turns would also work and would handle any limit. For a limit of two it is more machinery than needed. It needs a queue, a visited set that remembers direction and turn count, and care to avoid revisiting the same state. The scan version has no state, allocates nothing beyond the result, and each branch can be read and checked by eye. It also returns the corner points directly, which the game uses to draw the line on screen. When the limit is fixed and small, explicit cases are easier to trust than a clever general routine.</p>
+    <h2>The empty frame around the board</h2>
+    <p>Look at the scan range: it starts at minus one and ends one past the last row or column. That is a frame of empty cells around the grid. Because filled treats everything outside the grid as empty, a path may leave the board, run along the outside and come back in.</p>
+    <p>This is why two tiles on the top row can always join if nothing blocks the way to the edge. It also explains a test in the project: on a three-by-four board, tiles at the two ends of the top row with a blocker between them still connect. The path goes up into the frame, along the top, and down again, two turns in total.</p>
+    <p>The frame is one cell thick. A path never needs more, because any longer detour outside the grid can be replaced by one that hugs the edge.</p>
+    <p>A worked example. A sits at row 0, column 0 and B at row 0, column 3, with a blocker at column 1. Straight fails, both L corners are occupied, and the column scan finds nothing. The row scan reaches row minus one and finds A, then up, then along, then down to B: 1 plus 3 plus 1, five cells. Row 1 gives the same length, but the code keeps the first path it found, so the frame wins the tie.</p>
+    <h2>Cost and edge cases</h2>
+    <p>How much work is one check? The scans try about columns plus rows plus four candidate lines, and each candidate costs at most three straight runs of up to a board side. On the largest Connect board, sixteen columns by nine rows, that is under thirty candidates with short loops. A tap does not feel it.</p>
+    <p>The expensive part is asking the question for many pairs, for a hint, for a stuck check or for a shuffle. The code groups tiles by class first and only tests pairs inside a class. Spread evenly over thirty classes, a full sixteen-by-nine board has about three hundred such pairs instead of more than ten thousand. That is an estimate, not a measurement.</p>
+    <p>Edge cases worth a test:</p>
+    <ul><li>The same tile twice: return no path.</li><li>Two neighbours: the straight case answers yes at once.</li><li>A corner cell that is occupied: reject it before checking the segments.</li><li>A fully packed board: inner tiles with no free line to the frame have no path, even when they are close.</li></ul>
+    <h2>Testing it and using it</h2>
+    <p>The tests are small and concrete. One builds a three-by-four board and checks the straight case, then adds a blocker and checks that a path with at most two turns still appears. Another fills a five-by-five board completely and confirms that the centre tile and the tile at row 1, column 1 have no path. A third plays all 150 levels through the generator and requires at least one legal move in each.</p>
+    <p>The generator uses the same function backwards. It starts from a full board, repeatedly picks two tiles the path finder says can connect, removes them, applies gravity where the level has it, and records the order. That order is a solution, so the level is solvable by construction.</p>
+    <p>Tilelings uses this finder for its Connect mode, which has 150 levels. If you are building a similar puzzle, write the straight, L and scan cases as three short blocks, keep one clear helper, and test the frame early. A last tip: print the corner list for a few hand-made boards and compare it with a drawing on paper. A wrong corner shows up immediately as a line through a tile.</p>
+    <aside class="gcta"><img class="ic" src="/tilelings/icon.png" alt="Tilelings icon" width="64" height="64"><div class="tx"><b>Try it free: Tilelings</b><span>Free on Google Play. No account needed.</span></div><a class="play" href="https://play.google.com/store/apps/details?id=com.tilelings.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dblog%26utm_campaign%3Dmahjong-connect-two-turn-path-finding"><img src="/badges/google-play-en.svg" alt="Google Play" width="162" height="48"></a><a class="small" href="/tilelings/">About Tilelings</a></aside>
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>What does at most two turns mean?</summary><p>The path has at most three straight segments, so it can be a straight line, an L shape or a Z or U shape.</p></details><details><summary>Can the path go outside the board?</summary><p>In this implementation yes, through a one-cell empty frame around the grid. Anything beyond one cell is never needed.</p></details><details><summary>Why are the two tiles not counted as blockers?</summary><p>The path starts and ends on them, so the line check looks only at the cells strictly between the endpoints. The corner cells are checked separately.</p></details><details><summary>How do you test a path finder like this?</summary><p>With small hand-built boards for each shape, a fully packed board that must fail, and a generator test that checks every level has a move.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/play-billing-8-crash-this-stopwatch-is-already-running-and-the-fix/"><img src="/tilelings/icon.png" alt="Tilelings icon" width="48" height="48"><div><b>Play Billing 8.0.0 Crash: “This Stopwatch Is Already Running” and the Fix</b></div></a></li><li><a href="/blog/mahjong-solitaire-history-vs-real-mahjong/"><img src="/tilelings/icon.png" alt="Tilelings icon" width="48" height="48"><div><b>Mahjong Solitaire History and How It Differs From Mahjong</b></div></a></li><li><a href="/blog/how-we-guarantee-mahjong-solitaire-is-solvable/"><img src="/tilelings/icon.png" alt="Tilelings icon" width="48" height="48"><div><b>How We Guarantee a Mahjong Solitaire Board Is Solvable</b></div></a></li><li><a href="/blog/gravity-slingshot-puzzle-solver-and-reliable-hints/"><img src="/slinglings/icon.png" alt="Slinglings icon" width="48" height="48"><div><b>Solving Every Gravity Puzzle Level Before a Player Sees It</b></div></a></li><li><a href="/blog/same-seed-same-level-on-android-and-ios-with-kotlin-multiplatform/"><img src="/snowlings/icon.png" alt="Snowlings icon" width="48" height="48"><div><b>Same Seed, Same Level on Android and iOS in Kotlin Multiplatform</b></div></a></li><li><a href="/blog/measure-play-store-installs-with-utm-links-and-listing-experiments/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Measuring Play Installs: UTM Links and Listing Experiments</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>
