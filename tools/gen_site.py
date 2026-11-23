@@ -19,11 +19,11 @@ def apple_url(v):
 BASE = "https://nesimapps.com"
 # Yayına henüz çıkmamış uygulamaların detay sayfaları: URL'den açılır ama ana sayfa kartı, "Diğer uygulamalarım" listeleri ve sitemap'e GİRMEZ,
 # sayfada noindex var. Uygulama Play'de yayınlanınca slug buradan silinir (ve home_data.json'da status=live yapılır).
-HIDDEN = {"slinglings"}  # Pulselings: Play incelemesinde (13.11.2026), yayin gunu buradan SIL. Yayinda olmayan uygulama onceden buraya eklenir, yayin gunu silinir (Brassline 13.11.2026 yayinda: cikarildi)
+HIDDEN = set()  # Pulselings: Play incelemesinde (13.11.2026), yayin gunu buradan SIL. Yayinda olmayan uygulama onceden buraya eklenir, yayin gunu silinir (Brassline 13.11.2026 yayinda: cikarildi)
 # Capraz tanitim YOK (kullanici karari 10.11.2026): bu uygulama hicbir sayfadaki "Diger oyunlar" listesinde cikmaz, yayinda bile.
 NO_PROMO = {"brassline"}
 # Play'de henuz CANLI olmayan uygulama: detay sayfasinda Google Play dugmesi yerine "yakinda" rozeti, JSON-LD installUrl yok (yayin gunu slug buradan SIL).
-NO_STORE_LINK = {"slinglings"}
+NO_STORE_LINK = set()
 SOON_BADGE = {"en": "Coming soon to Google Play", "tr": "Google Play'de çok yakında", "es": "Próximamente en Google Play", "pt": "Em breve no Google Play"}
 NO_CARD = set()  # ana sayfada karti olmayan slug kumesi (Brassline 13.11.2026: kart acildi)
 # Ana sayfada kartında data-pkg olmayan (henüz "yakında" kartı olan) uygulamaların paket adları.

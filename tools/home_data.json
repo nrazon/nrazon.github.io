@@ -11,14 +11,14 @@
   },
   "tint": "#D84225",
   "pkg": "com.slinglings.nesimapps",
-  "new": "2026-12-31",
+  "new": "2026-12-15",
   "desc": {
    "en": "Sling cute couriers through space, bend shots around planets, deliver the mail!",
    "tr": "Sevimli postacıları uzayda fırlat, kavisli atışlarla postayı teslim et!",
    "es": "Lanza carteros adorables por el espacio y entrega el correo con tiros curvos.",
    "pt": "Lance carteiros fofos pelo espaço e entregue a correspondência com tiros curvos!"
   },
-  "status": "soon",
+  "status": "live",
   "popular": false,
   "desc_live": {
    "en": "Sling cute couriers through space, bend shots around planets, deliver the mail!",
