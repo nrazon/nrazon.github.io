@@ -9,7 +9,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "2f7e0ae184d1bd6b904eca3d4c41c744",
+  "hash": "4e52262e6b167d056f21268207cc1344",
   "slug": ""
  },
  "https://nesimapps.com/tr/": {
@@ -22,7 +22,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "ef8730108d932dfbf48635ddee6e7576",
+  "hash": "bf10496ecf2789962d0167ad35d37ff3",
   "slug": ""
  },
  "https://nesimapps.com/es/": {
@@ -35,7 +35,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "90fd666b6e0de31e41595c88d6946e48",
+  "hash": "dd2b1f66061fc3558272728afc4dc86d",
   "slug": ""
  },
  "https://nesimapps.com/pt/": {
@@ -48,7 +48,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "170623790dbbb185a35ac66117108acd",
+  "hash": "cc0b2850329468ec8206a8ca9960dc56",
   "slug": ""
  },
  "https://nesimapps.com/agecalculator/": {
@@ -489,7 +489,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "a5a427ac4798485a5f090fe7fe4c8f85",
+  "hash": "9fa8f72b7c25bdd83ffa3ae75932c0e9",
   "slug": "grumblings"
  },
  "https://nesimapps.com/tr/grumblings/": {
@@ -502,7 +502,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "9cbf683d053822f5a1df1e6d75a25082",
+  "hash": "56827680c8ac9985a3a285cb27816a9e",
   "slug": "grumblings"
  },
  "https://nesimapps.com/es/grumblings/": {
@@ -515,7 +515,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "bf2da84b61046d195be020b5581edb3e",
+  "hash": "593df1d546186cb2a1b1cc3b8a9324ec",
   "slug": "grumblings"
  },
  "https://nesimapps.com/pt/grumblings/": {
@@ -528,7 +528,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "68450a0274d552f8c6e71ba3aae76a92",
+  "hash": "91f7b45517de03c6cb3bc83bd4435761",
   "slug": "grumblings"
  },
  "https://nesimapps.com/haftasonum/": {
@@ -1009,7 +1009,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "a21fd5d80079c525aedbc013309bdbdd",
+  "hash": "274946084a099358e5a70460848c3761",
   "slug": "tictactoe"
  },
  "https://nesimapps.com/tr/tictactoe/": {
@@ -1022,7 +1022,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "de8b168e37bf9f45f7c7dea0fef52069",
+  "hash": "4aad044abf81908eb1ce244f0650a790",
   "slug": "tictactoe"
  },
  "https://nesimapps.com/es/tictactoe/": {
@@ -1035,7 +1035,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "e91acc2106f3cbcde3e758ce38a688aa",
+  "hash": "4a4a77d991af02691b3fe1efc9ebefea",
   "slug": "tictactoe"
  },
  "https://nesimapps.com/pt/tictactoe/": {
@@ -1048,7 +1048,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "585f128eebdb36a2e837402843ed404f",
+  "hash": "7a111c86b745ece4829775bc5fb25109",
   "slug": "tictactoe"
  },
  "https://nesimapps.com/tilelings/": {

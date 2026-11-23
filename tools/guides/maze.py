@@ -18,6 +18,7 @@ GUIDE = {
             ["Is there a time limit?", "No. Take as long as you like; only the number of moves matters for stars."],
             ["Can every level be solved?", "Yes. All 300 levels are checked by a solver, so there is always a way to reach the door."],
             ["What does the Wait button do?", "It makes you skip your step while the monsters still take theirs. It is often the key to trapping a monster behind a wall."],
+            ["Can I try Grumblings before installing?", "Yes. The first 30 levels are playable right in your browser on the Grumblings page, with the same rules, hints and 3-star scoring as the app."],
         ],
     },
     "tr": {
@@ -37,6 +38,7 @@ GUIDE = {
             ["Süre sınırı var mı?", "Hayır. İstediğin kadar düşünebilirsin; yıldızlar için yalnızca hamle sayısı önemlidir."],
             ["Her bölüm çözülebilir mi?", "Evet. 300 bölümün hepsi bir çözücüyle kontrol edildi; kapıya ulaşmanın her zaman bir yolu var."],
             ["Bekle düğmesi ne yapar?", "Canavarlar adımlarını atarken senin adımını atlamanı sağlar. Bir canavarı duvarın arkasına hapsetmenin anahtarı çoğu zaman budur."],
+            ["Grumblings'i yüklemeden denenebilir mi?", "Evet. İlk 30 bölümü Grumblings sayfasında tarayıcıda oynayabilirsin; kurallar, ipucu ve 3 yıldız puanlaması uygulamayla aynı."],
         ],
     },
     "es": {
@@ -56,6 +58,7 @@ GUIDE = {
             ["¿Hay límite de tiempo?", "No. Tómate el tiempo que quieras; para las estrellas solo cuenta el número de movimientos."],
             ["¿Se puede resolver todos los niveles?", "Sí. Los 300 niveles están comprobados por un solucionador, así que siempre hay un camino hasta la puerta."],
             ["¿Qué hace el botón Esperar?", "Te hace saltar tu paso mientras los monstruos dan los suyos. Suele ser la clave para dejar a un monstruo atrapado detrás de una pared."],
+            ["¿Puedo probar Grumblings antes de instalarlo?", "Sí. Los primeros 30 niveles se pueden jugar en el navegador, en la página de Grumblings, con las mismas reglas, pistas y puntuación de 3 estrellas que en la app."],
         ],
     },
     "pt": {
@@ -75,6 +78,7 @@ GUIDE = {
             ["Existe limite de tempo?", "Não. Leve o tempo que quiser; para as estrelas só conta o número de movimentos."],
             ["Todas as fases têm solução?", "Sim. As 300 fases são verificadas por um solucionador, então sempre existe um caminho até a porta."],
             ["O que o botão Esperar faz?", "Ele faz você pular o seu passo enquanto os monstros dão os deles. Muitas vezes é a chave para prender um monstro atrás de uma parede."],
+            ["Posso testar o Grumblings antes de instalar?", "Sim. Os primeiros 30 níveis podem ser jogados no navegador, na página do Grumblings, com as mesmas regras, dicas e pontuação de 3 estrelas do app."],
         ],
     },
 }

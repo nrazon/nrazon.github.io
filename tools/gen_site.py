@@ -475,7 +475,7 @@ def page(cfg):
     if ios_id:
         appstore_html = (f'<a class="play appstore" href="{apple_url(ios_id)}"><img src="../badges/app-store-tr.svg" alt="App Store\'dan indir" data-l="tr">'
                          + "".join(f'<img src="../badges/app-store-en.svg" alt="Download on the App Store" data-l="{l}">' for l in L if l != "tr") + '</a>')
-    demo_attr = {"tictactoe": ("data-ttt", "ttt.js?v=2"), "game2048": ("data-g2048", "g2048.js?v=1"), "calisan": ("data-calisan", "calisan.js?v=3")}.get(cfg["slug"])
+    demo_attr = {"tictactoe": ("data-ttt", "ttt.js?v=2"), "game2048": ("data-g2048", "g2048.js?v=1"), "calisan": ("data-calisan", "calisan.js?v=3"), "grumblings": ("data-grumblings", "grumblings.js?v=1")}.get(cfg["slug"])
     demo_block = (f'  <section class="block" aria-labelledby="h-demo">\n    <h2 class="h" id="h-demo">{multi(SEC["try"], L)}</h2>\n'
                   f'    <div class="demo-wrap"><div {demo_attr[0]} data-play="{play}"></div></div>\n  </section>\n\n') if demo_attr else ""
     ttt_script = f'\n<script src="../{demo_attr[1]}" defer></script>' if demo_attr else ""

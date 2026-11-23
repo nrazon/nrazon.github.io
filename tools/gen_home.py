@@ -76,6 +76,7 @@ T = {
     "demo": {"tr": "Tarayıcıda dene", "en": "Try it here", "es": "Pruébalo aquí", "pt": "Experimente aqui"},
     "demotitle": {"tr": "Tic-Tac-Toe: tarayıcıda dene", "en": "Tic-Tac-Toe: try it in your browser", "es": "Tic-Tac-Toe: pruébalo en el navegador", "pt": "Tic-Tac-Toe: experimente no navegador"},
     "demotitlecalisan": {"tr": "Çalışan Asistanı: tarayıcıda dene", "en": "Çalışan Asistanı: try it in your browser", "es": "Çalışan Asistanı: pruébalo en el navegador", "pt": "Çalışan Asistanı: experimente no navegador"},
+    "demotitlegrumblings": {"tr": "Grumblings: tarayıcıda dene", "en": "Grumblings: try it in your browser", "es": "Grumblings: pruébalo en el navegador", "pt": "Grumblings: experimente no navegador"},
     "demotitle2048": {"tr": "2048: tarayıcıda dene", "en": "2048: try it in your browser", "es": "2048: pruébalo en el navegador", "pt": "2048: experimente no navegador"},
     "qr": {"tr": "QR ile yükle", "en": "Install via QR", "es": "Instalar con QR", "pt": "Instalar com QR"},
     "qrshort": {"tr": "QR", "en": "QR", "es": "QR", "pt": "QR"},
@@ -208,7 +209,7 @@ def qr_html(slug, short=False):
 
 
 # Tarayıcı demosu olan oyunlar: slug -> (panel kimliği, betik). Betik ilk açılışta yüklenir.
-DEMOS = {"tictactoe": ("ttt-demo", "ttt.js?v=2"), "game2048": ("g2048-demo", "g2048.js?v=1"), "calisan": ("calisan-demo", "calisan.js?v=3")}
+DEMOS = {"tictactoe": ("ttt-demo", "ttt.js?v=2"), "game2048": ("g2048-demo", "g2048.js?v=1"), "calisan": ("calisan-demo", "calisan.js?v=3"), "grumblings": ("grumblings-demo", "grumblings.js?v=1")}
 
 
 def demo_btn(slug):
@@ -533,6 +534,10 @@ def build(preview):
     <div class="demo-panel" id="ttt-demo" hidden>
       <h3>{L(T["demotitle"])}</h3>
       <div data-ttt data-play="{play_url(by["tictactoe"]["pkg"])}"></div>
+    </div>
+    <div class="demo-panel" id="grumblings-demo" hidden>
+      <h3>{L(T["demotitlegrumblings"])}</h3>
+      <div data-grumblings data-play="{play_url(by["grumblings"]["pkg"])}"></div>
     </div>
     <div class="demo-panel" id="g2048-demo" hidden>
       <h3>{L(T["demotitle2048"])}</h3>
