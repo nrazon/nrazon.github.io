@@ -18,9 +18,9 @@ NO_CARD = set()  # ana sayfada karti olmayan slug kumesi (Brassline 13.11.2026: 
 for _a in DATA:  # yayına çıkınca (status: live) 'çok yakında' içermeyen metin kullanılır
     if _a.get("status") == "live" and _a.get("desc_live"):
         _a["desc"] = _a["desc_live"]
-# Kahraman (hero) = o an tanıtılan amiral gemisi. 5.11.2026: Tilelings (önceki hero Beamies: tools/beamies_hero.svg + BEAMIES* yedek)
-HERO_SLUG = "tilelings"
-HERO_SVG = open(os.path.join(G, "tools", "tilelings_hero.svg"), encoding="utf-8").read()
+# Kahraman (hero) = o an tanıtılan amiral gemisi. 23.11.2026: Slinglings (önceki hero Tilelings: tools/tilelings_hero.svg + TILELINGS* yedek; ondan önce Beamies)
+HERO_SLUG = "slinglings"
+HERO_SVG = open(os.path.join(G, "tools", "slinglings_hero.svg"), encoding="utf-8").read()
 UTM = "&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"
 
 
@@ -100,6 +100,19 @@ TILELINGS_CHIPS = {
     "en": ["53 layouts", "150 Connect levels", "300 Tile Match levels", "Free"],
     "es": ["53 diseños", "150 niveles Connect", "300 Tile Match", "Gratis"],
     "pt": ["53 layouts", "150 níveis Connect", "300 Tile Match", "Grátis"],
+}
+SLINGLINGS_TAG = {"tr": "Uzayda sevimli postacılar fırlat!", "en": "Sling cute couriers through space!", "es": "¡Lanza carteros adorables por el espacio!", "pt": "Lance carteiros fofos pelo espaço!"}
+SLINGLINGS = {
+    "tr": "Yuvarlak, tüylü postacıları sapanla uzaya fırlat: geri çek, nişan al, bırak. Gezegenler çekimle atışı büker, sen de mektubu parlayan posta kutusuna ulaştırırsın. 12 rota, her biri kendi numarasına sahip 11 postacı ve her gün yeni bir Günün Mektubu. Süre ve can yok, internetsiz de oynanır.",
+    "en": "Sling fluffy mail couriers across space: pull back, aim and let go. Planets bend every shot with gravity, and you deliver the letter to the glowing mailbox. 12 routes, 11 couriers with their own tricks and a fresh Daily Letter every day. No timer, no lives, and it plays offline.",
+    "es": "Lanza mensajeros peludos por el espacio: tira hacia atrás, apunta y suelta. Los planetas curvan cada tiro con su gravedad y tú entregas la carta en el buzón brillante. 12 rutas, 11 mensajeros con sus propios trucos y una Carta del Día nueva cada día. Sin tiempo ni vidas, y funciona sin conexión.",
+    "pt": "Lance carteiros fofinhos pelo espaço: puxe para trás, mire e solte. Os planetas curvam cada tiro com a gravidade e você entrega a carta na caixa de correio brilhante. 12 rotas, 11 carteiros com truques próprios e uma Carta do Dia nova todo dia. Sem cronômetro nem vidas, e funciona offline.",
+}
+SLINGLINGS_CHIPS = {
+    "tr": ["12 rota", "11 postacı", "Süre ve can yok", "Ücretsiz"],
+    "en": ["12 routes", "11 couriers", "No timer, no lives", "Free"],
+    "es": ["12 rutas", "11 mensajeros", "Sin tiempo ni vidas", "Gratis"],
+    "pt": ["12 rotas", "11 carteiros", "Sem cronômetro nem vidas", "Grátis"],
 }
 BEAMIES_TAG = {"tr": "Uzaylıları eve ışınla!", "en": "Beam the aliens home!", "es": "¡Lleva a los alienígenas a casa!", "pt": "Leve os alienígenas para casa!"}
 BEAMIES = {
@@ -292,6 +305,7 @@ CSS = r'''
   .hero-art { border-radius:24px 24px 0 0; position:relative; background:linear-gradient(135deg,#0F6B52,#16A07F); color:#fff; padding:22px 18px 22px 26px; display:flex; flex-direction:column; justify-content:center; gap:6px; overflow:hidden; min-height:270px; }
   .hero-art.beamies { background:linear-gradient(135deg,#1A2350,#4B2E8F); }
   .hero-art.tilelings { background:linear-gradient(135deg,#1E2650,#3A4A8A); }
+  .hero-art.slinglings { background:linear-gradient(135deg,#151A44,#41307A); }
   .hero-art .ha-text { display:flex; flex-direction:column; position:relative; z-index:1; }
   .hero-art .ha-title { font-size:clamp(34px,4.6vw,46px); font-weight:900; line-height:1; letter-spacing:-.02em; }
   .hero-art .ha-tag { font-weight:650; font-size:clamp(15px,2.6vw,19px); opacity:.95; margin-top:4px; }
@@ -444,21 +458,21 @@ def build(preview):
 ''' if soon else ""
     privacy_links = "".join(
         f'<li><a href="{a["slug"]}/privacy.html">{esc(a["names"]["en"])}</a></li>' for a in DATA)
-    chips = "".join(f'<ul class="chips" lang="{l}">' + "".join(f"<li>{esc(c)}</li>" for c in TILELINGS_CHIPS[l]) + "</ul>" for l in LANGS)
-    hero = f'''  <section class="hero" data-slug="tilelings" data-pkg="com.tilelings.nesimapps">
-    <h2 class="sr">Tilelings</h2>
-    <div class="hero-art tilelings">
+    chips = "".join(f'<ul class="chips" lang="{l}">' + "".join(f"<li>{esc(c)}</li>" for c in SLINGLINGS_CHIPS[l]) + "</ul>" for l in LANGS)
+    hero = f'''  <section class="hero" data-slug="slinglings" data-pkg="com.slinglings.nesimapps">
+    <h2 class="sr">Slinglings</h2>
+    <div class="hero-art slinglings">
       <div class="ha-text">
-        <span class="ha-title">Tilelings</span>
-        <span class="ha-tag">{L(TILELINGS_TAG)}</span>
+        <span class="ha-title">Slinglings</span>
+        <span class="ha-tag">{L(SLINGLINGS_TAG)}</span>
       </div>
       {HERO_SVG}
     </div>
     <div class="body">
       <span class="tag" data-new-until="{hero_app["new"]}">{L(T["newgame"])}</span>
-      {L(TILELINGS, "p")}
+      {L(SLINGLINGS, "p")}
       {chips}
-      <div class="links">{badge("com.tilelings.nesimapps")}{qr_html("tilelings")}<a class="small" href="tilelings/">{more_about("Tilelings")}</a></div>
+      <div class="links">{badge("com.slinglings.nesimapps")}{qr_html("slinglings")}<a class="small" href="slinglings/">{more_about("Slinglings")}</a></div>
     </div>
   </section>'''
     return f'''<!doctype html>

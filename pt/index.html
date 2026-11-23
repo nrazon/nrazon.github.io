@@ -61,6 +61,7 @@
   .hero-art { border-radius:24px 24px 0 0; position:relative; background:linear-gradient(135deg,#0F6B52,#16A07F); color:#fff; padding:22px 18px 22px 26px; display:flex; flex-direction:column; justify-content:center; gap:6px; overflow:hidden; min-height:270px; }
   .hero-art.beamies { background:linear-gradient(135deg,#1A2350,#4B2E8F); }
   .hero-art.tilelings { background:linear-gradient(135deg,#1E2650,#3A4A8A); }
+  .hero-art.slinglings { background:linear-gradient(135deg,#151A44,#41307A); }
   .hero-art .ha-text { display:flex; flex-direction:column; position:relative; z-index:1; }
   .hero-art .ha-title { font-size:clamp(34px,4.6vw,46px); font-weight:900; line-height:1; letter-spacing:-.02em; }
   .hero-art .ha-tag { font-weight:650; font-size:clamp(15px,2.6vw,19px); opacity:.95; margin-top:4px; }
@@ -196,38 +197,37 @@
 <p class="lead"><span lang="pt">Jogos e aplicativos para Android e iPhone de Nesim Razon</span></p>
 </div>
 <section id="games">
-<section class="hero" data-pkg="com.tilelings.nesimapps" data-slug="tilelings">
-<h2 class="sr">Tilelings</h2>
-<div class="hero-art tilelings">
+<section class="hero" data-pkg="com.slinglings.nesimapps" data-slug="slinglings">
+<h2 class="sr">Slinglings</h2>
+<div class="hero-art slinglings">
 <div class="ha-text">
-<span class="ha-title">Tilelings</span>
-<span class="ha-tag"><span lang="pt">Quebra-cabeças de Mahjong fofos</span></span>
+<span class="ha-title">Slinglings</span>
+<span class="ha-tag"><span lang="pt">Lance carteiros fofos pelo espaço!</span></span>
 </div>
-<svg aria-label="Cute Mahjong tiles stacked in a pyramid" role="img" viewbox="0 0 640 400">
+<svg aria-label="A fluffy mail courier slung across space past a ringed planet toward a red mailbox" role="img" viewbox="0 0 640 400">
 <style>
-  .tlf { animation:tlf 4.6s ease-in-out infinite; } .tlf2 { animation-duration:5.4s; } .tlf3 { animation-duration:6.2s; }
-  @keyframes tlf { 0%,100% { translate:0 0; } 50% { translate:0 -7px; } }
-  .tls { animation:tls 3.4s ease-in-out infinite; } @keyframes tls { 0%,100% { opacity:.25; } 50% { opacity:1; } }
-  @media (prefers-reduced-motion:reduce) { .tlf,.tls { animation:none; } }
+  .slf { animation:slf 4.4s ease-in-out infinite; } .slf2 { animation-duration:5.6s; animation-delay:-1.2s; }
+  @keyframes slf { 0%,100% { translate:0 0; } 50% { translate:0 -8px; } }
+  .sls { animation:sls 3.4s ease-in-out infinite; } @keyframes sls { 0%,100% { opacity:.25; } 50% { opacity:1; } }
+  .sld { animation:sld 1.6s linear infinite; } @keyframes sld { to { stroke-dashoffset:-28; } }
+  @media (prefers-reduced-motion:reduce) { .slf,.sls,.sld { animation:none; } }
 </style>
-<path class="tls" d="M0,-9 Q1.62,-1.62 9,0 Q1.62,1.62 0,9 Q-1.62,1.62 -9,0 Q-1.62,-1.62 0,-9 Z" fill="#FFE9A8" style="animation-delay:0s" transform="translate(70 70)"></path><path class="tls" d="M0,-7 Q1.26,-1.26 7,0 Q1.26,1.26 0,7 Q-1.26,1.26 -7,0 Q-1.26,-1.26 0,-7 Z" fill="#FFE9A8" style="animation-delay:0.8s" transform="translate(560 60)"></path><path class="tls" d="M0,-6 Q1.08,-1.08 6,0 Q1.08,1.08 0,6 Q-1.08,1.08 -6,0 Q-1.08,-1.08 0,-6 Z" fill="#FFE9A8" style="animation-delay:1.6s" transform="translate(40 300)"></path><path class="tls" d="M0,-8 Q1.44,-1.44 8,0 Q1.44,1.44 0,8 Q-1.44,1.44 -8,0 Q-1.44,-1.44 0,-8 Z" fill="#FFE9A8" style="animation-delay:2.4s" transform="translate(590 320)"></path><path class="tls" d="M0,-6 Q1.08,-1.08 6,0 Q1.08,1.08 0,6 Q-1.08,1.08 -6,0 Q-1.08,-1.08 0,-6 Z" fill="#FFE9A8" style="animation-delay:3.0s" transform="translate(300 34)"></path>
-<ellipse cx="320" cy="372" fill="#101636" opacity=".35" rx="210" ry="20"></ellipse>
-<g transform="translate(150 215) rotate(0 59 69)"><g class="tlf" style="animation-delay:0s"><image height="139" href="/tilelings/hero/cat.webp" width="118"/></g></g>
-<g transform="translate(262 215) rotate(0 59 69)"><g class="tlf" style="animation-delay:0s"><image height="139" href="/tilelings/hero/alien.webp" width="118"/></g></g>
-<g transform="translate(374 215) rotate(0 59 69)"><g class="tlf" style="animation-delay:0s"><image height="139" href="/tilelings/hero/frog.webp" width="118"/></g></g>
-<g transform="translate(206 140) rotate(0 59 69)"><g class="tlf tlf2" style="animation-delay:-1.2s"><image height="139" href="/tilelings/hero/sun.webp" width="118"/></g></g>
-<g transform="translate(318 140) rotate(0 59 69)"><g class="tlf tlf2" style="animation-delay:-1.2s"><image height="139" href="/tilelings/hero/panda.webp" width="118"/></g></g>
-<g transform="translate(262 65) rotate(0 59 69)"><g class="tlf tlf3" style="animation-delay:-2.4s"><image height="139" href="/tilelings/hero/fox.webp" width="118"/></g></g>
-<g transform="translate(22 160) rotate(-14 59 69)"><g class="tlf tlf2" style="animation-delay:-0.6s"><image height="139" href="/tilelings/hero/bunny.webp" width="118"/></g></g>
-<g transform="translate(506 92) rotate(12 59 69)"><g class="tlf tlf3" style="animation-delay:-1.8s"><image height="139" href="/tilelings/hero/star.webp" width="118"/></g></g>
-<g transform="translate(500 236) rotate(8 59 69)"><g class="tlf" style="animation-delay:-3.0s"><image height="139" href="/tilelings/hero/dog.webp" width="118"/></g></g>
+<defs><filter height="100%" id="slgold" width="100%" x="0" y="0"><feflood flood-color="#F7C548" result="c"></feflood><feblend in="SourceGraphic" in2="c" mode="multiply" result="m"></feblend><fecomposite in="m" in2="SourceGraphic" operator="in"></fecomposite></filter></defs>
+<path class="sls" d="M0,-9 Q1.62,-1.62 9,0 Q1.62,1.62 0,9 Q-1.62,1.62 -9,0 Q-1.62,-1.62 0,-9 Z" fill="#FFE9A8" style="animation-delay:0s" transform="translate(60 60)"></path><path class="sls" d="M0,-7 Q1.26,-1.26 7,0 Q1.26,1.26 0,7 Q-1.26,1.26 -7,0 Q-1.26,-1.26 0,-7 Z" fill="#FFE9A8" style="animation-delay:0.8s" transform="translate(590 200)"></path><path class="sls" d="M0,-6 Q1.08,-1.08 6,0 Q1.08,1.08 0,6 Q-1.08,1.08 -6,0 Q-1.08,-1.08 0,-6 Z" fill="#FFE9A8" style="animation-delay:1.6s" transform="translate(40 340)"></path><path class="sls" d="M0,-8 Q1.44,-1.44 8,0 Q1.44,1.44 0,8 Q-1.44,1.44 -8,0 Q-1.44,-1.44 0,-8 Z" fill="#FFE9A8" style="animation-delay:2.4s" transform="translate(610 350)"></path><path class="sls" d="M0,-6 Q1.08,-1.08 6,0 Q1.08,1.08 0,6 Q-1.08,1.08 -6,0 Q-1.08,-1.08 0,-6 Z" fill="#FFE9A8" style="animation-delay:3.0s" transform="translate(300 40)"></path><path class="sls" d="M0,-5 Q0.90,-0.90 5,0 Q0.90,0.90 0,5 Q-0.90,0.90 -5,0 Q-0.90,-0.90 0,-5 Z" fill="#FFE9A8" style="animation-delay:1.2s" transform="translate(430 380)"></path><path class="sls" d="M0,-5 Q0.90,-0.90 5,0 Q0.90,0.90 0,5 Q-0.90,0.90 -5,0 Q-0.90,-0.90 0,-5 Z" fill="#FFE9A8" style="animation-delay:2.0s" transform="translate(215 330)"></path>
+<path class="sld" d="M150,215 C190,60 420,10 508,92" fill="none" opacity=".9" stroke="#FFE9A8" stroke-dasharray="2 14" stroke-linecap="round" stroke-width="5"></path>
+<ellipse cx="340" cy="372" fill="#0B0F2A" opacity=".35" rx="200" ry="16"></ellipse>
+<g class="slf slf2"><image filter="url(#slgold)" height="250" href="/slinglings/hero/planet.webp" width="250" x="215" y="105"/>
+<g fill="#24324A"><circle cx="326" cy="228" fill="#fff" r="11"></circle><circle cx="360" cy="228" fill="#fff" r="11"></circle><circle cx="328" cy="230" r="6"></circle><circle cx="362" cy="230" r="6"></circle><circle cx="326" cy="227" fill="#fff" r="2"></circle><circle cx="360" cy="227" fill="#fff" r="2"></circle></g>
+<path d="M334,247 Q343,256 352,247" fill="none" stroke="#24324A" stroke-linecap="round" stroke-width="3.5"></path><circle cx="314" cy="244" fill="#F2A0A8" opacity=".8" r="6"></circle><circle cx="372" cy="244" fill="#F2A0A8" opacity=".8" r="6"></circle></g>
+<g class="slf"><image height="150" href="/slinglings/hero/mailbox.webp" width="150" x="468" y="14"/></g>
+<g class="slf"><image height="251" href="/slinglings/hero/pip.webp" width="188" x="6" y="148"/></g>
 </svg>
 </div>
 <div class="body">
-<span class="tag" data-new-until="2026-12-05"><span lang="pt">JOGO NOVO</span></span>
-<p lang="pt">Uma coleção de Mahjong aconchegante com peças fofas: Mahjong Paciência clássico, Connect e Tile Match, mais um trio diário novo e um Contra o Tempo de 5 minutos. 53 layouts, 150 níveis de Connect e 300 de Tile Match.</p>
-<ul class="chips" lang="pt"><li>53 layouts</li><li>150 níveis Connect</li><li>300 Tile Match</li><li>Grátis</li></ul>
-<div class="links"><a class="play" href="https://play.google.com/store/apps/details?id=com.tilelings.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img alt="Get it on Google Play" lang="pt" src="/badges/google-play-en.svg"/></a><details class="qr" data-qr="tilelings"><summary aria-label="QR"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z" fill="currentColor"></path></svg><span lang="pt">Instalar com QR</span></summary><div class="qrpop"><img alt="QR code: install Tilelings" height="183" loading="lazy" src="/qr/tilelings.svg" width="183"/><p lang="pt">Escaneie com o celular</p></div></details><a class="small" href="/pt/tilelings/"><b lang="pt">Saiba mais<span class="vh"> sobre Tilelings</span></b></a></div>
+<span class="tag" data-new-until="2026-12-15"><span lang="pt">JOGO NOVO</span></span>
+<p lang="pt">Lance carteiros fofinhos pelo espaço: puxe para trás, mire e solte. Os planetas curvam cada tiro com a gravidade e você entrega a carta na caixa de correio brilhante. 12 rotas, 11 carteiros com truques próprios e uma Carta do Dia nova todo dia. Sem cronômetro nem vidas, e funciona offline.</p>
+<ul class="chips" lang="pt"><li>12 rotas</li><li>11 carteiros</li><li>Sem cronômetro nem vidas</li><li>Grátis</li></ul>
+<div class="links"><a class="play" href="https://play.google.com/store/apps/details?id=com.slinglings.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><img alt="Get it on Google Play" lang="pt" src="/badges/google-play-en.svg"/></a><details class="qr" data-qr="slinglings"><summary aria-label="QR"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z" fill="currentColor"></path></svg><span lang="pt">Instalar com QR</span></summary><div class="qrpop"><img alt="QR code: install Slinglings" height="183" loading="lazy" src="/qr/slinglings.svg" width="183"/><p lang="pt">Escaneie com o celular</p></div></details><a class="small" href="/pt/slinglings/"><b lang="pt">Saiba mais<span class="vh"> sobre Slinglings</span></b></a></div>
 </div>
 </section>
 <div class="showgrid">
@@ -253,14 +253,6 @@
 </article>
 </div>
 <div class="tools two">
-<article class="tool" data-pkg="com.slinglings.nesimapps" data-slug="slinglings" style="--tint:#D84225">
-<img alt="Slinglings icon" class="icon" height="64" loading="lazy" src="/slinglings/icon.png" width="64"/>
-<div class="tbody">
-<h3><a class="stretch" href="/pt/slinglings/"><span lang="pt">Slinglings</span></a> <span class="badge" data-new-until="2026-12-15"><span lang="pt">NOVO</span></span></h3>
-<p lang="pt">Lance carteiros fofos pelo espaço e entregue a correspondência com tiros curvos!</p>
-<div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.slinglings.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg aria-hidden="true" height="14" viewbox="0 0 24 24" width="14"><path d="M5 3.5v17l15-8.5z" fill="currentColor"></path></svg>Google Play</a><details class="qr" data-qr="slinglings"><summary aria-label="QR"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z" fill="currentColor"></path></svg><span lang="pt">QR</span></summary><div class="qrpop"><img alt="QR code: install Slinglings" height="183" loading="lazy" src="/qr/slinglings.svg" width="183"/><p lang="pt">Escaneie com o celular</p></div></details></div>
-</div>
-</article>
 <article class="tool" data-pkg="com.snowlings.nesimapps" data-slug="snowlings" style="--tint:#2E6FBF">
 <img alt="Snowlings icon" class="icon" height="64" loading="lazy" src="/snowlings/icon.png" width="64"/>
 <div class="tbody">
@@ -315,6 +307,14 @@
 <h3><a class="stretch" href="/pt/grumblings/"><span lang="pt">Grumblings</span></a> <span class="badge" data-new-until="2026-12-10"><span lang="pt">NOVO</span></span></h3>
 <p lang="pt">Engane o monstro rabugento: um quebra-cabeça de labirinto por turnos com 300 níveis em 30 mundos.</p>
 <div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.grumblings.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg aria-hidden="true" height="14" viewbox="0 0 24 24" width="14"><path d="M5 3.5v17l15-8.5z" fill="currentColor"></path></svg>Google Play</a><details class="qr" data-qr="grumblings"><summary aria-label="QR"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z" fill="currentColor"></path></svg><span lang="pt">QR</span></summary><div class="qrpop"><img alt="QR code: install Grumblings" height="183" loading="lazy" src="/qr/grumblings.svg" width="183"/><p lang="pt">Escaneie com o celular</p></div></details></div>
+</div>
+</article>
+<article class="tool" data-pkg="com.tilelings.nesimapps" data-slug="tilelings" style="--tint:#4A5BB0">
+<img alt="Tilelings icon" class="icon" height="64" loading="lazy" src="/tilelings/icon.png" width="64"/>
+<div class="tbody">
+<h3><a class="stretch" href="/pt/tilelings/"><span lang="pt">Tilelings</span></a> <span class="badge" data-new-until="2026-12-05"><span lang="pt">NOVO</span></span></h3>
+<p lang="pt">Mahjong Paciência fofo, Connect e Tile Match. Novos desafios todo dia!</p>
+<div class="gprow"><a class="gp" href="https://play.google.com/store/apps/details?id=com.tilelings.nesimapps&amp;referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"><svg aria-hidden="true" height="14" viewbox="0 0 24 24" width="14"><path d="M5 3.5v17l15-8.5z" fill="currentColor"></path></svg>Google Play</a><details class="qr" data-qr="tilelings"><summary aria-label="QR"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-2 2h2v2h-2zm4 0h2v2h-2zm-4 2h2v2h-2z" fill="currentColor"></path></svg><span lang="pt">QR</span></summary><div class="qrpop"><img alt="QR code: install Tilelings" height="183" loading="lazy" src="/qr/tilelings.svg" width="183"/><p lang="pt">Escaneie com o celular</p></div></details></div>
 </div>
 </article>
 <article class="tool" data-pkg="com.logiclings.nesimapps" data-slug="logiclings" style="--tint:#2F66AD">
