@@ -9,7 +9,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "4e52262e6b167d056f21268207cc1344",
+  "hash": "1dd01aece2e73c39d46eec11a7941017",
   "slug": ""
  },
  "https://nesimapps.com/tr/": {
@@ -22,7 +22,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "bf10496ecf2789962d0167ad35d37ff3",
+  "hash": "e91bf0d1b68bfd4b7d2a4b477fe3cbfc",
   "slug": ""
  },
  "https://nesimapps.com/es/": {
@@ -35,7 +35,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "dd2b1f66061fc3558272728afc4dc86d",
+  "hash": "f00ea279710cfcc70a9321293c370428",
   "slug": ""
  },
  "https://nesimapps.com/pt/": {
@@ -48,7 +48,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "cc0b2850329468ec8206a8ca9960dc56",
+  "hash": "ac969e1451c2cb8f668f8821cd2e86d7",
   "slug": ""
  },
  "https://nesimapps.com/agecalculator/": {
@@ -489,7 +489,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "9fa8f72b7c25bdd83ffa3ae75932c0e9",
+  "hash": "654faf4003b23bc18dccfa36b1111b59",
   "slug": "grumblings"
  },
  "https://nesimapps.com/tr/grumblings/": {
@@ -502,7 +502,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "56827680c8ac9985a3a285cb27816a9e",
+  "hash": "51de76294b526cdbb5eb1e4242a2b3f3",
   "slug": "grumblings"
  },
  "https://nesimapps.com/es/grumblings/": {
@@ -515,7 +515,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "593df1d546186cb2a1b1cc3b8a9324ec",
+  "hash": "7a8ebf0449d40dc464322bd00ec78049",
   "slug": "grumblings"
  },
  "https://nesimapps.com/pt/grumblings/": {
@@ -528,7 +528,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "91f7b45517de03c6cb3bc83bd4435761",
+  "hash": "64502b2fe35e34e333087c3d8a9d028a",
   "slug": "grumblings"
  },
  "https://nesimapps.com/haftasonum/": {
