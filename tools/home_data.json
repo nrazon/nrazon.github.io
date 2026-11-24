@@ -265,18 +265,18 @@
   "pkg": "com.logiclings.nesimapps",
   "new": "2026-11-20",
   "desc": {
-   "tr": "Her gün yeni üç mantık bulmacası, beş türden: Taç, İkiz, Yol, Uykucu Yüzler ve Kurbağa Zıplatma. Zaman baskısı yok, sevimli yüzler var. Google Play'de.",
-   "en": "Three new logic puzzles every day from five kinds: Crown, Twin, Path, Sleepy Faces and Frog Hops. No timers, just cute faces. On Google Play.",
-   "es": "Tres puzzles de lógica nuevos cada día, de cinco tipos: Corona, Gemelos, Camino, Caras Dormilonas y Saltos de Ranas. Sin cronómetro, con caritas adorables. En Google Play.",
-   "pt": "Três quebra-cabeças de lógica novos todo dia, de cinco tipos: Coroa, Gêmeos, Caminho, Rostos Sonolentos e Pulos de Sapos. Sem pressão de tempo, com carinhas fofas. No Google Play."
+   "tr": "Her gün yeni üç mantık bulmacası, yedi türden: Taç, Koyun Ağılları, Altılı Sudoku, İkiz, Uykucu Yüzler, Kurbağa Zıplatma ve Yol. Zaman baskısı yok, sevimli yüzler var. Google Play'de.",
+   "en": "Three new logic puzzles every day from seven kinds: Crown, Sheep Pens, Sudoku Six, Twin, Sleepy Faces, Frog Hops and Path. No timers, just cute faces. On Google Play.",
+   "es": "Tres puzzles de lógica nuevos cada día, de siete tipos: Corona, Corrales, Sudoku Seis, Gemelos, Caras Dormilonas, Saltos de Ranas y Camino. Sin cronómetro, con caritas adorables. En Google Play.",
+   "pt": "Três quebra-cabeças de lógica novos todo dia, de sete tipos: Coroa, Currais, Sudoku Seis, Gêmeos, Rostos Sonolentos, Pulos de Sapos e Caminho. Sem pressão de tempo, com carinhas fofas. No Google Play."
   },
   "status": "live",
   "popular": false,
   "desc_live": {
-   "tr": "Her gün yeni üç mantık bulmacası, beş türden: Taç, İkiz, Yol, Uykucu Yüzler ve Kurbağa Zıplatma. Zaman baskısı yok, sevimli yüzler var.",
-   "en": "Three new logic puzzles every day from five kinds: Crown, Twin, Path, Sleepy Faces and Frog Hops. No timers, just cute faces.",
-   "es": "Tres puzzles de lógica nuevos cada día, de cinco tipos: Corona, Gemelos, Camino, Caras Dormilonas y Saltos de Ranas. Sin cronómetro, con caritas adorables.",
-   "pt": "Três quebra-cabeças de lógica novos todo dia, de cinco tipos: Coroa, Gêmeos, Caminho, Rostos Sonolentos e Pulos de Sapos. Sem pressão de tempo, com carinhas fofas."
+   "tr": "Her gün yeni üç mantık bulmacası, yedi türden: Taç, Koyun Ağılları, Altılı Sudoku, İkiz, Uykucu Yüzler, Kurbağa Zıplatma ve Yol. Zaman baskısı yok, sevimli yüzler var.",
+   "en": "Three new logic puzzles every day from seven kinds: Crown, Sheep Pens, Sudoku Six, Twin, Sleepy Faces, Frog Hops and Path. No timers, just cute faces.",
+   "es": "Tres puzzles de lógica nuevos cada día, de siete tipos: Corona, Corrales, Sudoku Seis, Gemelos, Caras Dormilonas, Saltos de Ranas y Camino. Sin cronómetro, con caritas adorables.",
+   "pt": "Três quebra-cabeças de lógica novos todo dia, de sete tipos: Coroa, Currais, Sudoku Seis, Gêmeos, Rostos Sonolentos, Pulos de Sapos e Caminho. Sem pressão de tempo, com carinhas fofas."
   }
  },
  {

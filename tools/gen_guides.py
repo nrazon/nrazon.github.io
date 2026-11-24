@@ -17,7 +17,7 @@ LANGS = ["en", "tr", "es", "pt"]
 DIRS = {"en": "guides", "tr": "tr/rehber", "es": "es/guias", "pt": "pt/guias"}
 HREFLANG = {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}
 OGLOC = {"en": "en_US", "tr": "tr_TR", "es": "es_ES", "pt": "pt_BR"}
-GUIDE_MODULES = ["mahjong", "solitaire", "blocks", "beamies", "arrows", "logic", "lights", "peg", "g2048", "tictactoe", "maze",
+GUIDE_MODULES = ["mahjong", "solitaire", "blocks", "beamies", "arrows", "logic", "lights", "peg", "pens", "sudoku6", "g2048", "tictactoe", "maze",
                 "freecell", "spider", "tripeaks", "shisen", "mahjong_stuck", "nudge_slide", "nudge_push", "g2048_beyond", "blocks_advanced",
                 "mahjong_tiles", "solitaire_types", "pento", "pento_drop", "tombala", "bingo",
                 "tile_match", "nuzzlings", "brassline", "quake_lists", "uzay_screens", "pulse_howto", "choose_cozy_puzzle"]  # Pentolings rehberleri ("pento", "pento_drop") yayin gunu eklenir  # "maze" (Grumblings): yayin gunu eklenir (tools/guides/maze.py hazir)

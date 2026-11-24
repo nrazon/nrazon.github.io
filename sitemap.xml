@@ -1198,7 +1198,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/guias/</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/"/>
@@ -1225,7 +1225,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/guias/caras-dormilonas-estrategia-perseguir-las-luces/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/sleepy-faces-strategy-chase-the-lights/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/uykucu-yuzler-stratejisi-isiklari-kovala/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/caras-dormilonas-estrategia-perseguir-las-luces/"/>
@@ -1252,7 +1252,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/guias/como-jugar-beamies/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/how-to-play-beamies/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/beamies-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/como-jugar-beamies/"/>
@@ -1315,7 +1315,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/guias/como-jugar-puzle-de-flechas/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/how-to-play-arrow-puzzle/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/ok-bulmacasi-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/como-jugar-puzle-de-flechas/"/>
@@ -1387,7 +1387,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/guias/como-resolver-corona-gemelos-camino/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/how-to-solve-crown-twin-path-puzzles/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/tac-ikiz-yol-bulmacalari-nasil-cozulur/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/como-resolver-corona-gemelos-camino/"/>
@@ -1411,6 +1411,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/como-resolver-puzles-de-pentominos/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/guias/como-resolver-quebra-cabecas-de-pentominos/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/guides/how-to-solve-pentomino-puzzles/"/>
+  </url>
+  <url>
+    <loc>https://nesimapps.com/es/guias/corrales-puzzle-de-rectangulos-guia/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/sheep-pens-rectangle-puzzle-guide/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/koyun-agillari-dikdortgen-bulmacasi-rehberi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/corrales-puzzle-de-rectangulos-guia/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/guias/currais-quebra-cabeca-de-retangulos-guia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/guides/sheep-pens-rectangle-puzzle-guide/"/>
   </url>
   <url>
     <loc>https://nesimapps.com/es/guias/estrategia-puzle-de-empujar-cajas-evita-bloqueos/</loc>
@@ -1477,12 +1486,21 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/guias/saltos-de-ranas-estrategia-solitario-de-fichas/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/frog-hops-peg-solitaire-strategy/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/kurbaga-ziplatma-stratejisi-peg-solitaire/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/saltos-de-ranas-estrategia-solitario-de-fichas/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/guias/pulos-de-sapos-estrategia-resta-um/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/guides/frog-hops-peg-solitaire-strategy/"/>
+  </url>
+  <url>
+    <loc>https://nesimapps.com/es/guias/sudoku-seis-guia-sudoku-6x6/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/sudoku-six-6x6-sudoku-guide/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/altili-sudoku-6x6-sudoku-rehberi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/sudoku-seis-guia-sudoku-6x6/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/guias/sudoku-seis-guia-sudoku-6x6/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/guides/sudoku-six-6x6-sudoku-guide/"/>
   </url>
   <url>
     <loc>https://nesimapps.com/es/guias/tres-en-raya-estrategia-para-no-perder/</loc>
@@ -1504,7 +1522,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/logiclings/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/logiclings/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/logiclings/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/logiclings/"/>
@@ -1637,7 +1655,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/guides/</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/"/>
@@ -1691,7 +1709,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/guides/frog-hops-peg-solitaire-strategy/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/frog-hops-peg-solitaire-strategy/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/kurbaga-ziplatma-stratejisi-peg-solitaire/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/saltos-de-ranas-estrategia-solitario-de-fichas/"/>
@@ -1736,7 +1754,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/guides/how-to-play-arrow-puzzle/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/how-to-play-arrow-puzzle/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/ok-bulmacasi-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/como-jugar-puzle-de-flechas/"/>
@@ -1745,7 +1763,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/guides/how-to-play-beamies/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/how-to-play-beamies/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/beamies-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/como-jugar-beamies/"/>
@@ -1844,7 +1862,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/guides/how-to-solve-crown-twin-path-puzzles/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/how-to-solve-crown-twin-path-puzzles/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/tac-ikiz-yol-bulmacalari-nasil-cozulur/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/como-resolver-corona-gemelos-camino/"/>
@@ -1888,13 +1906,31 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/guides/mahjong-tiles-and-their-meanings-guide/"/>
   </url>
   <url>
+    <loc>https://nesimapps.com/guides/sheep-pens-rectangle-puzzle-guide/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/sheep-pens-rectangle-puzzle-guide/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/koyun-agillari-dikdortgen-bulmacasi-rehberi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/corrales-puzzle-de-rectangulos-guia/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/guias/currais-quebra-cabeca-de-retangulos-guia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/guides/sheep-pens-rectangle-puzzle-guide/"/>
+  </url>
+  <url>
     <loc>https://nesimapps.com/guides/sleepy-faces-strategy-chase-the-lights/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/sleepy-faces-strategy-chase-the-lights/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/uykucu-yuzler-stratejisi-isiklari-kovala/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/caras-dormilonas-estrategia-perseguir-las-luces/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/guias/rostos-sonolentos-estrategia-perseguir-as-luzes/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/guides/sleepy-faces-strategy-chase-the-lights/"/>
+  </url>
+  <url>
+    <loc>https://nesimapps.com/guides/sudoku-six-6x6-sudoku-guide/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/sudoku-six-6x6-sudoku-guide/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/altili-sudoku-6x6-sudoku-rehberi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/sudoku-seis-guia-sudoku-6x6/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/guias/sudoku-seis-guia-sudoku-6x6/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/guides/sudoku-six-6x6-sudoku-guide/"/>
   </url>
   <url>
     <loc>https://nesimapps.com/guides/tic-tac-toe-strategy-never-lose/</loc>
@@ -1947,7 +1983,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/logiclings/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/logiclings/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/logiclings/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/logiclings/"/>
@@ -2581,7 +2617,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/guias/</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/"/>
@@ -2626,7 +2662,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/guias/como-jogar-beamies/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/how-to-play-beamies/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/beamies-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/como-jugar-beamies/"/>
@@ -2716,7 +2752,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/guias/como-jogar-quebra-cabeca-de-setas/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/how-to-play-arrow-puzzle/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/ok-bulmacasi-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/como-jugar-puzle-de-flechas/"/>
@@ -2761,7 +2797,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/guias/como-resolver-coroa-gemeos-caminho/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/how-to-solve-crown-twin-path-puzzles/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/tac-ikiz-yol-bulmacalari-nasil-cozulur/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/como-resolver-corona-gemelos-camino/"/>
@@ -2785,6 +2821,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/como-resolver-puzles-de-pentominos/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/guias/como-resolver-quebra-cabecas-de-pentominos/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/guides/how-to-solve-pentomino-puzzles/"/>
+  </url>
+  <url>
+    <loc>https://nesimapps.com/pt/guias/currais-quebra-cabeca-de-retangulos-guia/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/sheep-pens-rectangle-puzzle-guide/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/koyun-agillari-dikdortgen-bulmacasi-rehberi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/corrales-puzzle-de-rectangulos-guia/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/guias/currais-quebra-cabeca-de-retangulos-guia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/guides/sheep-pens-rectangle-puzzle-guide/"/>
   </url>
   <url>
     <loc>https://nesimapps.com/pt/guias/dicas-quebra-cabeca-de-blocos/</loc>
@@ -2851,7 +2896,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/guias/pulos-de-sapos-estrategia-resta-um/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/frog-hops-peg-solitaire-strategy/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/kurbaga-ziplatma-stratejisi-peg-solitaire/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/saltos-de-ranas-estrategia-solitario-de-fichas/"/>
@@ -2878,7 +2923,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/guias/rostos-sonolentos-estrategia-perseguir-as-luzes/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/sleepy-faces-strategy-chase-the-lights/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/uykucu-yuzler-stratejisi-isiklari-kovala/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/caras-dormilonas-estrategia-perseguir-las-luces/"/>
@@ -2886,8 +2931,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/guides/sleepy-faces-strategy-chase-the-lights/"/>
   </url>
   <url>
+    <loc>https://nesimapps.com/pt/guias/sudoku-seis-guia-sudoku-6x6/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/sudoku-six-6x6-sudoku-guide/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/altili-sudoku-6x6-sudoku-rehberi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/sudoku-seis-guia-sudoku-6x6/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/guias/sudoku-seis-guia-sudoku-6x6/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/guides/sudoku-six-6x6-sudoku-guide/"/>
+  </url>
+  <url>
     <loc>https://nesimapps.com/pt/logiclings/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/logiclings/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/logiclings/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/logiclings/"/>
@@ -3157,7 +3211,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/logiclings/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/logiclings/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/logiclings/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/logiclings/"/>
@@ -3202,7 +3256,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/rehber/</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/"/>
@@ -3237,6 +3291,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/guides/how-to-read-the-afad-and-kandilli-earthquake-lists/"/>
   </url>
   <url>
+    <loc>https://nesimapps.com/tr/rehber/altili-sudoku-6x6-sudoku-rehberi/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/sudoku-six-6x6-sudoku-guide/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/altili-sudoku-6x6-sudoku-rehberi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/sudoku-seis-guia-sudoku-6x6/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/guias/sudoku-seis-guia-sudoku-6x6/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/guides/sudoku-six-6x6-sudoku-guide/"/>
+  </url>
+  <url>
     <loc>https://nesimapps.com/tr/rehber/android-icin-rahat-bulmaca-oyunu-nasil-secilir/</loc>
     <lastmod>2026-11-20</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/how-to-choose-a-cozy-puzzle-game-for-android/"/>
@@ -3247,7 +3310,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/rehber/beamies-nasil-oynanir/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/how-to-play-beamies/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/beamies-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/como-jugar-beamies/"/>
@@ -3345,8 +3408,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/guides/how-to-play-klondike-solitaire/"/>
   </url>
   <url>
+    <loc>https://nesimapps.com/tr/rehber/koyun-agillari-dikdortgen-bulmacasi-rehberi/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/sheep-pens-rectangle-puzzle-guide/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/koyun-agillari-dikdortgen-bulmacasi-rehberi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/corrales-puzzle-de-rectangulos-guia/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/guias/currais-quebra-cabeca-de-retangulos-guia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/guides/sheep-pens-rectangle-puzzle-guide/"/>
+  </url>
+  <url>
     <loc>https://nesimapps.com/tr/rehber/kurbaga-ziplatma-stratejisi-peg-solitaire/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/frog-hops-peg-solitaire-strategy/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/kurbaga-ziplatma-stratejisi-peg-solitaire/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/saltos-de-ranas-estrategia-solitario-de-fichas/"/>
@@ -3400,7 +3472,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/rehber/ok-bulmacasi-nasil-oynanir/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/how-to-play-arrow-puzzle/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/ok-bulmacasi-nasil-oynanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/como-jugar-puzle-de-flechas/"/>
@@ -3427,7 +3499,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/rehber/tac-ikiz-yol-bulmacalari-nasil-cozulur/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/how-to-solve-crown-twin-path-puzzles/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/tac-ikiz-yol-bulmacalari-nasil-cozulur/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/como-resolver-corona-gemelos-camino/"/>
@@ -3481,7 +3553,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/rehber/uykucu-yuzler-stratejisi-isiklari-kovala/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/sleepy-faces-strategy-chase-the-lights/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/uykucu-yuzler-stratejisi-isiklari-kovala/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/caras-dormilonas-estrategia-perseguir-las-luces/"/>

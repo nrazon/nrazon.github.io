@@ -66,10 +66,10 @@
    "name": "Logiclings",
    "pkg": "com.logiclings.nesimapps",
    "icon": "icons/logiclings.png",
-   "tr": "Her gün yeni mantık bulmacaları: Taç, İkiz, Yol, Uykucu Yüzler ve Kurbağa Zıplatma.",
-   "en": "New logic puzzles every day: Crown, Twin, Path, Sleepy Faces and Frog Hops.",
-   "es": "Puzles de lógica nuevos cada día: Corona, Gemelos, Camino, Caras Dormilonas y Saltos de Ranas.",
-   "pt": "Novos quebra-cabeças de lógica todo dia: Coroa, Gêmeos, Caminho, Rostos Sonolentos e Pulos de Sapos."
+   "tr": "Her gün yeni mantık bulmacaları, yedi tür: Taç, Koyun Ağılları, Altılı Sudoku ve daha fazlası.",
+   "en": "New logic puzzles every day, seven kinds: Crown, Sheep Pens, Sudoku Six and more.",
+   "es": "Puzles de lógica nuevos cada día, siete tipos: Corona, Corrales, Sudoku Seis y más.",
+   "pt": "Novos quebra-cabeças de lógica todo dia, sete tipos: Coroa, Currais, Sudoku Seis e mais."
   },
   {
    "key": "beamies",

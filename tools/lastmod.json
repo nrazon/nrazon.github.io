@@ -1344,7 +1344,7 @@
   "date": "2026-11-15"
  },
  "https://nesimapps.com/": {
-  "hash": "1dd01aece2e73c39d46eec11a7941017",
+  "hash": "b80be07f52f5df08bcecaa9a64321832",
   "date": "2026-11-24"
  },
  "https://nesimapps.com/agecalculator/": {
@@ -1500,7 +1500,7 @@
   "date": "2026-11-23"
  },
  "https://nesimapps.com/es/": {
-  "hash": "f00ea279710cfcc70a9321293c370428",
+  "hash": "fc5225d5951f6c0448e29e574fa2ae58",
   "date": "2026-11-24"
  },
  "https://nesimapps.com/es/agecalculator/": {
@@ -1648,8 +1648,8 @@
   "date": "2026-11-24"
  },
  "https://nesimapps.com/es/guias/": {
-  "hash": "6b23534d34397acb89dab253a993dcdf",
-  "date": "2026-11-20"
+  "hash": "5a62421bb4b1d4c118e4f08acfb0d987",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/es/guias/2048-despues-4096-8192-errores-comunes/": {
   "hash": "0ef156de410775ea833197a8589e5368",
@@ -1660,16 +1660,16 @@
   "date": "2026-11-15"
  },
  "https://nesimapps.com/es/guias/caras-dormilonas-estrategia-perseguir-las-luces/": {
-  "hash": "48a985569c698d059241a7834aa3996c",
-  "date": "2026-11-15"
+  "hash": "ddd099b13118a555ad52e585b64ba3ac",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/es/guias/como-jugar-2048-estrategia/": {
   "hash": "0a2bc586a4a76d6d36727915d45c0df1",
   "date": "2026-11-15"
  },
  "https://nesimapps.com/es/guias/como-jugar-beamies/": {
-  "hash": "9390f0db9ee90c171f0c56ca057652b4",
-  "date": "2026-11-15"
+  "hash": "144002c3eaf709dc5dd76d0178fcba35",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/es/guias/como-jugar-bingo-de-75-bolas-patrones-y-consejos/": {
   "hash": "c05fc4b9639b8efd29d93d17db35902f",
@@ -1696,8 +1696,8 @@
   "date": "2026-11-20"
  },
  "https://nesimapps.com/es/guias/como-jugar-puzle-de-flechas/": {
-  "hash": "2f2b44c6dbc3df4e5b5893c0dc62c7ab",
-  "date": "2026-11-15"
+  "hash": "e77aad0899cd6fe51d5d02256436348d",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/es/guias/como-jugar-solitario-klondike/": {
   "hash": "664104977cc9b9c44c833e1a3c9b623a",
@@ -1724,8 +1724,8 @@
   "date": "2026-11-15"
  },
  "https://nesimapps.com/es/guias/como-resolver-corona-gemelos-camino/": {
-  "hash": "bca8bacc6764fa43f140d999463cf341",
-  "date": "2026-11-15"
+  "hash": "92693b34d713a48a82082532e27b73eb",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/es/guias/como-resolver-puzles-de-deslizar-vehiculos/": {
   "hash": "f1ddc7ec4c5b70e088bc723cd06ad753",
@@ -1764,8 +1764,8 @@
   "date": "2026-11-15"
  },
  "https://nesimapps.com/es/guias/saltos-de-ranas-estrategia-solitario-de-fichas/": {
-  "hash": "63b6eff04483a01a556e7a7387279257",
-  "date": "2026-11-15"
+  "hash": "461cd520bf55b5bf61016d0906ee31a8",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/es/guias/tres-en-raya-estrategia-para-no-perder/": {
   "hash": "539f2c2037f7d25880609533238881bf",
@@ -1776,8 +1776,8 @@
   "date": "2026-11-15"
  },
  "https://nesimapps.com/es/logiclings/": {
-  "hash": "32337502b825bb02695795f0d9cf0d18",
-  "date": "2026-11-23"
+  "hash": "c998a8e38ed80a89a9e30a76459dc84a",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/es/nudgelings/": {
   "hash": "5d9c5738f4e94b8d0ed08c7ba5cb534f",
@@ -1824,8 +1824,8 @@
   "date": "2026-11-24"
  },
  "https://nesimapps.com/guides/": {
-  "hash": "ba37ee08f9e2169960df1024c3e62f3b",
-  "date": "2026-11-20"
+  "hash": "7092e385453f5bde9a437fd93850549f",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/guides/2048-beyond-4096-8192-common-mistakes/": {
   "hash": "63fccddd5712793a221d0a42811de9e0",
@@ -1848,8 +1848,8 @@
   "date": "2026-11-15"
  },
  "https://nesimapps.com/guides/frog-hops-peg-solitaire-strategy/": {
-  "hash": "3854b4a51b8516d1b97a0fb72b3939df",
-  "date": "2026-11-15"
+  "hash": "3fcf7f2a7ad30152e9e5d9e00faf2035",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/guides/how-to-play-2048-strategy/": {
   "hash": "921a31aa9d10b26e5b221d3838963e52",
@@ -1860,12 +1860,12 @@
   "date": "2026-11-15"
  },
  "https://nesimapps.com/guides/how-to-play-arrow-puzzle/": {
-  "hash": "b38565a4bb5bb729fc3aefaf95ae1275",
-  "date": "2026-11-15"
+  "hash": "1522ceafd2c7ac3b9278f2811dab18b8",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/guides/how-to-play-beamies/": {
-  "hash": "7ea1c17c114d7eee9b7a1a2b83ee7e63",
-  "date": "2026-11-15"
+  "hash": "0024c9123c6f86c8db896917438557ac",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/guides/how-to-play-brassline-blackjack-roulette-texas-holdem/": {
   "hash": "d215752ee868054dcafdd62fd8e0c34f",
@@ -1908,8 +1908,8 @@
   "date": "2026-11-15"
  },
  "https://nesimapps.com/guides/how-to-solve-crown-twin-path-puzzles/": {
-  "hash": "62ad59f97c7540edaaffbad778d91614",
-  "date": "2026-11-15"
+  "hash": "36f601d5f83c67a32cca2c1ef249737e",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/guides/how-to-solve-pentomino-puzzles/": {
   "hash": "14729adda711843b2bbf26165c9bd946",
@@ -1928,8 +1928,8 @@
   "date": "2026-11-20"
  },
  "https://nesimapps.com/guides/sleepy-faces-strategy-chase-the-lights/": {
-  "hash": "03da91f69ad1465a1745af2e8ba75166",
-  "date": "2026-11-15"
+  "hash": "d1610b7bc9b6af51bfda7f584fb44d03",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/guides/tic-tac-toe-strategy-never-lose/": {
   "hash": "7713b63c5320ab5846b927459926fd92",
@@ -1956,8 +1956,8 @@
   "date": "2026-11-23"
  },
  "https://nesimapps.com/logiclings/": {
-  "hash": "d3edef6b5a6f48544fea7e28ebc55916",
-  "date": "2026-11-23"
+  "hash": "4399e9553823b6eb7ab99d70557e0002",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/medyafobi/": {
   "hash": "4ad0c1393cc553821448ffd3e08c3840",
@@ -1976,7 +1976,7 @@
   "date": "2026-11-23"
  },
  "https://nesimapps.com/pt/": {
-  "hash": "ac969e1451c2cb8f668f8821cd2e86d7",
+  "hash": "4d1bd61fb8aba867a263b4b096c0b8e5",
   "date": "2026-11-24"
  },
  "https://nesimapps.com/pt/agecalculator/": {
@@ -2124,8 +2124,8 @@
   "date": "2026-11-24"
  },
  "https://nesimapps.com/pt/guias/": {
-  "hash": "be443ec33330c91ddc361836f30ded38",
-  "date": "2026-11-20"
+  "hash": "ceb8deb1ceb94ad5b1c571f21dba71ff",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/pt/guias/2048-depois-4096-8192-erros-comuns/": {
   "hash": "48d2e53fee624c66214e7908729aad20",
@@ -2140,8 +2140,8 @@
   "date": "2026-11-15"
  },
  "https://nesimapps.com/pt/guias/como-jogar-beamies/": {
-  "hash": "dd6e4d979888712241ed4c22f8e60e4f",
-  "date": "2026-11-15"
+  "hash": "d6b092fb2ef619fe25f31365eaf82db6",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/pt/guias/como-jogar-bingo-de-75-bolas-padroes-e-dicas/": {
   "hash": "d1a936ed459528b7bb213783200b2200",
@@ -2180,8 +2180,8 @@
   "date": "2026-11-15"
  },
  "https://nesimapps.com/pt/guias/como-jogar-quebra-cabeca-de-setas/": {
-  "hash": "23f6b72aaa524edf33ead29f31763418",
-  "date": "2026-11-15"
+  "hash": "f0f19963d16202117b690f2720394714",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/pt/guias/como-jogar-tile-match-estrategia-do-rack/": {
   "hash": "50b14b4d72d9341c07e6831f1011681b",
@@ -2196,8 +2196,8 @@
   "date": "2026-11-15"
  },
  "https://nesimapps.com/pt/guias/como-resolver-coroa-gemeos-caminho/": {
-  "hash": "34ef3ce6726702c081ed5f01ab49b124",
-  "date": "2026-11-15"
+  "hash": "cb4c0097002ab4bf755df7380f1e0e23",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/pt/guias/como-resolver-quebra-cabecas-de-deslizar-veiculos/": {
   "hash": "891e2d161b46ea1d3ad0713050417f63",
@@ -2236,8 +2236,8 @@
   "date": "2026-11-20"
  },
  "https://nesimapps.com/pt/guias/pulos-de-sapos-estrategia-resta-um/": {
-  "hash": "69241f4195a8134aba1493bb22d73421",
-  "date": "2026-11-15"
+  "hash": "9cfddf8a2b744ebcfa32f981d1640f02",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/pt/guias/qual-paciencia-escolher-klondike-spider-freecell-tripeaks/": {
   "hash": "1cf9efa3e8a06b90957f122061c38899",
@@ -2248,12 +2248,12 @@
   "date": "2026-11-15"
  },
  "https://nesimapps.com/pt/guias/rostos-sonolentos-estrategia-perseguir-as-luzes/": {
-  "hash": "04ef9bd374062061fa3033fa0501a500",
-  "date": "2026-11-15"
+  "hash": "13d964fa8ca1292b33cf5e78c941e704",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/pt/logiclings/": {
-  "hash": "a542c6aca0e345e0797810fd7f5b3044",
-  "date": "2026-11-23"
+  "hash": "9874f1c9aae97d4cab052bed0b5e7675",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/pt/nudgelings/": {
   "hash": "e9870001ade97b3cbae2e578c50075df",
@@ -2312,7 +2312,7 @@
   "date": "2026-11-23"
  },
  "https://nesimapps.com/tr/": {
-  "hash": "e91bf0d1b68bfd4b7d2a4b477fe3cbfc",
+  "hash": "d02da155ad2e239b60679db1cd53b4e4",
   "date": "2026-11-24"
  },
  "https://nesimapps.com/tr/agecalculator/": {
@@ -2352,8 +2352,8 @@
   "date": "2026-11-24"
  },
  "https://nesimapps.com/tr/logiclings/": {
-  "hash": "0bba52f4fb710846953d1cf418eb88f9",
-  "date": "2026-11-23"
+  "hash": "487a74aed12ff8fe151e09e17ddbb977",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/tr/nudgelings/": {
   "hash": "31d42f30f0c04d97e108e006d51a87f9",
@@ -2368,8 +2368,8 @@
   "date": "2026-11-23"
  },
  "https://nesimapps.com/tr/rehber/": {
-  "hash": "bc1331fbf09655121a6a0f3d3192ba29",
-  "date": "2026-11-20"
+  "hash": "e188d5c16cc34bfca2eeaa63eeba4c39",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/tr/rehber/2048-den-sonra-4096-8192-ve-sik-yapilan-hatalar/": {
   "hash": "6ce1c6ef27f95d08b8133183e534d069",
@@ -2384,8 +2384,8 @@
   "date": "2026-11-15"
  },
  "https://nesimapps.com/tr/rehber/beamies-nasil-oynanir/": {
-  "hash": "17641d49a794b6fd2fc4996cf80889a4",
-  "date": "2026-11-15"
+  "hash": "646584c69084cb31aefe8e892e41fea6",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/tr/rehber/bingo-nasil-oynanir-75-top-desenler-ve-ipuclari/": {
   "hash": "deffb3c008633939f4afd737d8a7e006",
@@ -2428,8 +2428,8 @@
   "date": "2026-11-15"
  },
  "https://nesimapps.com/tr/rehber/kurbaga-ziplatma-stratejisi-peg-solitaire/": {
-  "hash": "39329e2bcb5fd6a00cd0aaf9b90aa068",
-  "date": "2026-11-15"
+  "hash": "f590723703c911029182e9744000bf04",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/tr/rehber/kutu-itme-bulmacasi-stratejisi-kilitlenmeden-kacin/": {
   "hash": "99e099e225acb0c0d0214ea6a212fb35",
@@ -2452,8 +2452,8 @@
   "date": "2026-11-15"
  },
  "https://nesimapps.com/tr/rehber/ok-bulmacasi-nasil-oynanir/": {
-  "hash": "186113b05aab634931af934f483586c8",
-  "date": "2026-11-15"
+  "hash": "356b8337e91c695457f1a5b1251bad6f",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/tr/rehber/pentomino-bulmacasi-nasil-cozulur/": {
   "hash": "aebf6805d4dbfae55d66543ddfa3d6c1",
@@ -2464,8 +2464,8 @@
   "date": "2026-11-15"
  },
  "https://nesimapps.com/tr/rehber/tac-ikiz-yol-bulmacalari-nasil-cozulur/": {
-  "hash": "f43af14aaea76a5bb494d960c31e0506",
-  "date": "2026-11-15"
+  "hash": "64f88a5a58f8ba6dfdbbb1331ee56556",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/tr/rehber/tas-baglama-bulmacasi-nasil-oynanir/": {
   "hash": "70ad2e5c9041c39e86ae3c66636fc174",
@@ -2484,8 +2484,8 @@
   "date": "2026-11-15"
  },
  "https://nesimapps.com/tr/rehber/uykucu-yuzler-stratejisi-isiklari-kovala/": {
-  "hash": "a0077f892cd08438ebf20a9d33652434",
-  "date": "2026-11-15"
+  "hash": "12755e138cd79838973f6594a7276162",
+  "date": "2026-11-24"
  },
  "https://nesimapps.com/tr/rehber/uzay-gunlugu-turkiye-dunya-ve-iss-ekranlari-ne-gosteriyor/": {
   "hash": "fdf6c9ebbce43b7dea5b897285b59c1b",
@@ -3202,5 +3202,37 @@
  "https://nesimapps.com/tr/yazilar/yercekimi-sapan-bulmacasi-cozucu-ve-guvenilir-ipucu/": {
   "hash": "9ad6ecc921f13073333f2801a6be6527",
   "date": "2026-11-23"
+ },
+ "https://nesimapps.com/es/guias/corrales-puzzle-de-rectangulos-guia/": {
+  "hash": "36f6c6cbe917f0eb149482b3db34d58c",
+  "date": "2026-11-24"
+ },
+ "https://nesimapps.com/es/guias/sudoku-seis-guia-sudoku-6x6/": {
+  "hash": "08ffe7ead6fefe0446f561ccf20cdd3a",
+  "date": "2026-11-24"
+ },
+ "https://nesimapps.com/guides/sheep-pens-rectangle-puzzle-guide/": {
+  "hash": "8f57f8816a5f4bfa5178e6dc89c54a76",
+  "date": "2026-11-24"
+ },
+ "https://nesimapps.com/guides/sudoku-six-6x6-sudoku-guide/": {
+  "hash": "01684ae136ed41e526b19a80b0d71558",
+  "date": "2026-11-24"
+ },
+ "https://nesimapps.com/pt/guias/currais-quebra-cabeca-de-retangulos-guia/": {
+  "hash": "8d69c56eba11851f7033fd7dc1557c01",
+  "date": "2026-11-24"
+ },
+ "https://nesimapps.com/pt/guias/sudoku-seis-guia-sudoku-6x6/": {
+  "hash": "80b97b412cd8e29ef6b027f555b80643",
+  "date": "2026-11-24"
+ },
+ "https://nesimapps.com/tr/rehber/altili-sudoku-6x6-sudoku-rehberi/": {
+  "hash": "7cf32587d5c488326851964246edb9b5",
+  "date": "2026-11-24"
+ },
+ "https://nesimapps.com/tr/rehber/koyun-agillari-dikdortgen-bulmacasi-rehberi/": {
+  "hash": "d2c633d17633350de9bb1d482cf2e98b",
+  "date": "2026-11-24"
  }
 }
