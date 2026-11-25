@@ -101,6 +101,18 @@
    "tr": "/tr/rehber/telefon-kamerasiyla-nabiz-nasil-olculur/",
    "es": "/es/guias/como-medir-el-pulso-con-la-camara-del-movil/",
    "pt": "/pt/guias/como-medir-a-pulsacao-com-a-camera-do-celular/"
+  },
+  "slinglings": {
+   "en": "/guides/how-to-play-slinglings-sling-and-gravity-puzzle/",
+   "tr": "/tr/rehber/slinglings-nasil-oynanir-sapan-ve-yercekimi-bulmacasi/",
+   "es": "/es/guias/como-jugar-slinglings-tirachinas-y-gravedad/",
+   "pt": "/pt/guias/como-jogar-slinglings-estilingue-e-gravidade/"
+  },
+  "snowlings": {
+   "en": "/guides/snowlings-new-year-countdown-and-winter-calendar-guide/",
+   "tr": "/tr/rehber/snowlings-yilbasi-geri-sayimi-ve-kis-takvimi-kullanimi/",
+   "es": "/es/guias/snowlings-cuenta-atras-ano-nuevo-y-calendario-de-invierno/",
+   "pt": "/pt/guias/snowlings-contagem-regressiva-ano-novo-e-calendario-de-inverno/"
   }
  },
  "pages": [
@@ -1645,6 +1657,182 @@
    "hash": "7f3baf26c454de66680effd9ce2c813a"
   },
   {
+   "url": "https://nesimapps.com/guides/how-to-play-slinglings-sling-and-gravity-puzzle/",
+   "loc": {
+    "en": "https://nesimapps.com/guides/how-to-play-slinglings-sling-and-gravity-puzzle/",
+    "tr": "https://nesimapps.com/tr/rehber/slinglings-nasil-oynanir-sapan-ve-yercekimi-bulmacasi/",
+    "es": "https://nesimapps.com/es/guias/como-jugar-slinglings-tirachinas-y-gravedad/",
+    "pt": "https://nesimapps.com/pt/guias/como-jogar-slinglings-estilingue-e-gravidade/"
+   },
+   "default": "en",
+   "hash": "d150d1bbf9bd99e17311136d0f2f8c9e"
+  },
+  {
+   "url": "https://nesimapps.com/tr/rehber/slinglings-nasil-oynanir-sapan-ve-yercekimi-bulmacasi/",
+   "loc": {
+    "en": "https://nesimapps.com/guides/how-to-play-slinglings-sling-and-gravity-puzzle/",
+    "tr": "https://nesimapps.com/tr/rehber/slinglings-nasil-oynanir-sapan-ve-yercekimi-bulmacasi/",
+    "es": "https://nesimapps.com/es/guias/como-jugar-slinglings-tirachinas-y-gravedad/",
+    "pt": "https://nesimapps.com/pt/guias/como-jogar-slinglings-estilingue-e-gravidade/"
+   },
+   "default": "en",
+   "hash": "14a2ca01c23c87429c609bbf689d05e3"
+  },
+  {
+   "url": "https://nesimapps.com/es/guias/como-jugar-slinglings-tirachinas-y-gravedad/",
+   "loc": {
+    "en": "https://nesimapps.com/guides/how-to-play-slinglings-sling-and-gravity-puzzle/",
+    "tr": "https://nesimapps.com/tr/rehber/slinglings-nasil-oynanir-sapan-ve-yercekimi-bulmacasi/",
+    "es": "https://nesimapps.com/es/guias/como-jugar-slinglings-tirachinas-y-gravedad/",
+    "pt": "https://nesimapps.com/pt/guias/como-jogar-slinglings-estilingue-e-gravidade/"
+   },
+   "default": "en",
+   "hash": "762281001c234c38813931b953e83c11"
+  },
+  {
+   "url": "https://nesimapps.com/pt/guias/como-jogar-slinglings-estilingue-e-gravidade/",
+   "loc": {
+    "en": "https://nesimapps.com/guides/how-to-play-slinglings-sling-and-gravity-puzzle/",
+    "tr": "https://nesimapps.com/tr/rehber/slinglings-nasil-oynanir-sapan-ve-yercekimi-bulmacasi/",
+    "es": "https://nesimapps.com/es/guias/como-jugar-slinglings-tirachinas-y-gravedad/",
+    "pt": "https://nesimapps.com/pt/guias/como-jogar-slinglings-estilingue-e-gravidade/"
+   },
+   "default": "en",
+   "hash": "17103e9ecb2c778166efc3cdf66f2f46"
+  },
+  {
+   "url": "https://nesimapps.com/guides/slinglings-routes-couriers-and-progress/",
+   "loc": {
+    "en": "https://nesimapps.com/guides/slinglings-routes-couriers-and-progress/",
+    "tr": "https://nesimapps.com/tr/rehber/slinglings-rotalar-kuryeler-ve-ilerleme/",
+    "es": "https://nesimapps.com/es/guias/slinglings-rutas-carteros-y-progreso/",
+    "pt": "https://nesimapps.com/pt/guias/slinglings-rotas-carteiros-e-progresso/"
+   },
+   "default": "en",
+   "hash": "370bec70f25b85149fedb853aebb5f78"
+  },
+  {
+   "url": "https://nesimapps.com/tr/rehber/slinglings-rotalar-kuryeler-ve-ilerleme/",
+   "loc": {
+    "en": "https://nesimapps.com/guides/slinglings-routes-couriers-and-progress/",
+    "tr": "https://nesimapps.com/tr/rehber/slinglings-rotalar-kuryeler-ve-ilerleme/",
+    "es": "https://nesimapps.com/es/guias/slinglings-rutas-carteros-y-progreso/",
+    "pt": "https://nesimapps.com/pt/guias/slinglings-rotas-carteiros-e-progresso/"
+   },
+   "default": "en",
+   "hash": "3977a0af4da571d51e91af325adca639"
+  },
+  {
+   "url": "https://nesimapps.com/es/guias/slinglings-rutas-carteros-y-progreso/",
+   "loc": {
+    "en": "https://nesimapps.com/guides/slinglings-routes-couriers-and-progress/",
+    "tr": "https://nesimapps.com/tr/rehber/slinglings-rotalar-kuryeler-ve-ilerleme/",
+    "es": "https://nesimapps.com/es/guias/slinglings-rutas-carteros-y-progreso/",
+    "pt": "https://nesimapps.com/pt/guias/slinglings-rotas-carteiros-e-progresso/"
+   },
+   "default": "en",
+   "hash": "7eeac83ff4f3e95ef4219a2a72e5e919"
+  },
+  {
+   "url": "https://nesimapps.com/pt/guias/slinglings-rotas-carteiros-e-progresso/",
+   "loc": {
+    "en": "https://nesimapps.com/guides/slinglings-routes-couriers-and-progress/",
+    "tr": "https://nesimapps.com/tr/rehber/slinglings-rotalar-kuryeler-ve-ilerleme/",
+    "es": "https://nesimapps.com/es/guias/slinglings-rutas-carteros-y-progreso/",
+    "pt": "https://nesimapps.com/pt/guias/slinglings-rotas-carteiros-e-progresso/"
+   },
+   "default": "en",
+   "hash": "8ea44dd92f1503c1c5ea35b66387114d"
+  },
+  {
+   "url": "https://nesimapps.com/guides/snowlings-new-year-countdown-and-winter-calendar-guide/",
+   "loc": {
+    "en": "https://nesimapps.com/guides/snowlings-new-year-countdown-and-winter-calendar-guide/",
+    "tr": "https://nesimapps.com/tr/rehber/snowlings-yilbasi-geri-sayimi-ve-kis-takvimi-kullanimi/",
+    "es": "https://nesimapps.com/es/guias/snowlings-cuenta-atras-ano-nuevo-y-calendario-de-invierno/",
+    "pt": "https://nesimapps.com/pt/guias/snowlings-contagem-regressiva-ano-novo-e-calendario-de-inverno/"
+   },
+   "default": "en",
+   "hash": "33a05c71f827f6ca616f7cc92f81b38c"
+  },
+  {
+   "url": "https://nesimapps.com/tr/rehber/snowlings-yilbasi-geri-sayimi-ve-kis-takvimi-kullanimi/",
+   "loc": {
+    "en": "https://nesimapps.com/guides/snowlings-new-year-countdown-and-winter-calendar-guide/",
+    "tr": "https://nesimapps.com/tr/rehber/snowlings-yilbasi-geri-sayimi-ve-kis-takvimi-kullanimi/",
+    "es": "https://nesimapps.com/es/guias/snowlings-cuenta-atras-ano-nuevo-y-calendario-de-invierno/",
+    "pt": "https://nesimapps.com/pt/guias/snowlings-contagem-regressiva-ano-novo-e-calendario-de-inverno/"
+   },
+   "default": "en",
+   "hash": "6e544fb2386e720ba0812d0ea4beec46"
+  },
+  {
+   "url": "https://nesimapps.com/es/guias/snowlings-cuenta-atras-ano-nuevo-y-calendario-de-invierno/",
+   "loc": {
+    "en": "https://nesimapps.com/guides/snowlings-new-year-countdown-and-winter-calendar-guide/",
+    "tr": "https://nesimapps.com/tr/rehber/snowlings-yilbasi-geri-sayimi-ve-kis-takvimi-kullanimi/",
+    "es": "https://nesimapps.com/es/guias/snowlings-cuenta-atras-ano-nuevo-y-calendario-de-invierno/",
+    "pt": "https://nesimapps.com/pt/guias/snowlings-contagem-regressiva-ano-novo-e-calendario-de-inverno/"
+   },
+   "default": "en",
+   "hash": "416e8e5d4c894560430dbffbfa158a3d"
+  },
+  {
+   "url": "https://nesimapps.com/pt/guias/snowlings-contagem-regressiva-ano-novo-e-calendario-de-inverno/",
+   "loc": {
+    "en": "https://nesimapps.com/guides/snowlings-new-year-countdown-and-winter-calendar-guide/",
+    "tr": "https://nesimapps.com/tr/rehber/snowlings-yilbasi-geri-sayimi-ve-kis-takvimi-kullanimi/",
+    "es": "https://nesimapps.com/es/guias/snowlings-cuenta-atras-ano-nuevo-y-calendario-de-invierno/",
+    "pt": "https://nesimapps.com/pt/guias/snowlings-contagem-regressiva-ano-novo-e-calendario-de-inverno/"
+   },
+   "default": "en",
+   "hash": "10169d70b9664577f388ad1471a51717"
+  },
+  {
+   "url": "https://nesimapps.com/guides/snowlings-six-winter-puzzle-games-how-to-play/",
+   "loc": {
+    "en": "https://nesimapps.com/guides/snowlings-six-winter-puzzle-games-how-to-play/",
+    "tr": "https://nesimapps.com/tr/rehber/snowlings-6-kis-oyunu-nasil-oynanir/",
+    "es": "https://nesimapps.com/es/guias/snowlings-6-juegos-de-invierno-como-jugar/",
+    "pt": "https://nesimapps.com/pt/guias/snowlings-6-jogos-de-inverno-como-jogar/"
+   },
+   "default": "en",
+   "hash": "86819e63e847edebab7e481879f9ed13"
+  },
+  {
+   "url": "https://nesimapps.com/tr/rehber/snowlings-6-kis-oyunu-nasil-oynanir/",
+   "loc": {
+    "en": "https://nesimapps.com/guides/snowlings-six-winter-puzzle-games-how-to-play/",
+    "tr": "https://nesimapps.com/tr/rehber/snowlings-6-kis-oyunu-nasil-oynanir/",
+    "es": "https://nesimapps.com/es/guias/snowlings-6-juegos-de-invierno-como-jugar/",
+    "pt": "https://nesimapps.com/pt/guias/snowlings-6-jogos-de-inverno-como-jogar/"
+   },
+   "default": "en",
+   "hash": "2d49cffe029af2fd2fdccb0f6cf11401"
+  },
+  {
+   "url": "https://nesimapps.com/es/guias/snowlings-6-juegos-de-invierno-como-jugar/",
+   "loc": {
+    "en": "https://nesimapps.com/guides/snowlings-six-winter-puzzle-games-how-to-play/",
+    "tr": "https://nesimapps.com/tr/rehber/snowlings-6-kis-oyunu-nasil-oynanir/",
+    "es": "https://nesimapps.com/es/guias/snowlings-6-juegos-de-invierno-como-jugar/",
+    "pt": "https://nesimapps.com/pt/guias/snowlings-6-jogos-de-inverno-como-jogar/"
+   },
+   "default": "en",
+   "hash": "fa7e5c1704a6fb77afaebac08901ae42"
+  },
+  {
+   "url": "https://nesimapps.com/pt/guias/snowlings-6-jogos-de-inverno-como-jogar/",
+   "loc": {
+    "en": "https://nesimapps.com/guides/snowlings-six-winter-puzzle-games-how-to-play/",
+    "tr": "https://nesimapps.com/tr/rehber/snowlings-6-kis-oyunu-nasil-oynanir/",
+    "es": "https://nesimapps.com/es/guias/snowlings-6-juegos-de-invierno-como-jugar/",
+    "pt": "https://nesimapps.com/pt/guias/snowlings-6-jogos-de-inverno-como-jogar/"
+   },
+   "default": "en",
+   "hash": "2b982981cd6ced802dff7ce5c92d39e8"
+  },
+  {
    "url": "https://nesimapps.com/guides/",
    "loc": {
     "en": "https://nesimapps.com/guides/",
@@ -1653,7 +1841,7 @@
     "pt": "https://nesimapps.com/pt/guias/"
    },
    "default": "en",
-   "hash": "7092e385453f5bde9a437fd93850549f"
+   "hash": "11b006e4872b20a2abc31d558206485b"
   },
   {
    "url": "https://nesimapps.com/tr/rehber/",
@@ -1664,7 +1852,7 @@
     "pt": "https://nesimapps.com/pt/guias/"
    },
    "default": "en",
-   "hash": "e188d5c16cc34bfca2eeaa63eeba4c39"
+   "hash": "583e4eca7824392ca8cc85afe98bebb7"
   },
   {
    "url": "https://nesimapps.com/es/guias/",
@@ -1675,7 +1863,7 @@
     "pt": "https://nesimapps.com/pt/guias/"
    },
    "default": "en",
-   "hash": "5a62421bb4b1d4c118e4f08acfb0d987"
+   "hash": "0b297f1dcaa0082abee1d85502cd85bc"
   },
   {
    "url": "https://nesimapps.com/pt/guias/",
@@ -1686,7 +1874,7 @@
     "pt": "https://nesimapps.com/pt/guias/"
    },
    "default": "en",
-   "hash": "ceb8deb1ceb94ad5b1c571f21dba71ff"
+   "hash": "ddc66bfc9a3d7fe37768edd1cc977388"
   }
  ],
  "index": {

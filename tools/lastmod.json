@@ -1648,8 +1648,8 @@
   "date": "2026-11-24"
  },
  "https://nesimapps.com/es/guias/": {
-  "hash": "5a62421bb4b1d4c118e4f08acfb0d987",
-  "date": "2026-11-24"
+  "hash": "0b297f1dcaa0082abee1d85502cd85bc",
+  "date": "2026-11-25"
  },
  "https://nesimapps.com/es/guias/2048-despues-4096-8192-errores-comunes/": {
   "hash": "0ef156de410775ea833197a8589e5368",
@@ -1824,8 +1824,8 @@
   "date": "2026-11-24"
  },
  "https://nesimapps.com/guides/": {
-  "hash": "7092e385453f5bde9a437fd93850549f",
-  "date": "2026-11-24"
+  "hash": "11b006e4872b20a2abc31d558206485b",
+  "date": "2026-11-25"
  },
  "https://nesimapps.com/guides/2048-beyond-4096-8192-common-mistakes/": {
   "hash": "63fccddd5712793a221d0a42811de9e0",
@@ -2124,8 +2124,8 @@
   "date": "2026-11-24"
  },
  "https://nesimapps.com/pt/guias/": {
-  "hash": "ceb8deb1ceb94ad5b1c571f21dba71ff",
-  "date": "2026-11-24"
+  "hash": "ddc66bfc9a3d7fe37768edd1cc977388",
+  "date": "2026-11-25"
  },
  "https://nesimapps.com/pt/guias/2048-depois-4096-8192-erros-comuns/": {
   "hash": "48d2e53fee624c66214e7908729aad20",
@@ -2368,8 +2368,8 @@
   "date": "2026-11-23"
  },
  "https://nesimapps.com/tr/rehber/": {
-  "hash": "e188d5c16cc34bfca2eeaa63eeba4c39",
-  "date": "2026-11-24"
+  "hash": "583e4eca7824392ca8cc85afe98bebb7",
+  "date": "2026-11-25"
  },
  "https://nesimapps.com/tr/rehber/2048-den-sonra-4096-8192-ve-sik-yapilan-hatalar/": {
   "hash": "6ce1c6ef27f95d08b8133183e534d069",
@@ -2676,20 +2676,20 @@
   "date": "2026-11-23"
  },
  "https://nesimapps.com/es/snowlings/": {
-  "hash": "e3538287dfb2904c20cb75e41d677a66",
-  "date": "2026-11-24"
+  "hash": "d6cb1eda9292ed1b2c0dbad6020343f1",
+  "date": "2026-11-25"
  },
  "https://nesimapps.com/pt/snowlings/": {
-  "hash": "abf3b855300cfdc5ab32dabd6e0eb5af",
-  "date": "2026-11-24"
+  "hash": "db243a1eae2866d377904c4d9837d58d",
+  "date": "2026-11-25"
  },
  "https://nesimapps.com/snowlings/": {
-  "hash": "5064f22e8598f4f6026fe7753496a0d1",
-  "date": "2026-11-24"
+  "hash": "45a7c191d38f6521e450dc07e6387338",
+  "date": "2026-11-25"
  },
  "https://nesimapps.com/tr/snowlings/": {
-  "hash": "c42b6c1ad6b357c1034c85707a7209b6",
-  "date": "2026-11-24"
+  "hash": "ac9b7b6cfdfdbe422c959e4df0e28214",
+  "date": "2026-11-25"
  },
  "https://nesimapps.com/tr/yazilar/online-yilbasi-cekilisi-nasil-yapilir-gizli-hediye-arkadasi/": {
   "hash": "4ed4810e6180093b5287db66d2f081da",
@@ -3028,20 +3028,20 @@
   "date": "2026-11-25"
  },
  "https://nesimapps.com/es/slinglings/": {
-  "hash": "274d4cca426339e29da07182d4649f61",
-  "date": "2026-11-24"
+  "hash": "e8d17a885dd9db7e340169537f9eee95",
+  "date": "2026-11-25"
  },
  "https://nesimapps.com/pt/slinglings/": {
-  "hash": "7ae003e79e2b536d28603c900f668cad",
-  "date": "2026-11-24"
+  "hash": "7f59aef6b410a24f033312fb18bfb196",
+  "date": "2026-11-25"
  },
  "https://nesimapps.com/slinglings/": {
-  "hash": "f35dcdd211d49444bcbd841760b8ca34",
-  "date": "2026-11-24"
+  "hash": "47fa9eec81c5c41a67432ee7e0d3f5e8",
+  "date": "2026-11-25"
  },
  "https://nesimapps.com/tr/slinglings/": {
-  "hash": "cf2eca48671fc3ee2a5b048054c09986",
-  "date": "2026-11-24"
+  "hash": "2c44346af4a2698aec09522089e599b6",
+  "date": "2026-11-25"
  },
  "https://nesimapps.com/blog/ads-in-kotlin-multiplatform-shared-interface-platform-shell/": {
   "hash": "79f77d3b426048e1fef8a5082d298cd9",
@@ -3377,6 +3377,70 @@
  },
  "https://nesimapps.com/tr/yazilar/kotlin-native-swift-argument-labels-hatasi-nedeni-ve-cozumu/": {
   "hash": "e97cb798cdf630cf5c11a46e45026d7c",
+  "date": "2026-11-25"
+ },
+ "https://nesimapps.com/es/guias/como-jugar-slinglings-tirachinas-y-gravedad/": {
+  "hash": "762281001c234c38813931b953e83c11",
+  "date": "2026-11-25"
+ },
+ "https://nesimapps.com/es/guias/slinglings-rutas-carteros-y-progreso/": {
+  "hash": "7eeac83ff4f3e95ef4219a2a72e5e919",
+  "date": "2026-11-25"
+ },
+ "https://nesimapps.com/es/guias/snowlings-6-juegos-de-invierno-como-jugar/": {
+  "hash": "fa7e5c1704a6fb77afaebac08901ae42",
+  "date": "2026-11-25"
+ },
+ "https://nesimapps.com/es/guias/snowlings-cuenta-atras-ano-nuevo-y-calendario-de-invierno/": {
+  "hash": "416e8e5d4c894560430dbffbfa158a3d",
+  "date": "2026-11-25"
+ },
+ "https://nesimapps.com/guides/how-to-play-slinglings-sling-and-gravity-puzzle/": {
+  "hash": "d150d1bbf9bd99e17311136d0f2f8c9e",
+  "date": "2026-11-25"
+ },
+ "https://nesimapps.com/guides/slinglings-routes-couriers-and-progress/": {
+  "hash": "370bec70f25b85149fedb853aebb5f78",
+  "date": "2026-11-25"
+ },
+ "https://nesimapps.com/guides/snowlings-new-year-countdown-and-winter-calendar-guide/": {
+  "hash": "33a05c71f827f6ca616f7cc92f81b38c",
+  "date": "2026-11-25"
+ },
+ "https://nesimapps.com/guides/snowlings-six-winter-puzzle-games-how-to-play/": {
+  "hash": "86819e63e847edebab7e481879f9ed13",
+  "date": "2026-11-25"
+ },
+ "https://nesimapps.com/pt/guias/como-jogar-slinglings-estilingue-e-gravidade/": {
+  "hash": "17103e9ecb2c778166efc3cdf66f2f46",
+  "date": "2026-11-25"
+ },
+ "https://nesimapps.com/pt/guias/slinglings-rotas-carteiros-e-progresso/": {
+  "hash": "8ea44dd92f1503c1c5ea35b66387114d",
+  "date": "2026-11-25"
+ },
+ "https://nesimapps.com/pt/guias/snowlings-6-jogos-de-inverno-como-jogar/": {
+  "hash": "2b982981cd6ced802dff7ce5c92d39e8",
+  "date": "2026-11-25"
+ },
+ "https://nesimapps.com/pt/guias/snowlings-contagem-regressiva-ano-novo-e-calendario-de-inverno/": {
+  "hash": "10169d70b9664577f388ad1471a51717",
+  "date": "2026-11-25"
+ },
+ "https://nesimapps.com/tr/rehber/slinglings-nasil-oynanir-sapan-ve-yercekimi-bulmacasi/": {
+  "hash": "14a2ca01c23c87429c609bbf689d05e3",
+  "date": "2026-11-25"
+ },
+ "https://nesimapps.com/tr/rehber/slinglings-rotalar-kuryeler-ve-ilerleme/": {
+  "hash": "3977a0af4da571d51e91af325adca639",
+  "date": "2026-11-25"
+ },
+ "https://nesimapps.com/tr/rehber/snowlings-6-kis-oyunu-nasil-oynanir/": {
+  "hash": "2d49cffe029af2fd2fdccb0f6cf11401",
+  "date": "2026-11-25"
+ },
+ "https://nesimapps.com/tr/rehber/snowlings-yilbasi-geri-sayimi-ve-kis-takvimi-kullanimi/": {
+  "hash": "6e544fb2386e720ba0812d0ea4beec46",
   "date": "2026-11-25"
  }
 }
