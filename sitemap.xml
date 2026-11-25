@@ -65,7 +65,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/ads-in-kotlin-multiplatform-shared-interface-platform-shell/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/ads-in-kotlin-multiplatform-shared-interface-platform-shell/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/kotlin-multiplatformda-reklamlar-ortak-arayuz-platform-kabugu/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/anuncios-en-kotlin-multiplatform-interfaz-compartida-y-capa-por-plataforma/"/>
@@ -74,7 +74,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/analytics-region-gate-on-ios-when-the-sim-country-is-unreadable/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/analytics-region-gate-on-ios-when-the-sim-country-is-unreadable/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/ios-te-sim-ulkesi-okunamayinca-analytics-bolge-kapisi/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/puerta-de-region-para-analytics-en-ios-cuando-no-se-lee-el-pais-de-la-sim/"/>
@@ -83,7 +83,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/app-store-review-guideline-2-1-information-needed-what-i-sent/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/app-store-review-guideline-2-1-information-needed-what-i-sent/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/app-store-inceleme-kurali-2-1-bilgi-gerekli-ne-gonderdim/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/guia-2-1-de-app-store-informacion-necesaria-lo-que-envie/"/>
@@ -92,7 +92,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/telefonsuz-app-store-ekran-goruntuleri-robolectric-sahte-gorsel-yukleyici-ve-basliksiz-tarayici/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/capturas-de-app-store-sin-telefono-robolectric-un-cargador-de-imagenes-falso-y-un-navegador-sin-interfaz/"/>
@@ -100,8 +100,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/"/>
   </url>
   <url>
+    <loc>https://nesimapps.com/blog/beamies-how-a-solver-measures-and-raises-puzzle-difficulty/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/beamies-how-a-solver-measures-and-raises-puzzle-difficulty/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/beamies-cozucu-zorluk-olcumu-ve-400-bolumluk-egri/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/beamies-como-un-solucionador-mide-y-sube-la-dificultad/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/beamies-como-um-solucionador-mede-e-aumenta-a-dificuldade/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/beamies-how-a-solver-measures-and-raises-puzzle-difficulty/"/>
+  </url>
+  <url>
     <loc>https://nesimapps.com/blog/bing-webmaster-api-returns-empty-lists-while-the-dashboard-shows-data/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/bing-webmaster-api-returns-empty-lists-while-the-dashboard-shows-data/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/bing-webmaster-api-pano-veri-gosterirken-bos-listeler-donduruyor/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/la-api-de-bing-webmaster-devuelve-listas-vacias-mientras-el-panel-muestra-datos/"/>
@@ -119,7 +128,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/detectar-anuncio-intersticial-bloqueado-android-eventos/"/>
@@ -128,7 +137,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/check-which-pages-google-has-indexed-with-the-url-inspection-api/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/check-which-pages-google-has-indexed-with-the-url-inspection-api/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/url-inspection-api-ile-google-hangi-sayfalari-dizine-eklemis-kontrol-et/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/comprueba-que-paginas-ha-indexado-google-con-la-api-de-inspeccion-de-urls/"/>
@@ -137,7 +146,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/clarity-ai-visibility-topic-insights-for-a-small-site-first-results/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/clarity-ai-visibility-topic-insights-for-a-small-site-first-results/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/clarity-ai-gorunurluk-kucuk-bir-site-icin-konu-icgoruleri-ilk-sonuclar/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/clarity-ai-visibility-topic-insights-para-un-sitio-pequeno-primeros-resultados/"/>
@@ -146,7 +155,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/cloud-ios-signing-a-new-certificate-on-every-build-and-the-fix/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/cloud-ios-signing-a-new-certificate-on-every-build-and-the-fix/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/bulutta-ios-imzalama-her-derlemede-yeni-sertifika-ve-kalici-cozum/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/firma-ios-en-la-nube-un-certificado-nuevo-en-cada-compilacion-y-la-solucion/"/>
@@ -164,7 +173,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/"/>
@@ -191,7 +200,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/edge-to-edge-and-three-button-navigation-fixing-clipped-compose-ui/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/edge-to-edge-and-three-button-navigation-fixing-clipped-compose-ui/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/edge-to-edge-ve-3-tuslu-gezinmede-kesilen-arayuz-nasil-duzelir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/edge-to-edge-y-navegacion-de-3-botones-arreglar-la-interfaz-recortada/"/>
@@ -236,7 +245,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/how-daily-puzzles-work-without-a-server/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/how-daily-puzzles-work-without-a-server/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/puzle-diario-igual-para-todos-sin-servidor/"/>
@@ -245,7 +254,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/how-puzzle-levels-are-generated-and-checked/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/how-puzzle-levels-are-generated-and-checked/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/"/>
@@ -290,7 +299,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/ios-build-number-stuck-at-one-three-failed-fixes-and-one-that-worked/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/ios-build-number-stuck-at-one-three-failed-fixes-and-one-that-worked/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/ios-derleme-numarasi-1-de-takildi-isleyen-bir-cozum-ve-uc-islemeyen/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/el-numero-de-compilacion-de-ios-que-se-quedo-en-1-tres-arreglos-fallidos-y-uno-que-funciono/"/>
@@ -299,12 +308,30 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/keeping-two-dozen-android-apps-maintainable-solo/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/keeping-two-dozen-android-apps-maintainable-solo/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/mantener-dos-docenas-de-apps-android-siendo-un-solo-desarrollador/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/keeping-two-dozen-android-apps-maintainable-solo/"/>
+  </url>
+  <url>
+    <loc>https://nesimapps.com/blog/kotlin-multiplatform-platform-capabilities-nullable-interface/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/kotlin-multiplatform-platform-capabilities-nullable-interface/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/kotlin-multiplatformda-platform-yetenegi-null-olabilen-arayuz/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/kotlin-multiplatform-capacidades-de-plataforma-con-interfaz-nula/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/kotlin-multiplatform-capacidades-da-plataforma-com-interface-anulavel/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/kotlin-multiplatform-platform-capabilities-nullable-interface/"/>
+  </url>
+  <url>
+    <loc>https://nesimapps.com/blog/kotlin-native-swift-different-argument-labels-error-and-the-fix/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/kotlin-native-swift-different-argument-labels-error-and-the-fix/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/kotlin-native-swift-argument-labels-hatasi-nedeni-ve-cozumu/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/kotlin-native-y-swift-error-different-argument-labels-causa-y-solucion/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/kotlin-native-e-swift-erro-different-argument-labels-causa-e-solucao/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/kotlin-native-swift-different-argument-labels-error-and-the-fix/"/>
   </url>
   <url>
     <loc>https://nesimapps.com/blog/leap-day-birthday-how-to-count-age/</loc>
@@ -326,7 +353,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/measure-play-store-installs-with-utm-links-and-listing-experiments/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/measure-play-store-installs-with-utm-links-and-listing-experiments/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/utm-baglantilari-ve-magaza-girisi-deneyleriyle-play-kurulumlarini-olcmek/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/medir-instalaciones-en-play-con-enlaces-utm-y-experimentos-de-ficha/"/>
@@ -335,7 +362,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/"/>
@@ -343,8 +370,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/"/>
   </url>
   <url>
+    <loc>https://nesimapps.com/blog/moving-from-github-pages-to-your-own-domain-without-losing-seo/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/moving-from-github-pages-to-your-own-domain-without-losing-seo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/github-pages-adresinden-kendi-alan-adina-gecis-seo-kaybetmeden/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/pasar-de-github-pages-a-tu-propio-dominio-sin-perder-seo/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/sair-do-github-pages-para-o-seu-proprio-dominio-sem-perder-seo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/moving-from-github-pages-to-your-own-domain-without-losing-seo/"/>
+  </url>
+  <url>
     <loc>https://nesimapps.com/blog/narrated-blog-videos-with-free-text-to-speech-and-python/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/narrated-blog-videos-with-free-text-to-speech-and-python/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/ucretsiz-metinden-sese-ve-python-ile-anlatimli-blog-videolari/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/videos-de-blog-narrados-con-texto-a-voz-gratuito-y-python/"/>
@@ -362,7 +398,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/"/>
@@ -371,7 +407,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/one-utm-per-link-a-naming-scheme-for-a-solo-developer/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/one-utm-per-link-a-naming-scheme-for-a-solo-developer/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/her-baglantiya-bir-utm-bagimsiz-gelistirici-icin-adlandirma-duzeni/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/un-utm-por-enlace-un-esquema-de-nombres-para-un-desarrollador-independiente/"/>
@@ -398,7 +434,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/play-age-signals-api-and-california-ab-1043-what-a-small-developer-must-do/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/play-age-signals-api-and-california-ab-1043-what-a-small-developer-must-do/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/play-age-signals-api-ve-kaliforniya-ab-1043-kucuk-bir-gelistirici-ne-yapmali/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/api-play-age-signals-y-ab-1043-de-california-que-debe-hacer-un-desarrollador-pequeno/"/>
@@ -416,7 +452,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/play-console-bulk-reports-show-zero-active-devices-on-the-latest-day/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/play-console-bulk-reports-show-zero-active-devices-on-the-latest-day/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/play-console-toplu-raporlari-son-gunde-sifir-aktif-cihaz-gosteriyor/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/los-informes-masivos-de-play-console-muestran-0-dispositivos-activos-el-ultimo-dia/"/>
@@ -434,7 +470,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/reading-crashlytics-from-an-ai-coding-assistant-the-project-folder-trap/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/reading-crashlytics-from-an-ai-coding-assistant-the-project-folder-trap/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/yapay-zeka-kod-asistaniyla-crashlytics-okumak-proje-klasoru-tuzagi/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/leer-crashlytics-desde-un-asistente-de-codigo-con-ia-la-trampa-de-la-carpeta-del-proyecto/"/>
@@ -443,7 +479,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/reescribir-para-kotlin-multiplatform-sin-cambiar-el-comportamiento-el-codigo-antiguo-como-oraculo-de-pruebas/"/>
@@ -470,7 +506,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/scheduling-36-youtube-community-posts-when-there-is-no-api/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/scheduling-36-youtube-community-posts-when-there-is-no-api/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/api-yokken-36-youtube-topluluk-gonderisini-zamanlamak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/programar-36-publicaciones-de-la-comunidad-de-youtube-cuando-no-hay-api/"/>
@@ -479,7 +515,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/secret-santa-algorithm-nobody-draws-themselves-one-big-cycle/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/secret-santa-algorithm-nobody-draws-themselves-one-big-cycle/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/gizli-hediye-cekilisi-algoritmasi-kimse-kendini-cekmesin-tek-buyuk-dongu/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/algoritmo-amigo-invisible-nadie-se-saca-a-si-mismo-un-solo-ciclo/"/>
@@ -488,7 +524,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/"/>
@@ -497,7 +533,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/"/>
@@ -569,7 +605,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/when-github-actions-macos-minutes-run-out-moving-ios-builds-to-codemagic/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/when-github-actions-macos-minutes-run-out-moving-ios-builds-to-codemagic/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/github-actions-macos-dakikalari-bitince-ios-derlemelerini-codemagic-e-tasimak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/cuando-se-acaban-los-minutos-de-macos-en-github-actions-pasar-las-compilaciones-ios-a-codemagic/"/>
@@ -596,7 +632,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/app-store-baglantim-neden-404-verdi-ve-sayfa-2018-ekran-goruntulerini-gosterdi/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/por-que-mi-enlace-de-la-app-store-dio-404-y-la-pagina-mostraba-capturas-de-2018/"/>
@@ -685,7 +721,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/algoritmo-amigo-invisible-nadie-se-saca-a-si-mismo-un-solo-ciclo/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/secret-santa-algorithm-nobody-draws-themselves-one-big-cycle/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/gizli-hediye-cekilisi-algoritmasi-kimse-kendini-cekmesin-tek-buyuk-dongu/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/algoritmo-amigo-invisible-nadie-se-saca-a-si-mismo-un-solo-ciclo/"/>
@@ -694,7 +730,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/anuncios-en-kotlin-multiplatform-interfaz-compartida-y-capa-por-plataforma/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/ads-in-kotlin-multiplatform-shared-interface-platform-shell/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/kotlin-multiplatformda-reklamlar-ortak-arayuz-platform-kabugu/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/anuncios-en-kotlin-multiplatform-interfaz-compartida-y-capa-por-plataforma/"/>
@@ -703,12 +739,21 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/api-play-age-signals-y-ab-1043-de-california-que-debe-hacer-un-desarrollador-pequeno/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/play-age-signals-api-and-california-ab-1043-what-a-small-developer-must-do/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/play-age-signals-api-ve-kaliforniya-ab-1043-kucuk-bir-gelistirici-ne-yapmali/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/api-play-age-signals-y-ab-1043-de-california-que-debe-hacer-un-desarrollador-pequeno/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/api-play-age-signals-e-ab-1043-da-california-o-que-um-desenvolvedor-pequeno-deve-fazer/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/play-age-signals-api-and-california-ab-1043-what-a-small-developer-must-do/"/>
+  </url>
+  <url>
+    <loc>https://nesimapps.com/es/blog/beamies-como-un-solucionador-mide-y-sube-la-dificultad/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/beamies-how-a-solver-measures-and-raises-puzzle-difficulty/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/beamies-cozucu-zorluk-olcumu-ve-400-bolumluk-egri/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/beamies-como-un-solucionador-mide-y-sube-la-dificultad/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/beamies-como-um-solucionador-mede-e-aumenta-a-dificuldade/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/beamies-how-a-solver-measures-and-raises-puzzle-difficulty/"/>
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/busqueda-de-caminos-con-dos-giros-en-puzles-connect-de-mahjong/</loc>
@@ -721,7 +766,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/capturas-de-app-store-sin-telefono-robolectric-un-cargador-de-imagenes-falso-y-un-navegador-sin-interfaz/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/telefonsuz-app-store-ekran-goruntuleri-robolectric-sahte-gorsel-yukleyici-ve-basliksiz-tarayici/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/capturas-de-app-store-sin-telefono-robolectric-un-cargador-de-imagenes-falso-y-un-navegador-sin-interfaz/"/>
@@ -730,7 +775,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/clarity-ai-visibility-topic-insights-para-un-sitio-pequeno-primeros-resultados/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/clarity-ai-visibility-topic-insights-for-a-small-site-first-results/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/clarity-ai-gorunurluk-kucuk-bir-site-icin-konu-icgoruleri-ilk-sonuclar/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/clarity-ai-visibility-topic-insights-para-un-sitio-pequeno-primeros-resultados/"/>
@@ -793,7 +838,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/how-puzzle-levels-are-generated-and-checked/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/"/>
@@ -802,7 +847,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/comprueba-que-paginas-ha-indexado-google-con-la-api-de-inspeccion-de-urls/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/check-which-pages-google-has-indexed-with-the-url-inspection-api/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/url-inspection-api-ile-google-hangi-sayfalari-dizine-eklemis-kontrol-et/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/comprueba-que-paginas-ha-indexado-google-con-la-api-de-inspeccion-de-urls/"/>
@@ -811,7 +856,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/cuando-se-acaban-los-minutos-de-macos-en-github-actions-pasar-las-compilaciones-ios-a-codemagic/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/when-github-actions-macos-minutes-run-out-moving-ios-builds-to-codemagic/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/github-actions-macos-dakikalari-bitince-ios-derlemelerini-codemagic-e-tasimak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/cuando-se-acaban-los-minutos-de-macos-en-github-actions-pasar-las-compilaciones-ios-a-codemagic/"/>
@@ -838,7 +883,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/"/>
@@ -847,7 +892,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/detectar-anuncio-intersticial-bloqueado-android-eventos/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/detectar-anuncio-intersticial-bloqueado-android-eventos/"/>
@@ -856,7 +901,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/edge-to-edge-y-navegacion-de-3-botones-arreglar-la-interfaz-recortada/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/edge-to-edge-and-three-button-navigation-fixing-clipped-compose-ui/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/edge-to-edge-ve-3-tuslu-gezinmede-kesilen-arayuz-nasil-duzelir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/edge-to-edge-y-navegacion-de-3-botones-arreglar-la-interfaz-recortada/"/>
@@ -874,7 +919,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/el-numero-de-compilacion-de-ios-que-se-quedo-en-1-tres-arreglos-fallidos-y-uno-que-funciono/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/ios-build-number-stuck-at-one-three-failed-fixes-and-one-that-worked/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/ios-derleme-numarasi-1-de-takildi-isleyen-bir-cozum-ve-uc-islemeyen/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/el-numero-de-compilacion-de-ios-que-se-quedo-en-1-tres-arreglos-fallidos-y-uno-que-funciono/"/>
@@ -901,7 +946,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/firma-ios-en-la-nube-un-certificado-nuevo-en-cada-compilacion-y-la-solucion/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/cloud-ios-signing-a-new-certificate-on-every-build-and-the-fix/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/bulutta-ios-imzalama-her-derlemede-yeni-sertifika-ve-kalici-cozum/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/firma-ios-en-la-nube-un-certificado-nuevo-en-cada-compilacion-y-la-solucion/"/>
@@ -919,7 +964,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/guia-2-1-de-app-store-informacion-necesaria-lo-que-envie/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/app-store-review-guideline-2-1-information-needed-what-i-sent/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/app-store-inceleme-kurali-2-1-bilgi-gerekli-ne-gonderdim/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/guia-2-1-de-app-store-informacion-necesaria-lo-que-envie/"/>
@@ -954,8 +999,26 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/mahjong-solitaire-history-vs-real-mahjong/"/>
   </url>
   <url>
+    <loc>https://nesimapps.com/es/blog/kotlin-multiplatform-capacidades-de-plataforma-con-interfaz-nula/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/kotlin-multiplatform-platform-capabilities-nullable-interface/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/kotlin-multiplatformda-platform-yetenegi-null-olabilen-arayuz/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/kotlin-multiplatform-capacidades-de-plataforma-con-interfaz-nula/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/kotlin-multiplatform-capacidades-da-plataforma-com-interface-anulavel/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/kotlin-multiplatform-platform-capabilities-nullable-interface/"/>
+  </url>
+  <url>
+    <loc>https://nesimapps.com/es/blog/kotlin-native-y-swift-error-different-argument-labels-causa-y-solucion/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/kotlin-native-swift-different-argument-labels-error-and-the-fix/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/kotlin-native-swift-argument-labels-hatasi-nedeni-ve-cozumu/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/kotlin-native-y-swift-error-different-argument-labels-causa-y-solucion/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/kotlin-native-e-swift-erro-different-argument-labels-causa-e-solucao/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/kotlin-native-swift-different-argument-labels-error-and-the-fix/"/>
+  </url>
+  <url>
     <loc>https://nesimapps.com/es/blog/la-api-de-bing-webmaster-devuelve-listas-vacias-mientras-el-panel-muestra-datos/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/bing-webmaster-api-returns-empty-lists-while-the-dashboard-shows-data/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/bing-webmaster-api-pano-veri-gosterirken-bos-listeler-donduruyor/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/la-api-de-bing-webmaster-devuelve-listas-vacias-mientras-el-panel-muestra-datos/"/>
@@ -973,7 +1036,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/leer-crashlytics-desde-un-asistente-de-codigo-con-ia-la-trampa-de-la-carpeta-del-proyecto/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/reading-crashlytics-from-an-ai-coding-assistant-the-project-folder-trap/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/yapay-zeka-kod-asistaniyla-crashlytics-okumak-proje-klasoru-tuzagi/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/leer-crashlytics-desde-un-asistente-de-codigo-con-ia-la-trampa-de-la-carpeta-del-proyecto/"/>
@@ -991,7 +1054,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/"/>
@@ -1000,7 +1063,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/los-informes-masivos-de-play-console-muestran-0-dispositivos-activos-el-ultimo-dia/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/play-console-bulk-reports-show-zero-active-devices-on-the-latest-day/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/play-console-toplu-raporlari-son-gunde-sifir-aktif-cihaz-gosteriyor/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/los-informes-masivos-de-play-console-muestran-0-dispositivos-activos-el-ultimo-dia/"/>
@@ -1018,7 +1081,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/mantener-dos-docenas-de-apps-android-siendo-un-solo-desarrollador/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/keeping-two-dozen-android-apps-maintainable-solo/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/mantener-dos-docenas-de-apps-android-siendo-un-solo-desarrollador/"/>
@@ -1027,7 +1090,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/medir-instalaciones-en-play-con-enlaces-utm-y-experimentos-de-ficha/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/measure-play-store-installs-with-utm-links-and-listing-experiments/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/utm-baglantilari-ve-magaza-girisi-deneyleriyle-play-kurulumlarini-olcmek/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/medir-instalaciones-en-play-con-enlaces-utm-y-experimentos-de-ficha/"/>
@@ -1036,7 +1099,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/"/>
@@ -1062,8 +1125,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/nonogram-unique-solution-line-solver-no-guess-puzzles/"/>
   </url>
   <url>
+    <loc>https://nesimapps.com/es/blog/pasar-de-github-pages-a-tu-propio-dominio-sin-perder-seo/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/moving-from-github-pages-to-your-own-domain-without-losing-seo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/github-pages-adresinden-kendi-alan-adina-gecis-seo-kaybetmeden/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/pasar-de-github-pages-a-tu-propio-dominio-sin-perder-seo/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/sair-do-github-pages-para-o-seu-proprio-dominio-sem-perder-seo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/moving-from-github-pages-to-your-own-domain-without-losing-seo/"/>
+  </url>
+  <url>
     <loc>https://nesimapps.com/es/blog/por-que-mi-enlace-de-la-app-store-dio-404-y-la-pagina-mostraba-capturas-de-2018/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/app-store-baglantim-neden-404-verdi-ve-sayfa-2018-ekran-goruntulerini-gosterdi/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/por-que-mi-enlace-de-la-app-store-dio-404-y-la-pagina-mostraba-capturas-de-2018/"/>
@@ -1081,7 +1153,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/programar-36-publicaciones-de-la-comunidad-de-youtube-cuando-no-hay-api/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/scheduling-36-youtube-community-posts-when-there-is-no-api/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/api-yokken-36-youtube-topluluk-gonderisini-zamanlamak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/programar-36-publicaciones-de-la-comunidad-de-youtube-cuando-no-hay-api/"/>
@@ -1090,7 +1162,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/"/>
@@ -1099,7 +1171,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/puerta-de-region-para-analytics-en-ios-cuando-no-se-lee-el-pais-de-la-sim/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/analytics-region-gate-on-ios-when-the-sim-country-is-unreadable/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/ios-te-sim-ulkesi-okunamayinca-analytics-bolge-kapisi/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/puerta-de-region-para-analytics-en-ios-cuando-no-se-lee-el-pais-de-la-sim/"/>
@@ -1108,7 +1180,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/puzle-diario-igual-para-todos-sin-servidor/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/how-daily-puzzles-work-without-a-server/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/puzle-diario-igual-para-todos-sin-servidor/"/>
@@ -1153,7 +1225,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/reescribir-para-kotlin-multiplatform-sin-cambiar-el-comportamiento-el-codigo-antiguo-como-oraculo-de-pruebas/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/reescribir-para-kotlin-multiplatform-sin-cambiar-el-comportamiento-el-codigo-antiguo-como-oraculo-de-pruebas/"/>
@@ -1198,7 +1270,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/"/>
@@ -1216,7 +1288,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/un-utm-por-enlace-un-esquema-de-nombres-para-un-desarrollador-independiente/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/one-utm-per-link-a-naming-scheme-for-a-solo-developer/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/her-baglantiya-bir-utm-bagimsiz-gelistirici-icin-adlandirma-duzeni/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/un-utm-por-enlace-un-esquema-de-nombres-para-un-desarrollador-independiente/"/>
@@ -1225,7 +1297,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/videos-de-blog-narrados-con-texto-a-voz-gratuito-y-python/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/narrated-blog-videos-with-free-text-to-speech-and-python/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/ucretsiz-metinden-sese-ve-python-ile-anlatimli-blog-videolari/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/videos-de-blog-narrados-con-texto-a-voz-gratuito-y-python/"/>
@@ -2149,7 +2221,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/a-api-do-bing-webmaster-devolve-listas-vazias-enquanto-o-painel-mostra-dados/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/bing-webmaster-api-returns-empty-lists-while-the-dashboard-shows-data/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/bing-webmaster-api-pano-veri-gosterirken-bos-listeler-donduruyor/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/la-api-de-bing-webmaster-devuelve-listas-vacias-mientras-el-panel-muestra-datos/"/>
@@ -2158,7 +2230,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/agendar-36-posts-da-comunidade-do-youtube-quando-nao-ha-api/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/scheduling-36-youtube-community-posts-when-there-is-no-api/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/api-yokken-36-youtube-topluluk-gonderisini-zamanlamak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/programar-36-publicaciones-de-la-comunidad-de-youtube-cuando-no-hay-api/"/>
@@ -2167,7 +2239,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/algoritmo-amigo-secreto-ninguem-tira-a-si-mesmo-um-unico-ciclo/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/secret-santa-algorithm-nobody-draws-themselves-one-big-cycle/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/gizli-hediye-cekilisi-algoritmasi-kimse-kendini-cekmesin-tek-buyuk-dongu/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/algoritmo-amigo-invisible-nadie-se-saca-a-si-mismo-un-solo-ciclo/"/>
@@ -2185,7 +2257,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/anuncios-no-kotlin-multiplatform-interface-compartilhada-e-camada-por-plataforma/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/ads-in-kotlin-multiplatform-shared-interface-platform-shell/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/kotlin-multiplatformda-reklamlar-ortak-arayuz-platform-kabugu/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/anuncios-en-kotlin-multiplatform-interfaz-compartida-y-capa-por-plataforma/"/>
@@ -2194,7 +2266,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/api-play-age-signals-e-ab-1043-da-california-o-que-um-desenvolvedor-pequeno-deve-fazer/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/play-age-signals-api-and-california-ab-1043-what-a-small-developer-must-do/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/play-age-signals-api-ve-kaliforniya-ab-1043-kucuk-bir-gelistirici-ne-yapmali/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/api-play-age-signals-y-ab-1043-de-california-que-debe-hacer-un-desarrollador-pequeno/"/>
@@ -2203,12 +2275,21 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/assinatura-ios-na-nuvem-um-certificado-novo-a-cada-build-e-a-solucao/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/cloud-ios-signing-a-new-certificate-on-every-build-and-the-fix/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/bulutta-ios-imzalama-her-derlemede-yeni-sertifika-ve-kalici-cozum/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/firma-ios-en-la-nube-un-certificado-nuevo-en-cada-compilacion-y-la-solucion/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/assinatura-ios-na-nuvem-um-certificado-novo-a-cada-build-e-a-solucao/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/cloud-ios-signing-a-new-certificate-on-every-build-and-the-fix/"/>
+  </url>
+  <url>
+    <loc>https://nesimapps.com/pt/blog/beamies-como-um-solucionador-mede-e-aumenta-a-dificuldade/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/beamies-how-a-solver-measures-and-raises-puzzle-difficulty/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/beamies-cozucu-zorluk-olcumu-ve-400-bolumluk-egri/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/beamies-como-un-solucionador-mide-y-sube-la-dificultad/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/beamies-como-um-solucionador-mede-e-aumenta-a-dificuldade/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/beamies-how-a-solver-measures-and-raises-puzzle-difficulty/"/>
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/busca-de-caminhos-com-duas-curvas-em-puzzles-connect-de-mahjong/</loc>
@@ -2221,7 +2302,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/capturas-de-tela-da-app-store-sem-celular-robolectric-um-carregador-de-imagens-falso-e-um-navegador-sem-interface/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/telefonsuz-app-store-ekran-goruntuleri-robolectric-sahte-gorsel-yukleyici-ve-basliksiz-tarayici/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/capturas-de-app-store-sin-telefono-robolectric-un-cargador-de-imagenes-falso-y-un-navegador-sin-interfaz/"/>
@@ -2230,7 +2311,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/clarity-ai-visibility-topic-insights-para-um-site-pequeno-primeiros-resultados/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/clarity-ai-visibility-topic-insights-for-a-small-site-first-results/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/clarity-ai-gorunurluk-kucuk-bir-site-icin-konu-icgoruleri-ilk-sonuclar/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/clarity-ai-visibility-topic-insights-para-un-sitio-pequeno-primeros-resultados/"/>
@@ -2248,7 +2329,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/como-fases-de-quebra-cabeca-sao-geradas-e-verificadas/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/how-puzzle-levels-are-generated-and-checked/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/"/>
@@ -2311,7 +2392,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/depurar-um-iphone-no-windows-por-usb-capturas-de-tela-e-logs-com-python/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/"/>
@@ -2320,7 +2401,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/detectar-anuncio-intersticial-travado-android-eventos/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/detectar-anuncio-intersticial-bloqueado-android-eventos/"/>
@@ -2329,7 +2410,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/diretriz-2-1-da-app-store-informacao-necessaria-o-que-enviei/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/app-store-review-guideline-2-1-information-needed-what-i-sent/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/app-store-inceleme-kurali-2-1-bilgi-gerekli-ne-gonderdim/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/guia-2-1-de-app-store-informacion-necesaria-lo-que-envie/"/>
@@ -2338,7 +2419,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/edge-to-edge-e-navegacao-de-3-botoes-corrigindo-a-interface-cortada/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/edge-to-edge-and-three-button-navigation-fixing-clipped-compose-ui/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/edge-to-edge-ve-3-tuslu-gezinmede-kesilen-arayuz-nasil-duzelir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/edge-to-edge-y-navegacion-de-3-botones-arreglar-la-interfaz-recortada/"/>
@@ -2400,6 +2481,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/mahjong-solitaire-history-vs-real-mahjong/"/>
   </url>
   <url>
+    <loc>https://nesimapps.com/pt/blog/kotlin-multiplatform-capacidades-da-plataforma-com-interface-anulavel/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/kotlin-multiplatform-platform-capabilities-nullable-interface/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/kotlin-multiplatformda-platform-yetenegi-null-olabilen-arayuz/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/kotlin-multiplatform-capacidades-de-plataforma-con-interfaz-nula/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/kotlin-multiplatform-capacidades-da-plataforma-com-interface-anulavel/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/kotlin-multiplatform-platform-capabilities-nullable-interface/"/>
+  </url>
+  <url>
+    <loc>https://nesimapps.com/pt/blog/kotlin-native-e-swift-erro-different-argument-labels-causa-e-solucao/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/kotlin-native-swift-different-argument-labels-error-and-the-fix/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/kotlin-native-swift-argument-labels-hatasi-nedeni-ve-cozumu/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/kotlin-native-y-swift-error-different-argument-labels-causa-y-solucion/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/kotlin-native-e-swift-erro-different-argument-labels-causa-e-solucao/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/kotlin-native-swift-different-argument-labels-error-and-the-fix/"/>
+  </url>
+  <url>
     <loc>https://nesimapps.com/pt/blog/labirinto-com-monstros-300-fases-geradas-e-verificadas-por-um-solucionador/</loc>
     <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/turn-based-maze-with-monsters-300-levels-checked-by-a-solver/"/>
@@ -2419,7 +2518,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/ler-o-crashlytics-com-um-assistente-de-codigo-com-ia-a-armadilha-da-pasta-do-projeto/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/reading-crashlytics-from-an-ai-coding-assistant-the-project-folder-trap/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/yapay-zeka-kod-asistaniyla-crashlytics-okumak-proje-klasoru-tuzagi/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/leer-crashlytics-desde-un-asistente-de-codigo-con-ia-la-trampa-de-la-carpeta-del-proyecto/"/>
@@ -2428,7 +2527,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/lista-remota-sem-servidor-para-mais-jogos-um-arquivo-json-no-github-pages/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/"/>
@@ -2446,7 +2545,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/manter-duas-duzias-de-apps-android-sendo-um-unico-desenvolvedor/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/keeping-two-dozen-android-apps-maintainable-solo/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/mantener-dos-docenas-de-apps-android-siendo-un-solo-desarrollador/"/>
@@ -2455,7 +2554,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/medir-instalacoes-no-play-com-links-utm-e-experimentos-de-pagina/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/measure-play-store-installs-with-utm-links-and-listing-experiments/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/utm-baglantilari-ve-magaza-girisi-deneyleriyle-play-kurulumlarini-olcmek/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/medir-instalaciones-en-play-con-enlaces-utm-y-experimentos-de-ficha/"/>
@@ -2473,7 +2572,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/migrar-um-app-android-para-kotlin-multiplatform-com-agp-9-sete-armadilhas/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/"/>
@@ -2491,7 +2590,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/o-numero-de-build-do-ios-que-ficou-em-1-tres-correcoes-que-falharam-e-uma-que-funcionou/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/ios-build-number-stuck-at-one-three-failed-fixes-and-one-that-worked/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/ios-derleme-numarasi-1-de-takildi-isleyen-bir-cozum-ve-uc-islemeyen/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/el-numero-de-compilacion-de-ios-que-se-quedo-en-1-tres-arreglos-fallidos-y-uno-que-funciono/"/>
@@ -2509,7 +2608,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/os-relatorios-em-massa-do-play-console-mostram-0-dispositivos-ativos-no-ultimo-dia/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/play-console-bulk-reports-show-zero-active-devices-on-the-latest-day/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/play-console-toplu-raporlari-son-gunde-sifir-aktif-cihaz-gosteriyor/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/los-informes-masivos-de-play-console-muestran-0-dispositivos-activos-el-ultimo-dia/"/>
@@ -2518,7 +2617,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/por-que-meu-link-da-app-store-deu-404-e-a-pagina-mostrava-capturas-de-2018/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/app-store-baglantim-neden-404-verdi-ve-sayfa-2018-ekran-goruntulerini-gosterdi/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/por-que-mi-enlace-de-la-app-store-dio-404-y-la-pagina-mostraba-capturas-de-2018/"/>
@@ -2527,7 +2626,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/porta-de-regiao-do-analytics-no-ios-quando-o-pais-do-chip-nao-pode-ser-lido/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/analytics-region-gate-on-ios-when-the-sim-country-is-unreadable/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/ios-te-sim-ulkesi-okunamayinca-analytics-bolge-kapisi/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/puerta-de-region-para-analytics-en-ios-cuando-no-se-lee-el-pais-de-la-sim/"/>
@@ -2536,7 +2635,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/publicar-um-app-de-iphone-sem-mac-kotlin-multiplatform-mac-na-nuvem-testflight/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/"/>
@@ -2545,7 +2644,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/quando-os-minutos-de-macos-do-github-actions-acabam-levando-os-builds-ios-para-o-codemagic/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/when-github-actions-macos-minutes-run-out-moving-ios-builds-to-codemagic/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/github-actions-macos-dakikalari-bitince-ios-derlemelerini-codemagic-e-tasimak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/cuando-se-acaban-los-minutos-de-macos-en-github-actions-pasar-las-compilaciones-ios-a-codemagic/"/>
@@ -2554,7 +2653,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/quebra-cabeca-diario-igual-para-todos-sem-servidor/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/how-daily-puzzles-work-without-a-server/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/puzle-diario-igual-para-todos-sin-servidor/"/>
@@ -2590,7 +2689,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/reescrever-para-kotlin-multiplatform-sem-mudar-o-comportamento-o-codigo-antigo-como-oraculo-de-testes/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/reescribir-para-kotlin-multiplatform-sin-cambiar-el-comportamiento-el-codigo-antiguo-como-oraculo-de-pruebas/"/>
@@ -2614,6 +2713,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/ejecutar-una-biblioteca-de-astronomia-de-codigo-abierto-en-android-e-ios-con-un-script-de-parches/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/rodando-uma-biblioteca-de-astronomia-de-codigo-aberto-no-android-e-ios-com-um-script-de-patches/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/running-an-open-source-astronomy-library-on-android-and-ios-with-one-patch-script/"/>
+  </url>
+  <url>
+    <loc>https://nesimapps.com/pt/blog/sair-do-github-pages-para-o-seu-proprio-dominio-sem-perder-seo/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/moving-from-github-pages-to-your-own-domain-without-losing-seo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/github-pages-adresinden-kendi-alan-adina-gecis-seo-kaybetmeden/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/pasar-de-github-pages-a-tu-propio-dominio-sin-perder-seo/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/sair-do-github-pages-para-o-seu-proprio-dominio-sem-perder-seo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/moving-from-github-pages-to-your-own-domain-without-losing-seo/"/>
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/salvamento-na-nuvem-no-android-e-ios-a-regra-de-mesclagem-que-nunca-perde-progresso/</loc>
@@ -2653,7 +2761,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/um-codigo-qr-para-duas-lojas-de-apps-uma-pequena-pagina-de-redirecionamento/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/"/>
@@ -2671,7 +2779,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/um-utm-por-link-um-esquema-de-nomes-para-um-desenvolvedor-independente/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/one-utm-per-link-a-naming-scheme-for-a-solo-developer/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/her-baglantiya-bir-utm-bagimsiz-gelistirici-icin-adlandirma-duzeni/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/un-utm-por-enlace-un-esquema-de-nombres-para-un-desarrollador-independiente/"/>
@@ -2680,7 +2788,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/verifique-quais-paginas-o-google-indexou-com-a-api-de-inspecao-de-url/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/check-which-pages-google-has-indexed-with-the-url-inspection-api/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/url-inspection-api-ile-google-hangi-sayfalari-dizine-eklemis-kontrol-et/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/comprueba-que-paginas-ha-indexado-google-con-la-api-de-inspeccion-de-urls/"/>
@@ -2689,7 +2797,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/videos-de-blog-narrados-com-texto-para-fala-gratuito-e-python/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/narrated-blog-videos-with-free-text-to-speech-and-python/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/ucretsiz-metinden-sese-ve-python-ile-anlatimli-blog-videolari/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/videos-de-blog-narrados-con-texto-a-voz-gratuito-y-python/"/>
@@ -3812,7 +3920,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/catch-stuck-interstitial-ad-android-lifecycle-logging/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/android-takilan-gecis-reklamini-olay-kayitlariyla-yakalamak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/detectar-anuncio-intersticial-bloqueado-android-eventos/"/>
@@ -3821,7 +3929,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/moving-an-android-app-to-kotlin-multiplatform-with-agp-9-seven-traps/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/android-uygulamasini-kotlin-multiplatforma-tasimak-agp-9-yedi-tuzak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/migrar-una-app-android-a-kotlin-multiplatform-con-agp-9-siete-trampas/"/>
@@ -3839,7 +3947,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/api-yokken-36-youtube-topluluk-gonderisini-zamanlamak/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/scheduling-36-youtube-community-posts-when-there-is-no-api/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/api-yokken-36-youtube-topluluk-gonderisini-zamanlamak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/programar-36-publicaciones-de-la-comunidad-de-youtube-cuando-no-hay-api/"/>
@@ -3848,7 +3956,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/app-store-baglantim-neden-404-verdi-ve-sayfa-2018-ekran-goruntulerini-gosterdi/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/why-my-app-store-link-returned-404-and-the-page-showed-2018-screenshots/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/app-store-baglantim-neden-404-verdi-ve-sayfa-2018-ekran-goruntulerini-gosterdi/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/por-que-mi-enlace-de-la-app-store-dio-404-y-la-pagina-mostraba-capturas-de-2018/"/>
@@ -3857,7 +3965,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/app-store-inceleme-kurali-2-1-bilgi-gerekli-ne-gonderdim/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/app-store-review-guideline-2-1-information-needed-what-i-sent/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/app-store-inceleme-kurali-2-1-bilgi-gerekli-ne-gonderdim/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/guia-2-1-de-app-store-informacion-necesaria-lo-que-envie/"/>
@@ -3869,8 +3977,17 @@
     <lastmod>2026-11-25</lastmod>
   </url>
   <url>
+    <loc>https://nesimapps.com/tr/yazilar/beamies-cozucu-zorluk-olcumu-ve-400-bolumluk-egri/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/beamies-how-a-solver-measures-and-raises-puzzle-difficulty/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/beamies-cozucu-zorluk-olcumu-ve-400-bolumluk-egri/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/beamies-como-un-solucionador-mide-y-sube-la-dificultad/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/beamies-como-um-solucionador-mede-e-aumenta-a-dificuldade/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/beamies-how-a-solver-measures-and-raises-puzzle-difficulty/"/>
+  </url>
+  <url>
     <loc>https://nesimapps.com/tr/yazilar/bing-webmaster-api-pano-veri-gosterirken-bos-listeler-donduruyor/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/bing-webmaster-api-returns-empty-lists-while-the-dashboard-shows-data/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/bing-webmaster-api-pano-veri-gosterirken-bos-listeler-donduruyor/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/la-api-de-bing-webmaster-devuelve-listas-vacias-mientras-el-panel-muestra-datos/"/>
@@ -3915,7 +4032,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/how-puzzle-levels-are-generated-and-checked/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/bulmaca-bolumleri-nasil-uretilir-ve-dogrulanir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/como-se-generan-y-verifican-los-niveles-de-un-puzle/"/>
@@ -3924,7 +4041,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/bulutta-ios-imzalama-her-derlemede-yeni-sertifika-ve-kalici-cozum/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/cloud-ios-signing-a-new-certificate-on-every-build-and-the-fix/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/bulutta-ios-imzalama-her-derlemede-yeni-sertifika-ve-kalici-cozum/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/firma-ios-en-la-nube-un-certificado-nuevo-en-cada-compilacion-y-la-solucion/"/>
@@ -3955,7 +4072,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/clarity-ai-gorunurluk-kucuk-bir-site-icin-konu-icgoruleri-ilk-sonuclar/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/clarity-ai-visibility-topic-insights-for-a-small-site-first-results/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/clarity-ai-gorunurluk-kucuk-bir-site-icin-konu-icgoruleri-ilk-sonuclar/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/clarity-ai-visibility-topic-insights-para-un-sitio-pequeno-primeros-resultados/"/>
@@ -3964,7 +4081,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/rewriting-for-kotlin-multiplatform-without-changing-behavior-old-code-as-a-test-oracle/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/davranisi-degistirmeden-kotlin-multiplatforma-gecis-eski-kodu-test-kahini-olarak-tutmak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/reescribir-para-kotlin-multiplatform-sin-cambiar-el-comportamiento-el-codigo-antiguo-como-oraculo-de-pruebas/"/>
@@ -3991,7 +4108,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/serverless-remote-list-for-more-games-one-json-file-on-github-pages/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/diger-oyunlarim-icin-sunucusuz-uzak-liste-github-pages-uzerinde-tek-json-dosyasi/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/lista-remota-sin-servidor-para-mas-juegos-un-archivo-json-en-github-pages/"/>
@@ -4000,7 +4117,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/edge-to-edge-ve-3-tuslu-gezinmede-kesilen-arayuz-nasil-duzelir/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/edge-to-edge-and-three-button-navigation-fixing-clipped-compose-ui/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/edge-to-edge-ve-3-tuslu-gezinmede-kesilen-arayuz-nasil-duzelir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/edge-to-edge-y-navegacion-de-3-botones-arreglar-la-interfaz-recortada/"/>
@@ -4018,7 +4135,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/github-actions-macos-dakikalari-bitince-ios-derlemelerini-codemagic-e-tasimak/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/when-github-actions-macos-minutes-run-out-moving-ios-builds-to-codemagic/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/github-actions-macos-dakikalari-bitince-ios-derlemelerini-codemagic-e-tasimak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/cuando-se-acaban-los-minutos-de-macos-en-github-actions-pasar-las-compilaciones-ios-a-codemagic/"/>
@@ -4026,8 +4143,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/when-github-actions-macos-minutes-run-out-moving-ios-builds-to-codemagic/"/>
   </url>
   <url>
+    <loc>https://nesimapps.com/tr/yazilar/github-pages-adresinden-kendi-alan-adina-gecis-seo-kaybetmeden/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/moving-from-github-pages-to-your-own-domain-without-losing-seo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/github-pages-adresinden-kendi-alan-adina-gecis-seo-kaybetmeden/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/pasar-de-github-pages-a-tu-propio-dominio-sin-perder-seo/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/sair-do-github-pages-para-o-seu-proprio-dominio-sem-perder-seo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/moving-from-github-pages-to-your-own-domain-without-losing-seo/"/>
+  </url>
+  <url>
     <loc>https://nesimapps.com/tr/yazilar/gizli-hediye-cekilisi-algoritmasi-kimse-kendini-cekmesin-tek-buyuk-dongu/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/secret-santa-algorithm-nobody-draws-themselves-one-big-cycle/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/gizli-hediye-cekilisi-algoritmasi-kimse-kendini-cekmesin-tek-buyuk-dongu/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/algoritmo-amigo-invisible-nadie-se-saca-a-si-mismo-un-solo-ciclo/"/>
@@ -4036,7 +4162,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/her-baglantiya-bir-utm-bagimsiz-gelistirici-icin-adlandirma-duzeni/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/one-utm-per-link-a-naming-scheme-for-a-solo-developer/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/her-baglantiya-bir-utm-bagimsiz-gelistirici-icin-adlandirma-duzeni/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/un-utm-por-enlace-un-esquema-de-nombres-para-un-desarrollador-independiente/"/>
@@ -4045,7 +4171,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/one-qr-code-for-two-app-stores-a-tiny-redirect-page/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/iki-magaza-icin-tek-qr-kodu-kucuk-bir-yonlendirme-sayfasi/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/un-codigo-qr-para-dos-tiendas-de-apps-una-pequena-pagina-de-redireccion/"/>
@@ -4054,7 +4180,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/ios-derleme-numarasi-1-de-takildi-isleyen-bir-cozum-ve-uc-islemeyen/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/ios-build-number-stuck-at-one-three-failed-fixes-and-one-that-worked/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/ios-derleme-numarasi-1-de-takildi-isleyen-bir-cozum-ve-uc-islemeyen/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/el-numero-de-compilacion-de-ios-que-se-quedo-en-1-tres-arreglos-fallidos-y-uno-que-funciono/"/>
@@ -4063,7 +4189,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/ios-te-sim-ulkesi-okunamayinca-analytics-bolge-kapisi/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/analytics-region-gate-on-ios-when-the-sim-country-is-unreadable/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/ios-te-sim-ulkesi-okunamayinca-analytics-bolge-kapisi/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/puerta-de-region-para-analytics-en-ios-cuando-no-se-lee-el-pais-de-la-sim/"/>
@@ -4072,7 +4198,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/debugging-an-iphone-from-windows-over-usb-screenshots-and-logs-with-python/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/iphone-u-windows-tan-usb-ile-ayiklamak-python-ile-ekran-goruntusu-ve-gunluk/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/depurar-un-iphone-desde-windows-por-usb-capturas-y-registros-con-python/"/>
@@ -4098,8 +4224,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/same-seed-same-level-on-android-and-ios-with-kotlin-multiplatform/"/>
   </url>
   <url>
+    <loc>https://nesimapps.com/tr/yazilar/kotlin-multiplatformda-platform-yetenegi-null-olabilen-arayuz/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/kotlin-multiplatform-platform-capabilities-nullable-interface/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/kotlin-multiplatformda-platform-yetenegi-null-olabilen-arayuz/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/kotlin-multiplatform-capacidades-de-plataforma-con-interfaz-nula/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/kotlin-multiplatform-capacidades-da-plataforma-com-interface-anulavel/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/kotlin-multiplatform-platform-capabilities-nullable-interface/"/>
+  </url>
+  <url>
     <loc>https://nesimapps.com/tr/yazilar/kotlin-multiplatformda-reklamlar-ortak-arayuz-platform-kabugu/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/ads-in-kotlin-multiplatform-shared-interface-platform-shell/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/kotlin-multiplatformda-reklamlar-ortak-arayuz-platform-kabugu/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/anuncios-en-kotlin-multiplatform-interfaz-compartida-y-capa-por-plataforma/"/>
@@ -4107,8 +4242,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/ads-in-kotlin-multiplatform-shared-interface-platform-shell/"/>
   </url>
   <url>
+    <loc>https://nesimapps.com/tr/yazilar/kotlin-native-swift-argument-labels-hatasi-nedeni-ve-cozumu/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/kotlin-native-swift-different-argument-labels-error-and-the-fix/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/kotlin-native-swift-argument-labels-hatasi-nedeni-ve-cozumu/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/kotlin-native-y-swift-error-different-argument-labels-causa-y-solucion/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/kotlin-native-e-swift-erro-different-argument-labels-causa-e-solucao/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/kotlin-native-swift-different-argument-labels-error-and-the-fix/"/>
+  </url>
+  <url>
     <loc>https://nesimapps.com/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/shipping-an-iphone-app-without-a-mac-kotlin-multiplatform-cloud-mac-testflight/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/mac-olmadan-iphone-uygulamasi-yayinlamak-kotlin-multiplatform-bulut-mac-testflight/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/publicar-una-app-de-iphone-sin-mac-kotlin-multiplatform-mac-en-la-nube-testflight/"/>
@@ -4193,7 +4337,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/play-age-signals-api-ve-kaliforniya-ab-1043-kucuk-bir-gelistirici-ne-yapmali/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/play-age-signals-api-and-california-ab-1043-what-a-small-developer-must-do/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/play-age-signals-api-ve-kaliforniya-ab-1043-kucuk-bir-gelistirici-ne-yapmali/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/api-play-age-signals-y-ab-1043-de-california-que-debe-hacer-un-desarrollador-pequeno/"/>
@@ -4211,7 +4355,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/play-console-toplu-raporlari-son-gunde-sifir-aktif-cihaz-gosteriyor/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/play-console-bulk-reports-show-zero-active-devices-on-the-latest-day/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/play-console-toplu-raporlari-son-gunde-sifir-aktif-cihaz-gosteriyor/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/los-informes-masivos-de-play-console-muestran-0-dispositivos-activos-el-ultimo-dia/"/>
@@ -4229,7 +4373,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/how-daily-puzzles-work-without-a-server/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/sunucusuz-gunluk-bulmaca-nasil-yapilir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/puzle-diario-igual-para-todos-sin-servidor/"/>
@@ -4238,7 +4382,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/keeping-two-dozen-android-apps-maintainable-solo/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/tek-gelistirici-iki-duzine-android-uygulamasi-bakim/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/mantener-dos-docenas-de-apps-android-siendo-un-solo-desarrollador/"/>
@@ -4256,7 +4400,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/telefonsuz-app-store-ekran-goruntuleri-robolectric-sahte-gorsel-yukleyici-ve-basliksiz-tarayici/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/app-store-screenshots-without-a-phone-robolectric-a-fake-image-loader-and-a-headless-browser/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/telefonsuz-app-store-ekran-goruntuleri-robolectric-sahte-gorsel-yukleyici-ve-basliksiz-tarayici/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/capturas-de-app-store-sin-telefono-robolectric-un-cargador-de-imagenes-falso-y-un-navegador-sin-interfaz/"/>
@@ -4274,7 +4418,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/ucretsiz-metinden-sese-ve-python-ile-anlatimli-blog-videolari/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/narrated-blog-videos-with-free-text-to-speech-and-python/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/ucretsiz-metinden-sese-ve-python-ile-anlatimli-blog-videolari/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/videos-de-blog-narrados-con-texto-a-voz-gratuito-y-python/"/>
@@ -4292,7 +4436,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/url-inspection-api-ile-google-hangi-sayfalari-dizine-eklemis-kontrol-et/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/check-which-pages-google-has-indexed-with-the-url-inspection-api/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/url-inspection-api-ile-google-hangi-sayfalari-dizine-eklemis-kontrol-et/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/comprueba-que-paginas-ha-indexado-google-con-la-api-de-inspeccion-de-urls/"/>
@@ -4301,7 +4445,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/utm-baglantilari-ve-magaza-girisi-deneyleriyle-play-kurulumlarini-olcmek/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/measure-play-store-installs-with-utm-links-and-listing-experiments/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/utm-baglantilari-ve-magaza-girisi-deneyleriyle-play-kurulumlarini-olcmek/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/medir-instalaciones-en-play-con-enlaces-utm-y-experimentos-de-ficha/"/>
@@ -4319,7 +4463,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/yapay-zeka-kod-asistaniyla-crashlytics-okumak-proje-klasoru-tuzagi/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/reading-crashlytics-from-an-ai-coding-assistant-the-project-folder-trap/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/yapay-zeka-kod-asistaniyla-crashlytics-okumak-proje-klasoru-tuzagi/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/leer-crashlytics-desde-un-asistente-de-codigo-con-ia-la-trampa-de-la-carpeta-del-proyecto/"/>
