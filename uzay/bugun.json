@@ -1,7 +1,16 @@
 {
- "uretim": "2026-11-25T15:36:51Z",
+ "uretim": "2026-11-26T15:17:14Z",
  "surum": 1,
  "apod": [
+  {
+   "tarih": "2026-11-26",
+   "baslik": "Eye in the Sky: The Milky Way over Lençóis",
+   "tur": "image",
+   "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-26-eye-in-the-sky-the-milky-way-over-lencois/",
+   "ozet_en": "Explanation: Beauty is in the eye of the beholder. And there is much to behold in today's featured image. The Milky Way shines bright in the sky of Brazil, over the white sand dunes and dark lagoons of Lençóis Maranhenses National Park.",
+   "kredi": "Ignacio Fernández",
+   "nasa_kaynakli": false
+  },
   {
    "tarih": "2026-11-25",
    "baslik": "SPHEREx Seeing Through Dust",
@@ -81,15 +90,6 @@
    "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-17-milky-way-versus-aurora/",
    "ozet_en": "Explanation: Are these two giant arches battling for control of the sky? No, but it sure looks like it! The arch on the left is the central band of our Milky Way Galaxy, an ancient system of stars, gas, and dust that predates our Earth and is very far away.",
    "kredi": "Guillaume Scheib",
-   "nasa_kaynakli": false
-  },
-  {
-   "tarih": "2026-11-16",
-   "baslik": "NGC 7129: Star Formation with Jets from Webb",
-   "tur": "image",
-   "baglanti": "https://science.nasa.gov/image-article/apod-2026-november-16-ngc-7129-star-formation-with-jets-from-webb/",
-   "ozet_en": "Explanation: How do stars form? To help answer this question, NASA used the James Webb Space Telescope to take the featured detailed image of the star-forming region NGC 7129 in infrared light.",
-   "kredi": "NASA, ESA, CSA, STScI, JWST; Processing: A. Pagan (STScI)",
    "nasa_kaynakli": false
   }
  ],
@@ -192,24 +192,10 @@
  },
  "asteroitler": {
   "aralik": [
-   "2026-11-25",
-   "2026-12-09"
+   "2026-11-26",
+   "2026-12-10"
   ],
   "liste": [
-   {
-    "ad": "(2026 VV11)",
-    "tarih": "2026-Nov-25 21:20",
-    "mesafe_ay": 16.1,
-    "hiz_kms": 8.7,
-    "cap_m": 41
-   },
-   {
-    "ad": "(2026 VQ5)",
-    "tarih": "2026-Nov-25 21:22",
-    "mesafe_ay": 5.2,
-    "hiz_kms": 11.7,
-    "cap_m": 58
-   },
    {
     "ad": "(2026 VQ19)",
     "tarih": "2026-Nov-26 10:15",
@@ -268,10 +254,10 @@
    },
    {
     "ad": "(2026 WG)",
-    "tarih": "2026-Dec-08 03:28",
+    "tarih": "2026-Dec-08 03:31",
     "mesafe_ay": 11.5,
     "hiz_kms": 6.3,
-    "cap_m": 29
+    "cap_m": 31
    },
    {
     "ad": "(2016 NV)",
@@ -328,13 +314,6 @@
     "enlem": 43.0403647
    },
    {
-    "baslik": "Tropical Cyclone Akvan",
-    "tur": "Severe Storms",
-    "tarih": "2026-11-19",
-    "boylam": 84.7,
-    "enlem": 17.2
-   },
-   {
     "baslik": "Prescribed Fire STEELY MILL RX, El Dorado, California",
     "tur": "Wildfires",
     "tarih": "2026-11-16",
@@ -389,6 +368,13 @@
     "tarih": "2026-11-12",
     "boylam": -117.533129,
     "enlem": 48.402056
+   },
+   {
+    "baslik": "Prescribed Fire Holly Springs 119-1 &amp; 84-2 RX, Lafayette, Mississippi",
+    "tur": "Wildfires",
+    "tarih": "2026-11-12",
+    "boylam": -89.421184,
+    "enlem": 34.49329
    }
   ],
   "kredi": "NASA EONET"
@@ -396,25 +382,25 @@
  "iss_tle": {
   "OBJECT_NAME": "ISS (ZARYA)",
   "OBJECT_ID": "1998-067A",
-  "EPOCH": "2026-11-23T21:54:38.454048",
-  "MEAN_MOTION": 15.49568558,
-  "ECCENTRICITY": 0.0007379,
-  "INCLINATION": 51.6322,
-  "RA_OF_ASC_NODE": 229.652,
-  "ARG_OF_PERICENTER": 58.6021,
-  "MEAN_ANOMALY": 301.5689,
+  "EPOCH": "2026-11-26T04:04:59.468736",
+  "MEAN_MOTION": 15.49589862,
+  "ECCENTRICITY": 0.00074707,
+  "INCLINATION": 51.6313,
+  "RA_OF_ASC_NODE": 218.475,
+  "ARG_OF_PERICENTER": 66.5508,
+  "MEAN_ANOMALY": 293.6265,
   "EPHEMERIS_TYPE": 0,
   "CLASSIFICATION_TYPE": "U",
   "NORAD_CAT_ID": 25544,
   "ELEMENT_SET_NO": 999,
-  "REV_AT_EPOCH": 59651,
-  "BSTAR": 0.00010921,
-  "MEAN_MOTION_DOT": 5.691e-05,
+  "REV_AT_EPOCH": 59686,
+  "BSTAR": 8.9217209e-05,
+  "MEAN_MOTION_DOT": 4.569e-05,
   "MEAN_MOTION_DDOT": 0
  },
  "gibs": {
-  "tarih": "2026-11-24",
-  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_NOAA21_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-11-24&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
+  "tarih": "2026-11-25",
+  "turkiye": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_NOAA21_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=2026-11-25&WRAP=DAY&BBOX=34.0,25.0,43.0,45.5&FORMAT=image/jpeg&WIDTH=1230&HEIGHT=540&AUTOSCALE=FALSE",
   "kredi": "NASA GIBS / Worldview"
  }
 }
