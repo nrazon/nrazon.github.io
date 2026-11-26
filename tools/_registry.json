@@ -9,7 +9,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "b80be07f52f5df08bcecaa9a64321832",
+  "hash": "addd1ccf8f3dc974359a2d6b24d5bb5a",
   "slug": ""
  },
  "https://nesimapps.com/tr/": {
@@ -22,7 +22,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "d02da155ad2e239b60679db1cd53b4e4",
+  "hash": "ddbbce2efe8d86b5fd3b2eb6ee338391",
   "slug": ""
  },
  "https://nesimapps.com/es/": {
@@ -35,7 +35,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "fc5225d5951f6c0448e29e574fa2ae58",
+  "hash": "9781baced322f5dd7bff28816fc9aa7f",
   "slug": ""
  },
  "https://nesimapps.com/pt/": {
@@ -48,7 +48,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "4d1bd61fb8aba867a263b4b096c0b8e5",
+  "hash": "467f60891fec9db92bdc806d8bec9f00",
   "slug": ""
  },
  "https://nesimapps.com/agecalculator/": {
@@ -61,7 +61,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "338f4bb53080486af920bc407bd6ae46",
+  "hash": "7a1743e6e3b829c3db0f57f511919af4",
   "slug": "agecalculator"
  },
  "https://nesimapps.com/tr/agecalculator/": {
@@ -74,7 +74,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "2c798c1e981203b4e835e5f7147fdf71",
+  "hash": "de8242d4ba4cd676afdb5f45159b4ec6",
   "slug": "agecalculator"
  },
  "https://nesimapps.com/es/agecalculator/": {
@@ -87,7 +87,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "ea01bc7872ac82a9be1caf0b5c378f5e",
+  "hash": "41e28db69148da6dc7ac1bb660a319e9",
   "slug": "agecalculator"
  },
  "https://nesimapps.com/pt/agecalculator/": {
@@ -100,7 +100,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "74af0135e2551db4f48d07da6fed9d77",
+  "hash": "77fd02a67dfc4e39fa3e890ab8b0f3b9",
   "slug": "agecalculator"
  },
  "https://nesimapps.com/anthemcanada/": {
@@ -111,7 +111,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "a47541a0a97428a3b95c58682f2e27a6",
+  "hash": "077b232b1083576f30c3dbd44c1b0d0b",
   "slug": "anthemcanada"
  },
  "https://nesimapps.com/fr/anthemcanada/": {
@@ -122,7 +122,7 @@
   },
   "lang": "fr",
   "default": "en",
-  "hash": "1c912f88c1d7fb37ba5bf03ce9fa4fee",
+  "hash": "9d1c8d649d9d3b0b089ea9d70e344668",
   "slug": "anthemcanada"
  },
  "https://nesimapps.com/anthemturkey/": {
@@ -133,7 +133,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "c7a1c54cecb1ecb80a1d75d9183e86ef",
+  "hash": "89caf500e59494b3cb6c21df6ac78ed9",
   "slug": "anthemturkey"
  },
  "https://nesimapps.com/tr/anthemturkey/": {
@@ -144,7 +144,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "409bde94172e0b5426f8b9f23d164f25",
+  "hash": "e73606f8350a75affb62936914645afb",
   "slug": "anthemturkey"
  },
  "https://nesimapps.com/astrolings/": {
@@ -154,7 +154,7 @@
   },
   "lang": "tr",
   "default": "tr",
-  "hash": "f4f8def6fa9b3c42a922b6607f9e609a",
+  "hash": "d0bec00644ce464ca41591884f195ff6",
   "slug": "astrolings"
  },
  "https://nesimapps.com/beamies/": {
@@ -167,7 +167,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "20dec247540f513d1b7543f78d1677c1",
+  "hash": "2972d25de547b3954bfe4412ae0c9400",
   "slug": "beamies"
  },
  "https://nesimapps.com/tr/beamies/": {
@@ -180,7 +180,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "801f90fbde7b8741d33558bc0fb9c70a",
+  "hash": "cf466e9e65e0a4f7e4d8a21c8f6d040b",
   "slug": "beamies"
  },
  "https://nesimapps.com/es/beamies/": {
@@ -193,7 +193,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "166d58bf72e06f8a7d35843b33fb2754",
+  "hash": "844b2c3c76d819c8bff27ec221fcaeec",
   "slug": "beamies"
  },
  "https://nesimapps.com/pt/beamies/": {
@@ -206,7 +206,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "fc7a68e90e9dd041329e50bdccf36829",
+  "hash": "a006e12c674ddc9d4b7aeda2fa7ed3c7",
   "slug": "beamies"
  },
  "https://nesimapps.com/bmicalculator/": {
@@ -219,7 +219,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "9be709aacc7aed4fceac112e4720b678",
+  "hash": "7af4f77166527a9eec91bcce18dff340",
   "slug": "bmicalculator"
  },
  "https://nesimapps.com/tr/bmicalculator/": {
@@ -232,7 +232,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "3e8db9c71ac7c6ee6a0e8ebb8f2998ee",
+  "hash": "10df28bf3df8f713a0d1a78fc69b4fe8",
   "slug": "bmicalculator"
  },
  "https://nesimapps.com/es/bmicalculator/": {
@@ -245,7 +245,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "e7c32f98b1ae611196f16c50b168e030",
+  "hash": "6a715dd91b1f83d3e73a9d45db20a5cb",
   "slug": "bmicalculator"
  },
  "https://nesimapps.com/pt/bmicalculator/": {
@@ -258,7 +258,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "e7fc3d63cff8697f48a617d2355d9ec8",
+  "hash": "d3707daa6c276ed799801db075f50556",
   "slug": "bmicalculator"
  },
  "https://nesimapps.com/brassline/": {
@@ -320,7 +320,7 @@
   },
   "lang": "tr",
   "default": "tr",
-  "hash": "ceeb82b9c431835bb42ca3c49de625be",
+  "hash": "6caf13632d66bca03e0500c67027df25",
   "slug": "calisan"
  },
  "https://nesimapps.com/cardles/": {
@@ -333,7 +333,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "a22e0a2a529d3309adf5a4122ab52d89",
+  "hash": "8347e7a1acb6a291aae9e6f6d4614e45",
   "slug": "cardles"
  },
  "https://nesimapps.com/tr/cardles/": {
@@ -346,7 +346,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "0cdd5f54c8b5503356166bb8ed95fedc",
+  "hash": "9bd427a20f3204307508996856d5fbb9",
   "slug": "cardles"
  },
  "https://nesimapps.com/es/cardles/": {
@@ -359,7 +359,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "4bbd98ebab725a1c613448fbcf118675",
+  "hash": "b12d486f15d086a08de2f7ac3559c806",
   "slug": "cardles"
  },
  "https://nesimapps.com/pt/cardles/": {
@@ -372,7 +372,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "315d2495d5b0b49b1e18b6a41ce6fd2b",
+  "hash": "cd6b05453a43b4d5578a905f7f4c3048",
   "slug": "cardles"
  },
  "https://nesimapps.com/cubbles/": {
@@ -385,7 +385,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "0e16825bcebac5c16093c10c5491b8bf",
+  "hash": "d6c12fd8db6c47dab50b21c203de54fc",
   "slug": "cubbles"
  },
  "https://nesimapps.com/tr/cubbles/": {
@@ -398,7 +398,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "1d26a5a7d114699c14bec05fac5c1126",
+  "hash": "7a1c6f0a4ac684a1b512cfb3f06a6cfc",
   "slug": "cubbles"
  },
  "https://nesimapps.com/es/cubbles/": {
@@ -411,7 +411,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "54f82760c4f7df2da6582947754fdbe8",
+  "hash": "070262aa39e7af14891f4a5431158318",
   "slug": "cubbles"
  },
  "https://nesimapps.com/pt/cubbles/": {
@@ -424,8 +424,60 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "792521b7950abc8ed2a0bec81bf183c6",
+  "hash": "0c985a03281bc0752f71c82942d76782",
   "slug": "cubbles"
+ },
+ "https://nesimapps.com/flowlings/": {
+  "url": "https://nesimapps.com/flowlings/",
+  "loc": {
+   "en": "https://nesimapps.com/flowlings/",
+   "tr": "https://nesimapps.com/tr/flowlings/",
+   "es": "https://nesimapps.com/es/flowlings/",
+   "pt": "https://nesimapps.com/pt/flowlings/"
+  },
+  "lang": "en",
+  "default": "en",
+  "hash": "c457c628c03c2b57223f7a45c55681b2",
+  "slug": "flowlings"
+ },
+ "https://nesimapps.com/tr/flowlings/": {
+  "url": "https://nesimapps.com/tr/flowlings/",
+  "loc": {
+   "en": "https://nesimapps.com/flowlings/",
+   "tr": "https://nesimapps.com/tr/flowlings/",
+   "es": "https://nesimapps.com/es/flowlings/",
+   "pt": "https://nesimapps.com/pt/flowlings/"
+  },
+  "lang": "tr",
+  "default": "en",
+  "hash": "b7f31a9476fbc96a67a152a61df58138",
+  "slug": "flowlings"
+ },
+ "https://nesimapps.com/es/flowlings/": {
+  "url": "https://nesimapps.com/es/flowlings/",
+  "loc": {
+   "en": "https://nesimapps.com/flowlings/",
+   "tr": "https://nesimapps.com/tr/flowlings/",
+   "es": "https://nesimapps.com/es/flowlings/",
+   "pt": "https://nesimapps.com/pt/flowlings/"
+  },
+  "lang": "es",
+  "default": "en",
+  "hash": "7b4c8b807be519cbdd93afe55126a2c8",
+  "slug": "flowlings"
+ },
+ "https://nesimapps.com/pt/flowlings/": {
+  "url": "https://nesimapps.com/pt/flowlings/",
+  "loc": {
+   "en": "https://nesimapps.com/flowlings/",
+   "tr": "https://nesimapps.com/tr/flowlings/",
+   "es": "https://nesimapps.com/es/flowlings/",
+   "pt": "https://nesimapps.com/pt/flowlings/"
+  },
+  "lang": "pt",
+  "default": "en",
+  "hash": "4788e628f3da51721b0284d65a519ab7",
+  "slug": "flowlings"
  },
  "https://nesimapps.com/game2048/": {
   "url": "https://nesimapps.com/game2048/",
@@ -437,7 +489,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "ca0215a3f64780d2db59febbb98f9261",
+  "hash": "47b0909e1adbe8491c418c6c70cd0960",
   "slug": "game2048"
  },
  "https://nesimapps.com/tr/game2048/": {
@@ -450,7 +502,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "eef9cec917dd5ad26f1a7e559f8db4aa",
+  "hash": "b87bda3415203c03b1122cfe4b3598c1",
   "slug": "game2048"
  },
  "https://nesimapps.com/es/game2048/": {
@@ -463,7 +515,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "8e2e370c67b10b00ec5d6953b6913eee",
+  "hash": "735b351aa341f61645796a5298acdefc",
   "slug": "game2048"
  },
  "https://nesimapps.com/pt/game2048/": {
@@ -476,7 +528,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "a17e82c4f72a40e84a11e222781de319",
+  "hash": "89f0e80fcb819b983d24711f8f789323",
   "slug": "game2048"
  },
  "https://nesimapps.com/grumblings/": {
@@ -489,7 +541,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "654faf4003b23bc18dccfa36b1111b59",
+  "hash": "f1299d48958eb96d8644937ec2c51a4d",
   "slug": "grumblings"
  },
  "https://nesimapps.com/tr/grumblings/": {
@@ -502,7 +554,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "51de76294b526cdbb5eb1e4242a2b3f3",
+  "hash": "0b5210b8426dddbbc493c05fe30e21a0",
   "slug": "grumblings"
  },
  "https://nesimapps.com/es/grumblings/": {
@@ -515,7 +567,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "7a8ebf0449d40dc464322bd00ec78049",
+  "hash": "84f26951ec077f015dc5c8c06a95a6ef",
   "slug": "grumblings"
  },
  "https://nesimapps.com/pt/grumblings/": {
@@ -528,7 +580,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "64502b2fe35e34e333087c3d8a9d028a",
+  "hash": "69d8481d7007ebaa65d3e43b31448653",
   "slug": "grumblings"
  },
  "https://nesimapps.com/haftasonum/": {
@@ -538,7 +590,7 @@
   },
   "lang": "tr",
   "default": "tr",
-  "hash": "31c971665aef11f8ed89b6cfb5b9b13c",
+  "hash": "862330f88ec9343d54a970be3ae4841e",
   "slug": "haftasonum"
  },
  "https://nesimapps.com/logiclings/": {
@@ -551,7 +603,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "2e57fa64e7850728f53cc385c689745d",
+  "hash": "311e51edb285b1eeb0ab66066ef32e79",
   "slug": "logiclings"
  },
  "https://nesimapps.com/tr/logiclings/": {
@@ -564,7 +616,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "0524df12ef22160c2caa14f1a478b72d",
+  "hash": "a262b36ddeb90511aa9152c155b9eba7",
   "slug": "logiclings"
  },
  "https://nesimapps.com/es/logiclings/": {
@@ -577,7 +629,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "0e9a97e3eb648683cb04df6f9d019960",
+  "hash": "0b694c9fe18c6be2aed0ea122a628539",
   "slug": "logiclings"
  },
  "https://nesimapps.com/pt/logiclings/": {
@@ -590,7 +642,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "d4fafb228a352ab37c2c5cea3fa74022",
+  "hash": "1df687ed84cbce0a22c61a716e539fa2",
   "slug": "logiclings"
  },
  "https://nesimapps.com/medyafobi/": {
@@ -600,7 +652,7 @@
   },
   "lang": "tr",
   "default": "tr",
-  "hash": "4ad0c1393cc553821448ffd3e08c3840",
+  "hash": "c692efb35256d8dcd0e8159a088d5b37",
   "slug": "medyafobi"
  },
  "https://nesimapps.com/nudgelings/": {
@@ -613,7 +665,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "3c0e0cd0b43e5bd510343e8fa7b9fdef",
+  "hash": "aa4961d3f4a135753f35624ddf4558e5",
   "slug": "nudgelings"
  },
  "https://nesimapps.com/tr/nudgelings/": {
@@ -626,7 +678,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "31d42f30f0c04d97e108e006d51a87f9",
+  "hash": "aebad2740a45715894fec06673a28061",
   "slug": "nudgelings"
  },
  "https://nesimapps.com/es/nudgelings/": {
@@ -639,7 +691,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "5d9c5738f4e94b8d0ed08c7ba5cb534f",
+  "hash": "2566b986310c7072d3ee472030ac4378",
   "slug": "nudgelings"
  },
  "https://nesimapps.com/pt/nudgelings/": {
@@ -652,7 +704,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "e9870001ade97b3cbae2e578c50075df",
+  "hash": "4a25e6728176d13f936b3a0e6d970187",
   "slug": "nudgelings"
  },
  "https://nesimapps.com/nuzzlings/": {
@@ -665,7 +717,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "7874a093e1d4ce9feece49d73e1a1014",
+  "hash": "5c80087c5b9f0cccaa564ffc00f0abcb",
   "slug": "nuzzlings"
  },
  "https://nesimapps.com/tr/nuzzlings/": {
@@ -678,7 +730,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "8b275c389f985f8ae95366650db2d5a4",
+  "hash": "5bcb3c633bfe50f3a41a81ccc129a38d",
   "slug": "nuzzlings"
  },
  "https://nesimapps.com/es/nuzzlings/": {
@@ -691,7 +743,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "fddf66ea1af7f035ec6058eeb2c8d6c9",
+  "hash": "99adac783cb2ed36ac1308f07d80b331",
   "slug": "nuzzlings"
  },
  "https://nesimapps.com/pt/nuzzlings/": {
@@ -704,7 +756,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "3cf930c4edb5017abb3e518ad2fedd49",
+  "hash": "27d3eae6c3bd57c69763c6a4cec9274a",
   "slug": "nuzzlings"
  },
  "https://nesimapps.com/pentolings/": {
@@ -717,7 +769,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "9e42b4bbd958298203e3babce7346c01",
+  "hash": "35e37abd7cc9106dc4c590f37846df23",
   "slug": "pentolings"
  },
  "https://nesimapps.com/tr/pentolings/": {
@@ -730,7 +782,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "9025c7b9f4a0bb209308ed17c4d41599",
+  "hash": "ae75ff90a21d372b67f682ffcf0c2084",
   "slug": "pentolings"
  },
  "https://nesimapps.com/es/pentolings/": {
@@ -743,7 +795,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "e262e593c6d7a2b1e1a005010fad724f",
+  "hash": "041a99b16f653e5f652906e07c649790",
   "slug": "pentolings"
  },
  "https://nesimapps.com/pt/pentolings/": {
@@ -756,7 +808,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "e0cbe75ba9e8e90173b3cad269412cba",
+  "hash": "5eb1bd5bdfd13d130fd27c63b7adf050",
   "slug": "pentolings"
  },
  "https://nesimapps.com/pulselings/": {
@@ -769,7 +821,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "f235ed09ad6e52a56509c550b3e55ef6",
+  "hash": "dabbe9237a316d2ebcca9c4614076607",
   "slug": "pulselings"
  },
  "https://nesimapps.com/tr/pulselings/": {
@@ -782,7 +834,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "092729d3d389c7a505bfed2c7385f38f",
+  "hash": "8e30cd1b3a5fac866c45761587369f65",
   "slug": "pulselings"
  },
  "https://nesimapps.com/es/pulselings/": {
@@ -795,7 +847,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "92f7d7afdea88460ece950d21bd86275",
+  "hash": "c9547e756fd87e9be4e70661484d75ff",
   "slug": "pulselings"
  },
  "https://nesimapps.com/pt/pulselings/": {
@@ -808,7 +860,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "1c456bf2e539087112d24843f87323e9",
+  "hash": "5686e73a4d901b3365eb1d8faa3085da",
   "slug": "pulselings"
  },
  "https://nesimapps.com/sansoyunlari/": {
@@ -818,7 +870,7 @@
   },
   "lang": "tr",
   "default": "tr",
-  "hash": "b124205bb5829368d1f47a5d579409db",
+  "hash": "4152ffe42813a07b7ba029048ad9a09a",
   "slug": "sansoyunlari"
  },
  "https://nesimapps.com/slinglings/": {
@@ -831,7 +883,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "47fa9eec81c5c41a67432ee7e0d3f5e8",
+  "hash": "b9803b837a88e0090ef522fbdb4f2e23",
   "slug": "slinglings"
  },
  "https://nesimapps.com/tr/slinglings/": {
@@ -844,7 +896,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "2c44346af4a2698aec09522089e599b6",
+  "hash": "633761dce4a28fdb05bfdfa6e63969b7",
   "slug": "slinglings"
  },
  "https://nesimapps.com/es/slinglings/": {
@@ -857,7 +909,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "e8d17a885dd9db7e340169537f9eee95",
+  "hash": "05cc0b9e659be7b2f560693baa8422ab",
   "slug": "slinglings"
  },
  "https://nesimapps.com/pt/slinglings/": {
@@ -870,7 +922,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "7f59aef6b410a24f033312fb18bfb196",
+  "hash": "1014769efb50189a7a0c4d5ced28057c",
   "slug": "slinglings"
  },
  "https://nesimapps.com/sliplines/": {
@@ -883,7 +935,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "20cbdefe4b32ec0dce404563b0532f3d",
+  "hash": "75bd3248e55b78e73f386d62f9568834",
   "slug": "sliplines"
  },
  "https://nesimapps.com/tr/sliplines/": {
@@ -896,7 +948,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "b483ff52dfdd45116f9c5c75b5527c98",
+  "hash": "f6d0e682ecd937019f532e4004227729",
   "slug": "sliplines"
  },
  "https://nesimapps.com/es/sliplines/": {
@@ -909,7 +961,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "a8b1dccbef73db58603d22d1091a1307",
+  "hash": "5a02c83251e3c379c6e68d610d356fbd",
   "slug": "sliplines"
  },
  "https://nesimapps.com/pt/sliplines/": {
@@ -922,7 +974,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "0493d2b3b0be75d901f229456c079746",
+  "hash": "abde9d3ae65352b610016e7daa2adb39",
   "slug": "sliplines"
  },
  "https://nesimapps.com/snowlings/": {
@@ -935,7 +987,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "45a7c191d38f6521e450dc07e6387338",
+  "hash": "09b26807d621d17b87c8c4d7c6b1cf2c",
   "slug": "snowlings"
  },
  "https://nesimapps.com/tr/snowlings/": {
@@ -948,7 +1000,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "ac9b7b6cfdfdbe422c959e4df0e28214",
+  "hash": "23913c96f28d557bdd032ca00ddbfb44",
   "slug": "snowlings"
  },
  "https://nesimapps.com/es/snowlings/": {
@@ -961,7 +1013,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "d6cb1eda9292ed1b2c0dbad6020343f1",
+  "hash": "8bd0a273e874df3cdcbbc74beb25ec26",
   "slug": "snowlings"
  },
  "https://nesimapps.com/pt/snowlings/": {
@@ -974,7 +1026,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "db243a1eae2866d377904c4d9837d58d",
+  "hash": "d2733bf7a28608f73482ffcb033662ce",
   "slug": "snowlings"
  },
  "https://nesimapps.com/sondepremler/": {
@@ -985,7 +1037,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "92ebb1ba31bcb762f83d8f6cd69b5763",
+  "hash": "16d3c604840717be970efef6bff0d29c",
   "slug": "sondepremler"
  },
  "https://nesimapps.com/tr/sondepremler/": {
@@ -996,7 +1048,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "b697bf4d893f20a32c40618298ac496d",
+  "hash": "d5e80c53e5b51322396949f11cc0f24f",
   "slug": "sondepremler"
  },
  "https://nesimapps.com/tictactoe/": {
@@ -1009,7 +1061,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "274946084a099358e5a70460848c3761",
+  "hash": "7f22ecd31e36dce423319a11a65af8e4",
   "slug": "tictactoe"
  },
  "https://nesimapps.com/tr/tictactoe/": {
@@ -1022,7 +1074,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "4aad044abf81908eb1ce244f0650a790",
+  "hash": "606e092a184adf92f68941d431d3e6a2",
   "slug": "tictactoe"
  },
  "https://nesimapps.com/es/tictactoe/": {
@@ -1035,7 +1087,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "4a4a77d991af02691b3fe1efc9ebefea",
+  "hash": "6b6864c628f27d6ae4e39600ec89f742",
   "slug": "tictactoe"
  },
  "https://nesimapps.com/pt/tictactoe/": {
@@ -1048,7 +1100,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "7a111c86b745ece4829775bc5fb25109",
+  "hash": "4e81780984a0350a71a381941bf0d30b",
   "slug": "tictactoe"
  },
  "https://nesimapps.com/tilelings/": {
@@ -1061,7 +1113,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "abf54d6ee5413b6a1b58ed4f59954a42",
+  "hash": "a94ca69043ff339c2116ef7186b42495",
   "slug": "tilelings"
  },
  "https://nesimapps.com/tr/tilelings/": {
@@ -1074,7 +1126,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "8c53040b49ea1d685ad13dee87735070",
+  "hash": "7d6a9f8b3151bd7ec11950a489f08039",
   "slug": "tilelings"
  },
  "https://nesimapps.com/es/tilelings/": {
@@ -1087,7 +1139,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "4e8655dfd5623a32d59fc841032740f1",
+  "hash": "5f8fa53b5d3ab9a2e873e67ea02a7f7d",
   "slug": "tilelings"
  },
  "https://nesimapps.com/pt/tilelings/": {
@@ -1100,7 +1152,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "3790600c9075cb657467566bf6900433",
+  "hash": "dc43b892ef7bf95adab39be7f095c443",
   "slug": "tilelings"
  },
  "https://nesimapps.com/tombalings/": {
@@ -1113,7 +1165,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "06e94e89627ee1509a37d6acf6d68c7c",
+  "hash": "a380e681786056541c639aa98c8f7d8d",
   "slug": "tombalings"
  },
  "https://nesimapps.com/tr/tombalings/": {
@@ -1126,7 +1178,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "de686ec9d0708542a3b29b706a89b216",
+  "hash": "8bf56acba96ec01914be634468eb5a75",
   "slug": "tombalings"
  },
  "https://nesimapps.com/es/tombalings/": {
@@ -1139,7 +1191,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "0ca0e4e689cd54dd921dee0548fbac89",
+  "hash": "579a9bdd33069a626e40a72e87883443",
   "slug": "tombalings"
  },
  "https://nesimapps.com/pt/tombalings/": {
@@ -1152,7 +1204,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "f015fd5ad03369ec077dd125e69719df",
+  "hash": "474ed96d233141837b09f1e1acae4927",
   "slug": "tombalings"
  },
  "https://nesimapps.com/turksail/": {
@@ -1162,7 +1214,7 @@
   },
   "lang": "tr",
   "default": "tr",
-  "hash": "6439d318f185f99ac3fd4bff743c748a",
+  "hash": "1e59510a843561e254d3ebafe47acfe0",
   "slug": "turksail"
  },
  "https://nesimapps.com/uzaygunlugu/": {
@@ -1172,7 +1224,7 @@
   },
   "lang": "tr",
   "default": "tr",
-  "hash": "85daba67544f2a82802b6f5398f601cf",
+  "hash": "7f9b20bff50c25607b0cbab624eb1fce",
   "slug": "uzaygunlugu"
  },
  "https://nesimapps.com/whereami/": {
@@ -1185,7 +1237,7 @@
   },
   "lang": "en",
   "default": "en",
-  "hash": "4d33ed977ffd9160a44a75283ab6dd3d",
+  "hash": "dfa55b0c241c9d012c494d0da3b757e8",
   "slug": "whereami"
  },
  "https://nesimapps.com/tr/whereami/": {
@@ -1198,7 +1250,7 @@
   },
   "lang": "tr",
   "default": "en",
-  "hash": "e0865a414df0da25a59f12a9d51182e5",
+  "hash": "2ac950468301dfbdd9fef130e46ef264",
   "slug": "whereami"
  },
  "https://nesimapps.com/es/whereami/": {
@@ -1211,7 +1263,7 @@
   },
   "lang": "es",
   "default": "en",
-  "hash": "1c708d84b443ce9dbf8e18993dff84c9",
+  "hash": "e273fa8c97be8c881570acb44cf65256",
   "slug": "whereami"
  },
  "https://nesimapps.com/pt/whereami/": {
@@ -1224,7 +1276,7 @@
   },
   "lang": "pt",
   "default": "en",
-  "hash": "35722a888da5ffdd9da6f92679528b36",
+  "hash": "5e949721381bf3167c56c7c16d73de3c",
   "slug": "whereami"
  }
 }

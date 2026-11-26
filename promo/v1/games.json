@@ -2,6 +2,16 @@
  "v": 1,
  "games": [
   {
+   "key": "flowlings",
+   "name": "Flowlings",
+   "pkg": "com.flowlings.nesimapps",
+   "icon": "icons/flowlings.png",
+   "tr": "Boru döşe, uykulu bitki dostlara enerji ulaştır, çiçek açışlarını izle.",
+   "en": "Lay pipes, bring energy to sleepy plant pals and watch them bloom.",
+   "es": "Tiende tuberías, lleva energía a plantitas dormidas y mira cómo florecen.",
+   "pt": "Coloque os canos, leve energia às plantinhas dorminhocas e veja-as florescer."
+  },
+  {
    "key": "slinglings",
    "name": "Slinglings",
    "pkg": "com.slinglings.nesimapps",

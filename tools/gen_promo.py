@@ -11,7 +11,8 @@ ROOT = os.path.dirname(SITE)
 
 # (anahtar, ad, paket, klasor)   en yeni en ustte
 GAMES = [
-    ('slinglings', 'Slinglings', 'com.slinglings.nesimapps', 'Slinglings'),
+    ('flowlings', 'Flowlings', 'com.flowlings.nesimapps', 'Flowlings'),
+    ('slinglings','Slinglings', 'com.slinglings.nesimapps', 'Slinglings'),
     ('snowlings', 'Snowlings', 'com.snowlings.nesimapps', 'Snowlings'),
     ('pentolings', 'Pentolings', 'com.pentolings.nesimapps', 'Pentolings'),
     ('nudgelings', 'Nudgelings', 'com.nudgelings.nesimapps', 'Nudgelings'),
@@ -26,7 +27,11 @@ GAMES = [
     ('tictactoe', 'Tic-Tac-Toe', 'com.tictactoe.nesimapps', 'TicTacToe'),
 ]
 DESC_OVERRIDE = {  # tr, en, es, pt
-    'slinglings': ('Sevimli postacıları uzayda fırlat, gezegenlerin çevresinden kavisli atışlarla postayı teslim et!',
+    'flowlings': ('Boru döşe, uykulu bitki dostlara enerji ulaştır, çiçek açışlarını izle.',
+                  'Lay pipes, bring energy to sleepy plant pals and watch them bloom.',
+                  'Tiende tuberías, lleva energía a plantitas dormidas y mira cómo florecen.',
+                  'Coloque os canos, leve energia às plantinhas dorminhocas e veja-as florescer.'),
+    'slinglings':('Sevimli postacıları uzayda fırlat, gezegenlerin çevresinden kavisli atışlarla postayı teslim et!',
                    'Sling cute couriers through space, bend shots around planets, deliver the mail!',
                    'Lanza carteros adorables por el espacio y entrega el correo con tiros curvos alrededor de los planetas.',
                    'Lance carteiros fofos pelo espaço e entregue a correspondência com tiros curvos ao redor dos planetas!'),

@@ -30,7 +30,7 @@ NO_CARD = set()  # ana sayfada karti olmayan slug kumesi (Brassline 13.11.2026: 
 VIDEOS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "videos.json"), encoding="utf-8"))
 VIDEO_LABEL = {"tr": "Tanıtım videosu", "en": "Promo video", "es": "Vídeo de presentación", "pt": "Vídeo de apresentação"}
 VIDEO_PLAY = {"tr": "Tanıtım videosunu oynat", "en": "Play promo video", "es": "Reproducir el vídeo", "pt": "Reproduzir o vídeo"}
-PKG_FALLBACK = {"slinglings": "com.slinglings.nesimapps", "snowlings": "com.snowlings.nesimapps", "calisan": "com.calisanasistani.nesimapps", "uzaygunlugu": "com.uzaygunlugu.nesimapps", "haftasonum": "com.haftasonum.nesimapps", "beamies": "com.beamies.nesimapps", "logiclings": "com.logiclings.nesimapps", "grumblings": "com.grumblings.nesimapps", "nudgelings": "com.nudgelings.nesimapps", "pentolings": "com.pentolings.nesimapps", "tombalings": "com.tombalings.nesimapps", "astrolings": "com.astrolings.nesimapps", "nuzzlings": "com.nuzzlingscat.nesimapps", "brassline": "com.brassline.nesimapps", "pulselings": "com.pulselings.nesimapps"}
+PKG_FALLBACK = {"flowlings": "com.flowlings.nesimapps", "slinglings": "com.slinglings.nesimapps", "snowlings": "com.snowlings.nesimapps", "calisan": "com.calisanasistani.nesimapps", "uzaygunlugu": "com.uzaygunlugu.nesimapps", "haftasonum": "com.haftasonum.nesimapps", "beamies": "com.beamies.nesimapps", "logiclings": "com.logiclings.nesimapps", "grumblings": "com.grumblings.nesimapps", "nudgelings": "com.nudgelings.nesimapps", "pentolings": "com.pentolings.nesimapps", "tombalings": "com.tombalings.nesimapps", "astrolings": "com.astrolings.nesimapps", "nuzzlings": "com.nuzzlingscat.nesimapps", "brassline": "com.brassline.nesimapps", "pulselings": "com.pulselings.nesimapps"}
 REF = "&referrer=utm_source%3Dnrazon.github.io%26utm_medium%3Dweb"
 
 # ------------------------------------------------------------------ ortak: göz takip betiği
@@ -652,6 +652,7 @@ LANDING_CSS += VIDEO_CSS
 
 # slug, klasör, ad(tr), ad(en), simge, tint, ekran görüntüsü kaynakları {dil: klasör}, yeni-rozet
 APPDEFS = [
+    ("flowlings", "Flowlings", "Flowlings", "Flowlings", "icon.png", "#2E8F6B", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2026-12-20"),
     ("slinglings", "Slinglings", "Slinglings", "Slinglings", "icon.png", "#D84225", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, None),
     ("snowlings", "Snowlings", "Snowlings", "Snowlings", "icon.png", "#2E6FBF", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, "2027-01-10"),
     ("pulselings", "Pulselings", "Pulselings", "Pulselings", "icon.png", "#FF5C7A", {"en": "en", "tr": "tr", "es": "es", "pt": "pt"}, None),

@@ -1,5 +1,33 @@
 [
  {
+  "slug": "flowlings",
+  "cat": "games",
+  "icon": "flowlings/icon.png",
+  "names": {
+   "tr": "Flowlings",
+   "en": "Flowlings",
+   "es": "Flowlings",
+   "pt": "Flowlings"
+  },
+  "tint": "#2E8F6B",
+  "pkg": "com.flowlings.nesimapps",
+  "new": "2026-12-20",
+  "desc": {
+   "en": "Lay pipes, bring energy to sleepy plant pals and watch them bloom.",
+   "tr": "Boru döşe, uykulu bitki dostlara enerji ulaştır, çiçek açışlarını izle.",
+   "es": "Tiende tuberías, lleva energía a plantitas dormidas y mira cómo florecen.",
+   "pt": "Coloque os canos, leve energia às plantinhas dorminhocas e veja-as florescer."
+  },
+  "status": "live",
+  "popular": false,
+  "desc_live": {
+   "en": "Lay pipes, bring energy to sleepy plant pals and watch them bloom.",
+   "tr": "Boru döşe, uykulu bitki dostlara enerji ulaştır, çiçek açışlarını izle.",
+   "es": "Tiende tuberías, lleva energía a plantitas dormidas y mira cómo florecen.",
+   "pt": "Coloque os canos, leve energia às plantinhas dorminhocas e veja-as florescer."
+  }
+ },
+ {
   "slug": "slinglings",
   "cat": "games",
   "icon": "slinglings/icon.png",
