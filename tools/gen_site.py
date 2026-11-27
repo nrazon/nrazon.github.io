@@ -505,7 +505,7 @@ def page(cfg):
 <meta property="og:title" content="{esc(title_main)}">
 <meta property="og:description" content="{esc(cfg['desc'])}">
 <meta property="og:url" content="{url}">
-<meta property="og:image" content="{BASE}/{slug}/feature-en.png">
+<meta property="og:image" content="{BASE}/{f'{slug}/feature-en.png' if os.path.exists(os.path.join(G, slug, 'feature-en.png')) else 'og-v3.png'}">
 <meta name="twitter:card" content="summary_large_image">
 <style>
 :root {{ --accent:{cfg['accent']}; --hero-a:{cfg['hero'][0]}; --hero-b:{cfg['hero'][1]}; }}
@@ -828,10 +828,10 @@ def build_apps():
                 }
             if slug == "snowlings":  # yilbasi cekilisi web araci (16.11.2026)
                 cfg["note"] = {
-                    "en": 'Free web tool: <a href="/cekilis/?lang=en">online Secret Santa draw</a> (names, exclusions, private WhatsApp links; nothing is stored on a server).',
+                    "en": 'Free web tool: <a href="/secret-santa/">online Secret Santa draw</a> (names, exclusions, private WhatsApp links; nothing is stored on a server).',
                     "tr": 'Ücretsiz web aracı: <a href="/cekilis/">online yılbaşı çekilişi (gizli hediye arkadaşı)</a>: isimler, "birbirini çekmesin" kısıtları, kişiye özel WhatsApp bağlantıları; hiçbir şey sunucuda saklanmaz.',
-                    "es": 'Herramienta web gratis: <a href="/cekilis/?lang=es">sorteo online de amigo invisible</a> (nombres, exclusiones, enlaces privados por WhatsApp; nada se guarda en un servidor).',
-                    "pt": 'Ferramenta web grátis: <a href="/cekilis/?lang=pt">sorteio online de amigo secreto</a> (nomes, exclusões, links privados no WhatsApp; nada é guardado em servidor).',
+                    "es": 'Herramienta web gratis: <a href="/amigo-invisible/">sorteo online de amigo invisible</a> (nombres, exclusiones, enlaces privados por WhatsApp; nada se guarda en un servidor).',
+                    "pt": 'Ferramenta web grátis: <a href="/amigo-secreto/">sorteio online de amigo secreto</a> (nomes, exclusões, links privados no WhatsApp; nada é guardado em servidor).',
                 }
             cfg["shotfiles_src"] = {l: shot_list(folder, shotsrc[l]) for l in langs}
         cfg["priv"] = re.findall(r'id="([a-z]{2})"', open(os.path.join(G, slug, "privacy.html"), encoding="utf-8").read())

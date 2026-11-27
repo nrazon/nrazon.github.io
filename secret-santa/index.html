@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free online Secret Santa draw, no sign-up | Snowlings</title>
+<meta name="description" content="Free online Secret Santa generator: type the names, set who must not draw each other and send each match privately on WhatsApp. No sign-up, no server.">
+<link rel="canonical" href="https://nesimapps.com/secret-santa/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/cekilis/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/secret-santa/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/amigo-invisible/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/amigo-secreto/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/secret-santa/">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="Online Secret Santa draw">
+<meta property="og:description" content="Type the names, run the draw and send each match privately on WhatsApp. Free, no sign-up, data stays in your browser.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nesimapps.com/secret-santa/">
+<style>
+:root{--bg:#0F1D45;--card:#1B2F5E;--text:#F4F8FF;--dim:#B7C6E6;--gold:#FFC94A;--berry:#E5484D;--pine:#2E9E6B;--ice:#8ED8F8}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,#0A1330,#1F3A6E) fixed;color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;min-height:100vh}
+main{max-width:720px;margin:0 auto;padding:18px 16px 60px}
+h1{font-size:clamp(24px,5vw,34px);margin:10px 0 6px;line-height:1.15}
+h2{font-size:18px;margin:22px 0 8px}
+p.lead{color:var(--dim);margin:0 0 14px}
+.card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:16px;margin:12px 0}
+label{display:block;font-weight:600;margin:12px 0 4px}
+input,textarea{width:100%;background:rgba(255,255,255,.1);color:var(--text);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:10px 12px;font:inherit}
+textarea{min-height:120px;resize:vertical}
+small{color:var(--dim)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:520px){.row{grid-template-columns:1fr}}
+button,.btn{border:0;border-radius:14px;padding:12px 18px;font:inherit;font-weight:700;cursor:pointer;color:#fff;background:var(--berry);text-decoration:none;display:inline-block}
+button.alt{background:rgba(255,255,255,.14)}
+button.ok{background:var(--pine)}
+button.gold{background:var(--gold);color:#16213F}
+.names{display:flex;flex-wrap:wrap;gap:8px}
+.person{display:flex;align-items:center;gap:8px;justify-content:space-between;background:rgba(255,255,255,.08);border-radius:12px;padding:8px 10px;margin:6px 0;flex-wrap:wrap}
+.person b{flex:1;min-width:120px}
+.tabs{display:flex;gap:8px;margin:12px 0;flex-wrap:wrap}
+.reveal{text-align:center;padding:26px 16px}
+.reveal .who{font-size:clamp(28px,8vw,46px);color:var(--gold);font-weight:800;margin:10px 0}
+.err{color:#FFB4B4;font-weight:600}
+.lang{display:flex;gap:6px;justify-content:flex-end;margin-bottom:4px}
+.lang button{padding:5px 10px;font-size:13px;background:rgba(255,255,255,.12)}
+.lang button.on{background:var(--gold);color:#16213F}
+.note{background:rgba(255,201,74,.12);border:1px solid rgba(255,201,74,.35);border-radius:12px;padding:10px 12px;color:#FFE9A8;font-size:14px}
+footer{margin-top:30px;color:var(--dim);font-size:14px}
+footer a{color:var(--ice)}
+.hide{display:none!important}
+.info{max-width:720px;margin:28px 0 0;color:var(--dim)}.info h2{color:var(--text);font-size:20px;margin:22px 0 8px}.info h3{color:var(--text);font-size:16px;margin:14px 0 4px}.info p,.info li{margin:4px 0}.info a{color:var(--ice)}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebApplication", "name": "Online Secret Santa draw", "url": "https://nesimapps.com/secret-santa/", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "inLanguage": "en", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can someone draw themselves, or can two people draw each other?", "acceptedAnswer": {"@type": "Answer", "text": "Nobody draws themselves. Whenever possible the matches form one big cycle (A → B → C → … → A), so if A draws B, B does not draw A back."}}, {"@type": "Question", "name": "How do I stop couples or siblings from drawing each other?", "acceptedAnswer": {"@type": "Answer", "text": "Write one pair per line in the \"Who must not draw each other\" box, for example Anna - Mark. If the draw is impossible with your rules, the page tells you; remove a few and try again."}}, {"@type": "Question", "name": "Are the names and matches stored?", "acceptedAnswer": {"@type": "Answer", "text": "No. The draw runs in your browser; names and matches are not sent to any server and no account is needed. In a private link the match is encoded after the # sign, which is not sent to the server. Send each link only to its owner, because anyone with the link can see that match."}}, {"@type": "Question", "name": "How many people can join?", "acceptedAnswer": {"@type": "Answer", "text": "From 3 to 50. Write one name per line; the page warns you if a name appears twice."}}, {"@type": "Question", "name": "Is it free, and do I need an app?", "acceptedAnswer": {"@type": "Answer", "text": "It is completely free and needs no app; it works in a phone or computer browser. The Snowlings app by the same developer (Christmas calendar, winter puzzles, greeting cards) is a separate product."}}]}]}</script>
+</head>
+<body>
+<main>
+  <div class="lang" id="langs"></div>
+  <div id="app"></div>
+<section id="info" class="info">
+  <h2>How does the online Secret Santa draw work?</h2>
+  <ol>
+    <li><b>Add the participants:</b> one name per line (at least 3, at most 50).</li>
+    <li><b>Add rules if you like:</b> one pair per line for couples, siblings or anyone who must not draw each other (Anna - Mark).</li>
+    <li><b>Add a budget, date and note,</b> then press &quot;Run the draw&quot;.</li>
+    <li><b>Share the matches:</b> pass the phone around, or send each person a private link on WhatsApp. Everyone sees only their own match.</li>
+  </ol>
+  <h2>Frequently asked questions</h2>
+  <h3>Can someone draw themselves, or can two people draw each other?</h3>
+  <p>Nobody draws themselves. Whenever possible the matches form one big cycle (A → B → C → … → A), so if A draws B, B does not draw A back.</p>
+  <h3>How do I stop couples or siblings from drawing each other?</h3>
+  <p>Write one pair per line in the &quot;Who must not draw each other&quot; box, for example Anna - Mark. If the draw is impossible with your rules, the page tells you; remove a few and try again.</p>
+  <h3>Are the names and matches stored?</h3>
+  <p>No. The draw runs in your browser; names and matches are not sent to any server and no account is needed. In a private link the match is encoded after the # sign, which is not sent to the server. Send each link only to its owner, because anyone with the link can see that match.</p>
+  <h3>How many people can join?</h3>
+  <p>From 3 to 50. Write one name per line; the page warns you if a name appears twice.</p>
+  <h3>Is it free, and do I need an app?</h3>
+  <p>It is completely free and needs no app; it works in a phone or computer browser. The Snowlings app by the same developer (Christmas calendar, winter puzzles, greeting cards) is a separate product.</p>
+  <p class="more">Read more: <a href="/blog/how-to-run-an-online-secret-santa-draw-free-no-sign-up/">How to run an online Secret Santa draw</a>. This tool is part of <a href="/snowlings/">Snowlings</a>, a Christmas app with a new door every day in December, 6 winter puzzle games and greeting cards.</p>
+  <p>Other languages: <a href="/cekilis/" hreflang="tr">Yılbaşı çekilişi</a> · <a href="/amigo-invisible/" hreflang="es">Amigo invisible</a> · <a href="/amigo-secreto/" hreflang="pt">Amigo secreto</a></p>
+</section>
+<footer id="foot"></footer>
+</main>
+<script src="/cekilis/draw.js"></script>
+<script>
+(function () {
+  "use strict";
+  var L = {
+    tr: {
+      lang: "TR", title: "Yılbaşı çekilişi", sub: "Gizli hediye arkadaşı: isimleri yaz, çekilişi yap, eşleşmeleri kişiye özel gönder. Ücretsiz, kayıt yok.",
+      name: "Çekiliş adı", nameHint: "Ofis yılbaşı çekilişi", people: "Katılımcılar", peopleHint: "Her satıra bir isim (en az 3, en fazla 50)",
+      excl: "Birbirini çekmesin (isteğe bağlı)", exclHint: "Her satıra bir çift: Ayşe - Mehmet", budget: "Hediye bütçesi", budgetHint: "500 TL", date: "Hediyeleşme tarihi", dateHint: "24 Aralık",
+      note: "Not (isteğe bağlı)", noteHint: "Hediye paketlenmiş olsun", go: "Çekilişi yap", err3: "En az 3 farklı isim gerekli.", err50: "En fazla 50 isim girebilirsin.",
+      dup: "Aynı isim birden fazla yazılmış: ", imposs: "Bu kısıtlarla çekiliş yapılamıyor. Birkaç kısıtı kaldırıp tekrar dene.", unknownExcl: "Bilinmeyen isim kısıtta: ",
+      done: "Çekiliş hazır", modePass: "Telefonu dolaştır", modeLink: "Kişiye özel bağlantı", passHelp: "Herkes sırayla kendi adına dokunur, eşleşmesini görür ve \"Gizle\" der. Başkası görmesin!",
+      tap: "Adına dokun", reveal: "Eşleşmeni göster", youBuy: "Hediye alacağın kişi:", hideBtn: "Gizle", linkHelp: "Her kişiye ayrı bir bağlantı gönder. Bağlantıyı açan yalnızca kendi eşleşmesini görür.",
+      wa: "WhatsApp ile gönder", copy: "Bağlantıyı kopyala", copied: "Kopyalandı", again: "Yeniden çek", edit: "Listeyi düzenle",
+      honest: "Dürüst not: Bağlantılar şifreli değildir. Eşleşme bağlantının içinde saklıdır; bağlantıyı açan o kişinin eşleşmesini görür, çekilişi yapan (sen) de hepsini görebilirsin. Hiçbir veri sunucuya gönderilmez, her şey tarayıcında olur.",
+      msg: function (g, d, t, b) { return "Merhaba " + g + "! \"" + d + "\" çekilişinde senin gizli hediye eşleşmen hazır. Aşağıdaki bağlantıyı aç ve \"Eşleşmeni göster\"e dokun" + (b ? " (bütçe: " + b + ")" : "") + (t ? " (tarih: " + t + ")" : "") + ":"; },
+      hello: "Merhaba", viewIntro: "çekilişinde gizli hediye eşleşmen hazır.", budgetL: "Bütçe", dateL: "Tarih", noteL: "Not", secret: "Sır olarak sakla!",
+      appTitle: "Snowlings: Yılbaşı Takvimi", appText: "Aralık'ta her gün yeni bir kapı, kış oyunları, tebrik kartları ve yeni yıl geri sayımı:", appLink: "Snowlings'e göz at"
+    },
+    en: {
+      lang: "EN", title: "Secret Santa draw", sub: "Type the names, run the draw and send each match privately. Free, no sign-up.",
+      name: "Draw name", nameHint: "Office holiday draw", people: "Participants", peopleHint: "One name per line (3 to 50)",
+      excl: "Who must not draw each other (optional)", exclHint: "One pair per line: Anna - Mark", budget: "Gift budget", budgetHint: "$25", date: "Gift exchange date", dateHint: "December 24",
+      note: "Note (optional)", noteHint: "Please wrap your gift", go: "Run the draw", err3: "At least 3 different names are needed.", err50: "You can add at most 50 names.",
+      dup: "The same name is written more than once: ", imposs: "The draw is impossible with these rules. Remove a few rules and try again.", unknownExcl: "Unknown name in a rule: ",
+      done: "Your draw is ready", modePass: "Pass the phone around", modeLink: "Private link per person", passHelp: "Everyone taps their own name in turn, sees their match and taps \"Hide\". Don't peek!",
+      tap: "Tap your name", reveal: "Show my match", youBuy: "You will buy a gift for:", hideBtn: "Hide", linkHelp: "Send each person their own link. Whoever opens a link only sees their own match.",
+      wa: "Send on WhatsApp", copy: "Copy link", copied: "Copied", again: "Draw again", edit: "Edit the list",
+      honest: "Honest note: links are not encrypted. The match is stored inside the link; whoever opens a link sees that person's match, and you, the organizer, can see all of them. Nothing is sent to any server; everything happens in your browser.",
+      msg: function (g, d, t, b) { return "Hi " + g + "! Your secret gift match for \"" + d + "\" is ready. Open the link below and tap \"Show my match\"" + (b ? " (budget: " + b + ")" : "") + (t ? " (date: " + t + ")" : "") + ":"; },
+      hello: "Hi", viewIntro: "your secret gift match is ready.", budgetL: "Budget", dateL: "Date", noteL: "Note", secret: "Keep it secret!",
+      appTitle: "Snowlings: Christmas Calendar", appText: "A new door every day in December, winter games, greeting cards and a New Year countdown:", appLink: "Take a look at Snowlings"
+    },
+    es: {
+      lang: "ES", title: "Sorteo de amigo invisible", sub: "Escribe los nombres, haz el sorteo y envía cada pareja en privado. Gratis, sin registro.",
+      name: "Nombre del sorteo", nameHint: "Sorteo navideño de la oficina", people: "Participantes", peopleHint: "Un nombre por línea (de 3 a 50)",
+      excl: "Quién no puede tocarse (opcional)", exclHint: "Una pareja por línea: Ana - Marcos", budget: "Presupuesto del regalo", budgetHint: "20 €", date: "Fecha del intercambio", dateHint: "24 de diciembre",
+      note: "Nota (opcional)", noteHint: "Envuelve el regalo, por favor", go: "Hacer el sorteo", err3: "Se necesitan al menos 3 nombres distintos.", err50: "Puedes añadir como máximo 50 nombres.",
+      dup: "El mismo nombre está escrito más de una vez: ", imposs: "El sorteo es imposible con estas reglas. Quita algunas reglas y prueba de nuevo.", unknownExcl: "Nombre desconocido en una regla: ",
+      done: "Tu sorteo está listo", modePass: "Pasar el teléfono", modeLink: "Enlace privado por persona", passHelp: "Cada uno toca su nombre por turno, ve su pareja y pulsa \"Ocultar\". ¡Sin mirar!",
+      tap: "Toca tu nombre", reveal: "Mostrar mi pareja", youBuy: "Le regalarás a:", hideBtn: "Ocultar", linkHelp: "Envía a cada persona su propio enlace. Quien abre un enlace solo ve su pareja.",
+      wa: "Enviar por WhatsApp", copy: "Copiar enlace", copied: "Copiado", again: "Sortear otra vez", edit: "Editar la lista",
+      honest: "Nota sincera: los enlaces no están cifrados. La pareja va dentro del enlace; quien abre un enlace ve la pareja de esa persona y tú, como organizador, puedes ver todas. No se envía nada a ningún servidor; todo ocurre en tu navegador.",
+      msg: function (g, d, t, b) { return "¡Hola " + g + "! Ya está tu amigo invisible en \"" + d + "\". Abre el enlace y pulsa \"Mostrar mi pareja\"" + (b ? " (presupuesto: " + b + ")" : "") + (t ? " (fecha: " + t + ")" : "") + ":"; },
+      hello: "Hola", viewIntro: "tu amigo invisible está listo.", budgetL: "Presupuesto", dateL: "Fecha", noteL: "Nota", secret: "¡Guárdalo en secreto!",
+      appTitle: "Snowlings: Calendario Navidad", appText: "Una puerta nueva cada día de diciembre, juegos de invierno, tarjetas y cuenta atrás de Año Nuevo:", appLink: "Conoce Snowlings"
+    },
+    pt: {
+      lang: "PT", title: "Sorteio de amigo secreto", sub: "Digite os nomes, faça o sorteio e envie cada par em particular. Grátis, sem cadastro.",
+      name: "Nome do sorteio", nameHint: "Amigo secreto da firma", people: "Participantes", peopleHint: "Um nome por linha (de 3 a 50)",
+      excl: "Quem não pode se tirar (opcional)", exclHint: "Um par por linha: Ana - Marcos", budget: "Valor do presente", budgetHint: "R$ 50", date: "Data da troca", dateHint: "24 de dezembro",
+      note: "Observação (opcional)", noteHint: "Embrulhe o presente, por favor", go: "Fazer o sorteio", err3: "São necessários pelo menos 3 nomes diferentes.", err50: "Você pode adicionar no máximo 50 nomes.",
+      dup: "O mesmo nome foi escrito mais de uma vez: ", imposs: "O sorteio é impossível com essas regras. Remova algumas regras e tente de novo.", unknownExcl: "Nome desconhecido em uma regra: ",
+      done: "Seu sorteio está pronto", modePass: "Passar o celular", modeLink: "Link privado por pessoa", passHelp: "Cada um toca no próprio nome na sua vez, vê o seu par e toca em \"Ocultar\". Sem espiar!",
+      tap: "Toque no seu nome", reveal: "Mostrar meu par", youBuy: "Você vai presentear:", hideBtn: "Ocultar", linkHelp: "Envie a cada pessoa o próprio link. Quem abre um link vê só o seu par.",
+      wa: "Enviar pelo WhatsApp", copy: "Copiar link", copied: "Copiado", again: "Sortear de novo", edit: "Editar a lista",
+      honest: "Nota sincera: os links não são criptografados. O par fica dentro do link; quem abre um link vê o par daquela pessoa e você, como organizador, pode ver todos. Nada é enviado a nenhum servidor; tudo acontece no seu navegador.",
+      msg: function (g, d, t, b) { return "Oi " + g + "! Seu amigo secreto do \"" + d + "\" está pronto. Abra o link e toque em \"Mostrar meu par\"" + (b ? " (valor: " + b + ")" : "") + (t ? " (data: " + t + ")" : "") + ":"; },
+      hello: "Oi", viewIntro: "seu amigo secreto está pronto.", budgetL: "Valor", dateL: "Data", noteL: "Observação", secret: "Guarde segredo!",
+      appTitle: "Snowlings: Calendário de Natal", appText: "Uma porta nova por dia em dezembro, jogos de inverno, cartões e contagem regressiva do Ano Novo:", appLink: "Conheça o Snowlings"
+    }
+  };
+  // Her dilin ayrı adresi var (tools/gen_cekilis.py); sayfanın dili sabit, tarayıcı diline bakılmaz (Googlebot en-US).
+  var PAGES = { tr: "/cekilis/", en: "/secret-santa/", es: "/amigo-invisible/", pt: "/amigo-secreto/" };
+  var SNOW = { tr: "/tr/snowlings/", en: "/snowlings/", es: "/es/snowlings/", pt: "/pt/snowlings/" };
+  var PAGE_LANG = document.documentElement.lang, PAGE_TITLE = document.title;
+  var lang = PAGE_LANG;
+  var q = /[?&]lang=(tr|en|es|pt)/.exec(location.search); // eski ?lang= bağlantıları
+  if (q && q[1] !== PAGE_LANG) { location.replace(PAGES[q[1]] + location.hash); return; }
+  var T = function () { return L[lang]; };
+  var app = document.getElementById("app");
+  var state = { result: null, cfg: null };
+
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+
+  function langBar() {
+    var h = "";
+    Object.keys(L).forEach(function (k) { h += '<button class="' + (k === lang ? "on" : "") + '" data-l="' + k + '">' + L[k].lang + "</button>"; });
+    var el = document.getElementById("langs"); el.innerHTML = h;
+    el.onclick = function (e) { var k = e.target.getAttribute && e.target.getAttribute("data-l"); if (k) { lang = k; state.langSet = true; render(); } };
+  }
+  function footer() {
+    var t = T();
+    document.getElementById("foot").innerHTML = "<p>" + esc(t.appTitle) + ": " + esc(t.appText) + ' <a href="' + SNOW[lang] + '">' + esc(t.appLink) + "</a></p>";
+  }
+
+  function viewMode(payload) {
+    var t = T();
+    app.innerHTML = '<h1>' + esc(t.hello) + " " + esc(payload.g) + '!</h1><p class="lead">"' + esc(payload.d) + '" ' + esc(t.viewIntro) + '</p>' +
+      '<div class="card reveal" id="rv"><button class="gold" id="show">' + esc(t.reveal) + '</button></div>';
+    document.getElementById("show").onclick = function () {
+      var extra = "";
+      if (payload.b) extra += "<div>" + esc(t.budgetL) + ": <b>" + esc(payload.b) + "</b></div>";
+      if (payload.t) extra += "<div>" + esc(t.dateL) + ": <b>" + esc(payload.t) + "</b></div>";
+      if (payload.n) extra += "<div>" + esc(t.noteL) + ": " + esc(payload.n) + "</div>";
+      document.getElementById("rv").innerHTML = '<div>' + esc(t.youBuy) + '</div><div class="who">' + esc(payload.a) + '</div>' + extra + '<p class="note">' + esc(t.secret) + '</p><button class="alt" id="hd">' + esc(t.hideBtn) + "</button>";
+      document.getElementById("hd").onclick = function () { viewMode(payload); };
+    };
+  }
+
+  function setupView(err) {
+    var t = T(), c = state.cfg || {};
+    app.innerHTML = '<h1>' + esc(t.title) + '</h1><p class="lead">' + esc(t.sub) + '</p><div class="card">' +
+      '<label for="f_name">' + esc(t.name) + '</label><input id="f_name" placeholder="' + esc(t.nameHint) + '" value="' + esc(c.name || "") + '">' +
+      '<label for="f_people">' + esc(t.people) + '</label><textarea id="f_people" placeholder="' + esc(t.peopleHint) + '">' + esc(c.people || "") + '</textarea><small>' + esc(t.peopleHint) + '</small>' +
+      '<label for="f_excl">' + esc(t.excl) + '</label><textarea id="f_excl" style="min-height:70px" placeholder="' + esc(t.exclHint) + '">' + esc(c.excl || "") + '</textarea>' +
+      '<div class="row"><div><label for="f_budget">' + esc(t.budget) + '</label><input id="f_budget" placeholder="' + esc(t.budgetHint) + '" value="' + esc(c.budget || "") + '"></div>' +
+      '<div><label for="f_date">' + esc(t.date) + '</label><input id="f_date" placeholder="' + esc(t.dateHint) + '" value="' + esc(c.date || "") + '"></div></div>' +
+      '<label for="f_note">' + esc(t.note) + '</label><input id="f_note" placeholder="' + esc(t.noteHint) + '" value="' + esc(c.note || "") + '">' +
+      (err ? '<p class="err">' + esc(err) + "</p>" : "") +
+      '<p><button id="go">' + esc(t.go) + "</button></p></div>";
+    document.getElementById("go").onclick = run;
+  }
+
+  function parse() {
+    var t = T();
+    var cfg = {
+      name: document.getElementById("f_name").value.trim(), people: document.getElementById("f_people").value, excl: document.getElementById("f_excl").value,
+      budget: document.getElementById("f_budget").value.trim(), date: document.getElementById("f_date").value.trim(), note: document.getElementById("f_note").value.trim()
+    };
+    state.cfg = cfg;
+    var names = cfg.people.split(/\r?\n/).map(function (s) { return s.trim(); }).filter(Boolean);
+    var seen = {}, dup = null;
+    names.forEach(function (n) { var k = n.toLowerCase(); if (seen[k] && !dup) dup = n; seen[k] = true; });
+    if (dup) return { err: t.dup + dup };
+    if (names.length < 3) return { err: t.err3 };
+    if (names.length > 50) return { err: t.err50 };
+    var map = {}; names.forEach(function (n) { map[n.toLowerCase()] = n; });
+    var ex = [], bad = null;
+    cfg.excl.split(/\r?\n/).forEach(function (line) {
+      var m = line.split(/\s[-–—]\s|\s*[-–—]\s*|,|;/).map(function (s) { return s.trim(); }).filter(Boolean);
+      if (m.length === 2) {
+        var a = map[m[0].toLowerCase()], b = map[m[1].toLowerCase()];
+        if (!a && !bad) bad = m[0]; else if (!b && !bad) bad = m[1];
+        if (a && b) ex.push([a, b]);
+      }
+    });
+    if (bad) return { err: t.unknownExcl + bad };
+    return { names: names, ex: ex, cfg: cfg };
+  }
+
+  function run() {
+    var p = parse();
+    if (p.err) return setupView(p.err);
+    state.parsed = p;
+    redraw();
+  }
+
+  /* Yeniden cek: form alanlari artik ekranda yok; kayitli isimler ve kisitlarla tekrar cek */
+  function redraw() {
+    var p = state.parsed;
+    var r = CekilisDraw.draw(p.names, p.ex);
+    if (!r) return setupView(T().imposs);
+    state.result = { map: r.map, names: p.names, cfg: p.cfg };
+    resultView("link");
+  }
+
+  function linkFor(name) {
+    var c = state.result.cfg;
+    var data = { d: c.name || T().title, g: name, a: state.result.map[name], b: c.budget, t: c.date, n: c.note };
+    return location.origin + location.pathname + "#v=" + CekilisDraw.encode(data) + "&l=" + lang;
+  }
+
+  function resultView(mode) {
+    var t = T(), res = state.result, h = "";
+    h += '<h1>' + esc(t.done) + '</h1><div class="tabs"><button class="' + (mode === "link" ? "" : "alt") + '" id="m_link">' + esc(t.modeLink) + '</button><button class="' + (mode === "pass" ? "" : "alt") + '" id="m_pass">' + esc(t.modePass) + "</button></div>";
+    if (mode === "link") {
+      h += '<p class="lead">' + esc(t.linkHelp) + '</p><div class="note">' + esc(t.honest) + "</div>";
+      res.names.forEach(function (n, i) {
+        h += '<div class="person"><b>' + esc(n) + '</b><span><button class="ok" data-wa="' + i + '">' + esc(t.wa) + '</button> <button class="alt" data-cp="' + i + '">' + esc(t.copy) + "</button></span></div>";
+      });
+    } else {
+      h += '<p class="lead">' + esc(t.passHelp) + '</p><div class="names" id="pn">';
+      res.names.forEach(function (n, i) { h += '<button class="alt" data-pn="' + i + '">' + esc(n) + "</button>"; });
+      h += '</div><div id="pv"></div>';
+    }
+    h += '<p style="margin-top:20px"><button class="alt" id="again">' + esc(t.again) + '</button> <button class="alt" id="edit">' + esc(t.edit) + "</button></p>";
+    app.innerHTML = h;
+    document.getElementById("m_link").onclick = function () { resultView("link"); };
+    document.getElementById("m_pass").onclick = function () { resultView("pass"); };
+    document.getElementById("again").onclick = redraw;
+    document.getElementById("edit").onclick = function () { setupView(); };
+    app.onclick = function (e) {
+      var el = e.target, wa = el.getAttribute && el.getAttribute("data-wa"), cp = el.getAttribute && el.getAttribute("data-cp"), pn = el.getAttribute && el.getAttribute("data-pn");
+      var c = res.cfg;
+      if (wa !== null && wa !== undefined) {
+        var n = res.names[+wa];
+        window.open("https://wa.me/?text=" + encodeURIComponent(t.msg(n, c.name || t.title, c.date, c.budget) + "\n" + linkFor(n)), "_blank");
+      } else if (cp !== null && cp !== undefined) {
+        var link = linkFor(res.names[+cp]);
+        (navigator.clipboard ? navigator.clipboard.writeText(link) : Promise.reject()).then(function () { el.textContent = t.copied; }, function () { window.prompt("", link); });
+      } else if (pn !== null && pn !== undefined) {
+        var who = res.names[+pn];
+        document.getElementById("pn").classList.add("hide");
+        document.getElementById("pv").innerHTML = '<div class="card reveal"><div>' + esc(who) + ", " + esc(t.youBuy) + '</div><div class="who">' + esc(res.map[who]) + '</div><button class="gold" id="hp">' + esc(t.hideBtn) + "</button></div>";
+        document.getElementById("hp").onclick = function () { document.getElementById("pv").innerHTML = ""; document.getElementById("pn").classList.remove("hide"); };
+      }
+    };
+  }
+
+  function render() {
+    var m = /[#&]v=([A-Za-z0-9_-]+)/.exec(location.hash);
+    var lm = /[#&]l=(tr|en|es|pt)/.exec(location.hash);
+    if (lm && !state.langSet) lang = lm[1];
+    langBar(); footer();
+    document.documentElement.lang = lang;
+    document.title = lang === PAGE_LANG ? PAGE_TITLE : T().title + " | Snowlings";
+    var inf = document.getElementById("info"); if (inf) inf.style.display = (lang === PAGE_LANG && !m) ? "" : "none";
+    if (m) { try { return viewMode(CekilisDraw.decode(m[1])); } catch (e) { /* bozuk baglanti: formu goster */ } }
+    if (state.result) resultView("link"); else setupView();
+  }
+  // Bagli adres yalniz # kismi degisirse (ayni sekmede yeni baglanti yapistirma) sayfa yenilenmez: hashchange ile yeniden ciz
+  window.addEventListener("hashchange", render);
+  render();
+})();
+</script>
+</body>
+</html>

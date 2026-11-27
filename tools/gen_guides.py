@@ -84,7 +84,14 @@ def url(lang, slug=""):
 
 
 def app_url(app, lang):
-    return f"/{app}/" if lang == "en" else f"/{lang}/{app}/"
+    # Uygulamanın o dilde sayfası yoksa (yalnız Türkçe uygulamalar) varsayılan sayfasına bağlan; yoksa 404 (GSC, 27.11.2026).
+    try:
+        info = json.load(open(os.path.join(TOOLS, "_plan.json"), encoding="utf-8"))[app]
+    except (OSError, KeyError, ValueError):
+        info = {"langs": LANGS, "default": "en"}
+    if lang not in info["langs"]:
+        lang = info["default"]
+    return f"/{app}/" if lang == info["default"] else f"/{lang}/{app}/"
 
 
 def esc(s):

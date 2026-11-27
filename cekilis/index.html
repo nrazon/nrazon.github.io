@@ -6,6 +6,11 @@
 <title>Online yılbaşı çekilişi (gizli hediye arkadaşı) | Snowlings</title>
 <meta name="description" content="Ücretsiz online yılbaşı çekilişi: isimleri yaz, birbirini çekmesin diyenleri belirt, çekilişi yap. Kişiye özel WhatsApp bağlantıları ya da telefonu dolaştırma. Veriler sunucuya gitmez.">
 <link rel="canonical" href="https://nesimapps.com/cekilis/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/cekilis/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/secret-santa/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/amigo-invisible/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/amigo-secreto/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/secret-santa/">
 <meta name="robots" content="index,follow">
 <meta property="og:title" content="Online yılbaşı çekilişi (gizli hediye arkadaşı)">
 <meta property="og:description" content="İsimleri yaz, çekilişi yap, eşleşmeleri WhatsApp'tan kişiye özel gönder. Ücretsiz, kayıt yok, veriler tarayıcında kalır.">
@@ -72,10 +77,11 @@ footer a{color:var(--ice)}
   <h3>Ücretsiz mi, uygulama indirmem gerekir mi?</h3>
   <p>Tamamen ücretsizdir ve uygulama gerekmez, telefon ya da bilgisayar tarayıcısında çalışır. Aynı geliştiricinin Snowlings uygulaması (yılbaşı takvimi, kış bulmacaları, tebrik kartları) ayrı bir üründür.</p>
   <p class="more">Ayrıntılı anlatım: <a href="/tr/yazilar/online-yilbasi-cekilisi-nasil-yapilir-gizli-hediye-arkadasi/">Online yılbaşı çekilişi nasıl yapılır?</a> Bu araç <a href="/tr/snowlings/">Snowlings</a> yılbaşı uygulamasının bir parçasıdır: Aralık'ta her gün yeni bir kapı, 6 kış bulmaca oyunu ve tebrik kartları.</p>
+  <p>Diğer diller: <a href="/secret-santa/" hreflang="en">Secret Santa draw</a> · <a href="/amigo-invisible/" hreflang="es">Amigo invisible</a> · <a href="/amigo-secreto/" hreflang="pt">Amigo secreto</a></p>
 </section>
 <footer id="foot"></footer>
 </main>
-<script src="draw.js"></script>
+<script src="/cekilis/draw.js"></script>
 <script>
 (function () {
   "use strict";
@@ -137,11 +143,13 @@ footer a{color:var(--ice)}
       appTitle: "Snowlings: Calendário de Natal", appText: "Uma porta nova por dia em dezembro, jogos de inverno, cartões e contagem regressiva do Ano Novo:", appLink: "Conheça o Snowlings"
     }
   };
-  var lang = (function () {
-    var q = /[?&]lang=(tr|en|es|pt)/.exec(location.search); if (q) return q[1];
-    var n = (navigator.language || "tr").slice(0, 2).toLowerCase();
-    return L[n] ? n : "tr";
-  })();
+  // Her dilin ayrı adresi var (tools/gen_cekilis.py); sayfanın dili sabit, tarayıcı diline bakılmaz (Googlebot en-US).
+  var PAGES = { tr: "/cekilis/", en: "/secret-santa/", es: "/amigo-invisible/", pt: "/amigo-secreto/" };
+  var SNOW = { tr: "/tr/snowlings/", en: "/snowlings/", es: "/es/snowlings/", pt: "/pt/snowlings/" };
+  var PAGE_LANG = document.documentElement.lang, PAGE_TITLE = document.title;
+  var lang = PAGE_LANG;
+  var q = /[?&]lang=(tr|en|es|pt)/.exec(location.search); // eski ?lang= bağlantıları
+  if (q && q[1] !== PAGE_LANG) { location.replace(PAGES[q[1]] + location.hash); return; }
   var T = function () { return L[lang]; };
   var app = document.getElementById("app");
   var state = { result: null, cfg: null };
@@ -156,7 +164,7 @@ footer a{color:var(--ice)}
   }
   function footer() {
     var t = T();
-    document.getElementById("foot").innerHTML = "<p>" + esc(t.appTitle) + ": " + esc(t.appText) + ' <a href="/snowlings/">' + esc(t.appLink) + "</a></p>";
+    document.getElementById("foot").innerHTML = "<p>" + esc(t.appTitle) + ": " + esc(t.appText) + ' <a href="' + SNOW[lang] + '">' + esc(t.appLink) + "</a></p>";
   }
 
   function viewMode(payload) {
@@ -279,8 +287,8 @@ footer a{color:var(--ice)}
     if (lm && !state.langSet) lang = lm[1];
     langBar(); footer();
     document.documentElement.lang = lang;
-    if (lang !== "tr") document.title = T().title + " | Snowlings";
-    var inf = document.getElementById("info"); if (inf) inf.style.display = (lang === "tr" && !m) ? "" : "none";
+    document.title = lang === PAGE_LANG ? PAGE_TITLE : T().title + " | Snowlings";
+    var inf = document.getElementById("info"); if (inf) inf.style.display = (lang === PAGE_LANG && !m) ? "" : "none";
     if (m) { try { return viewMode(CekilisDraw.decode(m[1])); } catch (e) { /* bozuk baglanti: formu goster */ } }
     if (state.result) resultView("link"); else setupView();
   }

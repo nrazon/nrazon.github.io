@@ -19,6 +19,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/agecalculator/"/>
   </url>
   <url>
+    <loc>https://nesimapps.com/amigo-invisible/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/secret-santa/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/cekilis/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/amigo-invisible/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/amigo-secreto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/secret-santa/"/>
+  </url>
+  <url>
+    <loc>https://nesimapps.com/amigo-secreto/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/secret-santa/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/cekilis/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/amigo-invisible/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/amigo-secreto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/secret-santa/"/>
+  </url>
+  <url>
     <loc>https://nesimapps.com/anthemcanada/</loc>
     <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/anthemcanada/"/>
@@ -515,7 +533,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/blog/secret-santa-algorithm-nobody-draws-themselves-one-big-cycle/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/secret-santa-algorithm-nobody-draws-themselves-one-big-cycle/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/gizli-hediye-cekilisi-algoritmasi-kimse-kendini-cekmesin-tek-buyuk-dongu/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/algoritmo-amigo-invisible-nadie-se-saca-a-si-mismo-un-solo-ciclo/"/>
@@ -650,7 +668,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/brassline/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/brassline/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/brassline/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/brassline/"/>
@@ -672,7 +690,12 @@
   </url>
   <url>
     <loc>https://nesimapps.com/cekilis/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/secret-santa/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/cekilis/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/amigo-invisible/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/amigo-secreto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/secret-santa/"/>
   </url>
   <url>
     <loc>https://nesimapps.com/cubbles/</loc>
@@ -721,7 +744,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/algoritmo-amigo-invisible-nadie-se-saca-a-si-mismo-un-solo-ciclo/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/secret-santa-algorithm-nobody-draws-themselves-one-big-cycle/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/gizli-hediye-cekilisi-algoritmasi-kimse-kendini-cekmesin-tek-buyuk-dongu/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/algoritmo-amigo-invisible-nadie-se-saca-a-si-mismo-un-solo-ciclo/"/>
@@ -874,7 +897,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/de-donde-vienen-los-datos-de-terremotos/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/where-earthquake-data-comes-from/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/son-deprem-verileri-nereden-geliyor/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/de-donde-vienen-los-datos-de-terremotos/"/>
@@ -910,7 +933,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/ejecutar-una-biblioteca-de-astronomia-de-codigo-abierto-en-android-e-ios-con-un-script-de-parches/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/running-an-open-source-astronomy-library-on-android-and-ios-with-one-patch-script/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/acik-kaynak-bir-astronomi-kutuphanesini-tek-yama-betigiyle-android-ve-ios-ta-calistirmak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/ejecutar-una-biblioteca-de-astronomia-de-codigo-abierto-en-android-e-ios-con-un-script-de-parches/"/>
@@ -1072,7 +1095,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/magnitud-e-intensidad-de-un-terremoto/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/earthquake-magnitude-vs-intensity/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/deprem-buyuklugu-ve-siddeti-arasindaki-fark/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/magnitud-e-intensidad-de-un-terremoto/"/>
@@ -1252,7 +1275,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/blog/terremoto-que-hacer-antes-durante-despues/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/earthquake-preparedness-what-to-do/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/deprem-oncesi-sirasinda-sonrasinda-ne-yapilir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/terremoto-que-hacer-antes-durante-despues/"/>
@@ -1315,7 +1338,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/brassline/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/brassline/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/brassline/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/brassline/"/>
@@ -1549,7 +1572,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/guias/como-leer-las-listas-de-terremotos-de-afad-y-kandilli/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/how-to-read-the-afad-and-kandilli-earthquake-lists/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/afad-ve-kandilli-deprem-listesi-nasil-okunur/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/como-leer-las-listas-de-terremotos-de-afad-y-kandilli/"/>
@@ -1648,7 +1671,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/es/guias/que-muestran-las-pantallas-de-turquia-tierra-e-iss-en-uzay-gunlugu/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/what-the-earth-turkey-and-iss-screens-show-in-uzay-gunlugu/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/uzay-gunlugu-turkiye-dunya-ve-iss-ekranlari-ne-gosteriyor/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/que-muestran-las-pantallas-de-turquia-tierra-e-iss-en-uzay-gunlugu/"/>
@@ -2329,7 +2352,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/algoritmo-amigo-secreto-ninguem-tira-a-si-mesmo-um-unico-ciclo/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/secret-santa-algorithm-nobody-draws-themselves-one-big-cycle/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/gizli-hediye-cekilisi-algoritmasi-kimse-kendini-cekmesin-tek-buyuk-dongu/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/algoritmo-amigo-invisible-nadie-se-saca-a-si-mismo-un-solo-ciclo/"/>
@@ -2473,7 +2496,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/de-onde-vem-os-dados-de-terremotos/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/where-earthquake-data-comes-from/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/son-deprem-verileri-nereden-geliyor/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/de-donde-vienen-los-datos-de-terremotos/"/>
@@ -2626,7 +2649,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/magnitude-e-intensidade-de-um-terremoto/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/earthquake-magnitude-vs-intensity/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/deprem-buyuklugu-ve-siddeti-arasindaki-fark/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/magnitud-e-intensidad-de-un-terremoto/"/>
@@ -2797,7 +2820,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/rodando-uma-biblioteca-de-astronomia-de-codigo-aberto-no-android-e-ios-com-um-script-de-patches/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/running-an-open-source-astronomy-library-on-android-and-ios-with-one-patch-script/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/acik-kaynak-bir-astronomi-kutuphanesini-tek-yama-betigiyle-android-ve-ios-ta-calistirmak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/ejecutar-una-biblioteca-de-astronomia-de-codigo-abierto-en-android-e-ios-con-un-script-de-parches/"/>
@@ -2824,7 +2847,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/blog/terremoto-o-que-fazer-antes-durante-depois/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/earthquake-preparedness-what-to-do/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/deprem-oncesi-sirasinda-sonrasinda-ne-yapilir/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/terremoto-que-hacer-antes-durante-despues/"/>
@@ -2905,7 +2928,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/brassline/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/brassline/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/brassline/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/brassline/"/>
@@ -3130,7 +3153,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/guias/como-ler-as-listas-de-terremotos-da-afad-e-do-kandilli/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/how-to-read-the-afad-and-kandilli-earthquake-lists/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/afad-ve-kandilli-deprem-listesi-nasil-okunur/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/como-leer-las-listas-de-terremotos-de-afad-y-kandilli/"/>
@@ -3229,7 +3252,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/pt/guias/o-que-mostram-as-telas-turquia-terra-e-iss-no-uzay-gunlugu/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/what-the-earth-turkey-and-iss-screens-show-in-uzay-gunlugu/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/uzay-gunlugu-turkiye-dunya-ve-iss-ekranlari-ne-gosteriyor/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/que-muestran-las-pantallas-de-turquia-tierra-e-iss-en-uzay-gunlugu/"/>
@@ -3439,6 +3462,15 @@
     <lastmod>2026-11-27</lastmod>
   </url>
   <url>
+    <loc>https://nesimapps.com/secret-santa/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/secret-santa/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/cekilis/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/amigo-invisible/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nesimapps.com/amigo-secreto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nesimapps.com/secret-santa/"/>
+  </url>
+  <url>
     <loc>https://nesimapps.com/slinglings/</loc>
     <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/slinglings/"/>
@@ -3544,7 +3576,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/brassline/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/brassline/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/brassline/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/brassline/"/>
@@ -3985,7 +4017,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/rehber/uzay-gunlugu-turkiye-dunya-ve-iss-ekranlari-ne-gosteriyor/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/guides/what-the-earth-turkey-and-iss-screens-show-in-uzay-gunlugu/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/rehber/uzay-gunlugu-turkiye-dunya-ve-iss-ekranlari-ne-gosteriyor/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/guias/que-muestran-las-pantallas-de-turquia-tierra-e-iss-en-uzay-gunlugu/"/>
@@ -4091,7 +4123,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/acik-kaynak-bir-astronomi-kutuphanesini-tek-yama-betigiyle-android-ve-ios-ta-calistirmak/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/running-an-open-source-astronomy-library-on-android-and-ios-with-one-patch-script/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/acik-kaynak-bir-astronomi-kutuphanesini-tek-yama-betigiyle-android-ve-ios-ta-calistirmak/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/ejecutar-una-biblioteca-de-astronomia-de-codigo-abierto-en-android-e-ios-con-un-script-de-parches/"/>
@@ -4154,7 +4186,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/ay-evreleri-neden-29-5-gunde-doner-yeniay-dolunay/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/beamies-cozucu-zorluk-olcumu-ve-400-bolumluk-egri/</loc>
@@ -4230,7 +4262,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/burclar-takimyildizlardan-neden-kaydi-13-burc-yilanci/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/buz-kayma-bulmacasi-bfs-ile-cozum-ve-bolum-uretimi/</loc>
@@ -4468,7 +4500,7 @@
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/merkur-retrosu-nedir-gokyuzunde-gercekte-ne-oluyor/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
   </url>
   <url>
     <loc>https://nesimapps.com/tr/yazilar/nonogram-tek-cozumlu-mu-satir-cozucu-tahmin-gerektirmeyen-bulmacalar/</loc>
