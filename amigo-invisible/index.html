@@ -297,5 +297,22 @@ footer a{color:var(--ice)}
   render();
 })();
 </script>
+<script>
+// Sitedeki dil öneri çubuğunun aynısı (i18n_split.py, 'lang_hint'); otomatik yönlendirme YOK. Kişiye özel eşleşme görünümünde çıkmaz.
+(function () {
+  try { if (localStorage.getItem("lang_hint") === "0") return; } catch (e) {}
+  if (/[#&]v=/.test(location.hash)) return;
+  var A = { tr: ["/cekilis/", "Bu sayfayı Türkçe aç"], en: ["/secret-santa/", "View this page in English"], es: ["/amigo-invisible/", "Ver esta página en español"], pt: ["/amigo-secreto/", "Ver esta página em português"] };
+  var c = (navigator.languages && navigator.languages[0] || navigator.language || "en").toLowerCase().slice(0, 2);
+  if (!A[c] || c === document.documentElement.lang) return;
+  var d = document.createElement("div"); d.id = "langhint"; d.setAttribute("role", "region");
+  d.style.cssText = "position:fixed;left:12px;right:12px;bottom:12px;z-index:50;max-width:520px;margin:0 auto;background:#171A2B;color:#fff;border-radius:14px;padding:10px 14px;display:flex;gap:12px;align-items:center;box-shadow:0 8px 24px rgba(0,0,0,.35)";
+  var a = document.createElement("a"); a.href = A[c][0]; a.textContent = A[c][1] + " →"; a.style.cssText = "color:#9CC2FF;font-weight:700;flex:1;text-decoration:none";
+  var x = document.createElement("button"); x.type = "button"; x.setAttribute("aria-label", "Close"); x.textContent = "✕"; x.style.cssText = "background:none;padding:4px 8px";
+  var off = function () { d.remove(); try { localStorage.setItem("lang_hint", "0"); } catch (e) {} };
+  x.onclick = off; document.getElementById("langs").addEventListener("click", off);
+  d.appendChild(a); d.appendChild(x); document.body.appendChild(d);
+})();
+</script>
 </body>
 </html>
