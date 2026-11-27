@@ -126,7 +126,7 @@
    "name": "2048",
    "pkg": "com.game2048.nesimapps",
    "icon": "icons/2048.png",
-   "tr": "Klasik sayı bulmacası. Kaydır, birleştir, 2048\\'e ulaş.",
+   "tr": "Klasik sayı bulmacası. Kaydır, birleştir, 2048'e ulaş.",
    "en": "The classic number puzzle. Slide, merge, reach 2048.",
    "es": "El clásico puzle de números. Desliza, combina y llega a 2048.",
    "pt": "O clássico quebra-cabeça de números. Deslize, combine e chegue ao 2048."

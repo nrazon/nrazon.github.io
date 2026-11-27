@@ -66,7 +66,7 @@ RES = os.path.join(ROOT, 'Cardles', 'app', 'src', 'main', 'res')
 def res_text(d, key):
     s = io.open(os.path.join(RES, d, 'strings.xml'), encoding='utf-8').read()
     m = re.search(r'<string name="promo_%s">(.*?)</string>' % re.escape(key), s, re.S)
-    return m.group(1).replace("\'", "'").replace('\\"', '"').strip()
+    return m.group(1).replace("\\'", "'").replace('\\"', '"').strip()
 
 
 def icon_src(key, folder):
