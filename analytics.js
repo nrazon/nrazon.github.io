@@ -179,3 +179,25 @@
     if (document.body) showBar(); else document.addEventListener("DOMContentLoaded", showBar);
   }
 })();
+
+/* Snowlings Product Hunt lansmani (1.12.2026): ziyaretci Product Hunt'tan geldiyse Snowlings sayfalarindaki Play
+   baglantisi producthunt etiketli olur (Play Console'da bu yuklemeler ayrisir). Diger ziyaretciler icin hicbir sey
+   degismez. Olcum/cerez degil, yalniz baglanti adresi; dil sayfasina gecince hatirlansin diye oturum bayragi. */
+(function () {
+  if (!/^\/(?:(?:tr|es|pt)\/)?snowlings\//.test(location.pathname)) return;
+  var from = /[?&](?:ref|utm_source)=producthunt(?:&|$)/.test(location.search) ||
+    /^https?:\/\/(?:[a-z0-9-]+\.)*producthunt\.com(?:\/|$)/i.test(document.referrer || "");
+  try {
+    if (from) sessionStorage.setItem("from_ph", "1");
+    else from = sessionStorage.getItem("from_ph") === "1";
+  } catch (e) {}
+  if (!from) return;
+  function tag() {
+    var links = document.querySelectorAll('a[href*="play.google.com/store/apps/details?id=com.snowlings.nesimapps"]');
+    for (var i = 0; i < links.length; i++) {
+      var base = links[i].getAttribute("href").replace(/&referrer=[^&]*/, "");
+      links[i].setAttribute("href", base + "&referrer=utm_source%3Dproducthunt%26utm_medium%3Dlaunch");
+    }
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", tag); else tag();
+})();
