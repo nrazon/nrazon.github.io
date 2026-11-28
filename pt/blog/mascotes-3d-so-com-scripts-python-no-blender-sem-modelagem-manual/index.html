@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt" data-lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mascotes 3D só com scripts do Blender, sem modelar à mão</title>
+<meta name="description" content="Não sei modelar em 3D: os personagens do meu jogo são montados por scripts Python no Blender, com formas simples, ciclo de caminhada e quadros.">
+<link rel="canonical" href="https://nesimapps.com/pt/blog/mascotes-3d-so-com-scripts-python-no-blender-sem-modelagem-manual/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/making-3d-mascots-with-only-blender-python-scripts-no-manual-modelling/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/yalnizca-blender-python-betigiyle-3b-maskot-elle-modelleme-yok/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/mascotas-3d-solo-con-scripts-de-python-en-blender-sin-modelar-a-mano/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/mascotes-3d-so-com-scripts-python-no-blender-sem-modelagem-manual/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/making-3d-mascots-with-only-blender-python-scripts-no-manual-modelling/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Mascotes 3D só com scripts do Blender, sem modelar à mão">
+<meta property="og:description" content="Não sei modelar em 3D: os personagens do meu jogo são montados por scripts Python no Blender, com formas simples, ciclo de caminhada e quadros.">
+<meta property="og:url" content="https://nesimapps.com/pt/blog/mascotes-3d-so-com-scripts-python-no-blender-sem-modelagem-manual/">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mascotes 3D só com scripts do Blender, sem modelar à mão">
+<meta name="twitter:description" content="Não sei modelar em 3D: os personagens do meu jogo são montados por scripts Python no Blender, com formas simples, ciclo de caminhada e quadros.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Mascotes 3D só com scripts do Blender, sem modelar à mão", "description": "Não sei modelar em 3D: os personagens do meu jogo são montados por scripts Python no Blender, com formas simples, ciclo de caminhada e quadros.", "inLanguage": "pt", "mainEntityOfPage": "https://nesimapps.com/pt/blog/mascotes-3d-so-com-scripts-python-no-blender-sem-modelagem-manual/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-28", "dateModified": "2026-11-28", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Notas de desenvolvimento, Design de jogos"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/pt/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/pt/blog/"}, {"@type": "ListItem", "position": 3, "name": "Mascotes 3D só com scripts do Blender, sem modelar à mão", "item": "https://nesimapps.com/pt/blog/mascotes-3d-so-com-scripts-python-no-blender-sem-modelagem-manual/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "É preciso saber modelar em 3D para fazer esse tipo de personagem?", "acceptedAnswer": {"@type": "Answer", "text": "Não para formas arredondadas simples. É preciso avaliar imagens e descrever o que mudar."}}, {"@type": "Question", "name": "Quem escreveu os scripts?", "acceptedAnswer": {"@type": "Answer", "text": "Escrevi com um assistente de inteligência artificial e confiro o resultado olhando as renderizações."}}, {"@type": "Question", "name": "Como o personagem é animado sem ossos?", "acceptedAnswer": {"@type": "Answer", "text": "Cada quadro é montado a partir de poucos números, quase todos ondas senoidais, que movem e achatam as peças."}}, {"@type": "Question", "name": "Por que minhas cores no Blender parecem lavadas?", "acceptedAnswer": {"@type": "Answer", "text": "A transformação de cor padrão as altera. Usar Standard na transformação de visualização mantém as cores digitadas."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/making-3d-mascots-with-only-blender-python-scripts-no-manual-modelling/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/yalnizca-blender-python-betigiyle-3b-maskot-elle-modelleme-yok/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/mascotas-3d-solo-con-scripts-de-python-en-blender-sin-modelar-a-mano/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/mascotes-3d-so-com-scripts-python-no-blender-sem-modelagem-manual/" hreflang="pt" data-lang="pt" aria-current="page">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/pt/">Nesim Apps</a> › <a href="/pt/blog/">Blog</a></nav>
+    <h1>Mascotes 3D só com scripts do Blender, sem modelar à mão</h1>
+    <p class="by">Por Nesim Razon, desenvolvedor mobile independente · 2026-11-28</p>
+    <p class="tags"><a href="/pt/blog/#devlog">#Notas de desenvolvimento</a><a href="/pt/blog/#game-design">#Design de jogos</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Sou desenvolvedor, não artista 3D. Nunca esculpi um personagem com o mouse. Mesmo assim, os companheiros do jogo de caminhada que estou preparando são criaturinhas parecidas com brinquedos de argila renderizadas em 3D. Elas são montadas inteiramente por scripts Python que o Blender executa pela linha de comando, e digo com clareza: escrevi esses scripts com a ajuda de um assistente de inteligência artificial. Veja como o processo funciona e o que aprendi.</p>
+    <h2>A ideia: descrever o personagem em código</h2>
+    <p>O Blender consegue executar um arquivo Python sem abrir a janela. Dentro desse arquivo, o módulo bpy faz o que eu faria à mão: criar formas, dar materiais, posicionar luzes e câmera e gerar uma imagem.</p>
+    <p>Assim um personagem vira uma função. Uma chamada faz o corpo, a seguinte a barriga, depois os olhos, as orelhas e os pés, cada um com posição, tamanho e cor. Nada fica guardado em um arquivo de projeto que só eu conseguiria abrir e entender. Se uma criatura precisa de olhos maiores, muda um número e o script gera todos os quadros de novo.</p>
+    <p>Para quem não sabe modelar, isso importa. Posso olhar uma imagem, dizer em palavras o que está errado e ver a mudança como poucas linhas editadas que consigo revisar.</p>
+    <h2>Poucas formas simples rendem muito</h2>
+    <p>Os cinco companheiros do meu script usam um conjunto bem pequeno de peças. Uma esfera que pode ser esticada. Um cone com bordas suavizadas para orelhas e bicos. Um aro para um cachecol ou óculos. Uma curva com espessura para a boca, um olho fechado ou um caule.</p>
+    <p>Formas complicadas são evitadas de propósito. Uma criatura fofa é uma bola cercada por vinte e seis bolas menores, espalhadas pelo ângulo áureo para não se alinharem e pulando o lado onde fica o rosto. Uma criatura de pedra é uma esfera cuja superfície é levemente empurrada por uma textura de ruído de nuvem.</p>
+    <p>O rosto é uma função compartilhada. Dois olhos escuros, cada um com dois pequenos brilhos brancos, e bochechas suaves. Esses brilhos dão ao personagem mais do que qualquer quantidade de geometria extra.</p>
+    <h2>Materiais, luzes e a armadilha da cor</h2>
+    <p>Todos os materiais partem do sombreador padrão baseado em física com poucos valores alterados: rugosidade, uma fina camada de verniz e um pouco de espalhamento de luz sob a superfície, que dá a aparência de brinquedo macio. As cores são escritas nos códigos usuais de seis dígitos e convertidas para valores lineares no código, porque o Blender espera números lineares.</p>
+    <p>A iluminação é igual para todas as criaturas: uma luz principal quente, um preenchimento mais frio, uma luz quente por trás e um céu azul-claro. A câmera é ortográfica, então o personagem não muda de forma ao se mover.</p>
+    <p>Um ajuste passa fácil despercebido. Versões recentes do Blender aplicam por padrão uma transformação de cor com jeito de cinema, e minhas cores vivas saíam lavadas. Mudar a transformação de visualização para Standard trouxe de volta as cores que eu tinha escrito.</p>
+    <h2>Animação é aritmética</h2>
+    <p>Não há ossos nem quadros-chave. Cada animação é uma função que recebe o número do quadro e devolve poucos valores: quanto o corpo balança para cima e para baixo, quanto oscila, se os olhos estão fechados e a que altura pula. Ondas senoidais fazem quase todo o trabalho.</p>
+    <p>São quatro animações de vinte e quatro quadros cada. A caminhada move os pés em fases opostas e faz o corpo balançar duas vezes por ciclo. O descanso é uma respiração lenta com uma piscada curta perto do fim. A alegria são dois pulinhos com um achatamento antes de cada um e olhos curvos felizes. O sono mantém os olhos fechados e respira devagar.</p>
+    <p>A cada quadro o script reinicia o Blender com uma cena vazia e monta o personagem outra vez. É um desperdício, mas elimina toda uma classe de erros em que uma sobra do quadro anterior altera o seguinte.</p>
+    <h2>Dos quadros a algo que o app possa usar</h2>
+    <p>A renderização tem fundo transparente. Um segundo script Python comum pega os quadros e acrescenta a sombra no chão: uma elipse desfocada desenhada com uma biblioteca de imagens, um pouco menor quando o personagem está no alto. Desenhar a sombra depois é mais simples do que pedir ao renderizador que a capture, e é fácil de ajustar.</p>
+    <p>A mesma etapa pode gravar uma prévia animada, que é o que olho enquanto ajusto. Para o aplicativo, outro script organiza os quadros em uma folha com seis de largura, assim o jogo carrega uma imagem por animação e desenha a parte necessária.</p>
+    <p>Uma opção na linha de comando gira o personagem para renderizá-lo de costas, sem código extra para uma segunda vista.</p>
+    <h2>Trabalhando com uma IA em formas</h2>
+    <p>O ciclo é curto: descrevo o que quero, o assistente edita o script, o Blender renderiza e eu olho. Meu julgamento entra só na última etapa, e é um julgamento de verdade. Uma criatura tecnicamente correta ainda pode parecer triste, pesada ou estranha.</p>
+    <p>As descrições funcionam melhor quando falam da imagem e não do código. Dizer mais redonda, orelhas mais juntas ou os olhos parecem surpresos levou a mudanças úteis. Também aprendi a renderizar primeiro uma única imagem parada e gerar todos os quadros só depois que a forma foi aprovada.</p>
+    <p>A mesma abordagem deu ao meu jogo de estilingue os onze retratos de mensageiros, com outro script e a mesma ideia.</p>
+    <h2>Limites</h2>
+    <p>Esse método serve para personagens macios e arredondados feitos de peças simples. Seria uma má escolha para pessoas realistas, tecido ou qualquer coisa que precise de esqueleto. Dá para perceber que o visual é montado com primitivas, e escolhi um estilo em que isso é uma virtude.</p>
+    <p>Renderizar leva tempo, e o script que gera toda a arte do jogo demora o bastante para eu ter aprendido a não interrompê-lo, porque ele esvazia a pasta de saída antes de começar.</p>
+    <h2>Por que cinco personagens parecem uma família</h2>
+    <p>A coerência vem quase de graça quando tudo é código. Todas as criaturas usam a mesma função de materiais, que cria cada material uma vez e o reaproveita pelo nome. Compartilham a função do rosto e a dos pés, posam diante da mesma câmera e são iluminadas pelas mesmas três lâmpadas. Um companheiro novo herda tudo isso e só precisa ser diferente onde eu quiser.</p>
+    <p>As diferenças ficam fáceis de ler no arquivo: a raposa ganha cones para as orelhas, um rabo feito de uma curva grossa e um nariz escuro; a coruja, aros que parecem óculos. Comparar dois personagens é comparar duas funções curtas.</p>
+    <h2>Opções que uso enquanto ajusto</h2>
+    <p>O script aceita algumas opções depois dos argumentos usuais do Blender: quais personagens renderizar, quantos quadros, o tamanho da imagem, qual animação, o ângulo de visão e uma chave para uma única imagem parada. Uma imagem pequena é o jeito rápido de avaliar uma forma. As animações completas no tamanho final são o jeito lento de produzir o que será publicado.</p>
+    <p>O motor é o de traçado de raios, com poucas amostras e remoção de ruído. O script tenta usar a placa de vídeo e recorre ao processador se não conseguir, então o mesmo comando funciona em um computador sem placa adequada, só que mais devagar.</p>
+    <h2>Se quiser experimentar</h2>
+    <ul><li>Comece com uma criatura e uma imagem parada.</li><li>Deixe cada tamanho e cor no código, onde você os veja.</li><li>Compartilhe uma única função de rosto entre os personagens.</li><li>Ajuste a transformação de visualização para Standard se as cores parecerem pálidas.</li><li>Use câmera ortográfica e fundo transparente para os sprites.</li><li>Acrescente a sombra depois, em uma etapa separada.</li></ul>
+    
+    <section class="faq"><h2>Perguntas frequentes</h2><details><summary>É preciso saber modelar em 3D para fazer esse tipo de personagem?</summary><p>Não para formas arredondadas simples. É preciso avaliar imagens e descrever o que mudar.</p></details><details><summary>Quem escreveu os scripts?</summary><p>Escrevi com um assistente de inteligência artificial e confiro o resultado olhando as renderizações.</p></details><details><summary>Como o personagem é animado sem ossos?</summary><p>Cada quadro é montado a partir de poucos números, quase todos ondas senoidais, que movem e achatam as peças.</p></details><details><summary>Por que minhas cores no Blender parecem lavadas?</summary><p>A transformação de cor padrão as altera. Usar Standard na transformação de visualização mantém as cores digitadas.</p></details></section>
+    <section><h2>Mais do blog</h2><ul class="glist"><li><a href="/pt/blog/demos-de-jogos-no-navegador-levando-as-regras-do-app-para-javascript/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Demos no navegador: levando as regras do app para JavaScript</b></div></a></li><li><a href="/pt/blog/bing-geturlinfo-status-de-rastreamento-por-pagina-e-a-armadilha-throttlehost/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Bing GetUrlInfo: rastreamento por página e o ThrottleHost</b></div></a></li><li><a href="/pt/blog/armadilhas-ao-formatar-numeros-na-mudanca-de-java-para-kotlin-multiplatform/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>De Java para Kotlin Multiplatform: armadilhas com números</b></div></a></li><li><a href="/pt/blog/sair-do-github-pages-para-o-seu-proprio-dominio-sem-perder-seo/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Sair do GitHub Pages para o seu próprio domínio sem perder SEO</b></div></a></li><li><a href="/pt/blog/kotlin-native-e-swift-erro-different-argument-labels-causa-e-solucao/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Kotlin/Native e Swift: o erro &#x27;different argument labels&#x27;</b></div></a></li><li><a href="/pt/blog/kotlin-multiplatform-capacidades-da-plataforma-com-interface-anulavel/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Kotlin Multiplatform: recursos da plataforma com interface nula</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demos en el navegador | Nesim Apps</title>
+<meta name="description" content="Cómo puse demos jugables de tres juegos Android en un sitio estático: reglas separadas de la página, pruebas en Node y aleatoriedad con semilla.">
+<link rel="canonical" href="https://nesimapps.com/es/blog/demos-de-juegos-en-el-navegador-llevar-las-reglas-de-la-app-a-javascript/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/browser-game-demos-porting-app-rules-to-javascript-with-matching-tests/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/tarayicida-oyun-demolari-uygulama-kurallarini-javascripte-tasimak-ve-testler/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/demos-de-juegos-en-el-navegador-llevar-las-reglas-de-la-app-a-javascript/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/demos-de-jogos-no-navegador-levando-as-regras-do-app-para-javascript/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/browser-game-demos-porting-app-rules-to-javascript-with-matching-tests/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Demos en el navegador: llevar las reglas de la app a JavaScript">
+<meta property="og:description" content="Cómo puse demos jugables de tres juegos Android en un sitio estático: reglas separadas de la página, pruebas en Node y aleatoriedad con semilla.">
+<meta property="og:url" content="https://nesimapps.com/es/blog/demos-de-juegos-en-el-navegador-llevar-las-reglas-de-la-app-a-javascript/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Demos en el navegador: llevar las reglas de la app a JavaScript">
+<meta name="twitter:description" content="Cómo puse demos jugables de tres juegos Android en un sitio estático: reglas separadas de la página, pruebas en Node y aleatoriedad con semilla.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Demos en el navegador: llevar las reglas de la app a JavaScript", "description": "Cómo puse demos jugables de tres juegos Android en un sitio estático: reglas separadas de la página, pruebas en Node y aleatoriedad con semilla.", "inLanguage": "es", "mainEntityOfPage": "https://nesimapps.com/es/blog/demos-de-juegos-en-el-navegador-llevar-las-reglas-de-la-app-a-javascript/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-28", "dateModified": "2026-11-28", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Notas de desarrollo, Diseño de juegos, Algoritmos"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/es/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/es/blog/"}, {"@type": "ListItem", "position": 3, "name": "Demos en el navegador: llevar las reglas de la app a JavaScript", "item": "https://nesimapps.com/es/blog/demos-de-juegos-en-el-navegador-llevar-las-reglas-de-la-app-a-javascript/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Compilaste el código Kotlin para la web?", "acceptedAnswer": {"@type": "Answer", "text": "No. Las reglas son pequeñas, así que se reescribieron en JavaScript simple y se vigilan con pruebas."}}, {"@type": "Question", "name": "¿Cómo se prueban las demos sin navegador?", "acceptedAnswer": {"@type": "Answer", "text": "La lógica no toca la página, así que Node puede cargar el archivo y llamar a sus funciones directamente."}}, {"@type": "Question", "name": "¿El rival difícil del tres en raya es de verdad invencible?", "acceptedAnswer": {"@type": "Answer", "text": "Una prueba recorre todas las secuencias de jugadas humanas, con varias semillas para las elecciones equivalentes del ordenador, y la persona nunca gana."}}, {"@type": "Question", "name": "¿Qué mantiene los niveles web iguales a los de la aplicación?", "acceptedAnswer": {"@type": "Answer", "text": "Una prueba repite cada solución incrustada y compara las líneas con el archivo de niveles de la aplicación cuando está presente."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/browser-game-demos-porting-app-rules-to-javascript-with-matching-tests/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/tarayicida-oyun-demolari-uygulama-kurallarini-javascripte-tasimak-ve-testler/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/demos-de-juegos-en-el-navegador-llevar-las-reglas-de-la-app-a-javascript/" hreflang="es" data-lang="es" aria-current="page">ES</a><a href="/pt/blog/demos-de-jogos-no-navegador-levando-as-regras-do-app-para-javascript/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/es/">Nesim Apps</a> › <a href="/es/blog/">Blog</a></nav>
+    <h1>Demos en el navegador: llevar las reglas de la app a JavaScript</h1>
+    <p class="by">Por Nesim Razon, desarrollador móvil independiente · 2026-11-28</p>
+    <p class="tags"><a href="/es/blog/#devlog">#Notas de desarrollo</a><a href="/es/blog/#game-design">#Diseño de juegos</a><a href="/es/blog/#algorithms">#Algoritmos</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Una captura muestra cómo se ve un juego. Un tablero pequeño y jugable muestra lo que se siente al hacer una jugada. Añadí a sus páginas versiones para navegador de tres de mis juegos Android: tres en raya, 2048 y un laberinto por turnos llamado Grumblings. Lo interesante no fue dibujarlos, sino asegurar que la versión web juega con las mismas reglas que la aplicación.</p>
+    <h2>Por qué escribir una versión aparte</h2>
+    <p>Las aplicaciones están escritas en Kotlin. El sitio son archivos estáticos sin más, sin servidor y sin otro paso de construcción que unos scripts de Python que escriben HTML. Compilar la lógica en Kotlin para la web habría sido posible, pero traía una cadena de herramientas y un tamaño de descarga muy superiores al problema. Las reglas de estos tres juegos son pequeñas, así que las escribí de nuevo en JavaScript simple.</p>
+    <p>Esa elección tiene un coste claro: dos implementaciones de las mismas reglas pueden separarse con el tiempo. Quien aprende el juego en la web y encuentra otro comportamiento en la aplicación ha sido engañado. La copia solo es aceptable si algo la vigila, y el resto de esta entrada trata de ese algo.</p>
+    <h2>Un archivo, dos mitades</h2>
+    <p>Cada demo es un solo script. La primera mitad es el juego: funciones que reciben un tablero y devuelven otro nuevo, sin ninguna referencia a la página. La segunda crea los botones y las casillas, atiende toques y teclas y anima el resultado.</p>
+    <p>La separación no es por elegancia. Es lo que permite probar. Como la mitad lógica nunca toca el documento, el mismo archivo se puede cargar con Node, que no tiene navegador. El script exporta sus funciones cuando se encuentra en Node y se monta solo en la página cuando se ejecuta en un navegador, allí donde halle un elemento de reserva con su atributo de datos.</p>
+    <p>El generador del sitio solo tiene que añadir ese elemento y una etiqueta de script a la página del juego. La dirección del script lleva un parámetro de versión, para que el visitante no se quede con una copia antigua en caché tras una corrección.</p>
+    <h2>Pruebas que reflejan la aplicación</h2>
+    <p>Cada demo tiene un archivo de pruebas que se ejecuta con Node y su módulo assert incorporado. No hay ningún marco de pruebas que instalar o actualizar. Cada prueba es una función con nombre, y el archivo imprime una línea por cada una y el total al final.</p>
+    <p>Los casos toman como modelo las reglas y las pruebas de la aplicación. En 2048 son las reglas de fusión escritas como filas pequeñas: cuatro doses se convierten en dos cuatros, y una ficha recién creada no puede fusionarse otra vez en la misma jugada. En el laberinto son las mismas posiciones diminutas que usan las pruebas en Kotlin: hacia dónde da el primer paso un monstruo, qué ocurre si está bloqueado y en qué orden juegan dos monstruos.</p>
+    <h2>Azar que se puede repetir</h2>
+    <p>Dos de los juegos usan azar. Una prueba que pasa casi siempre es peor que no tener ninguna, así que toda función que necesita un número aleatorio recibe el generador como parámetro. En el navegador es la función aleatoria normal. En las pruebas son unas líneas de un generador con semilla que produce siempre la misma secuencia.</p>
+    <p>Con azar repetible puedes afirmar cosas sobre muchas partidas. En 2048 la ficha nueva debe ser un dos en unos nueve de cada diez casos y un cuatro en el resto, así que la prueba genera veinte mil fichas y comprueba que la cantidad de cuatros quede en el rango esperado. Otra juega cientos de partidas aleatorias completas y verifica que nunca haya dos fichas en la misma casilla y que la puntuación no baje.</p>
+    <h2>Probar un rival automático</h2>
+    <p>El tres en raya tiene tres niveles de dificultad y cada uno es una promesa al jugador. El difícil debe ser invencible. En un tablero tan pequeño la prueba no necesita fiarse de muestras: recorre todas las secuencias posibles de jugadas humanas contra el nivel difícil y falla si la persona gana alguna vez.</p>
+    <p>El nivel medio debe poder vencerse, porque a propósito no entiende las dobles amenazas. La prueba lo enfrenta a un jugador perfecto y exige un número de victorias. El fácil debe ser claramente más débil que el medio. Estas pruebas protegen la sensación del juego, que una prueba de reglas no ve. Una mejora bienintencionada que volviera perfecto el nivel medio quedaría detectada.</p>
+    <h2>Niveles copiados de la aplicación</h2>
+    <p>La demo del laberinto no genera niveles. Lleva los treinta primeros de la aplicación como líneas de texto cortas que describen el tamaño, las posiciones, las paredes y la mejor solución. Los datos copiados pueden quedarse viejos, así que se comprueban de dos maneras.</p>
+    <p>La primera repite cada solución guardada con las reglas en JavaScript y exige ganar, después pide al solucionador en JavaScript el camino más corto y exige la misma longitud. La segunda compara las líneas incrustadas con el archivo de niveles de la aplicación, una por una, cuando ese archivo está en el equipo. Si regenero los niveles en la aplicación y olvido el sitio, la prueba dice qué línea difiere.</p>
+    <h2>Lo que las pruebas no cubren</h2>
+    <p>Que pasen las pruebas no demuestra que las dos versiones sean idénticas. Demuestra que los casos escritos se comportan igual. La animación, el tacto y la disposición se revisan a mano en un teléfono y en una pantalla de escritorio. Una regla presente en la aplicación y nunca escrita como prueba puede faltar todavía en la copia.</p>
+    <p>Por eso mantengo las demos pequeñas a propósito: un modo de cada juego, sin cuentas ni progreso guardado. Cada función extra sería una cosa más que mantener al día.</p>
+    <h2>Controles para teléfono y teclado</h2>
+    <p>Una demo en una página web se abre en lo que tenga la visita. El tablero de 2048 acepta las flechas cuando tiene el foco y deslizamientos en pantalla táctil. El laberinto acepta teclas, incluidas una para esperar un turno y otra para deshacer, y lee gestos del puntero. Cada demo tiene además botones normales, así que nada depende de conocer un gesto.</p>
+    <p>Los rótulos existen en los cuatro idiomas del sitio y la demo elige el conjunto que corresponde a la página. Guardar los textos dentro del script significa que un solo archivo contiene todo lo que el juego necesita, a cambio de unas líneas más.</p>
+    <h2>Pequeñas ayudas que también da la app</h2>
+    <p>Una primera visita no debería acabar en confusión. La demo del laberinto ofrece deshacer, reiniciar, una pista sacada del solucionador y un interruptor que muestra el camino que seguiría el monstruo. Como el solucionador forma parte de la mitad lógica, la pista es real: se calcula desde la posición actual, no se lee de una respuesta guardada.</p>
+    <p>La demo de 2048 guarda un paso para deshacer y permite continuar tras llegar a 2048, como la aplicación. Cada demo termina con un enlace al juego en Google Play que llega desde la página, así que el script no necesita conocer direcciones de tienda.</p>
+    <h2>Si quieres hacer lo mismo</h2>
+    <ul><li>Elige juegos cuyas reglas quepan en un archivo legible.</li><li>Mantén la lógica libre de cualquier referencia a la página.</li><li>Pasa el generador aleatorio como parámetro.</li><li>Copia los casos difíciles de las pruebas de la aplicación, no solo los fáciles.</li><li>Si copias datos, añade una prueba que los compare con el origen.</li><li>Pon versión en la dirección del script para que las correcciones lleguen a quien vuelve.</li></ul>
+    
+    <section class="faq"><h2>Preguntas frecuentes</h2><details><summary>¿Compilaste el código Kotlin para la web?</summary><p>No. Las reglas son pequeñas, así que se reescribieron en JavaScript simple y se vigilan con pruebas.</p></details><details><summary>¿Cómo se prueban las demos sin navegador?</summary><p>La lógica no toca la página, así que Node puede cargar el archivo y llamar a sus funciones directamente.</p></details><details><summary>¿El rival difícil del tres en raya es de verdad invencible?</summary><p>Una prueba recorre todas las secuencias de jugadas humanas, con varias semillas para las elecciones equivalentes del ordenador, y la persona nunca gana.</p></details><details><summary>¿Qué mantiene los niveles web iguales a los de la aplicación?</summary><p>Una prueba repite cada solución incrustada y compara las líneas con el archivo de niveles de la aplicación cuando está presente.</p></details></section>
+    <section><h2>Más del blog</h2><ul class="glist"><li><a href="/es/blog/bing-geturlinfo-estado-de-rastreo-por-pagina-y-la-trampa-throttlehost/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Bing GetUrlInfo: rastreo por página y el bloqueo ThrottleHost</b></div></a></li><li><a href="/es/blog/trampas-al-formatear-numeros-al-pasar-de-java-a-kotlin-multiplatform/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>De Java a Kotlin Multiplatform: trampas al formatear números</b></div></a></li><li><a href="/es/blog/mascotas-3d-solo-con-scripts-de-python-en-blender-sin-modelar-a-mano/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Mascotas 3D solo con scripts de Blender, sin modelar a mano</b></div></a></li><li><a href="/es/blog/pasar-de-github-pages-a-tu-propio-dominio-sin-perder-seo/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Pasar de GitHub Pages a tu propio dominio sin perder SEO</b></div></a></li><li><a href="/es/blog/kotlin-native-y-swift-error-different-argument-labels-causa-y-solucion/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Kotlin/Native y Swift: el error &#x27;different argument labels&#x27;</b></div></a></li><li><a href="/es/blog/kotlin-multiplatform-capacidades-de-plataforma-con-interfaz-nula/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Kotlin Multiplatform: capacidades de plataforma con interfaz nula</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

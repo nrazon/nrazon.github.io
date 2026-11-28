@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bing GetUrlInfo: Sayfa Başına Tarama Durumu ve ThrottleHost</title>
+<meta name="description" content="Bing&#x27;in hangi sayfaları bulup taradığını GetUrlInfo API ile nasıl kontrol ettiğim, tarihlerin neyi söylemediği ve ThrottleHost engelinden kaçınmak.">
+<link rel="canonical" href="https://nesimapps.com/tr/yazilar/bing-geturlinfo-sayfa-basina-tarama-durumu-ve-throttlehost-tuzagi/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/bing-geturlinfo-crawl-status-per-page-and-the-throttlehost-trap/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/bing-geturlinfo-sayfa-basina-tarama-durumu-ve-throttlehost-tuzagi/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/bing-geturlinfo-estado-de-rastreo-por-pagina-y-la-trampa-throttlehost/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/bing-geturlinfo-status-de-rastreamento-por-pagina-e-a-armadilha-throttlehost/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/bing-geturlinfo-crawl-status-per-page-and-the-throttlehost-trap/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Bing GetUrlInfo: Sayfa Başına Tarama Durumu ve ThrottleHost">
+<meta property="og:description" content="Bing&#x27;in hangi sayfaları bulup taradığını GetUrlInfo API ile nasıl kontrol ettiğim, tarihlerin neyi söylemediği ve ThrottleHost engelinden kaçınmak.">
+<meta property="og:url" content="https://nesimapps.com/tr/yazilar/bing-geturlinfo-sayfa-basina-tarama-durumu-ve-throttlehost-tuzagi/">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bing GetUrlInfo: Sayfa Başına Tarama Durumu ve ThrottleHost">
+<meta name="twitter:description" content="Bing&#x27;in hangi sayfaları bulup taradığını GetUrlInfo API ile nasıl kontrol ettiğim, tarihlerin neyi söylemediği ve ThrottleHost engelinden kaçınmak.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Bing GetUrlInfo: Sayfa Başına Tarama Durumu ve ThrottleHost", "description": "Bing'in hangi sayfaları bulup taradığını GetUrlInfo API ile nasıl kontrol ettiğim, tarihlerin neyi söylemediği ve ThrottleHost engelinden kaçınmak.", "inLanguage": "tr", "mainEntityOfPage": "https://nesimapps.com/tr/yazilar/bing-geturlinfo-sayfa-basina-tarama-durumu-ve-throttlehost-tuzagi/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-28", "dateModified": "2026-11-28", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Geliştirici notları, Araçlar ve hesaplayıcılar"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/tr/"}, {"@type": "ListItem", "position": 2, "name": "Yazılar", "item": "https://nesimapps.com/tr/yazilar/"}, {"@type": "ListItem", "position": 3, "name": "Bing GetUrlInfo: Sayfa Başına Tarama Durumu ve ThrottleHost", "item": "https://nesimapps.com/tr/yazilar/bing-geturlinfo-sayfa-basina-tarama-durumu-ve-throttlehost-tuzagi/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "GetUrlInfo bir sayfanın Bing dizininde olup olmadığını söyler mi?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Keşif ve tarama tarihlerini verir. Taranmış olmak faydalı bir işarettir ama dizin hakkında hüküm değildir."}}, {"@type": "Question", "name": "Bilinmeyen bir adres cevapta nasıl görünür?", "acceptedAnswer": {"@type": "Answer", "text": "Hata yerine tarihler yer tutucu olarak, bir yılının 1 Ocak'ı şeklinde döner."}}, {"@type": "Question", "name": "ThrottleHost hatası nedir?", "acceptedAnswer": {"@type": "Answer", "text": "İstekler çok hızlı gelince dönen, 5 numaralı hata kodlu HTTP 400 cevabıdır. Bende saatlerce sürdü."}}, {"@type": "Question", "name": "GetUrlInfo ne kadar hızlı çağrılabilir?", "acceptedAnswer": {"@type": "Answer", "text": "Ben yaklaşık 1,2 saniyede bir istek ve çalışma başına en fazla 150 istek gönderiyorum. Bu benim temkinli seçimim, belgelenmiş bir sınır değil."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/bing-geturlinfo-crawl-status-per-page-and-the-throttlehost-trap/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/bing-geturlinfo-sayfa-basina-tarama-durumu-ve-throttlehost-tuzagi/" hreflang="tr" data-lang="tr" aria-current="page">TR</a><a href="/es/blog/bing-geturlinfo-estado-de-rastreo-por-pagina-y-la-trampa-throttlehost/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/bing-geturlinfo-status-de-rastreamento-por-pagina-e-a-armadilha-throttlehost/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/tr/">Nesim Apps</a> › <a href="/tr/yazilar/">Yazılar</a></nav>
+    <h1>Bing GetUrlInfo: Sayfa Başına Tarama Durumu ve ThrottleHost</h1>
+    <p class="by">Nesim Razon, bağımsız mobil uygulama geliştiricisi · 2026-11-28</p>
+    <p class="tags"><a href="/tr/yazilar/#devlog">#Geliştirici notları</a><a href="/tr/yazilar/#tools">#Araçlar ve hesaplayıcılar</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Raporlama betiğim sitemin hangi adreslerinin dizinde olduğunu Google&#x27;a zaten tek tek soruyordu. Bir okurun yorumu aynı soruyu Bing için de sormama yol açtı. Webmaster API&#x27;sinde bunun için bir yöntem var, ama cevap beklediğimden dar ve ilk hızlı denemem isteklerimin saatlerce engellenmesiyle sonuçlandı.</p>
+    <h2>GetUrlInfo ne döndürüyor</h2>
+    <p>GetUrlInfo, Bing Webmaster API&#x27;sinin bir yöntemi. API anahtarını, araçta kayıtlı olduğu biçimiyle site adresini ve tek bir sayfa adresini gönderiyorsun. Cevap, Bing&#x27;in o tek sayfa hakkında ne bildiğini anlatıyor.</p>
+    <p>Benim amacım için iki alan önemli: Bing&#x27;in adresi keşfettiği tarih ve en son taradığı tarih. Bing&#x27;in hiç görmediği bir adres hata üretmiyor. Yer tutucu bir tarihle dönüyor: bir yılının ocak ayının biri. Tarihleri bunu düşünmeden okursan bilinmeyen bir sayfa, çok uzun zaman önce keşfedilmiş gibi görünür.</p>
+    <p>Bu yüzden betik her cevabı üç durumdan birine çeviriyor. Taranmış, gerçek bir son tarama tarihi var demek. Bulunmuş, keşif tarihi var ama henüz tarama yok demek. Bilinmiyor, iki tarihin de gerçek olmadığı anlamına geliyor.</p>
+    <h2>Taranmış, dizinde demek değil</h2>
+    <p>En önemli sınır bu ve bulanıklaşması çok kolay. Google&#x27;ın URL Inspection API&#x27;si dizin hakkında bir hüküm veriyor. GetUrlInfo vermiyor. Sana Bing&#x27;in sayfayı çekip çekmediğini söylüyor, sayfanın sonuçlarda çıkıp çıkamayacağını değil.</p>
+    <p>Bing Webmaster panelindeki inceleme ekranı daha fazla ayrıntı gösteriyor, ama o ayrıntı bu yöntemde yok. Bu yüzden kendi panomda sütunu dürüstçe adlandırdım: taranmış, eldeki en yakın işaret; dizine girdiğinin kanıtı değil. İkisini aynı grafikte karıştırırsan Bing kapsamının gerçekte bildiğinden daha iyi olduğuna inanırsın.</p>
+    <p>Sitedeki daha önceki bir yazı aynı API&#x27;nin başka bir sürprizini anlatıyor: web paneli veri gösterirken boş liste döndüren rapor yöntemleri. Bu çağrıların üstüne bir şey kurmadan önce okumaya değer.</p>
+    <h2>Tuzak: sayfa başına bir istek ve fazla hızlı olmamak</h2>
+    <p>Sayfa başına bir istek gerekiyor. Dört dille birlikte birkaç yüz adresi olan bir site birkaç yüz çağrı demek. Doğal tepki bunları paralel çalıştırmak. Ben sekiz iş parçacığıyla öyle yaptım.</p>
+    <p>Engel anında geldi. API, HTTP 400 durumuyla ve gövdesinde ThrottleHost adlı 5 numaralı hata koduyla cevap verdi. Birkaç saniyede geçmedi; saatlerce sürdü. Bu, hata ayıklarken döngü içinde tekrar denemenin yapılabilecek en kötü şey olduğu anlamına da geliyor.</p>
+    <p>İzin verilen hız için güvenebileceğim yayımlanmış bir sayı bulamadım; aşağıdaki ayarlar belgelenmiş bir sınırdan değil, temkinden geliyor.</p>
+    <h2>Bende işleyen ayarlar</h2>
+    <ul><li>Aynı anda tek istek, asla paralel değil.</li><li>Çağrılar arasında yaklaşık 1,2 saniye bekleme.</li><li>Bir çalışmada en fazla 150 sayfa.</li><li>Cevapta kısıtlamadan söz ediliyorsa sonraki sayfadan önce 30 saniye bekleme.</li><li>Art arda üç kısıtlamalı cevaptan sonra çalışmayı bitirme. İlerleme zaten kayıtlı.</li></ul>
+    <h2>Önbellek küçük partileri sorun olmaktan çıkarıyor</h2>
+    <p>Sitede sınırdan fazla sayfa varken parti sınırı bir sorun gibi duyulur. Değil, çünkü sonuçlar yerel bir dosyada önbelleğe alınıyor: adres başına bir kayıt ve kontrol edildiği tarih. Sonraki çalışma yalnızca yeterince eskimiş kayıtları soruyor.</p>
+    <p>Yeterince eski olmak duruma bağlı. Zaten taranmış bir sayfa benim açımdan seyrek değişir, bu yüzden haftada bir yenileniyor. Yalnızca bulunmuş ya da bilinmeyen bir sayfa bir gün sonra yeniden kontrol ediliyor, çünkü değişim beklediğim yer orası.</p>
+    <p>Sitenin tamamı birkaç çalışmada doluyor. Rapor zaten çalıştığı için bunun bana sabırdan başka bir bedeli yok.</p>
+    <h2>Önce ilginç sayfaları sor</h2>
+    <p>Çalışma başına bütçe sınırlıysa sıra önemlidir. Betik önce Google&#x27;ın dizininde olmayan adresleri alıyor. Asıl soru bu: sayfa yalnızca bir arama motorunda mı eksik, yoksa ikisinde de mi? Onların ardından hiç kontrol edilmemiş sayfalar, sonra en eski kontrol edilenler geliyor.</p>
+    <p>Böylece iki ayrı liste tek tabloya dönüşüyor. Google&#x27;ın dizine almadığı her sayfa için Bing&#x27;in onu taradığını mı, bulduğunu mu, hiç duymadığını mı görebiliyorum. İkisinin de dokunmadığı bir sayfa, zayıf iç bağlantı gibi bir keşif sorununu gösteriyor. Bing&#x27;in tarayıp Google&#x27;ın atladığı sayfa ise başka bir konu; genellikle sayfanın bir şey katıp katmadığıyla ilgili.</p>
+    <p>Bunlar sonuç değil, nereye bakılacağına dair ipuçları. İki tarayıcı farklı davranır ve küçük bir sitede veri çok azdır.</p>
+    <h2>Dile göre gruplamak</h2>
+    <p>Sitem sayfaların çoğunu dört dilde yayımlıyor; İngilizce kökte, diğerleri kendi klasörlerinde. Betik her adresin ilk klasörünü okuyup dil başına kaç sayfa olduğunu ve Bing&#x27;in kaçını taradığını sayıyor.</p>
+    <p>Tek bir toplam, epey geride kalan bir dili gizlerdi. Dil başına sayılar bunu hemen gösteriyor ve aynı önbellek verisinden geldikleri için bedavaya yakın.</p>
+    <h2>Kısıtlama olmayan hatalar</h2>
+    <p>Her başarısız çağrı hız sınırı değildir. Zaman aşımı ya da bozuk bir cevap tek bir isteğin başına gelebilir. Betiğim bunları sonuç saymıyor: o adres için önbelleğe hiçbir şey yazılmıyor, böylece sonraki çalışma onu eskimiş görüp yeniden soruyor. Tahmini bir durum yazmak hiçbir şey yazmamaktan kötü olurdu, çünkü rapor gerçek bir bilinmeyeni başarısız istekten ayıramazdı.</p>
+    <p>Kısıtlama ayrı ele alınıyor, çünkü tek bir adresle ilgili değil; sonraki bütün çağrılarla ilgili. Art arda gelen cevapları saymasının nedeni bu: tek bir kısıtlama cevabı gürültü olabilir, üçü art arda gelirse servis durmamı istiyor demektir. Başarılı bir cevap sayacı sıfırlıyor.</p>
+    <h2>Kendi noindex sayfalarını sorun listesinden çıkarmak</h2>
+    <p>İki motoru karşılaştırmadan önce eksik sayfa listesinin dürüst olması gerekiyor. Bazı sayfalar bilerek noindex işaretli olabilir; bunları başarısızlık saymak, aslında bir karar olan şeyde hata aratır. Raporumun Google tarafı URL Inspection&#x27;ın döndürdüğü dizine ekleme durumunu saklıyor ve sayfanın robots etiketi ya da başlığıyla dışlandığını tanıyor.</p>
+    <p>Bu sayfalar eksik sayfa listesinden çıkıyor ve kendi sayacını alıyor. Bunu kurduğumda site haritamda böyle bir sayfa yoktu, ama kural ucuz ve ileride raporun boş alarm vermesini önlüyor. Genel tavsiye üç şeyi ayırmak: henüz bulunmamış, görülmüş ama dizine alınmamış ve sen istediğin için dışlanmış.</p>
+    <h2>Sonuçla ne yapıyorum</h2>
+    <p>Sayılar ancak yapabileceğim bir işe götürürse yararlı. İki motorun da uğramadığı bir sayfa için sitenin başka sayfalarının ona gerçekten bağlantı verdiğine ve site haritasında olduğuna bakıyorum. Bing&#x27;in tarayıp Google&#x27;ın dizine almadığı sayfayı yeniden okuyup komşu sayfaların söylemediği bir şey söyleyip söylemediğini soruyorum.</p>
+    <p>Tek bir güne tepki vermekten kaçınıyorum. Tarayıcılar kendi takvimleriyle döner; bir şeyi değiştirmeden önce tabloyu birkaç rapor boyunca karşılaştırıyor ve neyin fark yarattığını anlayabilmek için her seferinde tek şeyi değiştiriyorum.</p>
+    <h2>Bunu kopyalamadan önce bakacaklarım</h2>
+    <ul><li>Site adresi Bing Webmaster Tools&#x27;ta kayıtlı olanla birebir aynı mı?</li><li>API anahtarı depo dışında mı duruyor?</li><li>Tarih okuyucun bir yılındaki yer tutucuyu tarih yok sayıyor mu?</li><li>Betik herhangi bir anda durdurulunca bitmiş iş kayboluyor mu?</li><li>Rapor dizinde yerine taranmış diyor mu?</li></ul>
+    
+    <section class="faq"><h2>Sık sorulan sorular</h2><details><summary>GetUrlInfo bir sayfanın Bing dizininde olup olmadığını söyler mi?</summary><p>Hayır. Keşif ve tarama tarihlerini verir. Taranmış olmak faydalı bir işarettir ama dizin hakkında hüküm değildir.</p></details><details><summary>Bilinmeyen bir adres cevapta nasıl görünür?</summary><p>Hata yerine tarihler yer tutucu olarak, bir yılının 1 Ocak&#x27;ı şeklinde döner.</p></details><details><summary>ThrottleHost hatası nedir?</summary><p>İstekler çok hızlı gelince dönen, 5 numaralı hata kodlu HTTP 400 cevabıdır. Bende saatlerce sürdü.</p></details><details><summary>GetUrlInfo ne kadar hızlı çağrılabilir?</summary><p>Ben yaklaşık 1,2 saniyede bir istek ve çalışma başına en fazla 150 istek gönderiyorum. Bu benim temkinli seçimim, belgelenmiş bir sınır değil.</p></details></section>
+    <section><h2>Diğer yazılar</h2><ul class="glist"><li><a href="/tr/yazilar/tarayicida-oyun-demolari-uygulama-kurallarini-javascripte-tasimak-ve-testler/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Tarayıcıda Oyun Demoları: Kuralları JavaScript&#x27;e Taşımak</b></div></a></li><li><a href="/tr/yazilar/javadan-kotlin-multiplatforma-gecerken-sayi-bicimlendirme-tuzaklari/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Java&#x27;dan Kotlin Multiplatform&#x27;a: Sayı Biçimlendirme Tuzakları</b></div></a></li><li><a href="/tr/yazilar/yalnizca-blender-python-betigiyle-3b-maskot-elle-modelleme-yok/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Elle Modellemeden 3B Maskot: Yalnızca Blender Betiğiyle</b></div></a></li><li><a href="/tr/yazilar/github-pages-adresinden-kendi-alan-adina-gecis-seo-kaybetmeden/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>GitHub Pages&#x27;ten Kendi Alan Adına Geçiş: SEO Kaybetmeden</b></div></a></li><li><a href="/tr/yazilar/kotlin-native-swift-argument-labels-hatasi-nedeni-ve-cozumu/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Kotlin/Native ve Swift: &#x27;Different Argument Labels&#x27; Hatası</b></div></a></li><li><a href="/tr/yazilar/kotlin-multiplatformda-platform-yetenegi-null-olabilen-arayuz/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Kotlin Multiplatform&#x27;da Platform Yeteneği: Null Olabilen Arayüz</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

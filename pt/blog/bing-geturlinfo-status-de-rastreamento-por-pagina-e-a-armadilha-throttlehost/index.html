@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt" data-lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bing GetUrlInfo: rastreamento por página e o ThrottleHost</title>
+<meta name="description" content="Como verifico quais páginas o Bing encontrou e rastreou com o GetUrlInfo, o que essas datas não dizem e como evitar o bloqueio ThrottleHost da API.">
+<link rel="canonical" href="https://nesimapps.com/pt/blog/bing-geturlinfo-status-de-rastreamento-por-pagina-e-a-armadilha-throttlehost/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/bing-geturlinfo-crawl-status-per-page-and-the-throttlehost-trap/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/bing-geturlinfo-sayfa-basina-tarama-durumu-ve-throttlehost-tuzagi/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/bing-geturlinfo-estado-de-rastreo-por-pagina-y-la-trampa-throttlehost/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/bing-geturlinfo-status-de-rastreamento-por-pagina-e-a-armadilha-throttlehost/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/bing-geturlinfo-crawl-status-per-page-and-the-throttlehost-trap/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Bing GetUrlInfo: rastreamento por página e o ThrottleHost">
+<meta property="og:description" content="Como verifico quais páginas o Bing encontrou e rastreou com o GetUrlInfo, o que essas datas não dizem e como evitar o bloqueio ThrottleHost da API.">
+<meta property="og:url" content="https://nesimapps.com/pt/blog/bing-geturlinfo-status-de-rastreamento-por-pagina-e-a-armadilha-throttlehost/">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bing GetUrlInfo: rastreamento por página e o ThrottleHost">
+<meta name="twitter:description" content="Como verifico quais páginas o Bing encontrou e rastreou com o GetUrlInfo, o que essas datas não dizem e como evitar o bloqueio ThrottleHost da API.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Bing GetUrlInfo: rastreamento por página e o ThrottleHost", "description": "Como verifico quais páginas o Bing encontrou e rastreou com o GetUrlInfo, o que essas datas não dizem e como evitar o bloqueio ThrottleHost da API.", "inLanguage": "pt", "mainEntityOfPage": "https://nesimapps.com/pt/blog/bing-geturlinfo-status-de-rastreamento-por-pagina-e-a-armadilha-throttlehost/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-28", "dateModified": "2026-11-28", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Notas de desenvolvimento, Ferramentas e calculadoras"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/pt/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/pt/blog/"}, {"@type": "ListItem", "position": 3, "name": "Bing GetUrlInfo: rastreamento por página e o ThrottleHost", "item": "https://nesimapps.com/pt/blog/bing-geturlinfo-status-de-rastreamento-por-pagina-e-a-armadilha-throttlehost/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "O GetUrlInfo diz se uma página está no índice do Bing?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Ele dá as datas de descoberta e de rastreamento. Rastreada é um sinal útil, mas não um veredito sobre o índice."}}, {"@type": "Question", "name": "Como uma URL desconhecida aparece na resposta?", "acceptedAnswer": {"@type": "Answer", "text": "As datas voltam como um valor de preenchimento, 1º de janeiro do ano um, em vez de um erro."}}, {"@type": "Question", "name": "O que é o erro ThrottleHost?", "acceptedAnswer": {"@type": "Answer", "text": "Uma resposta HTTP 400 com código de erro 5, enviada quando os pedidos chegam rápido demais. No meu caso durou horas."}}, {"@type": "Question", "name": "Com que velocidade posso chamar o GetUrlInfo?", "acceptedAnswer": {"@type": "Answer", "text": "Envio um pedido a cada 1,2 segundo, aproximadamente, e no máximo 150 por execução. É uma escolha cautelosa minha, não um limite documentado."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/bing-geturlinfo-crawl-status-per-page-and-the-throttlehost-trap/" hreflang="en" data-lang="en">EN</a><a href="/tr/yazilar/bing-geturlinfo-sayfa-basina-tarama-durumu-ve-throttlehost-tuzagi/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/bing-geturlinfo-estado-de-rastreo-por-pagina-y-la-trampa-throttlehost/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/bing-geturlinfo-status-de-rastreamento-por-pagina-e-a-armadilha-throttlehost/" hreflang="pt" data-lang="pt" aria-current="page">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/pt/">Nesim Apps</a> › <a href="/pt/blog/">Blog</a></nav>
+    <h1>Bing GetUrlInfo: rastreamento por página e o ThrottleHost</h1>
+    <p class="by">Por Nesim Razon, desenvolvedor mobile independente · 2026-11-28</p>
+    <p class="tags"><a href="/pt/blog/#devlog">#Notas de desenvolvimento</a><a href="/pt/blog/#tools">#Ferramentas e calculadoras</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">Meu script de relatórios já perguntava ao Google, página por página, quais endereços do meu site estavam no índice. O comentário de um leitor me levou a fazer a mesma pergunta sobre o Bing. A API para webmasters tem um método para isso, mas a resposta é mais limitada do que eu esperava, e a primeira tentativa rápida deixou meus pedidos bloqueados por horas.</p>
+    <h2>O que o GetUrlInfo devolve</h2>
+    <p>GetUrlInfo é um método da API do Bing Webmaster. Você envia sua chave, o endereço do site como está registrado na ferramenta e o endereço de uma página. A resposta descreve o que o Bing sabe sobre essa única página.</p>
+    <p>Para o meu objetivo, dois campos importam: a data em que o Bing descobriu o endereço e a data do último rastreamento. Um endereço que o Bing nunca viu não gera erro. Ele volta com uma data de preenchimento, 1º de janeiro do ano um. Se você ler as datas sem pensar nisso, uma página desconhecida parece uma página descoberta há muitíssimo tempo.</p>
+    <p>Por isso o script transforma cada resposta em um de três estados. Rastreada significa que há uma data real de último rastreamento. Descoberta significa que há data de descoberta, mas ainda não de rastreamento. Desconhecida significa que nenhuma das duas é real.</p>
+    <h2>Rastreada não é o mesmo que indexada</h2>
+    <p>Esse é o limite mais importante e é fácil borrá-lo. A API de inspeção de URL do Google dá um veredito sobre o índice. O GetUrlInfo não. Ele diz se o Bing baixou a página, não se ela pode aparecer nos resultados.</p>
+    <p>A tela de inspeção no painel do Bing Webmaster mostra mais detalhes, mas esses detalhes não estão neste método. No meu painel, então, nomeio a coluna com honestidade: rastreada é o sinal mais próximo disponível, não uma prova de indexação. Se você misturar as duas coisas em um gráfico, vai acreditar que sua cobertura no Bing é melhor do que realmente sabe.</p>
+    <p>Outro texto anterior deste site trata de uma surpresa da mesma API: métodos de relatório que devolvem listas vazias enquanto o painel na web mostra dados. Vale ler antes de construir algo sobre essas chamadas.</p>
+    <h2>A armadilha: um pedido por página, sem pressa</h2>
+    <p>É um pedido por página. Um site com algumas centenas de endereços, contando quatro idiomas, precisa de algumas centenas de chamadas. A reação natural é rodá-las em paralelo. Fiz isso com oito linhas de execução.</p>
+    <p>O bloqueio veio na hora. A API respondeu com o status HTTP 400 e um corpo com o código de erro 5, chamado ThrottleHost. Não passou em alguns segundos. Durou horas, o que também significa que repetir em laço enquanto você depura é a pior coisa a fazer.</p>
+    <p>Não encontrei um número publicado e confiável sobre o ritmo permitido, então os ajustes abaixo vêm da cautela e não de um limite documentado.</p>
+    <h2>Os ajustes que funcionam para mim</h2>
+    <ul><li>Um pedido de cada vez, nunca em paralelo.</li><li>Uma pausa de cerca de 1,2 segundo entre as chamadas.</li><li>No máximo 150 páginas por execução.</li><li>Quando a resposta mencionar limitação, esperar 30 segundos antes da próxima página.</li><li>Depois de três respostas limitadas seguidas, encerrar a execução. O progresso já está salvo.</li></ul>
+    <h2>Um cache torna os lotes pequenos suficientes</h2>
+    <p>Um limite por lote parece problema quando o site tem mais páginas que o limite. Não é, porque os resultados ficam em um arquivo local, uma entrada por endereço, com a data da verificação. A execução seguinte só pergunta pelas entradas velhas o bastante.</p>
+    <p>Quão velha ela precisa estar depende do estado. Uma página já rastreada muda pouco do meu ponto de vista, então é atualizada uma vez por semana. Uma página apenas descoberta ou desconhecida é verificada de novo depois de um dia, porque é ali que espero mudança.</p>
+    <p>O site inteiro se completa em poucas execuções. Como o relatório roda de qualquer forma, o único custo é a paciência.</p>
+    <h2>Pergunte primeiro pelas páginas interessantes</h2>
+    <p>Com um orçamento limitado por execução, a ordem importa. O script pega primeiro os endereços que o Google não tem no índice. Essa é a pergunta real: a página falta em um só buscador ou nos dois? Depois vêm as nunca verificadas e então as verificadas há mais tempo.</p>
+    <p>Assim duas listas separadas viram uma única tabela. Para cada página que o Google não indexou, consigo ver se o Bing a rastreou, a encontrou ou nunca ouviu falar dela. Uma página que nenhum dos dois tocou aponta para um problema de descoberta, como links internos fracos. Uma que o Bing rastreou e o Google pulou é outra conversa, geralmente sobre se a página acrescenta algo.</p>
+    <p>São pistas de onde olhar, não conclusões. Dois rastreadores se comportam de modo diferente e um site pequeno tem pouquíssimos dados.</p>
+    <h2>Agrupar por idioma</h2>
+    <p>Meu site publica a maioria das páginas em quatro idiomas, com o inglês na raiz e os outros em pastas próprias. O script lê a primeira pasta de cada endereço e conta, por idioma, quantas páginas existem e quantas o Bing rastreou.</p>
+    <p>Um total único esconderia um idioma muito atrasado. Os números por idioma mostram isso na hora e saem quase de graça, porque vêm dos mesmos dados em cache.</p>
+    <h2>Erros que não são limitação</h2>
+    <p>Nem toda chamada que falha é limite de ritmo. Um tempo esgotado ou uma resposta quebrada podem acontecer com qualquer pedido. Meu script não trata isso como resultado: nada é gravado no cache para aquele endereço, então a execução seguinte o vê como velho e pergunta de novo. Gravar um estado chutado seria pior do que não gravar nada, porque o relatório não separaria um desconhecido real de um pedido que falhou.</p>
+    <p>A limitação é tratada à parte porque não diz respeito a um endereço, e sim a todas as chamadas seguintes. Por isso ele conta respostas consecutivas: uma só pode ser ruído, três seguidas significam que o serviço quer que eu pare. Uma resposta correta zera o contador.</p>
+    <h2>Tirando minhas páginas noindex da lista de problemas</h2>
+    <p>Antes de comparar os dois buscadores, a lista de páginas ausentes precisa ser honesta. Algumas páginas podem estar marcadas como noindex de propósito, e contá-las como falha manda você caçar um defeito que na verdade é uma decisão. O lado do Google no meu relatório guarda o estado de indexação devolvido pela inspeção de URL e reconhece quando uma página é excluída por uma marcação ou cabeçalho de robots.</p>
+    <p>Essas páginas saem da lista de ausentes e ganham um contador próprio. Quando construí isso, meu mapa do site não tinha nenhuma, mas a regra é barata e evita alarmes falsos depois. O conselho geral é separar três coisas: ainda não encontrada, vista e não indexada, e excluída porque você pediu.</p>
+    <h2>O que faço com o resultado</h2>
+    <p>Os números só servem se levarem a algo que eu possa fazer. Para uma página que nenhum buscador visitou, confiro se outras páginas do site realmente apontam para ela e se está no mapa do site. Para uma que o Bing rastreou e o Google não indexou, releio e pergunto se ela diz algo que as vizinhas não dizem.</p>
+    <p>Evito reagir a um único dia. Os rastreadores voltam no próprio ritmo, então comparo o quadro ao longo de vários relatórios antes de mudar algo, e mudo uma coisa de cada vez para saber o que fez diferença.</p>
+    <h2>O que eu verificaria antes de copiar isto</h2>
+    <ul><li>O endereço do site é exatamente o registrado no Bing Webmaster Tools?</li><li>A chave da API fica fora do repositório?</li><li>Seu leitor de datas trata o preenchimento do ano um como ausência de data?</li><li>O script pode ser interrompido a qualquer momento sem perder o trabalho feito?</li><li>O relatório diz rastreada em vez de indexada?</li></ul>
+    
+    <section class="faq"><h2>Perguntas frequentes</h2><details><summary>O GetUrlInfo diz se uma página está no índice do Bing?</summary><p>Não. Ele dá as datas de descoberta e de rastreamento. Rastreada é um sinal útil, mas não um veredito sobre o índice.</p></details><details><summary>Como uma URL desconhecida aparece na resposta?</summary><p>As datas voltam como um valor de preenchimento, 1º de janeiro do ano um, em vez de um erro.</p></details><details><summary>O que é o erro ThrottleHost?</summary><p>Uma resposta HTTP 400 com código de erro 5, enviada quando os pedidos chegam rápido demais. No meu caso durou horas.</p></details><details><summary>Com que velocidade posso chamar o GetUrlInfo?</summary><p>Envio um pedido a cada 1,2 segundo, aproximadamente, e no máximo 150 por execução. É uma escolha cautelosa minha, não um limite documentado.</p></details></section>
+    <section><h2>Mais do blog</h2><ul class="glist"><li><a href="/pt/blog/demos-de-jogos-no-navegador-levando-as-regras-do-app-para-javascript/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Demos no navegador: levando as regras do app para JavaScript</b></div></a></li><li><a href="/pt/blog/armadilhas-ao-formatar-numeros-na-mudanca-de-java-para-kotlin-multiplatform/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>De Java para Kotlin Multiplatform: armadilhas com números</b></div></a></li><li><a href="/pt/blog/mascotes-3d-so-com-scripts-python-no-blender-sem-modelagem-manual/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Mascotes 3D só com scripts do Blender, sem modelar à mão</b></div></a></li><li><a href="/pt/blog/sair-do-github-pages-para-o-seu-proprio-dominio-sem-perder-seo/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Sair do GitHub Pages para o seu próprio domínio sem perder SEO</b></div></a></li><li><a href="/pt/blog/kotlin-native-e-swift-erro-different-argument-labels-causa-e-solucao/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Kotlin/Native e Swift: o erro &#x27;different argument labels&#x27;</b></div></a></li><li><a href="/pt/blog/kotlin-multiplatform-capacidades-da-plataforma-com-interface-anulavel/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Kotlin Multiplatform: recursos da plataforma com interface nula</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

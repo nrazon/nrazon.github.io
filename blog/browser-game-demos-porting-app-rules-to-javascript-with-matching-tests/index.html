@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Browser Game Demos: Porting App Rules to JavaScript</title>
+<meta name="description" content="How I put playable demos of three Android games on a static site: rules separated from the page, Node tests that mirror the app and seeded randomness.">
+<link rel="canonical" href="https://nesimapps.com/blog/browser-game-demos-porting-app-rules-to-javascript-with-matching-tests/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/browser-game-demos-porting-app-rules-to-javascript-with-matching-tests/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/tarayicida-oyun-demolari-uygulama-kurallarini-javascripte-tasimak-ve-testler/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/demos-de-juegos-en-el-navegador-llevar-las-reglas-de-la-app-a-javascript/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/demos-de-jogos-no-navegador-levando-as-regras-do-app-para-javascript/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/browser-game-demos-porting-app-rules-to-javascript-with-matching-tests/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Browser Game Demos: Porting App Rules to JavaScript">
+<meta property="og:description" content="How I put playable demos of three Android games on a static site: rules separated from the page, Node tests that mirror the app and seeded randomness.">
+<meta property="og:url" content="https://nesimapps.com/blog/browser-game-demos-porting-app-rules-to-javascript-with-matching-tests/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Browser Game Demos: Porting App Rules to JavaScript">
+<meta name="twitter:description" content="How I put playable demos of three Android games on a static site: rules separated from the page, Node tests that mirror the app and seeded randomness.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Browser Game Demos: Porting App Rules to JavaScript", "description": "How I put playable demos of three Android games on a static site: rules separated from the page, Node tests that mirror the app and seeded randomness.", "inLanguage": "en", "mainEntityOfPage": "https://nesimapps.com/blog/browser-game-demos-porting-app-rules-to-javascript-with-matching-tests/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-28", "dateModified": "2026-11-28", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Dev notes, Game design, Algorithms"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Browser Game Demos: Porting App Rules to JavaScript", "item": "https://nesimapps.com/blog/browser-game-demos-porting-app-rules-to-javascript-with-matching-tests/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Did you compile the Kotlin code for the web?", "acceptedAnswer": {"@type": "Answer", "text": "No. The rules are small, so they are rewritten in plain JavaScript and checked by tests."}}, {"@type": "Question", "name": "How are the demos tested without a browser?", "acceptedAnswer": {"@type": "Answer", "text": "The game logic does not touch the page, so Node can load the file and call its functions directly."}}, {"@type": "Question", "name": "Is the hard tic-tac-toe player really unbeatable?", "acceptedAnswer": {"@type": "Answer", "text": "A test walks through all human move sequences against it, with several seeds for the computer's equal choices, and the human never wins."}}, {"@type": "Question", "name": "What keeps the web levels the same as the app?", "acceptedAnswer": {"@type": "Answer", "text": "A test replays every embedded solution and compares the lines with the app's level file when it is present."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/browser-game-demos-porting-app-rules-to-javascript-with-matching-tests/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/tarayicida-oyun-demolari-uygulama-kurallarini-javascripte-tasimak-ve-testler/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/demos-de-juegos-en-el-navegador-llevar-las-reglas-de-la-app-a-javascript/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/demos-de-jogos-no-navegador-levando-as-regras-do-app-para-javascript/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>Browser Game Demos: Porting App Rules to JavaScript</h1>
+    <p class="by">By Nesim Razon, independent mobile developer · 2026-11-28</p>
+    <p class="tags"><a href="/blog/#devlog">#Dev notes</a><a href="/blog/#game-design">#Game design</a><a href="/blog/#algorithms">#Algorithms</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">A screenshot shows what a game looks like. A small playable board shows what it feels like to take a turn. I added browser versions of three of my Android games to their pages: tic-tac-toe, 2048 and a turn-based maze called Grumblings. The interesting part was not drawing them. It was making sure the web version plays by the same rules as the app.</p>
+    <h2>Why a port at all</h2>
+    <p>The apps are written in Kotlin. The site is plain static files, with no server and no build step beyond a few Python scripts that write HTML. Compiling the Kotlin game logic for the web would be possible, but it would bring a toolchain and a download size far larger than the problem. The rules of these three games are small, so I wrote each of them again in plain JavaScript.</p>
+    <p>That choice has a clear cost: two implementations of the same rules can drift apart. A visitor who learns the game on the web and then finds different behaviour in the app has been misled. So the port is only acceptable if something checks it, and the rest of this post is about that something.</p>
+    <h2>One file, two halves</h2>
+    <p>Each demo is a single script. The first half is the game itself: functions that take a board and return a new board, with no reference to the page. The second half builds the buttons and cells, handles taps and keys and animates the result.</p>
+    <p>The split is not about elegance. It is what makes testing possible. Because the logic half never touches the document, the same file can be loaded by Node, which has no browser at all. The script exports its functions when it finds itself in Node, and mounts itself on the page when it runs in a browser, wherever it finds a placeholder element with its data attribute.</p>
+    <p>The site generator only has to add that placeholder and one script tag to a game page. The script address carries a version parameter, so a visitor does not keep an old cached copy after a fix.</p>
+    <h2>Tests that mirror the app</h2>
+    <p>Each demo has one test file that runs with Node and its built-in assert module. There is no test framework to install or update. Every test is a named function, and the file prints a line for each one and a total at the end.</p>
+    <p>The test cases are modelled on the app&#x27;s rules and tests. For 2048 that means the merge rules written as small rows: four twos slide into two fours, and a tile that was just created cannot merge a second time in the same move. For the maze it means the same tiny positions the Kotlin tests use: which way a monster steps first, what happens when it is blocked and in which order two monsters take their turns.</p>
+    <h2>Randomness you can repeat</h2>
+    <p>Two of the games use chance. A test that passes on most runs is worse than no test, so every function that needs a random number receives the generator as a parameter. In the browser that is the normal random function. In tests it is a few lines of a seeded generator that produces the same sequence every time.</p>
+    <p>With repeatable randomness you can make statements about many games. In 2048, a new tile should be a two in about nine cases out of ten and a four otherwise, so the test spawns twenty thousand tiles and checks that the number of fours stays in the expected range. Another test plays hundreds of complete random games and verifies that two tiles never occupy the same cell and the score never goes down.</p>
+    <h2>Testing a computer opponent</h2>
+    <p>Tic-tac-toe has three difficulty levels, and each one is a promise to the player. Hard must be unbeatable. For a board this small the test does not need to trust sampling: it walks through every possible sequence of human moves against the hard player and fails if the human ever wins.</p>
+    <p>Medium must be beatable, because it deliberately does not understand forks. The test lets a flawless player compete against it and requires a number of wins. Easy must be clearly weaker than medium. These tests protect the feel of the game, which a rule test cannot see. A well meant improvement that made medium perfect would be caught.</p>
+    <h2>Levels copied from the app</h2>
+    <p>The maze demo does not generate levels. It carries the first thirty levels of the app, as short text lines that describe the board size, the positions, the walls and the best solution. Copied data can go stale, so two checks run on it.</p>
+    <p>The first replays each stored best solution through the JavaScript rules and requires a win, then asks the JavaScript solver for the shortest path and requires the same length. The second compares the embedded lines with the app&#x27;s level file, line by line, when that file is available on the machine. If I regenerate the levels in the app and forget the site, the test says which line differs.</p>
+    <h2>What the tests do not cover</h2>
+    <p>Passing tests do not prove that the two versions are identical. They prove that the cases I wrote down behave the same. Animation, touch handling and layout are checked by hand on a phone and a desktop screen. A rule that exists in the app and was never written as a test can still be missing from the port.</p>
+    <p>That is why I keep the demos deliberately small: one mode of each game, no accounts, no saved progress. Every extra feature in the demo would be another thing to keep in step.</p>
+    <h2>Input for a phone and a keyboard</h2>
+    <p>A demo on a web page is opened on whatever the visitor has. The 2048 board accepts arrow keys when it has focus and swipes on a touch screen. The maze accepts keys, including one to wait a turn and one to undo, and reads pointer gestures. Each demo also has ordinary buttons, so nothing depends on knowing a gesture.</p>
+    <p>The labels exist in the four languages of the site, and the demo picks the set that matches the page. Keeping the texts inside the script means one file still contains everything the game needs, at the price of a few extra lines.</p>
+    <h2>Small helps that the app also gives</h2>
+    <p>A first visit should not end in confusion. The maze demo offers undo, restart, a hint taken from the solver and a switch that shows the path the monster would take. Because the solver is part of the logic half, the hint is real: it is computed from the current position, not read from a stored answer.</p>
+    <p>The 2048 demo keeps one step of undo and lets you continue after reaching 2048, as the app does. Each demo ends with a link to the game on Google Play, passed in from the page, so the script itself does not need to know store addresses.</p>
+    <h2>If you want to do the same</h2>
+    <ul><li>Choose games whose rules fit in one readable file.</li><li>Keep the logic free of any reference to the page.</li><li>Pass the random generator in as a parameter.</li><li>Copy the app&#x27;s tricky test cases, not only the easy ones.</li><li>When you copy data, add a test that compares it with the source.</li><li>Version the script address so fixes reach returning visitors.</li></ul>
+    
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Did you compile the Kotlin code for the web?</summary><p>No. The rules are small, so they are rewritten in plain JavaScript and checked by tests.</p></details><details><summary>How are the demos tested without a browser?</summary><p>The game logic does not touch the page, so Node can load the file and call its functions directly.</p></details><details><summary>Is the hard tic-tac-toe player really unbeatable?</summary><p>A test walks through all human move sequences against it, with several seeds for the computer&#x27;s equal choices, and the human never wins.</p></details><details><summary>What keeps the web levels the same as the app?</summary><p>A test replays every embedded solution and compares the lines with the app&#x27;s level file when it is present.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/bing-geturlinfo-crawl-status-per-page-and-the-throttlehost-trap/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Bing GetUrlInfo: Crawl Status per Page and ThrottleHost</b></div></a></li><li><a href="/blog/number-formatting-traps-when-moving-from-java-to-kotlin-multiplatform/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Java to Kotlin Multiplatform: Number Formatting Traps</b></div></a></li><li><a href="/blog/making-3d-mascots-with-only-blender-python-scripts-no-manual-modelling/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>3D Mascots With Only Blender Python Scripts, No Modelling</b></div></a></li><li><a href="/blog/moving-from-github-pages-to-your-own-domain-without-losing-seo/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Moving From GitHub Pages to Your Own Domain Without Losing SEO</b></div></a></li><li><a href="/blog/kotlin-native-swift-different-argument-labels-error-and-the-fix/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Kotlin/Native and Swift: The &#x27;Different Argument Labels&#x27; Error</b></div></a></li><li><a href="/blog/kotlin-multiplatform-platform-capabilities-nullable-interface/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Kotlin Multiplatform: Platform Features as a Nullable Interface</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

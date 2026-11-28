@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bing GetUrlInfo: Crawl Status per Page and ThrottleHost</title>
+<meta name="description" content="How I check which pages Bing has found and crawled with the GetUrlInfo API, what the dates do not tell you, and how to avoid a ThrottleHost block.">
+<link rel="canonical" href="https://nesimapps.com/blog/bing-geturlinfo-crawl-status-per-page-and-the-throttlehost-trap/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/bing-geturlinfo-crawl-status-per-page-and-the-throttlehost-trap/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/bing-geturlinfo-sayfa-basina-tarama-durumu-ve-throttlehost-tuzagi/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/bing-geturlinfo-estado-de-rastreo-por-pagina-y-la-trampa-throttlehost/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/bing-geturlinfo-status-de-rastreamento-por-pagina-e-a-armadilha-throttlehost/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/bing-geturlinfo-crawl-status-per-page-and-the-throttlehost-trap/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="Bing GetUrlInfo: Crawl Status per Page and ThrottleHost">
+<meta property="og:description" content="How I check which pages Bing has found and crawled with the GetUrlInfo API, what the dates do not tell you, and how to avoid a ThrottleHost block.">
+<meta property="og:url" content="https://nesimapps.com/blog/bing-geturlinfo-crawl-status-per-page-and-the-throttlehost-trap/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bing GetUrlInfo: Crawl Status per Page and ThrottleHost">
+<meta name="twitter:description" content="How I check which pages Bing has found and crawled with the GetUrlInfo API, what the dates do not tell you, and how to avoid a ThrottleHost block.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Bing GetUrlInfo: Crawl Status per Page and ThrottleHost", "description": "How I check which pages Bing has found and crawled with the GetUrlInfo API, what the dates do not tell you, and how to avoid a ThrottleHost block.", "inLanguage": "en", "mainEntityOfPage": "https://nesimapps.com/blog/bing-geturlinfo-crawl-status-per-page-and-the-throttlehost-trap/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-28", "dateModified": "2026-11-28", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Dev notes, Tools and calculators"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Bing GetUrlInfo: Crawl Status per Page and ThrottleHost", "item": "https://nesimapps.com/blog/bing-geturlinfo-crawl-status-per-page-and-the-throttlehost-trap/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does GetUrlInfo tell me whether a page is indexed by Bing?", "acceptedAnswer": {"@type": "Answer", "text": "No. It gives discovery and crawl dates. Crawled is a useful signal but not a verdict about the index."}}, {"@type": "Question", "name": "What does an unknown URL look like in the response?", "acceptedAnswer": {"@type": "Answer", "text": "The dates come back as a placeholder, the first of January of year one, instead of an error."}}, {"@type": "Question", "name": "What is the ThrottleHost error?", "acceptedAnswer": {"@type": "Answer", "text": "An HTTP 400 answer with error code 5, returned when requests arrive too quickly. In my case it lasted for hours."}}, {"@type": "Question", "name": "How fast can I call GetUrlInfo?", "acceptedAnswer": {"@type": "Answer", "text": "I send one request about every 1.2 seconds with at most 150 per run. That is a cautious choice of mine, not a documented limit."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/bing-geturlinfo-crawl-status-per-page-and-the-throttlehost-trap/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/bing-geturlinfo-sayfa-basina-tarama-durumu-ve-throttlehost-tuzagi/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/bing-geturlinfo-estado-de-rastreo-por-pagina-y-la-trampa-throttlehost/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/bing-geturlinfo-status-de-rastreamento-por-pagina-e-a-armadilha-throttlehost/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>Bing GetUrlInfo: Crawl Status per Page and ThrottleHost</h1>
+    <p class="by">By Nesim Razon, independent mobile developer · 2026-11-28</p>
+    <p class="tags"><a href="/blog/#devlog">#Dev notes</a><a href="/blog/#tools">#Tools and calculators</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">My reporting script already asked Google, page by page, which addresses of my site were in the index. A reader&#x27;s comment made me ask the same question about Bing. The Webmaster API has a method for it, but the answer is narrower than I expected, and my first fast attempt got my requests blocked for hours.</p>
+    <h2>What GetUrlInfo returns</h2>
+    <p>GetUrlInfo is a method of the Bing Webmaster API. You send your API key, the site address as it is registered in the tool and one page address. The answer describes what Bing knows about that single page.</p>
+    <p>For my purpose two fields matter: the date Bing discovered the address and the date it last crawled it. An address Bing has never seen does not produce an error. It comes back with a placeholder date, the first of January of the year one. If you parse dates without thinking about this, an unknown page looks like a page that was discovered a very long time ago.</p>
+    <p>So the script turns every answer into one of three states. Crawled means there is a real last crawl date. Discovered means there is a discovery date but no crawl yet. Unknown means neither date is real.</p>
+    <h2>Crawled is not the same as indexed</h2>
+    <p>This is the most important limit, and it is easy to blur. Google&#x27;s URL Inspection API gives a verdict about the index. GetUrlInfo does not. It tells you whether Bing fetched the page, not whether the page can appear in results.</p>
+    <p>The inspection screen inside the Bing Webmaster panel shows more detail, but that detail is not in this method. In my dashboard I therefore label the column honestly: crawled is the closest signal available, not proof of indexing. If you mix the two in one chart, you will believe your Bing coverage is better than you actually know.</p>
+    <p>A separate earlier post on this site covers another surprise of the same API, report methods that return empty lists while the web panel shows data. It is worth reading before you build anything on top of these calls.</p>
+    <h2>The trap: one request per page, and not too fast</h2>
+    <p>There is one request per page. A site with a few hundred addresses, counting four languages, needs a few hundred calls. The natural reaction is to run them in parallel. I did that with eight workers.</p>
+    <p>The block arrived immediately. The API answered with HTTP status 400 and a body carrying error code 5, named ThrottleHost. It did not clear after a few seconds. It lasted for hours, which also means that retrying in a loop while you debug is the worst thing you can do.</p>
+    <p>I could not find a published number I could rely on for the allowed rate, so the settings below come from caution rather than from a documented limit.</p>
+    <h2>The settings that work for me</h2>
+    <ul><li>One request at a time, never in parallel.</li><li>A pause of about 1.2 seconds between calls.</li><li>At most 150 pages in one run.</li><li>When the response mentions throttling, wait 30 seconds before the next page.</li><li>After three throttled answers in a row, end the run. The progress is already saved.</li></ul>
+    <h2>A cache makes the small batches fine</h2>
+    <p>A batch limit sounds like a problem when the site has more pages than the limit. It is not, because results are cached in a local file, one entry per address, with the date it was checked. The next run only asks about entries that are old enough.</p>
+    <p>Old enough depends on the state. A page that is already crawled changes rarely from my point of view, so it is refreshed only weekly. A page that is only discovered, or unknown, is checked again after a day, because that is where I am waiting for a change.</p>
+    <p>The whole site fills in over a few runs. Since the report runs anyway, this costs me nothing but patience.</p>
+    <h2>Ask about the interesting pages first</h2>
+    <p>With a limited budget per run, order matters. The script first takes the addresses that Google does not have in its index. That is the actual question: is a page missing only in one search engine, or in both? After those come pages that were never checked, then the ones checked longest ago.</p>
+    <p>This turns two separate lists into one table. For each page that Google has not indexed, I can see whether Bing has crawled it, found it or never heard of it. A page that neither of them has touched points to a discovery problem such as weak internal links. A page Bing crawled and Google skipped is a different conversation, usually about whether the page adds something.</p>
+    <p>These are hints for where to look, not conclusions. Two crawlers behave differently, and a small site has very little data.</p>
+    <h2>Group by language</h2>
+    <p>My site publishes most pages in four languages, with English at the root and the others under their own folders. The script reads the first folder of each address and counts, per language, how many pages exist and how many Bing has crawled.</p>
+    <p>A single total would hide a language that lags far behind. Per language numbers show it at once, and they are cheap, because they come from the same cached data.</p>
+    <h2>Errors that are not throttling</h2>
+    <p>Not every failed call is a rate limit. A timeout or a broken answer can happen to any single request. My script does not treat those as results: nothing is written to the cache for that address, so the next run sees it as stale and asks again. Writing a guessed state would be worse than writing nothing, because the report could not tell a real unknown from a failed request.</p>
+    <p>The throttle case is handled separately because it is not about one address. It is about all following calls. That is why it counts consecutive answers: one throttled reply may be noise, three in a row mean the service wants me to stop. A successful answer resets the counter.</p>
+    <h2>Keeping my own noindex pages out of the problem list</h2>
+    <p>Before comparing the two engines, the list of missing pages has to be honest. Some pages may be marked noindex on purpose, and counting them as a failure sends you hunting for a bug that is a decision. The Google side of my report stores the indexing state that URL Inspection returns and recognises when a page is excluded by a robots tag or header.</p>
+    <p>Those pages leave the list of missing pages and get their own counter. At the moment I built it, my sitemap had no such page, but the rule is cheap and stops the report from raising false alarms later. The general advice is to separate three things: not found yet, seen and not indexed, and excluded because you asked for it.</p>
+    <h2>What I do with the result</h2>
+    <p>The numbers are only useful if they lead to an action I can take. For a page neither engine has visited, I check that other pages of the site actually link to it and that it is in the sitemap. For a page Bing crawled and Google did not index, I reread the page and ask whether it says something the neighbouring pages do not.</p>
+    <p>I avoid reacting to a single day. Crawlers come back on their own schedule, so I compare the picture across several reports before changing anything, and I change one thing at a time so I can tell what made a difference.</p>
+    <h2>What I would check before copying this</h2>
+    <ul><li>Is the site address exactly the one registered in Bing Webmaster Tools?</li><li>Is the API key kept outside the repository?</li><li>Does your date parser treat the year one placeholder as no date?</li><li>Can the script be stopped at any moment without losing finished work?</li><li>Does the report say crawled rather than indexed?</li></ul>
+    
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Does GetUrlInfo tell me whether a page is indexed by Bing?</summary><p>No. It gives discovery and crawl dates. Crawled is a useful signal but not a verdict about the index.</p></details><details><summary>What does an unknown URL look like in the response?</summary><p>The dates come back as a placeholder, the first of January of year one, instead of an error.</p></details><details><summary>What is the ThrottleHost error?</summary><p>An HTTP 400 answer with error code 5, returned when requests arrive too quickly. In my case it lasted for hours.</p></details><details><summary>How fast can I call GetUrlInfo?</summary><p>I send one request about every 1.2 seconds with at most 150 per run. That is a cautious choice of mine, not a documented limit.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/browser-game-demos-porting-app-rules-to-javascript-with-matching-tests/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Browser Game Demos: Porting App Rules to JavaScript</b></div></a></li><li><a href="/blog/number-formatting-traps-when-moving-from-java-to-kotlin-multiplatform/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Java to Kotlin Multiplatform: Number Formatting Traps</b></div></a></li><li><a href="/blog/making-3d-mascots-with-only-blender-python-scripts-no-manual-modelling/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>3D Mascots With Only Blender Python Scripts, No Modelling</b></div></a></li><li><a href="/blog/moving-from-github-pages-to-your-own-domain-without-losing-seo/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Moving From GitHub Pages to Your Own Domain Without Losing SEO</b></div></a></li><li><a href="/blog/kotlin-native-swift-different-argument-labels-error-and-the-fix/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Kotlin/Native and Swift: The &#x27;Different Argument Labels&#x27; Error</b></div></a></li><li><a href="/blog/kotlin-multiplatform-platform-capabilities-nullable-interface/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Kotlin Multiplatform: Platform Features as a Nullable Interface</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>

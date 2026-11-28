@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3D Mascots With Only Blender Python Scripts, No Modelling</title>
+<meta name="description" content="I cannot model in 3D, so my game characters are built by Python scripts in Blender: simple shapes, a walk cycle and transparent frames for the app.">
+<link rel="canonical" href="https://nesimapps.com/blog/making-3d-mascots-with-only-blender-python-scripts-no-manual-modelling/">
+<link rel="alternate" hreflang="en" href="https://nesimapps.com/blog/making-3d-mascots-with-only-blender-python-scripts-no-manual-modelling/">
+<link rel="alternate" hreflang="tr" href="https://nesimapps.com/tr/yazilar/yalnizca-blender-python-betigiyle-3b-maskot-elle-modelleme-yok/">
+<link rel="alternate" hreflang="es" href="https://nesimapps.com/es/blog/mascotas-3d-solo-con-scripts-de-python-en-blender-sin-modelar-a-mano/">
+<link rel="alternate" hreflang="pt" href="https://nesimapps.com/pt/blog/mascotes-3d-so-com-scripts-python-no-blender-sem-modelagem-manual/">
+<link rel="alternate" hreflang="x-default" href="https://nesimapps.com/blog/making-3d-mascots-with-only-blender-python-scripts-no-manual-modelling/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7FB2FF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nesim Apps">
+<meta property="og:title" content="3D Mascots With Only Blender Python Scripts, No Modelling">
+<meta property="og:description" content="I cannot model in 3D, so my game characters are built by Python scripts in Blender: simple shapes, a walk cycle and transparent frames for the app.">
+<meta property="og:url" content="https://nesimapps.com/blog/making-3d-mascots-with-only-blender-python-scripts-no-manual-modelling/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:image" content="https://nesimapps.com/og-v3.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="3D Mascots With Only Blender Python Scripts, No Modelling">
+<meta name="twitter:description" content="I cannot model in 3D, so my game characters are built by Python scripts in Blender: simple shapes, a walk cycle and transparent frames for the app.">
+<style>:root { --accent:#7FB2FF; }</style>
+<link rel="stylesheet" href="/landing.css?v=7">
+<link rel="stylesheet" href="/guides.css?v=1">
+<script src="/analytics.js?v=5" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "3D Mascots With Only Blender Python Scripts, No Modelling", "description": "I cannot model in 3D, so my game characters are built by Python scripts in Blender: simple shapes, a walk cycle and transparent frames for the app.", "inLanguage": "en", "mainEntityOfPage": "https://nesimapps.com/blog/making-3d-mascots-with-only-blender-python-scripts-no-manual-modelling/", "image": "https://nesimapps.com/og-v3.png", "datePublished": "2026-11-28", "dateModified": "2026-11-28", "author": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/", "sameAs": ["https://x.com/nrazon", "https://www.linkedin.com/in/nesimrazon/", "https://play.google.com/store/apps/dev?id=4632277715794688965"]}, "publisher": {"@type": "Person", "name": "Nesim Razon", "url": "https://nesimapps.com/"}, "keywords": "Dev notes, Game design"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nesim Apps", "item": "https://nesimapps.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nesimapps.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "3D Mascots With Only Blender Python Scripts, No Modelling", "item": "https://nesimapps.com/blog/making-3d-mascots-with-only-blender-python-scripts-no-manual-modelling/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do I need to know 3D modelling to make this kind of character?", "acceptedAnswer": {"@type": "Answer", "text": "Not for simple rounded shapes. You need to judge pictures and describe what to change."}}, {"@type": "Question", "name": "Who wrote the scripts?", "acceptedAnswer": {"@type": "Answer", "text": "I wrote them with an AI assistant, and I review the results by looking at the renders."}}, {"@type": "Question", "name": "How is the character animated without bones?", "acceptedAnswer": {"@type": "Answer", "text": "Each frame is built from a few numbers, mostly sine waves, that move and squash the parts."}}, {"@type": "Question", "name": "Why do my Blender colours look washed out?", "acceptedAnswer": {"@type": "Answer", "text": "The default colour transform changes them. Setting the view transform to Standard keeps the colours you typed."}}]}]}</script>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="/">← Nesim Apps</a>
+    <div class="lang" role="navigation" aria-label="Language"><a href="/blog/making-3d-mascots-with-only-blender-python-scripts-no-manual-modelling/" hreflang="en" data-lang="en" aria-current="page">EN</a><a href="/tr/yazilar/yalnizca-blender-python-betigiyle-3b-maskot-elle-modelleme-yok/" hreflang="tr" data-lang="tr">TR</a><a href="/es/blog/mascotas-3d-solo-con-scripts-de-python-en-blender-sin-modelar-a-mano/" hreflang="es" data-lang="es">ES</a><a href="/pt/blog/mascotes-3d-so-com-scripts-python-no-blender-sem-modelagem-manual/" hreflang="pt" data-lang="pt">PT</a></div>
+  </header>
+  <article class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">Nesim Apps</a> › <a href="/blog/">Blog</a></nav>
+    <h1>3D Mascots With Only Blender Python Scripts, No Modelling</h1>
+    <p class="by">By Nesim Razon, independent mobile developer · 2026-11-28</p>
+    <p class="tags"><a href="/blog/#devlog">#Dev notes</a><a href="/blog/#game-design">#Game design</a></p><style>.tags{margin:.6rem 0 1rem}.tags a{display:inline-block;margin:0 6px 6px 0;padding:3px 11px;border:1px solid currentColor;border-radius:999px;font-size:.85rem;opacity:.75;text-decoration:none}.tags a:hover,.tags a.on{opacity:1}.tags a.on{font-weight:700}</style>
+    <p class="lead">I am a developer, not a 3D artist. I have never sculpted a character with a mouse. Still, the companions in the walking game I am preparing are small clay-toy creatures rendered in 3D. They are built entirely by Python scripts that Blender runs from the command line, and I say it plainly: I wrote those scripts with the help of an AI assistant. This is how the pipeline works and what I learned from it.</p>
+    <h2>The idea: describe the character in code</h2>
+    <p>Blender can run a Python file without opening its window. Inside that file the bpy module can do what I would otherwise do by hand: create shapes, give them materials, place lights and a camera, and render an image.</p>
+    <p>So a character becomes a function. One call makes the body, the next the belly, then the eyes, ears and feet, each with a position, a size and a colour. Nothing is stored in a project file that only I could open and understand. If a creature needs bigger eyes, one number changes and the script produces every frame again.</p>
+    <p>For someone who cannot model, this matters. I can look at a picture, say what is wrong in words and see the change as a few edited lines that I am able to review.</p>
+    <h2>A few simple shapes go a long way</h2>
+    <p>The five companions in my script use a very small set of building blocks. A sphere that can be stretched. A cone with softened edges for ears and beaks. A ring for a scarf or a pair of glasses. A curve with thickness for a mouth, a closed eye or a stem.</p>
+    <p>Complicated forms are avoided on purpose. A fluffy creature is a ball surrounded by twenty-six smaller balls, spread with the golden angle so they do not line up, and skipping the side where the face goes. A stone creature is a sphere with a cloud noise texture pushing its surface slightly in and out.</p>
+    <p>The face is one shared function. Two dark eyes, each with two small white highlights, and soft cheeks. Those highlights do more for the character than any amount of extra geometry.</p>
+    <h2>Materials, lights and the colour trap</h2>
+    <p>All materials start from the standard physically based shader with a few values changed: roughness, a thin clear coat and a little light scattering under the surface, which gives the soft toy look. Colours are written as the usual six digit codes and converted to linear values in code, because Blender expects linear numbers.</p>
+    <p>The lighting is the same for every creature: a warm key light, a cooler fill, a warm light from behind and a pale blue sky. The camera is orthographic, so a character does not change shape when it moves.</p>
+    <p>One setting is easy to miss. Recent Blender versions apply a film-like colour transform by default, and my bright toy colours came out washed. Switching the view transform to Standard gave the colours I had typed.</p>
+    <h2>Animation is arithmetic</h2>
+    <p>There are no bones and no keyframes. Each animation is a function that receives the frame number and returns a few values: how much the body bobs, how far it sways, whether the eyes are closed and how high it jumps. Sine waves do almost all of the work.</p>
+    <p>There are four animations, twenty-four frames each. Walking moves the feet in opposite phase and bobs the body twice per cycle. Idle is slow breathing with a short blink near the end. Joy is two little jumps with a squash before each one and happy curved eyes. Sleep keeps the eyes closed and breathes slowly.</p>
+    <p>For every frame the script resets Blender to an empty scene and builds the character again. That is wasteful, but it removes a whole class of bugs where something left over from the previous frame changes the next one.</p>
+    <h2>From frames to something the app can use</h2>
+    <p>The render has a transparent background. A second, ordinary Python script takes the frames and adds the ground shadow: a blurred ellipse drawn with an image library, a little smaller when the character is up. Drawing the shadow afterwards is simpler than asking the renderer to catch it, and it is easy to tune.</p>
+    <p>The same step can write an animated preview file, which is what I look at while adjusting. For the app, another script packs the frames into a sheet, six frames wide, so the game loads one image per animation and draws the part it needs.</p>
+    <p>A switch on the command line turns the character around to render it from behind, with no extra code for a second view.</p>
+    <h2>Working with an AI on shapes</h2>
+    <p>The loop is short: I describe what I want, the assistant edits the script, Blender renders and I look. My judgement is only in the last step, and it is a real one. A technically correct creature can still look sad, heavy or odd.</p>
+    <p>Descriptions work better when they are about the picture and not about the code. Rounder, ears closer together or the eyes look surprised led to useful changes. I also learned to render a single still image first and only produce all frames once the shape was accepted.</p>
+    <p>The same approach gave my slingshot puzzle game its eleven courier portraits, with a separate script and the same idea.</p>
+    <h2>Limits</h2>
+    <p>This method suits soft, rounded characters made of simple parts. It would be a poor choice for realistic people, cloth or anything that needs a skeleton. The look is recognisably built from primitives, and I chose a style where that is a virtue.</p>
+    <p>Rendering takes time, and the script that builds all the game&#x27;s artwork runs long enough that I learned not to interrupt it, because it clears its output folder before it starts.</p>
+    <h2>Why five characters look like one family</h2>
+    <p>Consistency comes almost free when everything is code. All creatures use the same material function, which creates a material once and reuses it by name. They share the face function and the feet function, stand in front of the same camera and are lit by the same three lamps. A new companion inherits all of that and only has to be different where I want it to be.</p>
+    <p>The differences are then easy to read in the file: a fox gets cones for ears, a tail made from a thick curve and a darker nose; an owl gets rings that look like glasses. When I compare two characters I compare two short functions.</p>
+    <h2>Options I reach for while adjusting</h2>
+    <p>The script takes a few options after the usual Blender arguments: which characters to render, how many frames, the image size, which animation, the viewing angle and a switch for a single still image. A still at a small size is the fast way to judge a shape. Full animations at the final size are the slow way to produce what ships.</p>
+    <p>The renderer is the path-tracing one with a modest number of samples and noise removal. The script tries to use the graphics card and falls back to the processor if it cannot, so the same command works on a machine without a suitable card, only more slowly.</p>
+    <h2>If you want to try</h2>
+    <ul><li>Start with one creature and one still image.</li><li>Put every size and colour in the code where you can see it.</li><li>Share one face function between characters.</li><li>Set the view transform to Standard if colours look pale.</li><li>Use an orthographic camera and a transparent background for game sprites.</li><li>Add the shadow afterwards in a separate step.</li></ul>
+    
+    <section class="faq"><h2>Frequently asked questions</h2><details><summary>Do I need to know 3D modelling to make this kind of character?</summary><p>Not for simple rounded shapes. You need to judge pictures and describe what to change.</p></details><details><summary>Who wrote the scripts?</summary><p>I wrote them with an AI assistant, and I review the results by looking at the renders.</p></details><details><summary>How is the character animated without bones?</summary><p>Each frame is built from a few numbers, mostly sine waves, that move and squash the parts.</p></details><details><summary>Why do my Blender colours look washed out?</summary><p>The default colour transform changes them. Setting the view transform to Standard keeps the colours you typed.</p></details></section>
+    <section><h2>More from the blog</h2><ul class="glist"><li><a href="/blog/browser-game-demos-porting-app-rules-to-javascript-with-matching-tests/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Browser Game Demos: Porting App Rules to JavaScript</b></div></a></li><li><a href="/blog/bing-geturlinfo-crawl-status-per-page-and-the-throttlehost-trap/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Bing GetUrlInfo: Crawl Status per Page and ThrottleHost</b></div></a></li><li><a href="/blog/number-formatting-traps-when-moving-from-java-to-kotlin-multiplatform/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Java to Kotlin Multiplatform: Number Formatting Traps</b></div></a></li><li><a href="/blog/moving-from-github-pages-to-your-own-domain-without-losing-seo/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Moving From GitHub Pages to Your Own Domain Without Losing SEO</b></div></a></li><li><a href="/blog/kotlin-native-swift-different-argument-labels-error-and-the-fix/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Kotlin/Native and Swift: The &#x27;Different Argument Labels&#x27; Error</b></div></a></li><li><a href="/blog/kotlin-multiplatform-platform-capabilities-nullable-interface/"><img src="/logo.svg" alt="Nesim Apps" width="48" height="48"><div><b>Kotlin Multiplatform: Platform Features as a Nullable Interface</b></div></a></li></ul></section>
+  </article>
+  <footer><a href="mailto:nesim.razon@gmail.com">nesim.razon@gmail.com</a> · <a href="/site-privacy.html">Privacy</a></footer>
+</main>
+<script>(function(){[].forEach.call(document.querySelectorAll('.lang a'),function(a){a.addEventListener('click',function(){try{localStorage.setItem('lang_hint','0')}catch(e){}})})})();</script>
+</body>
+</html>
