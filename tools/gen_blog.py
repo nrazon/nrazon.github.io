@@ -5,8 +5,11 @@ import hashlib
 import importlib.util
 import json
 import os
+import sys
 
 TOOLS = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, TOOLS)
+import blog_video_embed as BVE  # EN yazilara anlatimli video
 _s = importlib.util.spec_from_file_location("gen_guides", os.path.join(TOOLS, "gen_guides.py"))
 GG = importlib.util.module_from_spec(_s)
 _s.loader.exec_module(GG)
@@ -77,12 +80,14 @@ def load_posts():
         spec = importlib.util.spec_from_file_location("post_" + m, os.path.join(TOOLS, "blog", m + ".py"))
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
+        mod.POST["_module"] = m
         out.append(mod.POST)
     return out
 
 
 def main():
     posts = load_posts()
+    videos = BVE.refresh([p["_module"] for p in posts])
     home = {a["slug"]: a for a in json.load(open(os.path.join(TOOLS, "home_data.json"), encoding="utf-8"))}
     pages = []
     index_urls = {l: "/" + DIRS[l] + "/" for l in LANGS}
@@ -153,7 +158,7 @@ def main():
                 more = ('<section><h2>' + esc(b["more"]) + '</h2><ul class="glist">' + "".join(
                     f'<li><a href="/{DIRS[lang]}/{o[lang]["slug"]}/"><img src="/{icon_of(o)}" alt="{alt_of(o)}" width="48" height="48"><div><b>{esc(o[lang]["title"])}</b></div></a></li>' for o in others) + "</ul></section>")
             body = (f'  <article class="guide">\n    <nav class="crumbs" aria-label="breadcrumb"><a href="{home_url(lang)}">{esc(t["home"])}</a> › <a href="{index_urls[lang]}">{esc(b["crumb"])}</a></nav>\n'
-                    f'    <h1>{esc(c["title"])}</h1>\n    <p class="by">{esc(t["by"])} · {p["date"]}</p>\n    {(tag_links(ptags, lang, index_urls[lang]) + TAG_CSS) if ptags else ""}\n    <p class="lead">{esc(c["intro"])}</p>\n    ' + "\n    ".join(sec) + f"\n    {cta}\n    {faqh}\n    {more}\n  </article>")
+                    f'    <h1>{esc(c["title"])}</h1>\n    <p class="by">{esc(t["by"])} · {p["date"]}</p>\n    {(tag_links(ptags, lang, index_urls[lang]) + TAG_CSS) if ptags else ""}\n    <p class="lead">{esc(c["intro"])}</p>\n    ' + (BVE.block(videos.get(p["_module"]), p["_module"], c["title"]) + "\n    " if lang == "en" and videos.get(p["_module"]) else "") + "\n    ".join(sec) + f"\n    {cta}\n    {faqh}\n    {more}\n  </article>")
             out = head(lang, c["title"], c["desc"], canon, alternates, og_image, ld, accent) + page_shell(lang, alternates, body)
             write(f"{DIRS[lang]}/{c['slug']}/index.html", out)
             pages.append({"url": canon, "loc": alternates, "default": "en" if "en" in alternates else plangs[0], "hash": hashlib.md5(out.encode("utf-8")).hexdigest()})
